@@ -1,5 +1,5 @@
 function get_data() {
-    var requestURL = "http://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1010500.json"
+    var requestURL = "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/1010500.json"
     var request = new XMLHttpRequest();
     request.open('GET', requestURL);
     request.responseType = 'json';
