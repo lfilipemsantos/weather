@@ -15,13 +15,15 @@ body {
 #hero_div {
     background-color: lightgray;
     width: 100%;
-    height: 12vh;
-    margin-bottom: 5vh;
+    height: auto;
 }
 
 #hero_title {
-    margin-bottom: auto;
-    margin-top: auto;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 60px;
+    text-align: center;
 }
 
 #details {
@@ -31,6 +33,8 @@ body {
     width: 90vw;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50px;
+    border-radius: 10px;
 }
 
 .selected_card {
@@ -50,4 +54,31 @@ body {
 
 .days_row{
     overflow-x: auto;
+    width: 90vw;
+}
+
+
+#time_options {
+    width: fit-content;
+    max-width: 300px;
+    height: 50px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.time_option {
+    border:darkgray 1px solid;
+    border-radius: 10px;
+    padding: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.4);
+    background-color: whitesmoke;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#location {
+
 }

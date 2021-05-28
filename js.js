@@ -7,7 +7,11 @@ function get_data() {
 
     request.onreadystatechange = function() {
         if (request.readyState == XMLHttpRequest.DONE) {
+            console.log(request.response)
             console.log(request.response['data'][0]);
+            console.log(request.response['data'][1]);
+            document.getElementById("max0").textContent = "Max: " + request.response['data'][0]["tMax"]
+            document.getElementById("min0").textContent = "Min: " + request.response['data'][0]["tMin"]
         }
     }
 }
