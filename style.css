@@ -52,16 +52,16 @@ body {
     vertical-align: top;
 }
 
-.days_row{
+.row{
     overflow-x: auto;
-    width: 90vw;
+    width: 90%;
 }
 
 
 #time_options {
-    width: fit-content;
-    max-width: 300px;
-    height: 50px;
+    width: 100%;
+    max-width: 100%;
+    height: 100px;
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
@@ -81,4 +81,30 @@ body {
 
 #location {
 
+}
+
+@media only screen and (max-width:1000px) {
+    /* For mobile phones: */
+    #hero_div {
+        width:100% !important;
+        max-width: 100% !important;
+        float: none !important;
+        position: static !important;
+        box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.4);
+        height: auto;
+    }
+    #time_options {
+        height: 200px;
+        width: 90%;
+    }
+
+    #time_option {
+        margin-top: 8px;
+        margin-bottom: 8px;
+        margin-left: 8px;
+        margin-right: 8px;
+        min-width: 120px;
+        text-align: center;
+        font-size: 30px;
+    }
 }
