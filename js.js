@@ -7,8 +7,8 @@ function get_data() {
     const current = new Date();
              // By default US English uses 12hr time with AM/PM
     const time = current.toLocaleTimeString("pt-PT");
-    console.log(time.split(':', 1))
 
+    console.log(time.split(':', 1))
     console.log(time);
 
     request.onreadystatechange = function() {
@@ -23,10 +23,10 @@ function get_data() {
 
             
             document.getElementById("table_temp").textContent = data[0]["tMax"] + "ºC";
-            document.getElementById("tmax").textContent = data[0]["tMax"] + "ºC";
-            document.getElementById("tmin").textContent = data[0]["tMin"] + "ºC";
-            document.getElementById("uv").textContent = data[0]["iUv"];
-            document.getElementById("prec").textContent = data[0]["probabilidadePrecipita"] + "%";
+            document.getElementById("tmax").textContent = "TMax: " + data[0]["tMax"] + "ºC";
+            document.getElementById("tmin").textContent = "TMin: " + data[0]["tMin"] + "ºC";
+            document.getElementById("uv").textContent = "UV: " + data[0]["iUv"];
+            document.getElementById("prec").textContent = "Precip.: " + data[0]["probabilidadePrecipita"] + "%";
 
             for (i=1; i<24; i++) {
                 var row = document.createElement('div');
@@ -39,7 +39,9 @@ function get_data() {
                 row.appendChild(temp);
                 row.appendChild(hour);
                 document.getElementById("rows").appendChild(row);
-
+                if (i+1 == time.split(':', 1)){
+                    document.getElementById("table_temp").textContent = data[i]["tMed"] + "ºC";
+                }
             }
         }
         /*for (hour = 0; hour < 24; hour++) {
