@@ -17,9 +17,16 @@ function get_data() {
             data = request.response
             console.log(data);
             console.log(data[0]['tMax']);
-            document.getElementById("temperature").textContent = data[0]["tMax"] + "ºC";
-            document.getElementById("min_temperature").textContent = "Tmin: " + data[0]["tMin"] + "ºC";
-            document.getElementById("max_temperature").textContent = "Tmax: " + data[0]["tMax"] + "ºC";
+            //document.getElementById("temperature").textContent = data[0]["tMax"] + "ºC";
+            //document.getElementById("min_temperature").textContent = "Tmin: " + data[0]["tMin"] + "ºC";
+            //document.getElementById("max_temperature").textContent = "Tmax: " + data[0]["tMax"] + "ºC";
+
+            
+            document.getElementById("table_temp").textContent = data[0]["tMax"] + "ºC";
+            document.getElementById("tmax").textContent = data[0]["tMax"] + "ºC";
+            document.getElementById("tmin").textContent = data[0]["tMin"] + "ºC";
+            document.getElementById("uv").textContent = data[0]["iUv"];
+            document.getElementById("prec").textContent = data[0]["probabilidadePrecipita"] + "%";
 
             for (i=1; i<24; i++) {
                 var row = document.createElement('div');
