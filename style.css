@@ -18,7 +18,7 @@ body {
     background-color: lightgray;
     width: 100%;
     height: 80px;
-    box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.4);
+    /*box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.4);*/
     vertical-align: middle;
 }
 
@@ -32,16 +32,21 @@ body {
     margin-right: auto;
 }
 
-#location_search{
-    background-color: darkgray; 
-    display: relative;
-    margin-right: 20px;
-    margin-left: 30vw;
+#search_container {
+    margin:auto;
+    padding-top: 12px;
+    width: 270px;
+}
+
+#location_search {
+    background-color: darkgray;
+    margin-right: 0;
+    margin-left: 0;
     border-radius: 10px;
     height: 35px;
     width: 250px;
     margin-bottom: 10px;
-    margin-top: 20px;
+    margin-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -61,13 +66,15 @@ body {
 
 .row {
     width: 95%;
-    background-color:teal;
+    background-color:rgba(88, 153, 153, 0.4);
     height: 70px;
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
     border-radius: 5px;
+    padding-left: 10px;
+    padding-top: 10px;
 }
 
 #time_options {

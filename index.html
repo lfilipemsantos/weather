@@ -12,7 +12,9 @@
     <body onload="get_data()">
         <div class="" id="hero_div">
             <!--<h5 id="hero_title">Weather</h5>-->
-            <input id="location_search" type="text" placeholder="Tondela, Viseu">
+            <div id="search_container">
+                <input id="location_search" type="text" placeholder="Tondela, Viseu">
+            </div>
         </div>
 
         <div id="time_options">
@@ -25,9 +27,11 @@
 
         </div>-->
 
-        <div style="height: 300px; width: 90%; margin-left: auto; margin-right: auto; background-color: azure;">
+        <div style="height: 250px; width: 90%; margin-left: auto; margin-right: auto; background-color: azure;">
             <div style="height: 100%;width:fit-content;background-color: bisque; ">
-                <h1 id="temperature" style="font-size: 60px; ">16ºC</h1>
+                <h1 id="temperature" style="font-size: 50px; "></h1>
+                <h5 id="min_temperature" style="font-size: 15px;"></h5>
+                <h5 id="max_temperature" style="font-size: 15px;"></h5>
             </div>
             <div>
 
@@ -35,37 +39,7 @@
 
         </div>
 
-        <div class="rows">
-            <div class="row" id="0">
-                <em>01:00</em><p>Temperatura: </p>
-            </div>
-            <div class="row" id="1">
-                
-            </div>
-            <div class="row" id="2">
-               
-            </div>
-            <div class="row" id="3">
-               
-            </div>
-            <div class="row" id="4">
-               
-            </div>
-            <div class="row" id="5">
-               
-            </div>
-            <div class="row" id="6">
-               
-            </div>
-            <div class="row" id="7">
-               
-            </div>
-            <div class="row">
-               
-            </div>
-            <div class="row">
-               
-            </div>
+        <div id="rows">
         </div>
 
     </body>

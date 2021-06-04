@@ -1,82 +1,42 @@
-/*function get_data() {
-    var requestURL = "https://api.ipma.pt/public-data/forecast/aggregate/1182100.json"
-    var request = new XMLHttpRequest();
-    request.open('GET', requestURL);
-    request.responseType = 'json';
-    request.send();
-
-    request.onreadystatechange = function() {
-        if (request.readyState == XMLHttpRequest.DONE) {
-            console.log(request.response)
-            console.log(request.response['data'][0]);
-            console.log(request.response['data'][1]);
-            document.getElementById("max0").textContent = "Max: " + request.response['data'][0]["tMax"]
-            document.getElementById("min0").textContent = "Min: " + request.response['data'][0]["tMin"]
-        }
-    }
-}*/
-
-function get_data() {
-    var chart = new CanvasJS.Chart("chartContainer", {            
-        title:{
-            text: "Weekly Weather Forecast"              
-        },
-        axisY: {
-            suffix: " °C",
-            maximum: 40,
-            gridThickness: 0
-        },
-        toolTip:{
-            shared: true,
-            content: "{name} </br> <strong>Temperature: </strong> </br> Min: {y[0]} °C, Max: {y[1]} °C"
-        },
-        data: [{
-            type: "rangeSplineArea",
-            fillOpacity: 0.1,
-            color: "#91AAB1",
-            indexLabelFormatter: formatter,
-            dataPoints: [
-                { label: "Monday", y: [15, 26], name: "rainy" },
-                { label: "Tuesday", y: [15, 27], name: "rainy" },
-                { label: "Wednesday", y: [13, 27], name: "sunny" },
-                { label: "Thursday", y: [14, 27], name: "sunny" },
-                { label: "Friday", y: [15, 26], name: "cloudy" },
-                { label: "Saturday", y: [17, 26], name: "sunny" },
-                { label: "Sunday", y: [16, 27], name: "rainy" }
-            ]
-        }]
-    });
-    chart.render();
-}
-
-function formatter(e) { 
-	if(e.index === 0 && e.dataPoint.x === 0) {
-		return " Min " + e.dataPoint.y[e.index] + "°";
-	} else if(e.index == 1 && e.dataPoint.x === 0) {
-		return " Max " + e.dataPoint.y[e.index] + "°";
-	} else{
-		return e.dataPoint.y[e.index] + "°";
-	}
-} 
-
 function get_data() {
     var requestURL = "https://api.ipma.pt/public-data/forecast/aggregate/1182100.json"
     var request = new XMLHttpRequest();
     request.open('GET', requestURL);
     request.responseType = 'json';
     request.send();
+    const current = new Date();
+             // By default US English uses 12hr time with AM/PM
+    const time = current.toLocaleTimeString("pt-PT");
+    console.log(time.split(':', 1))
+
+    console.log(time);
 
     request.onreadystatechange = function() {
         if (request.readyState == XMLHttpRequest.DONE) {
-            console.log(request.response)
-            console.log(request.response['data'][0]);
-            console.log(request.response['data'][1]);
-            document.getElementById("max0").textContent = "Max: " + request.response['data'][0]["tMax"]
-            document.getElementById("min0").textContent = "Min: " + request.response['data'][0]["tMin"]
+            var no_data = new Array ( 0 , 24 , 49 );
+            data = request.response
+            console.log(data);
+            console.log(data[0]['tMax']);
+            document.getElementById("temperature").textContent = data[0]["tMax"] + "ºC";
+            document.getElementById("min_temperature").textContent = "Tmin: " + data[0]["tMin"] + "ºC";
+            document.getElementById("max_temperature").textContent = "Tmax: " + data[0]["tMax"] + "ºC";
+
+            for (i=1; i<24; i++) {
+                var row = document.createElement('div');
+                var temp = document.createElement('p');
+                var hour = document.createElement('p');
+                temp.setAttribute('id', i);
+                row.setAttribute('class', 'row');
+                temp.textContent = data[i]["tMed"] + "ºC";
+                hour.textContent = data[i]["dataPrev"];
+                row.appendChild(temp);
+                row.appendChild(hour);
+                document.getElementById("rows").appendChild(row);
+
+            }
         }
-        var hour;
-        for (hour = 0; hour < 24; hour++) {
+        /*for (hour = 0; hour < 24; hour++) {
             console.log(request.response[hour]);
-        }
+        }*/
     }
 }
