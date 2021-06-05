@@ -70,7 +70,7 @@ body {
     display: block;
 }
 
-#rows {
+.rows {
     margin-top: 40px;
     height: 190px;
     width: 100%;
@@ -91,7 +91,7 @@ body {
     box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.4);    
 }
 
-#inner {
+.inner {
     width:max-content;
     height: 190px;
     padding-left: 2.5px;

@@ -44,14 +44,32 @@ function get_data() {
                 hour_text.setAttribute('class', "hour_time");
                 row.appendChild(temp);
                 row.appendChild(hour_text);
-                document.getElementById("inner").appendChild(row);
+                document.getElementById("innerToday").appendChild(row);
+                if (i+1 == time.split(':', 1)){
+                    document.getElementById("table_temp").textContent = data[i]["tMed"] + "ºC";
+                }
+            }
+
+            for (i=25; i<49; i++) {
+                var hour_split = data[i]["dataPrev"].split("T",2)[1].split(":")
+                var hour = hour_split[0] + ":" + hour_split[1]
+                
+                var row = document.createElement('div');
+                var temp = document.createElement('p');
+                var hour_text = document.createElement('p');
+                temp.setAttribute('id', "1"+i);
+                temp.setAttribute('class', "hour_temp");
+                row.setAttribute('class', 'row');
+                temp.textContent = data[i]["tMed"] + "ºC";
+                hour_text.textContent = hour;
+                hour_text.setAttribute('class', "hour_time");
+                row.appendChild(temp);
+                row.appendChild(hour_text);
+                document.getElementById("innerTomorrow").appendChild(row);
                 if (i+1 == time.split(':', 1)){
                     document.getElementById("table_temp").textContent = data[i]["tMed"] + "ºC";
                 }
             }
         }
-        /*for (hour = 0; hour < 24; hour++) {
-            console.log(request.response[hour]);
-        }*/
     }
 }
