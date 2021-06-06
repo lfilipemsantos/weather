@@ -1,7 +1,14 @@
 {
-    "name": "Meteorologia",
-    "short_name": "",
+    "name": "Meteorologia IPMA",
+    "short_name": "Meteorologia",
     "theme_color": "#ffffff",
-    "background_color": "#ffffff",
-    "display": "standalone"
+    "background_color": "#299FC6",
+    "display": "standalone",
+    "icons": [
+        {
+          "src": "IPMA-logo.png",
+          "type": "image/png",
+          "sizes": "192x192"
+        }
+      ]
 }
