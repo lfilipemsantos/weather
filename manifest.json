@@ -4,11 +4,17 @@
     "theme_color": "#ffffff",
     "background_color": "#299FC6",
     "display": "standalone",
+    "start_url": "/",
     "icons": [
         {
           "src": "IPMA-logo.png",
           "type": "image/png",
           "sizes": "192x192"
+        }
+        {
+          "src": "IPMA-logo_500x500.png",
+          "type": "image/png",
+          "sizes": "500x500"
         }
       ]
 }
