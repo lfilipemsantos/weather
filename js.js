@@ -17,7 +17,6 @@ function get_data() {
     request.responseType = 'json';
     request.send();
     const current = new Date();
-             // By default US English uses 12hr time with AM/PM
     const time = current.toLocaleTimeString("pt-PT");
 
     console.log(time.split(':', 1))
@@ -28,11 +27,6 @@ function get_data() {
             var no_data = new Array ( 0 , 24 , 49 );
             data = request.response
             console.log(data);
-            //document.getElementById("temperature").textContent = data[0]["tMax"] + "ºC";
-            //document.getElementById("min_temperature").textContent = "Tmin: " + data[0]["tMin"] + "ºC";
-            //document.getElementById("max_temperature").textContent = "Tmax: " + data[0]["tMax"] + "ºC";
-            
-            
             
             document.getElementById("table_temp").textContent = data[0]["tMax"] + "ºC";
             document.getElementById("tmax").textContent = "TMax: " + data[0]["tMax"] + "ºC";
