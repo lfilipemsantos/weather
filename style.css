@@ -104,6 +104,18 @@ body {
     width: 100%;
 }
 
+#today {
+    display: block;
+}
+
+#tomorrow {
+    display: none;
+}
+
+#next_days {
+    display: none;
+}
+
 .hour_temp {
     height: 135px;
     text-align: center;
@@ -148,7 +160,7 @@ body {
 }
 
 .selected {
-    background-color: rgba(60, 220, 70, 0.4);
+    background-color: rgba(60, 220, 70, 0.2);
 }
 
 #location {

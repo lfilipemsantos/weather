@@ -95,3 +95,14 @@ function get_data() {
         }
     }
 }
+
+function switch_tab(id) {
+    console.log("id:" + id)
+    var main = ["today", "tomorrow", "next_days"];
+    for (let i = 0; i < main.length; i++) {
+        document.getElementById(main[i]).style.display = "none";
+        document.getElementById(main[i]+"_selector").classList.remove("selected");
+    }
+    document.getElementById(id).style.display = "block";
+    document.getElementById(id+"_selector").classList.add("selected");
+}

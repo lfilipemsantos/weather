@@ -19,9 +19,9 @@
         </div>
 
         <div id="time_options">
-            <a class="time_option selected">Hoje</a>
-            <a class="time_option">Amanhã</a>
-            <a class="time_option">5 dias</a>
+            <a class="time_option selected" id="today_selector" onclick="switch_tab('today')">Hoje</a>
+            <a class="time_option" id="tomorrow_selector" onclick="switch_tab('tomorrow')">Amanhã</a>
+            <a class="time_option" id="next_days_selector" onclick="switch_tab('next_days')">5 dias</a>
         </div>
 
         <!--<div id="chartContainer">
@@ -53,6 +53,9 @@
         </div>
         <div class="rows" id="tomorrow">
             <div class="inner" id="innerTomorrow"></div>
+        </div>
+        <div class="rows" id="next_days">
+            <div class="inner" id="inner_next_days"></div>
         </div>
 
     </body>
