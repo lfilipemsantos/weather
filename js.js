@@ -1,3 +1,15 @@
+// check serviceworker support in the browser
+if ('serviceWorker' in navigator) {
+    navigator
+      .serviceWorker
+      .register(
+        'sw.js'
+      )
+      .then(function (reg) {
+        console.log('Registration Successful');
+      });
+  }
+
 function get_data() {
     var requestURL = "https://api.ipma.pt/public-data/forecast/aggregate/1182100.json"
     var request = new XMLHttpRequest();
