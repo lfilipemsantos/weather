@@ -27,12 +27,57 @@ function get_data() {
             var no_data = new Array ( 0 , 24 , 49 );
             data = request.response
             console.log(data);
+
+            //------------
+            var uv_icon = document.createElement('img');
+            uv_icon.src="077-uv-index.svg";
+            uv_icon.classList.add("table_icons")
+
+            var uv_text = document.createElement('p');
+            uv_text.textContent = " " + data[0]["iUv"];
+            uv_text.prepend(uv_icon);
+            document.getElementById("uv").appendChild(uv_text)
+            //-------------
+            var tmax_icon = document.createElement('img');
+            tmax_icon.src="080-hot.svg";
+            tmax_icon.classList.add("table_icons")
+
+            var tmax_text = document.createElement('p');
+            tmax_text.textContent = " " + data[0]["tMax"];
+            tmax_text.prepend(tmax_icon);
+            document.getElementById("tmax").appendChild(tmax_text)
+            document.getElementById("tmax").append(tmax_text)
+            //-------------
+            var tmin_icon = document.createElement('img');
+            tmin_icon.src="014-cold.svg";
+            tmin_icon.classList.add("table_icons")
+
+            var tmin_text = document.createElement('p');
+            tmin_text.textContent = " " + data[0]["tMin"];
+            tmin_text.prepend(tmin_icon);
+            document.getElementById("tmin").appendChild(tmin_text)
+            document.getElementById("tmin").append(tmin_text)
+            //-------------
+            var prec_icon = document.createElement('img');
+            prec_icon.src="076-umbrella.svg";
+            prec_icon.classList.add("table_icons")
+
+            var prec_text = document.createElement('p');
+            prec_text.textContent = " " + data[0]["probabilidadePrecipita"] + "%";
+            prec_text.prepend(prec_icon);
+            document.getElementById("prec").appendChild(prec_text)
+            document.getElementById("prec").append(prec_text)
+            //-------------
+
             
             document.getElementById("table_temp").textContent = data[0]["tMax"] + "ºC";
-            document.getElementById("tmax").textContent = "TMax: " + data[0]["tMax"] + "ºC";
-            document.getElementById("tmin").textContent = "TMin: " + data[0]["tMin"] + "ºC";
-            document.getElementById("uv").textContent = "UV: " + data[0]["iUv"];
-            document.getElementById("prec").textContent = "Precip.: " + data[0]["probabilidadePrecipita"] + "%";
+            //document.getElementById("tmax").textContent = "TMax: " + data[0]["tMax"] + "ºC";
+            //document.getElementById("tmin").textContent = "TMin: " + data[0]["tMin"] + "ºC";
+            //document.getElementById("uv").textContent = " " + data[0]["iUv"];
+            //document.getElementById("prec").textContent = "Precip.: " + data[0]["probabilidadePrecipita"] + "%";
+
+
+
 
             for (i=1; i<23; i++) {
                 var hour_split = data[i]["dataPrev"].split("T",2)[1].split(":")
