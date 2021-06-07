@@ -92,7 +92,12 @@ function get_data() {
                 var hour_text = document.createElement('p');
                 var weather_icon = document.createElement('img')
                 weather_icon.setAttribute("class", "weather_icon")
-                weather_icon.src = data[i]["idTipoTempo"] + ".svg"
+                if (parseInt(hour.split(":"))<6 || parseInt(hour.split(":"))>21){
+                    weather_icon.src = parseInt(data[i]["idTipoTempo"]) + 1 + ".svg"
+                }
+                else {
+                    weather_icon.src = parseInt(data[i]["idTipoTempo"]) + ".svg"
+                }
                 temp.setAttribute('id', i);
                 temp.setAttribute('class', "hour_temp");
                 row.setAttribute('class', 'row');
@@ -116,7 +121,12 @@ function get_data() {
                 var hour_text = document.createElement('p');
                 var weather_icon = document.createElement('img')
                 weather_icon.setAttribute("class", "weather_icon")
-                weather_icon.src = data[i]["idTipoTempo"] + ".svg"
+                if (parseInt(hour.split(":"))<6 || parseInt(hour.split(":"))>21){
+                    weather_icon.src = parseInt(data[i]["idTipoTempo"]) + 1 + ".svg"
+                }
+                else {
+                    weather_icon.src = parseInt(data[i]["idTipoTempo"]) + ".svg"
+                }
                 temp.setAttribute('id', "1"+23);
                 temp.setAttribute('class', "hour_temp");
                 row.setAttribute('class', 'row');
@@ -139,8 +149,13 @@ function get_data() {
                 var temp = document.createElement('p');
                 var hour_text = document.createElement('p');
                 var weather_icon = document.createElement('img')
+                if (parseInt(hour.split(":"))<6 || parseInt(hour.split(":"))>21){
+                    weather_icon.src = parseInt(data[i]["idTipoTempo"]) + 1 + ".svg"
+                }
+                else {
+                    weather_icon.src = parseInt(data[i]["idTipoTempo"]) + ".svg"
+                }
                 weather_icon.setAttribute("class", "weather_icon")
-                weather_icon.src = data[i]["idTipoTempo"] + ".svg"
                 temp.setAttribute('id', "1"+i);
                 temp.setAttribute('class', "hour_temp");
                 row.setAttribute('class', 'row');
