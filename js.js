@@ -90,6 +90,9 @@ function get_data() {
                 var row = document.createElement('div');
                 var temp = document.createElement('p');
                 var hour_text = document.createElement('p');
+                var weather_icon = document.createElement('img')
+                weather_icon.setAttribute("class", "weather_icon")
+                weather_icon.src = data[i]["idTipoTempo"] + ".svg"
                 temp.setAttribute('id', i);
                 temp.setAttribute('class', "hour_temp");
                 row.setAttribute('class', 'row');
@@ -97,6 +100,7 @@ function get_data() {
                 hour_text.textContent = hour;
                 hour_text.setAttribute('class', "hour_time");
                 row.appendChild(temp);
+                row.appendChild(weather_icon);
                 row.appendChild(hour_text);
                 document.getElementById("innerToday").appendChild(row);
                 if (i+1 == time.split(':', 1)){
@@ -110,6 +114,9 @@ function get_data() {
                 var row = document.createElement('div');
                 var temp = document.createElement('p');
                 var hour_text = document.createElement('p');
+                var weather_icon = document.createElement('img')
+                weather_icon.setAttribute("class", "weather_icon")
+                weather_icon.src = data[i]["idTipoTempo"] + ".svg"
                 temp.setAttribute('id', "1"+23);
                 temp.setAttribute('class', "hour_temp");
                 row.setAttribute('class', 'row');
@@ -117,6 +124,7 @@ function get_data() {
                 hour_text.textContent = hour;
                 hour_text.setAttribute('class', "hour_time");
                 row.appendChild(temp);
+                row.appendChild(weather_icon);
                 row.appendChild(hour_text);
                 document.getElementById("innerTomorrow").appendChild(row);
                 if (i+1 == time.split(':', 1)){
@@ -130,6 +138,9 @@ function get_data() {
                 var row = document.createElement('div');
                 var temp = document.createElement('p');
                 var hour_text = document.createElement('p');
+                var weather_icon = document.createElement('img')
+                weather_icon.setAttribute("class", "weather_icon")
+                weather_icon.src = data[i]["idTipoTempo"] + ".svg"
                 temp.setAttribute('id', "1"+i);
                 temp.setAttribute('class', "hour_temp");
                 row.setAttribute('class', 'row');
@@ -137,6 +148,7 @@ function get_data() {
                 hour_text.textContent = hour;
                 hour_text.setAttribute('class', "hour_time");
                 row.appendChild(temp);
+                row.appendChild(weather_icon);
                 row.appendChild(hour_text);
                 document.getElementById("innerTomorrow").appendChild(row);
                 if (i+1 == time.split(':', 1)){
