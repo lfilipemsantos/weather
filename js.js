@@ -146,6 +146,8 @@ function switch_tab(id) {
 
 function build_table() {
     document.getElementById("table_temp").textContent = data[0]["tMax"] + "ºC";
+    var update_date_string = "Última atualização: " + data[0]["dataUpdate"]
+    document.getElementById("data_update").textContent = update_date_string.replace("T", " às ")
     var icon_name = ["tMax", "iUv", "tMin", "probabilidadePrecipita"];
     for (let i = 0; i < icon_name.length; i++) {
         var icon = document.createElement('img');
