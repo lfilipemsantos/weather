@@ -153,7 +153,11 @@ function build_table() {
         icon.classList.add("table_icons")
 
         var text = document.createElement('p');
-        text.textContent = " " + data[0][icon_name[i]];
+        if(icon_name[i] == "probabilidadePrecipita")
+            text.textContent = " " + data[0][icon_name[i]] + "%";
+        else {
+            text.textContent = " " + data[0][icon_name[i]];
+        }
         text.prepend(icon);
         document.getElementById(icon_name[i]).appendChild(text)
     }
