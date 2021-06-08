@@ -6,8 +6,6 @@
         <link rel="manifest" href="manifest.webmanifest">
         <link rel="apple-touch-icon" href="IPMA-logo.png">
         <link rel="stylesheet" type="text/css" href="style.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
         <script type='text/javascript' src='js.js'></script>
     </head>
 
@@ -20,14 +18,20 @@
         </div>
 
         <div id="time_options">
-            <a class="time_option selected" id="today_selector" onclick="switch_tab('today')">Hoje</a>
-            <a class="time_option" id="tomorrow_selector" onclick="switch_tab('tomorrow')">Amanhã</a>
-            <a class="time_option" id="next_days_selector" onclick="switch_tab('next_days')">5 dias</a>
+            <div id="inner_time_options">
+                <div class="time_option selected" id="today_selector" onclick="switch_tab('today')">
+                    <p>Hoje</p>
+                </div>
+                <div class="time_option" id="tomorrow_selector" onclick="switch_tab('tomorrow')">
+                    <p>Amanhã</p>
+                </div>
+                <div class="time_option" id="next_days_selector" onclick="switch_tab('next_days')">
+                    <p>5 dias</p>
+                </div>
+            </div>
         </div>
 
-        <!--<div id="chartContainer">
 
-        </div>-->
 
         <div style="height: 260px; width: 80%; max-width: 400px; margin-top:20px;margin-left: auto; margin-right: auto; margin-bottom: 80px;">
             <div id="table_container" style="height: 100%; max-width: 400px;">
@@ -36,7 +40,7 @@
                         <td id="location" colspan="3" style="font-size: 15px; padding-top:10px;">Tondela, Viseu</td>
                     </tr>
                     <tr>
-                        <th id="table_temp" colspan="3" style="font-size: 50px;"></th>
+                        <th id="table_temp" colspan="3" style="font-size: 50px;padding-bottom: 20px;"></th>
                     </tr>
                     <tr>
                         <td id="tMax" style="padding-bottom: 20px;"></td>
