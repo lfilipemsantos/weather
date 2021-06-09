@@ -90,15 +90,27 @@ body {
     width: 100%;
 }
 
-#today {
+#today_row {
     display: block;
 }
 
-#tomorrow {
+#table_today {
+    display: block;
+}
+
+#tomorrow_row {
     display: none;
 }
 
-#next_days {
+#table_tomorrow {
+    display: none;
+}
+
+#next_days_row {
+    display: none;
+}
+
+#table_next_days {
     display: none;
 }
 

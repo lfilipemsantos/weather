@@ -13,11 +13,13 @@ if ('serviceWorker' in navigator) {
 function switch_tab(id) {
     var main = ["today", "tomorrow", "next_days"];
     for (let i = 0; i < main.length; i++) {
-        document.getElementById(main[i]).style.display = "none";
-        document.getElementById(main[i]+"_selector").classList.remove("selected");
+        document.getElementById(main[i] + "_row").style.display = "none";
+        document.getElementById(main[i]).classList.remove("selected");
+        document.getElementById("table_" + main[i]).style.display = "none";
     }
-    document.getElementById(id).style.display = "block";
-    document.getElementById(id+"_selector").classList.add("selected");
+    document.getElementById(id + "_row").style.display = "block";
+    document.getElementById(id).classList.add("selected");
+    document.getElementById("table_" + id).style.display = "block";
 }
 
 function get_data() {
@@ -48,26 +50,31 @@ function get_data() {
 }
 
 function build_table(current_day, current_hour) {
-
-    document.getElementById("table_temp").textContent = current_hour["tMed"] + "ºC";
+    if(current_hour) {
+        document.getElementById("table_temp").textContent = current_hour["tMed"] + "ºC";
+        var icon_name = ["tMax", "iUv", "tMin", "probabilidadePrecipita"];
+    }
+    else {
+        var icon_name = ["tMaxT", "iUvT", "tMinT", "probabilidadePrecipitaT"];
+    }
     document.getElementById("data_update").textContent = ("Última atualização: " + current_day["dataUpdate"]).replace("T", " às ")
     
-    var icon_name = ["tMax", "iUv", "tMin", "probabilidadePrecipita"];
+    
 
     for (let i = 0; i < icon_name.length; i++) {
         var icon = document.createElement('img');
-        icon.src="icons/icons_table/"+ icon_name[i] + ".svg";
+        icon.src=("icons/icons_table/"+ icon_name[i] + ".svg").replace("T", "");
         icon.classList.add("table_icons")
 
         var text = document.createElement('p');
-        if(icon_name[i] == "probabilidadePrecipita") {
-            text.textContent = " " + current_day[icon_name[i]] + "%";
+        if(icon_name[i].includes("proba")) {
+            text.textContent = " " + current_day[icon_name[i].replace("T", "")] + "%";
         }
         else if(icon_name[i].includes("tM")) {
-            text.textContent = " " + current_day[icon_name[i]] + "ºC";
+            text.textContent = " " + current_day[icon_name[i].replace("T", "")] + "ºC";
         }
         else {
-            text.textContent = " " + current_day[icon_name[i]];
+            text.textContent = " " + current_day[icon_name[i].replace("T", "")];
         }
         text.prepend(icon);
         document.getElementById(icon_name[i]).appendChild(text);
@@ -119,6 +126,7 @@ function build_arrays(data, today_str, tomorrow_str) {
 
     var current_day;
     var current_hour;
+    var next_day;
 
     const current = new Date();
     const time = (current.toLocaleTimeString("pt-PT")).split(':',1);
@@ -129,6 +137,9 @@ function build_arrays(data, today_str, tomorrow_str) {
 
         if(!(data[i]["tMed"]) && data[i]["dataPrev"].includes(today_str)) {
             current_day = data[i];
+        }
+        else if(!(data[i]["tMed"]) && data[i]["dataPrev"].includes(tomorrow_str)) {
+            next_day = data[i];
         }
         else if(!(data[i]["tMed"])) {
             continue;
@@ -152,7 +163,8 @@ function build_arrays(data, today_str, tomorrow_str) {
         }
     }
 
-    build_table(current_day, current_hour)
+    build_table(current_day, current_hour);
+    build_table(next_day, null);
 
     return new Array(today, tomorrow);
 }
