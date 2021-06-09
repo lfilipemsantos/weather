@@ -63,6 +63,7 @@ function build_table(current_day, current_hour) {
 
     for (let i = 0; i < icon_name.length; i++) {
         var icon = document.createElement('img');
+        icon.setAttribute("alt", icon_name[i]);
         icon.src=("icons/icons_table/"+ icon_name[i] + ".svg").replace("T", "");
         icon.classList.add("table_icons")
 
@@ -100,6 +101,7 @@ function build_rows(days) {
             var hour_text = document.createElement('p');
             var weather_icon = document.createElement('img');
             weather_icon.setAttribute("class", "weather_icon");
+            weather_icon.setAttribute("alt", "weather_icon");
             if (parseInt(hour.split(":"))<6 || parseInt(hour.split(":"))>21) {
                 weather_icon.src = "icons/n" + parseInt(days[j][i]["idTipoTempo"]) + ".svg";
             }
