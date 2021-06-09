@@ -27,6 +27,8 @@ html {
 
 body {
     min-height: 100%;
+    /*background-color: rgb(39, 39, 39);
+    color: lightgray;*/
 }
 
 #hero_div {
@@ -111,6 +113,14 @@ body {
 }
 
 #table_next_days {
+    display: none;
+}
+
+#settings_row {
+    display: none;
+}
+
+#about_row {
     display: none;
 }
 

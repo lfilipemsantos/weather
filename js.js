@@ -11,15 +11,27 @@ if ('serviceWorker' in navigator) {
   }
 
 function switch_tab(id) {
-    var main = ["today", "tomorrow", "next_days"];
+    console.log(id)
+    var main = ["today", "tomorrow", "next_days", "settings"];
     for (let i = 0; i < main.length; i++) {
         document.getElementById(main[i] + "_row").style.display = "none";
         document.getElementById(main[i]).classList.remove("selected");
-        document.getElementById("table_" + main[i]).style.display = "none";
+        try{
+            document.getElementById("table_" + main[i]).style.display = "none";
+        }
+        catch{
+            continue;
+        }
     }
     document.getElementById(id + "_row").style.display = "block";
     document.getElementById(id).classList.add("selected");
-    document.getElementById("table_" + id).style.display = "block";
+    try{
+        document.getElementById("table_" + id).style.display = "block";
+    }
+    catch{
+        console.log('error')
+    }
+    
 }
 
 function get_data() {

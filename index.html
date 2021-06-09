@@ -90,13 +90,49 @@
         <div class="rows" id="next_days_row">
             <div class="inner" id="inner_next_days"></div>
         </div>
+        <div class="rows" id="settings_row" style="height: 300px; background-color: rgba(114, 197, 197, 0.2); width: 80%;">
+            <div style="width: fit-content; margin-left: auto;margin-right: auto; margin-top: 10px;">
+                <p>DEFINIÇÕES</p>
+            </div>
+            <hr style="color: black; height: 3px; width: 100px; display: block;">
+            <div>
+                <p>Tema</p>
+            </div>
+            <div class="inner" id="temas" style="height: 50px;">
+                <div class="row" style="height: 50px; width: 100px;">
+                    Claro
+                </div>
+                <div class="row" style="height: 50px; width: 100px;">
+                    Escuro
+                </div>
+            </div>
+            <div>
+                <p>Cor de destaque</p>
+            </div>
+            <div class="inner" id="cores" style="height: 50px;">
+                <div class="time_option" style="width:40px; height: 40px; padding-top:0px; padding-bottom:0px; border-radius: 50%; vertical-align: center;background-color: rgb(192, 133, 106);">
+                    <div style="width: 100%; height: 100%;"></div>
+                </div>
+                <div class="time_option" style="width:40px; height: 40px; padding-top:0px; padding-bottom:0px; border-radius: 50%; vertical-align: center;background-color: rgb(106, 192, 149);">
+                    <div style="width: 100%; height: 100%;"></div>
+                </div>
+                <div class="time_option" style="width:40px; height: 40px; padding-top:0px; padding-bottom:0px; border-radius: 50%; vertical-align: center;background-color: rgb(106, 153, 192);">
+                    <div style="width: 100%; height: 100%;"></div>
+                </div>
+                <div class="time_option" style="width:40px; height: 40px; padding-top:0px; padding-bottom:0px; border-radius: 50%; vertical-align: center;background-color: rgb(146, 106, 192);">
+                    <div style="width: 100%; height: 100%;"></div>
+                </div>
+            </div>
+
+            
+        </div>
 
         <div class="rows" style="height: auto;">
             <div class="inner" style="height:auto;margin-bottom: 10px;">
-                <div class="time_option">
+                <div class="time_option" id="about" onclick="switch_tab('about')">
                     <p style="text-align:center; line-height:18px">Sobre</p>
                 </div>
-                <div class="time_option" style="width:40px; height: 40px; padding-top:0px; padding-bottom:0px; border-radius: 50%; vertical-align: center;">
+                <div class="time_option" id="settings" onclick="switch_tab('settings')" style="width:40px; height: 40px; padding-top:0px; padding-bottom:0px; border-radius: 50%; vertical-align: center;">
                     <div style="width: 100%; height: 100%;"><img src="settings.svg" alt="settings icon" style="height: 60%; margin-left: 20%; margin-top: 20%;"></div>
                 </div>
             </div>
