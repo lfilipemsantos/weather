@@ -148,7 +148,7 @@ body {
     overflow-y: scroll !important;
 }
 
-.time_option > p {
+.button > p {
     width: 100%;
     height: 20px;
     margin-top:10px;
@@ -165,7 +165,7 @@ body {
     margin-right: auto;
 }
 
-.time_option {
+.button {
     height:38px;
     border:rgba(114, 197, 197, 0.5) 1px solid;
     width: 90px;
@@ -194,6 +194,15 @@ body {
     width: 100%;
     margin-top:30px;
     margin-bottom:30px;
+}
+
+#claro_button {
+    background-color: whitesmoke;
+    color: black;
+}
+#escuro_button {
+    color: whitesmoke;
+    background-color: rgb(37, 37, 37);
 }
 
 @media only screen and (max-width:1000px) {

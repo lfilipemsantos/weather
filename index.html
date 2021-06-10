@@ -20,13 +20,13 @@
 
         <div id="time_options">
             <div id="inner_time_options">
-                <div class="time_option selected" id="today" onclick="switch_tab('today')">
+                <div class="button selected" id="today" onclick="switch_tab('today')">
                     <p style="text-align:center; line-height:18px">Hoje</p>
                 </div>
-                <div class="time_option" id="tomorrow" onclick="switch_tab('tomorrow')">
+                <div class="button" id="tomorrow" onclick="switch_tab('tomorrow')">
                     <p style="text-align:center; line-height:18px">Amanhã</p>
                 </div>
-                <div class="time_option" id="next_days" onclick="switch_tab('next_days')">
+                <div class="button" id="next_days" onclick="switch_tab('next_days')">
                     <p style="text-align:center; line-height:18px">5 dias</p>
                 </div>
             </div>
@@ -90,56 +90,44 @@
         <div class="rows" id="next_days_row">
             <div class="inner" id="inner_next_days"></div>
         </div>
-        <div class="rows" id="settings_row" style="height: 300px; background-color: rgba(114, 197, 197, 0.2); width: 80%;">
+        <div class="rows" id="settings_row" style="height: 300px; background-color: rgba(114, 197, 197, 0.2);width:80%; max-width: 400px;border-radius: 10px;">
             <div style="width: fit-content; margin-left: auto;margin-right: auto; margin-top: 10px;">
-                <p>DEFINIÇÕES</p>
+                <h3>DEFINIÇÕES</h3>
             </div>
             <hr style="color: black; height: 3px; width: 100px; display: block;">
-            <div>
-                <p>Tema</p>
+            <div style="width: 90%; margin-left: auto; margin-right: auto;margin-top: 15px;">
+                <h4>Tema</h4>
             </div>
-            <div class="inner" id="temas" style="height: 50px;">
-                <div class="row" style="height: 50px; width: 100px;">
-                    Claro
+            <div class="inner" id="temas" style="height: 50px; margin-top:10px;">
+                <div class="row" id="claro_button" style="height: 50px; width: 100px;">
+                    <p style="text-align:center; line-height:18px; height: 18px; padding-top: 16px;">Claro</p>
                 </div>
-                <div class="row" style="height: 50px; width: 100px;">
-                    Escuro
-                </div>
-            </div>
-            <div>
-                <p>Cor de destaque</p>
-            </div>
-            <div class="inner" id="cores" style="height: 50px;">
-                <div class="time_option" style="width:40px; height: 40px; padding-top:0px; padding-bottom:0px; border-radius: 50%; vertical-align: center;background-color: rgb(192, 133, 106);">
-                    <div style="width: 100%; height: 100%;"></div>
-                </div>
-                <div class="time_option" style="width:40px; height: 40px; padding-top:0px; padding-bottom:0px; border-radius: 50%; vertical-align: center;background-color: rgb(106, 192, 149);">
-                    <div style="width: 100%; height: 100%;"></div>
-                </div>
-                <div class="time_option" style="width:40px; height: 40px; padding-top:0px; padding-bottom:0px; border-radius: 50%; vertical-align: center;background-color: rgb(106, 153, 192);">
-                    <div style="width: 100%; height: 100%;"></div>
-                </div>
-                <div class="time_option" style="width:40px; height: 40px; padding-top:0px; padding-bottom:0px; border-radius: 50%; vertical-align: center;background-color: rgb(146, 106, 192);">
-                    <div style="width: 100%; height: 100%;"></div>
+                <div class="row" id="escuro_button" style="height: 50px; width: 100px;">
+                    <p style="text-align:center; line-height:18px; height: 18px; padding-top: 16px;">Escuro</p>
                 </div>
             </div>
-
-            
-        </div>
-
-        <div class="rows" style="height: auto;">
-            <div class="inner" style="height:auto;margin-bottom: 10px;">
-                <div class="time_option" id="about" onclick="switch_tab('about')">
-                    <p style="text-align:center; line-height:18px">Sobre</p>
+            <div style="width: 90%; margin-left: auto; margin-right: auto;margin-top: 15px;">
+                <h4>Cor de destaque</h4>
+            </div>
+            <div class="inner" id="cores" style="height: 50px; margin-top:10px;">
+                <div class="button" style="width:40px; height: 40px; padding-top:0px; padding-bottom:0px; border-radius: 50%; vertical-align: center;background-color: rgb(192, 133, 106);">
+                    <div style="width: 100%; height: 100%;"></div>
                 </div>
-                <div class="time_option" id="settings" onclick="switch_tab('settings')" style="width:40px; height: 40px; padding-top:0px; padding-bottom:0px; border-radius: 50%; vertical-align: center;">
-                    <div style="width: 100%; height: 100%;"><img src="settings.svg" alt="settings icon" style="height: 60%; margin-left: 20%; margin-top: 20%;"></div>
+                <div class="button" style="width:40px; height: 40px; padding-top:0px; padding-bottom:0px; border-radius: 50%; vertical-align: center;background-color: rgb(106, 192, 149);">
+                    <div style="width: 100%; height: 100%;"></div>
+                </div>
+                <div class="button" style="width:40px; height: 40px; padding-top:0px; padding-bottom:0px; border-radius: 50%; vertical-align: center;background-color: rgb(106, 153, 192);">
+                    <div style="width: 100%; height: 100%;"></div>
+                </div>
+                <div class="button" style="width:40px; height: 40px; padding-top:0px; padding-bottom:0px; border-radius: 50%; vertical-align: center;background-color: rgb(146, 106, 192);">
+                    <div style="width: 100%; height: 100%;"></div>
                 </div>
             </div>
         </div>
 
-        <div id="about" style="width:100%; bottom: 0px; margin-top:40px; background-color: azure;position: relative;">
-            <div style="bottom: 0;text-align: center;">
+
+        <div class="rows" id="about_row" style="height: 300px; background-color: rgba(114, 197, 197, 0.2);width:80%; max-width: 400px;border-radius: 10px;">
+            <div style="bottom: 0;text-align: left;line-height: 15px;margin-left: 10px; margin-right: 10px; margin-top: 10px;">
                 Icons made by 
                 <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">
                     Flat Icons
@@ -148,7 +136,25 @@
                     www.flaticon.com
                 </a>
             </div>
+            <div style="bottom: 0;text-align: left;line-height: 15px;;margin-left: 10px; margin-right: 10px; margin-top: 15px;">
+                Dados da metereologia provenientes de: <a href="https://www.ipma.pt/pt/index.html" title="IPMA">
+                    www.ipma.pt
+                </a>
+            </div>
+        </div>        
+
+        <div class="rows" style="height: auto;">
+            <div class="inner" style="height:auto;margin-bottom: 10px;">
+                <div class="button" id="about" onclick="switch_tab('about')">
+                    <p style="text-align:center; line-height:18px">Sobre</p>
+                </div>
+                <div class="button" id="settings" onclick="switch_tab('settings')" style="width:40px; height: 40px; padding-top:0px; padding-bottom:0px; border-radius: 50%; vertical-align: center;">
+                    <div style="width: 100%; height: 100%;"><img src="settings.svg" alt="settings icon" style="height: 60%; margin-left: 20%; margin-top: 20%;"></div>
+                </div>
+            </div>
         </div>
+
+
 
     </body>
 </html>
