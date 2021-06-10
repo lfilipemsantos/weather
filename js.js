@@ -11,7 +11,6 @@ if ('serviceWorker' in navigator) {
   }
 
 function switch_tab(id) {
-    console.log(id)
     var main = ["today", "tomorrow", "next_days", "settings", "about"];
     for (let i = 0; i < main.length; i++) {
         document.getElementById(main[i] + "_row").style.display = "none";
