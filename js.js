@@ -182,3 +182,14 @@ function build_arrays(data, today_str, tomorrow_str) {
 
     return new Array(today, tomorrow);
 }
+
+function switch_theme(id) {
+    if(id=="escuro"){
+        document.body.style.backgroundColor="rgb(37, 37, 37)";
+        document.body.style.color="rgb(245, 245, 245)";
+    }
+    else if (id=="claro") {
+        document.body.style.backgroundColor="rgb(245, 245, 245)";
+        document.body.style.color="rgb(37, 37, 37)";
+    }
+}
