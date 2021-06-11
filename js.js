@@ -195,18 +195,24 @@ function switch_theme(id) {
 
 function switch_colors(color) {
     buttons = document.getElementsByClassName("button");
-    change_color(buttons, color, 0.1)
+    change_color(buttons,"backgroundColor", color, 0.1)
+    change_color(buttons,"border", color, 0.5)
     tables = document.getElementsByClassName("content_table");
-    change_color(tables,color, 0.5)
+    change_color(tables,"backgroundColor",color, 0.2)
     tables = document.getElementsByClassName("row");
-    change_color(tables,color, 0.5)
+    change_color(tables,"backgroundColor",color, 0.2)
     document.getElementById("location_search").style.backgroundColor = "rgba(" + color + ", 0.4)";
 
     
 }
 
-function change_color(obj, color, transparency) {
+function change_color(obj, element, color, transparency) {
     for (var i = 0; i < obj.length; i++) {
-        obj[i].style.backgroundColor = "rgba(" + color + ", " + transparency +")";
+        if (element == "backgroundColor"){
+            obj[i].style.backgroundColor = "rgba(" + color + ", " + transparency +")";
+        }
+        else if (element == "border") {
+            obj[i].style.border = "rgba(" + color + ", " + transparency +") 1px solid";
+        }
     }
 }
