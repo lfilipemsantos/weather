@@ -21,20 +21,20 @@
         <div id="time_options">
             <div id="inner_time_options">
                 <div class="button selected" id="today" onclick="switch_tab('today')">
-                    <p style="text-align:center; line-height:18px">Hoje</p>
+                    <p>Hoje</p>
                 </div>
                 <div class="button" id="tomorrow" onclick="switch_tab('tomorrow')">
-                    <p style="text-align:center; line-height:18px">Amanhã</p>
+                    <p>Amanhã</p>
                 </div>
                 <div class="button" id="next_days" onclick="switch_tab('next_days')">
-                    <p style="text-align:center; line-height:18px">5 dias</p>
+                    <p>5 dias</p>
                 </div>
             </div>
         </div>
 
 
 
-        <div id="table_today" style="height: auto; width: 80%; max-width: 400px; margin-top:30px;margin-left: auto; margin-right: auto;">
+        <div id="table_today" class="table">
             <div id="table_container" style="height: 100%; max-width: 400px;">
                 <table style="background-color: rgba(114, 197, 197, 0.2); width: 100%;height: 100%; margin-left: auto; margin-right: auto;text-align: center; padding-bottom: 10px;border-radius: 10px;vertical-align: middle;">
                     <tr>
@@ -57,7 +57,7 @@
                 </table>
             </div>
         </div>
-        <div id="table_tomorrow" style="height: auto; width: 80%; max-width: 400px; margin-top:30px;margin-left: auto; margin-right: auto;">
+        <div id="table_tomorrow" class="table">
             <div id="table_containerT" style="height: 100%; max-width: 400px;">
                 <table style="background-color: rgba(114, 197, 197, 0.2); width: 100%;height: 100%; margin-left: auto; margin-right: auto;text-align: center; padding-bottom: 10px;border-radius: 10px;vertical-align: middle;">
                     <tr style="margin-bottom: 20px;">
@@ -90,6 +90,8 @@
         <div class="rows" id="next_days_row">
             <div class="inner" id="inner_next_days"></div>
         </div>
+
+        
         <div class="rows" id="settings_row" style="height: 300px; background-color: rgba(114, 197, 197, 0.2);width:80%; max-width: 400px;border-radius: 10px;margin-top: 30px;">
             <div style="width: fit-content; margin-left: auto;margin-right: auto; margin-top: 10px;">
                 <h3>DEFINIÇÕES</h3>
@@ -110,16 +112,16 @@
                 <h4>Cor de destaque</h4>
             </div>
             <div class="inner" id="cores" style="height: 50px; margin-top:10px;">
-                <div class="button" style="width:40px; height: 40px; padding-top:0px; padding-bottom:0px; border-radius: 50%; vertical-align: center;background-color: rgb(192, 133, 106);">
+                <div class="button" style="width:40px; height: 40px; border-radius: 50%; vertical-align: center;background-color: rgb(192, 133, 106);">
                     <div style="width: 100%; height: 100%;"></div>
                 </div>
-                <div class="button" style="width:40px; height: 40px; padding-top:0px; padding-bottom:0px; border-radius: 50%; vertical-align: center;background-color: rgb(106, 192, 149);">
+                <div class="button" style="width:40px; height: 40px; border-radius: 50%; vertical-align: center;background-color: rgb(106, 192, 149);">
                     <div style="width: 100%; height: 100%;"></div>
                 </div>
-                <div class="button" style="width:40px; height: 40px; padding-top:0px; padding-bottom:0px; border-radius: 50%; vertical-align: center;background-color: rgb(106, 153, 192);">
+                <div class="button" style="width:40px; height: 40px; border-radius: 50%; vertical-align: center;background-color: rgb(106, 153, 192);">
                     <div style="width: 100%; height: 100%;"></div>
                 </div>
-                <div class="button" style="width:40px; height: 40px; padding-top:0px; padding-bottom:0px; border-radius: 50%; vertical-align: center;background-color: rgb(146, 106, 192);">
+                <div class="button" style="width:40px; height: 40px; border-radius: 50%; vertical-align: center;background-color: rgb(146, 106, 192);">
                     <div style="width: 100%; height: 100%;"></div>
                 </div>
             </div>
@@ -127,7 +129,7 @@
 
 
         <div class="rows" id="about_row" style="height: 300px; background-color: rgba(114, 197, 197, 0.2);width:80%; max-width: 400px;border-radius: 10px;margin-top: 30px;">
-            <div style="bottom: 0;text-align: left;line-height: 15px;margin-left: 10px; margin-right: 10px; margin-top: 10px;">
+            <div id="about" style="bottom: 0;text-align: left;line-height: 15px;margin-left: 10px; margin-right: 10px; margin-top: 10px;">
                 Icons made by 
                 <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">
                     Flat Icons
@@ -146,10 +148,10 @@
         <div class="rows" style="height: auto;">
             <div class="inner" style="height:auto;margin-bottom: 10px;">
                 <div class="button" id="about" onclick="switch_tab('about')">
-                    <p style="text-align:center; line-height:18px">Sobre</p>
+                    <p>Sobre</p>
                 </div>
-                <div class="button" id="settings" onclick="switch_tab('settings')" style="width:40px; height: 40px; padding-top:0px; padding-bottom:0px; border-radius: 50%; vertical-align: center;">
-                    <div style="width: 100%; height: 100%;"><img src="settings.svg" alt="settings icon" style="height: 60%; margin-left: 20%; margin-top: 20%;"></div>
+                <div class="button" id="settings" onclick="switch_tab('settings')" style="width:38px;border-radius: 50%;">
+                    <div style="width: 38px; height: 38px;"><img src="settings_w.svg" alt="settings icon" style="height: 20px; margin-left: 9px; margin-top: 9px;"></div>
                 </div>
             </div>
         </div>
