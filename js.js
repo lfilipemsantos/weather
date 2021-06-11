@@ -1,3 +1,6 @@
+CURRENT_COLOR = "114, 197, 197";
+
+
 // check serviceworker support in the browser
 if ('serviceWorker' in navigator) {
     navigator
@@ -14,7 +17,7 @@ function switch_tab(id) {
     var main = ["today", "tomorrow", "next_days", "settings", "about"];
     for (let i = 0; i < main.length; i++) {
         document.getElementById(main[i] + "_row").style.display = "none";
-        document.getElementById(main[i]).classList.remove("selected");
+        document.getElementById(main[i]).style.backgroundColor = "rgba(" + CURRENT_COLOR + ", " + 0.1 + ")";
         try{
             document.getElementById("table_" + main[i]).style.display = "none";
         }
@@ -23,7 +26,7 @@ function switch_tab(id) {
         }
     }
     document.getElementById(id + "_row").style.display = "block";
-    document.getElementById(id).classList.add("selected");
+    document.getElementById(id).style.backgroundColor = "rgba(" + CURRENT_COLOR + ", " + 0.5 + ")";
     try{
         document.getElementById("table_" + id).style.display = "block";
     }
@@ -57,6 +60,14 @@ function get_data() {
             console.log(data);
             build_rows(days);
         }
+    }
+    
+    document.getElementById("today").style.backgroundColor = "rgba(" + CURRENT_COLOR + ", " + 0.5 + ")";
+    if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+        document.getElementById("settings_icon").src = "settings_b.svg";
+    }
+    else {
+        document.getElementById("settings_icon").src = "settings_w.svg";
     }
 }
 
@@ -186,10 +197,12 @@ function switch_theme(id) {
     if(id=="escuro"){
         document.body.style.backgroundColor="rgb(37, 37, 37)";
         document.body.style.color="rgb(245, 245, 245)";
+        document.getElementById("settings_icon").src = "settings_w.svg";
     }
     else if (id=="claro") {
         document.body.style.backgroundColor="rgb(245, 245, 245)";
         document.body.style.color="rgb(37, 37, 37)";
+        document.getElementById("settings_icon").src = "settings_b.svg";
     }
 }
 
@@ -202,7 +215,11 @@ function switch_colors(color) {
     tables = document.getElementsByClassName("row");
     change_color(tables,"backgroundColor",color, 0.2)
     document.getElementById("location_search").style.backgroundColor = "rgba(" + color + ", 0.4)";
-
+    selected = document.getElementsByClassName("selected");
+    for(var i=0; i<selected.length; i++){
+        selected[i].setAttribute("style", "backgroundColor: rgba(" + color + ", 0.5)");
+    }
+    CURRENT_COLOR = color;
     
 }
 
