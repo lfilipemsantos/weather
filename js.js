@@ -1,6 +1,3 @@
-CURRENT_COLOR = "114, 197, 197";
-
-
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', function() {
       navigator.serviceWorker.register('/sw.js').then(function(registration) {
@@ -11,14 +8,30 @@ if ('serviceWorker' in navigator) {
         console.log('ServiceWorker registration failed: ', err);
       });
     });
-  }
+}
+
+function init() {
+    if(localStorage["theme"]) {
+        switch_theme(localStorage["theme"]);
+    }
+    else {
+        switch_theme("claro");
+    }
+    get_data();
+    if(localStorage["color_theme"]) {
+        switch_colors(localStorage["color_theme"]);
+        document.getElementById("today").style.backgroundColor = "rgba(" + localStorage["color_theme"] + ", " + 0.5 + ")";
+
+    }
+    
+}
 
 
 function switch_tab(id) {
     var main = ["today", "tomorrow", "next_days", "settings", "about"];
     for (let i = 0; i < main.length; i++) {
         document.getElementById(main[i] + "_row").style.display = "none";
-        document.getElementById(main[i]).style.backgroundColor = "rgba(" + CURRENT_COLOR + ", " + 0.1 + ")";
+        document.getElementById(main[i]).style.backgroundColor = "rgba(" + localStorage["color_theme"] + ", " + 0.1 + ")";
         try{
             document.getElementById("table_" + main[i]).style.display = "none";
         }
@@ -27,7 +40,7 @@ function switch_tab(id) {
         }
     }
     document.getElementById(id + "_row").style.display = "block";
-    document.getElementById(id).style.backgroundColor = "rgba(" + CURRENT_COLOR + ", " + 0.5 + ")";
+    document.getElementById(id).style.backgroundColor = "rgba(" + localStorage["color_theme"] + ", " + 0.5 + ")";
     try{
         document.getElementById("table_" + id).style.display = "block";
     }
@@ -38,6 +51,7 @@ function switch_tab(id) {
 }
 
 function get_data() {
+
     //make request to api
     var requestURL = "https://api.ipma.pt/public-data/forecast/aggregate/1182100.json"
     var request = new XMLHttpRequest();
@@ -61,14 +75,6 @@ function get_data() {
             console.log(data);
             build_rows(days);
         }
-    }
-    
-    document.getElementById("today").style.backgroundColor = "rgba(" + CURRENT_COLOR + ", " + 0.5 + ")";
-    if (window.matchMedia('(prefers-color-scheme: light)').matches) {
-        document.getElementById("settings_icon").src = "settings_b.svg";
-    }
-    else {
-        document.getElementById("settings_icon").src = "settings_w.svg";
     }
 }
 
@@ -143,6 +149,13 @@ function build_rows(days) {
             document.getElementById(inner_id).appendChild(row);
         }
     }
+
+    
+    if(localStorage["color_theme"]) {
+        switch_colors(localStorage["color_theme"]);
+        document.getElementById("today").style.backgroundColor = "rgba(" + localStorage["color_theme"] + ", " + 0.5 + ")";
+
+    }
 }
 
 function build_arrays(data, today_str, tomorrow_str) {
@@ -205,6 +218,8 @@ function switch_theme(id) {
         document.body.style.color="rgb(37, 37, 37)";
         document.getElementById("settings_icon").src = "settings_b.svg";
     }
+    
+    localStorage["theme"] = id;
 }
 
 function switch_colors(color) {
@@ -213,15 +228,11 @@ function switch_colors(color) {
     change_color(buttons,"border", color, 0.5)
     tables = document.getElementsByClassName("content_table");
     change_color(tables,"backgroundColor",color, 0.2)
-    tables = document.getElementsByClassName("row");
-    change_color(tables,"backgroundColor",color, 0.2)
+    rows = document.getElementsByClassName("row");
+    change_color(rows,"backgroundColor",color, 0.2)
     document.getElementById("location_search").style.backgroundColor = "rgba(" + color + ", 0.4)";
-    selected = document.getElementsByClassName("selected");
-    for(var i=0; i<selected.length; i++){
-        selected[i].setAttribute("style", "backgroundColor: rgba(" + color + ", 0.5)");
-    }
-    CURRENT_COLOR = color;
-    
+
+    localStorage['color_theme'] = color
 }
 
 function change_color(obj, element, color, transparency) {

@@ -11,7 +11,7 @@
         <script type='text/javascript' src='js.js'></script>
     </head>
 
-    <body onload="get_data()">
+    <body onload="init()">
         <div id="hero_div">
             <div id="search_container">
                 <input id="location_search" type="text" placeholder="Tondela, Viseu">
@@ -112,6 +112,9 @@
                 <h4>Cor de destaque</h4>
             </div>
             <div class="inner" id="cores" style="height: 50px; margin-top:10px;">
+                <div class="color_button" onclick="switch_colors('114, 197, 197')" style="background-color: rgb(114, 197, 197);">
+                    <div style="width: 100%; height: 100%;"></div>
+                </div>
                 <div class="color_button" onclick="switch_colors('192, 133, 106')" style="background-color: rgb(192, 133, 106);">
                     <div style="width: 100%; height: 100%;"></div>
                 </div>
@@ -151,7 +154,7 @@
                     <p>Sobre</p>
                 </div>
                 <div class="button" id="settings" onclick="switch_tab('settings')" style="width:38px;border-radius: 50%;">
-                    <div style="width: 38px; height: 38px;"><img id="settings_icon" src="settings_w.svg" alt="settings icon" style="height: 20px; margin-left: 9px; margin-top: 9px;"></div>
+                    <div style="width: 38px; height: 38px;"><img id="settings_icon" src="settings_b.svg" alt="settings icon" style="height: 20px; margin-left: 9px; margin-top: 9px;"></div>
                 </div>
             </div>
         </div>
