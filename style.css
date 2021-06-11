@@ -96,6 +96,12 @@ body {
     box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.4);    
 }
 
+.day_row{
+    width: 500px;
+    background-color: blue;
+    margin-bottom:20px
+}
+
 .inner {
     width:max-content;
     height: 190px;

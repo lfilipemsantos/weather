@@ -67,7 +67,6 @@ function get_data() {
 
     request.onreadystatechange = function() {
         if (request.readyState == XMLHttpRequest.DONE) {
-            var no_data = new Array ( 0 , 24 , 49 );
             data = request.response;
 
 
@@ -113,12 +112,11 @@ function build_table(current_day, current_hour) {
 
 function build_rows(days) {
     for(j=0;j<days.length;j++) {
+        console.log(days[j])
         if(j==0){
-            var row_id = "today";
             var inner_id = "innerToday";
         }
         else if(j==1) {
-            var row_id = "tomorrow";
             var inner_id = "innerTomorrow";
         }
         for(i=0;i<days[j].length;i++) {
@@ -138,11 +136,11 @@ function build_rows(days) {
                 weather_icon.src = "icons/d" + parseInt(days[j][i]["idTipoTempo"]) + ".svg";
             }
             temp.setAttribute('id', i);
-            temp.setAttribute('class', "hour_temp");
-            row.setAttribute('class', 'row');
+            temp.classList.add('class', "hour_temp");
+            row.classList.add('class', 'row');
             temp.textContent = days[j][i]["tMed"] + "ºC";
             hour_text.textContent = hour;
-            hour_text.setAttribute('class', "hour_time");
+            hour_text.classList.add('class', "hour_time");
             row.appendChild(temp);
             row.appendChild(weather_icon);
             row.appendChild(hour_text);
@@ -160,11 +158,9 @@ function build_rows(days) {
 function build_arrays(data, today_str, tomorrow_str) {
     var today = new Array();
     var tomorrow = new Array();
-    var next_days = new Array();
 
     var current_day;
     var current_hour;
-    var next_day;
 
     const current = new Date();
     const time = (current.toLocaleTimeString("pt-PT")).split(':',1);
@@ -172,10 +168,6 @@ function build_arrays(data, today_str, tomorrow_str) {
     for(i=0; i<data.length; i++) {
         var hour_split = data[i]["dataPrev"].split("T",2)[1].split(":");
         var hour = hour_split[0] + ":" + hour_split[1];
-
-        if(!(data[i]["tMed"])){
-            next_days.push(data[i]);
-        }
 
         if(!(data[i]["tMed"]) && data[i]["dataPrev"].includes(today_str)) {
             current_day = data[i];
@@ -213,12 +205,23 @@ function build_arrays(data, today_str, tomorrow_str) {
 }
 
 function build_next_days(data) {
+    
+    var inner_id = "inner_next_days";
     for(i=0; i<data.length; i++) {
         var row = document.createElement('div');
         var max = document.createElement('p');
         var min = document.createElement('p');
         var date = document.createElement('p');
         var weather_icon = document.createElement('img')
+        row.classList.add('day_row');
+        max.textContent = data[i]["tMax"];
+        min.textContent = data[i]["tMin"];
+        date.textContent = data[i]["dataPrev"];
+        
+        row.appendChild(max);
+        row.appendChild(min);
+        row.appendChild(date);
+        document.getElementById(inner_id).appendChild(row);
     }
 }
 
@@ -246,6 +249,8 @@ function switch_colors(color) {
     rows = document.getElementsByClassName("row");
     change_color(rows,"backgroundColor",color, 0.2)
     document.getElementById("location_search").style.backgroundColor = "rgba(" + color + ", 0.4)";
+    document.getElementById("about_row").style.backgroundColor = "rgba(" + color + ", 0.4)";
+    
 
     localStorage['color_theme'] = color
 }
