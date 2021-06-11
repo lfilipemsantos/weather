@@ -112,7 +112,6 @@ function build_table(current_day, current_hour) {
 
 function build_rows(days) {
     for(j=0;j<days.length;j++) {
-        console.log(days[j])
         if(j==0){
             var inner_id = "innerToday";
         }
@@ -158,9 +157,11 @@ function build_rows(days) {
 function build_arrays(data, today_str, tomorrow_str) {
     var today = new Array();
     var tomorrow = new Array();
+    var next_days =new Array();
 
     var current_day;
     var current_hour;
+    var next_day;
 
     const current = new Date();
     const time = (current.toLocaleTimeString("pt-PT")).split(':',1);
@@ -169,14 +170,14 @@ function build_arrays(data, today_str, tomorrow_str) {
         var hour_split = data[i]["dataPrev"].split("T",2)[1].split(":");
         var hour = hour_split[0] + ":" + hour_split[1];
 
+        if(!(data[i]["tMed"])) {
+            next_days.push(data[i]);
+        }
         if(!(data[i]["tMed"]) && data[i]["dataPrev"].includes(today_str)) {
             current_day = data[i];
         }
         else if(!(data[i]["tMed"]) && data[i]["dataPrev"].includes(tomorrow_str)) {
             next_day = data[i];
-        }
-        else if(!(data[i]["tMed"])) {
-            continue;
         }
         else{
             if(data[i]["dataPrev"].includes(today_str)) {
@@ -201,11 +202,11 @@ function build_arrays(data, today_str, tomorrow_str) {
     build_table(next_day, null);
     build_next_days(next_days)
 
-    return new Array(today, tomorrow, next_days);
+    return new Array(today, tomorrow);
 }
 
 function build_next_days(data) {
-    
+    console.log(data);
     var inner_id = "inner_next_days";
     for(i=0; i<data.length; i++) {
         var row = document.createElement('div');
@@ -247,6 +248,8 @@ function switch_colors(color) {
     tables = document.getElementsByClassName("content_table");
     change_color(tables,"backgroundColor",color, 0.2)
     rows = document.getElementsByClassName("row");
+    change_color(rows,"backgroundColor",color, 0.2)
+    rows = document.getElementsByClassName("day_row");
     change_color(rows,"backgroundColor",color, 0.2)
     document.getElementById("location_search").style.backgroundColor = "rgba(" + color + ", 0.4)";
     document.getElementById("about_row").style.backgroundColor = "rgba(" + color + ", 0.4)";

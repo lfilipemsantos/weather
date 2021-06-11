@@ -98,7 +98,7 @@ body {
 
 .day_row{
     width: 500px;
-    background-color: blue;
+    background-color: rgba(114, 197, 197, 0.2);;
     margin-bottom:20px
 }
 
