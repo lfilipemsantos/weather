@@ -192,3 +192,21 @@ function switch_theme(id) {
         document.body.style.color="rgb(37, 37, 37)";
     }
 }
+
+function switch_colors(color) {
+    buttons = document.getElementsByClassName("button");
+    change_color(buttons, color, 0.1)
+    tables = document.getElementsByClassName("content_table");
+    change_color(tables,color, 0.5)
+    tables = document.getElementsByClassName("row");
+    change_color(tables,color, 0.5)
+    document.getElementById("location_search").style.backgroundColor = "rgba(" + color + ", 0.4)";
+
+    
+}
+
+function change_color(obj, color, transparency) {
+    for (var i = 0; i < obj.length; i++) {
+        obj[i].style.backgroundColor = "rgba(" + color + ", " + transparency +")";
+    }
+}
