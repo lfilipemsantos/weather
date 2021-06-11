@@ -149,7 +149,6 @@ function build_rows(days) {
             document.getElementById(inner_id).appendChild(row);
         }
     }
-
     
     if(localStorage["color_theme"]) {
         switch_colors(localStorage["color_theme"]);
@@ -161,6 +160,7 @@ function build_rows(days) {
 function build_arrays(data, today_str, tomorrow_str) {
     var today = new Array();
     var tomorrow = new Array();
+    var next_days = new Array();
 
     var current_day;
     var current_hour;
@@ -172,6 +172,10 @@ function build_arrays(data, today_str, tomorrow_str) {
     for(i=0; i<data.length; i++) {
         var hour_split = data[i]["dataPrev"].split("T",2)[1].split(":");
         var hour = hour_split[0] + ":" + hour_split[1];
+
+        if(!(data[i]["tMed"])){
+            next_days.push(data[i]);
+        }
 
         if(!(data[i]["tMed"]) && data[i]["dataPrev"].includes(today_str)) {
             current_day = data[i];
@@ -203,8 +207,19 @@ function build_arrays(data, today_str, tomorrow_str) {
 
     build_table(current_day, current_hour);
     build_table(next_day, null);
+    build_next_days(next_days)
 
-    return new Array(today, tomorrow);
+    return new Array(today, tomorrow, next_days);
+}
+
+function build_next_days(data) {
+    for(i=0; i<data.length; i++) {
+        var row = document.createElement('div');
+        var max = document.createElement('p');
+        var min = document.createElement('p');
+        var date = document.createElement('p');
+        var weather_icon = document.createElement('img')
+    }
 }
 
 function switch_theme(id) {
