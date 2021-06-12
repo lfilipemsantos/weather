@@ -217,7 +217,7 @@ function build_next_days(data) {
         row.classList.add('day_row');
         max.textContent = data[i]["tMax"];
         min.textContent = data[i]["tMin"];
-        date.textContent = data[i]["dataPrev"];
+        date.textContent = data[i]["dataPrev"].split("T",1)[0];
         
         row.appendChild(max);
         row.appendChild(min);
