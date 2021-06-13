@@ -98,25 +98,27 @@ body {
 
 .day_row{
     width: 90%;
-    height: 50px;
-    background-color: rgba(114, 197, 197, 0.2);;
+    max-width: 400px;
+    height: 60px;
+    background-color: rgba(114, 197, 197, 0.2);
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 15px;
     border-radius: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 5%;
 }
 
 .day_row > p {
+    width: 80%;
     display: inline-block;
 }
 
 .temp_container {
+    width: 15%;
     height: 40px;
     display:inline-block;
-    margin-right: 0px;
-    margin-left: 170px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .temp_container > p {
