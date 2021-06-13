@@ -210,18 +210,24 @@ function build_next_days(data) {
     var inner_id = "inner_next_days";
     for(i=0; i<data.length; i++) {
         var row = document.createElement('div');
+        var temp_container = document.createElement('div');
         var max = document.createElement('p');
         var min = document.createElement('p');
         var date = document.createElement('p');
-        var weather_icon = document.createElement('img')
+        var weather_icon = document.createElement('img');
+        temp_container.classList.add("temp_container");
         row.classList.add('day_row');
-        max.textContent = data[i]["tMax"];
-        min.textContent = data[i]["tMin"];
         date.textContent = data[i]["dataPrev"].split("T",1)[0];
+        date.classList.add("date_prev")
+        max.textContent = data[i]["tMax"];
+        max.classList.add("max")
+        min.textContent = data[i]["tMin"];
+        min.classList.add("min")
         
-        row.appendChild(max);
-        row.appendChild(min);
         row.appendChild(date);
+        temp_container.appendChild(max);
+        temp_container.appendChild(min);
+        row.append(temp_container);
         document.getElementById(inner_id).appendChild(row);
     }
 }
