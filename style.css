@@ -109,7 +109,7 @@ body {
 }
 
 .day_row > p {
-    width: 80%;
+    width: 50%;
     display: inline-block;
 }
 
@@ -119,6 +119,16 @@ body {
     display:inline-block;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.icon_container {
+    width: 30%;
+    margin:0;
+    display:inline-block;
+}
+.nd_weather_icon{
+    height: 40px;
+    width: 100%;
 }
 
 .temp_container > p {

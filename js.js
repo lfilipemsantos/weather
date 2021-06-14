@@ -211,11 +211,19 @@ function build_next_days(data) {
     for(i=0; i<data.length; i++) {
         var row = document.createElement('div');
         var temp_container = document.createElement('div');
+        var icon_container = document.createElement('div');
+        icon_container.classList.add("icon_container");
         var max = document.createElement('p');
         var min = document.createElement('p');
         var date = document.createElement('p');
         var weather_icon = document.createElement('img');
         temp_container.classList.add("temp_container");
+        
+        weather_icon.setAttribute("class", "nd_weather_icon");
+        weather_icon.setAttribute("alt", "weather_icon");
+        weather_icon.src = "icons/d" + parseInt(data[i]["idTipoTempo"]) + ".svg";
+
+
         row.classList.add('day_row');
         date.textContent = data[i]["dataPrev"].split("T",1)[0];
         date.classList.add("date_prev")
@@ -225,6 +233,8 @@ function build_next_days(data) {
         min.classList.add("min")
         
         row.appendChild(date);
+        icon_container.appendChild(weather_icon);
+        row.appendChild(icon_container)
         temp_container.appendChild(max);
         temp_container.appendChild(min);
         row.append(temp_container);
