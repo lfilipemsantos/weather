@@ -109,6 +109,10 @@ body {
 }
 
 .day_row > p {
+    width: 100%;
+}
+
+.date_container {
     width: 50%;
     display: inline-block;
 }

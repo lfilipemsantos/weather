@@ -206,18 +206,35 @@ function build_arrays(data, today_str, tomorrow_str) {
 }
 
 function build_next_days(data) {
+    var dict = {
+        0: "Domingo",
+        1: "Segunda-feira",
+        2: "Terça-feira",
+        3: "Quarta-feira",
+        4: "Quinta-feira",
+        5: "Sexta-feira",
+        6: "Sábado",     
+     };
+
+
     console.log(data);
     var inner_id = "inner_next_days";
     for(i=0; i<data.length; i++) {
         var row = document.createElement('div');
         var temp_container = document.createElement('div');
+        var date_container = document.createElement('div');
         var icon_container = document.createElement('div');
         icon_container.classList.add("icon_container");
         var max = document.createElement('p');
         var min = document.createElement('p');
         var date = document.createElement('p');
+        var week_day = document.createElement('small');
         var weather_icon = document.createElement('img');
         temp_container.classList.add("temp_container");
+        date_container.classList.add("date_container");
+
+        var date_day = new Date(data[i]["dataPrev"].split("T",1)[0]);
+        week_day.textContent = dict[date_day.getDay()];
         
         weather_icon.setAttribute("class", "nd_weather_icon");
         weather_icon.setAttribute("alt", "weather_icon");
@@ -227,12 +244,14 @@ function build_next_days(data) {
         row.classList.add('day_row');
         date.textContent = data[i]["dataPrev"].split("T",1)[0];
         date.classList.add("date_prev")
-        max.textContent = data[i]["tMax"];
+        max.textContent = Math.round(data[i]["tMax"]) + "ºC";
         max.classList.add("max")
-        min.textContent = data[i]["tMin"];
+        min.textContent = Math.round(data[i]["tMin"]) + "ºC";
         min.classList.add("min")
-        
-        row.appendChild(date);
+
+        date_container.appendChild(date);
+        date_container.appendChild(week_day);
+        row.appendChild(date_container);
         icon_container.appendChild(weather_icon);
         row.appendChild(icon_container)
         temp_container.appendChild(max);
