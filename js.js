@@ -17,6 +17,7 @@ function init() {
     else {
         switch_theme("claro");
     }
+    document.getElementById("today").classList.add("selected");
     get_data();
     if(localStorage["color_theme"]) {
         switch_colors(localStorage["color_theme"]);
@@ -157,7 +158,7 @@ function build_rows(days) {
 function build_arrays(data, today_str, tomorrow_str) {
     var today = new Array();
     var tomorrow = new Array();
-    var next_days =new Array();
+    var next_days = new Array();
 
     var current_day;
     var current_hour;
@@ -288,6 +289,7 @@ function switch_colors(color) {
     change_color(rows,"backgroundColor",color, 0.2)
     document.getElementById("location_search").style.backgroundColor = "rgba(" + color + ", 0.4)";
     document.getElementById("about_row").style.backgroundColor = "rgba(" + color + ", 0.4)";
+    document.getElementById("apply-color-button").style.backgroundColor = "rgba(" + color + ", 0.1)";
     
 
     localStorage['color_theme'] = color
@@ -301,5 +303,38 @@ function change_color(obj, element, color, transparency) {
         else if (element == "border") {
             obj[i].style.border = "rgba(" + color + ", " + transparency +") 1px solid";
         }
+    }
+}
+
+function set_rgb() {
+    red = document.getElementById("red").value;
+    green = document.getElementById("green").value;
+    blue = document.getElementById("blue").value;
+
+    var color_values = [red, green, blue];
+
+    for (let i = 0; i < color_values.length; i++) {
+        if (!(is_in_range(parseInt(color_values[i])))) {
+            console.log(is_in_range(parseInt(color_values[i])))
+            document.getElementById("color-warning").style.display = "block";
+            setTimeout(
+                function() {
+                    document.getElementById("color-warning").style.display = "none";
+                },
+                2000
+            );
+            return;
+        }
+    }
+    console.log(red);
+    switch_colors(red + "," + green + "," + blue)
+}
+
+function is_in_range(value) {
+    if (value >= 0 && value <= 255) {
+        return true;
+    }
+    else {
+        return false;
     }
 }

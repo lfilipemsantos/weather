@@ -108,9 +108,6 @@
             <div style="width: 90%; margin-left: auto; margin-right: auto;margin-top: 15px;">
                 <h4>Cor de destaque</h4>
             </div>
-            <div style="width: 90%; margin-left: auto; margin-right: auto;margin-top: 15px;">
-                <input  type="color">Cor de destaque</h4>
-            </div>
             <div class="inner" id="cores" style="height: 50px; margin-top:10px;">
                 <div class="color_button" onclick="switch_colors('114, 197, 197')" style="background-color: rgb(114, 197, 197);">
                     <div style="width: 100%; height: 100%;"></div>
@@ -126,6 +123,18 @@
                 </div>
                 <div class="color_button" onclick="switch_colors('146, 106, 192')" style="background-color: rgb(146, 106, 192);">
                     <div style="width: 100%; height: 100%;"></div>
+                </div>
+            </div>
+            
+            <div style="width: 90%; margin-left: auto; margin-right: auto;margin-top: 15px;">
+                <input class="color-textb" id="red" type="text" placeholder="Red"></input>
+                <input class="color-textb" id="green" type="text" placeholder="Green"></input>
+                <input class="color-textb" id="blue" type="text" placeholder="Blue"></input>
+                <div id="apply-color-button" style="display: inline-block;" onclick="set_rgb()">
+                    <p>Aplicar</p>
+                </div>
+                <div id="color-warning" style="width: 100%; display: none;">
+                    <small style="color:red;">Valores entre 0 e 255!</small>
                 </div>
             </div>
         </div>
