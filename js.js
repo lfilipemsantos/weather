@@ -29,7 +29,7 @@ function init() {
 
 
 function switch_tab(id) {
-    var main = ["today", "tomorrow", "next_days", "settings", "about"];
+    var main = ["today", "tomorrow", "next_days", "settings", "about", "location"];
     for (let i = 0; i < main.length; i++) {
         document.getElementById(main[i] + "_row").style.display = "none";
         document.getElementById(main[i]).style.backgroundColor = "rgba(" + localStorage["color_theme"] + ", " + 0.1 + ")";
@@ -287,7 +287,7 @@ function switch_colors(color) {
     change_color(rows,"backgroundColor",color, 0.2)
     rows = document.getElementsByClassName("day_row");
     change_color(rows,"backgroundColor",color, 0.2)
-    document.getElementById("location_search").style.backgroundColor = "rgba(" + color + ", 0.4)";
+    document.getElementById("location").style.backgroundColor = "rgba(" + color + ", 0.4)";
     document.getElementById("about_row").style.backgroundColor = "rgba(" + color + ", 0.4)";
     document.getElementById("apply-color-button").style.backgroundColor = "rgba(" + color + ", 0.1)";
     
@@ -336,5 +336,23 @@ function is_in_range(value) {
     }
     else {
         return false;
+    }
+}
+
+function search_location() {
+    switch_tab('location');
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("location");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("location-list");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
     }
 }

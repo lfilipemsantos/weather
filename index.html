@@ -14,7 +14,7 @@
     <body onload="init()">
         <div id="hero_div">
             <div id="search_container">
-                <input id="location_search" type="text" placeholder="Tondela, Viseu">
+                <input autocomplete="off" id="location" type="text" onkeyup="search_location()" placeholder="Tondela, Viseu">
             </div>
         </div>
 
@@ -32,13 +32,26 @@
             </div>
         </div>
 
+        <div class="rows" id="location_row" style="height: 300px; background-color: rgba(114, 197, 197, 0.2);width:80%; max-width: 400px;border-radius: 10px;margin-top: 30px;">
 
+            <ul id="location-list">
+                <li><a href="#">Tondela</a></li>
+                <li><a href="#">Viseu</a></li>
+              
+                <li><a href="#">Santa Comba Dão</a></li>
+                <li><a href="#">Nandufe</a></li>
+              
+                <li><a href="#">Carvalhal</a></li>
+                <li><a href="#">Lisboa</a></li>
+                <li><a href="#">Porto</a></li>
+              </ul>
+        </div>  
 
         <div id="table_today" class="table">
             <div id="table_container" style="height: 100%; max-width: 400px;">
                 <table class="content_table" style="background-color: rgba(114, 197, 197, 0.2); width: 100%;height: 100%; margin-left: auto; margin-right: auto;text-align: center; padding-bottom: 10px;border-radius: 10px;vertical-align: middle;">
                     <tr>
-                        <td id="location" colspan="3" style="font-size: 15px; padding-top:10px;">Tondela, Viseu</td>
+                        <td colspan="3" style="font-size: 15px; padding-top:10px;">Tondela, Viseu</td>
                     </tr>
                     <tr>
                         <th id="table_temp" colspan="3" style="font-size: 50px;padding-bottom: 20px;"></th>
@@ -134,7 +147,7 @@
                     <p>Aplicar</p>
                 </div>
                 <div id="color-warning" style="width: 100%; display: none;">
-                    <small style="color:red;">Valores entre 0 e 255!</small>
+                    <small style="color:red;">Apenas valores entre 0 e 255</small>
                 </div>
             </div>
         </div>

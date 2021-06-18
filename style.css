@@ -42,7 +42,7 @@ body {
     width: 258px;
 }
 
-#location_search {
+#location {
     background-color: rgba(114, 197, 197, 0.4);
     margin-right: auto;
     margin-left: auto;
@@ -280,10 +280,6 @@ body {
     width: 50px;
 }
 
-#location {
-
-}
-
 .weather_icon {
     height: 50px;
     width: 100%;
@@ -319,6 +315,10 @@ body {
     display: inline-block;
     box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.4);
     cursor: pointer;
+}
+
+#location_row {
+    display: none;
 }
 
 @media (prefers-color-scheme: light) {
