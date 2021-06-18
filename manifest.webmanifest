@@ -4,8 +4,8 @@
     "theme_color": "#ffffff",
     "background_color": "#299FC6",
     "display": "standalone",
-    "start_url": "/IPMA-weather/",
-    "scope":"/IPMA-weather/",
+    "start_url": "/weather/",
+    "scope":"/weather/",
     "icons": [
         {
           "src": "logos/IPMA-logo.png",
