@@ -291,6 +291,7 @@ body {
     background-color: whitesmoke;
     color: black;
 }
+
 #escuro_button {
     color: whitesmoke;
     background-color: rgb(37, 37, 37);
@@ -319,6 +320,11 @@ body {
 
 #location_row {
     display: none;
+    padding: 10px;
+}
+
+#location_row > ul {
+    height: 100%;
 }
 
 @media (prefers-color-scheme: light) {

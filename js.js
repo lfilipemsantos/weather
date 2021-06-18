@@ -266,11 +266,13 @@ function switch_theme(id) {
     if(id=="escuro"){
         document.body.style.backgroundColor="rgb(37, 37, 37)";
         document.body.style.color="rgb(245, 245, 245)";
+        document.getElementById("location").style.color="rgb(245, 245, 245)";
         document.getElementById("settings_icon").src = "settings_w.svg";
     }
     else if (id=="claro") {
         document.body.style.backgroundColor="rgb(245, 245, 245)";
         document.body.style.color="rgb(37, 37, 37)";
+        document.getElementById("location").style.color="rgb(37, 37, 37)";
         document.getElementById("settings_icon").src = "settings_b.svg";
     }
     
@@ -279,18 +281,18 @@ function switch_theme(id) {
 
 function switch_colors(color) {
     buttons = document.getElementsByClassName("button");
-    change_color(buttons,"backgroundColor", color, 0.1)
-    change_color(buttons,"border", color, 0.5)
+    change_color(buttons,"backgroundColor", color, 0.1);
+    change_color(buttons,"border", color, 0.5);
     tables = document.getElementsByClassName("content_table");
     change_color(tables,"backgroundColor",color, 0.2)
     rows = document.getElementsByClassName("row");
-    change_color(rows,"backgroundColor",color, 0.2)
+    change_color(rows,"backgroundColor",color, 0.2);
     rows = document.getElementsByClassName("day_row");
     change_color(rows,"backgroundColor",color, 0.2)
     document.getElementById("location").style.backgroundColor = "rgba(" + color + ", 0.4)";
     document.getElementById("about_row").style.backgroundColor = "rgba(" + color + ", 0.4)";
+    document.getElementById("location_row").style.backgroundColor = "rgba(" + color + ", 0.4)";
     document.getElementById("apply-color-button").style.backgroundColor = "rgba(" + color + ", 0.1)";
-    
 
     localStorage['color_theme'] = color
 }
@@ -341,14 +343,14 @@ function is_in_range(value) {
 
 function search_location() {
     switch_tab('location');
-    var input, filter, ul, li, a, i, txtValue;
+    var input, filter, ul, li, div, i, txtValue;
     input = document.getElementById("location");
     filter = input.value.toUpperCase();
     ul = document.getElementById("location-list");
     li = ul.getElementsByTagName("li");
     for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
+        div = li[i].getElementsByTagName("div")[0];
+        txtValue = div.textContent || a.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
             li[i].style.display = "";
         } else {
