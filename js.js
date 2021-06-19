@@ -11,6 +11,8 @@ if ('serviceWorker' in navigator) {
 }
 
 function init() {
+    build_locations(locations);
+
     if(localStorage["theme"]) {
         switch_theme(localStorage["theme"]);
     }
@@ -25,6 +27,19 @@ function init() {
 
     }
     
+}
+
+function build_locations(locations) {
+    for(var i = 0; i<locations.length; i++) {
+        for(var j = 0; j<locations[i]["localidade_distrito"].length; j++) {
+            console.log(locations[i]["localidade_distrito"][j])
+            var li = document.createElement('li');
+            var div = document.createElement('div');
+            div.textContent = locations[i]["localidade_distrito"][j]["local"] + ", " + locations[i]["nome_distrito"] + " ";
+            li.appendChild(div);
+            document.getElementById("location-list").appendChild(li)
+        }
+    }
 }
 
 
