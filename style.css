@@ -277,7 +277,7 @@ body {
 }
 
 .table_icons {
-    width: 50px;
+    width: 40px;
 }
 
 .weather_icon {
@@ -341,5 +341,12 @@ body {
     body { 
         background-color: rgb(37, 37, 37); 
         color: whitesmoke;
+    }
+}
+
+@media only screen and (min-height:715px) {
+    #bottom-options {
+        position: fixed;
+        bottom: 0;
     }
 }
