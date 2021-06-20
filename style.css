@@ -66,7 +66,7 @@ body {
 
 .rows {
     margin-top: 40px;
-    height: 180px;
+    height: 175px;
     width: 100%;
     max-width: 1000px;
     margin-left: auto;
@@ -77,7 +77,7 @@ body {
 .row {
     width: 90px;
     background-color:rgba(114, 197, 197, 0.2);
-    height: 180px;
+    height: 175px;
     margin-left: 5px;
     margin-right: 5px;
     border-radius: 5px;
@@ -131,7 +131,7 @@ body {
     display:inline-block;
 }
 .nd_weather_icon{
-    height: 40px;
+    height: 30px;
     width: 100%;
 }
 
@@ -145,7 +145,7 @@ body {
 
 .inner {
     width:max-content;
-    height: 190px;
+    height: max-content;
     padding-left: 2.5px;
     padding-right: 2.5px;
     margin-left: auto;
