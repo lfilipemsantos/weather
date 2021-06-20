@@ -179,11 +179,11 @@ function build_rows(days) {
                 weather_icon.src = "icons/d" + parseInt(days[j][i]["idTipoTempo"]) + ".svg";
             }
             temp.setAttribute('id', i);
-            temp.classList.add('class', "hour_temp");
-            row.classList.add('class', 'row');
+            temp.classList.add("hour_temp");
+            row.classList.add('row');
             temp.textContent = days[j][i]["tMed"] + "ºC";
             hour_text.textContent = hour;
-            hour_text.classList.add('class', "hour_time");
+            hour_text.classList.add("hour_time");
             row.appendChild(temp);
             row.appendChild(weather_icon);
             row.appendChild(hour_text);
