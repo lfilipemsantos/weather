@@ -10,6 +10,7 @@ if ('serviceWorker' in navigator) {
     });
 }
 
+
 function init() {
     build_locations(locations);
 
@@ -20,14 +21,19 @@ function init() {
         switch_theme("claro");
     }
     document.getElementById("today").classList.add("selected");
-    get_data();
     if(localStorage["color_theme"]) {
         switch_colors(localStorage["color_theme"]);
         document.getElementById("today").style.backgroundColor = "rgba(" + localStorage["color_theme"] + ", " + 0.5 + ")";
 
     }
-    
+
+    if(!(localStorage["local_id"])){
+        localStorage["local_id"] = 1182100
+    }
+
+    get_data(localStorage["local_id"]);
 }
+
 
 function build_locations(locations) {
     for(var i = 0; i<locations.length; i++) {
@@ -36,6 +42,7 @@ function build_locations(locations) {
             var li = document.createElement('li');
             var div = document.createElement('div');
             div.textContent = locations[i]["localidade_distrito"][j]["local"] + ", " + locations[i]["nome_distrito"] + " ";
+            li.setAttribute("onclick", "get_data(" + locations[i]['localidade_distrito'][j]['globalIdLocal'] + ")");
             li.appendChild(div);
             document.getElementById("location-list").appendChild(li)
         }
@@ -62,14 +69,14 @@ function switch_tab(id) {
     }
     catch{
         console.log('error')
-    }
-    
+    }  
 }
 
-function get_data() {
 
+function get_data(local_id) {
+    localStorage["local_id"] = local_id;
     //make request to api
-    var requestURL = "https://api.ipma.pt/public-data/forecast/aggregate/1182100.json"
+    var requestURL = "https://api.ipma.pt/public-data/forecast/aggregate/" + local_id + ".json"
     var request = new XMLHttpRequest();
     request.open('GET', requestURL);
     request.responseType = 'json';
@@ -85,46 +92,67 @@ function get_data() {
         if (request.readyState == XMLHttpRequest.DONE) {
             data = request.response;
 
-
+            clear_rows();
             var days = build_arrays(data, today_str, tomorrow_str)
             console.log(data);
             build_rows(days);
+            set_location_name(local_id); 
+            switch_tab('today');
+            document.getElementById("location").value = "";
         }
     }
 }
+
+
+function set_location_name(local_id) {
+    for(var i = 0; i<locations.length; i++) {
+        for(var j = 0; j<locations[i]["localidade_distrito"].length; j++) {
+            if(locations[i]["localidade_distrito"][j]["globalIdLocal"] == local_id) {
+                document.getElementById("location-text").textContent = locations[i]["localidade_distrito"][j]["local"] + ", " + locations[i]["nome_distrito"]
+                document.getElementById("location-text-T").textContent = locations[i]["localidade_distrito"][j]["local"] + ", " + locations[i]["nome_distrito"]
+
+                return;
+            }
+        }
+    }
+}
+
+
+function clear_rows() {
+    var rows = ["innerToday", "innerTomorrow", "inner_next_days"];
+    for (i=0; i<rows.length; i++) {
+        var row = document.getElementById(rows[i]);
+        while (row.firstChild) {
+            row.removeChild(row.lastChild);
+          }
+    }
+}
+
 
 function build_table(current_day, current_hour) {
     if(current_hour) {
         document.getElementById("table_temp").textContent = current_hour["tMed"] + "ºC";
-        var icon_name = ["tMax", "iUv", "tMin", "probabilidadePrecipita"];
+        text = document.getElementsByClassName("table-text")
     }
     else {
-        var icon_name = ["tMaxT", "iUvT", "tMinT", "probabilidadePrecipitaT"];
+        text = document.getElementsByClassName("table-text-T")
     }
-    document.getElementById("data_update").textContent = ("Última atualização: " + current_day["dataUpdate"]).replace("T", " às ")
+    document.getElementById("data-update").textContent = ("Última atualização: " + current_day["dataUpdate"]).replace("T", " às ")
+    document.getElementById("data-update-T").textContent = ("Última atualização: " + current_day["dataUpdate"]).replace("T", " às ")
     
-    
-
-    for (let i = 0; i < icon_name.length; i++) {
-        var icon = document.createElement('img');
-        icon.setAttribute("alt", icon_name[i]);
-        icon.src=("icons/icons_table/"+ icon_name[i] + ".svg").replace("T", "");
-        icon.classList.add("table_icons")
-
-        var text = document.createElement('p');
-        if(icon_name[i].includes("proba")) {
-            text.textContent = " " + current_day[icon_name[i].replace("T", "")] + "%";
+    for (let i = 0; i < text.length; i++) {
+        if(text[i].id.includes("proba")) {
+            text[i].textContent = " " + parseInt(current_day[text[i].id.replace("text-", "")]) + "%";
         }
-        else if(icon_name[i].includes("tM")) {
-            text.textContent = " " + current_day[icon_name[i].replace("T", "")] + "ºC";
+        else if(text[i].id.includes("tM")) {
+            text[i].textContent = " " + parseInt(current_day[text[i].id.replace("text-", "")]) + "ºC";
         }
         else {
-            text.textContent = " " + current_day[icon_name[i].replace("T", "")];
+            text[i].textContent = " " + current_day[text[i].id.replace("text-", "")];
         }
-        text.prepend(icon);
-        document.getElementById(icon_name[i]).appendChild(text);
     }
 }
+
 
 function build_rows(days) {
     for(j=0;j<days.length;j++) {
@@ -166,9 +194,9 @@ function build_rows(days) {
     if(localStorage["color_theme"]) {
         switch_colors(localStorage["color_theme"]);
         document.getElementById("today").style.backgroundColor = "rgba(" + localStorage["color_theme"] + ", " + 0.5 + ")";
-
     }
 }
+
 
 function build_arrays(data, today_str, tomorrow_str) {
     var today = new Array();
@@ -277,6 +305,7 @@ function build_next_days(data) {
     }
 }
 
+
 function switch_theme(id) {
     if(id=="escuro"){
         document.body.style.backgroundColor="rgb(37, 37, 37)";
@@ -293,6 +322,7 @@ function switch_theme(id) {
     
     localStorage["theme"] = id;
 }
+
 
 function switch_colors(color) {
     buttons = document.getElementsByClassName("button");
@@ -312,6 +342,7 @@ function switch_colors(color) {
     localStorage['color_theme'] = color
 }
 
+
 function change_color(obj, element, color, transparency) {
     for (var i = 0; i < obj.length; i++) {
         if (element == "backgroundColor"){
@@ -322,6 +353,7 @@ function change_color(obj, element, color, transparency) {
         }
     }
 }
+
 
 function set_rgb() {
     red = document.getElementById("red").value;
@@ -347,6 +379,7 @@ function set_rgb() {
     switch_colors(red + "," + green + "," + blue)
 }
 
+
 function is_in_range(value) {
     if (value >= 0 && value <= 255) {
         return true;
@@ -355,6 +388,7 @@ function is_in_range(value) {
         return false;
     }
 }
+
 
 function search_location() {
     switch_tab('location');
