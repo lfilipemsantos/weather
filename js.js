@@ -312,12 +312,14 @@ function switch_theme(id) {
         document.body.style.color="rgb(245, 245, 245)";
         document.getElementById("location").style.color="rgb(245, 245, 245)";
         document.getElementById("settings_icon").src = "settings_w.svg";
+        document.getElementById("update_icon").src = "update_w.svg";
     }
     else if (id=="claro") {
         document.body.style.backgroundColor="rgb(245, 245, 245)";
         document.body.style.color="rgb(37, 37, 37)";
         document.getElementById("location").style.color="rgb(37, 37, 37)";
         document.getElementById("settings_icon").src = "settings_b.svg";
+        document.getElementById("update_icon").src = "update_b.svg";
     }
     
     localStorage["theme"] = id;
