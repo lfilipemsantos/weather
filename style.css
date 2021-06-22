@@ -59,7 +59,7 @@ body {
     height: auto;
     width: 85%; 
     max-width: 400px; 
-    margin-top: 30px;
+    margin-top: 20px;
     margin-left: auto; 
     margin-right: auto
 }
@@ -206,7 +206,7 @@ body {
 }
 
 #time_options {
-    margin-top: 30px;
+    margin-top: 20px;
     height: 50px;
     width: 100%;
     max-width: 1000px;
@@ -325,6 +325,10 @@ body {
 
 #location_row > ul {
     height: 100%;
+}
+
+#location-list > li {
+    margin-bottom: 10px;
 }
 
 @media (prefers-color-scheme: light) {

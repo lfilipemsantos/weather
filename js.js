@@ -313,6 +313,7 @@ function switch_theme(id) {
         document.getElementById("location").style.color="rgb(245, 245, 245)";
         document.getElementById("settings_icon").src = "settings_w.svg";
         document.getElementById("update_icon").src = "update_w.svg";
+        document.getElementById("close_icon").src = "close_w.svg";
     }
     else if (id=="claro") {
         document.body.style.backgroundColor="rgb(245, 245, 245)";
@@ -320,6 +321,7 @@ function switch_theme(id) {
         document.getElementById("location").style.color="rgb(37, 37, 37)";
         document.getElementById("settings_icon").src = "settings_b.svg";
         document.getElementById("update_icon").src = "update_b.svg";
+        document.getElementById("close_icon").src = "close_b.svg";
     }
     
     localStorage["theme"] = id;
@@ -394,6 +396,7 @@ function is_in_range(value) {
 
 function search_location() {
     switch_tab('location');
+    hide_tab_buttons();
     var input, filter, ul, li, div, i, txtValue;
     input = document.getElementById("location");
     filter = input.value.toUpperCase();
@@ -408,4 +411,19 @@ function search_location() {
             li[i].style.display = "none";
         }
     }
+}
+
+function hide_tab_buttons() {
+    document.getElementById("today").style.display = "none";
+    document.getElementById("tomorrow").style.display = "none";
+    document.getElementById("next_days").style.display = "none";
+    document.getElementById("close").style.display = "block";
+}
+
+function show_tab_buttons() {
+    document.getElementById("today").style.display = "inline-block";
+    document.getElementById("tomorrow").style.display = "inline-block";
+    document.getElementById("next_days").style.display = "inline-block";
+    document.getElementById("close").style.display = "none";
+    switch_tab('today');
 }

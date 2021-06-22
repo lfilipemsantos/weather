@@ -30,12 +30,15 @@
                 <div class="button" id="next_days" onclick="switch_tab('next_days')">
                     <p>10 dias</p>
                 </div>
+                <div class="button" id="close" onclick="show_tab_buttons()" style="width:38px;border-radius: 50%; display: none;">
+                    <div style="width: 38px; height: 38px;"><img id="close_icon" src="close_b.svg" alt="update icon" style="height: 20px; margin-left: 9px; margin-top: 9px;"></div>
+                </div>
             </div>
         </div>
 
-        <div class="rows" id="location_row" style="height: 300px; background-color: rgba(114, 197, 197, 0.2);width:80%; max-width: 400px;border-radius: 10px;margin-top: 30px;">
+        <div class="rows" id="location_row" style="height: 400px; background-color: rgba(114, 197, 197, 0.2);width:80%; max-width: 400px;border-radius: 10px;margin-top: 30px;">
             <ul id="location-list">
-              </ul>
+            </ul>
         </div>  
 
         <div id="table_today" class="table">
