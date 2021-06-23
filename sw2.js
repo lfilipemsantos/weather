@@ -51,7 +51,7 @@ self.addEventListener('fetch', function(event) {
   }
 });
 
-window.addEventListener('beforeinstallprompt', (event) => {
+self.addEventListener('beforeinstallprompt', (event) => {
     console.log('👍', 'beforeinstallprompt', event);
     // Stash the event so it can be triggered later.
     window.deferredPrompt = event;
@@ -78,7 +78,7 @@ window.addEventListener('beforeinstallprompt', (event) => {
     divInstall.classList.toggle('hidden', true);
   });
 
-  window.addEventListener('appinstalled', (event) => {
+  self.addEventListener('appinstalled', (event) => {
     console.log('👍', 'appinstalled', event);
     // Clear the deferredPrompt so it can be garbage collected
     window.deferredPrompt = null;
