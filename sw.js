@@ -1,7 +1,6 @@
 var CACHE_NAME = 'weather_cache';
 var urlsToCache = [
   '/',
-  '/icons/*',
   '/style.css',
   '/js.js'
 ];
@@ -30,3 +29,4 @@ self.addEventListener('fetch', function(event) {
     )
   );
 });
+
