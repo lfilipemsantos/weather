@@ -74,6 +74,7 @@ function switch_tab(id) {
 
 
 function get_data(local_id) {
+    show_tab_buttons();
     localStorage["local_id"] = local_id;
     //make request to api
     var requestURL = "https://api.ipma.pt/public-data/forecast/aggregate/" + local_id + ".json"

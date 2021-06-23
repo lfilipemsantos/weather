@@ -100,5 +100,127 @@ var locations = [
                 "local": "Vouzela"
             }
         ]
+    },
+    {
+        "nome_distrito":"Aveiro",
+        "id_distrito":200,
+        "localidade_distrito": [
+            {
+                "globalIdLocal": 1010100,
+                "local": "Águeda"
+            },
+            {
+                "globalIdLocal": 1010200,
+                "local": "Albergaria-a-Velha"
+            },
+            {
+                "globalIdLocal": 1010300,
+                "local": "Anadia"
+            },
+            {
+                "globalIdLocal": 1010400,
+                "local": "Arouca"
+            },
+            {
+                "globalIdLocal": 1010500,
+                "local": "Aveiro"
+            },
+            {
+                "globalIdLocal": 1010522,
+                "local": "Praia de São Jacinto"
+            },
+            {
+                "globalIdLocal": 1010600,
+                "local": "Castelo de Paiva"
+            },
+            {
+                "globalIdLocal": 1010700,
+                "local": "Espinho"
+            },
+            {
+                "globalIdLocal": 1010800,
+                "local": "Estarreja"
+            },
+            {
+                "globalIdLocal": 1010821,
+                "local": "Praia de Espinho"
+            },
+            {
+                "globalIdLocal": 1010900,
+                "local": "Santa Maria da Feira"
+            },
+            {
+                "globalIdLocal": 1011000,
+                "local": "Ílhavo"
+            },
+            {
+                "globalIdLocal": 1011021,
+                "local": "Praia da Barra"
+            },
+            {
+                "globalIdLocal": 1011022,
+                "local": "Praia da Costa Nova"
+            },
+            {
+                "globalIdLocal": 1011100,
+                "local": "Mealhada"
+            },
+            {
+                "globalIdLocal": 1011200,
+                "local": "Murtosa"
+            },
+            {
+                "globalIdLocal": 1011221,
+                "local": "Praia da Torreira"
+            },
+            {
+                "globalIdLocal": 1011300,
+                "local": "Oliveira de Azeméis"
+            },
+            {
+                "globalIdLocal": 1011400,
+                "local": "Oliveira do Bairro"
+            },
+            {
+                "globalIdLocal": 1011500,
+                "local": "Ovar"
+            },
+            {
+                "globalIdLocal": 1011521,
+                "local": "Praia do Furadouro"
+            },
+            {
+                "globalIdLocal": 1011522,
+                "local": "Praia Torrão do Lameiro"
+            },
+            {
+                "globalIdLocal": 1011523,
+                "local": "Praia de São Pedro da Maceda"
+            },
+            {
+                "globalIdLocal": 1011524,
+                "local": "Praia de Esmoriz"
+            },
+            {
+                "globalIdLocal": 1011600,
+                "local": "São João da Madeira"
+            },
+            {
+                "globalIdLocal": 1011700,
+                "local": "Sever do Vouga"
+            },
+            {
+                "globalIdLocal": 1011800,
+                "local": "Vagos"
+            },
+            {
+                "globalIdLocal": 1011821,
+                "local": "Praia da Vagueira"
+            },
+            {
+                "globalIdLocal": 1011900,
+                "local": "Vale de Cambra"
+            }
+        ]
     }
 ];
