@@ -1,8 +1,8 @@
 var CACHE_NAME = 'weather_cache';
 var urlsToCache = [
   '/',
-  'style.css',
-  'js.js'
+  '/style.css',
+  '/js.js'
 ];
 
 self.addEventListener('install', function(event) {
@@ -11,7 +11,7 @@ self.addEventListener('install', function(event) {
     caches.open(CACHE_NAME)
       .then(function(cache) {
         console.log('Opened cache');
-        return cache.addAll(urlsToCache);
+        return /*cache.addAll(urlsToCache)*/;
       })
   );
 });
