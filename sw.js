@@ -1,8 +1,8 @@
 var CACHE_NAME = 'weather_cache';
 var urlsToCache = [
   '/',
-  '/style.css',
-  '/js.js'
+  'style.css',
+  'js.js'
 ];
 
 self.addEventListener('install', function(event) {
