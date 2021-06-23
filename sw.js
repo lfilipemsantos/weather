@@ -3,7 +3,7 @@ var urlsToCache = [
   '/',
   '/icons/*',
   '/style.css',
-  'js.js'
+  '/js.js'
 ];
 
 self.addEventListener('install', function(event) {
