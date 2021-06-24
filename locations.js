@@ -222,5 +222,83 @@ var locations = [
                 "local": "Vale de Cambra"
             }
         ]
+    },
+    {
+        "nome_distrito":"Beja",
+        "id_distrito":300,
+        "localidade_distrito": [
+            {
+                "globalIdLocal": 1020100,
+                "local": "Aljustrel"
+            },
+            {
+                "globalIdLocal": 1020200,
+                "local": "Almodôvar"
+            },
+            {
+                "globalIdLocal": 1020300,
+                "local": "Alvito"
+            },
+            {
+                "globalIdLocal": 1020400,
+                "local": "Barrancos"
+            },
+            {
+                "globalIdLocal": 1020500,
+                "local": "Beja"
+            },
+            {
+                "globalIdLocal": 1020600,
+                "local": "Castro Verde"
+            },
+            {
+                "globalIdLocal": 1020700,
+                "local": "Cuba"
+            },
+            {
+                "globalIdLocal": 1020800,
+                "local": "Ferreira do Alentejo"
+            },
+            {
+                "globalIdLocal": 1020900,
+                "local": "Mértola"
+            },
+            {
+                "globalIdLocal": 1021000,
+                "local": "Moura"
+            },
+            {
+                "globalIdLocal": 1021100,
+                "local": "Odemira"
+            },
+            {
+                "globalIdLocal": 1021111,
+                "local": "Praia de Milfontes"
+            },
+            {
+                "globalIdLocal": 1021121,
+                "local": "Praia de Almograve"
+            },
+            {
+                "globalIdLocal": 1021122,
+                "local": "Praia do Malhão"
+            },
+            {
+                "globalIdLocal": 1021124,
+                "local": "Praia da Zambujeira"
+            },
+            {
+                "globalIdLocal": 1021200,
+                "local": "Ourique"
+            },
+            {
+                "globalIdLocal": 1021300,
+                "local": "Serpa"
+            },
+            {
+                "globalIdLocal": 1021400,
+                "local": "Vidigueira"
+            },
+        ]
     }
 ];
