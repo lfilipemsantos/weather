@@ -428,5 +428,59 @@ var locations = [
                 "local": "Vinhais"
             },
         ]
+    },
+    {
+        "nome_distrito":"Castelo Branco",
+        "id_distrito":600,
+        "localidade_distrito": [
+            {
+                "globalIdLocal": 1050100,
+                "local": "Belmonte"
+            },
+            {
+                "globalIdLocal": 1050200,
+                "local": "Castelo Branco"
+            },
+            {
+                "globalIdLocal": 1050300,
+                "local": "Covilhã"
+            },
+            {
+                "globalIdLocal": 1050321,
+                "local": "Penhas Saúde"
+            },
+            {
+                "globalIdLocal": 1050400,
+                "local": "Fundão"
+            },
+            {
+                "globalIdLocal": 1050500,
+                "local": "Idanha-a-Nova"
+            },
+            {
+                "globalIdLocal": 1050600,
+                "local": "Oleiros"
+            },
+            {
+                "globalIdLocal": 1050700,
+                "local": "Penamacor"
+            },
+            {
+                "globalIdLocal": 1050800,
+                "local": "Proença-a-Nova"
+            },
+            {
+                "globalIdLocal": 1050900,
+                "local": "Sertã"
+            },
+            {
+                "globalIdLocal": 1051000,
+                "local": "Vila de Rei"
+            },
+            {
+                "globalIdLocal": 1051100,
+                "local": "Vila Velha de Rodão"
+            }
+        ]
     }
 ];
