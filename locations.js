@@ -300,5 +300,133 @@ var locations = [
                 "local": "Vidigueira"
             },
         ]
+    },
+    {
+        "nome_distrito":"Braga",
+        "id_distrito":400,
+        "localidade_distrito": [
+            {
+                "globalIdLocal": 1030100,
+                "local": "Amares"
+            },
+            {
+                "globalIdLocal": 1030200,
+                "local": "Barcelos"
+            },
+            {
+                "globalIdLocal": 1030300,
+                "local": "Braga"
+            },
+            {
+                "globalIdLocal": 1030321,
+                "local": "Praia da Apúlia"
+            },
+            {
+                "globalIdLocal": 1030400,
+                "local": "Cabeceiras de Basto"
+            },
+            {
+                "globalIdLocal": 1030500,
+                "local": "Celorico de Basto"
+            },
+            {
+                "globalIdLocal": 1030600,
+                "local": "Esposende"
+            },
+            {
+                "globalIdLocal": 1030621,
+                "local": "Praia de Ofir"
+            },
+            {
+                "globalIdLocal": 1030622,
+                "local": "Praia de Esposende"
+            },
+            {
+                "globalIdLocal": 1030700,
+                "local": "Fafe"
+            },
+            {
+                "globalIdLocal": 1030800,
+                "local": "Guimarães"
+            },
+            {
+                "globalIdLocal": 1030900,
+                "local": "Póvoa de Lanhoso"
+            },
+            {
+                "globalIdLocal": 1031000,
+                "local": "Terras de Bouro"
+            },
+            {
+                "globalIdLocal": 1031100,
+                "local": "Vieira do Minho"
+            },
+            {
+                "globalIdLocal": 1031200,
+                "local": "Vila Nova de Famalicão"
+            },
+            {
+                "globalIdLocal": 1031300,
+                "local": "Vila Verde"
+            },
+            {
+                "globalIdLocal": 1031400,
+                "local": "Vizela"
+            },
+        ]
+    },
+    {
+        "nome_distrito":"Bragança",
+        "id_distrito":500,
+        "localidade_distrito": [
+            {
+                "globalIdLocal": 1040100,
+                "local": "Alfandega da Fé"
+            },
+            {
+                "globalIdLocal": 1040200,
+                "local": "Bragança"
+            },
+            {
+                "globalIdLocal": 1040300,
+                "local": "Carrazeda de Ansiães"
+            },
+            {
+                "globalIdLocal": 1040400,
+                "local": "Freixo Espada à Cinta"
+            },
+            {
+                "globalIdLocal": 1040500,
+                "local": "Macedo de Cavaleiros"
+            },
+            {
+                "globalIdLocal": 1040600,
+                "local": "Miranda do Douro"
+            },
+            {
+                "globalIdLocal": 1040700,
+                "local": "Mirandela"
+            },
+            {
+                "globalIdLocal": 1040800,
+                "local": "Mogadouro"
+            },
+            {
+                "globalIdLocal": 1040900,
+                "local": "Torre de Moncorvo"
+            },
+            {
+                "globalIdLocal": 1041000,
+                "local": "Vila Flor"
+            },
+            {
+                "globalIdLocal": 1041100,
+                "local": "Vimioso"
+            },
+            {
+                "globalIdLocal": 1041200,
+                "local": "Vinhais"
+            },
+        ]
     }
 ];
