@@ -482,5 +482,91 @@ var locations = [
                 "local": "Vila Velha de Rodão"
             }
         ]
+    },
+    {
+        "nome_distrito":"Coimbra",
+        "id_distrito":700,
+        "localidade_distrito": [
+            {
+                "globalIdLocal": 1060100,
+                "local": "Arganil"
+            },
+            {
+                "globalIdLocal": 1060200,
+                "local": "Cantanhede"
+            },
+            {
+                "globalIdLocal": 1060221,
+                "local": "Praia da Tocha"
+            },
+            {
+                "globalIdLocal": 1060300,
+                "local": "Coimbra"
+            },
+            {
+                "globalIdLocal": 1060400,
+                "local": "Condeixa-a-Nova"
+            },
+            {
+                "globalIdLocal": 1060500,
+                "local": "Figueira da Foz"
+            },
+            {
+                "globalIdLocal": 1060522,
+                "local": "Praia da Figueira da Foz"
+            },
+            {
+                "globalIdLocal": 1060600,
+                "local": "Góis"
+            },
+            {
+                "globalIdLocal": 1060700,
+                "local": "Lousã"
+            },
+            {
+                "globalIdLocal": 1060800,
+                "local": "Mira"
+            },
+            {
+                "globalIdLocal": 1060821,
+                "local": "Praia de Mira"
+            },
+            {
+                "globalIdLocal": 1060900,
+                "local": "Miranda do Corvo"
+            },
+            {
+                "globalIdLocal": 1061000,
+                "local": "Montemor-o-Velho"
+            },
+            {
+                "globalIdLocal": 1061100,
+                "local": "Oliveira do Hospital"
+            },
+            {
+                "globalIdLocal": 1061200,
+                "local": "Pampilhosa da Serra"
+            },
+            {
+                "globalIdLocal": 1061300,
+                "local": "Penacova"
+            },
+            {
+                "globalIdLocal": 1061400,
+                "local": "Penela"
+            },
+            {
+                "globalIdLocal": 1061500,
+                "local": "Soure"
+            },
+            {
+                "globalIdLocal": 1061600,
+                "local": "Tábua"
+            },
+            {
+                "globalIdLocal": 1061700,
+                "local": "Vila Nova de Poiares"
+            }
+        ]
     }
 ];
