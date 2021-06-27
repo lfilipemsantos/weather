@@ -334,9 +334,9 @@ body {
     list-style-type: none;
 }
 
-#location-list > li {
+.location-li {
     margin-bottom: 10px;
-    background-color: grey;
+    background-color: rgba(114, 197, 197, 0.1);
     padding: 6px;
     padding-left: 11px;
     border-radius: 11px;
