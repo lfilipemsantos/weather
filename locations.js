@@ -568,5 +568,67 @@ var locations = [
                 "local": "Vila Nova de Poiares"
             }
         ]
+    },
+    {
+        "nome_distrito":"Évora",
+        "id_distrito":800,
+        "localidade_distrito": [
+            {
+                "globalIdLocal": 1070100,
+                "local": "Alandroal"
+            },
+            {
+                "globalIdLocal": 1070200,
+                "local": "Arraiolos"
+            },
+            {
+                "globalIdLocal": 1070300,
+                "local": "Borba"
+            },
+            {
+                "globalIdLocal": 1070400,
+                "local": "Estremoz"
+            },
+            {
+                "globalIdLocal": 1070500,
+                "local": "Évora"
+            },
+            {
+                "globalIdLocal": 1070600,
+                "local": "Montemor-o-Novo"
+            },
+            {
+                "globalIdLocal": 1070700,
+                "local": "Mora"
+            },
+            {
+                "globalIdLocal": 1070800,
+                "local": "Mourão"
+            },
+            {
+                "globalIdLocal": 1070900,
+                "local": "Portel"
+            },
+            {
+                "globalIdLocal": 1071000,
+                "local": "Redondo"
+            },
+            {
+                "globalIdLocal": 1071100,
+                "local": "Reguengos de Monsaraz"
+            },
+            {
+                "globalIdLocal": 1071200,
+                "local": "Vendas Novas"
+            },
+            {
+                "globalIdLocal": 1071300,
+                "local": "Viana do Alentejo"
+            },
+            {
+                "globalIdLocal": 1071400,
+                "local": "Vila Viçosa"
+            }
+        ]
     }
 ];
