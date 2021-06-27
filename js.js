@@ -43,6 +43,7 @@ function build_locations(locations) {
             var div = document.createElement('div');
             div.textContent = locations[i]["localidade_distrito"][j]["local"] + ", " + locations[i]["nome_distrito"] + " ";
             li.setAttribute("onclick", "get_data(" + locations[i]['localidade_distrito'][j]['globalIdLocal'] + ")");
+            li.classList.add("location-li");
             li.appendChild(div);
             document.getElementById("location-list").appendChild(li)
         }
@@ -338,10 +339,11 @@ function switch_colors(color) {
     rows = document.getElementsByClassName("row");
     change_color(rows,"backgroundColor",color, 0.2);
     rows = document.getElementsByClassName("day_row");
-    change_color(rows,"backgroundColor",color, 0.2)
+    change_color(rows,"backgroundColor",color, 0.2);
+    rows = document.getElementsByClassName("location-li");
+    change_color(rows,"backgroundColor",color, 0.2);
     document.getElementById("location").style.backgroundColor = "rgba(" + color + ", 0.4)";
     document.getElementById("about_row").style.backgroundColor = "rgba(" + color + ", 0.4)";
-    document.getElementById("location_row").style.backgroundColor = "rgba(" + color + ", 0.4)";
     document.getElementById("apply-color-button").style.backgroundColor = "rgba(" + color + ", 0.1)";
 
     localStorage['color_theme'] = color

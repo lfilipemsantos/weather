@@ -46,7 +46,7 @@ body {
     background-color: rgba(114, 197, 197, 0.4);
     margin-right: auto;
     margin-left: auto;
-    border-radius: 60px;
+    border-radius: 11px;
     height: 40px;
     width: 228px;
     margin-top: 30px;
@@ -175,7 +175,7 @@ body {
 
 #next_days_row {
     display: none;
-    min-height: 500px;
+    min-height: 540px;
     width: 100%;
 }
 
@@ -320,7 +320,13 @@ body {
 
 #location_row {
     display: none;
+    background-color: unset;
     padding: 10px;
+    height: 450px; 
+    width:80%; 
+    max-width: 400px;
+    border-radius: 10px;
+    margin-top: 30px;
 }
 
 #location_row > ul {
@@ -329,6 +335,10 @@ body {
 
 #location-list > li {
     margin-bottom: 10px;
+    background-color: grey;
+    padding: 6px;
+    padding-left: 11px;
+    border-radius: 11px;
 }
 
 @media (prefers-color-scheme: light) {
@@ -348,7 +358,7 @@ body {
     }
 }
 
-@media only screen and (min-height:732px) {
+@media only screen and (min-height:800px) {
     #bottom-options {
         position: fixed;
         bottom: 15px;
