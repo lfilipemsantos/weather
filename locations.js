@@ -630,5 +630,219 @@ var locations = [
                 "local": "Vila Viçosa"
             }
         ]
+    },
+    {
+        "nome_distrito":"Évora",
+        "id_distrito":900,
+        "localidade_distrito": [
+            {
+                "globalIdLocal": 1080100,
+                "local": "Albufeira"
+            },
+            {
+                "globalIdLocal": 1080121,
+                "local": "Praia dos Pescadores"
+            },
+            {
+                "globalIdLocal": 1080122,
+                "local": "Praia de Santa Eulália"
+            },
+            {
+                "globalIdLocal": 1080200,
+                "local": "Alcoutim"
+            },
+            {
+                "globalIdLocal": 1080300,
+                "local": "Aljezur"
+            },
+            {
+                "globalIdLocal": 1080321,
+                "local": "Praia de Odeceixe",
+            },
+            {
+                "globalIdLocal": 1080322,
+                "local": "Praia da Arrifana"
+            },
+            {
+                "globalIdLocal": 1080323,
+                "local": "Praia da Amoreira"
+            },
+            {
+                "globalIdLocal": 1080324,
+                "local": "Praia da Carrapateira"
+            },
+            {
+                "globalIdLocal": 1080325,
+                "local": "Praia do Monte Clérigo"
+            },
+            {
+                "globalIdLocal": 1080326,
+                "local": "Praia do Amado"
+            },
+            {
+                "globalIdLocal": 1080400,
+                "local": "Castro Marim"
+            },
+            {
+                "globalIdLocal": 1080421,
+                "local": "Praia de Altura"
+            },
+            {
+                "globalIdLocal": 1080500,
+                "local": "Faro"
+            },
+            {
+                "globalIdLocal": 1080521,
+                "local": "Praia da Ilha da Culatra"
+            },
+            {
+                "globalIdLocal": 1080522,
+                "local": "Praia da Ilha de Faro"
+            },
+            {
+                "globalIdLocal": 1080530,
+                "local": "Faro - Aeroporto"
+            },
+            {
+                "globalIdLocal": 1080600,
+                "local": "Lagoa"
+            },
+            {
+                "globalIdLocal": 1080621,
+                "local": "Praia do Carvoeiro"
+            },
+            {
+                "globalIdLocal": 1080700,
+                "local": "Lagos"
+            },
+            {
+                "globalIdLocal": 1080721,
+                "local": "Praia da Luz"
+            },
+            {
+                "globalIdLocal": 1080722,
+                "local": "Praia da Meia Praia"
+            },
+            {
+                "globalIdLocal": 1080723,
+                "local": "Praia da D. Ana"
+            },
+            {
+                "globalIdLocal": 1080724,
+                "local": "Praia de Porto de Mós"
+            },
+            {
+                "globalIdLocal": 1080800,
+                "local": "Loulé"
+            },
+            {
+                "globalIdLocal": 1080821,
+                "local": "Praia de Vilamoura"
+            },
+            {
+                "globalIdLocal": 1080822,
+                "local": "Praia da Falésia"
+            },
+            {
+                "globalIdLocal": 1080823,
+                "local": "Praia de Quarteira"
+            },
+            {
+                "globalIdLocal": 1080900,
+                "local": "Monchique"
+            },
+            {
+                "globalIdLocal": 1081000,
+                "local": "Olhão"
+            },
+            {
+                "globalIdLocal": 1081021,
+                "local": "Praia da Fuzeta"
+            },
+            {
+                "globalIdLocal": 1081100,
+                "local": "Portimão"
+            },
+            {
+                "globalIdLocal": 1081121,
+                "local": "Praia do Vau"
+            },
+            {
+                "globalIdLocal": 1081122,
+                "local": "Praia de Alvor"
+            },
+            {
+                "globalIdLocal": 1081123,
+                "local": "Praia da Rocha"
+            },
+            {
+                "globalIdLocal": 1081200,
+                "local": "São Brás de Alportel"
+            },
+            {
+                "globalIdLocal": 1081300,
+                "local": "Silves"
+            },
+            {
+                "globalIdLocal": 1081321,
+                "local": "Praia de Armação de Pera"
+            },
+            {
+                "globalIdLocal": 1081400,
+                "local": "Tavira",
+            },
+            {
+                "globalIdLocal": 1081421,
+                "local": "Praia da Ilha de Tavira",
+            },
+            {
+                "globalIdLocal": 1081422,
+                "local": "Praia de Cabanas"
+            },
+            {
+                "globalIdLocal": 1081423,
+                "local": "Praia do Barril",
+            },
+            {
+                "globalIdLocal": 1081500,
+                "local": "Vila do Bispo"
+            },
+            {
+                "globalIdLocal": 1081505,
+                "local": "Sagres"
+            },
+            {
+                "globalIdLocal": 1081521,
+                "local": "Praia do Burgau"
+            },
+            {
+                "globalIdLocal": 1081522,
+                "local": "Praia do Beliche"
+            },
+            {
+                "globalIdLocal": 1081523,
+                "local": "Praia do Zavial"
+            },
+            {
+                "globalIdLocal": 1081524,
+                "local": "Praia da Salema"
+            },
+            {
+                "globalIdLocal": 1081600,
+                "local": "Vila Real de Santo António"
+            },
+            {
+                "globalIdLocal": 1081621,
+                "local": "Praia da Manta Rota"
+            },
+            {
+                "globalIdLocal": 1081622,
+                "local": "Praia de Monte Gordo"
+            },
+            {
+                "globalIdLocal": 1081623,
+                "local": "Praia do Cabeço"
+            }
+        ]
     }
 ];
