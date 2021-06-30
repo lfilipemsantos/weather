@@ -632,7 +632,7 @@ var locations = [
         ]
     },
     {
-        "nome_distrito":"Évora",
+        "nome_distrito":"Faro",
         "id_distrito":900,
         "localidade_distrito": [
             {
@@ -842,6 +842,76 @@ var locations = [
             {
                 "globalIdLocal": 1081623,
                 "local": "Praia do Cabeço"
+            }
+        ]
+    },
+    {
+        "nome_distrito":"Guarda",
+        "id_distrito":1000,
+        "localidade_distrito": [
+            {
+                "globalIdLocal": 1090100,
+                "local": "Aguiar da Beira"
+            },
+            {
+                "globalIdLocal": 1090200,
+                "local": "Almeida"
+            },
+            {
+                "globalIdLocal": 1090300,
+                "local": "Celorico da Beira"
+            },
+            {
+                "globalIdLocal": 1090400,
+                "local": "Figueira de Castelo Rodrigo"
+            },
+            {
+                "globalIdLocal": 1090500,
+                "local": "Fornos de Algodres"
+            },
+            {
+                "globalIdLocal": 1090600,
+                "local": "Gouveia"
+            },
+            {
+                "globalIdLocal": 1090700,
+                "local": "Guarda"
+            },
+            {
+                "globalIdLocal": 1090800,
+                "local": "Manteigas"
+            },
+            {
+                "globalIdLocal": 1090821,
+                "local": "Penhas Douradas"
+            },
+            {
+                "globalIdLocal": 1090822,
+                "local": "Serra da Estrela, Torre"
+            },
+            {
+                "globalIdLocal": 1090900,
+                "local": "Meda"
+            },
+            {
+                "globalIdLocal": 1091000,
+                "local": "Pinhel"
+            },
+            {
+                "globalIdLocal": 1091100,
+                "local": "Sabugal"
+            },
+            {
+                "globalIdLocal": 1091200,
+                "local": "Seia"
+            },
+            {
+                "globalIdLocal": 1091300,
+                "local": "Trancoso"
+            },
+            {
+                "globalIdLocal": 1091400,
+                "local": "Vila Nova de Foz Coa"
             }
         ]
     }
