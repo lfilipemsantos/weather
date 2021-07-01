@@ -914,5 +914,119 @@ var locations = [
                 "local": "Vila Nova de Foz Coa"
             }
         ]
+    },
+    {
+        "nome_distrito":"Leiria",
+        "id_distrito":1100,
+        "localidade_distrito": [
+            {
+                "globalIdLocal": 1100100,
+                "local": "Alcobaça",
+            },
+            {
+                "globalIdLocal": 1100121,
+                "local": "Praia de São Martinho do Porto"
+            },
+            {
+                "globalIdLocal": 1100200,
+                "local": "Alvaiázere"
+            },
+            {
+                "globalIdLocal": 1100300,
+                "local": "Ansião"
+            },
+            {
+                "globalIdLocal": 1100400,
+                "local": "Batalha"
+            },
+            {
+                "globalIdLocal": 1100500,
+                "local": "Bombarral"
+            },
+            {
+                "globalIdLocal": 1100600,
+                "local": "Caldas da Rainha"
+            },
+            {
+                "globalIdLocal": 1100621,
+                "local": "Praia da Foz do Arelho"
+            },
+            {
+                "globalIdLocal": 1100700,
+                "local": "Castanheira de Pêra"
+            },
+            {
+                "globalIdLocal": 1100800,
+                "local": "Figueiró dos Vinhos"
+            },
+            {
+                "globalIdLocal": 1100900,
+                "local": "Leiria"
+            },
+            {
+                "globalIdLocal": 1100921,
+                "local": "Praia de Pedrogão"
+            },
+            {
+                "globalIdLocal": 1101000,
+                "local": "Marinha Grande"
+            },
+            {
+                "globalIdLocal": 1101021,
+                "local": "Praia de São Pedro de Moel"
+            },
+            {
+                "globalIdLocal": 1101100,
+                "local": "Nazaré"
+            },
+            {
+                "globalIdLocal": 1101121,
+                "local": "Praia da Nazaré"
+            },
+            {
+                "globalIdLocal": 1101200,
+                "local": "Óbidos"
+            },
+            {
+                "globalIdLocal": 1101221,
+                "local": "Praia Del Rey"
+            },
+            {
+                "globalIdLocal": 1101300,
+                "local": "Pedrógão Grande"
+            },
+            {
+                "globalIdLocal": 1101400,
+                "local": "Peniche"
+            },
+            {
+                "globalIdLocal": 1101423,
+                "local": "Praia do Baleal"
+            },
+            {
+                "globalIdLocal": 1101424,
+                "local": "Praia de Peniche"
+            },
+            {
+                "globalIdLocal": 1101425,
+                "local": "Praia Supertubos"
+            },
+            {
+                "globalIdLocal": 1101426,
+                "local": "Praia da Consolação"
+            },
+            {
+                "globalIdLocal": 1101500,
+                "local": "Pombal"
+            },
+            {
+                "globalIdLocal": 1101521,
+                "local": "Praia do Osso da Baleia"
+            },
+            {
+                "globalIdLocal": 1101600,
+                "local": "Porto de Mós"
+            }
+        ]
     }
 ];
