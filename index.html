@@ -13,6 +13,7 @@
     </head>
 
     <body onload="init()">
+        <div style="margin-bottom: 85px;">
         <div id="hero_div">
             <div id="search_container">
                 <input autocomplete="off" id="location" type="text" onkeyup="search_location()" placeholder="Pesquisar...">
@@ -45,13 +46,13 @@
             <div id="table_container" style="height: 100%; max-width: 400px;">
                 <table class="content_table" style="background-color: rgba(114, 197, 197, 0.2); width: 100%;height: 100%; margin-left: auto; margin-right: auto;text-align: center; padding-bottom: 10px;border-radius: 10px;vertical-align: middle;">
                     <tr>
-                        <td id="location-text" colspan="3" style="font-size: 15px; padding-top:10px;"></td>
+                        <td id="location-text" colspan="4" style="font-size: 15px; padding-top:10px;"></td>
+                    </tr>
+                    <tr style="text-align: center; width: 100%;">
+                        <th id="table_temp" colspan="4" style="text-align:center;line-height:40px;font-size:40px;padding-bottom: 20px;padding-top: 10px;"></th>
                     </tr>
                     <tr>
-                        <th id="table_temp" colspan="3" style="line-height:40px;font-size:40px;padding-bottom: 20px;padding-top: 10px;"></th>
-                    </tr>
-                    <tr>
-                        <td id="tMax" style="padding-bottom: 20px;">
+                        <td id="tMax">
                             <div style="display: inline-block;">
                                 <img class="table_icons" alt="temperatura máxima" src="icons/icons_table/tMax.svg">
                             </div>
@@ -59,16 +60,6 @@
                                 <p class="table-text" id="text-tMax"></p>
                             </div>                     
                         </td>
-                        <td id="iUv" style="padding-bottom: 20px;"> 
-                            <div style="display: inline-block;">
-                                <img class="table_icons" alt="índice UV" src="icons/icons_table/iUv.svg">
-                            </div>
-                            <div style="display: inline-block;">
-                                <p class="table-text" id="text-iUv"></p>
-                            </div>                     
-                        </td> 
-                    </tr>
-                    <tr>
                         <td id="tMin">
                             <div style="display: inline-block;">
                                 <img class="table_icons" alt="temperatura mínima" src="icons/icons_table/tMin.svg">
@@ -76,19 +67,27 @@
                             <div style="display: inline-block;">
                                 <p class="table-text" id="text-tMin"></p>
                             </div> 
-                        </td>
-                        <td id="probabilidadePrecipita">
+                        <td id="iUv"> 
                             <div style="display: inline-block;">
-                                <img class="table_icons" alt="probabilidade precipitação" src="icons/icons_table/probabilidadePrecipita.svg">
+                                <img class="table_icons" alt="índice UV" src="icons/icons_table/iUv.svg">
                             </div>
                             <div style="display: inline-block;">
-                                <p class="table-text" id="text-probabilidadePrecipita"></p>
-                            </div>
+                                <p class="table-text" id="text-iUv"></p>
+                            </div>                     
+                        </td> 
+                            <td id="probabilidadePrecipita">
+                                <div style="display: inline-block;">
+                                    <img class="table_icons" alt="probabilidade precipitação" src="icons/icons_table/probabilidadePrecipita.svg">
+                                </div>
+                                <div style="display: inline-block;">
+                                    <p class="table-text" id="text-probabilidadePrecipita"></p>
+                                </div>
+                            </td>
                         </td>
                     </tr>
                     <tr>
-                        <td id="data-update" colspan="3" style="font-size: 8px; padding-top:10px;">Última atualização:</td>
-                     </tr>
+                        <td id="data-update" colspan="4" style="font-size: 8px; padding-top:10px;">Última atualização:</td>
+                    </tr>
                 </table>
             </div>
         </div>
@@ -96,13 +95,13 @@
             <div id="table_container" style="height: 100%; max-width: 400px;">
                 <table class="content_table" style="background-color: rgba(114, 197, 197, 0.2); width: 100%;height: 100%; margin-left: auto; margin-right: auto;text-align: center; padding-bottom: 10px;border-radius: 10px;vertical-align: middle;">
                     <tr>
-                        <td id="location-text-T" colspan="3" style="font-size: 15px; padding-top:10px;"></td>
+                        <td id="location-text-T" colspan="4" style="font-size: 15px; padding-top:10px;"></td>
                     </tr>
                     <tr>
-                        <th id="table_temp" colspan="3" style="font-size: 50px;padding-bottom: 20px;"></th>
+                        <th id="table_temp" colspan="4" style="font-size: 50px;padding-bottom: 20px;"></th>
                     </tr>
                     <tr>
-                        <td id="tMaxT" style="padding-bottom: 20px;">
+                        <td id="tMaxT">
                             <div style="display: inline-block;">
                                 <img class="table_icons" src="icons/icons_table/tMax.svg">
                             </div>
@@ -110,7 +109,7 @@
                                 <p class="table-text-T" id="text-tMax"></p>
                             </div>                     
                         </td>
-                        <td id="iUvT" style="padding-bottom: 20px;"> 
+                        <td id="iUvT"> 
                             <div style="display: inline-block;">
                                 <img class="table_icons" src="icons/icons_table/iUv.svg">
                             </div>
@@ -118,8 +117,6 @@
                                 <p class="table-text-T" id="text-iUv"></p>
                             </div>                     
                         </td> 
-                    </tr>
-                    <tr>
                         <td id="tMinT">
                             <div style="display: inline-block;">
                                 <img class="table_icons" src="icons/icons_table/tMin.svg">
@@ -138,7 +135,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td id="data-update-T" colspan="3" style="font-size: 8px; padding-top:10px;">Última atualização:</td>
+                        <td id="data-update-T" colspan="4" style="font-size: 8px; padding-top:10px;">Última atualização:</td>
                      </tr>
                 </table>
             </div>
@@ -224,9 +221,10 @@
                     www.ipma.pt
                 </a>
             </div>
-        </div>        
+        </div>  
+        </div>      
         
-        <div class="rows" id="bottom-options" style="height: auto;">
+        <div class="rows" id="bottom-options" style="">
             <div class="inner" style="height:auto;margin-bottom: 10px;">
                 <div class="button" id="settings" onclick="switch_tab('settings')" style="width:38px;border-radius: 50%;">
                     <div style="width: 38px; height: 38px;"><img id="settings_icon" src="settings_b.svg" alt="settings icon" style="height: 20px; margin-left: 9px; margin-top: 9px;"></div>

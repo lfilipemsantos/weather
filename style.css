@@ -277,7 +277,9 @@ body {
 }
 
 .table_icons {
-    width: 40px;
+    width: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .weather_icon {
@@ -342,6 +344,17 @@ body {
     border-radius: 11px;
 }
 
+#bottom-options {
+    position: fixed;
+    height: 40px;
+    bottom: 0px;
+    display: block;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color: rgb(206, 206, 206);
+    box-shadow: 0px -2px 8px 1px rgba(0, 0, 0, 0.4);
+}
+
 @media (prefers-color-scheme: light) {
     body { 
         background-color: whitesmoke; 
@@ -360,8 +373,5 @@ body {
 }
 
 @media only screen and (min-height:800px) {
-    #bottom-options {
-        position: fixed;
-        bottom: 15px;
-    }
+    
 }
