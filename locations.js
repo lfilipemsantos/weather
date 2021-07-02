@@ -1028,5 +1028,139 @@ var locations = [
                 "local": "Porto de Mós"
             }
         ]
+    },
+    {
+        "nome_distrito":"Lisboa",
+        "id_distrito":1200,
+        "localidade_distrito": [
+            {
+                "globalIdLocal": 1110100,
+                "local": "Alenquer"
+            },
+            {
+                "globalIdLocal": 1110200,
+                "local": "Arruda dos Vinhos"
+            },
+            {
+                "globalIdLocal": 1110300,
+                "local": "Azambuja"
+            },
+            {
+                "globalIdLocal": 1110400,
+                "local": "Cadaval"
+            },
+            {
+                "globalIdLocal": 1110500,
+                "local": "Cascais"
+            },
+            {
+                "globalIdLocal": 1110521,
+                "local": "Praia de Carcavelos"
+            },
+            {
+                "globalIdLocal": 1110522,
+                "local": "Praia do Guincho"
+            },
+            {
+                "globalIdLocal": 1110523,
+                "local": "Praia de Cascais"
+            },
+            {
+                "globalIdLocal": 1110600,
+                "local": "Lisboa"
+            },
+            {
+                "globalIdLocal": 1110622,
+                "local": "Lisboa - Jardim Botânico"
+            },
+            {
+                "globalIdLocal": 1110623,
+                "local": "Lisboa - Ajuda"
+            },
+            {
+                "globalIdLocal": 1110625,
+                "local": "Lisboa - Oriente"
+            },
+            {
+                "globalIdLocal": 1110700,
+                "local": "Loures"
+            },
+            {
+                "globalIdLocal": 1110800,
+                "local": "Lourinhã"
+            },
+            {
+                "globalIdLocal": 1110821,
+                "local": "Praia da Areia Branca"
+            },
+            {
+                "globalIdLocal": 1110900,
+                "local": "Mafra"
+            },
+            {
+                "globalIdLocal": 1110921,
+                "local": "Ericeira"
+            },
+            {
+                "globalIdLocal": 1110922,
+                "local": "Praia da Foz do Lizandro"
+            },
+            {
+                "globalIdLocal": 1110923,
+                "local": "Praia de Coxos"
+            },
+            {
+                "globalIdLocal": 1110924,
+                "local": "Praia de Ribeira de Ilhas"
+            },
+            {
+                "globalIdLocal": 1111000,
+                "local": "Oeiras"
+            },
+            {
+                "globalIdLocal": 1111100,
+                "local": "Sintra"
+            },
+            {
+                "globalIdLocal": 1111123,
+                "local": "Praia das Maçãs"
+            },
+            {
+                "globalIdLocal": 1111124,
+                "local": "Praia do Magoito"
+            },
+            {
+                "globalIdLocal": 1111125,
+                "local": "Praia da Adraga"
+            },
+            {
+                "globalIdLocal": 1111126,
+                "local": "Praia Grande"
+            },
+            {
+                "globalIdLocal": 1111200,
+                "local": "Sobral de Monte Agraço"
+            },
+            {
+                "globalIdLocal": 1111300,
+                "local": "Torres Vedras"
+            },
+            {
+                "globalIdLocal": 1111321,
+                "local": "Praia de Santa Cruz"
+            },
+            {
+                "globalIdLocal": 1111400,
+                "local": "Vila Franca de Xira"
+            },
+            {
+                "globalIdLocal": 1111500,
+                "local": "Amadora"
+            },
+            {
+                "globalIdLocal": 1111600,
+                "local": "Odivelas"
+            }
+        ]
     }
 ];
