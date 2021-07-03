@@ -76,6 +76,7 @@ function switch_tab(id) {
 
 function get_data(local_id) {
     show_tab_buttons();
+    show_bottom();
     localStorage["local_id"] = local_id;
     //make request to api
     var requestURL = "https://api.ipma.pt/public-data/forecast/aggregate/" + local_id + ".json"
@@ -402,6 +403,7 @@ function is_in_range(value) {
 function search_location() {
     switch_tab('location');
     hide_tab_buttons();
+    hide_bottom();
     var input, filter, ul, li, div, i, txtValue;
     input = document.getElementById("location");
     filter = input.value.toUpperCase();
@@ -416,6 +418,13 @@ function search_location() {
             li[i].style.display = "none";
         }
     }
+}
+
+function hide_bottom()  {
+    document.getElementById("bottom-options").style.display = "none";
+}
+function show_bottom()  {
+    document.getElementById("bottom-options").style.display = "block";
 }
 
 function hide_tab_buttons() {
