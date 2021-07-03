@@ -338,7 +338,7 @@ function switch_colors(color) {
     change_color(buttons,"backgroundColor", color, 0.1);
     change_color(buttons,"border", color, 0.5);
     tables = document.getElementsByClassName("content_table");
-    change_color(tables,"backgroundColor",color, 0.2)
+    //change_color(tables,"backgroundColor",color, 0.2)
     rows = document.getElementsByClassName("row");
     change_color(rows,"backgroundColor",color, 0.2);
     rows = document.getElementsByClassName("day_row");

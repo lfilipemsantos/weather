@@ -175,7 +175,7 @@ body {
 
 #next_days_row {
     display: none;
-    height: 100%;
+    height: 800px;
     width: 100%;
 }
 
@@ -278,8 +278,8 @@ body {
 
 .table_icons {
     width: 30px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 10px;
+    padding-right: 0px;
 }
 
 .weather_icon {
