@@ -64,13 +64,18 @@ function switch_tab(id) {
         }
     }
     document.getElementById(id + "_row").style.display = "block";
+    if(id=="today"){
+        document.getElementById("tomorrow_row").style.display = "block";
+        document.getElementById("next_days_row").style.display = "block";
+    }
     document.getElementById(id).style.backgroundColor = "rgba(" + localStorage["color_theme"] + ", " + 0.5 + ")";
     try{
         document.getElementById("table_" + id).style.display = "block";
     }
     catch{
         console.log('error')
-    }  
+    } 
+    return;
 }
 
 

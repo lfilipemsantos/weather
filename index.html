@@ -20,7 +20,7 @@
             </div>
         </div>
 
-        <div id="time_options">
+        <div id="time_options" style="display: none;">
             <div id="inner_time_options">
                 <div class="button" id="today" onclick="switch_tab('today')">
                     <p>Hoje</p>
@@ -91,7 +91,7 @@
                 </table>
             </div>
         </div>
-        <div id="table_tomorrow" class="table">
+        <div id="table_tomorrow" class="table" style="display: none;">
             <div id="table_container" style="height: 100%; max-width: 400px;">
                 <table class="content_table" style="background-color: rgba(114, 197, 197, 0.2); width: 100%;height: 100%; margin-left: auto; margin-right: auto;text-align: center; padding-bottom: 10px;border-radius: 10px;vertical-align: middle;">
                     <tr>
@@ -144,9 +144,13 @@
         <div class="rows" id="today_row">
             <div class="inner" id="innerToday"></div>
         </div>
+        <br>
+        <h2 style="margin-left: 30px;">Amanhã</h2>
         <div class="rows" id="tomorrow_row">
             <div class="inner" id="innerTomorrow"></div>
         </div>
+        <br>
+        <h2 style="margin-left: 30px;">Próximos 10 dias</h2>
         <div class="rows" id="next_days_row">
             <div class="inner" id="inner_next_days"></div>
         </div>

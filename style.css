@@ -166,15 +166,15 @@ body {
 }
 
 #tomorrow_row {
-    display: none;
+    display: block;
 }
 
 #table_tomorrow {
-    display: none;
+    display: block;
 }
 
 #next_days_row {
-    display: none;
+    display: block;
     height: 800px;
     width: 100%;
 }
