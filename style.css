@@ -350,6 +350,7 @@ body {
     height: 40px;
     bottom: 0px;
     display: block;
+    margin-top: 0px;
     padding-top:10px;
     padding-bottom:10px;
     background-color: rgb(206, 206, 206);
