@@ -167,6 +167,7 @@ body {
 
 #tomorrow_row {
     display: block;
+    height: 250px;
 }
 
 #table_tomorrow {
