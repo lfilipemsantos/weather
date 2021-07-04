@@ -240,13 +240,19 @@
         
         <div class="rows" id="bottom-options" style="">
             <div class="inner" style="height:auto;">
-                <div class="button" id="settings" onclick="switch_tab('settings')" style="width:38px;border-radius: 50%;">
+                <div class="button" id="settings" onclick="switch_tab('settings')" style="width:38px;border-radius: 50%;display: none;">
                     <div style="width: 38px; height: 38px;"><img id="settings_icon" src="settings_b.svg" alt="settings icon" style="height: 20px; margin-left: 9px; margin-top: 9px;"></div>
+                </div>
+                <div class="button" id="about" onclick="get_data(localStorage['local_id'])">
+                    <p>Início</p>
+                </div>
+                <div class="button" id="about" onclick="switch_tab('setting')">
+                    <p>Definições</p>
                 </div>
                 <div class="button" id="about" onclick="switch_tab('about')" style="display: none;">
                     <p>Sobre</p>
                 </div>
-                <div class="button" id="settings" onclick="get_data(localStorage['local_id'])" style="width:38px;border-radius: 50%;">
+                <div class="button" id="settings" onclick="get_data(localStorage['local_id'])" style="width:38px;border-radius: 50%; display: none;">
                     <div style="width: 38px; height: 38px;"><img id="update_icon" src="update_b.svg" alt="update icon" style="height: 20px; margin-left: 9px; margin-top: 9px;"></div>
                 </div>
             </div>
