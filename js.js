@@ -91,16 +91,30 @@ function get_data(local_id) {
     request.send();
 
     //get today and tomorrow date as string
-    const current = new Date();
-    var today_str = current.toISOString().slice(0,10);
-    current.setDate(current.getDate() +1);
-    var tomorrow_str = current.toISOString().slice(0,10);
+    const today = new Date();
+    var today_str = today.toISOString().slice(0,10);
+    const tomorrow = new Date();
+    tomorrow.setDate(today.getDate()+1);
+    console.log(today)
+    console.log(tomorrow)
+    
+    var tomorrow_str = tomorrow.toISOString().slice(0,10);
+
+    if(today.getHours()==0){
+        today_str = tomorrow_str;
+        tomorrow.setDate(tomorrow.getDate()+1);
+        tomorrow_str = tomorrow.toISOString().slice(0,10);
+    }
+
+    console.log(today_str);
+    console.log(tomorrow_str);
 
     request.onreadystatechange = function() {
         if (request.readyState == XMLHttpRequest.DONE) {
             data = request.response;
 
             clear_rows();
+            
             var days = build_arrays(data, today_str, tomorrow_str)
             console.log(data);
             build_rows(days);
@@ -138,6 +152,8 @@ function clear_rows() {
 
 
 function build_table(current_day, current_hour) {
+    console.log(current_day)
+    console.log(current_hour)
     if(current_hour) {
         document.getElementById("table_temp").textContent = parseInt(current_hour["tMed"]) + "ºC";
         text = document.getElementsByClassName("table-text")
@@ -145,8 +161,12 @@ function build_table(current_day, current_hour) {
     else {
         text = document.getElementsByClassName("table-text-T")
     }
-    document.getElementById("data-update").textContent = ("Última atualização: " + current_day["dataUpdate"]).replace("T", " às ")
-    document.getElementById("data-update-T").textContent = ("Última atualização: " + current_day["dataUpdate"]).replace("T", " às ")
+    try {
+        document.getElementById("data-update").textContent = ("Última atualização: " + current_day["dataUpdate"]).replace("T", " às ")
+    }
+    catch {
+        console.log('error')
+    }
     
     for (let i = 0; i < text.length; i++) {
         if(text[i].id.includes("proba")) {
