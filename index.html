@@ -13,153 +13,144 @@
     </head>
 
     <body onload="init()">
-        <div style="margin-bottom: 85px;">
-        
-
-        <div id="time_options" style="display: none;">
-            <div id="inner_time_options">
-                <div class="button" id="today" onclick="switch_tab('today')">
-                    <p>Hoje</p>
-                </div>
-                <div class="button" id="tomorrow" onclick="switch_tab('tomorrow')">
-                    <p>Amanhã</p>
-                </div>
-                <div class="button" id="next_days" onclick="switch_tab('next_days')">
-                    <p>10 dias</p>
-                </div>
-                <div class="button" id="close" onclick="show_tab_buttons();show_bottom()" style="width:38px;border-radius: 50%; display: none;">
-                    <div style="width: 38px; height: 38px;"><img id="close_icon" src="close_b.svg" alt="update icon" style="height: 20px; margin-left: 9px; margin-top: 9px;"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="rows" id="location_row">
-            <ul id="location-list">
-            </ul>
-        </div>  
-
-        <div id="table_today" class="table">
+        <div id="">
             <div id="hero_div">
                 <div id="search_container">
                     <input autocomplete="off" id="location" type="text" onkeyup="search_location()" placeholder="Pesquisar...">
                 </div>
             </div>
-            <div id="table_container" style="height: 100%; max-width: 400px;">
-                <table class="content_table" style=" width: 100%;height: 100%; margin-left: auto; margin-right: auto;text-align: center; padding-bottom: 10px;border-radius: 10px;vertical-align: middle;">
-                    <tr>
-                        <td id="location-text" colspan="4" style="font-size: 15px; padding-top:10px;"></td>
-                    </tr>
-                    <tr style="text-align: center; width: 100%;">
-                        <th id="table_temp" colspan="4" style="text-align:center;line-height:70px;font-size:70px;padding-bottom: 40px;padding-top: 10px;"></th>
-                    </tr>
-                    <tr>
-                        <td id="tMax">
-                            <div style="display: inline-block;">
-                                <img class="table_icons" alt="temperatura máxima" src="icons/icons_table/tMax.svg">
-                            </div>
-                            <div style="display: inline-block;">
-                                <p class="table-text" id="text-tMax"></p>
-                            </div>                     
-                        </td>
-                        <td id="tMin">
-                            <div style="display: inline-block;">
-                                <img class="table_icons" alt="temperatura mínima" src="icons/icons_table/tMin.svg">
-                            </div>
-                            <div style="display: inline-block;">
-                                <p class="table-text" id="text-tMin"></p>
-                            </div> 
-                        <td id="iUv"> 
-                            <div style="display: inline-block;">
-                                <img class="table_icons" alt="índice UV" src="icons/icons_table/iUv.svg">
-                            </div>
-                            <div style="display: inline-block;">
-                                <p class="table-text" id="text-iUv"></p>
-                            </div>                     
-                        </td> 
-                            <td id="probabilidadePrecipita">
+        </div>
+        <div class="rows" id="location-tab">
+            <div id="time_options">
+                <div id="inner_time_options">
+                    <div class="button" id="close" onclick="switch_tab('home-tab')" style="width:38px;border-radius: 50%;">
+                        <div style="width: 38px; height: 38px;"><img id="close_icon" src="close_b.svg" alt="update icon" style="height: 20px; margin-left: 9px; margin-top: 9px;"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <ul id="location-list">
+            </ul>
+        </div> 
+
+        <div id="home-tab" style="margin-bottom: 85px;">
+            <div id="table_today" class="table">
+                <div id="table_container" style="height: 100%; max-width: 400px;">
+                    <table class="content_table" style=" width: 100%;height: 100%; margin-left: auto; margin-right: auto;text-align: center; padding-bottom: 10px;border-radius: 10px;vertical-align: middle;">
+                        <tr>
+                            <td id="location-text" colspan="4" style="font-size: 15px; padding-top:10px;"></td>
+                        </tr>
+                        <tr style="text-align: center; width: 100%;">
+                            <th id="table_temp" colspan="4" style="text-align:center;line-height:70px;font-size:70px;padding-bottom: 40px;padding-top: 10px;"></th>
+                        </tr>
+                        <tr>
+                            <td id="tMax">
                                 <div style="display: inline-block;">
-                                    <img class="table_icons" alt="probabilidade precipitação" src="icons/icons_table/probabilidadePrecipita.svg">
+                                    <img class="table_icons" alt="temperatura máxima" src="icons/icons_table/tMax.svg">
                                 </div>
                                 <div style="display: inline-block;">
-                                    <p class="table-text" id="text-probabilidadePrecipita"></p>
+                                    <p class="table-text" id="text-tMax"></p>
+                                </div>                     
+                            </td>
+                            <td id="tMin">
+                                <div style="display: inline-block;">
+                                    <img class="table_icons" alt="temperatura mínima" src="icons/icons_table/tMin.svg">
+                                </div>
+                                <div style="display: inline-block;">
+                                    <p class="table-text" id="text-tMin"></p>
+                                </div> 
+                            <td id="iUv"> 
+                                <div style="display: inline-block;">
+                                    <img class="table_icons" alt="índice UV" src="icons/icons_table/iUv.svg">
+                                </div>
+                                <div style="display: inline-block;">
+                                    <p class="table-text" id="text-iUv"></p>
+                                </div>                     
+                            </td> 
+                                <td id="probabilidadePrecipita">
+                                    <div style="display: inline-block;">
+                                        <img class="table_icons" alt="probabilidade precipitação" src="icons/icons_table/probabilidadePrecipita.svg">
+                                    </div>
+                                    <div style="display: inline-block;">
+                                        <p class="table-text" id="text-probabilidadePrecipita"></p>
+                                    </div>
+                                </td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="data-update" colspan="4" style="font-size: 8px; padding-top:10px;">Última atualização:</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="table_tomorrow" class="table" style="display: none;">
+                <div id="table_container" style="height: 100%; max-width: 400px;">
+                    <table class="content_table" style="background-color: rgba(114, 197, 197, 0.2); width: 100%;height: 100%; margin-left: auto; margin-right: auto;text-align: center; padding-bottom: 10px;border-radius: 10px;vertical-align: middle;">
+                        <tr>
+                            <td id="location-text-T" colspan="4" style="font-size: 15px; padding-top:10px;"></td>
+                        </tr>
+                        <tr>
+                            <th id="table_temp" colspan="4" style="font-size: 50px;padding-bottom: 20px;"></th>
+                        </tr>
+                        <tr>
+                            <td id="tMaxT">
+                                <div style="display: inline-block;">
+                                    <img class="table_icons" src="icons/icons_table/tMax.svg">
+                                </div>
+                                <div style="display: inline-block;">
+                                    <p class="table-text-T" id="text-tMax"></p>
+                                </div>                     
+                            </td>
+                            <td id="iUvT"> 
+                                <div style="display: inline-block;">
+                                    <img class="table_icons" src="icons/icons_table/iUv.svg">
+                                </div>
+                                <div style="display: inline-block;">
+                                    <p class="table-text-T" id="text-iUv"></p>
+                                </div>                     
+                            </td> 
+                            <td id="tMinT">
+                                <div style="display: inline-block;">
+                                    <img class="table_icons" src="icons/icons_table/tMin.svg">
+                                </div>
+                                <div style="display: inline-block;">
+                                    <p class="table-text-T" id="text-tMin"></p>
+                                </div> 
+                            </td>
+                            <td id="probabilidadePrecipitaT">
+                                <div style="display: inline-block;">
+                                    <img class="table_icons" src="icons/icons_table/probabilidadePrecipita.svg">
+                                </div>
+                                <div style="display: inline-block;">
+                                    <p class="table-text-T" id="text-probabilidadePrecipita"></p>
                                 </div>
                             </td>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td id="data-update" colspan="4" style="font-size: 8px; padding-top:10px;">Última atualização:</td>
-                    </tr>
-                </table>
+                        </tr>
+                        <tr>
+                            <td id="data-update-T" colspan="4" style="font-size: 8px; padding-top:10px;">Última atualização:</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
-        </div>
-        <div id="table_tomorrow" class="table" style="display: none;">
-            <div id="table_container" style="height: 100%; max-width: 400px;">
-                <table class="content_table" style="background-color: rgba(114, 197, 197, 0.2); width: 100%;height: 100%; margin-left: auto; margin-right: auto;text-align: center; padding-bottom: 10px;border-radius: 10px;vertical-align: middle;">
-                    <tr>
-                        <td id="location-text-T" colspan="4" style="font-size: 15px; padding-top:10px;"></td>
-                    </tr>
-                    <tr>
-                        <th id="table_temp" colspan="4" style="font-size: 50px;padding-bottom: 20px;"></th>
-                    </tr>
-                    <tr>
-                        <td id="tMaxT">
-                            <div style="display: inline-block;">
-                                <img class="table_icons" src="icons/icons_table/tMax.svg">
-                            </div>
-                            <div style="display: inline-block;">
-                                <p class="table-text-T" id="text-tMax"></p>
-                            </div>                     
-                        </td>
-                        <td id="iUvT"> 
-                            <div style="display: inline-block;">
-                                <img class="table_icons" src="icons/icons_table/iUv.svg">
-                            </div>
-                            <div style="display: inline-block;">
-                                <p class="table-text-T" id="text-iUv"></p>
-                            </div>                     
-                        </td> 
-                        <td id="tMinT">
-                            <div style="display: inline-block;">
-                                <img class="table_icons" src="icons/icons_table/tMin.svg">
-                            </div>
-                            <div style="display: inline-block;">
-                                <p class="table-text-T" id="text-tMin"></p>
-                            </div> 
-                        </td>
-                        <td id="probabilidadePrecipitaT">
-                            <div style="display: inline-block;">
-                                <img class="table_icons" src="icons/icons_table/probabilidadePrecipita.svg">
-                            </div>
-                            <div style="display: inline-block;">
-                                <p class="table-text-T" id="text-probabilidadePrecipita"></p>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td id="data-update-T" colspan="4" style="font-size: 8px; padding-top:10px;">Última atualização:</td>
-                     </tr>
-                </table>
+
+            <div class="rows" id="today_row">
+                <div class="inner" id="innerToday"></div>
+            </div>
+            <br>
+            <div class="rows" id="tomorrow_row">
+                <h2 style="margin-left: 30px;">Amanhã</h2>
+                <br>
+                <div class="inner" id="innerTomorrow"></div>
+            </div>
+            <br>
+            <div class="rows" id="next_days_row">
+                <h2 style="margin-left: 30px;">Próximos 10 dias</h2>
+                <br>
+                <div class="inner" id="inner_next_days"></div>
             </div>
         </div>
 
-        <div class="rows" id="today_row">
-            <div class="inner" id="innerToday"></div>
-        </div>
-        <br>
-        <div class="rows" id="tomorrow_row">
-            <h2 style="margin-left: 30px;">Amanhã</h2>
-            <br>
-            <div class="inner" id="innerTomorrow"></div>
-        </div>
-        <br>
-        <div class="rows" id="next_days_row">
-            <h2 style="margin-left: 30px;">Próximos 10 dias</h2>
-            <br>
-            <div class="inner" id="inner_next_days"></div>
-        </div>
-
-        
-        <div class="rows content_table" id="settings_row" style="height: fit-content; width:80%; max-width: 400px;border-radius: 10px;margin-top: 0px; top:0;">
+        <div class="" id="settings-tab" style="height: fit-content; width:80%; max-width: 400px;border-radius: 10px;margin-top: 0px; top:0; margin-left: auto; margin-right: auto;">
             <div style="width: fit-content; margin-left: auto;margin-right: auto; margin-top: 10px;">
                 <h3>DEFINIÇÕES</h3>
             </div>
@@ -230,23 +221,17 @@
                     www.ipma.pt
                 </a>
             </div>
-        </div>
-
-
-        <div class="rows" id="about_row" style="height: 300px; background-color: rgba(114, 197, 197, 0.2);width:80%; max-width: 400px;border-radius: 10px;margin-top: 30px;">
-            
-        </div>  
-        </div>      
+        </div>     
         
-        <div class="rows" id="bottom-options" style="">
+        <div class="rows" id="bottom-options">
             <div class="inner" style="height:auto;">
-                <div class="button" id="settings" onclick="switch_tab('settings')" style="width:38px;border-radius: 50%;display: none;">
+                <div class="button" id="settings" onclick="switch_tab('settings-tab')" style="width:38px;border-radius: 50%;display: none;">
                     <div style="width: 38px; height: 38px;"><img id="settings_icon" src="settings_b.svg" alt="settings icon" style="height: 20px; margin-left: 9px; margin-top: 9px;"></div>
                 </div>
-                <div class="button" id="about" onclick="get_data(localStorage['local_id'])">
+                <div class="button" id="home-button" onclick="get_data(localStorage['local_id'])">
                     <p>Início</p>
                 </div>
-                <div class="button" id="about" onclick="switch_tab('settings')">
+                <div class="button" id="settings-button" onclick="switch_tab('settings-tab')">
                     <p>Definições</p>
                 </div>
                 <div class="button" id="about" onclick="switch_tab('about')" style="display: none;">

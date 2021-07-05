@@ -20,10 +20,10 @@ function init() {
     else {
         switch_theme("claro");
     }
-    document.getElementById("today").classList.add("selected");
+    document.getElementById("home-button").classList.add("selected");
     if(localStorage["color_theme"]) {
         switch_colors(localStorage["color_theme"]);
-        document.getElementById("today").style.backgroundColor = "rgba(" + localStorage["color_theme"] + ", " + 0.5 + ")";
+        document.getElementById("home-button").style.backgroundColor = "rgba(" + localStorage["color_theme"] + ", " + 0.5 + ")";
 
     }
 
@@ -52,35 +52,35 @@ function build_locations(locations) {
 
 
 function switch_tab(id) {
-    var main = ["today", "tomorrow", "next_days", "settings", "about", "location"];
+    console.log(id)
+    var main = ["home-tab", "settings-tab", "location-tab"];
     for (let i = 0; i < main.length; i++) {
-        document.getElementById(main[i] + "_row").style.display = "none";
-        document.getElementById(main[i]).style.backgroundColor = "rgba(" + localStorage["color_theme"] + ", " + 0.1 + ")";
-        try{
+        document.getElementById(main[i]).style.display = "none";
+        //document.getElementById(main[i]).style.backgroundColor = "rgba(" + localStorage["color_theme"] + ", " + 0.1 + ")";
+        /*try{
             document.getElementById("table_" + main[i]).style.display = "none";
         }
         catch{
             continue;
-        }
+        }*/
     }
-    document.getElementById(id + "_row").style.display = "block";
-    if(id=="today"){
-        document.getElementById("tomorrow_row").style.display = "block";
-        document.getElementById("next_days_row").style.display = "block";
+    document.getElementById(id).style.display = "block";
+    if(id!="location-tab"){
+        document.getElementById("bottom-options").style.display = "block";
     }
-    document.getElementById(id).style.backgroundColor = "rgba(" + localStorage["color_theme"] + ", " + 0.5 + ")";
-    try{
+    //document.getElementById(id).style.backgroundColor = "rgba(" + localStorage["color_theme"] + ", " + 0.5 + ")";
+    /*try{
         document.getElementById("table_" + id).style.display = "block";
     }
     catch{
         console.log('error')
-    } 
+    } */
     return;
 }
 
 
 function get_data(local_id) {
-    show_tab_buttons();
+    //show_tab_buttons();
     show_bottom();
     localStorage["local_id"] = local_id;
     //make request to api
@@ -105,7 +105,7 @@ function get_data(local_id) {
             console.log(data);
             build_rows(days);
             set_location_name(local_id); 
-            switch_tab('today');
+            switch_tab('home-tab');
             document.getElementById("location").value = "";
         }
     }
@@ -201,7 +201,7 @@ function build_rows(days) {
     
     if(localStorage["color_theme"]) {
         switch_colors(localStorage["color_theme"]);
-        document.getElementById("today").style.backgroundColor = "rgba(" + localStorage["color_theme"] + ", " + 0.5 + ")";
+        //document.getElementById("today").style.backgroundColor = "rgba(" + localStorage["color_theme"] + ", " + 0.5 + ")";
     }
 }
 
@@ -330,7 +330,6 @@ function switch_theme(id) {
         document.getElementById("location").style.color="rgb(37, 37, 37)";
         document.getElementById("settings_icon").src = "settings_b.svg";
         document.getElementById("update_icon").src = "update_b.svg";
-        document.getElementById("close_icon").src = "close_b.svg";
         document.getElementById("bottom-options").style.backgroundColor = "rgb(206, 206, 206)";
     }
     
@@ -351,7 +350,7 @@ function switch_colors(color) {
     rows = document.getElementsByClassName("location-li");
     change_color(rows,"backgroundColor",color, 0.2);
     document.getElementById("location").style.backgroundColor = "rgba(" + color + ", 0.4)";
-    document.getElementById("about_row").style.backgroundColor = "rgba(" + color + ", 0.4)";
+    //document.getElementById("about_row").style.backgroundColor = "rgba(" + color + ", 0.4)";
     document.getElementById("apply-color-button").style.backgroundColor = "rgba(" + color + ", 0.1)";
 
     localStorage['color_theme'] = color
@@ -406,8 +405,8 @@ function is_in_range(value) {
 
 
 function search_location() {
-    switch_tab('location');
-    hide_tab_buttons();
+    switch_tab('location-tab');
+    //hide_tab_buttons();
     hide_bottom();
     var input, filter, ul, li, div, i, txtValue;
     input = document.getElementById("location");
@@ -432,7 +431,7 @@ function show_bottom()  {
     document.getElementById("bottom-options").style.display = "block";
 }
 
-function hide_tab_buttons() {
+/*function hide_tab_buttons() {
     document.getElementById("today").style.display = "none";
     document.getElementById("tomorrow").style.display = "none";
     document.getElementById("next_days").style.display = "none";
@@ -445,4 +444,4 @@ function show_tab_buttons() {
     document.getElementById("next_days").style.display = "inline-block";
     document.getElementById("close").style.display = "none";
     switch_tab('today');
-}
+}*/
