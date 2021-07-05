@@ -316,13 +316,17 @@ function build_next_days(data) {
 
 function switch_theme(id) {
     if(id=="escuro"){
-        document.body.style.backgroundColor="rgb(37, 37, 37)";
-        document.body.style.color="rgb(245, 245, 245)";
-        document.getElementById("location").style.color="rgb(245, 245, 245)";
+        document.body.style.backgroundColor = "rgb(37, 37, 37)";
+        document.body.style.color = "rgb(245, 245, 245)";
+        document.getElementById("location").style.color = "rgb(245, 245, 245)";
         document.getElementById("settings_icon").src = "settings_w.svg";
         document.getElementById("update_icon").src = "update_w.svg";
         document.getElementById("close_icon").src = "close_w.svg";
         document.getElementById("bottom-options").style.backgroundColor = "rgb(50, 50, 50)";
+        hr = document.getElementsByTagName("hr")
+        for(i = 0; i<hr.length; i++) {
+            hr[i].style.backgroundColor = "rgb(245, 245, 245)";
+        }
     }
     else if (id=="claro") {
         document.body.style.backgroundColor="rgb(245, 245, 245)";
@@ -331,6 +335,10 @@ function switch_theme(id) {
         document.getElementById("settings_icon").src = "settings_b.svg";
         document.getElementById("update_icon").src = "update_b.svg";
         document.getElementById("bottom-options").style.backgroundColor = "rgb(206, 206, 206)";
+        hr = document.getElementsByTagName("hr")
+        for(i = 0; i<hr.length; i++) {
+            hr[i].style.backgroundColor = "rgb(37, 37, 37)";
+        }
     }
     
     localStorage["theme"] = id;
