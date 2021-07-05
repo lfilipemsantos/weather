@@ -131,7 +131,6 @@ function set_location_name(local_id) {
         for(var j = 0; j<locations[i]["localidade_distrito"].length; j++) {
             if(locations[i]["localidade_distrito"][j]["globalIdLocal"] == local_id) {
                 document.getElementById("location-text").textContent = locations[i]["localidade_distrito"][j]["local"] + ", " + locations[i]["nome_distrito"]
-                document.getElementById("location-text-T").textContent = locations[i]["localidade_distrito"][j]["local"] + ", " + locations[i]["nome_distrito"]
 
                 return;
             }
