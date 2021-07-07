@@ -52,7 +52,7 @@ body {
 }
 
 #location {
-    background-color: rgba(114, 197, 197, 0.4);
+    background-color: rgba(100, 100, 100, 0.4);
     margin-right: auto;
     margin-left: auto;
     border-radius: 11px;
@@ -320,7 +320,7 @@ body {
 #apply-color-button {
     height: 30px;
     width: 25%;
-    border:rgba(114, 197, 197, 0.5) 1px solid;
+    border:rgba(100, 100, 100, 0.5) 1px solid;
     background-color:rgba(114, 197, 197, 0.1);
     margin-left: 2%;
     margin-right: 2%;
@@ -353,6 +353,9 @@ body {
     padding: 6px;
     padding-left: 11px;
     border-radius: 11px;
+    animation-name: animate-in;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
 }
 
 #bottom-options {
