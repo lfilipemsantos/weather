@@ -58,7 +58,7 @@ function switch_tab(id) {
         if(main[i]!=id){
             console.log(main[i]);
             document.getElementById(main[i]).classList.add("out");
-            setTimeout(() => { document.getElementById(main[i]).style.display = "none"; document.getElementById(main[i]).classList.remove("out"); }, 400);
+            setTimeout(() => { document.getElementById(main[i]).style.display = "none"; document.getElementById(main[i]).classList.remove("out"); }, 450);
         }
         
         //document.getElementById(main[i]).style.backgroundColor = "rgba(" + localStorage["color_theme"] + ", " + 0.1 + ")";
