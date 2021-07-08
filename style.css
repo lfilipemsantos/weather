@@ -20,11 +20,26 @@
     -ms-user-select: none; /* IE10+/Edge */
 }
 
-@keyframes animate-in {
+@keyframes animate-in-row {
     0% {opacity: 0; margin-top:-10px;}
     100% {opacity: 1; margin-top:0px;}
 }
 
+@keyframes animate-in-next-row {
+    0% {opacity: 0; margin-top:-10px;}
+    100% {opacity: 1; margin-top:0px;}
+}
+
+@keyframes animate-tab-out {
+    0% {opacity: 1; }
+    100% {opacity: 0; margin-left:-3000px;}
+}
+
+.out {
+    animation-name: animate-tab-out;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+}
 
 html {
     min-height: 100%;
@@ -92,7 +107,7 @@ body {
     border-radius: 5px;
     display: inline-block;
     box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.4); 
-    animation-name: animate-in;   
+    animation-name: animate-in-row;   
     animation-duration: 0.5s;
     animation-timing-function:ease-in;
 }
@@ -118,6 +133,9 @@ body {
     margin-bottom: 15px;
     border-radius: 10px;
     padding-left: 5%;
+    animation-name: animate-in-next-row;   
+    animation-duration: 0.5s;
+    animation-timing-function:ease-in;
 }
 
 .day_row > p {

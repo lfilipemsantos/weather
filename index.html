@@ -142,75 +142,77 @@
             </div>
         </div>
 
-        <div class="" id="settings-tab" style="height: fit-content; width:80%; max-width: 400px;border-radius: 10px;margin-top: 0px; top:0; margin-left: auto; margin-right: auto;">
-            <div style="width: fit-content; margin-left: auto;margin-right: auto; margin-top: 10px;">
-                <h3>DEFINIÇÕES</h3>
-            </div>
-            <div style="width: 90%; margin-left: auto; margin-right: auto;margin-top: 15px;">
-                <h4>Tema</h4>
-            </div>
-            <div class="inner" id="temas" style="height: 50px; margin-top:10px;">
-                <div class="theme_row" id="claro_button" onclick="switch_theme('claro')">
-                    <p style="text-align:center; line-height:18px; height: 18px; padding-top: 16px;">Claro</p>
+        <div id="settings-tab">
+            <div style="height: fit-content; width:80%; max-width: 400px;border-radius: 10px;margin-top: 0px; top:0; margin-left: auto; margin-right: auto;">
+                <div style="width: fit-content; margin-left: auto;margin-right: auto; margin-top: 10px;">
+                    <h3>DEFINIÇÕES</h3>
                 </div>
-                <div class="theme_row" id="escuro_button" onclick="switch_theme('escuro')">
-                    <p style="text-align:center; line-height:18px; height: 18px; padding-top: 16px;">Escuro</p>
+                <div style="width: 90%; margin-left: auto; margin-right: auto;margin-top: 15px;">
+                    <h4>Tema</h4>
                 </div>
-            </div>
-
-            <br>
-            <hr style="height: 1px;">
-            <div style="width: 90%; margin-left: auto; margin-right: auto;margin-top: 15px;">
-                <h4>Cor de destaque</h4>
-            </div>
-            <div class="inner" id="cores" style="height: 50px; margin-top:10px;">
-                <div class="color_button" onclick="switch_colors('114, 197, 197')" style="background-color: rgb(114, 197, 197);">
-                    <div style="width: 100%; height: 100%;"></div>
-                </div>
-                <div class="color_button" onclick="switch_colors('192, 133, 106')" style="background-color: rgb(192, 133, 106);">
-                    <div style="width: 100%; height: 100%;"></div>
-                </div>
-                <div class="color_button" onclick="switch_colors('106, 192, 149')" style="background-color: rgb(106, 192, 149);">
-                    <div style="width: 100%; height: 100%;"></div>
-                </div>
-                <div class="color_button" onclick="switch_colors('106, 153, 192')" style="background-color: rgb(106, 153, 192);">
-                    <div style="width: 100%; height: 100%;"></div>
-                </div>
-                <div class="color_button" onclick="switch_colors('146, 106, 192')" style="background-color: rgb(146, 106, 192);">
-                    <div style="width: 100%; height: 100%;"></div>
-                </div>
-            </div>
-            
-            <div style="width: 90%; margin-left: auto; margin-right: auto;margin-top: 15px;">
-                <div style="margin-left: auto; margin-right: auto; text-align: center;">
-                    <input class="color-textb" id="red" type="number" placeholder="R"></input>
-                    <input class="color-textb" id="green" type="number" placeholder="G"></input>
-                    <input class="color-textb" id="blue" type="number" placeholder="B"></input>
-                    <div id="apply-color-button" style="display: inline-block;" onclick="set_rgb()">
-                        <p>Aplicar</p>
+                <div class="inner" id="temas" style="height: 50px; margin-top:10px;">
+                    <div class="theme_row" id="claro_button" onclick="switch_theme('claro')">
+                        <p style="text-align:center; line-height:18px; height: 18px; padding-top: 16px;">Claro</p>
                     </div>
-                    <div id="color-warning" style="width: 100%; display: none;">
-                        <small style="color:red;">Apenas valores entre 0 e 255</small>
+                    <div class="theme_row" id="escuro_button" onclick="switch_theme('escuro')">
+                        <p style="text-align:center; line-height:18px; height: 18px; padding-top: 16px;">Escuro</p>
                     </div>
                 </div>
-            </div>
 
-            <br>
-            <hr style="height: 1px;">
+                <br>
+                <hr style="height: 1px;">
+                <div style="width: 90%; margin-left: auto; margin-right: auto;margin-top: 15px;">
+                    <h4>Cor de destaque</h4>
+                </div>
+                <div class="inner" id="cores" style="height: 50px; margin-top:10px;">
+                    <div class="color_button" onclick="switch_colors('114, 197, 197')" style="background-color: rgb(114, 197, 197);">
+                        <div style="width: 100%; height: 100%;"></div>
+                    </div>
+                    <div class="color_button" onclick="switch_colors('192, 133, 106')" style="background-color: rgb(192, 133, 106);">
+                        <div style="width: 100%; height: 100%;"></div>
+                    </div>
+                    <div class="color_button" onclick="switch_colors('106, 192, 149')" style="background-color: rgb(106, 192, 149);">
+                        <div style="width: 100%; height: 100%;"></div>
+                    </div>
+                    <div class="color_button" onclick="switch_colors('106, 153, 192')" style="background-color: rgb(106, 153, 192);">
+                        <div style="width: 100%; height: 100%;"></div>
+                    </div>
+                    <div class="color_button" onclick="switch_colors('146, 106, 192')" style="background-color: rgb(146, 106, 192);">
+                        <div style="width: 100%; height: 100%;"></div>
+                    </div>
+                </div>
+                
+                <div style="width: 90%; margin-left: auto; margin-right: auto;margin-top: 15px;">
+                    <div style="margin-left: auto; margin-right: auto; text-align: center;">
+                        <input class="color-textb" id="red" type="number" placeholder="R"></input>
+                        <input class="color-textb" id="green" type="number" placeholder="G"></input>
+                        <input class="color-textb" id="blue" type="number" placeholder="B"></input>
+                        <div id="apply-color-button" style="display: inline-block;" onclick="set_rgb()">
+                            <p>Aplicar</p>
+                        </div>
+                        <div id="color-warning" style="width: 100%; display: none;">
+                            <small style="color:red;">Apenas valores entre 0 e 255</small>
+                        </div>
+                    </div>
+                </div>
 
-            <div style="bottom: 0;text-align: left;line-height: 15px;margin-left: 10px; margin-right: 10px; margin-top: 50px;">
-                Icons made by 
-                <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">
-                    Flat Icons
-                </a> from 
-                <a href="https://www.flaticon.com/" title="Flaticon">
-                    www.flaticon.com
-                </a>
-            </div>
-            <div style="bottom: 0;text-align: left;line-height: 15px;margin-left: 10px; margin-right: 10px; margin-top: 15px;">
-                Dados da metereologia provenientes de: <a href="https://www.ipma.pt/pt/index.html" title="IPMA">
-                    www.ipma.pt
-                </a>
+                <br>
+                <hr style="height: 1px;">
+
+                <div style="bottom: 0;text-align: left;line-height: 15px;margin-left: 10px; margin-right: 10px; margin-top: 50px;">
+                    Icons made by 
+                    <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">
+                        Flat Icons
+                    </a> from 
+                    <a href="https://www.flaticon.com/" title="Flaticon">
+                        www.flaticon.com
+                    </a>
+                </div>
+                <div style="bottom: 0;text-align: left;line-height: 15px;margin-left: 10px; margin-right: 10px; margin-top: 15px;">
+                    Dados da metereologia provenientes de: <a href="https://www.ipma.pt/pt/index.html" title="IPMA">
+                        www.ipma.pt
+                    </a>
+                </div>
             </div>
         </div>     
         

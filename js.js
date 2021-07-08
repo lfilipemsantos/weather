@@ -55,7 +55,12 @@ function switch_tab(id) {
     console.log(id)
     var main = ["home-tab", "settings-tab", "location-tab"];
     for (let i = 0; i < main.length; i++) {
-        document.getElementById(main[i]).style.display = "none";
+        if(main[i]!=id){
+            console.log(main[i]);
+            document.getElementById(main[i]).classList.add("out");
+            setTimeout(() => { document.getElementById(main[i]).style.display = "none"; document.getElementById(main[i]).classList.remove("out"); }, 400);
+        }
+        
         //document.getElementById(main[i]).style.backgroundColor = "rgba(" + localStorage["color_theme"] + ", " + 0.1 + ")";
         /*try{
             document.getElementById("table_" + main[i]).style.display = "none";
@@ -64,7 +69,8 @@ function switch_tab(id) {
             continue;
         }*/
     }
-    document.getElementById(id).style.display = "block";
+    setTimeout(() => {  document.getElementById(id).style.display = "block"; }, 600);
+    
     if(id!="location-tab"){
         document.getElementById("bottom-options").style.display = "block";
     }
