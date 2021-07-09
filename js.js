@@ -352,6 +352,14 @@ function switch_theme(id) {
         for(i = 0; i<hr.length; i++) {
             hr[i].style.backgroundColor = "rgb(245, 245, 245)";
         }
+        
+        fav_icon = document.getElementById("fav_icon").src
+        if(fav_icon.src == "n_fav_b.svg") {
+            fav_icon.src = "n_fav_w.svg"
+        }
+        else if (fav_icon.src == "fav_b.svg"){
+            fav_icon.src = "fav_w.svg"
+        }
     }
     else if (id=="claro") {
         document.body.style.backgroundColor="rgb(245, 245, 245)";
@@ -363,6 +371,13 @@ function switch_theme(id) {
         hr = document.getElementsByTagName("hr")
         for(i = 0; i<hr.length; i++) {
             hr[i].style.backgroundColor = "rgb(37, 37, 37)";
+        }
+        fav_icon = document.getElementById("fav_icon").src
+        if(fav_icon.src == "n_fav_w.svg") {
+            fav_icon.src = "n_fav_b.svg"
+        }
+        else if (fav_icon.src == "fav_w.svg"){
+            fav_icon.src = "fav_b.svg"
         }
     }
     
