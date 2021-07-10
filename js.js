@@ -31,6 +31,11 @@ function init() {
         localStorage["local_id"] = 1182100
     }
 
+    if(!(localStorage["favorites"])) {
+        localStorage["favorites"] = [];
+    }
+    console.log("this is local: " + typeof localStorage["favorites"])
+
     get_data(localStorage["local_id"]);
 }
 
@@ -477,6 +482,22 @@ function hide_bottom()  {
 }
 function show_bottom()  {
     document.getElementById("bottom-options").style.display = "block";
+}
+
+function add_favorite(id) {
+    fav_list = JSON.parse(localStorage["favorites"])
+    console.log(typeof fav_list)
+    localStorage["favorites"] = JSON.stringify(fav_list.push(id));
+    console.log(fav_list)
+}
+
+function rem_favorite(id) {
+    fav_list = localStorage["favorites"]
+    for(i=0; i<fav_list.length; i++) {
+        if (fav_list[i] == id) {
+            fav_list.remove(fav_list[i])
+        }
+    }
 }
 
 /*function hide_tab_buttons() {
