@@ -200,6 +200,7 @@ function build_table(current_day, current_hour) {
 
 
 function build_rows(days) {
+    
     for(j=0;j<days.length;j++) {
         if(j==0){
             var inner_id = "innerToday";
@@ -208,6 +209,9 @@ function build_rows(days) {
             var inner_id = "innerTomorrow";
         }
         for(i=0;i<days[j].length;i++) {
+            var hr = document.createElement('hr');
+            hr.classList.add("row-divider");
+            document.getElementById(inner_id).appendChild(hr);
             var hour_split = days[j][i]["dataPrev"].split("T",2)[1].split(":");
             var hour = hour_split[0] + ":" + hour_split[1];
             
@@ -233,7 +237,11 @@ function build_rows(days) {
             row.appendChild(weather_icon);
             row.appendChild(hour_text);
             document.getElementById(inner_id).appendChild(row);
+
         }
+        var hr = document.createElement('hr');
+            hr.classList.add("row-divider");
+            document.getElementById(inner_id).appendChild(hr);
     }
     
     if(localStorage["color_theme"]) {
@@ -403,8 +411,8 @@ function switch_colors(color) {
     //change_color(buttons,"border", color, 0.5);
     tables = document.getElementsByClassName("content_table");
     //change_color(tables,"backgroundColor",color, 0.2)
-    rows = document.getElementsByClassName("row");
-    change_color(rows,"backgroundColor",color, 0.2);
+    //rows = document.getElementsByClassName("row");
+    //change_color(rows,"backgroundColor",color, 0.2);
     rows = document.getElementsByClassName("day_row");
     change_color(rows,"backgroundColor",color, 0.2);
     rows = document.getElementsByClassName("location-li");
