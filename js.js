@@ -23,8 +23,7 @@ function init() {
     document.getElementById("home-button").classList.add("selected");
     if(localStorage["color_theme"]) {
         switch_colors(localStorage["color_theme"]);
-        document.getElementById("home-button").style.backgroundColor = "rgba(" + localStorage["color_theme"] + ", " + 0.5 + ")";
-
+        //document.getElementById("home-button").style.backgroundColor = "rgba(" + localStorage["color_theme"] + ", " + 0.5 + ")";
     }
 
     if(!(localStorage["local_id"])){
@@ -64,6 +63,14 @@ function switch_tab(id) {
             console.log(main[i]);
             document.getElementById(main[i]).classList.add("out");
             setTimeout(() => { document.getElementById(main[i]).style.display = "none"; document.getElementById(main[i]).classList.remove("out"); }, 350);
+        }
+        if(id=="home-tab") {
+            document.getElementById("settings-button").classList.remove("selected");
+            document.getElementById("home-button").classList.add("selected");
+        }
+        else if(id=="settings-tab") {
+            document.getElementById("settings-button").classList.add("selected");
+            document.getElementById("home-button").classList.remove("selected");
         }
         
         //document.getElementById(main[i]).style.backgroundColor = "rgba(" + localStorage["color_theme"] + ", " + 0.1 + ")";
@@ -391,9 +398,9 @@ function switch_theme(id) {
 
 
 function switch_colors(color) {
-    buttons = document.getElementsByClassName("button");
-    change_color(buttons,"backgroundColor", color, 0.1);
-    change_color(buttons,"border", color, 0.5);
+    //buttons = document.getElementsByClassName("button");
+    //change_color(buttons,"backgroundColor", color, 0.1);
+    //change_color(buttons,"border", color, 0.5);
     tables = document.getElementsByClassName("content_table");
     //change_color(tables,"backgroundColor",color, 0.2)
     rows = document.getElementsByClassName("row");
