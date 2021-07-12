@@ -360,17 +360,22 @@ function build_next_days(data) {
 
 
 function switch_theme(id) {
+    const DARK = "rgb(28, 28, 28)"
+    const LIGHT = "rgb(245, 245, 245)"
+
+
     if(id=="escuro"){
-        document.body.style.backgroundColor = "rgb(37, 37, 37)";
-        document.body.style.color = "rgb(245, 245, 245)";
-        document.getElementById("location").style.color = "rgb(245, 245, 245)";
+        document.body.style.backgroundColor = DARK;
+        document.body.style.color = LIGHT;
+        document.getElementById("location").style.color = LIGHT;
+        document.getElementById("location").style.opacity="90%";
         document.getElementById("settings_icon").src = "settings_w.svg";
         document.getElementById("update_icon").src = "update_w.svg";
         document.getElementById("close_icon").src = "close_w.svg";
-        document.getElementById("bottom-options").style.backgroundColor = "rgb(50, 50, 50)";
+        document.getElementById("bottom-options").style.backgroundColor = "rgb(40, 40, 40)";
         hr = document.getElementsByTagName("hr")
         for(i = 0; i<hr.length; i++) {
-            hr[i].style.backgroundColor = "rgb(245, 245, 245)";
+            hr[i].style.backgroundColor = LIGHT;
         }
         
         fav_icon = document.getElementById("fav_icon").src
@@ -382,15 +387,16 @@ function switch_theme(id) {
         }
     }
     else if (id=="claro") {
-        document.body.style.backgroundColor="rgb(245, 245, 245)";
-        document.body.style.color="rgb(37, 37, 37)";
-        document.getElementById("location").style.color="rgb(37, 37, 37)";
+        document.body.style.backgroundColor=LIGHT;
+        document.body.style.color=DARK;
+        document.getElementById("location").style.color=DARK;
+        document.getElementById("location").style.opacity="90%";
         document.getElementById("settings_icon").src = "settings_b.svg";
         document.getElementById("update_icon").src = "update_b.svg";
         document.getElementById("bottom-options").style.backgroundColor = "rgb(206, 206, 206)";
         hr = document.getElementsByTagName("hr")
         for(i = 0; i<hr.length; i++) {
-            hr[i].style.backgroundColor = "rgb(37, 37, 37)";
+            hr[i].style.backgroundColor = DARK;
         }
         fav_icon = document.getElementById("fav_icon").src
         if(fav_icon.src == "n_fav_w.svg") {
