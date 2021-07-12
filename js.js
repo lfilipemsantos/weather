@@ -360,7 +360,7 @@ function build_next_days(data) {
 
 
 function switch_theme(id) {
-    const DARK = "rgb(28, 28, 28)"
+    const DARK = "rgb(27, 27, 27)"
     const LIGHT = "rgb(245, 245, 245)"
 
 
@@ -372,7 +372,7 @@ function switch_theme(id) {
         document.getElementById("settings_icon").src = "settings_w.svg";
         document.getElementById("update_icon").src = "update_w.svg";
         document.getElementById("close_icon").src = "close_w.svg";
-        document.getElementById("bottom-options").style.backgroundColor = "rgb(40, 40, 40)";
+        document.getElementById("bottom-options").style.backgroundColor = "rgb(60, 60, 60)";
         hr = document.getElementsByTagName("hr")
         for(i = 0; i<hr.length; i++) {
             hr[i].style.backgroundColor = LIGHT;
