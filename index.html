@@ -241,5 +241,18 @@
             </div>
         </div>
 
+
+        <script>
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+              if (prevScrollpos > currentScrollPos) {
+                document.getElementById("bottom-options").style.bottom = "0";
+              } else {
+                document.getElementById("bottom-options").style.bottom = "-80px";
+              }
+              prevScrollpos = currentScrollPos;
+            }
+        </script>
     </body>
 </html>

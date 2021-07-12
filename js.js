@@ -417,7 +417,7 @@ function switch_colors(color) {
     change_color(rows,"backgroundColor",color, 0.2);
     rows = document.getElementsByClassName("location-li");
     change_color(rows,"backgroundColor",color, 0.2);
-    document.getElementById("location").style.backgroundColor = "rgba(" + color + ", 0.4)";
+    document.getElementById("location").style.backgroundColor = "rgba(" + color + ", 0.2)";
     //document.getElementById("about_row").style.backgroundColor = "rgba(" + color + ", 0.4)";
     document.getElementById("apply-color-button").style.backgroundColor = "rgba(" + color + ", 0.1)";
 
