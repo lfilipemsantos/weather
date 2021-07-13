@@ -310,13 +310,13 @@ body {
 }
 
 .table_icons {
-    height: 30px;
+    height: 25px;
     padding-left: 10px;
     padding-right: 0px;
 }
 
 .weather_icon {
-    height: 50px;
+    height: 40px;
     width: 100%;
     margin-top:30px;
     margin-bottom:30px;
