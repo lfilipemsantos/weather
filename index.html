@@ -33,13 +33,21 @@
             </ul>
         </div> 
 
+        <div class="rows" id="favorites-tab" style="display: none;">
+            <ul id="favorites-list">
+
+            </ul>
+        </div> 
+
         <div id="home-tab" style="margin-bottom: 85px;">
             <div id="table_today" class="table">
                 <div id="table_container" style="height: 100%; max-width: 400px;">
                     <table class="content_table" style=" width: 100%;height: 100%; margin-left: auto; margin-right: auto;text-align: center; padding-bottom: 10px;border-radius: 10px;vertical-align: middle;">
                         <tr>
                             <td colspan="4">
-                                <div style="width: auto; height: auto;" onclick="add_favorite('1999')"><img id="fav_icon" src="n_fav_b.svg" alt="settings icon" style="height: 15px;"></div>
+                                <div id="fav_icon_container" onclick="add_favorite('1999')" style="width: auto; height: auto;">
+                                    <img id="fav_icon" src="not_fav_b.svg" alt="settings icon" style="height: 15px;">
+                                </div>
                             </td>
                         </tr>
                         <tr>
@@ -225,12 +233,16 @@
                 <div class="button" id="settings" onclick="switch_tab('settings-tab')" style="width:38px;border-radius: 50%;display: none;">
                     <div style="width: 38px; height: 38px;"><img id="settings_icon" src="settings_b.svg" alt="settings icon" style="height: 20px; margin-left: 9px; margin-top: 9px;"></div>
                 </div>
+                <div class="button" id="settings-button" onclick="switch_tab('settings-tab')">
+                    <p>Definições</p>
+                </div>
+                <hr class="bottom-divider">
                 <div class="button" id="home-button" onclick="get_data(localStorage['local_id'])">
                     <p>Início</p>
                 </div>
-                <hr id="bottom-divider">
-                <div class="button" id="settings-button" onclick="switch_tab('settings-tab')">
-                    <p>Definições</p>
+                <hr class="bottom-divider">
+                <div class="button" id="favorites-button" onclick="switch_tab('favorites-tab')">
+                    <p>Favoritos</p>
                 </div>
                 <div class="button" id="about" onclick="switch_tab('about')" style="display: none;">
                     <p>Sobre</p>
@@ -246,7 +258,7 @@
             var prevScrollpos = window.pageYOffset;
             window.onscroll = function() {
                 var currentScrollPos = window.pageYOffset;
-                console.log(prevScrollpos);
+                //console.log(prevScrollpos);
                 if (prevScrollpos > currentScrollPos || prevScrollpos < 120) {
                     document.getElementById("bottom-options").style.bottom = "0";
                 } 

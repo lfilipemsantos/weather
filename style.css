@@ -387,14 +387,14 @@ body {
     bottom: 0px;
     display: block;
     margin-top: 0px;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-bottom: 25px;
     padding-top:5px;
     padding-bottom:5px;
     background-color: rgb(255, 255, 255);
     /*box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.4);*/
-    width: 60%;
+    width: 80%;
     border-radius: 30px;
     opacity: 99.5%;
     transition: bottom 0.3s;
@@ -405,7 +405,7 @@ body {
     border: unset;
 }
 
-#bottom-divider {
+.bottom-divider {
     display: inline;
     border: none;
     border-left: 1px solid ;
@@ -440,4 +440,8 @@ body {
 
 @media only screen and (min-height:800px) {
     
+}
+
+.fav_row {
+    width: 80%;
 }

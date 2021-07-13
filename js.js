@@ -31,11 +31,14 @@ function init() {
     }
 
     if(!(localStorage["favorites"])) {
-        localStorage["favorites"] = [];
+        var array = [];
+        localStorage["favorites"] = JSON.stringify(array);
     }
     console.log("this is local: " + typeof localStorage["favorites"])
+    console.log("this is local: " + typeof JSON.parse(localStorage["favorites"]))
 
     get_data(localStorage["local_id"]);
+    
 }
 
 
@@ -57,19 +60,28 @@ function build_locations(locations) {
 
 function switch_tab(id) {
     console.log(id)
-    var main = ["home-tab", "settings-tab", "location-tab"];
-    for (let i = 0; i < main.length; i++) {
-        if(main[i]!=id){
-            console.log(main[i]);
-            document.getElementById(main[i]).classList.add("out");
-            setTimeout(() => { document.getElementById(main[i]).style.display = "none"; document.getElementById(main[i]).classList.remove("out"); }, 350);
+    var tabs = ["home-tab", "settings-tab", "location-tab", "favorites-tab"];
+    for (let i = 0; i < tabs.length; i++) {
+        if(tabs[i]!=id){
+            console.log(tabs[i]);
+            document.getElementById(tabs[i]).classList.add("out");
+            setTimeout(() => { document.getElementById(tabs[i]).style.display = "none"; document.getElementById(tabs[i]).classList.remove("out"); }, 350);
         }
         if(id=="home-tab") {
             document.getElementById("settings-button").classList.remove("selected");
+            document.getElementById("favorites-button").classList.remove("selected");
             document.getElementById("home-button").classList.add("selected");
         }
         else if(id=="settings-tab") {
             document.getElementById("settings-button").classList.add("selected");
+            document.getElementById("favorites-button").classList.remove("selected");
+            document.getElementById("home-button").classList.remove("selected");
+        }
+        else if(id=="favorites-tab") {
+            clear_rows()
+            build_favorites();
+            document.getElementById("settings-button").classList.remove("selected");
+            document.getElementById("favorites-button").classList.add("selected");
             document.getElementById("home-button").classList.remove("selected");
         }
         
@@ -101,6 +113,7 @@ function get_data(local_id) {
     //show_tab_buttons();
     show_bottom();
     localStorage["local_id"] = local_id;
+    
     //make request to api
     var requestURL = "https://api.ipma.pt/public-data/forecast/aggregate/" + local_id + ".json"
     var request = new XMLHttpRequest();
@@ -139,8 +152,37 @@ function get_data(local_id) {
             set_location_name(local_id); 
             switch_tab('home-tab');
             document.getElementById("location").value = "";
+            if(in_favorites(local_id)){
+                document.getElementById("fav_icon_container").setAttribute("onclick", "rem_favorite('" + local_id + "')")
+                if (localStorage["theme"]=="escuro") {
+                    document.getElementById("fav_icon").src = "is_fav_w.svg";
+                }
+                else if (localStorage["theme"]=="claro") {
+                    document.getElementById("fav_icon").src = "is_fav_b.svg";
+                }
+            }
+            else {
+                document.getElementById("fav_icon_container").setAttribute("onclick", "add_favorite('" + local_id + "')")
+                if (localStorage["theme"]=="escuro") {
+                    document.getElementById("fav_icon").src = "not_fav_w.svg";
+                }
+                else if (localStorage["theme"]=="claro") {
+                    document.getElementById("fav_icon").src = "not_fav_b.svg";
+                }
+            }
         }
     }
+}
+
+
+function in_favorites(id) {
+    favs = JSON.parse(localStorage["favorites"])
+    for(i=0;i<favs.length; i++) {
+        if(favs[i]["id"] == String(id)) {
+            return true
+        }
+    }
+    return false;
 }
 
 
@@ -149,7 +191,6 @@ function set_location_name(local_id) {
         for(var j = 0; j<locations[i]["localidade_distrito"].length; j++) {
             if(locations[i]["localidade_distrito"][j]["globalIdLocal"] == local_id) {
                 document.getElementById("location-text").textContent = locations[i]["localidade_distrito"][j]["local"] + ", " + locations[i]["nome_distrito"]
-
                 return;
             }
         }
@@ -158,7 +199,7 @@ function set_location_name(local_id) {
 
 
 function clear_rows() {
-    var rows = ["innerToday", "innerTomorrow", "inner_next_days"];
+    var rows = ["innerToday", "innerTomorrow", "inner_next_days", "favorites-tab"];
     for (i=0; i<rows.length; i++) {
         var row = document.getElementById(rows[i]);
         while (row.firstChild) {
@@ -378,13 +419,7 @@ function switch_theme(id) {
             hr[i].style.backgroundColor = LIGHT;
         }
         
-        fav_icon = document.getElementById("fav_icon").src
-        if(fav_icon.src == "n_fav_b.svg") {
-            fav_icon.src = "n_fav_w.svg"
-        }
-        else if (fav_icon.src == "fav_b.svg"){
-            fav_icon.src = "fav_w.svg"
-        }
+        document.getElementById("fav_icon").src.replace("b.svg", "w.svg");
     }
     else if (id=="claro") {
         document.body.style.backgroundColor=LIGHT;
@@ -398,13 +433,7 @@ function switch_theme(id) {
         for(i = 0; i<hr.length; i++) {
             hr[i].style.backgroundColor = DARK;
         }
-        fav_icon = document.getElementById("fav_icon").src
-        if(fav_icon.src == "n_fav_w.svg") {
-            fav_icon.src = "n_fav_b.svg"
-        }
-        else if (fav_icon.src == "fav_w.svg"){
-            fav_icon.src = "fav_b.svg"
-        }
+        document.getElementById("fav_icon").src.replace("w.svg", "b.svg");
     }
     
     localStorage["theme"] = id;
@@ -506,20 +535,62 @@ function show_bottom()  {
 }
 
 function add_favorite(id) {
+    console.log("adding to favorites...")
+    location_name = get_location_name(id);
     fav_list = JSON.parse(localStorage["favorites"])
-    console.log(typeof fav_list)
-    localStorage["favorites"] = JSON.stringify(fav_list.push(id));
+    fav_item = {name: location_name, id: id};
+    fav_list.push(fav_item)
+    localStorage["favorites"] = JSON.stringify(fav_list);
     console.log(fav_list)
+    document.getElementById("fav_icon_container").setAttribute("onclick", "rem_favorite('" + id + "')")
+    img_src = document.getElementById("fav_icon").src
+    new_img_src = img_src.replace("not_", "is_");
+    document.getElementById("fav_icon").src = new_img_src
 }
 
 function rem_favorite(id) {
-    fav_list = localStorage["favorites"]
+    console.log("removing from favorites...")
+    fav_list = JSON.parse(localStorage["favorites"])
     for(i=0; i<fav_list.length; i++) {
-        if (fav_list[i] == id) {
-            fav_list.remove(fav_list[i])
+        if (fav_list[i]["id"] == id) {
+            fav_list.splice(i,1)
         }
     }
+    localStorage["favorites"] = JSON.stringify(fav_list);
+    console.log(fav_list)
+    document.getElementById("fav_icon_container").setAttribute("onclick", "add_favorite('" + id + "')")
+    img_src = document.getElementById("fav_icon").src
+    new_img_src = img_src.replace("is_", "not_");
+    document.getElementById("fav_icon").src = new_img_src
 }
+
+function build_favorites() {
+    favorites = JSON.parse(localStorage["favorites"]);
+    if(favorites.length>0) {
+        var n=0
+        for(i=0; i<favorites.length; i++) {
+            var fav_row = document.createElement('div');
+            fav_row.textContent = favorites[i]["name"]
+            fav_row.setAttribute("onclick", "get_data('" + favorites[i]["id"] + "')" )
+            document.getElementById("favorites-tab").appendChild(fav_row);
+
+        }
+    }
+    else {
+        console.log("no favorites :(")
+    }
+}
+
+function get_location_name(id) {
+    for(i=0; i<locations.length; i++) {
+        for (j=0; j<locations[i]["localidade_distrito"].length; j++) {
+            if(String(id) == locations[i]["localidade_distrito"][j]["globalIdLocal"]) {
+                return locations[i]["localidade_distrito"][j]["local"]
+            }
+        } 
+    }
+}
+
 
 /*function hide_tab_buttons() {
     document.getElementById("today").style.display = "none";
