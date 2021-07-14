@@ -444,8 +444,8 @@ body {
 }
 
 .fav_row {
-    width: 50%;
-    height: 80px;
+    width: 70%;
+    height: 40px;
     margin-left:auto;
     margin-right:auto;
     margin-bottom: 20px;
@@ -453,6 +453,7 @@ body {
     border-radius: 10px;
     background-color: gray;
     cursor: pointer;
+    transition: top 3s;
 }
 
 #favorites-tab {
