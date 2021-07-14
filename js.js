@@ -572,6 +572,7 @@ function build_favorites() {
             var fav_row = document.createElement('div');
             fav_row.textContent = favorites[i]["name"]
             fav_row.setAttribute("onclick", "get_data('" + favorites[i]["id"] + "')" )
+            fav_row.classList.add("fav_row");
             document.getElementById("favorites-tab").appendChild(fav_row);
 
         }
