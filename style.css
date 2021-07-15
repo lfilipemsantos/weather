@@ -400,6 +400,7 @@ body {
     border-radius: 30px;
     opacity: 99.5%;
     transition: bottom 0.3s;
+    min-width: 209px;
 }
 
 #bottom-options > .inner {
