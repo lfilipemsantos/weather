@@ -18,7 +18,7 @@ function init() {
         switch_theme(localStorage["theme"]);
     }
     else {
-        switch_theme("claro");
+        switch_theme("escuro");
     }
     document.getElementById("home-button").classList.add("selected");
     if(localStorage["color_theme"]) {
