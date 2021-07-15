@@ -466,7 +466,8 @@ body {
     position: fixed;
     opacity: 100%;
     transition: top 0.5s ease;
-    top:-90px
+    top:-90px;
+    z-index: 2;
 }
 
 #fav-notification-inner {

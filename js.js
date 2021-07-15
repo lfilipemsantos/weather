@@ -414,6 +414,7 @@ function switch_theme(id) {
         document.getElementById("update_icon").src = "update_w.svg";
         document.getElementById("close_icon").src = "close_w.svg";
         document.getElementById("bottom-options").style.backgroundColor = "rgb(60, 60, 60)";
+        document.getElementById("fav-notification-inner").style.backgroundColor = "rgb(60, 60, 60)";
         hr = document.getElementsByTagName("hr")
         for(i = 0; i<hr.length; i++) {
             hr[i].style.backgroundColor = LIGHT;
@@ -429,6 +430,7 @@ function switch_theme(id) {
         document.getElementById("settings_icon").src = "settings_b.svg";
         document.getElementById("update_icon").src = "update_b.svg";
         document.getElementById("bottom-options").style.backgroundColor = "rgb(206, 206, 206)";
+        document.getElementById("fav-notification-inner").style.backgroundColor = "rgb(206, 206, 206)";
         hr = document.getElementsByTagName("hr")
         for(i = 0; i<hr.length; i++) {
             hr[i].style.backgroundColor = DARK;
