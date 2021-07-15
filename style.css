@@ -459,3 +459,24 @@ body {
 #favorites-tab {
     height: fit-content;
 }
+
+#fav-notification {
+    width: 100%;
+    display: block;
+    position: fixed;
+    opacity: 100%;
+    transition: top 0.5s ease;
+    top:-90px
+}
+
+#fav-notification-inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    text-align: center;
+    line-height: 18px;
+    background-color: rgb(49, 49, 49);
+    opacity: 100%;
+    padding:20px;
+    border-radius: 40px;
+}

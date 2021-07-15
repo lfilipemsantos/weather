@@ -535,20 +535,31 @@ function show_bottom()  {
 }
 
 function add_favorite(id) {
-    console.log("adding to favorites...")
+    document.getElementById("fav-notification").children[0].textContent = "Adicionado aos favoritos"
+    document.getElementById("fav_icon_container").setAttribute("onclick", "")
+    document.getElementById("fav-notification").style.top="20px"
     location_name = get_location_name(id);
     fav_list = JSON.parse(localStorage["favorites"])
     fav_item = {name: location_name, id: id};
     fav_list.push(fav_item)
     localStorage["favorites"] = JSON.stringify(fav_list);
-    console.log(fav_list)
-    document.getElementById("fav_icon_container").setAttribute("onclick", "rem_favorite('" + id + "')")
     img_src = document.getElementById("fav_icon").src
     new_img_src = img_src.replace("not_", "is_");
     document.getElementById("fav_icon").src = new_img_src
+    setTimeout(
+        function() {
+            document.getElementById("fav-notification").style.top="-90px"
+            document.getElementById("fav_icon_container").setAttribute("onclick", "rem_favorite('" + id + "')")
+        },
+        2000
+    );
+
 }
 
 function rem_favorite(id) {
+    document.getElementById("fav-notification").children[0].textContent = "Removido dos favoritos"
+    document.getElementById("fav_icon_container").setAttribute("onclick", "")
+    document.getElementById("fav-notification").style.top="20px"
     console.log("removing from favorites...")
     fav_list = JSON.parse(localStorage["favorites"])
     for(i=0; i<fav_list.length; i++) {
@@ -558,10 +569,16 @@ function rem_favorite(id) {
     }
     localStorage["favorites"] = JSON.stringify(fav_list);
     console.log(fav_list)
-    document.getElementById("fav_icon_container").setAttribute("onclick", "add_favorite('" + id + "')")
     img_src = document.getElementById("fav_icon").src
     new_img_src = img_src.replace("is_", "not_");
     document.getElementById("fav_icon").src = new_img_src
+    setTimeout(
+        function() {
+            document.getElementById("fav-notification").style.top="-90px"
+            document.getElementById("fav_icon_container").setAttribute("onclick", "add_favorite('" + id + "')")
+        },
+        2000
+    );
 }
 
 function build_favorites() {
