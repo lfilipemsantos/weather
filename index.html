@@ -238,16 +238,16 @@
                 <div class="button" id="settings" onclick="switch_tab('settings-tab')" style="width:38px;border-radius: 50%;display: none;">
                     <div style="width: 38px; height: 38px;"><img id="settings_icon" src="settings_b.svg" alt="settings icon" style="height: 20px; margin-left: 9px; margin-top: 9px;"></div>
                 </div>
-                <div class="button" id="settings-button" onclick="switch_tab('settings-tab')">
-                    <p>Definições</p>
-                </div>
-                <hr class="bottom-divider">
                 <div class="button" id="home-button" onclick="get_data(localStorage['local_id'])">
-                    <p>Início</p>
+                    <img id="fav_icon" src="is_home_w.svg" alt="settings icon" style="height: 30px;">
                 </div>
                 <hr class="bottom-divider">
                 <div class="button" id="favorites-button" onclick="switch_tab('favorites-tab')">
-                    <p>Favoritos</p>
+                    <img id="fav_icon" src="not_favorite_w.svg" alt="settings icon" style="height: 30px;">
+                </div>
+                <hr class="bottom-divider">
+                <div class="button" id="settings-button" onclick="switch_tab('settings-tab')">
+                    <img id="fav_icon" src="not_settings_w.svg" alt="settings icon" style="height: 30px;">
                 </div>
                 <div class="button" id="about" onclick="switch_tab('about')" style="display: none;">
                     <p>Sobre</p>
