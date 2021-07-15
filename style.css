@@ -35,12 +35,12 @@
 
 @keyframes animate-tab-out {
     0% {opacity: 1; }
-    100% {opacity: 0; margin-left:-3000px;}
+    100% {opacity: 0;}
 }
 
 .out {
     animation-name: animate-tab-out;
-    animation-duration: 0.4s;
+    animation-duration: 0.2s;
     animation-timing-function: ease;
 }
 

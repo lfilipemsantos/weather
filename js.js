@@ -65,7 +65,7 @@ function switch_tab(id) {
         if(tabs[i]!=id){
             console.log(tabs[i]);
             document.getElementById(tabs[i]).classList.add("out");
-            setTimeout(() => { document.getElementById(tabs[i]).style.display = "none"; document.getElementById(tabs[i]).classList.remove("out"); }, 350);
+            setTimeout(() => { document.getElementById(tabs[i]).style.display = "none"; document.getElementById(tabs[i]).classList.remove("out"); }, 150);
         }
         if(id=="home-tab") {
             document.getElementById("settings-button").classList.remove("selected");
@@ -93,7 +93,7 @@ function switch_tab(id) {
             continue;
         }*/
     }
-    setTimeout(() => {  document.getElementById(id).style.display = "block"; }, 600);
+    setTimeout(() => {  document.getElementById(id).style.display = "block"; }, 400);
     
     if(id!="location-tab"){
         document.getElementById("bottom-options").style.display = "block";
