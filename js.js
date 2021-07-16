@@ -68,21 +68,39 @@ function switch_tab(id) {
             setTimeout(() => { document.getElementById(tabs[i]).style.display = "none"; document.getElementById(tabs[i]).classList.remove("out"); }, 150);
         }
         if(id=="home-tab") {
-            document.getElementById("settings-button").classList.remove("selected");
-            document.getElementById("favorites-button").classList.remove("selected");
-            document.getElementById("home-button").classList.add("selected");
+            var home_icon = document.getElementById("home_icon").src.replace("not_","is_");
+            document.getElementById("home_icon").src = home_icon;
+            var settings_icon = document.getElementById("settings_icon").src.replace("is_","not_");
+            document.getElementById("settings_icon").src = settings_icon;
+            var fav_icon = document.getElementById("favorite_icon").src.replace("is_","not_");
+            document.getElementById("favorite_icon").src = fav_icon;
+            //document.getElementById("settings-button").classList.remove("selected");
+            //document.getElementById("favorites-button").classList.remove("selected");
+            //document.getElementById("home-button").classList.add("selected");
         }
         else if(id=="settings-tab") {
-            document.getElementById("settings-button").classList.add("selected");
-            document.getElementById("favorites-button").classList.remove("selected");
-            document.getElementById("home-button").classList.remove("selected");
+            var home_icon = document.getElementById("home_icon").src.replace("is_","not_");
+            document.getElementById("home_icon").src = home_icon;
+            var settings_icon = document.getElementById("settings_icon").src.replace("not_","is_");
+            document.getElementById("settings_icon").src = settings_icon;
+            var fav_icon = document.getElementById("favorite_icon").src.replace("is_","not_");
+            document.getElementById("favorite_icon").src = fav_icon;
+            //document.getElementById("settings-button").classList.add("selected");
+            //document.getElementById("favorites-button").classList.remove("selected");
+            //document.getElementById("home-button").classList.remove("selected");
         }
         else if(id=="favorites-tab") {
             clear_rows()
             build_favorites();
-            document.getElementById("settings-button").classList.remove("selected");
-            document.getElementById("favorites-button").classList.add("selected");
-            document.getElementById("home-button").classList.remove("selected");
+            var home_icon = document.getElementById("home_icon").src.replace("is_","not_");
+            document.getElementById("home_icon").src = home_icon;
+            var settings_icon = document.getElementById("settings_icon").src.replace("is_","not_");
+            document.getElementById("settings_icon").src = settings_icon;
+            var fav_icon = document.getElementById("favorite_icon").src.replace("not_","is_");
+            document.getElementById("favorite_icon").src = fav_icon;
+            //document.getElementById("settings-button").classList.remove("selected");
+            //document.getElementById("favorites-button").classList.add("selected");
+            //document.getElementById("home-button").classList.remove("selected");
         }
         
         //document.getElementById(main[i]).style.backgroundColor = "rgba(" + localStorage["color_theme"] + ", " + 0.1 + ")";
@@ -410,8 +428,8 @@ function switch_theme(id) {
         document.body.style.color = LIGHT;
         document.getElementById("location").style.color = LIGHT;
         document.getElementById("location").style.opacity="90%";
-        document.getElementById("settings_icon").src = "settings_w.svg";
-        document.getElementById("update_icon").src = "update_w.svg";
+        //document.getElementById("settings_icon").src = "settings_w.svg";
+        //document.getElementById("update_icon").src = "update_w.svg";
         document.getElementById("close_icon").src = "close_w.svg";
         document.getElementById("bottom-options").style.backgroundColor = "rgb(60, 60, 60)";
         document.getElementById("fav-notification-inner").style.backgroundColor = "rgb(60, 60, 60)";
@@ -427,8 +445,8 @@ function switch_theme(id) {
         document.body.style.color=DARK;
         document.getElementById("location").style.color=DARK;
         document.getElementById("location").style.opacity="90%";
-        document.getElementById("settings_icon").src = "settings_b.svg";
-        document.getElementById("update_icon").src = "update_b.svg";
+        //document.getElementById("settings_icon").src = "settings_b.svg";
+        //document.getElementById("update_icon").src = "update_b.svg";
         document.getElementById("bottom-options").style.backgroundColor = "rgb(206, 206, 206)";
         document.getElementById("fav-notification-inner").style.backgroundColor = "rgb(206, 206, 206)";
         hr = document.getElementsByTagName("hr")
