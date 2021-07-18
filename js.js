@@ -34,8 +34,6 @@ function init() {
         var array = [];
         localStorage["favorites"] = JSON.stringify(array);
     }
-    console.log("this is local: " + typeof localStorage["favorites"])
-    console.log("this is local: " + typeof JSON.parse(localStorage["favorites"]))
 
     get_data(localStorage["local_id"]);
     
@@ -59,70 +57,46 @@ function build_locations(locations) {
 
 
 function switch_tab(id) {
-    console.log(id)
+    console.log("switching to " + id)
     var tabs = ["home-tab", "settings-tab", "location-tab", "favorites-tab"];
     for (let i = 0; i < tabs.length; i++) {
         if(tabs[i]!=id){
-            console.log(tabs[i]);
             document.getElementById(tabs[i]).classList.add("out");
             setTimeout(() => { document.getElementById(tabs[i]).style.display = "none"; document.getElementById(tabs[i]).classList.remove("out"); }, 150);
         }
-        if(id=="home-tab") {
-            var home_icon = document.getElementById("home_icon").src.replace("not_","is_");
-            document.getElementById("home_icon").src = home_icon;
-            var settings_icon = document.getElementById("settings_icon").src.replace("is_","not_");
-            document.getElementById("settings_icon").src = settings_icon;
-            var fav_icon = document.getElementById("favorite_icon").src.replace("is_","not_");
-            document.getElementById("favorite_icon").src = fav_icon;
-            //document.getElementById("settings-button").classList.remove("selected");
-            //document.getElementById("favorites-button").classList.remove("selected");
-            //document.getElementById("home-button").classList.add("selected");
-        }
-        else if(id=="settings-tab") {
-            var home_icon = document.getElementById("home_icon").src.replace("is_","not_");
-            document.getElementById("home_icon").src = home_icon;
-            var settings_icon = document.getElementById("settings_icon").src.replace("not_","is_");
-            document.getElementById("settings_icon").src = settings_icon;
-            var fav_icon = document.getElementById("favorite_icon").src.replace("is_","not_");
-            document.getElementById("favorite_icon").src = fav_icon;
-            //document.getElementById("settings-button").classList.add("selected");
-            //document.getElementById("favorites-button").classList.remove("selected");
-            //document.getElementById("home-button").classList.remove("selected");
-        }
-        else if(id=="favorites-tab") {
-            clear_rows()
-            build_favorites();
-            var home_icon = document.getElementById("home_icon").src.replace("is_","not_");
-            document.getElementById("home_icon").src = home_icon;
-            var settings_icon = document.getElementById("settings_icon").src.replace("is_","not_");
-            document.getElementById("settings_icon").src = settings_icon;
-            var fav_icon = document.getElementById("favorite_icon").src.replace("not_","is_");
-            document.getElementById("favorite_icon").src = fav_icon;
-            //document.getElementById("settings-button").classList.remove("selected");
-            //document.getElementById("favorites-button").classList.add("selected");
-            //document.getElementById("home-button").classList.remove("selected");
-        }
-        
-        //document.getElementById(main[i]).style.backgroundColor = "rgba(" + localStorage["color_theme"] + ", " + 0.1 + ")";
-        /*try{
-            document.getElementById("table_" + main[i]).style.display = "none";
-        }
-        catch{
-            continue;
-        }*/
     }
+    if(id=="home-tab") {
+        var home_icon = document.getElementById("home_icon").src.replace("not_","is_");
+        document.getElementById("home_icon").src = home_icon;
+        var settings_icon = document.getElementById("settings_icon").src.replace("is_","not_");
+        document.getElementById("settings_icon").src = settings_icon;
+        var fav_icon = document.getElementById("favorite_icon").src.replace("is_","not_");
+        document.getElementById("favorite_icon").src = fav_icon;
+    }
+    else if(id=="settings-tab") {
+        var home_icon = document.getElementById("home_icon").src.replace("is_","not_");
+        document.getElementById("home_icon").src = home_icon;
+        var settings_icon = document.getElementById("settings_icon").src.replace("not_","is_");
+        document.getElementById("settings_icon").src = settings_icon;
+        var fav_icon = document.getElementById("favorite_icon").src.replace("is_","not_");
+        document.getElementById("favorite_icon").src = fav_icon;
+    }
+    else if(id=="favorites-tab") {
+        clear_rows()
+        build_favorites();
+        var home_icon = document.getElementById("home_icon").src.replace("is_","not_");
+        document.getElementById("home_icon").src = home_icon;
+        var settings_icon = document.getElementById("settings_icon").src.replace("is_","not_");
+        document.getElementById("settings_icon").src = settings_icon;
+        var fav_icon = document.getElementById("favorite_icon").src.replace("not_","is_");
+        document.getElementById("favorite_icon").src = fav_icon;
+    }
+    
     setTimeout(() => {  document.getElementById(id).style.display = "block"; }, 400);
     
     if(id!="location-tab"){
         document.getElementById("bottom-options").style.display = "block";
     }
-    //document.getElementById(id).style.backgroundColor = "rgba(" + localStorage["color_theme"] + ", " + 0.5 + ")";
-    /*try{
-        document.getElementById("table_" + id).style.display = "block";
-    }
-    catch{
-        console.log('error')
-    } */
     return;
 }
 
@@ -461,19 +435,12 @@ function switch_theme(id) {
 
 
 function switch_colors(color) {
-    //buttons = document.getElementsByClassName("button");
-    //change_color(buttons,"backgroundColor", color, 0.1);
-    //change_color(buttons,"border", color, 0.5);
     tables = document.getElementsByClassName("content_table");
-    //change_color(tables,"backgroundColor",color, 0.2)
-    //rows = document.getElementsByClassName("row");
-    //change_color(rows,"backgroundColor",color, 0.2);
     rows = document.getElementsByClassName("day_row");
     change_color(rows,"backgroundColor",color, 0.2);
     rows = document.getElementsByClassName("location-li");
     change_color(rows,"backgroundColor",color, 0.2);
     document.getElementById("location").style.backgroundColor = "rgba(" + color + ", 0.2)";
-    //document.getElementById("about_row").style.backgroundColor = "rgba(" + color + ", 0.4)";
     document.getElementById("apply-color-button").style.backgroundColor = "rgba(" + color + ", 0.1)";
 
     localStorage['color_theme'] = color
@@ -604,14 +571,23 @@ function rem_favorite(id) {
 function build_favorites() {
     favorites = JSON.parse(localStorage["favorites"]);
     if(favorites.length>0) {
-        var n=0
+        console.log(favorites)
         for(i=0; i<favorites.length; i++) {
             var fav_row = document.createElement('div');
+            var temp = document.createElement('p');
+            temp.setAttribute("id", "temp_" + favorites[i]["id"])
             fav_row.textContent = favorites[i]["name"]
             fav_row.setAttribute("onclick", "get_data('" + favorites[i]["id"] + "')" )
             fav_row.classList.add("fav_row");
-            document.getElementById("favorites-tab").appendChild(fav_row);
 
+            var temperatura = get_current_temp(favorites[i]["id"], temp_callback)
+            
+            console.log(favorites[i]["id"])
+            console.log(temperatura + "ºC")
+            temp.textContent = temperatura  + "ºC"
+            fav_row.appendChild(temp)
+
+            document.getElementById("favorites-tab").appendChild(fav_row);
         }
     }
     else {
@@ -630,17 +606,35 @@ function get_location_name(id) {
 }
 
 
-/*function hide_tab_buttons() {
-    document.getElementById("today").style.display = "none";
-    document.getElementById("tomorrow").style.display = "none";
-    document.getElementById("next_days").style.display = "none";
-    document.getElementById("close").style.display = "block";
-}
+function get_current_temp(id) {
+    //make request to api
+    var requestURL = "https://api.ipma.pt/public-data/forecast/aggregate/" + id + ".json"
+    var request = new XMLHttpRequest();
+    request.open('GET', requestURL, true);
+    request.responseType = 'json';
+    request.send();
 
-function show_tab_buttons() {
-    document.getElementById("today").style.display = "inline-block";
-    document.getElementById("tomorrow").style.display = "inline-block";
-    document.getElementById("next_days").style.display = "inline-block";
-    document.getElementById("close").style.display = "none";
-    switch_tab('today');
-}*/
+    request.onreadystatechange = function () {
+        if (request.readyState == XMLHttpRequest.DONE) {
+            data = request.response;
+            const today = new Date();
+            var today_str = today.toISOString().slice(0,10);
+
+            const time = (today.toLocaleTimeString("pt-PT")).split(':',1)[0];
+        
+            if(today.getHours()==0){
+                today = today.setDate(today.getDate()+1);
+                today_str = today.toISOString().slice(0,10);
+            }
+
+            for(i=0;i<data.length;i++) {
+                if(data[i]["dataPrev"].split("T", 1) == today_str) {
+                    var current_time = data[i]["dataPrev"].split("T",2)[1].split(":", 1)[0];
+                    if (current_time == time) {
+                        document.getElementById("temp_"+ id).textContent = data[i]["tMed"];
+                    }
+                }
+            }
+        }
+    }
+}
