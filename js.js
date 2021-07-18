@@ -631,7 +631,7 @@ function get_current_temp(id) {
                 if(data[i]["dataPrev"].split("T", 1) == today_str) {
                     var current_time = data[i]["dataPrev"].split("T",2)[1].split(":", 1)[0];
                     if (current_time == time) {
-                        document.getElementById("temp_"+ id).textContent = data[i]["tMed"];
+                        document.getElementById("temp_"+ id).textContent = data[i]["tMed"] + "ºC";
                     }
                 }
             }
