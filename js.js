@@ -580,7 +580,7 @@ function build_favorites() {
             fav_row.setAttribute("onclick", "get_data('" + favorites[i]["id"] + "')" )
             fav_row.classList.add("fav_row");
 
-            var temperatura = get_current_temp(favorites[i]["id"], temp_callback)
+            var temperatura = get_current_temp(favorites[i]["id"])
             
             console.log(favorites[i]["id"])
             console.log(temperatura + "ºC")
