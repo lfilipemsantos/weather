@@ -472,6 +472,7 @@ body {
     background-color: gray;
     cursor: pointer;
     transition: top 3s;
+    box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.4);
 }
 
 #favorites-tab {

@@ -450,6 +450,9 @@ function switch_colors(color) {
     change_color(rows,"backgroundColor",color, 0.2);
     document.getElementById("location").style.backgroundColor = "rgba(" + color + ", 0.2)";
     document.getElementById("apply-color-button").style.backgroundColor = "rgba(" + color + ", 0.1)";
+    
+    fav_rows = document.getElementsByClassName("fav_row");
+    change_color(fav_rows,"backgroundColor",color, 0.2);
 
     localStorage['color_theme'] = color
 }
@@ -616,6 +619,7 @@ function build_favorites() {
     else {
         console.log("no favorites :(")
     }
+    switch_colors(localStorage['color_theme'])
 }
 
 function get_location_name(id) {
