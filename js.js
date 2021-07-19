@@ -70,16 +70,16 @@ function switch_tab(id) {
         document.getElementById("home_icon").src = home_icon;
         var settings_icon = document.getElementById("settings_icon").src.replace("is_","not_");
         document.getElementById("settings_icon").src = settings_icon;
-        var fav_icon = document.getElementById("favorite_icon").src.replace("is_","not_");
-        document.getElementById("favorite_icon").src = fav_icon;
+        var fav_icon = document.getElementById("favorites_icon").src.replace("is_","not_");
+        document.getElementById("favorites_icon").src = fav_icon;
     }
     else if(id=="settings-tab") {
         var home_icon = document.getElementById("home_icon").src.replace("is_","not_");
         document.getElementById("home_icon").src = home_icon;
         var settings_icon = document.getElementById("settings_icon").src.replace("not_","is_");
         document.getElementById("settings_icon").src = settings_icon;
-        var fav_icon = document.getElementById("favorite_icon").src.replace("is_","not_");
-        document.getElementById("favorite_icon").src = fav_icon;
+        var fav_icon = document.getElementById("favorites_icon").src.replace("is_","not_");
+        document.getElementById("favorites_icon").src = fav_icon;
     }
     else if(id=="favorites-tab") {
         clear_rows()
@@ -88,8 +88,8 @@ function switch_tab(id) {
         document.getElementById("home_icon").src = home_icon;
         var settings_icon = document.getElementById("settings_icon").src.replace("is_","not_");
         document.getElementById("settings_icon").src = settings_icon;
-        var fav_icon = document.getElementById("favorite_icon").src.replace("not_","is_");
-        document.getElementById("favorite_icon").src = fav_icon;
+        var fav_icon = document.getElementById("favorites_icon").src.replace("not_","is_");
+        document.getElementById("favorites_icon").src = fav_icon;
     }
     
     setTimeout(() => {  document.getElementById(id).style.display = "block"; }, 400);
@@ -396,14 +396,14 @@ function switch_theme(id) {
     const DARK = "rgb(27, 27, 27)"
     const LIGHT = "rgb(245, 245, 245)"
 
+    var buttons = ["home", "favorites", "settings"]
+
 
     if(id=="escuro"){
         document.body.style.backgroundColor = DARK;
         document.body.style.color = LIGHT;
         document.getElementById("location").style.color = LIGHT;
         document.getElementById("location").style.opacity="90%";
-        //document.getElementById("settings_icon").src = "settings_w.svg";
-        //document.getElementById("update_icon").src = "update_w.svg";
         document.getElementById("close_icon").src = "close_w.svg";
         document.getElementById("bottom-options").style.backgroundColor = "rgb(60, 60, 60)";
         document.getElementById("fav-notification-inner").style.backgroundColor = "rgb(60, 60, 60)";
@@ -413,14 +413,15 @@ function switch_theme(id) {
         }
         
         document.getElementById("fav_icon").src.replace("b.svg", "w.svg");
+        for(i=0; i<buttons.length; i++) {
+            document.getElementById(buttons[i] + "_icon").src.replace("w.svg", "b.svg");
+        }
     }
     else if (id=="claro") {
         document.body.style.backgroundColor=LIGHT;
         document.body.style.color=DARK;
         document.getElementById("location").style.color=DARK;
         document.getElementById("location").style.opacity="90%";
-        //document.getElementById("settings_icon").src = "settings_b.svg";
-        //document.getElementById("update_icon").src = "update_b.svg";
         document.getElementById("bottom-options").style.backgroundColor = "rgb(206, 206, 206)";
         document.getElementById("fav-notification-inner").style.backgroundColor = "rgb(206, 206, 206)";
         hr = document.getElementsByTagName("hr")
@@ -428,6 +429,9 @@ function switch_theme(id) {
             hr[i].style.backgroundColor = DARK;
         }
         document.getElementById("fav_icon").src.replace("w.svg", "b.svg");
+        for(i=0; i<buttons.length; i++) {
+            document.getElementById(buttons[i] + "_icon").src.replace("b.svg", "w.svg");
+        }
     }
     
     localStorage["theme"] = id;
