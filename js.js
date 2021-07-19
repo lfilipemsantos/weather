@@ -414,7 +414,8 @@ function switch_theme(id) {
         
         document.getElementById("fav_icon").src.replace("b.svg", "w.svg");
         for(i=0; i<buttons.length; i++) {
-            document.getElementById(buttons[i] + "_icon").src.replace("w.svg", "b.svg");
+            var button = document.getElementById(buttons[i] + "_icon")
+            button.src = button.src.replace("b.svg", "w.svg");
         }
     }
     else if (id=="claro") {
@@ -430,7 +431,10 @@ function switch_theme(id) {
         }
         document.getElementById("fav_icon").src.replace("w.svg", "b.svg");
         for(i=0; i<buttons.length; i++) {
-            document.getElementById(buttons[i] + "_icon").src.replace("b.svg", "w.svg");
+            console.log(buttons[i] + "_icon")
+            console.log(document.getElementById(buttons[i] + "_icon").src)
+            var button = document.getElementById(buttons[i] + "_icon")
+            button.src = button.src.replace("w.svg", "b.svg");
         }
     }
     
