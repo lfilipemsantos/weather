@@ -574,18 +574,33 @@ function build_favorites() {
         console.log(favorites)
         for(i=0; i<favorites.length; i++) {
             var fav_row = document.createElement('div');
+
+            var fav_location_container = document.createElement('div');
+            fav_location_container.classList.add("fav_location_container");
+
+            var fav_temp_container = document.createElement('div')
+            fav_temp_container.classList.add("fav_temp_container");
+            
+            var fav_icon_container = document.createElement('div')
+            fav_icon_container.classList.add("fav_icon_container");
+
+
             var temp = document.createElement('p');
             temp.setAttribute("id", "temp_" + favorites[i]["id"])
-            fav_row.textContent = favorites[i]["name"]
+            fav_temp_container.appendChild(temp);
+            set_current_temp(favorites[i]["id"]);
+
+            var fav_location = document.createElement('p');
+            fav_location.textContent = favorites[i]["name"]
+            fav_location_container.appendChild(fav_location);
+
             fav_row.setAttribute("onclick", "get_data('" + favorites[i]["id"] + "')" )
             fav_row.classList.add("fav_row");
 
-            var temperatura = get_current_temp(favorites[i]["id"])
-            
-            console.log(favorites[i]["id"])
-            console.log(temperatura + "ºC")
-            temp.textContent = temperatura  + "ºC"
-            fav_row.appendChild(temp)
+
+            fav_row.appendChild(fav_location_container);
+            fav_row.appendChild(fav_icon_container);
+            fav_row.appendChild(fav_temp_container);
 
             document.getElementById("favorites-tab").appendChild(fav_row);
         }
@@ -606,7 +621,7 @@ function get_location_name(id) {
 }
 
 
-function get_current_temp(id) {
+function set_current_temp(id) {
     //make request to api
     var requestURL = "https://api.ipma.pt/public-data/forecast/aggregate/" + id + ".json"
     var request = new XMLHttpRequest();
