@@ -599,11 +599,16 @@ function build_favorites() {
             var temp = document.createElement('p');
             temp.setAttribute("id", "temp_" + favorites[i]["id"])
             fav_temp_container.appendChild(temp);
-            set_current_temp(favorites[i]["id"]);
 
             var fav_location = document.createElement('p');
             fav_location.textContent = favorites[i]["name"]
             fav_location_container.appendChild(fav_location);
+
+            var icon = document.createElement("img");
+            icon.setAttribute("id", "icon_" + favorites[i]["id"])
+            fav_icon_container.appendChild(icon);
+
+
 
             fav_row.setAttribute("onclick", "get_data('" + favorites[i]["id"] + "')" )
             fav_row.classList.add("fav_row");
@@ -612,6 +617,8 @@ function build_favorites() {
             fav_row.appendChild(fav_location_container);
             fav_row.appendChild(fav_icon_container);
             fav_row.appendChild(fav_temp_container);
+
+            set_current_temp(favorites[i]["id"]);
 
             document.getElementById("favorites-tab").appendChild(fav_row);
         }
@@ -658,10 +665,23 @@ function set_current_temp(id) {
                 if(data[i]["dataPrev"].split("T", 1) == today_str) {
                     var current_time = data[i]["dataPrev"].split("T",2)[1].split(":", 1)[0];
                     if (current_time == time) {
-                        document.getElementById("temp_"+ id).textContent = data[i]["tMed"] + "ºC";
+                        console.log(current_time)
+                        console.log(data[i])
+                        var icon = document.getElementById("icon_"+ id);
+                        icon.src = get_weather_icon(current_time, data[i]["idTipoTempo"]);
+                        document.getElementById("temp_"+ id).textContent = parseInt(data[i]["tMed"]) + "ºC";
                     }
                 }
             }
         }
+    }
+}
+
+function get_weather_icon(hour, num) {
+    if(hour>21 || hour<6) {
+        return "icons/n" + num + ".svg"
+    }
+    else {
+        return "icons/d" + num + ".svg"
     }
 }
