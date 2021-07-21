@@ -1162,5 +1162,71 @@ var locations = [
                 "local": "Odivelas"
             }
         ]
+    },
+    {
+        "nome_distrito":"Portalegre",
+        "id_distrito":1300,
+        "localidade_distrito": [
+            {
+                "globalIdLocal": 1120100,
+                "local": "Alter do Chão"
+            },
+            {
+                "globalIdLocal": 1120200,
+                "local": "Arronches"
+            },
+            {
+                "globalIdLocal": 1120300,
+                "local": "Avis"
+            },
+            {
+                "globalIdLocal": 1120400,
+                "local": "Campo Maior"
+            },
+            {
+                "globalIdLocal": 1120500,
+                "local": "Castelo de Vide"
+            },
+            {
+                "globalIdLocal": 1120600,
+                "local": "Crato"
+            },
+            {
+                "globalIdLocal": 1120700,
+                "local": "Elvas"
+            },
+            {
+                "globalIdLocal": 1120800,
+                "local": "Fronteira"
+            },
+            {
+                "globalIdLocal": 1120900,
+                "local": "Gavião"
+            },
+            {
+                "globalIdLocal": 1121000,
+                "local": "Marvão"
+            },
+            {
+                "globalIdLocal": 1121100,
+                "local": "Monforte"
+            },
+            {
+                "globalIdLocal": 1121200,
+                "local": "Nisa"
+            },
+            {
+                "globalIdLocal": 1121300,
+                "local": "Ponte de Sor"
+            },
+            {
+                "globalIdLocal": 1121400,
+                "local": "Portalegre"
+            },
+            {
+                "globalIdLocal": 1121500,
+                "local": "Sousel"
+            }
+        ]
     }
 ];
