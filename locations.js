@@ -1228,5 +1228,127 @@ var locations = [
                 "local": "Sousel"
             }
         ]
+    },
+    {
+        "nome_distrito":"Porto",
+        "id_distrito":1400,
+        "localidade_distrito": [
+            {
+                "globalIdLocal": 1130100,
+                "local": "Amarante"
+            },
+            {
+                "globalIdLocal": 1130200,
+                "local": "Baião"
+            },
+            {
+                "globalIdLocal": 1130300,
+                "local": "Felgueiras"
+            },
+            {
+                "globalIdLocal": 1130400,
+                "local": "Gondomar"
+            },
+            {
+                "globalIdLocal": 1130500,
+                "local": "Lousada"
+            },
+            {
+                "globalIdLocal": 1130600,
+                "local": "Maia"
+            },
+            {
+                "globalIdLocal": 1130700,
+                "local": "Marco de Canaveses"
+            },
+            {
+                "globalIdLocal": 1130800,
+                "local": "Matosinhos"
+            },
+            {
+                "globalIdLocal": 1130821,
+                "local": "Praia de Leça da Palmeira"
+            },
+            {
+                "globalIdLocal": 1130823,
+                "local": "Praia de Matosinhos"
+            },
+            {
+                "globalIdLocal": 1130900,
+                "local": "Paços de Ferreira"
+            },
+            {
+                "globalIdLocal": 1131000,
+                "local": "Paredes"
+            },
+            {
+                "globalIdLocal": 1131100,
+                "local": "Penafiel"
+            },
+            {
+                "globalIdLocal": 1131200,
+                "local": "Porto"
+            },
+            {
+                "globalIdLocal": 1131224,
+                "local": "Praia dos Ingleses"
+            },
+            {
+                "globalIdLocal": 1131300,
+                "local": "Póvoa de Varzim"
+            },
+            {
+                "globalIdLocal": 1131321,
+                "local": "Praia da Agucadoura"
+            },
+            {
+                "globalIdLocal": 1131322,
+                "local": "Praia da Salgueira"
+            },
+            {
+                "globalIdLocal": 1131400,
+                "local": "Santo Tirso"
+            },
+            {
+                "globalIdLocal": 1131500,
+                "local": "Valongo"
+            },
+            {
+                "globalIdLocal": 1131600,
+                "local": "Vila do Conde"
+            },
+            {
+                "globalIdLocal": 1131621,
+                "local": "Praia de Árvore"
+            },
+            {
+                "globalIdLocal": 1131622,
+                "local": "Praia Azul"
+            },
+            {
+                "globalIdLocal": 1131700,
+                "local": "Vila Nova de Gaia"
+            },
+            {
+                "globalIdLocal": 1131721,
+                "local": "Praia de Salgueiros"
+            },
+            {
+                "globalIdLocal": 1131722,
+                "local": "Praia da Aguda"
+            },
+            {
+                "globalIdLocal": 1131723,
+                "local": "Praia de Miramar"
+            },
+            {
+                "globalIdLocal": 1131724,
+                "local": "Praia do Cabedelo"
+            },
+            {
+                "globalIdLocal": 1131800,
+                "local": "Trofa"
+            }
+        ]
     }
 ];
