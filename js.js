@@ -393,7 +393,7 @@ function build_next_days(data) {
 
 
 function switch_theme(id) {
-    const DARK = "rgb(27, 27, 27)"
+    const DARK = "rgb(25, 25, 25)"
     const LIGHT = "rgb(245, 245, 245)"
 
     var buttons = ["home", "favorites", "settings"]
@@ -405,8 +405,8 @@ function switch_theme(id) {
         document.getElementById("location").style.color = LIGHT;
         document.getElementById("location").style.opacity="90%";
         document.getElementById("close_icon").src = "close_w.svg";
-        document.getElementById("bottom-options").style.backgroundColor = "rgb(60, 60, 60)";
-        document.getElementById("fav-notification-inner").style.backgroundColor = "rgb(60, 60, 60)";
+        document.getElementById("bottom-options").style.backgroundColor = "rgb(40, 40, 40)";
+        document.getElementById("fav-notification-inner").style.backgroundColor = "rgb(40, 40, 40)";
         hr = document.getElementsByTagName("hr")
         for(i = 0; i<hr.length; i++) {
             hr[i].style.backgroundColor = LIGHT;
