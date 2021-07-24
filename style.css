@@ -406,7 +406,7 @@ body {
 }
 
 #bottom-options > .inner > .button {
-    width: 32.45%;
+    width: 24%;
     text-align: center;
 }
 
@@ -453,9 +453,10 @@ body {
     }
 }*/
 
-@media only screen and (max-width:425px) {
-
-    
+@supports (-webkit-touch-callout: none) {
+    #bottom-options {
+        height: 80px;
+    }
 }
 
 .fav_row {
