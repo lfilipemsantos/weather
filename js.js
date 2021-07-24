@@ -536,9 +536,21 @@ function search_location() {
 
 function hide_bottom()  {
     document.getElementById("bottom-options").style.bottom = "-80px";
+    setTimeout(
+        function() {
+            document.getElementById("bottom-options").style.display = "none";
+        },
+        300
+    );
 }
 function show_bottom()  {
     document.getElementById("bottom-options").style.bottom = "0px";
+    setTimeout(
+        function() {
+            document.getElementById("bottom-options").style.display = "block";
+        },
+        300
+    );
 }
 
 function add_favorite(id) {
