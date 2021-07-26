@@ -10,6 +10,7 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <script type='text/javascript' src='js.js'></script>
         <script type='text/javascript' src='locations.js'></script>
+        <script type='text/javascript' src='weather_types.js'></script>
     </head>
 
     <body onload="init()">
@@ -56,10 +57,13 @@
                             </td>
                         </tr>
                         <tr>
-                            <td id="location-text" colspan="4" style="font-size: 15px; padding-top:10px;"></td>
+                            <td id="location-text" colspan="4" style="font-size: 15px; padding-top:10px; font-weight: bold;"></td>
                         </tr>
                         <tr style="text-align: center; width: 100%;">
-                            <th id="table_temp" colspan="4" style="text-align:center;line-height:70px;font-size:70px;padding-bottom: 40px;padding-top: 10px;"></th>
+                            <th id="table_temp" colspan="4" style="text-align:center;line-height:70px;font-size:70px;padding-bottom: 10px;padding-top: 10px;"></th>
+                        </tr>
+                        <tr>
+                            <td id="weather-info-text" colspan="4" style="font-size: 12px; padding-bottom:40px;padding-top:10px; font-weight:lighter;"></td>
                         </tr>
                         <tr>
                             <td id="tMax">

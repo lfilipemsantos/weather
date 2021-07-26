@@ -43,7 +43,6 @@ function init() {
 function build_locations(locations) {
     for(var i = 0; i<locations.length; i++) {
         for(var j = 0; j<locations[i]["localidade_distrito"].length; j++) {
-            console.log(locations[i]["localidade_distrito"][j])
             var li = document.createElement('li');
             var div = document.createElement('div');
             div.textContent = locations[i]["localidade_distrito"][j]["local"] + ", " + locations[i]["nome_distrito"] + " ";
@@ -212,7 +211,9 @@ function build_table(current_day, current_hour) {
     console.log(current_day)
     console.log(current_hour)
     if(current_hour) {
+        console.log(weather_types[0][1])
         document.getElementById("table_temp").textContent = parseInt(current_hour["tMed"]) + "ºC";
+        document.getElementById("weather-info-text").textContent = weather_types[0][current_hour["idTipoTempo"]]["PT"];
         text = document.getElementsByClassName("table-text")
     }
     else {
@@ -458,7 +459,7 @@ function switch_colors(color) {
     change_color(rows,"backgroundColor",color, 0.5);
     rows = document.getElementsByClassName("location-li");
     change_color(rows,"backgroundColor",color, 0.5);
-    document.getElementById("location").style.backgroundColor = "rgba(" + color + ", 0.5)";
+    //document.getElementById("location").style.backgroundColor = "rgba(" + color + ", 0.5)";
     document.getElementById("apply-color-button").style.backgroundColor = "rgba(" + color + ", 0.1)";
     
     fav_rows = document.getElementsByClassName("fav_row");
