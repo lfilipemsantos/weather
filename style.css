@@ -326,11 +326,13 @@ body {
 #claro_button {
     background-color: whitesmoke;
     color: black;
+    cursor: pointer;
 }
 
 #escuro_button {
     color: whitesmoke;
     background-color: rgb(37, 37, 37);
+    cursor: pointer;
 }
 
 .color-textb {

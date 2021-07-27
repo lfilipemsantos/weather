@@ -228,6 +228,9 @@ function build_table(current_day, current_hour) {
     
     for (let i = 0; i < text.length; i++) {
         if(text[i].id.includes("proba")) {
+            console.log(text[i].id.replace("text-", ""));
+            console.log(text[i].id);
+            console.log(current_day)
             text[i].textContent = " " + parseInt(current_day[text[i].id.replace("text-", "")]) + "%";
         }
         else if(text[i].id.includes("tM")) {
@@ -237,6 +240,8 @@ function build_table(current_day, current_hour) {
             text[i].textContent = " " + current_day[text[i].id.replace("text-", "")];
         }
     }
+    document.getElementById("text-iUv").textContent = parseInt(current_day["iUv"]);
+    document.getElementById("text-probabilidadePrecipita").textContent = parseInt(current_day["probabilidadePrecipita"]);
 }
 
 

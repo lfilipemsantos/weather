@@ -29,7 +29,7 @@
         <div class="rows" id="location-tab">
             <div id="time_options">
                 <div id="inner_time_options">
-                    <div class="button" id="close" onclick="switch_tab('home-tab')" style="width:38px;border-radius: 50%;">
+                    <div class="button" id="close" onclick="get_data(localStorage['local_id'])" style="width:38px;border-radius: 50%;">
                         <div style="width: 38px; height: 38px;"><img id="close_icon" src="close_b.svg" alt="update icon" style="height: 20px; margin-left: 9px; margin-top: 9px;"></div>
                     </div>
                 </div>
@@ -50,23 +50,23 @@
                 <div id="table_container" style="height: 100%; max-width: 400px;">
                     <table class="content_table" style=" width: 100%;height: 100%; margin-left: auto; margin-right: auto;text-align: center; padding-bottom: 10px;border-radius: 10px;vertical-align: middle;">
                         <tr>
-                            <td colspan="4">
+                            <td colspan="2">
                                 <div id="fav_icon_container" onclick="add_favorite('1999')" style="width: auto; height: auto;">
                                     <img id="fav_icon" src="not_fav_b.svg" alt="favorite icon" style="height: 15px;">
                                 </div>
                             </td>
                         </tr>
                         <tr>
-                            <td id="location-text" colspan="4" style="font-size: 15px; padding-top:10px; font-weight: bold;"></td>
+                            <td id="location-text" colspan="2" style="font-size: 15px; padding-top:10px; font-weight: bold;"></td>
                         </tr>
                         <tr style="text-align: center; width: 100%;">
-                            <th id="table_temp" colspan="4" style="text-align:center;line-height:70px;font-size:70px;padding-bottom: 10px;padding-top: 10px;"></th>
+                            <th id="table_temp" colspan="2" style="text-align:center;line-height:70px;font-size:70px;padding-bottom: 10px;padding-top: 10px;"></th>
                         </tr>
                         <tr>
-                            <td id="weather-info-text" colspan="4" style="font-size: 12px; padding-bottom:40px;padding-top:10px; font-weight:lighter;"></td>
+                            <td id="weather-info-text" colspan="2" style="font-size: 12px; padding-bottom:40px;padding-top:10px; font-weight:lighter;"></td>
                         </tr>
                         <tr>
-                            <td id="tMax">
+                            <td id="tMax" style="text-align: right;padding-right: 1opx;">
                                 <div style="display: inline-block;">
                                     <img class="table_icons" alt="temperatura máxima" src="icons/icons_table/tMax.svg">
                                 </div>
@@ -74,14 +74,14 @@
                                     <p class="table-text" id="text-tMax"></p>
                                 </div>                     
                             </td>
-                            <td id="tMin">
+                            <td id="tMin" style="text-align: left;padding-left: 1opx;">
                                 <div style="display: inline-block;">
                                     <img class="table_icons" alt="temperatura mínima" src="icons/icons_table/tMin.svg">
                                 </div>
                                 <div style="display: inline-block;">
                                     <p class="table-text" id="text-tMin"></p>
                                 </div> 
-                            <td id="iUv"> 
+                            <!--<td id="iUv"> 
                                 <div style="display: inline-block;">
                                     <img class="table_icons" alt="índice UV" src="icons/icons_table/iUv.svg">
                                 </div>
@@ -97,10 +97,10 @@
                                         <p class="table-text" id="text-probabilidadePrecipita"></p>
                                     </div>
                                 </td>
-                            </td>
+                            </td>-->
                         </tr>
                         <tr>
-                            <td id="data-update" colspan="4" style="font-size: 8px; padding-top:10px;">Última atualização:</td>
+                            <td id="data-update" colspan="4" style="font-size: 8px; padding-top:30px;">Última atualização:</td>
                         </tr>
                     </table>
                 </div>
@@ -110,6 +110,21 @@
             <div class="rows" id="today_row">
                 <div class="inner" id="innerToday"></div>
             </div>
+
+            
+            <div class= "rows" style="width: 100%;height: fit-content;">
+                <div style="width: 350px; padding:10px; margin-left: auto; margin-right:auto;">
+                    <div style="background-color: rgb(228, 108, 108); width:140px; height: 80px; display: inline-block; margin: 5px; padding:10px; border-radius: 10px;">
+                        <p style="font-weight: bolder;">Índice UV</p>
+                        <p id="text-iUv"></p>
+                    </div>
+                    <div style="background-color: lightblue; width:140px; height: 80px; display: inline-block; margin: 5px; padding:10px; border-radius: 10px;">
+                        <p style="font-weight: bolder;">Prob. precipitação</p>
+                        <p id="text-probabilidadePrecipita"></p>
+                    </div>
+                </div>
+            </div>
+
             <br>
             <h2 style="margin-left: 30px; margin-top:40px;">Amanhã</h2>
             <div class="rows" id="tomorrow_row">
