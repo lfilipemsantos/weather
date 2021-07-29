@@ -212,7 +212,7 @@ function build_table(current_day, current_hour) {
     console.log(current_hour)
     if(current_hour) {
         console.log(weather_types[0][1])
-        document.getElementById("table_temp").textContent = parseInt(current_hour["tMed"]) + "ºC";
+        document.getElementById("table_temp").textContent = parseInt(current_hour["tMed"]) + "º";
         document.getElementById("weather-info-text").textContent = weather_types[0][current_hour["idTipoTempo"]]["PT"];
         text = document.getElementsByClassName("table-text")
     }
