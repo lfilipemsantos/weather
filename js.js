@@ -251,7 +251,7 @@ function build_table(current_day, current_hour) {
         }
     }
     document.getElementById("text-iUv").textContent = parseInt(current_day["iUv"]);
-    document.getElementById("uv-indicator").style.marginLeft = uv_scale[0]
+    document.getElementById("uv-indicator").style.marginLeft = uv_scale[parseInt(current_day["iUv"])]
     
     document.getElementById("text-probabilidadePrecipita").textContent = parseInt(current_day["probabilidadePrecipita"]);
 }
