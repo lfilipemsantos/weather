@@ -208,6 +208,19 @@ function clear_rows() {
 
 
 function build_table(current_day, current_hour) {
+    var uv_scale = {
+        1: "34px",
+        2: "34px",
+        3: "62px",
+        4: "62px",
+        5: "62px",
+        6: "90px",
+        7: "90px",
+        8: "118px",
+        9: "118px"
+    }
+
+
     console.log(current_day)
     console.log(current_hour)
     if(current_hour) {
@@ -241,6 +254,7 @@ function build_table(current_day, current_hour) {
         }
     }
     document.getElementById("text-iUv").textContent = parseInt(current_day["iUv"]);
+    document.getElementById("uv-indicator").style.marginLeft = uv_scale[parseInt(current_day["iUv"])]
     document.getElementById("text-probabilidadePrecipita").textContent = parseInt(current_day["probabilidadePrecipita"]);
 }
 
