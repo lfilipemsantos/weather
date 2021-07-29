@@ -209,15 +209,17 @@ function clear_rows() {
 
 function build_table(current_day, current_hour) {
     var uv_scale = {
-        1: "34px",
-        2: "34px",
-        3: "62px",
-        4: "62px",
-        5: "62px",
-        6: "90px",
-        7: "90px",
-        8: "118px",
-        9: "118px"
+        0: "-7px",
+        1: "7px",
+        2: "21px",
+        3: "35px",
+        4: "49px",
+        5: "63px",
+        6: "77px",
+        7: "91px",
+        8: "105px",
+        9: "119px",
+        10: "133px"
     }
 
 
@@ -240,21 +242,17 @@ function build_table(current_day, current_hour) {
     }
     
     for (let i = 0; i < text.length; i++) {
-        if(text[i].id.includes("proba")) {
-            console.log(text[i].id.replace("text-", ""));
-            console.log(text[i].id);
-            console.log(current_day)
-            text[i].textContent = " " + parseInt(current_day[text[i].id.replace("text-", "")]) + "%";
+        console.log(text[i].id)
+        if(text[i].id == "text-tMax") {
+            text[i].textContent = "" + parseInt(current_day[text[i].id.replace("text-", "")]) + "ºC";
         }
-        else if(text[i].id.includes("tM")) {
-            text[i].textContent = " " + parseInt(current_day[text[i].id.replace("text-", "")]) + "ºC";
-        }
-        else {
-            text[i].textContent = " " + current_day[text[i].id.replace("text-", "")];
+        else if (text[i].id == "text-tMin"){
+            text[i].textContent = "" + parseInt(current_day[text[i].id.replace("text-", "")]) + "ºC";
         }
     }
     document.getElementById("text-iUv").textContent = parseInt(current_day["iUv"]);
-    document.getElementById("uv-indicator").style.marginLeft = uv_scale[parseInt(current_day["iUv"])]
+    document.getElementById("uv-indicator").style.marginLeft = uv_scale[0]
+    
     document.getElementById("text-probabilidadePrecipita").textContent = parseInt(current_day["probabilidadePrecipita"]);
 }
 
