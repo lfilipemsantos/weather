@@ -697,14 +697,18 @@ function set_current_temp(id) {
     request.onreadystatechange = function () {
         if (request.readyState == XMLHttpRequest.DONE) {
             data = request.response;
-            const today = new Date();
+            var today = new Date();
             var today_str = today.toISOString().slice(0,10);
 
             const time = (today.toLocaleTimeString("pt-PT")).split(':',1)[0];
         
             if(today.getHours()==0){
+                console.log(today)
                 today = today.setDate(today.getDate()+1);
-                today_str = today.toISOString().slice(0,10);
+                today_2 = new Date(today);
+                console.log(today_2)
+                today_str = today_2.toISOString().slice(0,10);
+                console.log(today_str)
             }
 
             for(i=0;i<data.length;i++) {
