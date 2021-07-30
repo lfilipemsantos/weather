@@ -544,7 +544,7 @@ body {
     margin-bottom: 28px;
 }
 
-#uv-indicator {
+.uv-indicator {
     width: 0;
     height: 0; 
     border-left: 8px solid transparent; 

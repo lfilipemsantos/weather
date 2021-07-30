@@ -230,9 +230,15 @@ function build_table(current_day, current_hour) {
         document.getElementById("table_temp").textContent = parseInt(current_hour["tMed"]) + "º";
         document.getElementById("weather-info-text").textContent = weather_types[0][current_hour["idTipoTempo"]]["PT"];
         text = document.getElementsByClassName("table-text")
+        document.getElementById("text-iUv").textContent = parseInt(current_day["iUv"]);
+        document.getElementById("uv-indicator").style.marginLeft = uv_scale[parseInt(current_day["iUv"])]
+        document.getElementById("text-probabilidadePrecipita").textContent = parseInt(current_day["probabilidadePrecipita"]);
     }
     else {
         text = document.getElementsByClassName("table-text-T")
+        document.getElementById("text-iUv-T").textContent = parseInt(current_day["iUv"]);
+        document.getElementById("uv-indicator-T").style.marginLeft = uv_scale[parseInt(current_day["iUv"])]
+        document.getElementById("text-probabilidadePrecipita-T").textContent = parseInt(current_day["probabilidadePrecipita"]);
     }
     try {
         document.getElementById("data-update").textContent = ("Última atualização: " + current_day["dataUpdate"]).replace("T", " às ")
@@ -250,10 +256,7 @@ function build_table(current_day, current_hour) {
             text[i].textContent = "" + parseInt(current_day[text[i].id.replace("text-", "")]) + "ºC";
         }
     }
-    document.getElementById("text-iUv").textContent = parseInt(current_day["iUv"]);
-    document.getElementById("uv-indicator").style.marginLeft = uv_scale[parseInt(current_day["iUv"])]
     
-    document.getElementById("text-probabilidadePrecipita").textContent = parseInt(current_day["probabilidadePrecipita"]);
 }
 
 
