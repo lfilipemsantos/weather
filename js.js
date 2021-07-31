@@ -59,11 +59,11 @@ function switch_tab(id) {
     console.log("switching to " + id)
     var tabs = ["home-tab", "settings-tab", "location-tab", "favorites-tab"];
     show_bottom();
-    hide_search();
     for (let i = 0; i < tabs.length; i++) {
         if(tabs[i]!=id){
             document.getElementById(tabs[i]).classList.add("out");
-            setTimeout(() => { document.getElementById(tabs[i]).style.display = "none"; document.getElementById(tabs[i]).classList.remove("out"); }, 150);
+            setTimeout(() => { document.getElementById(tabs[i]).style.display = "none"; document.getElementById(tabs[i]).classList.remove("out");
+            if(id=="location-tab"){show_search();}else{hide_search()} }, 150);
         }
     }
     if(id=="home-tab") {
@@ -95,13 +95,12 @@ function switch_tab(id) {
     else if(id=="location-tab") {
         document.getElementById("location").focus();
         hide_bottom();
-        show_search();
     }
     
     setTimeout(() => {  document.getElementById(id).style.display = "block"; }, 400);
     
     if(id!="location-tab"){
-        document.getElementById("bottom-options").style.display = "block";
+        show_bottom();
     }
 
 
