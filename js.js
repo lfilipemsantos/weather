@@ -59,6 +59,7 @@ function switch_tab(id) {
     console.log("switching to " + id)
     var tabs = ["home-tab", "settings-tab", "location-tab", "favorites-tab"];
     show_bottom();
+    hide_search();
     for (let i = 0; i < tabs.length; i++) {
         if(tabs[i]!=id){
             document.getElementById(tabs[i]).classList.add("out");
@@ -94,6 +95,7 @@ function switch_tab(id) {
     else if(id=="location-tab") {
         document.getElementById("location").focus();
         hide_bottom();
+        show_search();
     }
     
     setTimeout(() => {  document.getElementById(id).style.display = "block"; }, 400);
@@ -107,8 +109,16 @@ function switch_tab(id) {
 }
 
 
+function show_search() {
+    document.getElementById("hero_div").style.display = "block";
+}
+
+function hide_search() {
+    document.getElementById("hero_div").style.display = "none";
+}
+
+
 function get_data(local_id) {
-    //show_tab_buttons();
     show_bottom();
     localStorage["local_id"] = local_id;
     
@@ -202,7 +212,7 @@ function clear_rows() {
         var row = document.getElementById(rows[i]);
         while (row.firstChild) {
             row.removeChild(row.lastChild);
-          }
+        }
     }
 }
 
@@ -627,6 +637,10 @@ function rem_favorite(id) {
 
 function build_favorites() {
     favorites = JSON.parse(localStorage["favorites"]);
+    var fav_title = document.createElement("h2");
+    fav_title.textContent = "Favoritos";
+    fav_title.classList.add("tab-title");
+    document.getElementById("favorites-tab").appendChild(fav_title);
     if(favorites.length>0) {
         console.log(favorites)
         for(i=0; i<favorites.length; i++) {
