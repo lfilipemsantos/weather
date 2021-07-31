@@ -439,6 +439,7 @@ function switch_theme(id) {
 
 
     if(id=="escuro"){
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', DARK);
         document.body.style.backgroundColor = DARK;
         document.body.style.color = LIGHT;
         document.getElementById("location").style.color = LIGHT;
@@ -460,6 +461,7 @@ function switch_theme(id) {
         }
     }
     else if (id=="claro") {
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', LIGHT);
         document.body.style.backgroundColor=LIGHT;
         document.body.style.color=DARK;
         document.getElementById("location").style.color=DARK;
