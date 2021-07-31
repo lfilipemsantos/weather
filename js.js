@@ -449,7 +449,7 @@ function switch_theme(id) {
         document.getElementById("search_icon").src = "search_w.svg";
         document.getElementById("bottom-options").style.backgroundColor = "rgb(25, 25, 25)";
         document.getElementById("fav-notification-inner").style.backgroundColor = "rgb(40, 40, 40)";
-        hr = document.getElementsByTagName("hr")
+        hr = document.getElementsByClassName("row-divider");
         for(i = 0; i<hr.length; i++) {
             hr[i].style.backgroundColor = LIGHT;
         }
@@ -471,7 +471,8 @@ function switch_theme(id) {
         document.getElementById("search_icon").src = "search_b.svg";
         document.getElementById("bottom-options").style.backgroundColor = "rgb(236, 236, 236)";
         document.getElementById("fav-notification-inner").style.backgroundColor = "rgb(206, 206, 206)";
-        hr = document.getElementsByTagName("hr")
+        hr = document.getElementsByClassName("row-divider");
+        console.log(hr)
         for(i = 0; i<hr.length; i++) {
             hr[i].style.backgroundColor = DARK;
         }

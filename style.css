@@ -438,10 +438,9 @@ body {
 
 .row-divider {
     display: inline-block;
-    border: none;
-    border-left: 1px solid black;
     height: 70px;
     width: 1px; 
+    background-color: rgb(54, 54, 54);
 }
 
 /*@media (prefers-color-scheme: light) {
