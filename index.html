@@ -105,16 +105,16 @@
 
             
             <div class= "rows" style="width: 100%;height: fit-content;">
-                <div style="width: 350px; padding-left:10px; padding-right:10px; padding-left: 5px; padding-top: 5px; margin-left: auto; margin-right:auto;">
-                    <div style="background-color: rgba(175, 175, 175, 0.3); width:142.5px; height: 80px; display: inline-block; margin: 5px; padding:10px; border-radius: 10px;">
-                        <p style="font-weight: bold; display: inline-block; margin-top:0; margin-bottom: 30px; width:85px">Índice UV</p>
-                        <div style="display: inline-block; width: 30px; height: 30px; text-align: right; margin-left: auto; margin-right: 0; margin-bottom: 10px; margin-top: 20px;"> 
-                            <p id="text-iUv" style="text-align: right; font-size: 30px; line-height: 30px; font-weight: bold; width: 30px; height: 30px; vertical-align: middle;"></p>
+                <div class="widget-row">
+                    <div class="widget" style="background-color: rgba(175, 175, 175, 0.3);">
+                        <p class="widget-title">Índice UV</p>
+                        <div class="widget-value-container"> 
+                            <p class="widget-value" id="text-iUv"></p>
                         </div>
                         <div class="uv-indicator" id="uv-indicator">
 
                         </div>
-                        <div style="width: 140px; height: 10px; margin-top: -8px; margin-left: auto; margin-right: auto;">
+                        <div style="width: 140px; height: 10px; bottom:0; margin-left: auto; margin-right: auto;">
                             <div style="width: 20%; background-color: rgb(12, 180, 180); display: inline-block; height: 10px;"></div><!--
                             --><div style="width: 20%; background-color: rgb(1, 165, 1); display: inline-block; height: 10px;"></div><!--
                             --><div style="width: 20%; background-color: yellow; display: inline-block; height: 10px;"></div><!--
@@ -122,10 +122,10 @@
                             --><div style="width: 20%; background-color: red; display: inline-block; height: 10px;"></div>
                         </div>
                     </div>
-                    <div style="background-color: rgba(128, 199, 223, 0.7); width:142.5px; height: 80px; display: inline-block; margin: 5px; padding:10px; border-radius: 10px;">
-                        <p style="font-weight: bold; display: inline-block; margin-top:0; margin-bottom: 30px; width:85px">Precipitação</p>
-                        <div style="width: 30px; display: inline-block; height: 30px; vertical-align: middle; margin-left: auto; margin-right: auto;margin-bottom: 10px; margin-top: 20px;"> 
-                            <p id="text-probabilidadePrecipita" style="text-align: center; font-size: 30px; line-height: 30px; font-weight: bold; width: 30px; height: 30px; vertical-align: middle;"></p>
+                    <div class="widget" style="background-color: rgba(128, 199, 223, 0.7);">
+                        <p class="widget-title">Precipitação</p>
+                        <div class="widget-value-container"> 
+                            <p class="widget-value" id="text-probabilidadePrecipita"></p>
                         </div>
                     </div>
                 </div>
@@ -138,27 +138,27 @@
             <div class="rows" id="tomorrow_row">
                 <div class="inner" id="innerTomorrow"></div>
             </div>
-            <div class= "rows" style="width: 100%;height: fit-content;">
-                <div style="width: 350px; padding-left:10px; padding-right:10px; padding-left: 5px; padding-top: 5px; margin-left: auto; margin-right:auto;">
-                    <div style="background-color: rgb(241, 104, 104); width:142.5px; height: 50px; display: inline-block; margin: 5px; padding:10px; border-radius: 10px;">
-                        <p style="font-weight: bold; font-size: 18px; line-height: 18px; display: inline-block; margin-top:16px; margin-bottom: 16px; width:85px">Máxima</p>
-                        <div style="display: inline-block; width: 30px; height: 30px; text-align: right; margin-left: auto; margin-right: 5px; margin-bottom: 10px; margin-top: 10px;"> 
-                            <p id="text-tMax-T" style="text-align: right; font-size: 25px; line-height: 30px; font-weight: bold; width: 50px; height: 30px; vertical-align: middle;"></p>
+            <div class="rows" style="width: 100%;height: fit-content;">
+                <div class="widget-row">
+                    <div class="widget" style="background-color: rgb(241, 104, 104);">
+                        <p class="widget-title">Máxima</p>
+                        <div class="widget-value-container""> 
+                            <p class="widget-value" id="text-tMax-T"></p>
                         </div>
                     </div>
-                    <div style="background-color: rgba(162, 223, 243, 0.7); width:142.5px; height: 50px; display: inline-block; margin: 5px; padding:10px; border-radius: 10px;">
-                        <p style="font-weight: bold; font-size: 18px; line-height: 18px; display: inline-block; margin-top:16px; margin-bottom: 16px; width:85px">Mínima</p>
-                        <div style="display: inline-block; width: 30px; height: 30px; text-align: right; margin-left: auto; margin-right: 5px; margin-bottom: 10px; margin-top: 10px;"> 
-                            <p id="text-tMin-T" style="text-align: right; font-size: 25px; line-height: 30px; font-weight: bold; width: 50px; height: 30px; vertical-align: middle;"></p>
+                    <div class="widget" style="background-color: rgba(162, 223, 243, 0.7);">
+                        <p class="widget-title">Mínima</p>
+                        <div class="widget-value-container""> 
+                            <p class="widget-value" id="text-tMin-T"></p>
                         </div>
                     </div>
                 </div>
 
-                <div style="width: 350px; padding-left:10px; padding-right:10px; padding-left: 5px; padding-top: 5px; margin-left: auto; margin-right:auto;">
-                    <div style="background-color: rgba(175, 175, 175, 0.3); width:142.5px; height: 80px; display: inline-block; margin: 5px; padding:10px; border-radius: 10px;">
-                        <p style="font-weight: bold; display: inline-block; margin-top:0; margin-bottom: 30px; width:85px">Índice UV</p>
-                        <div style="display: inline-block; width: 30px; height: 30px; text-align: right; margin-left: auto; margin-right: 0; margin-bottom: 10px; margin-top: 20px;"> 
-                            <p id="text-iUv-T" style="text-align: center; font-size: 30px; line-height: 30px; font-weight: bold; width: 30px; height: 30px; vertical-align: middle;"></p>
+                <div class="widget-row">
+                    <div class="widget" style="background-color: rgba(175, 175, 175, 0.3);">
+                        <p class="widget-title">Índice UV</p>
+                        <div class="widget-value-container"> 
+                            <p class="widget-value" id="text-iUv-T"></p>
                         </div>
                         <div class="uv-indicator" id="uv-indicator-T">
 
@@ -171,10 +171,10 @@
                             --><div style="width: 20%; background-color: red; display: inline-block; height: 10px;"></div>
                         </div>
                     </div>
-                    <div style="background-color: rgba(128, 199, 223, 0.7); width:142.5px; height: 80px; display: inline-block; margin: 5px; padding:10px; border-radius: 10px;">
-                        <p style="font-weight: bold; display: inline-block; margin-top:0; margin-bottom: 30px; width:85px">Precipitação</p>
-                        <div style="width: 30px; display: inline-block; height: 30px; vertical-align: middle; margin-left: auto; margin-right: auto; margin-bottom: 10px; margin-top: 20px;"> 
-                            <p id="text-probabilidadePrecipita-T" style="text-align: center; font-size: 30px; line-height: 30px; font-weight: bold; width: 30px; height: 30px; vertical-align: middle;"></p>
+                    <div class="widget" style="background-color: rgba(128, 199, 223, 0.7);">
+                        <p class="widget-title">Precipitação</p>
+                        <div class="widget-value-container"> 
+                            <p class="widget-value" id="text-probabilidadePrecipita-T"></p>
                         </div>
                     </div>
                 </div>
