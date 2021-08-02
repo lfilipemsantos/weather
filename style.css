@@ -375,7 +375,7 @@ body {
 
 .location-li {
     margin-bottom: 10px;
-    background-color: rgb(50, 50, 50);
+    background-color: gray;
     padding: 8px;
     padding-left: 11px;
     border-radius: 11px;

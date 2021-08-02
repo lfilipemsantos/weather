@@ -455,6 +455,7 @@ function switch_theme(id) {
         }
         
         document.getElementById("fav_icon").src.replace("b.svg", "w.svg");
+
         for(i=0; i<buttons.length; i++) {
             var button = document.getElementById(buttons[i] + "_icon")
             button.src = button.src.replace("b.svg", "w.svg");
@@ -476,10 +477,10 @@ function switch_theme(id) {
         for(i = 0; i<hr.length; i++) {
             hr[i].style.backgroundColor = DARK;
         }
+
         document.getElementById("fav_icon").src.replace("w.svg", "b.svg");
+
         for(i=0; i<buttons.length; i++) {
-            console.log(buttons[i] + "_icon")
-            console.log(document.getElementById(buttons[i] + "_icon").src)
             var button = document.getElementById(buttons[i] + "_icon")
             button.src = button.src.replace("w.svg", "b.svg");
         }
@@ -493,8 +494,8 @@ function switch_colors(color) {
     tables = document.getElementsByClassName("content_table");
     rows = document.getElementsByClassName("day_row");
     change_color(rows,"backgroundColor",color, 0.5);
-    rows = document.getElementsByClassName("location-li");
-    change_color(rows,"backgroundColor",color, 0.5);
+    //rows = document.getElementsByClassName("location-li");
+    //change_color(rows,"backgroundColor",color, 0.5);
     //document.getElementById("location").style.backgroundColor = "rgba(" + color + ", 0.5)";
     document.getElementById("apply-color-button").style.backgroundColor = "rgba(" + color + ", 0.1)";
     
