@@ -242,6 +242,7 @@ function build_table(current_day, current_hour) {
         document.getElementById("text-iUv").textContent = Math.round(current_day["iUv"]);
         document.getElementById("uv-indicator").style.marginLeft = uv_scale[Math.round(current_day["iUv"])]
         document.getElementById("text-probabilidadePrecipita").textContent = Math.round(current_day["probabilidadePrecipita"]) + "%";
+        document.getElementById("text-vento").textContent = current_day["ddVento"];
     }
     else {
         text = document.getElementsByClassName("table-text-T")
