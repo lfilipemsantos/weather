@@ -242,8 +242,8 @@ function build_table(current_day, current_hour) {
         document.getElementById("text-iUv").textContent = Math.round(current_day["iUv"]);
         document.getElementById("uv-indicator").style.marginLeft = uv_scale[Math.round(current_day["iUv"])]
         document.getElementById("text-probabilidadePrecipita").textContent = Math.round(current_day["probabilidadePrecipita"]) + "%";
-        document.getElementById("text-vento-dd").appendChild(document.createTextNode(current_hour["ddVento"]));
-        document.getElementById("text-vento-vv").appendChild(document.createTextNode(current_hour["ffVento"]));
+        document.getElementById("text-vento-dd").textContent = current_hour["ddVento"];
+        document.getElementById("text-vento-vv").textContent = current_hour["ffVento"];
     }
     else {
         text = document.getElementsByClassName("table-text-T")
