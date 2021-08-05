@@ -304,7 +304,7 @@ function build_rows(days) {
             temp.setAttribute('id', i);
             temp.classList.add("hour_temp");
             row.classList.add('row');
-            temp.textContent = days[j][i]["tMed"] + "ºC";
+            temp.textContent = Math.round(days[j][i]["tMed"]) + "ºC";
             hour_text.textContent = hour;
             hour_text.classList.add("hour_time");
             row.appendChild(temp);
