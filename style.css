@@ -617,3 +617,11 @@ body {
     height: 30px;
     vertical-align: middle;
 }
+
+.uv-widget {
+    background: linear-gradient(45deg, rgba(100,100,100,1) 20%, rgba(50,50,50,1) 100%);
+}
+
+.rain-widget {
+    background: linear-gradient(45deg, rgba(93,217,184,1) 0%, rgba(62,139,158,1) 50%);
+}
