@@ -406,8 +406,8 @@ body {
     margin-top: auto;
     margin-bottom: auto;
     height: 30px;
-    padding-top:15px;
-    padding-bottom: 15px;
+    padding-top:10px;
+    padding-bottom: 10px;
     width: 90%;
     padding-left: 0;
     padding-right: 0;
@@ -416,11 +416,17 @@ body {
 #bottom-options > .inner > .button {
     width: 24%;
     text-align: center;
+    height: 35px;
+}
+#bottom-options > .inner > .button:active {
+    background-color: gray;
 }
 
 #bottom-options > .inner > .button > img {
     margin-left: auto;
     margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 #settings-button {
