@@ -252,6 +252,9 @@ function build_table(current_day, current_hour) {
         document.getElementById("text-probabilidadePrecipita-T").textContent = Math.round(current_day["probabilidadePrecipita"]) + "%";
         document.getElementById("text-tMax-T").textContent = Math.round(current_day["tMax"]) + "º";
         document.getElementById("text-tMin-T").textContent = Math.round(current_day["tMin"]) + "º";
+        document.getElementById("text-vento-dd-T").textContent = current_day["ddVento"];
+        console.log(current_day)
+        document.getElementById("text-vento-vv-T").textContent = current_day["ffVento"];
     }
     try {
         document.getElementById("data-update").textContent = ("Última atualização: " + current_day["dataUpdate"]).replace("T", " às ")
