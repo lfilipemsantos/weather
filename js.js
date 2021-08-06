@@ -457,6 +457,8 @@ function switch_theme(id) {
         }
         
         document.getElementById("fav_icon").src.replace("b.svg", "w.svg");
+        var refresh = document.getElementById("refresh_icon");
+        refresh.src = refresh.src.replace("b.svg", "w.svg");
 
         for(i=0; i<buttons.length; i++) {
             var button = document.getElementById(buttons[i] + "_icon")
@@ -475,12 +477,18 @@ function switch_theme(id) {
         document.getElementById("bottom-options").style.backgroundColor = "rgb(236, 236, 236)";
         document.getElementById("fav-notification-inner").style.backgroundColor = "rgb(206, 206, 206)";
         hr = document.getElementsByClassName("row-divider");
-        console.log(hr)
         for(i = 0; i<hr.length; i++) {
             hr[i].style.backgroundColor = DARK;
         }
 
+        widgets = document.getElementsByClassName("widget");
+        for(i = 0; i<widgets.length; i++) {
+            widgets[i].style.color = LIGHT;
+        }
+
         document.getElementById("fav_icon").src.replace("w.svg", "b.svg");
+        var refresh = document.getElementById("refresh_icon");
+        refresh.src = refresh.src.replace("w.svg", "b.svg");
 
         for(i=0; i<buttons.length; i++) {
             var button = document.getElementById(buttons[i] + "_icon")
