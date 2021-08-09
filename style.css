@@ -473,8 +473,9 @@ body {
 }
 
 .fav_row {
-    width: 70%;
-    height: 80px;
+    width: 80%;
+    min-height: 80px;
+    height: min-content;
     margin-left:auto;
     margin-right:auto;
     margin-bottom: 20px;
@@ -514,33 +515,35 @@ body {
 }
 
 .fav_location_container {
-    display: inline-block;
-    height: 80px;
-    width: 50%;
+    display: block;
+    height: 30px;
+    width: 100%;
+    padding-top: 10px;
+
 }
 
 .fav_location_container > p{
     line-height: 24px;
-    margin-top: 28px;
-    margin-bottom: 28px;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 .fav_icon_container {
     display: inline-block;
     height: 80px;
-    width: 30%
+    width: 15%
 }
 
 .fav_icon_container > img {
-    height: 50px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    height: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .fav_temp_container {
     display: inline-block;
     height: 80px;
-    width: 20%
+    width: 15%
 }
 
 .fav_temp_container > p{
