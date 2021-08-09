@@ -423,6 +423,20 @@ body {
     margin-top: 5px;
     margin-bottom: 5px;
 }
+.button_desc {
+    display: none;
+  }
+
+@media screen and (min-width: 600px) {
+    .button_desc {
+        display: inline-block;
+    }
+
+    .button>img {
+        display: inline-block;
+    }
+  }
+
 
 #settings-button {
     background-color: unset;
