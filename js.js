@@ -671,6 +671,9 @@ function build_favorites() {
             var fav_icon_container = document.createElement('div')
             fav_icon_container.classList.add("fav_icon_container");
 
+            var weather_info_container = document.createElement('div')
+            weather_info_container.classList.add("fav_info_container");
+
 
             var temp = document.createElement('p');
             temp.setAttribute("id", "temp_" + favorites[i]["id"])
@@ -684,6 +687,9 @@ function build_favorites() {
             icon.setAttribute("id", "icon_" + favorites[i]["id"])
             fav_icon_container.appendChild(icon);
 
+            var weather_info = document.createElement('small');
+            weather_info.setAttribute("id", "info_" + favorites[i]["id"])
+            weather_info_container.appendChild(weather_info);
 
 
             fav_row.setAttribute("onclick", "get_data('" + favorites[i]["id"] + "')" )
@@ -691,8 +697,9 @@ function build_favorites() {
 
 
             fav_row.appendChild(fav_location_container);
-            fav_row.appendChild(fav_icon_container);
+            fav_row.appendChild(weather_info_container);
             fav_row.appendChild(fav_temp_container);
+            fav_row.appendChild(fav_icon_container);
 
             set_current_temp(favorites[i]["id"]);
 
@@ -750,6 +757,7 @@ function set_current_temp(id) {
                         var icon = document.getElementById("icon_"+ id);
                         icon.src = get_weather_icon(current_time, data[i]["idTipoTempo"]);
                         document.getElementById("temp_"+ id).textContent = parseInt(data[i]["tMed"]) + "ºC";
+                        document.getElementById("info_"+ id).textContent = weather_types[0][data[i]["idTipoTempo"]]["PT"];
                     }
                 }
             }
