@@ -375,13 +375,11 @@ body {
 
 .location-li {
     margin-bottom: 10px;
-    background-color: gray;
-    padding: 8px;
+    background-color: rgba(150, 150, 150, 0.2);
+    padding: 11px;
     padding-left: 11px;
     border-radius: 11px;
-    animation-name: animate-in;
-    animation-duration: 0.5s;
-    animation-timing-function: ease;
+    display: none;
 }
 
 #bottom-options {
@@ -470,6 +468,8 @@ body {
 }
 
 .fav_row {
+    overflow-y:hidden;
+    overflow-x: hidden;
     width: 80%;
     height: 120px;
     margin-left:auto;
@@ -527,17 +527,18 @@ body {
 
 .fav_icon_container {
     display: inline-block;
-    height: 30%;
+    width: 13%;
 }
 
 .fav_icon_container > img {
-    height: 100%;
+    height: 40px;
+    margin-top: -0px;
 }
 
 .fav_temp_container {
     display: inline-block;
     height: 50px;
-    width: 85%
+    width: 87%
 }
 
 .fav_temp_container > p{

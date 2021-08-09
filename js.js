@@ -458,6 +458,11 @@ function switch_theme(id) {
         for(i = 0; i<hr.length; i++) {
             hr[i].style.backgroundColor = LIGHT;
         }
+
+        li = document.getElementsByClassName("location-li");
+        for(i = 0; i<li.length; i++) {
+            li[i].style.backgroundColor = "rgba(150, 150, 150, 0.2)";
+        }
         
         document.getElementById("fav_icon").src.replace("b.svg", "w.svg");
         var refresh = document.getElementById("refresh_icon");
@@ -484,6 +489,11 @@ function switch_theme(id) {
             hr[i].style.backgroundColor = DARK;
         }
 
+        li = document.getElementsByClassName("location-li");
+        for(i = 0; i<li.length; i++) {
+            li[i].style.backgroundColor = "rgba(206, 206, 206, 0.6)";
+        }
+
         widgets = document.getElementsByClassName("widget");
         for(i = 0; i<widgets.length; i++) {
             widgets[i].style.color = LIGHT;
@@ -506,7 +516,7 @@ function switch_theme(id) {
 function switch_colors(color) {
     tables = document.getElementsByClassName("content_table");
     rows = document.getElementsByClassName("day_row");
-    change_color(rows,"backgroundColor",color, 0.5);
+    change_color(rows,"backgroundColor",color, 0.2);
     //rows = document.getElementsByClassName("location-li");
     //change_color(rows,"backgroundColor",color, 0.5);
     //document.getElementById("location").style.backgroundColor = "rgba(" + color + ", 0.5)";
@@ -568,7 +578,6 @@ function is_in_range(value) {
 
 function search_location() {
     switch_tab('location-tab');
-    //hide_tab_buttons();
     var input, filter, ul, li, div, i, txtValue;
     input = document.getElementById("location");
     filter = input.value.toUpperCase();
@@ -577,10 +586,16 @@ function search_location() {
     for (i = 0; i < li.length; i++) {
         div = li[i].getElementsByTagName("div")[0];
         txtValue = div.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
+        console.log(txtValue)
+        if (filter == "") {
             li[i].style.display = "none";
+        }
+        else {
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "block";
+            } else {
+                li[i].style.display = "none";
+            }
         }
     }
 }
