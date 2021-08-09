@@ -393,7 +393,7 @@ body {
     margin-bottom: 0px;
     padding-top:0px;
     padding-bottom:0px;
-    background-color: rgb(236, 236, 236);
+    background-color: rgb(25, 25, 25);
     box-shadow: 0px 0px 7px 0.5px rgba(0, 0, 0, 0.3);
     width: 100%;
     border-radius: 0px;
@@ -417,9 +417,6 @@ body {
     width: 24%;
     text-align: center;
     height: 35px;
-}
-#bottom-options > .inner > .button:active {
-    background-color: gray;
 }
 
 #bottom-options > .inner > .button > img {
