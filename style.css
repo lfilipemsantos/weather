@@ -14,12 +14,6 @@
     outline: 0;
     vertical-align: middle;
     font-family: "Open Sans" !important;
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* Konqueror HTML */
-    -moz-user-select: none; /* Old versions of Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none;
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -478,6 +472,17 @@ body {
 @supports (-webkit-touch-callout: none) {
     #bottom-options {
         height: 80px;
+    }
+}
+
+@supports (-webkit-touch-callout: none) {
+    * {
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none;
     }
 }
 
