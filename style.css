@@ -475,7 +475,7 @@ body {
     }
 }
 
-@supports (-webkit-touch-callout: none) {
+@supports not (-webkit-touch-callout: none) {
     * {
         -webkit-touch-callout: none; /* iOS Safari */
         -webkit-user-select: none; /* Safari */
@@ -590,6 +590,32 @@ body {
     }
 
     #today-widget-rows {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #tomorrow-widget-max-min {
+        display: inline-block;
+        padding-right: 0px;
+        margin-right: 0px;
+    }
+
+    #tomorrow-widget-uv-prec {
+        display: inline-block;
+        padding-right: 0px;
+        margin-left: 0px;
+        padding-left: 0px;
+        margin-right: 0px;
+    }
+
+    #tomorrow-widget-wind {
+        display: inline-block;
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+
+    #tomorrow-widget-rows {
         text-align: center;
     }
 }
