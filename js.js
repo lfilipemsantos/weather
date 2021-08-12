@@ -69,12 +69,12 @@ function isIOSDevice(){
 
 function init() {
     //Check if device is iOS (notifications do not work on iOS)
-    if (isIOSDevice()) {
+    /*if (isIOSDevice()) {
         console.log('This is a IOS device');
     } else {
         request_notification();
         display_notification();
-    }
+    }*/
 
     build_locations(locations);
 
