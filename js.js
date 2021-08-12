@@ -42,7 +42,7 @@ function display_notification() {
                         icon: notifImg,
                     };
                     reg.showNotification(notifTitle, options);
-                    setTimeout(display_notification, 30000);
+                    setTimeout(display_notification(), 30000);
                 }
             } 
         });
