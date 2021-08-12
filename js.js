@@ -45,6 +45,8 @@ function display_notification() {
                     var n = d.getHours();
                     if (n>8 && n<22) {
                         reg.showNotification(notifTitle, options);
+                        console.log(n)
+                        console.log(typeof n)
                     }
                     setTimeout(display_notification(), 3600000);
                 }
