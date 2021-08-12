@@ -44,7 +44,9 @@ function display_notification() {
                     var d = new Date();
                     var n = d.getHours();
                     console.log(n)
-                    if (n>8 && n<22) {
+                    reg.showNotification(notifTitle, options);
+                    setTimeout(display_notification(), 3600000);
+                    /*if (n>8 && n<22) {
                         reg.showNotification(notifTitle, options);
                         console.log(n)
                         console.log(typeof n)
@@ -53,7 +55,7 @@ function display_notification() {
                     }
                     else {
                         setTimeout(display_notification(), 3600000);
-                    }
+                    }*/
                 }
             } 
         });
