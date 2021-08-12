@@ -48,9 +48,12 @@ function display_notification() {
                         reg.showNotification(notifTitle, options);
                         console.log(n)
                         console.log(typeof n)
+                        console.log("setting timeout...")
+                        setTimeout(display_notification(), 3600000);
                     }
-                    console.log("setting timeout...")
-                    setTimeout(display_notification(), 3600000);
+                    else {
+                        setTimeout(display_notification(), 3600000);
+                    }
                 }
             } 
         });
