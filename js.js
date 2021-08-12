@@ -62,7 +62,9 @@ function displayNotification() {
 function init() {
     //Check if device is iOS (notifications do not work on iOS)
     var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-    if (!isIOS) {
+    if (isIOS) {
+        console.log('This is a IOS device');
+    } else {
         request_notification();
         weather_notification();
         displayNotification()
