@@ -49,6 +49,7 @@ function display_notification() {
                         console.log(n)
                         console.log(typeof n)
                     }
+                    console.log("setting timeout...")
                     setTimeout(display_notification(), 3600000);
                 }
             } 
