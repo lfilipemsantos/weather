@@ -27,7 +27,7 @@ function request_notification() {
 }
 
 
-function display_notification() {
+/*function display_notification() {
     if (Notification.permission == 'granted') {
         navigator.serviceWorker.getRegistration().then(function(reg) {
             request = data_request(localStorage["local_id"])
@@ -46,7 +46,7 @@ function display_notification() {
                     console.log(n)
                     reg.showNotification(notifTitle, options);
                     setTimeout(display_notification(), 30000);
-                    /*if (n>8 && n<22) {
+                    if (n>8 && n<22) {
                         reg.showNotification(notifTitle, options);
                         console.log(n)
                         console.log(typeof n)
@@ -55,12 +55,12 @@ function display_notification() {
                     }
                     else {
                         setTimeout(display_notification(), 3600000);
-                    }*/
+                    }
                 }
             } 
         });
     }
-}
+}*/
 
 function isIOSDevice(){
     return !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
