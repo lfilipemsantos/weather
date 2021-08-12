@@ -48,11 +48,16 @@ function resquest_notification() {
 
 function displayNotification() {
     if (Notification.permission == 'granted') {
-      navigator.serviceWorker.getRegistration().then(function(reg) {
-        reg.showNotification('Hello world!');
-      });
+        navigator.serviceWorker.getRegistration().then(function(reg) {
+            var options = {
+                body: "tMax: 32º | tMin: 17º",
+                icon: "icons/d1.svg",
+                vibrate: [100, 50, 100]
+            };
+            reg.showNotification('Meteorologia', options);
+        });
     }
-  }
+}
 
 function init() {
     resquest_notification();
