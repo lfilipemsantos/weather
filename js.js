@@ -35,7 +35,7 @@ function display_notification() {
                 if (request.readyState == XMLHttpRequest.DONE) {
                     data = request.response;
                     const notifTitle = "Tondela";
-                    const notifBody = "tMax: " + data[0]["tMax"];
+                    const notifBody = "Max:" + data[0]["tMax"] + " | Min:" + data[0]["tMin"];
                     const notifImg = "png/039-sun.png";
                     const options = {
                         body: notifBody,
@@ -49,11 +49,15 @@ function display_notification() {
     }
 }
 
+function isIOSDevice(){
+    return !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+}
+
 
 function init() {
     //Check if device is iOS (notifications do not work on iOS)
     var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-    if (isIOS) {
+    if (isIOSDevice()) {
         console.log('This is a IOS device');
     } else {
         request_notification();
