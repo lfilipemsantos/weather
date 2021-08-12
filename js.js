@@ -43,6 +43,7 @@ function display_notification() {
                     };
                     var d = new Date();
                     var n = d.getHours();
+                    console.log(n)
                     if (n>8 && n<22) {
                         reg.showNotification(notifTitle, options);
                         console.log(n)
