@@ -55,6 +55,7 @@ function displayNotification() {
   }
 
 function init() {
+    resquest_notification();
     weather_notification();
     build_locations(locations);
     displayNotification()
