@@ -42,7 +42,7 @@ function display_notification() {
                         icon: notifImg,
                     };
                     reg.showNotification(notifTitle, options);
-                    setTimeout(display_notification, 300000);
+                    setTimeout(display_notification, 30000);
                 }
             } 
         });
@@ -56,7 +56,6 @@ function isIOSDevice(){
 
 function init() {
     //Check if device is iOS (notifications do not work on iOS)
-    var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
     if (isIOSDevice()) {
         console.log('This is a IOS device');
     } else {
