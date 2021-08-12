@@ -20,25 +20,6 @@ function data_request(id) {
 }
 
 
-function weather_notification() {
-    request = data_request(localStorage["local_id"])
-    request.onreadystatechange = function () {
-        if (request.readyState == XMLHttpRequest.DONE) {
-            data = request.response;
-            const notifTitle = "Tondela";
-            const notifBody = "tMax: " + data[0]["tMax"];
-            const notifImg = "png/039-sun.png";
-            const options = {
-              body: notifBody,
-              icon: notifImg,
-            };
-            new Notification(notifTitle, options);
-            setTimeout(weather_notification, 30000);
-        }
-    }
-}
-
-
 function request_notification() {
     Notification.requestPermission(function(status) {
         console.log('Notification permission status:', status);
@@ -46,14 +27,24 @@ function request_notification() {
 }
 
 
-function displayNotification() {
+function display_notification() {
     if (Notification.permission == 'granted') {
         navigator.serviceWorker.getRegistration().then(function(reg) {
-            var options = {
-                body: "tMax: 32º | tMin: 17º",
-                icon: "png/039-sun.png"
-            };
-            reg.showNotification('Tondela', options);
+            request = data_request(localStorage["local_id"])
+            request.onreadystatechange = function () {
+                if (request.readyState == XMLHttpRequest.DONE) {
+                    data = request.response;
+                    const notifTitle = "Tondela";
+                    const notifBody = "tMax: " + data[0]["tMax"];
+                    const notifImg = "png/039-sun.png";
+                    const options = {
+                        body: notifBody,
+                        icon: notifImg,
+                    };
+                    reg.showNotification(notifTitle, options);
+                    setTimeout(display_notification, 300000);
+                }
+            } 
         });
     }
 }
@@ -66,8 +57,7 @@ function init() {
         console.log('This is a IOS device');
     } else {
         request_notification();
-        weather_notification();
-        displayNotification()
+        display_notification();
     }
 
     build_locations(locations);
