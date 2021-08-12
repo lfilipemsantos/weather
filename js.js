@@ -39,7 +39,7 @@ function weather_notification() {
 }
 
 
-function resquest_notification() {
+function request_notification() {
     Notification.requestPermission(function(status) {
         console.log('Notification permission status:', status);
     });
@@ -51,18 +51,24 @@ function displayNotification() {
         navigator.serviceWorker.getRegistration().then(function(reg) {
             var options = {
                 body: "tMax: 32º | tMin: 17º",
-                icon: "icons/d1.svg"
+                icon: "png/039-sun.png"
             };
-            reg.showNotification('Meteorologia', options);
+            reg.showNotification('Tondela', options);
         });
     }
 }
 
+
 function init() {
-    resquest_notification();
-    weather_notification();
+    //Check if device is iOS (notifications do not work on iOS)
+    var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    if (!isIOS) {
+        request_notification();
+        weather_notification();
+        displayNotification()
+    }
+
     build_locations(locations);
-    displayNotification()
 
     if(localStorage["theme"]) {
         switch_theme(localStorage["theme"]);
