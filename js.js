@@ -10,9 +10,54 @@ if ('serviceWorker' in navigator) {
     });
 }
 
+function data_request(id) {
+    var requestURL = "https://api.ipma.pt/public-data/forecast/aggregate/" + id + ".json"
+    var request = new XMLHttpRequest();
+    request.open('GET', requestURL, true);
+    request.responseType = 'json';
+    request.send();
+    return request
+}
+
+
+function weather_notification() {
+    request = data_request(localStorage["local_id"])
+    request.onreadystatechange = function () {
+        if (request.readyState == XMLHttpRequest.DONE) {
+            data = request.response;
+            const notifTitle = "Meteorologia";
+            const notifBody = "tMax: " + data[0]["tMax"];
+            const notifImg = "icons/d1.svg";
+            const options = {
+              body: notifBody,
+              icon: notifImg,
+            };
+            new Notification(notifTitle, options);
+            setTimeout(weather_notification, 30000);
+        }
+    }
+}
+
+
+function resquest_notification() {
+    Notification.requestPermission(function(status) {
+        console.log('Notification permission status:', status);
+    });
+}
+
+
+function displayNotification() {
+    if (Notification.permission == 'granted') {
+      navigator.serviceWorker.getRegistration().then(function(reg) {
+        reg.showNotification('Hello world!');
+      });
+    }
+  }
 
 function init() {
+    weather_notification();
     build_locations(locations);
+    displayNotification()
 
     if(localStorage["theme"]) {
         switch_theme(localStorage["theme"]);
