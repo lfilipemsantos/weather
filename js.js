@@ -34,15 +34,19 @@ function display_notification() {
             request.onreadystatechange = function () {
                 if (request.readyState == XMLHttpRequest.DONE) {
                     data = request.response;
-                    const notifTitle = "Tondela";
+                    const notifTitle = get_location_name(localStorage["local_id"]);
                     const notifBody = "Max:" + data[0]["tMax"] + " | Min:" + data[0]["tMin"];
                     const notifImg = "png/039-sun.png";
                     const options = {
                         body: notifBody,
                         icon: notifImg,
                     };
-                    reg.showNotification(notifTitle, options);
-                    setTimeout(display_notification(), 30000);
+                    var d = new Date();
+                    var n = d.getHours();
+                    if (n>8 && n<22) {
+                        reg.showNotification(notifTitle, options);
+                    }
+                    setTimeout(display_notification(), 3600000);
                 }
             } 
         });
@@ -241,6 +245,17 @@ function in_favorites(id) {
         }
     }
     return false;
+}
+
+
+function get_location_name(id) {
+    for(var i = 0; i<locations.length; i++) {
+        for(var j = 0; j<locations[i]["localidade_distrito"].length; j++) {
+            if(locations[i]["localidade_distrito"][j]["globalIdLocal"] == id) {
+                return locations[i]["localidade_distrito"][j]["local"];
+            }
+        }
+    }
 }
 
 
