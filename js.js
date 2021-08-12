@@ -25,9 +25,9 @@ function weather_notification() {
     request.onreadystatechange = function () {
         if (request.readyState == XMLHttpRequest.DONE) {
             data = request.response;
-            const notifTitle = "Meteorologia";
+            const notifTitle = "Tondela";
             const notifBody = "tMax: " + data[0]["tMax"];
-            const notifImg = "icons/d1.svg";
+            const notifImg = "png/039-sun.png";
             const options = {
               body: notifBody,
               icon: notifImg,
@@ -51,8 +51,7 @@ function displayNotification() {
         navigator.serviceWorker.getRegistration().then(function(reg) {
             var options = {
                 body: "tMax: 32º | tMin: 17º",
-                icon: "icons/d1.svg",
-                vibrate: [100, 50, 100]
+                icon: "icons/d1.svg"
             };
             reg.showNotification('Meteorologia', options);
         });
