@@ -507,6 +507,9 @@ function build_next_days(data) {
         temp_container.appendChild(min);
         row.append(temp_container);
         document.getElementById(inner_id).appendChild(row);
+        hr = document.createElement('hr');
+        hr.classList.add("nd_divider");
+        document.getElementById(inner_id).appendChild(hr);
     }
 }
 
@@ -590,8 +593,8 @@ function switch_theme(id) {
 
 function switch_colors(color) {
     tables = document.getElementsByClassName("content_table");
-    rows = document.getElementsByClassName("day_row");
-    change_color(rows,"backgroundColor",color, 0.2);
+    //rows = document.getElementsByClassName("day_row");
+    //change_color(rows,"backgroundColor",color, 0.2);
     //rows = document.getElementsByClassName("location-li");
     //change_color(rows,"backgroundColor",color, 0.5);
     //document.getElementById("location").style.backgroundColor = "rgba(" + color + ", 0.5)";
@@ -797,7 +800,15 @@ function build_favorites() {
         }
     }
     else {
-        console.log("no favorites :(")
+        var no_fav_div = document.createElement('div');
+        var no_fav_text = document.createElement('p');
+        no_fav_text.setAttribute("id", "no_fav_text");
+        no_fav_div.setAttribute("id", "no_fav_div");
+        no_fav_text.textContent = "Experimente adicionar um local aos favoritos"
+
+        no_fav_div.appendChild(no_fav_text);
+        document.getElementById("favorites-tab").appendChild(no_fav_div);
+        
     }
     switch_colors(localStorage['color_theme'])
 }

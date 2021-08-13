@@ -23,8 +23,8 @@
 }
 
 @keyframes animate-in-next-row {
-    0% {opacity: 0; margin-top:-10px;}
-    100% {opacity: 1; margin-top:0px;}
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 @keyframes animate-tab-out {
@@ -131,15 +131,21 @@ body {
     width: 90%;
     max-width: 400px;
     height: 60px;
-    background-color: rgb(50, 50, 50);
+    /*background-color: rgb(50, 50, 50);*/
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
     border-radius: 10px;
     padding-left: 5%;
     animation-name: animate-in-next-row;   
-    animation-duration: 0.5s;
+    animation-duration: 0.3s;
     animation-timing-function:ease-in;
+}
+
+.nd_divider {
+    background-color: rgb(67, 67, 67);
+    height: 1px;
 }
 
 .day_row > p {
@@ -167,6 +173,7 @@ body {
 .nd_weather_icon{
     height: 30px;
     width: 100%;
+    filter: contrast(90%) saturate(190%);
 }
 
 .temp_container > p {
@@ -179,7 +186,7 @@ body {
 
 .inner {
     width:max-content;
-    height: max-content;
+    /*height: max-content;*/
     padding-left: 10px;
     padding-right: 10px;
     margin-left: auto;
@@ -311,10 +318,11 @@ body {
 }
 
 .weather_icon {
-    height: 40px;
+    height: 30px;
     width: 100%;
     margin-top:30px;
     margin-bottom:30px;
+    filter: contrast(90%) saturate(190%);
 }
 
 #claro_button {
@@ -564,6 +572,17 @@ body {
     line-height: 24px;
     margin-top: 15px;
 }
+
+#no_fav_div {
+    text-align: center;
+    margin-top: 70%;
+}
+
+#no_fav_text {
+    font-size: 1.5rem;
+    opacity: 0.3;
+}
+
 
 .tab-title {
     text-align: center;

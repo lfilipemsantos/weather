@@ -35,26 +35,23 @@
                 </div>
             </div>
             
-            <ul id="location-list">
-            </ul>
+            <ul id="location-list"></ul>
         </div> 
 
-        <div class="rows" id="favorites-tab" style="display: none;">
-
-        </div> 
+        <div class="rows" id="favorites-tab" style="display: none;"></div> 
 
         <div id="home-tab" style="margin-bottom: 85px; margin-top:30px">
-            <div id="fav_icon_container" onclick="add_favorite('1999')" style="width: auto; height: auto; position: absolute; top:0; right: 0; margin-top: 40px; margin-right: 30px;">
+            <div id="fav_icon_container" onclick="add_favorite('1999')" style="width: auto; height: auto; position: absolute; top:0; right: 0; margin-top: 30px; margin-right: 30px;">
                 <img id="fav_icon" src="not_fav_b.svg" alt="favorite icon" style="height: 20px;">
             </div>
-            <div id="refresh_icon_container" onclick="window.location.reload()" style="width: auto; height: auto; position: absolute; top:0; left: 0; margin-top: 40px; margin-left: 30px;">
+            <div id="refresh_icon_container" onclick="window.location.reload()" style="width: auto; height: auto; position: absolute; top:0; left: 0; margin-top: 30px; margin-left: 30px;">
                 <img id="refresh_icon" src="refresh_b.svg" alt="refresh icon" style="height: 20px;">
             </div>
-            <div id="table_today" class="table" style="height:276.42px">
-                <div id="table_container" style="height: 100%; max-width: 400px;">
+            <div id="table_today" class="table" style="height:276.42px; text-align: center;">
+                <div id="table_container" style="height: 100%; max-width: 200px; margin-left: auto; margin-right: auto; text-align: center;">
                     <table class="content_table" style=" width: 100%;height: 100%; margin-left: auto; margin-right: auto;text-align: center; padding-bottom: 10px;border-radius: 10px;vertical-align: middle;">
                         <tr>
-                            <td id="location-text" colspan="2" style="font-size: 19px; padding-top:10px; font-weight:100;"></td>
+                            <td id="location-text" colspan="2" style="font-size: 19px; padding-top:10px; font-weight:100; max-width: 100px;"></td>
                         </tr>
                         <tr style="text-align: center; width: 100%;">
                             <th id="table_temp" colspan="2" style="text-align:center;line-height:80px;font-size:80px;padding-bottom: 10px;padding-top: 20px;"></th>
@@ -204,47 +201,7 @@
                     </div>
                 </div>
 
-            </div>
-            <!--<div id="table_tomorrow" class="table" style="display: block;">
-                <div id="table_container" style="height: 100%; max-width: 400px;">
-                    <table class="content_table" style="width: 100%;height: 100%; margin-left: auto; margin-right: auto;text-align: center; padding-bottom: 10px;border-radius: 10px;vertical-align: middle;">
-                        <tr>
-                            <td id="tMaxT">
-                                <div style="display: inline-block;">
-                                    <img class="table_icons" src="icons/icons_table/tMax.svg">
-                                </div>
-                                <div style="display: inline-block;">
-                                    <p class="table-text-T" id="text-tMax"></p>
-                                </div>                     
-                            </td>
-                            <td id="tMinT">
-                                <div style="display: inline-block;">
-                                    <img class="table_icons" src="icons/icons_table/tMin.svg">
-                                </div>
-                                <div style="display: inline-block;">
-                                    <p class="table-text-T" id="text-tMin"></p>
-                                </div> 
-                            </td>
-                            <td id="iUvT"> 
-                                <div style="display: inline-block;">
-                                    <img class="table_icons" src="icons/icons_table/iUv.svg">
-                                </div>
-                                <div style="display: inline-block;">
-                                    <p class="table-text-T" id="text-iUv"></p>
-                                </div>                     
-                            </td> 
-                            <td id="probabilidadePrecipitaT">
-                                <div style="display: inline-block;">
-                                    <img class="table_icons" src="icons/icons_table/probabilidadePrecipita.svg">
-                                </div>
-                                <div style="display: inline-block;">
-                                    <p class="table-text-T" id="text-probabilidadePrecipita"></p>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </div>   -->   
+            </div>  
             <br>
             <div class="rows" id="next_days_row">
                 <h2 style="margin-left: 30px;">Próximos 10 dias</h2>
