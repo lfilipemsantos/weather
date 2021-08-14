@@ -66,6 +66,23 @@ function isIOSDevice(){
     return !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
 }
 
+function getLocation() {
+    if (navigator.geolocation) {
+        console.log(navigator.geolocation.getCurrentPosition(find_nearest_location));
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+/*function locationSuccess(position) {
+    var coordinates = position.coords;
+    console.log(coordinates.latitude + "  " + coordinates.longitude)
+}*/
+
+function find_nearest_location(position) {
+
+}
+
 
 function init() {
     //Check if device is iOS (notifications do not work on iOS)
@@ -75,6 +92,8 @@ function init() {
         request_notification();
         display_notification();
     }*/
+
+    getLocation();
 
     build_locations(locations);
 

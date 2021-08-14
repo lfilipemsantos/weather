@@ -4,100 +4,244 @@ var locations = [
         "id_distrito": 100,
         "localidade_distrito": [
             {
+                "idRegiao": 1,
+                "idAreaAviso": "VIS",
                 "globalIdLocal": 1180100,
-                "local": "Armamar"
+                "idConcelho": 1,
+                "latitude": "41.1071",
+                "idDistrito": 18,
+                "local": "Armamar",
+                "longitude": "-7.6908"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "VIS",
                 "globalIdLocal": 1180200,
-                "local": "Carregal do Sal"
+                "idConcelho": 2,
+                "latitude": "40.4400",
+                "idDistrito": 18,
+                "local": "Carregal do Sal",
+                "longitude": "-8.0000"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "VIS",
                 "globalIdLocal": 1180300,
-                "local": "Castro Daire"
+                "idConcelho": 3,
+                "latitude": "40.9000",
+                "idDistrito": 18,
+                "local": "Castro Daire",
+                "longitude": "-7.9400"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "VIS",
                 "globalIdLocal": 1180400,
-                "local": "Cinfães"
+                "idConcelho": 4,
+                "latitude": "41.0749",
+                "idDistrito": 18,
+                "local": "Cinfães",
+                "longitude": "-8.0958"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "VIS",
                 "globalIdLocal": 1180500,
-                "local": "Lamego"
+                "idConcelho": 5,
+                "latitude": "41.1000",
+                "idDistrito": 18,
+                "local": "Lamego",
+                "longitude": "-7.8100"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "VIS",
                 "globalIdLocal": 1180600,
-                "local": "Mangualde"
+                "idConcelho": 6,
+                "latitude": "40.6100",
+                "idDistrito": 18,
+                "local": "Mangualde",
+                "longitude": "-7.7600"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "VIS",
                 "globalIdLocal": 1180700,
-                "local": "Moimenta da Beira"
+                "idConcelho": 7,
+                "latitude": "40.9818",
+                "idDistrito": 18,
+                "local": "Moimenta da Beira",
+                "longitude": "-7.6154"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "VIS",
                 "globalIdLocal": 1180800,
-                "local": "Mortágua"
+                "idConcelho": 8,
+                "latitude": "40.4000",
+                "idDistrito": 18,
+                "local": "Mortágua",
+                "longitude": "-8.2300"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "VIS",
                 "globalIdLocal": 1180900,
-                "local": "Nelas"
+                "idConcelho": 9,
+                "latitude": "40.5321",
+                "idDistrito": 18,
+                "local": "Nelas",
+                "longitude": "-7.8522"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "VIS",
                 "globalIdLocal": 1181000,
-                "local": "Oliveira de Frades"
+                "idConcelho": 10,
+                "latitude": "40.7301",
+                "idDistrito": 18,
+                "local": "Oliveira de Frades",
+                "longitude": "-8.1738"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "VIS",
                 "globalIdLocal": 1181100,
-                "local": "Penalva do Castelo"
+                "idConcelho": 11,
+                "latitude": "40.6800",
+                "idDistrito": 18,
+                "local": "Penalva do Castelo",
+                "longitude": "-7.7000"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "VIS",
                 "globalIdLocal": 1181200,
-                "local": "Penedono"
+                "idConcelho": 12,
+                "latitude": "40.9900",
+                "idDistrito": 18,
+                "local": "Penedono",
+                "longitude": "-7.4000"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "VIS",
                 "globalIdLocal": 1181300,
-                "local": "Resende"
+                "idConcelho": 13,
+                "latitude": "41.1058",
+                "idDistrito": 18,
+                "local": "Resende",
+                "longitude": "-7.9627"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "VIS",
                 "globalIdLocal": 1181400,
-                "local": "Santa Comba Dão"
+                "idConcelho": 14,
+                "latitude": "40.4000",
+                "idDistrito": 18,
+                "local": "Santa Comba Dão",
+                "longitude": "-8.1300"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "VIS",
                 "globalIdLocal": 1181500,
-                "local": "São João da Pesqueira"
+                "idConcelho": 15,
+                "latitude": "41.1500",
+                "idDistrito": 18,
+                "local": "São João da Pesqueira",
+                "longitude": "-7.4100"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "VIS",
                 "globalIdLocal": 1181600,
-                "local": "São Pedro do Sul"
+                "idConcelho": 16,
+                "latitude": "40.7600",
+                "idDistrito": 18,
+                "local": "São Pedro do Sul",
+                "longitude": "-8.0642"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "VIS",
                 "globalIdLocal": 1181700,
-                "local": "Sátão"
+                "idConcelho": 17,
+                "latitude": "40.7500",
+                "idDistrito": 18,
+                "local": "Sátão",
+                "longitude": "-7.7400"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "VIS",
                 "globalIdLocal": 1181800,
-                "local": "Sernancelhe"
+                "idConcelho": 18,
+                "latitude": "40.8982",
+                "idDistrito": 18,
+                "local": "Sernancelhe",
+                "longitude": "-7.4916"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "VIS",
                 "globalIdLocal": 1181900,
-                "local": "Tabuaço"
+                "idConcelho": 19,
+                "latitude": "41.1154",
+                "idDistrito": 18,
+                "local": "Tabuaço",
+                "longitude": "-7.5674"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "VIS",
                 "globalIdLocal": 1182000,
-                "local": "Tarouca"
+                "idConcelho": 20,
+                "latitude": "41.0200",
+                "idDistrito": 18,
+                "local": "Tarouca",
+                "longitude": "-7.7700"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "VIS",
                 "globalIdLocal": 1182100,
-                "local": "Tondela"
+                "idConcelho": 21,
+                "latitude": "40.5200",
+                "idDistrito": 18,
+                "local": "Tondela",
+                "longitude": "-8.0800"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "VIS",
                 "globalIdLocal": 1182200,
-                "local": "Vila Nova de Paiva"
+                "idConcelho": 22,
+                "latitude": "40.8500",
+                "idDistrito": 18,
+                "local": "Vila Nova de Paiva",
+                "longitude": "-7.7300"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "VIS",
                 "globalIdLocal": 1182300,
-                "local": "Viseu"
+                "idConcelho": 23,
+                "latitude": "40.6585",
+                "idDistrito": 18,
+                "local": "Viseu",
+                "longitude": "-7.9120"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "VIS",
                 "globalIdLocal": 1182400,
-                "local": "Vouzela"
+                "idConcelho": 24,
+                "latitude": "40.7249",
+                "idDistrito": 18,
+                "local": "Vouzela",
+                "longitude": "-8.1135"
             }
         ]
     },
@@ -106,120 +250,294 @@ var locations = [
         "id_distrito":200,
         "localidade_distrito": [
             {
+                "idRegiao": 1,
+                "idAreaAviso": "AVR",
                 "globalIdLocal": 1010100,
-                "local": "Águeda"
+                "idConcelho": 1,
+                "latitude": "40.5800",
+                "idDistrito": 1,
+                "local": "Águeda",
+                "longitude": "-8.4400"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "AVR",
                 "globalIdLocal": 1010200,
-                "local": "Albergaria-a-Velha"
+                "idConcelho": 2,
+                "latitude": "40.6909",
+                "idDistrito": 1,
+                "local": "Albergaria-a-Velha",
+                "longitude": "-8.4784"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "AVR",
                 "globalIdLocal": 1010300,
-                "local": "Anadia"
+                "idConcelho": 3,
+                "latitude": "40.4400",
+                "idDistrito": 1,
+                "local": "Anadia",
+                "longitude": "-8.4400"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "AVR",
                 "globalIdLocal": 1010400,
-                "local": "Arouca"
+                "idConcelho": 4,
+                "latitude": "40.9300",
+                "idDistrito": 1,
+                "local": "Arouca",
+                "longitude": "-8.2600"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "AVR",
                 "globalIdLocal": 1010500,
-                "local": "Aveiro"
+                "idConcelho": 5,
+                "latitude": "40.6413",
+                "idDistrito": 1,
+                "local": "Aveiro",
+                "longitude": "-8.6535"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "AVR",
                 "globalIdLocal": 1010522,
-                "local": "Praia de São Jacinto"
+                "idConcelho": 5,
+                "latitude": "40.6694",
+                "idDistrito": 1,
+                "local": "Praia de São Jacinto",
+                "longitude": "-8.7466"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "AVR",
                 "globalIdLocal": 1010600,
-                "local": "Castelo de Paiva"
+                "idConcelho": 6,
+                "latitude": "41.0409",
+                "idDistrito": 1,
+                "local": "Castelo de Paiva",
+                "longitude": "-8.2707"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "AVR",
                 "globalIdLocal": 1010700,
-                "local": "Espinho"
+                "idConcelho": 7,
+                "latitude": "41.0100",
+                "idDistrito": 1,
+                "local": "Espinho",
+                "longitude": "-8.6400"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "AVR",
                 "globalIdLocal": 1010800,
-                "local": "Estarreja"
+                "idConcelho": 8,
+                "latitude": "40.7540",
+                "idDistrito": 1,
+                "local": "Estarreja",
+                "longitude": "-8.5720"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "AVR",
                 "globalIdLocal": 1010821,
-                "local": "Praia de Espinho"
+                "idConcelho": 8,
+                "latitude": "41.0066",
+                "idDistrito": 1,
+                "local": "Praia de Espinho",
+                "longitude": "-8.6467"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "AVR",
                 "globalIdLocal": 1010900,
-                "local": "Santa Maria da Feira"
+                "idConcelho": 9,
+                "latitude": "40.9300",
+                "idDistrito": 1,
+                "local": "Santa Maria da Feira",
+                "longitude": "-8.5500"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "AVR",
                 "globalIdLocal": 1011000,
-                "local": "Ílhavo"
+                "idConcelho": 10,
+                "latitude": "40.6000",
+                "idDistrito": 1,
+                "local": "Ílhavo",
+                "longitude": "-8.6700"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "AVR",
                 "globalIdLocal": 1011021,
-                "local": "Praia da Barra"
+                "idConcelho": 10,
+                "latitude": "40.6400",
+                "idDistrito": 1,
+                "local": "Praia da Barra",
+                "longitude": "-8.7500"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "AVR",
                 "globalIdLocal": 1011022,
-                "local": "Praia da Costa Nova"
+                "idConcelho": 10,
+                "latitude": "40.6132",
+                "idDistrito": 1,
+                "local": "Praia da Costa Nova",
+                "longitude": "-8.7543"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "AVR",
                 "globalIdLocal": 1011100,
-                "local": "Mealhada"
+                "idConcelho": 11,
+                "latitude": "40.3783",
+                "idDistrito": 1,
+                "local": "Mealhada",
+                "longitude": "-8.4503"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "AVR",
                 "globalIdLocal": 1011200,
-                "local": "Murtosa"
+                "idConcelho": 12,
+                "latitude": "40.7400",
+                "idDistrito": 1,
+                "local": "Murtosa",
+                "longitude": "-8.6400"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "AVR",
                 "globalIdLocal": 1011221,
-                "local": "Praia da Torreira"
+                "idConcelho": 12,
+                "latitude": "40.7600",
+                "idDistrito": 1,
+                "local": "Praia da Torreira",
+                "longitude": "-8.7100"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "AVR",
                 "globalIdLocal": 1011300,
-                "local": "Oliveira de Azeméis"
+                "idConcelho": 13,
+                "latitude": "40.8400",
+                "idDistrito": 1,
+                "local": "Oliveira de Azeméis",
+                "longitude": "-8.4800"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "AVR",
                 "globalIdLocal": 1011400,
-                "local": "Oliveira do Bairro"
+                "idConcelho": 14,
+                "latitude": "40.5157",
+                "idDistrito": 1,
+                "local": "Oliveira do Bairro",
+                "longitude": "-8.4941"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "AVR",
                 "globalIdLocal": 1011500,
-                "local": "Ovar"
+                "idConcelho": 15,
+                "latitude": "40.8596",
+                "idDistrito": 1,
+                "local": "Ovar",
+                "longitude": "-8.6254"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "AVR",
                 "globalIdLocal": 1011521,
-                "local": "Praia do Furadouro"
+                "idConcelho": 15,
+                "latitude": "40.8731",
+                "idDistrito": 1,
+                "local": "Praia do Furadouro",
+                "longitude": "-8.6777"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "AVR",
                 "globalIdLocal": 1011522,
-                "local": "Praia Torrão do Lameiro"
+                "idConcelho": 15,
+                "latitude": "40.8287",
+                "idDistrito": 1,
+                "local": "Praia Torrão do Lameiro",
+                "longitude": "-8.6901"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "AVR",
                 "globalIdLocal": 1011523,
-                "local": "Praia de São Pedro da Maceda"
+                "idConcelho": 15,
+                "latitude": "40.9400",
+                "idDistrito": 1,
+                "local": "Praia de São Pedro da Maceda",
+                "longitude": "-8.6600"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "AVR",
                 "globalIdLocal": 1011524,
-                "local": "Praia de Esmoriz"
+                "idConcelho": 15,
+                "latitude": "40.9536",
+                "idDistrito": 1,
+                "local": "Praia de Esmoriz",
+                "longitude": "-8.6564"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "AVR",
                 "globalIdLocal": 1011600,
-                "local": "São João da Madeira"
+                "idConcelho": 16,
+                "latitude": "40.9000",
+                "idDistrito": 1,
+                "local": "São João da Madeira",
+                "longitude": "-8.4900"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "AVR",
                 "globalIdLocal": 1011700,
-                "local": "Sever do Vouga"
+                "idConcelho": 17,
+                "latitude": "40.7334",
+                "idDistrito": 1,
+                "local": "Sever do Vouga",
+                "longitude": "-8.3713"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "AVR",
                 "globalIdLocal": 1011800,
-                "local": "Vagos"
+                "idConcelho": 18,
+                "latitude": "40.5535",
+                "idDistrito": 1,
+                "local": "Vagos",
+                "longitude": "-8.6833"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "AVR",
                 "globalIdLocal": 1011821,
-                "local": "Praia da Vagueira"
+                "idConcelho": 18,
+                "latitude": "40.5636",
+                "idDistrito": 1,
+                "local": "Praia da Vagueira",
+                "longitude": "-8.7705"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "AVR",
                 "globalIdLocal": 1011900,
-                "local": "Vale de Cambra"
+                "idConcelho": 19,
+                "latitude": "40.8500",
+                "idDistrito": 1,
+                "local": "Vale de Cambra",
+                "longitude": "-8.3900"
             }
         ]
     },
@@ -228,77 +546,185 @@ var locations = [
         "id_distrito":300,
         "localidade_distrito": [
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BJA",
                 "globalIdLocal": 1020100,
-                "local": "Aljustrel"
+                "idConcelho": 1,
+                "latitude": "37.8800",
+                "idDistrito": 2,
+                "local": "Aljustrel",
+                "longitude": "-8.1700"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BJA",
                 "globalIdLocal": 1020200,
-                "local": "Almodôvar"
+                "idConcelho": 2,
+                "latitude": "37.5108",
+                "idDistrito": 2,
+                "local": "Almodôvar",
+                "longitude": "-8.0560"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BJA",
                 "globalIdLocal": 1020300,
-                "local": "Alvito"
+                "idConcelho": 3,
+                "latitude": "38.2600",
+                "idDistrito": 2,
+                "local": "Alvito",
+                "longitude": "-8.0000"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BJA",
                 "globalIdLocal": 1020400,
-                "local": "Barrancos"
+                "idConcelho": 4,
+                "latitude": "38.1300",
+                "idDistrito": 2,
+                "local": "Barrancos",
+                "longitude": "-6.9800"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BJA",
                 "globalIdLocal": 1020500,
-                "local": "Beja"
+                "idConcelho": 5,
+                "latitude": "38.0200",
+                "idDistrito": 2,
+                "local": "Beja",
+                "longitude": "-7.8700"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BJA",
                 "globalIdLocal": 1020600,
-                "local": "Castro Verde"
+                "idConcelho": 6,
+                "latitude": "38.0700",
+                "idDistrito": 2,
+                "local": "Castro Verde",
+                "longitude": "-7.9300"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BJA",
                 "globalIdLocal": 1020700,
-                "local": "Cuba"
+                "idConcelho": 7,
+                "latitude": "38.1700",
+                "idDistrito": 2,
+                "local": "Cuba",
+                "longitude": "-7.8900"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BJA",
                 "globalIdLocal": 1020800,
-                "local": "Ferreira do Alentejo"
+                "idConcelho": 8,
+                "latitude": "38.0600",
+                "idDistrito": 2,
+                "local": "Ferreira do Alentejo",
+                "longitude": "-8.1100"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BJA",
                 "globalIdLocal": 1020900,
-                "local": "Mértola"
+                "idConcelho": 9,
+                "latitude": "37.6428",
+                "idDistrito": 2,
+                "local": "Mértola",
+                "longitude": "-7.6605"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BJA",
                 "globalIdLocal": 1021000,
-                "local": "Moura"
+                "idConcelho": 10,
+                "latitude": "38.1400",
+                "idDistrito": 2,
+                "local": "Moura",
+                "longitude": "-7.4500"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BJA",
                 "globalIdLocal": 1021100,
-                "local": "Odemira"
+                "idConcelho": 11,
+                "latitude": "37.5978",
+                "idDistrito": 2,
+                "local": "Odemira",
+                "longitude": "-8.6390"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BJA",
                 "globalIdLocal": 1021111,
-                "local": "Praia de Milfontes"
+                "idConcelho": 11,
+                "latitude": "37.7200",
+                "idDistrito": 2,
+                "local": "Praia de Milfontes",
+                "longitude": "-8.7900"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BJA",
                 "globalIdLocal": 1021121,
-                "local": "Praia de Almograve"
+                "idConcelho": 11,
+                "latitude": "37.6520",
+                "idDistrito": 2,
+                "local": "Praia de Almograve",
+                "longitude": "-8.8022"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BJA",
                 "globalIdLocal": 1021122,
-                "local": "Praia do Malhão"
+                "idConcelho": 11,
+                "latitude": "37.7854",
+                "idDistrito": 2,
+                "local": "Praia do Malhão",
+                "longitude": "-8.8014"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BJA",
                 "globalIdLocal": 1021124,
-                "local": "Praia da Zambujeira"
+                "idConcelho": 11,
+                "latitude": "37.5184",
+                "idDistrito": 2,
+                "local": "Praia da Zambujeira",
+                "longitude": "-8.7889"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BJA",
                 "globalIdLocal": 1021200,
-                "local": "Ourique"
+                "idConcelho": 12,
+                "latitude": "37.6500",
+                "idDistrito": 2,
+                "local": "Ourique",
+                "longitude": "-8.2200"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BJA",
                 "globalIdLocal": 1021300,
-                "local": "Serpa"
+                "idConcelho": 13,
+                "latitude": "37.9500",
+                "idDistrito": 2,
+                "local": "Serpa",
+                "longitude": "-7.6000"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BJA",
                 "globalIdLocal": 1021400,
-                "local": "Vidigueira"
-            },
+                "idConcelho": 14,
+                "latitude": "38.2100",
+                "idDistrito": 2,
+                "local": "Vidigueira",
+                "longitude": "-7.8000"
+            }
         ]
     },
     {
@@ -306,73 +732,175 @@ var locations = [
         "id_distrito":400,
         "localidade_distrito": [
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BRG",
                 "globalIdLocal": 1030100,
-                "local": "Amares"
+                "idConcelho": 1,
+                "latitude": "41.5400",
+                "idDistrito": 3,
+                "local": "Amares",
+                "longitude": "-8.6100"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BRG",
                 "globalIdLocal": 1030200,
-                "local": "Barcelos"
+                "idConcelho": 2,
+                "latitude": "41.6314",
+                "idDistrito": 3,
+                "local": "Barcelos",
+                "longitude": "-8.3489"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BRG",
                 "globalIdLocal": 1030300,
-                "local": "Braga"
+                "idConcelho": 3,
+                "latitude": "41.5475",
+                "idDistrito": 3,
+                "local": "Braga",
+                "longitude": "-8.4227"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BRG",
                 "globalIdLocal": 1030321,
-                "local": "Praia da Apúlia"
+                "idConcelho": 3,
+                "latitude": "41.4825",
+                "idDistrito": 3,
+                "local": "Praia da Apúlia",
+                "longitude": "-8.7777"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BRG",
                 "globalIdLocal": 1030400,
-                "local": "Cabeceiras de Basto"
+                "idConcelho": 4,
+                "latitude": "41.5140",
+                "idDistrito": 3,
+                "local": "Cabeceiras de Basto",
+                "longitude": "-7.9901"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BRG",
                 "globalIdLocal": 1030500,
-                "local": "Celorico de Basto"
+                "idConcelho": 5,
+                "latitude": "41.3900",
+                "idDistrito": 3,
+                "local": "Celorico de Basto",
+                "longitude": "-8.0000"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BRG",
                 "globalIdLocal": 1030600,
-                "local": "Esposende"
+                "idConcelho": 6,
+                "latitude": "41.5356",
+                "idDistrito": 3,
+                "local": "Esposende",
+                "longitude": "-8.7819"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BRG",
                 "globalIdLocal": 1030621,
-                "local": "Praia de Ofir"
+                "idConcelho": 6,
+                "latitude": "41.5163",
+                "idDistrito": 3,
+                "local": "Praia de Ofir",
+                "longitude": "-8.7884"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BRG",
                 "globalIdLocal": 1030622,
-                "local": "Praia de Esposende"
+                "idConcelho": 6,
+                "latitude": "41.5468",
+                "idDistrito": 3,
+                "local": "Praia de Esposende",
+                "longitude": "-8.7927"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BRG",
                 "globalIdLocal": 1030700,
-                "local": "Fafe"
+                "idConcelho": 7,
+                "latitude": "41.4472",
+                "idDistrito": 3,
+                "local": "Fafe",
+                "longitude": "-8.1732"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BRG",
                 "globalIdLocal": 1030800,
-                "local": "Guimarães"
+                "idConcelho": 8,
+                "latitude": "41.4434",
+                "idDistrito": 3,
+                "local": "Guimarães",
+                "longitude": "-8.2938"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BRG",
                 "globalIdLocal": 1030900,
-                "local": "Póvoa de Lanhoso"
+                "idConcelho": 9,
+                "latitude": "41.5762",
+                "idDistrito": 3,
+                "local": "Póvoa de Lanhoso",
+                "longitude": "-8.2708"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BRG",
                 "globalIdLocal": 1031000,
-                "local": "Terras de Bouro"
+                "idConcelho": 10,
+                "latitude": "41.7200",
+                "idDistrito": 3,
+                "local": "Terras de Bouro",
+                "longitude": "-8.3100"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BRG",
                 "globalIdLocal": 1031100,
-                "local": "Vieira do Minho"
+                "idConcelho": 11,
+                "latitude": "41.6355",
+                "idDistrito": 3,
+                "local": "Vieira do Minho",
+                "longitude": "-8.1416"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BRG",
                 "globalIdLocal": 1031200,
-                "local": "Vila Nova de Famalicão"
+                "idConcelho": 12,
+                "latitude": "41.4087",
+                "idDistrito": 3,
+                "local": "Vila Nova de Famalicão",
+                "longitude": "-8.5205"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BRG",
                 "globalIdLocal": 1031300,
-                "local": "Vila Verde"
+                "idConcelho": 13,
+                "latitude": "41.6545",
+                "idDistrito": 3,
+                "local": "Vila Verde",
+                "longitude": "-8.4348"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BRG",
                 "globalIdLocal": 1031400,
-                "local": "Vizela"
-            },
+                "idConcelho": 14,
+                "latitude": "41.3800",
+                "idDistrito": 3,
+                "local": "Vizela",
+                "longitude": "-8.3100"
+            }
         ]
     },
     {
@@ -380,53 +908,125 @@ var locations = [
         "id_distrito":500,
         "localidade_distrito": [
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BGC",
                 "globalIdLocal": 1040100,
-                "local": "Alfandega da Fé"
+                "idConcelho": 1,
+                "latitude": "41.3424",
+                "idDistrito": 4,
+                "local": "Alfandega da Fé",
+                "longitude": "-6.9625"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BGC",
                 "globalIdLocal": 1040200,
-                "local": "Bragança"
+                "idConcelho": 2,
+                "latitude": "41.8076",
+                "idDistrito": 4,
+                "local": "Bragança",
+                "longitude": "-6.7606"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BGC",
                 "globalIdLocal": 1040300,
-                "local": "Carrazeda de Ansiães"
+                "idConcelho": 3,
+                "latitude": "41.2431",
+                "idDistrito": 4,
+                "local": "Carrazeda de Ansiães",
+                "longitude": "-7.3077"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BGC",
                 "globalIdLocal": 1040400,
-                "local": "Freixo Espada à Cinta"
+                "idConcelho": 4,
+                "latitude": "41.0900",
+                "idDistrito": 4,
+                "local": "Freixo Espada à Cinta",
+                "longitude": "-6.8100"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BGC",
                 "globalIdLocal": 1040500,
-                "local": "Macedo de Cavaleiros"
+                "idConcelho": 5,
+                "latitude": "41.5373",
+                "idDistrito": 4,
+                "local": "Macedo de Cavaleiros",
+                "longitude": "-6.9635"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BGC",
                 "globalIdLocal": 1040600,
-                "local": "Miranda do Douro"
+                "idConcelho": 6,
+                "latitude": "41.5000",
+                "idDistrito": 4,
+                "local": "Miranda do Douro",
+                "longitude": "-6.2700"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BGC",
                 "globalIdLocal": 1040700,
-                "local": "Mirandela"
+                "idConcelho": 7,
+                "latitude": "41.4823",
+                "idDistrito": 4,
+                "local": "Mirandela",
+                "longitude": "-7.1812"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BGC",
                 "globalIdLocal": 1040800,
-                "local": "Mogadouro"
+                "idConcelho": 8,
+                "latitude": "41.3421",
+                "idDistrito": 4,
+                "local": "Mogadouro",
+                "longitude": "-6.7115"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BGC",
                 "globalIdLocal": 1040900,
-                "local": "Torre de Moncorvo"
+                "idConcelho": 9,
+                "latitude": "41.1742",
+                "idDistrito": 4,
+                "local": "Torre de Moncorvo",
+                "longitude": "-7.0532"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BGC",
                 "globalIdLocal": 1041000,
-                "local": "Vila Flor"
+                "idConcelho": 10,
+                "latitude": "41.3083",
+                "idDistrito": 4,
+                "local": "Vila Flor",
+                "longitude": "-7.1519"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BGC",
                 "globalIdLocal": 1041100,
-                "local": "Vimioso"
+                "idConcelho": 11,
+                "latitude": "41.5900",
+                "idDistrito": 4,
+                "local": "Vimioso",
+                "longitude": "-6.5300"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "BGC",
                 "globalIdLocal": 1041200,
-                "local": "Vinhais"
-            },
+                "idConcelho": 12,
+                "latitude": "41.8314",
+                "idDistrito": 4,
+                "local": "Vinhais",
+                "longitude": "-7.0099"
+            }
         ]
     },
     {
@@ -434,52 +1034,124 @@ var locations = [
         "id_distrito":600,
         "localidade_distrito": [
             {
+                "idRegiao": 1,
+                "idAreaAviso": "CBO",
                 "globalIdLocal": 1050100,
-                "local": "Belmonte"
+                "idConcelho": 1,
+                "latitude": "40.3597",
+                "idDistrito": 5,
+                "local": "Belmonte",
+                "longitude": "-7.3486"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "CBO",
                 "globalIdLocal": 1050200,
-                "local": "Castelo Branco"
+                "idConcelho": 2,
+                "latitude": "39.8217",
+                "idDistrito": 5,
+                "local": "Castelo Branco",
+                "longitude": "-7.4957"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "CBO",
                 "globalIdLocal": 1050300,
-                "local": "Covilhã"
+                "idConcelho": 3,
+                "latitude": "40.2779",
+                "idDistrito": 5,
+                "local": "Covilhã",
+                "longitude": "-7.4992"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "CBO",
                 "globalIdLocal": 1050321,
-                "local": "Penhas Saúde"
+                "idConcelho": 3,
+                "latitude": "40.3081",
+                "idDistrito": 5,
+                "local": "Penhas Saúde",
+                "longitude": "-7.5487"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "CBO",
                 "globalIdLocal": 1050400,
-                "local": "Fundão"
+                "idConcelho": 4,
+                "latitude": "40.1378",
+                "idDistrito": 5,
+                "local": "Fundão",
+                "longitude": "-7.5011"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "CBO",
                 "globalIdLocal": 1050500,
-                "local": "Idanha-a-Nova"
+                "idConcelho": 5,
+                "latitude": "39.9300",
+                "idDistrito": 5,
+                "local": "Idanha-a-Nova",
+                "longitude": "-7.2400"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "CBO",
                 "globalIdLocal": 1050600,
-                "local": "Oleiros"
+                "idConcelho": 6,
+                "latitude": "39.9200",
+                "idDistrito": 5,
+                "local": "Oleiros",
+                "longitude": "-7.9100"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "CBO",
                 "globalIdLocal": 1050700,
-                "local": "Penamacor"
+                "idConcelho": 7,
+                "latitude": "40.1700",
+                "idDistrito": 5,
+                "local": "Penamacor",
+                "longitude": "-7.1700"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "CBO",
                 "globalIdLocal": 1050800,
-                "local": "Proença-a-Nova"
+                "idConcelho": 8,
+                "latitude": "39.7495",
+                "idDistrito": 5,
+                "local": "Proença-a-Nova",
+                "longitude": "-7.9229"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "CBO",
                 "globalIdLocal": 1050900,
-                "local": "Sertã"
+                "idConcelho": 9,
+                "latitude": "39.8007",
+                "idDistrito": 5,
+                "local": "Sertã",
+                "longitude": "-8.0979"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "CBO",
                 "globalIdLocal": 1051000,
-                "local": "Vila de Rei"
+                "idConcelho": 10,
+                "latitude": "39.6753",
+                "idDistrito": 5,
+                "local": "Vila de Rei",
+                "longitude": "-8.1440"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "CBO",
                 "globalIdLocal": 1051100,
-                "local": "Vila Velha de Rodão"
+                "idConcelho": 11,
+                "latitude": "39.6571",
+                "idDistrito": 5,
+                "local": "Vila Velha de Rodão",
+                "longitude": "-7.6705"
             }
         ]
     },
@@ -488,84 +1160,204 @@ var locations = [
         "id_distrito":700,
         "localidade_distrito": [
             {
+                "idRegiao": 1,
+                "idAreaAviso": "CBR",
                 "globalIdLocal": 1060100,
-                "local": "Arganil"
+                "idConcelho": 1,
+                "latitude": "40.2200",
+                "idDistrito": 6,
+                "local": "Arganil",
+                "longitude": "-8.0500"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "CBR",
                 "globalIdLocal": 1060200,
-                "local": "Cantanhede"
+                "idConcelho": 2,
+                "latitude": "40.3466",
+                "idDistrito": 6,
+                "local": "Cantanhede",
+                "longitude": "-8.5943"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "CBR",
                 "globalIdLocal": 1060221,
-                "local": "Praia da Tocha"
+                "idConcelho": 2,
+                "latitude": "40.3300",
+                "idDistrito": 6,
+                "local": "Praia da Tocha",
+                "longitude": "-8.8400"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "CBR",
                 "globalIdLocal": 1060300,
-                "local": "Coimbra"
+                "idConcelho": 3,
+                "latitude": "40.2081",
+                "idDistrito": 6,
+                "local": "Coimbra",
+                "longitude": "-8.4194"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "CBR",
                 "globalIdLocal": 1060400,
-                "local": "Condeixa-a-Nova"
+                "idConcelho": 4,
+                "latitude": "40.1097",
+                "idDistrito": 6,
+                "local": "Condeixa-a-Nova",
+                "longitude": "-8.5027"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "CBR",
                 "globalIdLocal": 1060500,
-                "local": "Figueira da Foz"
+                "idConcelho": 5,
+                "latitude": "40.1512",
+                "idDistrito": 6,
+                "local": "Figueira da Foz",
+                "longitude": "-8.8558"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "CBR",
                 "globalIdLocal": 1060522,
-                "local": "Praia da Figueira da Foz"
+                "idConcelho": 5,
+                "latitude": "40.1523",
+                "idDistrito": 6,
+                "local": "Praia da Figueira da Foz",
+                "longitude": "-8.8719"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "CBR",
                 "globalIdLocal": 1060600,
-                "local": "Góis"
+                "idConcelho": 6,
+                "latitude": "40.1500",
+                "idDistrito": 6,
+                "local": "Góis",
+                "longitude": "-8.1100"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "CBR",
                 "globalIdLocal": 1060700,
-                "local": "Lousã"
+                "idConcelho": 7,
+                "latitude": "40.1120",
+                "idDistrito": 6,
+                "local": "Lousã",
+                "longitude": "-8.2469"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "CBR",
                 "globalIdLocal": 1060800,
-                "local": "Mira"
+                "idConcelho": 8,
+                "latitude": "40.4275",
+                "idDistrito": 6,
+                "local": "Mira",
+                "longitude": "-8.7369"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "CBR",
                 "globalIdLocal": 1060821,
-                "local": "Praia de Mira"
+                "idConcelho": 8,
+                "latitude": "40.4549",
+                "idDistrito": 6,
+                "local": "Praia de Mira",
+                "longitude": "-8.8051"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "CBR",
                 "globalIdLocal": 1060900,
-                "local": "Miranda do Corvo"
+                "idConcelho": 9,
+                "latitude": "40.0915",
+                "idDistrito": 6,
+                "local": "Miranda do Corvo",
+                "longitude": "-8.3309"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "CBR",
                 "globalIdLocal": 1061000,
-                "local": "Montemor-o-Velho"
+                "idConcelho": 10,
+                "latitude": "40.1775",
+                "idDistrito": 6,
+                "local": "Montemor-o-Velho",
+                "longitude": "-8.6803"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "CBR",
                 "globalIdLocal": 1061100,
-                "local": "Oliveira do Hospital"
+                "idConcelho": 11,
+                "latitude": "40.3600",
+                "idDistrito": 6,
+                "local": "Oliveira do Hospital",
+                "longitude": "-7.8600"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "CBR",
                 "globalIdLocal": 1061200,
-                "local": "Pampilhosa da Serra"
+                "idConcelho": 12,
+                "latitude": "40.1500",
+                "idDistrito": 6,
+                "local": "Pampilhosa da Serra",
+                "longitude": "-7.9300"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "CBR",
                 "globalIdLocal": 1061300,
-                "local": "Penacova"
+                "idConcelho": 13,
+                "latitude": "40.2700",
+                "idDistrito": 6,
+                "local": "Penacova",
+                "longitude": "-8.2700"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "CBR",
                 "globalIdLocal": 1061400,
-                "local": "Penela"
+                "idConcelho": 14,
+                "latitude": "40.0300",
+                "idDistrito": 6,
+                "local": "Penela",
+                "longitude": "-8.3900"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "CBR",
                 "globalIdLocal": 1061500,
-                "local": "Soure"
+                "idConcelho": 15,
+                "latitude": "40.0600",
+                "idDistrito": 6,
+                "local": "Soure",
+                "longitude": "-8.6100"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "CBR",
                 "globalIdLocal": 1061600,
-                "local": "Tábua"
+                "idConcelho": 16,
+                "latitude": "40.3600",
+                "idDistrito": 6,
+                "local": "Tábua",
+                "longitude": "-8.0200"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "CBR",
                 "globalIdLocal": 1061700,
-                "local": "Vila Nova de Poiares"
+                "idConcelho": 17,
+                "latitude": "40.2099",
+                "idDistrito": 6,
+                "local": "Vila Nova de Poiares",
+                "longitude": "-8.2586"
             }
         ]
     },
@@ -574,60 +1366,144 @@ var locations = [
         "id_distrito":800,
         "localidade_distrito": [
             {
+                "idRegiao": 1,
+                "idAreaAviso": "EVR",
                 "globalIdLocal": 1070100,
-                "local": "Alandroal"
+                "idConcelho": 1,
+                "latitude": "38.7000",
+                "idDistrito": 7,
+                "local": "Alandroal",
+                "longitude": "-7.4000"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "EVR",
                 "globalIdLocal": 1070200,
-                "local": "Arraiolos"
+                "idConcelho": 2,
+                "latitude": "38.7200",
+                "idDistrito": 7,
+                "local": "Arraiolos",
+                "longitude": "-7.9900"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "EVR",
                 "globalIdLocal": 1070300,
-                "local": "Borba"
+                "idConcelho": 3,
+                "latitude": "38.8056",
+                "idDistrito": 7,
+                "local": "Borba",
+                "longitude": "-7.4554"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "EVR",
                 "globalIdLocal": 1070400,
-                "local": "Estremoz"
+                "idConcelho": 4,
+                "latitude": "38.8434",
+                "idDistrito": 7,
+                "local": "Estremoz",
+                "longitude": "-7.5869"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "EVR",
                 "globalIdLocal": 1070500,
-                "local": "Évora"
+                "idConcelho": 5,
+                "latitude": "38.5701",
+                "idDistrito": 7,
+                "local": "Évora",
+                "longitude": "-7.9104"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "EVR",
                 "globalIdLocal": 1070600,
-                "local": "Montemor-o-Novo"
+                "idConcelho": 6,
+                "latitude": "38.6500",
+                "idDistrito": 7,
+                "local": "Montemor-o-Novo",
+                "longitude": "-8.2100"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "EVR",
                 "globalIdLocal": 1070700,
-                "local": "Mora"
+                "idConcelho": 7,
+                "latitude": "38.9400",
+                "idDistrito": 7,
+                "local": "Mora",
+                "longitude": "-8.1600"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "EVR",
                 "globalIdLocal": 1070800,
-                "local": "Mourão"
+                "idConcelho": 8,
+                "latitude": "38.3900",
+                "idDistrito": 7,
+                "local": "Mourão",
+                "longitude": "-7.3400"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "EVR",
                 "globalIdLocal": 1070900,
-                "local": "Portel"
+                "idConcelho": 9,
+                "latitude": "38.3070",
+                "idDistrito": 7,
+                "local": "Portel",
+                "longitude": "-7.7079"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "EVR",
                 "globalIdLocal": 1071000,
-                "local": "Redondo"
+                "idConcelho": 10,
+                "latitude": "38.6500",
+                "idDistrito": 7,
+                "local": "Redondo",
+                "longitude": "-7.5500"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "EVR",
                 "globalIdLocal": 1071100,
-                "local": "Reguengos de Monsaraz"
+                "idConcelho": 11,
+                "latitude": "38.4229",
+                "idDistrito": 7,
+                "local": "Reguengos de Monsaraz",
+                "longitude": "-7.5397"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "EVR",
                 "globalIdLocal": 1071200,
-                "local": "Vendas Novas"
+                "idConcelho": 12,
+                "latitude": "38.6800",
+                "idDistrito": 7,
+                "local": "Vendas Novas",
+                "longitude": "-8.4600"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "EVR",
                 "globalIdLocal": 1071300,
-                "local": "Viana do Alentejo"
+                "idConcelho": 13,
+                "latitude": "38.3375",
+                "idDistrito": 7,
+                "local": "Viana do Alentejo",
+                "longitude": "-8.0019"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "EVR",
                 "globalIdLocal": 1071400,
-                "local": "Vila Viçosa"
+                "idConcelho": 14,
+                "latitude": "38.7747",
+                "idDistrito": 7,
+                "local": "Vila Viçosa",
+                "longitude": "-7.4204"
             }
         ]
     },
@@ -636,212 +1512,524 @@ var locations = [
         "id_distrito":900,
         "localidade_distrito": [
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1080100,
-                "local": "Albufeira"
+                "idConcelho": 1,
+                "latitude": "37.0897",
+                "idDistrito": 8,
+                "local": "Albufeira",
+                "longitude": "-8.2472"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1080121,
-                "local": "Praia dos Pescadores"
+                "idConcelho": 1,
+                "latitude": "37.0862",
+                "idDistrito": 8,
+                "local": "Praia dos Pescadores",
+                "longitude": "-8.2498"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1080122,
-                "local": "Praia de Santa Eulália"
+                "idConcelho": 1,
+                "latitude": "37.0878",
+                "idDistrito": 8,
+                "local": "Praia de Santa Eulália",
+                "longitude": "-8.2146"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1080200,
-                "local": "Alcoutim"
+                "idConcelho": 2,
+                "latitude": "37.4700",
+                "idDistrito": 8,
+                "local": "Alcoutim",
+                "longitude": "-7.4800"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1080300,
-                "local": "Aljezur"
+                "idConcelho": 3,
+                "latitude": "37.3169",
+                "idDistrito": 8,
+                "local": "Aljezur",
+                "longitude": "-8.8028"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1080321,
+                "idConcelho": 3,
+                "latitude": "37.4400",
+                "idDistrito": 8,
                 "local": "Praia de Odeceixe",
+                "longitude": "-8.8000"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1080322,
-                "local": "Praia da Arrifana"
+                "idConcelho": 3,
+                "latitude": "37.2934",
+                "idDistrito": 8,
+                "local": "Praia da Arrifana",
+                "longitude": "-8.8657"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1080323,
-                "local": "Praia da Amoreira"
+                "idConcelho": 3,
+                "latitude": "37.3511",
+                "idDistrito": 8,
+                "local": "Praia da Amoreira",
+                "longitude": "-8.8455"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1080324,
-                "local": "Praia da Carrapateira"
+                "idConcelho": 3,
+                "latitude": "37.1972",
+                "idDistrito": 8,
+                "local": "Praia da Carrapateira",
+                "longitude": "-8.8999"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1080325,
-                "local": "Praia do Monte Clérigo"
+                "idConcelho": 3,
+                "latitude": "37.3409",
+                "idDistrito": 8,
+                "local": "Praia do Monte Clérigo",
+                "longitude": "-8.8543"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1080326,
-                "local": "Praia do Amado"
+                "idConcelho": 3,
+                "latitude": "37.1661",
+                "idDistrito": 8,
+                "local": "Praia do Amado",
+                "longitude": "-8.9032"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1080400,
-                "local": "Castro Marim"
+                "idConcelho": 4,
+                "latitude": "37.2198",
+                "idDistrito": 8,
+                "local": "Castro Marim",
+                "longitude": "-7.4445"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1080421,
-                "local": "Praia de Altura"
+                "idConcelho": 4,
+                "latitude": "37.1706",
+                "idDistrito": 8,
+                "local": "Praia de Altura",
+                "longitude": "-7.4974"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1080500,
-                "local": "Faro"
+                "idConcelho": 5,
+                "latitude": "37.0146",
+                "idDistrito": 8,
+                "local": "Faro",
+                "longitude": "-7.9331"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1080521,
-                "local": "Praia da Ilha da Culatra"
+                "idConcelho": 5,
+                "latitude": "36.9883",
+                "idDistrito": 8,
+                "local": "Praia da Ilha da Culatra",
+                "longitude": "-7.8337"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1080522,
-                "local": "Praia da Ilha de Faro"
+                "idConcelho": 5,
+                "latitude": "37.0059",
+                "idDistrito": 8,
+                "local": "Praia da Ilha de Faro",
+                "longitude": "-7.9931"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1080530,
-                "local": "Faro - Aeroporto"
+                "idConcelho": 5,
+                "latitude": "37.0213",
+                "idDistrito": 8,
+                "local": "Faro - Aeroporto",
+                "longitude": "-7.9688"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1080600,
-                "local": "Lagoa"
+                "idConcelho": 6,
+                "latitude": "37.1352",
+                "idDistrito": 8,
+                "local": "Lagoa",
+                "longitude": "-8.4550"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1080621,
-                "local": "Praia do Carvoeiro"
+                "idConcelho": 6,
+                "latitude": "37.0962",
+                "idDistrito": 8,
+                "local": "Praia do Carvoeiro",
+                "longitude": "-8.4715"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1080700,
-                "local": "Lagos"
+                "idConcelho": 7,
+                "latitude": "37.1039",
+                "idDistrito": 8,
+                "local": "Lagos",
+                "longitude": "-8.6765"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1080721,
-                "local": "Praia da Luz"
+                "idConcelho": 7,
+                "latitude": "37.0870",
+                "idDistrito": 8,
+                "local": "Praia da Luz",
+                "longitude": "-8.7266"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1080722,
-                "local": "Praia da Meia Praia"
+                "idConcelho": 7,
+                "latitude": "37.1100",
+                "idDistrito": 8,
+                "local": "Praia da Meia Praia",
+                "longitude": "-8.6604"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1080723,
-                "local": "Praia da D. Ana"
+                "idConcelho": 7,
+                "latitude": "37.0919",
+                "idDistrito": 8,
+                "local": "Praia da D. Ana",
+                "longitude": "-8.6695"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1080724,
-                "local": "Praia de Porto de Mós"
+                "idConcelho": 7,
+                "latitude": "37.0855",
+                "idDistrito": 8,
+                "local": "Praia de Porto de Mós",
+                "longitude": "-8.6900"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1080800,
-                "local": "Loulé"
+                "idConcelho": 8,
+                "latitude": "37.1397",
+                "idDistrito": 8,
+                "local": "Loulé",
+                "longitude": "-8.0202"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1080821,
-                "local": "Praia de Vilamoura"
+                "idConcelho": 8,
+                "latitude": "37.0740",
+                "idDistrito": 8,
+                "local": "Praia de Vilamoura",
+                "longitude": "-8.1286"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1080822,
-                "local": "Praia da Falésia"
+                "idConcelho": 8,
+                "latitude": "37.0863",
+                "idDistrito": 8,
+                "local": "Praia da Falésia",
+                "longitude": "-8.1684"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1080823,
-                "local": "Praia de Quarteira"
+                "idConcelho": 8,
+                "latitude": "37.0664",
+                "idDistrito": 8,
+                "local": "Praia de Quarteira",
+                "longitude": "-8.1025"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1080900,
-                "local": "Monchique"
+                "idConcelho": 9,
+                "latitude": "37.3200",
+                "idDistrito": 8,
+                "local": "Monchique",
+                "longitude": "-8.5600"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1081000,
-                "local": "Olhão"
+                "idConcelho": 10,
+                "latitude": "37.0300",
+                "idDistrito": 8,
+                "local": "Olhão",
+                "longitude": "-7.8400"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1081021,
-                "local": "Praia da Fuzeta"
+                "idConcelho": 10,
+                "latitude": "37.0389",
+                "idDistrito": 8,
+                "local": "Praia da Fuzeta",
+                "longitude": "-7.7535"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1081100,
-                "local": "Portimão"
+                "idConcelho": 11,
+                "latitude": "37.1500",
+                "idDistrito": 8,
+                "local": "Portimão",
+                "longitude": "-8.5200"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1081121,
-                "local": "Praia do Vau"
+                "idConcelho": 11,
+                "latitude": "37.1200",
+                "idDistrito": 8,
+                "local": "Praia do Vau",
+                "longitude": "-8.5600"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1081122,
-                "local": "Praia de Alvor"
+                "idConcelho": 11,
+                "latitude": "37.1221",
+                "idDistrito": 8,
+                "local": "Praia de Alvor",
+                "longitude": "-8.5902"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1081123,
-                "local": "Praia da Rocha"
+                "idConcelho": 11,
+                "latitude": "37.1156",
+                "idDistrito": 8,
+                "local": "Praia da Rocha",
+                "longitude": "-8.5323"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1081200,
-                "local": "São Brás de Alportel"
+                "idConcelho": 12,
+                "latitude": "37.1500",
+                "idDistrito": 8,
+                "local": "São Brás de Alportel",
+                "longitude": "-7.8900"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1081300,
-                "local": "Silves"
+                "idConcelho": 13,
+                "latitude": "37.1900",
+                "idDistrito": 8,
+                "local": "Silves",
+                "longitude": "-8.4400"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1081321,
-                "local": "Praia de Armação de Pera"
+                "idConcelho": 13,
+                "latitude": "37.1000",
+                "idDistrito": 8,
+                "local": "Praia de Armação de Pera",
+                "longitude": "-8.3600"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1081400,
+                "idConcelho": 14,
+                "latitude": "37.1300",
+                "idDistrito": 8,
                 "local": "Tavira",
+                "longitude": "-7.6500"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1081421,
+                "idConcelho": 14,
+                "latitude": "37.1119",
+                "idDistrito": 8,
                 "local": "Praia da Ilha de Tavira",
+                "longitude": "-7.6199"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1081422,
-                "local": "Praia de Cabanas"
+                "idConcelho": 14,
+                "latitude": "37.1404",
+                "idDistrito": 8,
+                "local": "Praia de Cabanas",
+                "longitude": "-7.5769"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1081423,
+                "idConcelho": 14,
+                "latitude": "37.0866",
+                "idDistrito": 8,
                 "local": "Praia do Barril",
+                "longitude": "-7.6627"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1081500,
-                "local": "Vila do Bispo"
+                "idConcelho": 15,
+                "latitude": "37.0828",
+                "idDistrito": 8,
+                "local": "Vila do Bispo",
+                "longitude": "-8.9103"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1081505,
-                "local": "Sagres"
+                "idConcelho": 15,
+                "latitude": "37.0168",
+                "idDistrito": 8,
+                "local": "Sagres",
+                "longitude": "-8.9403"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1081521,
-                "local": "Praia do Burgau"
+                "idConcelho": 15,
+                "latitude": "37.0720",
+                "idDistrito": 8,
+                "local": "Praia do Burgau",
+                "longitude": "-8.7740"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1081522,
-                "local": "Praia do Beliche"
+                "idConcelho": 15,
+                "latitude": "37.0257",
+                "idDistrito": 8,
+                "local": "Praia do Beliche",
+                "longitude": "-8.9641"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1081523,
-                "local": "Praia do Zavial"
+                "idConcelho": 15,
+                "latitude": "37.0461",
+                "idDistrito": 8,
+                "local": "Praia do Zavial",
+                "longitude": "-8.8714"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1081524,
-                "local": "Praia da Salema"
+                "idConcelho": 15,
+                "latitude": "37.0654",
+                "idDistrito": 8,
+                "local": "Praia da Salema",
+                "longitude": "-8.8247"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1081600,
-                "local": "Vila Real de Santo António"
+                "idConcelho": 16,
+                "latitude": "37.1900",
+                "idDistrito": 8,
+                "local": "Vila Real de Santo António",
+                "longitude": "-7.4200"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1081621,
-                "local": "Praia da Manta Rota"
+                "idConcelho": 16,
+                "latitude": "37.1632",
+                "idDistrito": 8,
+                "local": "Praia da Manta Rota",
+                "longitude": "-7.5193"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1081622,
-                "local": "Praia de Monte Gordo"
+                "idConcelho": 16,
+                "latitude": "37.1776",
+                "idDistrito": 8,
+                "local": "Praia de Monte Gordo",
+                "longitude": "-7.4486"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
                 "globalIdLocal": 1081623,
-                "local": "Praia do Cabeço"
+                "idConcelho": 16,
+                "latitude": "37.1745",
+                "idDistrito": 8,
+                "local": "Praia do Cabeço",
+                "longitude": "-7.4763"
             }
         ]
     },
@@ -850,68 +2038,164 @@ var locations = [
         "id_distrito":1000,
         "localidade_distrito": [
             {
+                "idRegiao": 1,
+                "idAreaAviso": "GDA",
                 "globalIdLocal": 1090100,
-                "local": "Aguiar da Beira"
+                "idConcelho": 1,
+                "latitude": "40.8200",
+                "idDistrito": 9,
+                "local": "Aguiar da Beira",
+                "longitude": "-7.5400"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "GDA",
                 "globalIdLocal": 1090200,
-                "local": "Almeida"
+                "idConcelho": 2,
+                "latitude": "40.7200",
+                "idDistrito": 9,
+                "local": "Almeida",
+                "longitude": "-6.9100"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "GDA",
                 "globalIdLocal": 1090300,
-                "local": "Celorico da Beira"
+                "idConcelho": 3,
+                "latitude": "40.6400",
+                "idDistrito": 9,
+                "local": "Celorico da Beira",
+                "longitude": "-7.3900"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "GDA",
                 "globalIdLocal": 1090400,
-                "local": "Figueira de Castelo Rodrigo"
+                "idConcelho": 4,
+                "latitude": "40.8943",
+                "idDistrito": 9,
+                "local": "Figueira de Castelo Rodrigo",
+                "longitude": "-6.9629"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "GDA",
                 "globalIdLocal": 1090500,
-                "local": "Fornos de Algodres"
+                "idConcelho": 5,
+                "latitude": "40.6201",
+                "idDistrito": 9,
+                "local": "Fornos de Algodres",
+                "longitude": "-7.5393"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "GDA",
                 "globalIdLocal": 1090600,
-                "local": "Gouveia"
+                "idConcelho": 6,
+                "latitude": "40.4921",
+                "idDistrito": 9,
+                "local": "Gouveia",
+                "longitude": "-7.5937"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "GDA",
                 "globalIdLocal": 1090700,
-                "local": "Guarda"
+                "idConcelho": 7,
+                "latitude": "40.5379",
+                "idDistrito": 9,
+                "local": "Guarda",
+                "longitude": "-7.2647"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "GDA",
                 "globalIdLocal": 1090800,
-                "local": "Manteigas"
+                "idConcelho": 8,
+                "latitude": "40.4000",
+                "idDistrito": 9,
+                "local": "Manteigas",
+                "longitude": "-7.5400"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "GDA",
                 "globalIdLocal": 1090821,
-                "local": "Penhas Douradas"
+                "idConcelho": 8,
+                "latitude": "40.4075",
+                "idDistrito": 9,
+                "local": "Penhas Douradas",
+                "longitude": "-7.5665"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "GDA",
                 "globalIdLocal": 1090822,
-                "local": "Serra da Estrela, Torre"
+                "idConcelho": 8,
+                "latitude": "40.3215",
+                "idDistrito": 9,
+                "local": "Serra da Estrela, Torre",
+                "longitude": "-7.6141"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "GDA",
                 "globalIdLocal": 1090900,
-                "local": "Meda"
+                "idConcelho": 9,
+                "latitude": "40.9700",
+                "idDistrito": 9,
+                "local": "Meda",
+                "longitude": "-7.2600"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "GDA",
                 "globalIdLocal": 1091000,
-                "local": "Pinhel"
+                "idConcelho": 10,
+                "latitude": "40.7716",
+                "idDistrito": 9,
+                "local": "Pinhel",
+                "longitude": "-7.0678"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "GDA",
                 "globalIdLocal": 1091100,
-                "local": "Sabugal"
+                "idConcelho": 11,
+                "latitude": "40.3519",
+                "idDistrito": 9,
+                "local": "Sabugal",
+                "longitude": "-7.0898"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "GDA",
                 "globalIdLocal": 1091200,
-                "local": "Seia"
+                "idConcelho": 12,
+                "latitude": "40.4143",
+                "idDistrito": 9,
+                "local": "Seia",
+                "longitude": "-7.7100"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "GDA",
                 "globalIdLocal": 1091300,
-                "local": "Trancoso"
+                "idConcelho": 13,
+                "latitude": "40.7800",
+                "idDistrito": 9,
+                "local": "Trancoso",
+                "longitude": "-7.3500"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "GDA",
                 "globalIdLocal": 1091400,
-                "local": "Vila Nova de Foz Coa"
+                "idConcelho": 14,
+                "latitude": "41.0818",
+                "idDistrito": 9,
+                "local": "Vila Nova de Foz Coa",
+                "longitude": "-7.1433"
             }
         ]
     },
@@ -920,112 +2204,274 @@ var locations = [
         "id_distrito":1100,
         "localidade_distrito": [
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LRA",
                 "globalIdLocal": 1100100,
+                "idConcelho": 1,
+                "latitude": "39.5500",
+                "idDistrito": 10,
                 "local": "Alcobaça",
+                "longitude": "-8.9700"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LRA",
                 "globalIdLocal": 1100121,
-                "local": "Praia de São Martinho do Porto"
+                "idConcelho": 1,
+                "latitude": "39.5082",
+                "idDistrito": 10,
+                "local": "Praia de São Martinho do Porto",
+                "longitude": "-9.1350"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LRA",
                 "globalIdLocal": 1100200,
-                "local": "Alvaiázere"
+                "idConcelho": 2,
+                "latitude": "39.8222",
+                "idDistrito": 10,
+                "local": "Alvaiázere",
+                "longitude": "-8.3814"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LRA",
                 "globalIdLocal": 1100300,
-                "local": "Ansião"
+                "idConcelho": 3,
+                "latitude": "39.9131",
+                "idDistrito": 10,
+                "local": "Ansião",
+                "longitude": "-8.4378"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LRA",
                 "globalIdLocal": 1100400,
-                "local": "Batalha"
+                "idConcelho": 4,
+                "latitude": "39.6605",
+                "idDistrito": 10,
+                "local": "Batalha",
+                "longitude": "-8.8228"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LRA",
                 "globalIdLocal": 1100500,
-                "local": "Bombarral"
+                "idConcelho": 5,
+                "latitude": "39.2700",
+                "idDistrito": 10,
+                "local": "Bombarral",
+                "longitude": "-9.1600"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LRA",
                 "globalIdLocal": 1100600,
-                "local": "Caldas da Rainha"
+                "idConcelho": 6,
+                "latitude": "39.4067",
+                "idDistrito": 10,
+                "local": "Caldas da Rainha",
+                "longitude": "-9.1405"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LRA",
                 "globalIdLocal": 1100621,
-                "local": "Praia da Foz do Arelho"
+                "idConcelho": 6,
+                "latitude": "39.4300",
+                "idDistrito": 10,
+                "local": "Praia da Foz do Arelho",
+                "longitude": "-9.2300"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LRA",
                 "globalIdLocal": 1100700,
-                "local": "Castanheira de Pêra"
+                "idConcelho": 7,
+                "latitude": "40.0100",
+                "idDistrito": 10,
+                "local": "Castanheira de Pêra",
+                "longitude": "-8.2100"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LRA",
                 "globalIdLocal": 1100800,
-                "local": "Figueiró dos Vinhos"
+                "idConcelho": 8,
+                "latitude": "39.9000",
+                "idDistrito": 10,
+                "local": "Figueiró dos Vinhos",
+                "longitude": "-8.2700"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LRA",
                 "globalIdLocal": 1100900,
-                "local": "Leiria"
+                "idConcelho": 9,
+                "latitude": "39.7473",
+                "idDistrito": 10,
+                "local": "Leiria",
+                "longitude": "-8.8069"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LRA",
                 "globalIdLocal": 1100921,
-                "local": "Praia de Pedrogão"
+                "idConcelho": 9,
+                "latitude": "39.9224",
+                "idDistrito": 10,
+                "local": "Praia de Pedrogão",
+                "longitude": "-8.9521"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LRA",
                 "globalIdLocal": 1101000,
-                "local": "Marinha Grande"
+                "idConcelho": 10,
+                "latitude": "39.7500",
+                "idDistrito": 10,
+                "local": "Marinha Grande",
+                "longitude": "-8.9300"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LRA",
                 "globalIdLocal": 1101021,
-                "local": "Praia de São Pedro de Moel"
+                "idConcelho": 10,
+                "latitude": "39.7560",
+                "idDistrito": 10,
+                "local": "Praia de São Pedro de Moel",
+                "longitude": "-9.0325"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LRA",
                 "globalIdLocal": 1101100,
-                "local": "Nazaré"
+                "idConcelho": 11,
+                "latitude": "39.6000",
+                "idDistrito": 10,
+                "local": "Nazaré",
+                "longitude": "-9.0700"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LRA",
                 "globalIdLocal": 1101121,
-                "local": "Praia da Nazaré"
+                "idConcelho": 11,
+                "latitude": "39.5927",
+                "idDistrito": 10,
+                "local": "Praia da Nazaré",
+                "longitude": "-9.0742"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LRA",
                 "globalIdLocal": 1101200,
-                "local": "Óbidos"
+                "idConcelho": 12,
+                "latitude": "39.3600",
+                "idDistrito": 10,
+                "local": "Óbidos",
+                "longitude": "-9.1600"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LRA",
                 "globalIdLocal": 1101221,
-                "local": "Praia Del Rey"
+                "idConcelho": 12,
+                "latitude": "39.3910",
+                "idDistrito": 10,
+                "local": "Praia Del Rey",
+                "longitude": "-9.2910"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LRA",
                 "globalIdLocal": 1101300,
-                "local": "Pedrógão Grande"
+                "idConcelho": 13,
+                "latitude": "39.9200",
+                "idDistrito": 10,
+                "local": "Pedrógão Grande",
+                "longitude": "-8.1500"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LRA",
                 "globalIdLocal": 1101400,
-                "local": "Peniche"
+                "idConcelho": 14,
+                "latitude": "39.3617",
+                "idDistrito": 10,
+                "local": "Peniche",
+                "longitude": "-9.3893"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LRA",
                 "globalIdLocal": 1101423,
-                "local": "Praia do Baleal"
+                "idConcelho": 14,
+                "latitude": "39.3671",
+                "idDistrito": 10,
+                "local": "Praia do Baleal",
+                "longitude": "-9.3399"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LRA",
                 "globalIdLocal": 1101424,
-                "local": "Praia de Peniche"
+                "idConcelho": 14,
+                "latitude": "39.3617",
+                "idDistrito": 10,
+                "local": "Praia de Peniche",
+                "longitude": "-9.3686"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LRA",
                 "globalIdLocal": 1101425,
-                "local": "Praia Supertubos"
+                "idConcelho": 14,
+                "latitude": "39.3459",
+                "idDistrito": 10,
+                "local": "Praia Supertubos",
+                "longitude": "-9.3645"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LRA",
                 "globalIdLocal": 1101426,
-                "local": "Praia da Consolação"
+                "idConcelho": 14,
+                "latitude": "39.3258",
+                "idDistrito": 10,
+                "local": "Praia da Consolação",
+                "longitude": "-9.3595"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LRA",
                 "globalIdLocal": 1101500,
-                "local": "Pombal"
+                "idConcelho": 15,
+                "latitude": "39.9200",
+                "idDistrito": 10,
+                "local": "Pombal",
+                "longitude": "-8.6300"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LRA",
                 "globalIdLocal": 1101521,
-                "local": "Praia do Osso da Baleia"
+                "idConcelho": 15,
+                "latitude": "40.0440",
+                "idDistrito": 10,
+                "local": "Praia do Osso da Baleia",
+                "longitude": "-8.8951"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LRA",
                 "globalIdLocal": 1101600,
-                "local": "Porto de Mós"
+                "idConcelho": 16,
+                "latitude": "39.6001",
+                "idDistrito": 10,
+                "local": "Porto de Mós",
+                "longitude": "-8.8169"
             }
         ]
     },
@@ -1034,132 +2480,324 @@ var locations = [
         "id_distrito":1200,
         "localidade_distrito": [
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LSB",
                 "globalIdLocal": 1110100,
-                "local": "Alenquer"
+                "idConcelho": 1,
+                "latitude": "39.0537",
+                "idDistrito": 11,
+                "local": "Alenquer",
+                "longitude": "-9.0095"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LSB",
                 "globalIdLocal": 1110200,
-                "local": "Arruda dos Vinhos"
+                "idConcelho": 2,
+                "latitude": "38.9834",
+                "idDistrito": 11,
+                "local": "Arruda dos Vinhos",
+                "longitude": "-9.0777"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LSB",
                 "globalIdLocal": 1110300,
-                "local": "Azambuja"
+                "idConcelho": 3,
+                "latitude": "39.0697",
+                "idDistrito": 11,
+                "local": "Azambuja",
+                "longitude": "-8.8695"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LSB",
                 "globalIdLocal": 1110400,
-                "local": "Cadaval"
+                "idConcelho": 4,
+                "latitude": "39.2500",
+                "idDistrito": 11,
+                "local": "Cadaval",
+                "longitude": "-9.1000"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LSB",
                 "globalIdLocal": 1110500,
-                "local": "Cascais"
+                "idConcelho": 5,
+                "latitude": "38.6995",
+                "idDistrito": 11,
+                "local": "Cascais",
+                "longitude": "-9.4296"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LSB",
                 "globalIdLocal": 1110521,
-                "local": "Praia de Carcavelos"
+                "idConcelho": 5,
+                "latitude": "38.6801",
+                "idDistrito": 11,
+                "local": "Praia de Carcavelos",
+                "longitude": "-9.3360"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LSB",
                 "globalIdLocal": 1110522,
-                "local": "Praia do Guincho"
+                "idConcelho": 5,
+                "latitude": "38.7310",
+                "idDistrito": 11,
+                "local": "Praia do Guincho",
+                "longitude": "-9.4730"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LSB",
                 "globalIdLocal": 1110523,
-                "local": "Praia de Cascais"
+                "idConcelho": 5,
+                "latitude": "38.6969",
+                "idDistrito": 11,
+                "local": "Praia de Cascais",
+                "longitude": "-9.4198"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LSB",
                 "globalIdLocal": 1110600,
-                "local": "Lisboa"
+                "idConcelho": 6,
+                "latitude": "38.7660",
+                "idDistrito": 11,
+                "local": "Lisboa",
+                "longitude": "-9.1286"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LSB",
                 "globalIdLocal": 1110622,
-                "local": "Lisboa - Jardim Botânico"
+                "idConcelho": 6,
+                "latitude": "38.7190",
+                "idDistrito": 11,
+                "local": "Lisboa - Jardim Botânico",
+                "longitude": "-9.1498"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LSB",
                 "globalIdLocal": 1110623,
-                "local": "Lisboa - Ajuda"
+                "idConcelho": 6,
+                "latitude": "38.7124",
+                "idDistrito": 11,
+                "local": "Lisboa - Ajuda",
+                "longitude": "-9.1857"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LSB",
                 "globalIdLocal": 1110625,
-                "local": "Lisboa - Oriente"
+                "idConcelho": 6,
+                "latitude": "38.7243",
+                "idDistrito": 11,
+                "local": "Lisboa - Oriente",
+                "longitude": "-9.1634"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LSB",
                 "globalIdLocal": 1110700,
-                "local": "Loures"
+                "idConcelho": 7,
+                "latitude": "38.8300",
+                "idDistrito": 11,
+                "local": "Loures",
+                "longitude": "-9.1700"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LSB",
                 "globalIdLocal": 1110800,
-                "local": "Lourinhã"
+                "idConcelho": 8,
+                "latitude": "39.2426",
+                "idDistrito": 11,
+                "local": "Lourinhã",
+                "longitude": "-9.3126"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LSB",
                 "globalIdLocal": 1110821,
-                "local": "Praia da Areia Branca"
+                "idConcelho": 8,
+                "latitude": "39.2648",
+                "idDistrito": 11,
+                "local": "Praia da Areia Branca",
+                "longitude": "-9.3360"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LSB",
                 "globalIdLocal": 1110900,
-                "local": "Mafra"
+                "idConcelho": 9,
+                "latitude": "38.9400",
+                "idDistrito": 11,
+                "local": "Mafra",
+                "longitude": "-9.3300"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LSB",
                 "globalIdLocal": 1110921,
-                "local": "Ericeira"
+                "idConcelho": 9,
+                "latitude": "38.9560",
+                "idDistrito": 11,
+                "local": "Ericeira",
+                "longitude": "-9.4160"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LSB",
                 "globalIdLocal": 1110922,
-                "local": "Praia da Foz do Lizandro"
+                "idConcelho": 9,
+                "latitude": "38.9424",
+                "idDistrito": 11,
+                "local": "Praia da Foz do Lizandro",
+                "longitude": "-9.4157"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LSB",
                 "globalIdLocal": 1110923,
-                "local": "Praia de Coxos"
+                "idConcelho": 9,
+                "latitude": "39.0029",
+                "idDistrito": 11,
+                "local": "Praia de Coxos",
+                "longitude": "-9.4270"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LSB",
                 "globalIdLocal": 1110924,
-                "local": "Praia de Ribeira de Ilhas"
+                "idConcelho": 9,
+                "latitude": "38.9800",
+                "idDistrito": 11,
+                "local": "Praia de Ribeira de Ilhas",
+                "longitude": "-9.4224"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LSB",
                 "globalIdLocal": 1111000,
-                "local": "Oeiras"
+                "idConcelho": 10,
+                "latitude": "38.7005",
+                "idDistrito": 11,
+                "local": "Oeiras",
+                "longitude": "-9.3059"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LSB",
                 "globalIdLocal": 1111100,
-                "local": "Sintra"
+                "idConcelho": 11,
+                "latitude": "38.7973",
+                "idDistrito": 11,
+                "local": "Sintra",
+                "longitude": "-9.3904"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LSB",
                 "globalIdLocal": 1111123,
-                "local": "Praia das Maçãs"
+                "idConcelho": 11,
+                "latitude": "38.8255",
+                "idDistrito": 11,
+                "local": "Praia das Maçãs",
+                "longitude": "-9.4701"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LSB",
                 "globalIdLocal": 1111124,
-                "local": "Praia do Magoito"
+                "idConcelho": 11,
+                "latitude": "38.8634",
+                "idDistrito": 11,
+                "local": "Praia do Magoito",
+                "longitude": "-9.4491"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LSB",
                 "globalIdLocal": 1111125,
-                "local": "Praia da Adraga"
+                "idConcelho": 11,
+                "latitude": "38.8023",
+                "idDistrito": 11,
+                "local": "Praia da Adraga",
+                "longitude": "-9.4846"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LSB",
                 "globalIdLocal": 1111126,
-                "local": "Praia Grande"
+                "idConcelho": 11,
+                "latitude": "38.8140",
+                "idDistrito": 11,
+                "local": "Praia Grande",
+                "longitude": "-9.4775"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LSB",
                 "globalIdLocal": 1111200,
-                "local": "Sobral de Monte Agraço"
+                "idConcelho": 12,
+                "latitude": "39.0200",
+                "idDistrito": 11,
+                "local": "Sobral de Monte Agraço",
+                "longitude": "-9.1500"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LSB",
                 "globalIdLocal": 1111300,
-                "local": "Torres Vedras"
+                "idConcelho": 13,
+                "latitude": "39.0950",
+                "idDistrito": 11,
+                "local": "Torres Vedras",
+                "longitude": "-9.2610"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LSB",
                 "globalIdLocal": 1111321,
-                "local": "Praia de Santa Cruz"
+                "idConcelho": 13,
+                "latitude": "39.1383",
+                "idDistrito": 11,
+                "local": "Praia de Santa Cruz",
+                "longitude": "-9.3804"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LSB",
                 "globalIdLocal": 1111400,
-                "local": "Vila Franca de Xira"
+                "idConcelho": 14,
+                "latitude": "38.9541",
+                "idDistrito": 11,
+                "local": "Vila Franca de Xira",
+                "longitude": "-8.9899"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LSB",
                 "globalIdLocal": 1111500,
-                "local": "Amadora"
+                "idConcelho": 15,
+                "latitude": "38.7566",
+                "idDistrito": 11,
+                "local": "Amadora",
+                "longitude": "-9.2267"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "LSB",
                 "globalIdLocal": 1111600,
-                "local": "Odivelas"
+                "idConcelho": 16,
+                "latitude": "38.7900",
+                "idDistrito": 11,
+                "local": "Odivelas",
+                "longitude": "-9.1900"
             }
         ]
     },
@@ -1168,64 +2806,154 @@ var locations = [
         "id_distrito":1300,
         "localidade_distrito": [
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTG",
                 "globalIdLocal": 1120100,
-                "local": "Alter do Chão"
+                "idConcelho": 1,
+                "latitude": "39.2000",
+                "idDistrito": 12,
+                "local": "Alter do Chão",
+                "longitude": "-7.6600"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTG",
                 "globalIdLocal": 1120200,
-                "local": "Arronches"
+                "idConcelho": 2,
+                "latitude": "39.1300",
+                "idDistrito": 12,
+                "local": "Arronches",
+                "longitude": "-7.2900"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTG",
                 "globalIdLocal": 1120300,
-                "local": "Avis"
+                "idConcelho": 3,
+                "latitude": "39.1100",
+                "idDistrito": 12,
+                "local": "Avis",
+                "longitude": "-7.8800"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTG",
                 "globalIdLocal": 1120400,
-                "local": "Campo Maior"
+                "idConcelho": 4,
+                "latitude": "39.0100",
+                "idDistrito": 12,
+                "local": "Campo Maior",
+                "longitude": "-7.0700"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTG",
                 "globalIdLocal": 1120500,
-                "local": "Castelo de Vide"
+                "idConcelho": 5,
+                "latitude": "39.4151",
+                "idDistrito": 12,
+                "local": "Castelo de Vide",
+                "longitude": "-7.4552"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTG",
                 "globalIdLocal": 1120600,
-                "local": "Crato"
+                "idConcelho": 6,
+                "latitude": "39.2900",
+                "idDistrito": 12,
+                "local": "Crato",
+                "longitude": "-7.6400"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTG",
                 "globalIdLocal": 1120700,
-                "local": "Elvas"
+                "idConcelho": 7,
+                "latitude": "38.8788",
+                "idDistrito": 12,
+                "local": "Elvas",
+                "longitude": "-7.1662"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTG",
                 "globalIdLocal": 1120800,
-                "local": "Fronteira"
+                "idConcelho": 8,
+                "latitude": "39.0600",
+                "idDistrito": 12,
+                "local": "Fronteira",
+                "longitude": "-7.6500"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTG",
                 "globalIdLocal": 1120900,
-                "local": "Gavião"
+                "idConcelho": 9,
+                "latitude": "39.4651",
+                "idDistrito": 12,
+                "local": "Gavião",
+                "longitude": "-7.9360"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTG",
                 "globalIdLocal": 1121000,
-                "local": "Marvão"
+                "idConcelho": 10,
+                "latitude": "39.3940",
+                "idDistrito": 12,
+                "local": "Marvão",
+                "longitude": "-7.3768"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTG",
                 "globalIdLocal": 1121100,
-                "local": "Monforte"
+                "idConcelho": 11,
+                "latitude": "39.0600",
+                "idDistrito": 12,
+                "local": "Monforte",
+                "longitude": "-7.4300"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTG",
                 "globalIdLocal": 1121200,
-                "local": "Nisa"
+                "idConcelho": 12,
+                "latitude": "39.5200",
+                "idDistrito": 12,
+                "local": "Nisa",
+                "longitude": "-7.6500"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTG",
                 "globalIdLocal": 1121300,
-                "local": "Ponte de Sor"
+                "idConcelho": 13,
+                "latitude": "39.2500",
+                "idDistrito": 12,
+                "local": "Ponte de Sor",
+                "longitude": "-8.0100"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTG",
                 "globalIdLocal": 1121400,
-                "local": "Portalegre"
+                "idConcelho": 14,
+                "latitude": "39.2900",
+                "idDistrito": 12,
+                "local": "Portalegre",
+                "longitude": "-7.4200"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTG",
                 "globalIdLocal": 1121500,
-                "local": "Sousel"
+                "idConcelho": 15,
+                "latitude": "38.9600",
+                "idDistrito": 12,
+                "local": "Sousel",
+                "longitude": "-7.6700"
             }
         ]
     },
@@ -1234,120 +2962,1444 @@ var locations = [
         "id_distrito":1400,
         "localidade_distrito": [
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTO",
                 "globalIdLocal": 1130100,
-                "local": "Amarante"
+                "idConcelho": 1,
+                "latitude": "41.2697",
+                "idDistrito": 13,
+                "local": "Amarante",
+                "longitude": "-8.0795"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTO",
                 "globalIdLocal": 1130200,
-                "local": "Baião"
+                "idConcelho": 2,
+                "latitude": "41.1609",
+                "idDistrito": 13,
+                "local": "Baião",
+                "longitude": "-8.0376"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTO",
                 "globalIdLocal": 1130300,
-                "local": "Felgueiras"
+                "idConcelho": 3,
+                "latitude": "41.3700",
+                "idDistrito": 13,
+                "local": "Felgueiras",
+                "longitude": "-8.1900"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTO",
                 "globalIdLocal": 1130400,
-                "local": "Gondomar"
+                "idConcelho": 4,
+                "latitude": "41.1400",
+                "idDistrito": 13,
+                "local": "Gondomar",
+                "longitude": "-8.5315"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTO",
                 "globalIdLocal": 1130500,
-                "local": "Lousada"
+                "idConcelho": 5,
+                "latitude": "41.2763",
+                "idDistrito": 13,
+                "local": "Lousada",
+                "longitude": "-8.2833"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTO",
                 "globalIdLocal": 1130600,
-                "local": "Maia"
+                "idConcelho": 6,
+                "latitude": "41.2335",
+                "idDistrito": 13,
+                "local": "Maia",
+                "longitude": "-8.6216"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTO",
                 "globalIdLocal": 1130700,
-                "local": "Marco de Canaveses"
+                "idConcelho": 7,
+                "latitude": "41.1900",
+                "idDistrito": 13,
+                "local": "Marco de Canaveses",
+                "longitude": "-8.1500"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTO",
                 "globalIdLocal": 1130800,
-                "local": "Matosinhos"
+                "idConcelho": 8,
+                "latitude": "41.1805",
+                "idDistrito": 13,
+                "local": "Matosinhos",
+                "longitude": "-8.6810"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTO",
                 "globalIdLocal": 1130821,
-                "local": "Praia de Leça da Palmeira"
+                "idConcelho": 8,
+                "latitude": "41.2102",
+                "idDistrito": 13,
+                "local": "Praia de Leça da Palmeira",
+                "longitude": "-8.7157"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTO",
                 "globalIdLocal": 1130823,
-                "local": "Praia de Matosinhos"
+                "idConcelho": 8,
+                "latitude": "41.1773",
+                "idDistrito": 13,
+                "local": "Praia de Matosinhos",
+                "longitude": "-8.6936"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTO",
                 "globalIdLocal": 1130900,
-                "local": "Paços de Ferreira"
+                "idConcelho": 9,
+                "latitude": "41.2800",
+                "idDistrito": 13,
+                "local": "Paços de Ferreira",
+                "longitude": "-8.3800"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTO",
                 "globalIdLocal": 1131000,
-                "local": "Paredes"
+                "idConcelho": 10,
+                "latitude": "41.2100",
+                "idDistrito": 13,
+                "local": "Paredes",
+                "longitude": "-8.3300"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTO",
                 "globalIdLocal": 1131100,
-                "local": "Penafiel"
+                "idConcelho": 11,
+                "latitude": "41.2089",
+                "idDistrito": 13,
+                "local": "Penafiel",
+                "longitude": "-8.2798"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTO",
                 "globalIdLocal": 1131200,
-                "local": "Porto"
+                "idConcelho": 12,
+                "latitude": "41.1580",
+                "idDistrito": 13,
+                "local": "Porto",
+                "longitude": "-8.6294"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTO",
                 "globalIdLocal": 1131224,
-                "local": "Praia dos Ingleses"
+                "idConcelho": 12,
+                "latitude": "41.1524",
+                "idDistrito": 13,
+                "local": "Praia dos Ingleses",
+                "longitude": "-8.6778"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTO",
                 "globalIdLocal": 1131300,
-                "local": "Póvoa de Varzim"
+                "idConcelho": 13,
+                "latitude": "41.3800",
+                "idDistrito": 13,
+                "local": "Póvoa de Varzim",
+                "longitude": "-8.7600"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTO",
                 "globalIdLocal": 1131321,
-                "local": "Praia da Agucadoura"
+                "idConcelho": 13,
+                "latitude": "41.4334",
+                "idDistrito": 13,
+                "local": "Praia da Agucadoura",
+                "longitude": "-8.7838"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTO",
                 "globalIdLocal": 1131322,
-                "local": "Praia da Salgueira"
+                "idConcelho": 13,
+                "latitude": "41.3800",
+                "idDistrito": 13,
+                "local": "Praia da Salgueira",
+                "longitude": "-8.7700"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTO",
                 "globalIdLocal": 1131400,
-                "local": "Santo Tirso"
+                "idConcelho": 14,
+                "latitude": "41.3412",
+                "idDistrito": 13,
+                "local": "Santo Tirso",
+                "longitude": "-8.4776"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTO",
                 "globalIdLocal": 1131500,
-                "local": "Valongo"
+                "idConcelho": 15,
+                "latitude": "41.1900",
+                "idDistrito": 13,
+                "local": "Valongo",
+                "longitude": "-8.5000"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTO",
                 "globalIdLocal": 1131600,
-                "local": "Vila do Conde"
+                "idConcelho": 16,
+                "latitude": "41.3600",
+                "idDistrito": 13,
+                "local": "Vila do Conde",
+                "longitude": "-8.7400"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTO",
                 "globalIdLocal": 1131621,
-                "local": "Praia de Árvore"
+                "idConcelho": 16,
+                "latitude": "41.3300",
+                "idDistrito": 13,
+                "local": "Praia de Árvore",
+                "longitude": "-8.7400"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTO",
                 "globalIdLocal": 1131622,
-                "local": "Praia Azul"
+                "idConcelho": 16,
+                "latitude": "41.3538",
+                "idDistrito": 13,
+                "local": "Praia Azul",
+                "longitude": "-8.7548"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTO",
                 "globalIdLocal": 1131700,
-                "local": "Vila Nova de Gaia"
+                "idConcelho": 17,
+                "latitude": "41.1285",
+                "idDistrito": 13,
+                "local": "Vila Nova de Gaia",
+                "longitude": "-8.6229"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTO",
                 "globalIdLocal": 1131721,
-                "local": "Praia de Salgueiros"
+                "idConcelho": 17,
+                "latitude": "41.1167",
+                "idDistrito": 13,
+                "local": "Praia de Salgueiros",
+                "longitude": "-8.6641"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTO",
                 "globalIdLocal": 1131722,
-                "local": "Praia da Aguda"
+                "idConcelho": 17,
+                "latitude": "41.0516",
+                "idDistrito": 13,
+                "local": "Praia da Aguda",
+                "longitude": "-8.6559"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTO",
                 "globalIdLocal": 1131723,
-                "local": "Praia de Miramar"
+                "idConcelho": 17,
+                "latitude": "41.0660",
+                "idDistrito": 13,
+                "local": "Praia de Miramar",
+                "longitude": "-8.6572"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTO",
                 "globalIdLocal": 1131724,
-                "local": "Praia do Cabedelo"
+                "idConcelho": 17,
+                "latitude": "41.1379",
+                "idDistrito": 13,
+                "local": "Praia do Cabedelo",
+                "longitude": "-8.6676"
             },
             {
+                "idRegiao": 1,
+                "idAreaAviso": "PTO",
                 "globalIdLocal": 1131800,
-                "local": "Trofa"
+                "idConcelho": 18,
+                "latitude": "41.3390",
+                "idDistrito": 13,
+                "local": "Trofa",
+                "longitude": "-8.5602"
+            }
+        ]
+    },
+    {
+        "nome_distrito":"Santarém",
+        "id_distrito":1500,
+        "localidade_distrito": [
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STM",
+                "globalIdLocal": 1140100,
+                "idConcelho": 1,
+                "latitude": "39.4616",
+                "idDistrito": 14,
+                "local": "Abrantes",
+                "longitude": "-8.1995"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STM",
+                "globalIdLocal": 1140200,
+                "idConcelho": 2,
+                "latitude": "39.4600",
+                "idDistrito": 14,
+                "local": "Alcanena",
+                "longitude": "-8.6700"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STM",
+                "globalIdLocal": 1140300,
+                "idConcelho": 3,
+                "latitude": "39.2100",
+                "idDistrito": 14,
+                "local": "Almeirim",
+                "longitude": "-8.6300"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STM",
+                "globalIdLocal": 1140400,
+                "idConcelho": 4,
+                "latitude": "39.2600",
+                "idDistrito": 14,
+                "local": "Alpiarça",
+                "longitude": "-8.5900"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STM",
+                "globalIdLocal": 1140500,
+                "idConcelho": 5,
+                "latitude": "38.9700",
+                "idDistrito": 14,
+                "local": "Benavente",
+                "longitude": "-8.8100"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STM",
+                "globalIdLocal": 1140600,
+                "idConcelho": 6,
+                "latitude": "39.1612",
+                "idDistrito": 14,
+                "local": "Cartaxo",
+                "longitude": "-8.7923"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STM",
+                "globalIdLocal": 1140700,
+                "idConcelho": 7,
+                "latitude": "39.3600",
+                "idDistrito": 14,
+                "local": "Chamusca",
+                "longitude": "-8.4800"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STM",
+                "globalIdLocal": 1140800,
+                "idConcelho": 8,
+                "latitude": "39.4774",
+                "idDistrito": 14,
+                "local": "Constância",
+                "longitude": "-8.3379"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STM",
+                "globalIdLocal": 1140900,
+                "idConcelho": 9,
+                "latitude": "38.9608",
+                "idDistrito": 14,
+                "local": "Coruche",
+                "longitude": "-8.5274"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STM",
+                "globalIdLocal": 1141000,
+                "idConcelho": 10,
+                "latitude": "39.4700",
+                "idDistrito": 14,
+                "local": "Entroncamento",
+                "longitude": "-8.4700"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STM",
+                "globalIdLocal": 1141100,
+                "idConcelho": 11,
+                "latitude": "39.7000",
+                "idDistrito": 14,
+                "local": "Ferreira do Zêzere",
+                "longitude": "-8.2800"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STM",
+                "globalIdLocal": 1141200,
+                "idConcelho": 12,
+                "latitude": "39.4052",
+                "idDistrito": 14,
+                "local": "Golegã",
+                "longitude": "-8.4847"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STM",
+                "globalIdLocal": 1141300,
+                "idConcelho": 13,
+                "latitude": "39.5573",
+                "idDistrito": 14,
+                "local": "Mação",
+                "longitude": "-7.9954"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STM",
+                "globalIdLocal": 1141400,
+                "idConcelho": 14,
+                "latitude": "39.3393",
+                "idDistrito": 14,
+                "local": "Rio Maior",
+                "longitude": "-8.9359"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STM",
+                "globalIdLocal": 1141500,
+                "idConcelho": 15,
+                "latitude": "39.0250",
+                "idDistrito": 14,
+                "local": "Salvaterra de Magos",
+                "longitude": "-8.7896"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STM",
+                "globalIdLocal": 1141600,
+                "idConcelho": 16,
+                "latitude": "39.2000",
+                "idDistrito": 14,
+                "local": "Santarém",
+                "longitude": "-8.7400"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STM",
+                "globalIdLocal": 1141700,
+                "idConcelho": 17,
+                "latitude": "39.5400",
+                "idDistrito": 14,
+                "local": "Sardoal",
+                "longitude": "-8.1600"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STM",
+                "globalIdLocal": 1141800,
+                "idConcelho": 18,
+                "latitude": "39.6042",
+                "idDistrito": 14,
+                "local": "Tomar",
+                "longitude": "-8.4125"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STM",
+                "globalIdLocal": 1141900,
+                "idConcelho": 19,
+                "latitude": "39.4790",
+                "idDistrito": 14,
+                "local": "Torres Novas",
+                "longitude": "-8.5390"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STM",
+                "globalIdLocal": 1142000,
+                "idConcelho": 20,
+                "latitude": "39.4600",
+                "idDistrito": 14,
+                "local": "Vila Nova da Barquinha",
+                "longitude": "-8.4300"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STM",
+                "globalIdLocal": 1142100,
+                "idConcelho": 21,
+                "latitude": "39.6568",
+                "idDistrito": 14,
+                "local": "Ourém",
+                "longitude": "-8.5788"
+            }
+        ]
+    },
+    {
+        "nome_distrito":"Setúbal",
+        "id_distrito":1500,
+        "localidade_distrito": [
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STB",
+                "globalIdLocal": 1150100,
+                "idConcelho": 1,
+                "latitude": "38.3731",
+                "idDistrito": 15,
+                "local": "Alcácer do Sal",
+                "longitude": "-8.5135"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STB",
+                "globalIdLocal": 1150200,
+                "idConcelho": 2,
+                "latitude": "38.7529",
+                "idDistrito": 15,
+                "local": "Alcochete",
+                "longitude": "-8.9604"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STB",
+                "globalIdLocal": 1150300,
+                "idConcelho": 3,
+                "latitude": "38.6604",
+                "idDistrito": 15,
+                "local": "Almada",
+                "longitude": "-9.1573"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STB",
+                "globalIdLocal": 1150322,
+                "idConcelho": 3,
+                "latitude": "38.6354",
+                "idDistrito": 15,
+                "local": "Praia da Costa da Caparica",
+                "longitude": "-9.2334"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STB",
+                "globalIdLocal": 1150323,
+                "idConcelho": 3,
+                "latitude": "38.5731",
+                "idDistrito": 15,
+                "local": "Praia da Fonte da Telha",
+                "longitude": "-9.1963"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STB",
+                "globalIdLocal": 1150324,
+                "idConcelho": 3,
+                "latitude": "38.6713",
+                "idDistrito": 15,
+                "local": "Praia da Cova do Vapor",
+                "longitude": "-9.2421"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STB",
+                "globalIdLocal": 1150400,
+                "idConcelho": 4,
+                "latitude": "38.6561",
+                "idDistrito": 15,
+                "local": "Barreiro",
+                "longitude": "-9.0610"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STB",
+                "globalIdLocal": 1150500,
+                "idConcelho": 5,
+                "latitude": "38.1756",
+                "idDistrito": 15,
+                "local": "Grândola",
+                "longitude": "-8.5651"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STB",
+                "globalIdLocal": 1150521,
+                "idConcelho": 5,
+                "latitude": "38.4873",
+                "idDistrito": 15,
+                "local": "Praia de Troia",
+                "longitude": "-8.9087"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STB",
+                "globalIdLocal": 1150522,
+                "idConcelho": 5,
+                "latitude": "38.3811",
+                "idDistrito": 15,
+                "local": "Praia da Comporta",
+                "longitude": "-8.8042"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STB",
+                "globalIdLocal": 1150523,
+                "idConcelho": 5,
+                "latitude": "38.3139",
+                "idDistrito": 15,
+                "local": "Praia do Carvalhal",
+                "longitude": "-8.7807"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STB",
+                "globalIdLocal": 1150524,
+                "idConcelho": 5,
+                "latitude": "38.1336",
+                "idDistrito": 15,
+                "local": "Praia de Melides",
+                "longitude": "-8.7917"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STB",
+                "globalIdLocal": 1150525,
+                "idConcelho": 5,
+                "latitude": "38.2045",
+                "idDistrito": 15,
+                "local": "Praia Costa da Gale (Melides)",
+                "longitude": "-8.7768"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STB",
+                "globalIdLocal": 1150600,
+                "idConcelho": 6,
+                "latitude": "38.6510",
+                "idDistrito": 15,
+                "local": "Moita",
+                "longitude": "-8.9927"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STB",
+                "globalIdLocal": 1150700,
+                "idConcelho": 7,
+                "latitude": "38.7043",
+                "idDistrito": 15,
+                "local": "Montijo",
+                "longitude": "-8.9755"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STB",
+                "globalIdLocal": 1150800,
+                "idConcelho": 8,
+                "latitude": "38.5817",
+                "idDistrito": 15,
+                "local": "Palmela",
+                "longitude": "-8.8903"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STB",
+                "globalIdLocal": 1150900,
+                "idConcelho": 9,
+                "latitude": "38.0212",
+                "idDistrito": 15,
+                "local": "Santiago do Cacém",
+                "longitude": "-8.7177"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STB",
+                "globalIdLocal": 1150922,
+                "idConcelho": 9,
+                "latitude": "38.0983",
+                "idDistrito": 15,
+                "local": "Praia de Santo André",
+                "longitude": "-8.8045"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STB",
+                "globalIdLocal": 1151000,
+                "idConcelho": 10,
+                "latitude": "38.6330",
+                "idDistrito": 15,
+                "local": "Seixal",
+                "longitude": "-9.1085"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STB",
+                "globalIdLocal": 1151100,
+                "idConcelho": 11,
+                "latitude": "38.4467",
+                "idDistrito": 15,
+                "local": "Sesimbra",
+                "longitude": "-9.1062"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STB",
+                "globalIdLocal": 1151121,
+                "idConcelho": 11,
+                "latitude": "38.5129",
+                "idDistrito": 15,
+                "local": "Praia da Lagoa de Albufeira",
+                "longitude": "-9.1815"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STB",
+                "globalIdLocal": 1151122,
+                "idConcelho": 11,
+                "latitude": "38.5504",
+                "idDistrito": 15,
+                "local": "Praia do Meco",
+                "longitude": "-9.1872"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STB",
+                "globalIdLocal": 1151124,
+                "idConcelho": 11,
+                "latitude": "38.4413",
+                "idDistrito": 15,
+                "local": "Praia de Sesimbra",
+                "longitude": "-9.0948"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STB",
+                "globalIdLocal": 1151200,
+                "idConcelho": 12,
+                "latitude": "38.5246",
+                "idDistrito": 15,
+                "local": "Setúbal",
+                "longitude": "-8.8856"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STB",
+                "globalIdLocal": 1151300,
+                "idConcelho": 13,
+                "latitude": "37.9560",
+                "idDistrito": 15,
+                "local": "Sines",
+                "longitude": "-8.8643"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STB",
+                "globalIdLocal": 1151321,
+                "idConcelho": 13,
+                "latitude": "37.8681",
+                "idDistrito": 15,
+                "local": "Praia da Samoqueira",
+                "longitude": "-8.7933"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STB",
+                "globalIdLocal": 1151322,
+                "idConcelho": 13,
+                "latitude": "37.8568",
+                "idDistrito": 15,
+                "local": "Praia de Porto Covo",
+                "longitude": "-8.7932"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STB",
+                "globalIdLocal": 1151324,
+                "idConcelho": 13,
+                "latitude": "37.9224",
+                "idDistrito": 15,
+                "local": "Praia de São Torpes",
+                "longitude": "-8.8056"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STB",
+                "globalIdLocal": 1151325,
+                "idConcelho": 13,
+                "latitude": "37.9073",
+                "idDistrito": 15,
+                "local": "Praia do Morgável",
+                "longitude": "-8.8000"
+            }
+        ]
+    },
+    {
+        "nome_distrito":"Viana do Castelo",
+        "id_distrito":1600,
+        "localidade_distrito": [
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "VCT",
+                "globalIdLocal": 1160100,
+                "idConcelho": 1,
+                "latitude": "41.8458",
+                "idDistrito": 16,
+                "local": "Arcos de Valdevez",
+                "longitude": "-8.4177"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "VCT",
+                "globalIdLocal": 1160200,
+                "idConcelho": 2,
+                "latitude": "41.8718",
+                "idDistrito": 16,
+                "local": "Caminha",
+                "longitude": "-8.8533"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "VCT",
+                "globalIdLocal": 1160221,
+                "idConcelho": 2,
+                "latitude": "41.8124",
+                "idDistrito": 16,
+                "local": "Praia de Vila Praia de Âncora",
+                "longitude": "-8.8647"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "VCT",
+                "globalIdLocal": 1160222,
+                "idConcelho": 2,
+                "latitude": "41.8473",
+                "idDistrito": 16,
+                "local": "Praia de Moledo",
+                "longitude": "-8.8676"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "VCT",
+                "globalIdLocal": 1160223,
+                "idConcelho": 2,
+                "latitude": "41.8667",
+                "idDistrito": 16,
+                "local": "Praia de Caminha",
+                "longitude": "-8.8626"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "VCT",
+                "globalIdLocal": 1160300,
+                "idConcelho": 3,
+                "latitude": "42.1127",
+                "idDistrito": 16,
+                "local": "Melgaço",
+                "longitude": "-8.2611"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "VCT",
+                "globalIdLocal": 1160400,
+                "idConcelho": 4,
+                "latitude": "42.0709",
+                "idDistrito": 16,
+                "local": "Monção",
+                "longitude": "-8.4923"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "VCT",
+                "globalIdLocal": 1160500,
+                "idConcelho": 5,
+                "latitude": "41.9119",
+                "idDistrito": 16,
+                "local": "Paredes de Coura",
+                "longitude": "-8.5574"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "VCT",
+                "globalIdLocal": 1160600,
+                "idConcelho": 6,
+                "latitude": "41.8044",
+                "idDistrito": 16,
+                "local": "Ponte da Barca",
+                "longitude": "-8.4150"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "VCT",
+                "globalIdLocal": 1160700,
+                "idConcelho": 7,
+                "latitude": "41.7652",
+                "idDistrito": 16,
+                "local": "Ponte de Lima",
+                "longitude": "-8.5786"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "VCT",
+                "globalIdLocal": 1160800,
+                "idConcelho": 8,
+                "latitude": "42.0270",
+                "idDistrito": 16,
+                "local": "Valença",
+                "longitude": "-8.6425"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "VCT",
+                "globalIdLocal": 1160900,
+                "idConcelho": 9,
+                "latitude": "41.6952",
+                "idDistrito": 16,
+                "local": "Viana do Castelo",
+                "longitude": "-8.8365"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "VCT",
+                "globalIdLocal": 1160921,
+                "idConcelho": 9,
+                "latitude": "41.6712",
+                "idDistrito": 16,
+                "local": "Praia do Cabedelo (Viana Castelo)",
+                "longitude": "-8.8257"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "VCT",
+                "globalIdLocal": 1160922,
+                "idConcelho": 9,
+                "latitude": "41.7800",
+                "idDistrito": 16,
+                "local": "Praia de Afife",
+                "longitude": "-8.8700"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "VCT",
+                "globalIdLocal": 1161000,
+                "idConcelho": 10,
+                "latitude": "41.9418",
+                "idDistrito": 16,
+                "local": "Vila Nova de Cerveira",
+                "longitude": "-8.7423"
+            }
+        ]
+    },
+    {
+        "nome_distrito":"Vila Real",
+        "id_distrito":1700,
+        "localidade_distrito": [
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "VRL",
+                "globalIdLocal": 1170100,
+                "idConcelho": 1,
+                "latitude": "41.2762",
+                "idDistrito": 17,
+                "local": "Alijó",
+                "longitude": "-7.4751"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "VRL",
+                "globalIdLocal": 1170200,
+                "idConcelho": 2,
+                "latitude": "41.6877",
+                "idDistrito": 17,
+                "local": "Boticas",
+                "longitude": "-7.6682"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "VRL",
+                "globalIdLocal": 1170300,
+                "idConcelho": 3,
+                "latitude": "41.7420",
+                "idDistrito": 17,
+                "local": "Chaves",
+                "longitude": "-7.4721"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "VRL",
+                "globalIdLocal": 1170400,
+                "idConcelho": 4,
+                "latitude": "41.1601",
+                "idDistrito": 17,
+                "local": "Mesão Frio",
+                "longitude": "-7.8907"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "VRL",
+                "globalIdLocal": 1170500,
+                "idConcelho": 5,
+                "latitude": "41.4105",
+                "idDistrito": 17,
+                "local": "Mondim de Basto",
+                "longitude": "-7.9526"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "VRL",
+                "globalIdLocal": 1170600,
+                "idConcelho": 6,
+                "latitude": "41.8245",
+                "idDistrito": 17,
+                "local": "Montalegre",
+                "longitude": "-7.7900"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "VRL",
+                "globalIdLocal": 1170700,
+                "idConcelho": 7,
+                "latitude": "41.4100",
+                "idDistrito": 17,
+                "local": "Murça",
+                "longitude": "-7.4500"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "VRL",
+                "globalIdLocal": 1170800,
+                "idConcelho": 8,
+                "latitude": "41.1637",
+                "idDistrito": 17,
+                "local": "Peso da Régua",
+                "longitude": "-7.7922"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "VRL",
+                "globalIdLocal": 1170900,
+                "idConcelho": 9,
+                "latitude": "41.5194",
+                "idDistrito": 17,
+                "local": "Ribeira de Pena",
+                "longitude": "-7.7936"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "VRL",
+                "globalIdLocal": 1171000,
+                "idConcelho": 10,
+                "latitude": "41.2700",
+                "idDistrito": 17,
+                "local": "Sabrosa",
+                "longitude": "-7.5800"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "VRL",
+                "globalIdLocal": 1171100,
+                "idConcelho": 11,
+                "latitude": "41.2100",
+                "idDistrito": 17,
+                "local": "Santa Marta de Penaguião",
+                "longitude": "-7.7900"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "VRL",
+                "globalIdLocal": 1171200,
+                "idConcelho": 12,
+                "latitude": "41.6100",
+                "idDistrito": 17,
+                "local": "Valpaços",
+                "longitude": "-7.3100"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "VRL",
+                "globalIdLocal": 1171300,
+                "idConcelho": 13,
+                "latitude": "41.4986",
+                "idDistrito": 17,
+                "local": "Vila Pouca de Aguiar",
+                "longitude": "-7.6441"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "VRL",
+                "globalIdLocal": 1171400,
+                "idConcelho": 14,
+                "latitude": "41.3053",
+                "idDistrito": 17,
+                "local": "Vila Real",
+                "longitude": "-7.7440"
+            }
+        ]
+    },
+    {
+        "nome_distrito":"Madeira",
+        "id_distrito":1800,
+        "localidade_distrito": [
+            {
+                "idRegiao": 2,
+                "idAreaAviso": "MRM",
+                "globalIdLocal": 2310921,
+                "idConcelho": 9,
+                "latitude": "32.7355",
+                "idDistrito": 31,
+                "local": "Areeiro",
+                "longitude": "-16.9277"
+            },
+            {
+                "idRegiao": 2,
+                "idAreaAviso": "MRM",
+                "globalIdLocal": 2310521,
+                "idConcelho": 5,
+                "latitude": "32.7500",
+                "idDistrito": 31,
+                "local": "Bica da Cana",
+                "longitude": "-17.0500"
+            },
+            {
+                "idRegiao": 2,
+                "idAreaAviso": "MCS",
+                "globalIdLocal": 2310200,
+                "idConcelho": 2,
+                "latitude": "32.6486",
+                "idDistrito": 31,
+                "local": "Câmara de Lobos",
+                "longitude": "-16.9751"
+            },
+            {
+                "idRegiao": 2,
+                "idAreaAviso": "MCS",
+                "globalIdLocal": 2310424,
+                "idConcelho": 4,
+                "latitude": "32.7380",
+                "idDistrito": 31,
+                "local": "Caniçal",
+                "longitude": "-16.7378"
+            },
+            {
+                "idRegiao": 2,
+                "idAreaAviso": "MCS",
+                "globalIdLocal": 2310300,
+                "idConcelho": 3,
+                "latitude": "32.6485",
+                "idDistrito": 31,
+                "local": "Funchal",
+                "longitude": "-16.9084"
+            },
+            {
+                "idRegiao": 2,
+                "idAreaAviso": "MCS",
+                "globalIdLocal": 2310321,
+                "idConcelho": 3,
+                "latitude": "32.6400",
+                "idDistrito": 31,
+                "local": "Funchal/Lido",
+                "longitude": "-16.9500"
+            },
+            {
+                "idRegiao": 2,
+                "idAreaAviso": "MCS",
+                "globalIdLocal": 2310820,
+                "idConcelho": 8,
+                "latitude": "30.1406",
+                "idDistrito": 31,
+                "local": "Ilhas Selvagens",
+                "longitude": "-15.8692"
+            },
+            {
+                "idRegiao": 2,
+                "idAreaAviso": "MCS",
+                "globalIdLocal": 2310522,
+                "idConcelho": 5,
+                "latitude": "32.6800",
+                "idDistrito": 31,
+                "local": "Lugar de Baixo",
+                "longitude": "-17.0900"
+            },
+            {
+                "idRegiao": 2,
+                "idAreaAviso": "MCS",
+                "globalIdLocal": 2310400,
+                "idConcelho": 4,
+                "latitude": "32.7212",
+                "idDistrito": 31,
+                "local": "Machico",
+                "longitude": "-16.7680"
+            },
+            {
+                "idRegiao": 2,
+                "idAreaAviso": "MCN",
+                "globalIdLocal": 2310123,
+                "idConcelho": 1,
+                "latitude": "32.8127",
+                "idDistrito": 31,
+                "local": "Ponta do Pargo",
+                "longitude": "-17.2478"
+            },
+            {
+                "idRegiao": 2,
+                "idAreaAviso": "MCN",
+                "globalIdLocal": 2310600,
+                "idConcelho": 6,
+                "latitude": "32.8669",
+                "idDistrito": 31,
+                "local": "Porto Moniz",
+                "longitude": "-17.1686"
+            },
+            {
+                "idRegiao": 2,
+                "idAreaAviso": "MCS",
+                "globalIdLocal": 2310800,
+                "idConcelho": 8,
+                "latitude": "32.6882",
+                "idDistrito": 31,
+                "local": "Santa Cruz - Aeroporto",
+                "longitude": "-16.7909"
+            },
+            {
+                "idRegiao": 2,
+                "idAreaAviso": "MCN",
+                "globalIdLocal": 2310900,
+                "idConcelho": 9,
+                "latitude": "32.8020",
+                "idDistrito": 31,
+                "local": "Santana",
+                "longitude": "-16.8799"
+            },
+            {
+                "idRegiao": 2,
+                "idAreaAviso": "MCS",
+                "globalIdLocal": 2310421,
+                "idConcelho": 4,
+                "latitude": "32.7230",
+                "idDistrito": 31,
+                "local": "Santo da Serra",
+                "longitude": "-16.8118"
+            },    
+            {
+                "idRegiao": 2,
+                "idAreaAviso": "MCN",
+                "globalIdLocal": 2311000,
+                "idConcelho": 10,
+                "latitude": "32.8038",
+                "idDistrito": 31,
+                "local": "São Vicente",
+                "longitude": "-17.0463"
+            },
+        ]
+    },
+    {
+        "nome_distrito":"Porto Santo",
+        "id_distrito":1900,
+        "localidade_distrito": [
+            {
+                "idRegiao": 2,
+                "idAreaAviso": "MPS",
+                "globalIdLocal": 2320100,
+                "idConcelho": 1,
+                "latitude": "33.0700",
+                "idDistrito": 32,
+                "local": "Porto Santo",
+                "longitude": "-16.3400"
+            }
+        ]
+    },
+    {
+        "nome_distrito":"Santa Maria",
+        "id_distrito":2000,
+        "localidade_distrito": [
+            {
+                "idRegiao": 3,
+                "idAreaAviso": "AOR",
+                "globalIdLocal": 3410100,
+                "idConcelho": 1,
+                "latitude": "36.9563",
+                "idDistrito": 41,
+                "local": "Vila do Porto",
+                "longitude": "-25.1409"
+            }
+        ]
+    },
+    {
+        "nome_distrito":"São Miguel",
+        "id_distrito":2100,
+        "localidade_distrito": [
+            {
+                "idRegiao": 3,
+                "idAreaAviso": "AOR",
+                "globalIdLocal": 3420200,
+                "idConcelho": 2,
+                "latitude": "37.8300",
+                "idDistrito": 42,
+                "local": "Nordeste",
+                "longitude": "-25.1500"
+            },
+            {
+                "idRegiao": 3,
+                "idAreaAviso": "AOR",
+                "globalIdLocal": 3420300,
+                "idConcelho": 3,
+                "latitude": "37.7415",
+                "idDistrito": 42,
+                "local": "Ponta Delgada",
+                "longitude": "-25.6677"
+            }
+        ]
+    },
+    {
+        "nome_distrito":"Terceira",
+        "id_distrito":2200,
+        "localidade_distrito": [
+            {
+                "idRegiao": 3,
+                "idAreaAviso": "ACE",
+                "globalIdLocal": 3430100,
+                "idConcelho": 1,
+                "latitude": "38.6700",
+                "idDistrito": 43,
+                "local": "Angra do Heroísmo",
+                "longitude": "-27.2200"
+            },
+            {
+                "idRegiao": 3,
+                "idAreaAviso": "ACE",
+                "globalIdLocal": 3430121,
+                "idConcelho": 1,
+                "latitude": "38.7700",
+                "idDistrito": 43,
+                "local": "Lajes",
+                "longitude": "-27.1000"
+            }
+        ]
+    },
+    {
+        "nome_distrito":"Graciosa",
+        "id_distrito":2300,
+        "localidade_distrito": [
+            {
+                "idRegiao": 3,
+                "idAreaAviso": "ACE",
+                "globalIdLocal": 3440100,
+                "idConcelho": 1,
+                "latitude": "39.0800",
+                "idDistrito": 44,
+                "local": "Santa Cruz da Graciosa",
+                "longitude": "-28.0000"
+            }
+        ]
+    },
+    {
+        "nome_distrito":"São Jorge",
+        "id_distrito":2400,
+        "localidade_distrito": [
+            {
+                "idRegiao": 3,
+                "idAreaAviso": "ACE",
+                "globalIdLocal": 3450200,
+                "idConcelho": 2,
+                "latitude": "38.6842",
+                "idDistrito": 45,
+                "local": "Velas",
+                "longitude": "-28.2133"
+            }
+        ]
+    },
+    {
+        "nome_distrito":"Pico",
+        "id_distrito":2500,
+        "localidade_distrito": [
+            {
+                "idRegiao": 3,
+                "idAreaAviso": "ACE",
+                "globalIdLocal": 3460200,
+                "idConcelho": 2,
+                "latitude": "38.5325",
+                "idDistrito": 46,
+                "local": "Madalena",
+                "longitude": "-28.5237"
+            }
+        ]
+    },
+    {
+        "nome_distrito":"Faial",
+        "id_distrito":2600,
+        "localidade_distrito": [
+            {
+                "idRegiao": 3,
+                "idAreaAviso": "ACE",
+                "globalIdLocal": 3470100,
+                "idConcelho": 1,
+                "latitude": "38.5363",
+                "idDistrito": 47,
+                "local": "Horta",
+                "longitude": "-28.6315"
+            }
+        ]
+    },
+    {
+        "nome_distrito":"Flores",
+        "id_distrito":2700,
+        "localidade_distrito": [
+            {
+                "idRegiao": 3,
+                "idAreaAviso": "AOC",
+                "globalIdLocal": 3480200,
+                "idConcelho": 2,
+                "latitude": "39.4500",
+                "idDistrito": 48,
+                "local": "Santa Cruz das Flores",
+                "longitude": "-31.1300"
+            }
+        ]
+    },
+    {
+        "nome_distrito":"Corvo",
+        "id_distrito":2800,
+        "localidade_distrito": [
+            {
+                "idRegiao": 3,
+                "idAreaAviso": "AOC",
+                "globalIdLocal": 3490100,
+                "idConcelho": 1,
+                "latitude": "39.6700",
+                "idDistrito": 49,
+                "local": "Vila do Corvo",
+                "longitude": "-31.1200"
             }
         ]
     }
