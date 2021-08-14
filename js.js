@@ -68,19 +68,61 @@ function isIOSDevice(){
 
 function getLocation() {
     if (navigator.geolocation) {
-        console.log(navigator.geolocation.getCurrentPosition(find_nearest_location));
+        var options = {
+            enableHighAccuracy: true
+        };
+        console.log(navigator.geolocation.getCurrentPosition(find_nearest_location, location_failed, options));
     } else { 
         x.innerHTML = "Geolocation is not supported by this browser.";
     }
 }
 
-/*function locationSuccess(position) {
-    var coordinates = position.coords;
-    console.log(coordinates.latitude + "  " + coordinates.longitude)
-}*/
+function location_failed() {
+    console.log("failed to get location")
+}
 
 function find_nearest_location(position) {
+    var cCoordinates = position.coords;
+    console.log(cCoordinates)
+    var cLat = cCoordinates.latitude;
+    var cLon = cCoordinates.longitude;
 
+    var nearest_location = "";
+    var distance = 0;
+
+    for(var i = 0; i<locations.length; i++) {
+        for(var j = 0; j<locations[i]["localidade_distrito"].length; j++) {
+            dist = calc_distance(cLat, cLon, locations[i]["localidade_distrito"][j]["latitude"], locations[i]["localidade_distrito"][j]["longitude"]);
+            if (distance==0) {
+                distance = dist
+            }
+            else if (dist < distance) {
+                distance = dist;
+                nearest_location = locations[i]["localidade_distrito"][j]["globalIdLocal"]
+                console.log(locations[i]["localidade_distrito"][j]["local"])
+            }
+        }
+    }
+    localStorage["nearest_location"] = nearest_location;
+    console.log(nearest_location)
+}
+
+function calc_distance(lat1, lon1, lat2, lon2) {
+    var R = 6371; // km
+    var dLat = to_rad(lat2-lat1);
+    var dLon = to_rad(lon2-lon1);
+    var lat1 = to_rad(lat1);
+    var lat2 = to_rad(lat2);
+
+    var a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+    Math.sin(dLon/2) * Math.sin(dLon/2) * Math.cos(lat1) * Math.cos(lat2); 
+    var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
+    var d = R * c;
+    return d;
+}
+
+function to_rad(Value){
+    return Value * Math.PI / 180;
 }
 
 
