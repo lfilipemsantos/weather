@@ -49,10 +49,10 @@ function display_notification() {
                         console.log(n)
                         console.log(typeof n)
                         console.log("setting timeout...")
-                        setTimeout(display_notification, 30000);
+                        setTimeout(display_notification, 300000);
                     }
                     else {
-                        setTimeout(display_notification, 30000);
+                        setTimeout(display_notification, 300000);
                     }
                 }
             } 
@@ -125,15 +125,13 @@ function to_rad(Value){
 
 
 function init() {
-    console.log("first call")
-    display_notification();
     //Check if device is iOS (notifications do not work on iOS)
-    /*if (isIOSDevice()) {
+    if (isIOSDevice()) {
         console.log('This is a IOS device');
     } else {
         request_notification();
         display_notification();
-    }*/
+    }
 
     getLocation();
     build_locations(locations);
