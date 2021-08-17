@@ -125,6 +125,7 @@ function to_rad(Value){
 
 
 function init() {
+    console.log("first call")
     display_notification();
     //Check if device is iOS (notifications do not work on iOS)
     /*if (isIOSDevice()) {
