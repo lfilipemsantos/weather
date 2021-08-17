@@ -27,7 +27,7 @@ function request_notification() {
 }
 
 
-/*function display_notification() {
+function display_notification() {
     if (Notification.permission == 'granted') {
         navigator.serviceWorker.getRegistration().then(function(reg) {
             request = data_request(localStorage["local_id"])
@@ -44,8 +44,6 @@ function request_notification() {
                     var d = new Date();
                     var n = d.getHours();
                     console.log(n)
-                    reg.showNotification(notifTitle, options);
-                    setTimeout(display_notification(), 30000);
                     if (n>8 && n<22) {
                         reg.showNotification(notifTitle, options);
                         console.log(n)
@@ -60,7 +58,7 @@ function request_notification() {
             } 
         });
     }
-}*/
+}
 
 function isIOSDevice(){
     return !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
@@ -127,6 +125,7 @@ function to_rad(Value){
 
 
 function init() {
+    display_notification();
     //Check if device is iOS (notifications do not work on iOS)
     /*if (isIOSDevice()) {
         console.log('This is a IOS device');
@@ -136,7 +135,6 @@ function init() {
     }*/
 
     getLocation();
-
     build_locations(locations);
 
     if(localStorage["theme"]) {
