@@ -35,7 +35,7 @@ function display_notification() {
                 if (request.readyState == XMLHttpRequest.DONE) {
                     data = request.response;
                     const notifTitle = get_location_name(localStorage["local_id"]);
-                    const notifBody = "Max:" + data[0]["tMax"] + " | Min:" + data[0]["tMin"];
+                    const notifBody = "Máxima:" + data[0]["tMax"] + " | Mínima:" + data[0]["tMin"];
                     const notifImg = "png/039-sun.png";
                     const options = {
                         body: notifBody,
@@ -49,10 +49,10 @@ function display_notification() {
                         console.log(n)
                         console.log(typeof n)
                         console.log("setting timeout...")
-                        setTimeout(display_notification, 300000);
+                        setTimeout(display_notification, 600000);
                     }
                     else {
-                        setTimeout(display_notification, 300000);
+                        setTimeout(display_notification, 600000);
                     }
                 }
             } 
