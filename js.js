@@ -933,6 +933,23 @@ function get_weather_icon(hour, num) {
     }
 }
 
+function show_top() {
+    bottoms = document.getElementsByClassName("bottom-setting");
+    for (i=0; i<bottoms.length; i++) {
+        bottoms[i].style.display = "none"
+    }
+    middles = document.getElementsByClassName("middle-setting");
+    for (i=0; i<middles.length; i++) {
+        middles[i].style.display = "none"
+    }
+    tops = document.getElementsByClassName("top-setting");
+    for (i=0; i<tops.length; i++) {
+        tops[i].style.display = "block"
+    }
+    back_button = document.getElementById("back_button");
+    back_button.style.display = "none"
+}
+
 function show_middle(setting) {
     tops = document.getElementsByClassName("top-setting");
     for (i=0; i<tops.length; i++) {
@@ -941,5 +958,18 @@ function show_middle(setting) {
     middles = document.getElementsByClassName(setting);
     for (i=0; i<middles.length; i++) {
         middles[i].style.display = "block"
+    }
+    back_button = document.getElementById("back_button");
+    back_button.style.display = "block"
+}
+
+function show_bottom(setting) {
+    middles = document.getElementsByClassName("middle-setting");
+    for (i=0; i<middles.length; i++) {
+        middles[i].style.display = "none"
+    }
+    bottoms = document.getElementsByClassName(setting);
+    for (i=0; i<bottoms.length; i++) {
+        bottoms[i].style.display = "block"
     }
 }

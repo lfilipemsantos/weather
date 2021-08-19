@@ -215,6 +215,9 @@
 
         <div class="rows" id="settings-tab" style="height: 100%;">
             <h2 class="tab-title">Definições</h2>
+            <div id="back_button" onclick="show_top()">
+                Voltar
+            </div>
             <div class="setting top-setting" onclick="show_middle('personalizacao')">
                 <h3>Personalização</h3>
                 <div>
@@ -233,7 +236,7 @@
                     >
                 </div>
             </div>
-            <div class="setting top-setting">
+            <div class="setting top-setting" onclick="show_middle('sobre')">
                 <h3>Sobre</h3>
                 <div>
                     <small>Informações sobre a aplicação.</small>
@@ -242,7 +245,7 @@
                     >
                 </div>
             </div>
-            <div class="setting middle-setting personalizacao">
+            <div class="setting middle-setting personalizacao" onclick="show_bottom('tema')">
                 <h3>Modo claro/escuro</h3>
                 <div>
                     <small>Escolha entre modo claro e escuro.</small>
@@ -251,7 +254,7 @@
                     >
                 </div>
             </div>
-            <div class="setting middle-setting personalizacao">
+            <div class="setting middle-setting personalizacao" onclick="show_bottom('destaque')">
                 <h3>Cor do tema</h3>
                 <div>
                     <small>Informações sobre a aplicação.</small>
@@ -261,7 +264,7 @@
                 </div>
             </div>
 
-            <div style="height: fit-content; width:80%; max-width: 400px;border-radius: 10px; margin-left: auto; margin-right: auto;padding-bottom: 10px;">
+            <div class="setting bottom-setting tema">
                 <div style="width: 90%; margin-left: auto; margin-right: auto;margin-top: 15px;">
                     <h4>Tema</h4>
                 </div>
@@ -273,9 +276,8 @@
                         <p style="text-align:center; line-height:18px; height: 18px; padding-top: 16px;">Escuro</p>
                     </div>
                 </div>
-
-                <br>
-                <hr style="height: 1px;">
+            </div>
+            <div class="setting bottom-setting destaque">
                 <div style="width: 90%; margin-left: auto; margin-right: auto;margin-top: 15px;">
                     <h4>Cor de destaque</h4>
                 </div>
@@ -310,10 +312,8 @@
                         </div>
                     </div>
                 </div>
-
-                <br>
-                <hr style="height: 1px;">
-
+            </div>
+            <div class="setting middle-setting sobre">
                 <div style="bottom: 0;text-align: left;line-height: 15px;margin-left: 10px; margin-right: 10px; margin-top: 50px;">
                     Icons made by 
                     <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">

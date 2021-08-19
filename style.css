@@ -628,6 +628,19 @@ body {
     display: none;
 }
 
+.bottom-setting {
+    display: none;
+}
+
+#back_button {
+    background-color: rgb(61, 61, 61);
+    border-radius: 5px;
+    padding: 5px;
+    width: 100px;
+    margin: 20px auto;
+    display: none;
+}
+
 
 
 /*WIDGETS*/
