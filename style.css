@@ -606,6 +606,8 @@ body {
 
 .setting > h3, .setting > div {
     width: 80%;
+    margin:0;
+    padding:0;
 }
 
 .setting-arrow {
@@ -616,6 +618,14 @@ body {
     right:0px;
     top: 40%;
     height: 50%;
+}
+
+.top-setting {
+    display: block;
+}
+
+.middle-setting {
+    display: none;
 }
 
 

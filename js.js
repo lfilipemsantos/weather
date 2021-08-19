@@ -932,3 +932,14 @@ function get_weather_icon(hour, num) {
         return "icons/d" + num + ".svg"
     }
 }
+
+function show_middle(setting) {
+    tops = document.getElementsByClassName("top-setting");
+    for (i=0; i<tops.length; i++) {
+        tops[i].style.display = "none"
+    }
+    middles = document.getElementsByClassName(setting);
+    for (i=0; i<middles.length; i++) {
+        middles[i].style.display = "block"
+    }
+}
