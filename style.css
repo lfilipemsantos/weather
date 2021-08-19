@@ -591,6 +591,33 @@ body {
     margin-bottom: 30px;
 }
 
+.setting {
+    width: 75%;
+    background-color: rgba(150, 150, 150, 0.2);
+    padding: 15px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    max-width: 400px;
+    cursor: pointer;
+    position: relative;
+}
+
+.setting > h3, .setting > div {
+    width: 80%;
+}
+
+.setting-arrow {
+    width: 20% !important;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    right:0px;
+    top: 40%;
+    height: 50%;
+}
+
 
 
 /*WIDGETS*/
