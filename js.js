@@ -197,7 +197,7 @@ function switch_tab(id) {
         document.getElementById("favorites_icon").src = fav_icon;
     }
     else if(id=="settings-tab") {
-        show_top();
+        show_top_settings();
         var home_icon = document.getElementById("home_icon").src.replace("is_","not_");
         document.getElementById("home_icon").src = home_icon;
         var settings_icon = document.getElementById("settings_icon").src.replace("not_","is_");
@@ -952,7 +952,7 @@ function get_weather_icon(hour, num) {
     }
 }
 
-function show_top() {
+function show_top_settings() {
     bottoms = document.getElementsByClassName("bottom-setting");
     for (i=0; i<bottoms.length; i++) {
         bottoms[i].style.display = "none"
@@ -969,7 +969,7 @@ function show_top() {
     back_button.style.display = "none"
 }
 
-function show_middle(setting) {
+function show_middle_settings(setting) {
     tops = document.getElementsByClassName("top-setting");
     for (i=0; i<tops.length; i++) {
         tops[i].style.display = "none"
@@ -982,7 +982,7 @@ function show_middle(setting) {
     back_button.style.display = "block"
 }
 
-function show_bottom(setting) {
+function show_bottom_settings(setting) {
     middles = document.getElementsByClassName("middle-setting");
     for (i=0; i<middles.length; i++) {
         middles[i].style.display = "none"
