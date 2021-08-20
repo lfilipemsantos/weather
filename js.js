@@ -197,6 +197,7 @@ function switch_tab(id) {
         document.getElementById("favorites_icon").src = fav_icon;
     }
     else if(id=="settings-tab") {
+        show_top();
         var home_icon = document.getElementById("home_icon").src.replace("is_","not_");
         document.getElementById("home_icon").src = home_icon;
         var settings_icon = document.getElementById("settings_icon").src.replace("not_","is_");
@@ -585,7 +586,7 @@ function switch_theme(id) {
     const LIGHT = "rgb(245, 245, 245)"
 
     var buttons = ["home", "favorites", "settings"]
-    
+
     localStorage["theme"] = id;
 
     if(id=="auto") {
