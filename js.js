@@ -572,12 +572,29 @@ function build_next_days(data) {
 }
 
 
+function set_theme_preference() {
+    const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if(userPrefersDark){
+        
+    }
+}
+
+
 function switch_theme(id) {
     const DARK = "rgb(5, 5, 5)"
     const LIGHT = "rgb(245, 245, 245)"
 
     var buttons = ["home", "favorites", "settings"]
 
+    if(id=="auto") {
+        const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if(userPrefersDark){
+            id="escuro"
+        }
+        else {
+            id="claro"
+        }
+    }
 
     if(id=="escuro"){
         document.querySelector('meta[name="theme-color"]').setAttribute('content', DARK);
