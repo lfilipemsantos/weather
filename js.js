@@ -585,6 +585,8 @@ function switch_theme(id) {
     const LIGHT = "rgb(245, 245, 245)"
 
     var buttons = ["home", "favorites", "settings"]
+    
+    localStorage["theme"] = id;
 
     if(id=="auto") {
         const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -662,7 +664,6 @@ function switch_theme(id) {
         }
     }
     
-    localStorage["theme"] = id;
 }
 
 
