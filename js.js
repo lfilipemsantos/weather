@@ -135,7 +135,7 @@ function init() {
 
     getLocation();
     build_locations(locations);
-
+    
     if(localStorage["theme"]) {
         switch_theme(localStorage["theme"]);
     }
@@ -620,7 +620,10 @@ function switch_theme(id) {
             li[i].style.backgroundColor = "rgba(150, 150, 150, 0.2)";
         }
         
-        document.getElementById("fav_icon").src.replace("b.svg", "w.svg");
+        
+        var fav = document.getElementById("fav_icon");
+        fav.src = fav.src.replace("b.svg", "w.svg");
+
         var refresh = document.getElementById("refresh_icon");
         refresh.src = refresh.src.replace("b.svg", "w.svg");
 
@@ -655,7 +658,8 @@ function switch_theme(id) {
             widgets[i].style.color = LIGHT;
         }
 
-        document.getElementById("fav_icon").src.replace("w.svg", "b.svg");
+        var fav = document.getElementById("fav_icon");
+        fav.src = fav.src.replace("w.svg", "b.svg");
         var refresh = document.getElementById("refresh_icon");
         refresh.src = refresh.src.replace("w.svg", "b.svg");
 
