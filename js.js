@@ -130,7 +130,7 @@ function init() {
         console.log('This is a IOS device');
     } else {
         request_notification();
-        display_notification();
+        //display_notification();
     }
 
     getLocation();
