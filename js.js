@@ -194,6 +194,8 @@ function init() {
     }
 
     get_data(localStorage["local_id"]);
+
+    console.log(Object.entries(localStorage))
     
 }
 
@@ -1027,4 +1029,12 @@ function show_bottom_settings(setting) {
     for (i=0; i<bottoms.length; i++) {
         bottoms[i].style.display = "block"
     }
+}
+
+function reset_settings() {
+    var local_items = ["color_theme", "theme", "auto_theme", "nearest_location", "favorites", "local_id"]
+    for (i=0; i<local_items.length; i++) {
+        localStorage.removeItem(local_items[i]);
+    }
+    init()
 }
