@@ -12,7 +12,7 @@ if ('serviceWorker' in navigator) {
 
 
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-    if (localStorage["theme"] == "auto"){
+    if (localStorage["auto_theme"] == "on"){
         if (event.matches) {
             switch_theme("escuro")
         } 
@@ -135,6 +135,15 @@ function to_rad(Value){
     return Value * Math.PI / 180;
 }
 
+function switch_auto_theme() {
+    if(localStorage["auto_theme"]=="on") {
+        localStorage["auto_theme"] = "off"
+    }
+    else {
+        localStorage["auto_theme"] = "on"
+    }
+}
+
 
 function init() {
     //Check if device is iOS (notifications do not work on iOS)
@@ -148,9 +157,13 @@ function init() {
 
     build_locations(locations);
     
+    if(!(localStorage["auto_theme"])){
+        localStorage["auto_theme"] = "off"
+    }
+    
     if(localStorage["theme"]) {
-        if (localStorage["theme"] == "auto"){
-            const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (localStorage["auto_theme"] == "on"){
+            const userPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
             if (userPrefersDark) {
                 switch_theme("escuro");
             }
@@ -617,17 +630,6 @@ function switch_theme(id) {
 
     var buttons = ["home", "favorites", "settings"]
 
-    localStorage["theme"] = id;
-
-    if(id=="auto") {
-        const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-        if(userPrefersDark){
-            id="escuro"
-        }
-        else {
-            id="claro"
-        }
-    }
 
     if(id=="escuro"){
         document.querySelector('meta[name="theme-color"]').setAttribute('content', DARK);
