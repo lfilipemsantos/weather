@@ -215,19 +215,19 @@
                     >
                 </div>
             </div>
-            <div class="setting top-setting" onclick="show_middle_settings('sobre')">
-                <h3>Sobre</h3>
+            <div class="setting top-setting" onclick="reset_settings()">
+                <h3>Repôr definições</h3>
                 <div>
-                    <small>Informações sobre a aplicação.</small>
+                    <small>Apagará todas as definições incluindo temas e locais favoritos.</small>
                 </div>
                 <div class="setting-arrow">
                     >
                 </div>
             </div>
-            <div class="setting top-setting" onclick="reset_settings()">
-                <h3>Repôr definições</h3>
+            <div class="setting top-setting" onclick="show_middle_settings('sobre')">
+                <h3>Sobre</h3>
                 <div>
-                    <small>Apagará todas as definições incluindo temas e locais favoritos.</small>
+                    <small>Informações sobre a aplicação.</small>
                 </div>
                 <div class="setting-arrow">
                     >
@@ -257,13 +257,13 @@
                     <h4>Tema</h4>
                 </div>
                 <div id="themes" style="margin-top:10px;">
-                    <div class="theme_option" onclick="switch_theme('claro')">
+                    <div class="theme_option" onclick="switch_auto_theme('off');switch_theme('claro')">
                         <p style="line-height:18px; height: 18px; padding-top: 16px;">Claro</p>
                     </div>
-                    <div class="theme_option" onclick="switch_theme('escuro')">
+                    <div class="theme_option" onclick="switch_auto_theme('off');switch_theme('escuro')">
                         <p style="line-height:18px; height: 18px; padding-top: 16px;">Escuro</p>
                     </div>
-                    <div class="theme_option" onclick="switch_auto_theme()">
+                    <div class="theme_option" onclick="switch_auto_theme('on')">
                         <p style="line-height:18px; height: 18px; padding-top: 16px;">Usar preferência do sistema</p>
                     </div>
                 </div>
@@ -305,7 +305,7 @@
                 </div>
             </div>
             <div class="setting middle-setting sobre">
-                <div style="bottom: 0;text-align: left;line-height: 15px;margin-left: 10px; margin-right: 10px; margin-top: 50px;">
+                <div style="bottom: 0;text-align: left;line-height: 15px;margin-left: 10px; margin-right: 10px; margin-top: 10px;">
                     Icons made by 
                     <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">
                         Flat Icons
@@ -317,6 +317,10 @@
                 <div style="bottom: 0;text-align: left;line-height: 15px;margin-left: 10px; margin-right: 10px; margin-top: 15px;">
                     Dados da metereologia provenientes de: <a href="https://www.ipma.pt/pt/index.html" title="IPMA">
                         www.ipma.pt
+                    </a>
+                </div>
+                <div style="bottom: 0;text-align: left;line-height: 15px;margin-left: 10px; margin-right: 10px; margin-top: 15px; margin-bottom: 10px;">
+                    Mais projetos em: <a href="https://lfilipemsantos.github.io/home" title="IPMA">lfilipemsantos.github.io
                     </a>
                 </div>
             </div>

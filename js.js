@@ -135,12 +135,14 @@ function to_rad(Value){
     return Value * Math.PI / 180;
 }
 
-function switch_auto_theme() {
-    if(localStorage["auto_theme"]=="on") {
-        localStorage["auto_theme"] = "off"
+function switch_auto_theme(status) {
+    localStorage["auto_theme"] = status;
+    const userPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (userPrefersDark) {
+        switch_theme("escuro");
     }
     else {
-        localStorage["auto_theme"] = "on"
+        switch_theme("claro");
     }
 }
 
@@ -632,6 +634,7 @@ function switch_theme(id) {
 
     var buttons = ["home", "favorites", "settings"]
 
+    localStorage["theme"] = id;
 
     if(id=="escuro"){
         document.querySelector('meta[name="theme-color"]').setAttribute('content', DARK);
@@ -644,6 +647,7 @@ function switch_theme(id) {
         document.getElementById("search_icon").src = "search_w.svg";
         document.getElementById("bottom-options").style.backgroundColor = "rgb(25, 25, 25)";
         document.getElementById("fav-notification-inner").style.backgroundColor = "rgb(40, 40, 40)";
+        document.getElementById("back_button").style.backgroundColor = "rgb(61, 61, 61)";
         hr = document.getElementsByClassName("row-divider");
         for(i = 0; i<hr.length; i++) {
             hr[i].style.backgroundColor = LIGHT;
@@ -677,6 +681,7 @@ function switch_theme(id) {
         document.getElementById("search_icon").src = "search_b.svg";
         document.getElementById("bottom-options").style.backgroundColor = "rgb(236, 236, 236)";
         document.getElementById("fav-notification-inner").style.backgroundColor = "rgb(206, 206, 206)";
+        document.getElementById("back_button").style.backgroundColor = "rgb(206, 206, 206)";
         hr = document.getElementsByClassName("row-divider");
         for(i = 0; i<hr.length; i++) {
             hr[i].style.backgroundColor = DARK;
@@ -1036,5 +1041,5 @@ function reset_settings() {
     for (i=0; i<local_items.length; i++) {
         localStorage.removeItem(local_items[i]);
     }
-    init()
+    init();
 }
