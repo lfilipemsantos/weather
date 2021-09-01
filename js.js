@@ -73,7 +73,7 @@ function display_notification() {
 }
 
 function isIOSDevice(){
-    return !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+    return navigator.userAgent.toLowerCase().indexOf('safari/') > -1;
 }
 
 function getLocation() {
