@@ -12,6 +12,7 @@
         <script type='text/javascript' src='js.js'></script>
         <script type='text/javascript' src='locations.js'></script>
         <script type='text/javascript' src='weather_types.js'></script>
+        <script type='text/javascript' src='wind_types.js'></script>
     </head>
 
     <body onload="init()">
@@ -79,7 +80,6 @@
                     </table>
                 </div>
             </div>
-            
 
             <div class="rows" id="today_row">
                 <div class="inner" id="innerToday"></div>
@@ -114,6 +114,7 @@
                 <div class="widget-row" id="today-widget-wind">
                     <div class="widget" style="background: linear-gradient(45deg, rgba(134,226,162,1) 0%, rgba(2,79,49,1) 100%); width: 320px;">
                         <p class="widget-title">Vento</p>
+                        <p id="idFfxVento" style="text-align: left; font-size:12px;height:12px;line-height: 12px;"></p>
                         <div class="widget-value-container" style="display: inline-block; width: 70%; height: auto;right: 0;"> 
                             <span style="display: inline-block; font-size: 10px; vertical-align: text-bottom; margin-right: 0px;">Velocidade</span><p class="widget-value" id="text-vento-vv" style="display: inline-block;"></p>
                         </div>
@@ -174,6 +175,7 @@
                 <div class="widget-row" id="tomorrow-widget-wind">
                     <div class="widget" style="background: linear-gradient(45deg, rgba(134,226,162,1) 0%, rgba(2,79,49,1) 100%); width: 320px;">
                         <p class="widget-title">Vento</p>
+                        <p id="idFfxVento-T" style="text-align: left; font-size:12px;height:12px;line-height: 12px;"></p>
                         <div class="widget-value-container" style="display: inline-block; width: 70%; height: auto;right: 0;"> 
                             <span style="display: inline-block; font-size: 10px; vertical-align: text-bottom; margin-right: 0px;"></span><p class="widget-value" id="text-vento-vv-T" style="display: inline-block;"></p>
                         </div>

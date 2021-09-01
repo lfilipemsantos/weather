@@ -196,9 +196,6 @@ function init() {
     }
 
     get_data(localStorage["local_id"]);
-
-    console.log(Object.entries(localStorage))
-    
 }
 
 
@@ -425,6 +422,7 @@ function build_table(current_day, current_hour) {
         document.getElementById("text-probabilidadePrecipita").textContent = Math.round(current_day["probabilidadePrecipita"]) + "%";
         document.getElementById("text-vento-dd").textContent = current_hour["ddVento"];
         document.getElementById("text-vento-vv").textContent = current_hour["ffVento"];
+        document.getElementById("idFfxVento").textContent = wind_types[0][current_day["idFfxVento"]]["PT"];
     }
     else {
         text = document.getElementsByClassName("table-text-T")
@@ -434,8 +432,8 @@ function build_table(current_day, current_hour) {
         document.getElementById("text-tMax-T").textContent = Math.round(current_day["tMax"]) + "º";
         document.getElementById("text-tMin-T").textContent = Math.round(current_day["tMin"]) + "º";
         document.getElementById("text-vento-dd-T").textContent = current_day["ddVento"];
-        console.log(current_day)
         document.getElementById("text-vento-vv-T").textContent = current_day["ffVento"];
+        document.getElementById("idFfxVento-T").textContent = wind_types[0][current_day["idFfxVento"]]["PT"];
     }
     try {
         document.getElementById("data-update").textContent = ("Última atualização: " + current_day["dataUpdate"]).replace("T", " às ")
