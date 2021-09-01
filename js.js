@@ -142,10 +142,10 @@ function init() {
         console.log('This is a IOS device');
     } else {
         request_notification();
+        getLocation();
         //display_notification();
     }
 
-    getLocation();
     build_locations(locations);
     
     if(localStorage["theme"]) {
