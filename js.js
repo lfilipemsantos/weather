@@ -10,6 +10,18 @@ if ('serviceWorker' in navigator) {
     });
 }
 
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+    if (localStorage["theme"] == "auto"){
+        if (event.matches) {
+            switch_theme("escuro")
+        } 
+        else {
+            switch_theme("claro")        
+        }
+    }
+})
+
 function data_request(id) {
     var requestURL = "https://api.ipma.pt/public-data/forecast/aggregate/" + id + ".json"
     var request = new XMLHttpRequest();
@@ -137,7 +149,18 @@ function init() {
     build_locations(locations);
     
     if(localStorage["theme"]) {
-        switch_theme(localStorage["theme"]);
+        if (localStorage["theme"] == "auto"){
+            const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (userPrefersDark) {
+                switch_theme("escuro");
+            }
+            else {
+                switch_theme("claro");
+            }
+        }
+        else{
+            switch_theme(localStorage["theme"]);
+        }
     }
     else {
         switch_theme("escuro");
@@ -282,22 +305,28 @@ function get_data(local_id) {
             set_location_name(local_id); 
             switch_tab('home-tab');
             document.getElementById("location").value = "";
+            console.log(local_id)
             if(in_favorites(local_id)){
                 document.getElementById("fav_icon_container").setAttribute("onclick", "rem_favorite('" + local_id + "')")
-                if (localStorage["theme"]=="escuro") {
-                    document.getElementById("fav_icon").src = "is_fav_w.svg";
+                const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+                if (localStorage["theme"]=="escuro" || userPrefersDark) {
+                    var fav = document.getElementById("fav_icon");
+                    fav.src = fav.src = "is_fav_w.svg";
                 }
                 else if (localStorage["theme"]=="claro") {
-                    document.getElementById("fav_icon").src = "is_fav_b.svg";
+                    var fav = document.getElementById("fav_icon");
+                    fav.src = fav.src = "is_fav_b.svg";
                 }
             }
             else {
                 document.getElementById("fav_icon_container").setAttribute("onclick", "add_favorite('" + local_id + "')")
                 if (localStorage["theme"]=="escuro") {
-                    document.getElementById("fav_icon").src = "not_fav_w.svg";
+                    var fav = document.getElementById("fav_icon");
+                    fav.src = fav.src = "not_fav_w.svg";
                 }
                 else if (localStorage["theme"]=="claro") {
-                    document.getElementById("fav_icon").src = "not_fav_b.svg";
+                    var fav = document.getElementById("fav_icon");
+                    fav.src = fav.src = "not_fav_b.svg";
                 }
             }
         }
@@ -309,6 +338,7 @@ function in_favorites(id) {
     favs = JSON.parse(localStorage["favorites"])
     for(i=0;i<favs.length; i++) {
         if(favs[i]["id"] == String(id)) {
+            console.log("is in favorites")
             return true
         }
     }
