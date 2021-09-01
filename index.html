@@ -260,13 +260,16 @@
                 </div>
                 <div id="themes" style="margin-top:10px;">
                     <div class="theme_option" onclick="switch_auto_theme('off');switch_theme('claro')">
-                        <p style="line-height:18px; height: 18px; padding-top: 16px;">Claro</p>
+                        <div class="theme_selected" id="selected_claro"></div>
+                        <p>Claro</p>
                     </div>
                     <div class="theme_option" onclick="switch_auto_theme('off');switch_theme('escuro')">
-                        <p style="line-height:18px; height: 18px; padding-top: 16px;">Escuro</p>
+                        <div class="theme_selected" id="selected_escuro"></div>
+                        <p>Escuro</p>
                     </div>
                     <div class="theme_option" onclick="switch_auto_theme('on')">
-                        <p style="line-height:18px; height: 18px; padding-top: 16px;">Usar preferência do sistema</p>
+                        <div class="theme_selected" id="selected_auto"></div>
+                        <p>Usar preferência do sistema</p>
                     </div>
                 </div>
             </div>

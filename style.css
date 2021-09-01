@@ -127,22 +127,38 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
-    padding-left: 10px;
     border-radius: 5px;
     box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.4);    
     text-align: left;
     cursor: pointer;
+    position: relative;
+}
+
+.theme_option > p {
+    line-height:18px; 
+    height: 18px; 
+    padding-top: 16px;
+    padding-left: 20px;
 }
 
 .theme_option:hover {
     background-color:rgba(114, 197, 197, 0.5);
 }
 
+.theme_selected {
+    width: 6px;
+    height: 100%;
+    background-color: rgba(124, 211, 218, 0.5);
+    border-radius: 5px 0px 0px 5px;
+    position: absolute;
+    left: 0;
+    display: none;
+}
+
 #themes {
     margin-left: auto;
     margin-right: auto;
     width: 90%;
-    cursor: none;
     margin-right: 0;
     margin-left: 0;
     padding-left: 10px;

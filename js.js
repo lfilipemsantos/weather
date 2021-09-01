@@ -144,6 +144,7 @@ function switch_auto_theme(status) {
     else {
         switch_theme("claro");
     }
+    
 }
 
 
@@ -633,6 +634,18 @@ function switch_theme(id) {
     var buttons = ["home", "favorites", "settings"]
 
     localStorage["theme"] = id;
+
+    document.getElementById("selected_auto").style.display = "none";
+    document.getElementById("selected_escuro").style.display = "none";
+    document.getElementById("selected_claro").style.display = "none";
+
+    if (localStorage["auto_theme"] == "on") {
+        document.getElementById("selected_auto").style.display = "block";
+    }
+    else {
+        
+        document.getElementById("selected_" + id).style.display = "block";
+    }
 
     if(id=="escuro"){
         document.querySelector('meta[name="theme-color"]').setAttribute('content', DARK);
