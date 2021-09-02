@@ -166,7 +166,7 @@ body {
 }
 
 .day_row{
-    width: 90%;
+    width: 80%;
     max-width: 400px;
     height: 60px;
     /*background-color: rgb(50, 50, 50);*/
@@ -195,8 +195,16 @@ body {
 }
 
 .date_container {
-    width: 50%;
+    width: 40%;
     display: inline-block;
+}
+
+.date_container > *{
+    display: inline-block;
+}
+.date_container > small{
+    max-width: 100px;
+    margin-left:10px
 }
 
 .temp_container {
@@ -205,6 +213,7 @@ body {
     display:inline-block;
     margin-top: 10px;
     margin-bottom: 10px;
+    text-align: right;
 }
 
 .icon_container {
@@ -798,6 +807,7 @@ body {
     background: linear-gradient(0deg, rgba(233,228,215,0) 20%, rgba(102,100,100,0.7618756120612308) 85%);
     background: linear-gradient(0deg, rgba(233,228,215,0) 20%, rgba(62,170,186,0.7826039033777574) 85%);
     animation: dynamic-back 2s infinite alternate;
+    transition: opacity 0.75s ease-in-out;
 }
 
 @keyframes dynamic-back {

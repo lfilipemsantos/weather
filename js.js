@@ -600,7 +600,7 @@ function build_next_days(data) {
 
 
         row.classList.add('day_row');
-        date.textContent = data[i]["dataPrev"].split("T",1)[0];
+        date.textContent = data[i]["dataPrev"].split("T",1)[0].split("-",3)[2] + "/" + data[i]["dataPrev"].split("T",1)[0].split("-",3)[1];
         date.classList.add("date_prev")
         max.textContent = Math.round(data[i]["tMax"]) + "ºC";
         max.classList.add("max")
@@ -616,9 +616,9 @@ function build_next_days(data) {
         temp_container.appendChild(min);
         row.append(temp_container);
         document.getElementById(inner_id).appendChild(row);
-        hr = document.createElement('hr');
-        hr.classList.add("nd_divider");
-        document.getElementById(inner_id).appendChild(hr);
+        //hr = document.createElement('hr');
+        //hr.classList.add("nd_divider");
+        //document.getElementById(inner_id).appendChild(hr);
     }
 }
 

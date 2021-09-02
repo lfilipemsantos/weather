@@ -368,15 +368,26 @@
             var prevScrollpos = window.pageYOffset;
             window.onscroll = function() {
                 var currentScrollPos = window.pageYOffset;
-                //console.log(prevScrollpos);
+                console.log(prevScrollpos);
                 if (prevScrollpos > currentScrollPos || prevScrollpos < 120) {
                     document.getElementById("bottom-options").style.bottom = "0";
                 } 
                 else {
                     document.getElementById("bottom-options").style.bottom = "-80px";
                 }
+
+                if (currentScrollPos > 150) {
+                    document.getElementById("dynamic_background").style.opacity = 0.5;
+                    document.getElementById("dynamic_background").style.minHeight = "80%";
+                }
+                else {
+                    document.getElementById("dynamic_background").style.opacity = 1;
+                    document.getElementById("dynamic_background").style.minHeight = "50%";
+                }
                 prevScrollpos = currentScrollPos;
                 }
+
+                
         </script>
     </body>
 </html>
