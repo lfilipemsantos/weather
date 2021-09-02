@@ -233,6 +233,7 @@ function switch_tab(id) {
         document.getElementById("settings_icon").src = settings_icon;
         var fav_icon = document.getElementById("favorites_icon").src.replace("is_","not_");
         document.getElementById("favorites_icon").src = fav_icon;
+        document.getElementById("dynamic_background").style.display = "block";
     }
     else if(id=="settings-tab") {
         show_top_settings();
@@ -242,6 +243,7 @@ function switch_tab(id) {
         document.getElementById("settings_icon").src = settings_icon;
         var fav_icon = document.getElementById("favorites_icon").src.replace("is_","not_");
         document.getElementById("favorites_icon").src = fav_icon;
+        document.getElementById("dynamic_background").style.display = "none";
     }
     else if(id=="favorites-tab") {
         clear_rows()
@@ -252,10 +254,12 @@ function switch_tab(id) {
         document.getElementById("settings_icon").src = settings_icon;
         var fav_icon = document.getElementById("favorites_icon").src.replace("not_","is_");
         document.getElementById("favorites_icon").src = fav_icon;
+        document.getElementById("dynamic_background").style.display = "none";
     }
     else if(id=="location-tab") {
         document.getElementById("location").focus();
         hide_bottom();
+        document.getElementById("dynamic_background").style.display = "none";
     }
     
     setTimeout(() => {  document.getElementById(id).style.display = "block"; }, 400);
@@ -710,6 +714,7 @@ function switch_theme(id) {
 
         var fav = document.getElementById("fav_icon");
         fav.src = fav.src.replace("w.svg", "b.svg");
+        
         var refresh = document.getElementById("refresh_icon");
         refresh.src = refresh.src.replace("w.svg", "b.svg");
 
