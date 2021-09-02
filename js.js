@@ -328,7 +328,7 @@ function get_data(local_id) {
             if(in_favorites(local_id)){
                 document.getElementById("fav_icon_container").setAttribute("onclick", "rem_favorite('" + local_id + "')")
                 const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-                if (localStorage["theme"]=="escuro" || userPrefersDark) {
+                if (localStorage["theme"]=="escuro") {
                     var fav = document.getElementById("fav_icon");
                     fav.src = fav.src = "is_fav_w.svg";
                 }

@@ -791,21 +791,20 @@ body {
 
 #dynamic_background {
     width: 100%;
-    height: 25%;
+    height: 50%;
     position: absolute;
     top:0;
     z-index: -1;
     background: linear-gradient(0deg, rgba(233,228,215,0) 0%, rgba(102,100,100,0.7618756120612308) 84%);
-    background: linear-gradient(0deg, rgba(233,228,215,0) 10%, rgba(62,170,186,0.6722397577194941) 74%, rgba(215,167,17,0.7880196023721988) 100%);
-    background-position: top;
-    animation: dynamic-back 2s infinite alternate;
+    /*background: linear-gradient(0deg, rgba(233,228,215,0) 19%, rgba(62,170,186,0.6722397577194941) 74%, rgba(215,167,17,0.7880196023721988) 100%);    background-position: top;
+    */animation: dynamic-back 2s infinite alternate;
 }
 
 @keyframes dynamic-back {
     0% {
-        height: 30%;
+        height: 65%;
     }
     100% {
-        height: 35%;
+        height: 70%;
     }
 }
