@@ -166,7 +166,7 @@ body {
 }
 
 .day_row{
-    width: 80%;
+    width: 90%;
     max-width: 400px;
     height: 60px;
     /*background-color: rgb(50, 50, 50);*/
@@ -195,7 +195,7 @@ body {
 }
 
 .date_container {
-    width: 40%;
+    width: 50%;
     display: inline-block;
 }
 
@@ -808,6 +808,7 @@ body {
     background: linear-gradient(0deg, rgba(233,228,215,0) 20%, rgba(62,170,186,0.7826039033777574) 85%);
     animation: dynamic-back 2s infinite alternate;
     transition: opacity 0.75s ease-in-out;
+    opacity: 0.8;
 }
 
 @keyframes dynamic-back {
