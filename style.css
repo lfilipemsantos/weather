@@ -792,7 +792,7 @@ body {
 #dynamic_background {
     width: 100%;
     height: 50%;
-    position: absolute;
+    position: fixed;
     top:0;
     z-index: -1;
     background: linear-gradient(0deg, rgba(233,228,215,0) 20%, rgba(102,100,100,0.7618756120612308) 85%);
