@@ -811,8 +811,8 @@ body {
     position: fixed;
     top:0;
     z-index: -1;
-    background: linear-gradient(0deg, rgba(233,228,215,0) 20%, rgba(102,100,100,0.7618756120612308) 85%);
-    /*background: linear-gradient(0deg, rgba(233,228,215,0) 20%, rgba(62,170,186,0.7826039033777574) 100%);*/
+    background: linear-gradient(0deg, rgba(233,228,215,0) 20%, rgba(102,100,100,0.7618756120612308) 100%);
+    background: linear-gradient(0deg, rgba(233,228,215,0) 20%, rgba(62,170,186,0.7826039033777574) 100%);
     animation: dynamic-back 2s infinite alternate;
     transition: opacity 0.75s ease-in-out;
     opacity: 0.8;
