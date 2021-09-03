@@ -660,7 +660,7 @@ function switch_theme(id) {
         document.getElementById("location").style.borderBottom="1px solid rgb(100, 100, 100)";
         document.getElementById("close_icon").src = "close_w.svg";
         document.getElementById("search_icon").src = "search_w.svg";
-        document.getElementById("bottom-options").style.backgroundColor = "rgb(25, 25, 25)";
+        document.getElementById("bottom-options").style.backgroundColor = "rgb(15, 15, 15)";
         document.getElementById("fav-notification-inner").style.backgroundColor = "rgb(40, 40, 40)";
         document.getElementById("back_button").style.backgroundColor = "rgb(61, 61, 61)";
         hr = document.getElementsByClassName("row-divider");
