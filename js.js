@@ -1042,7 +1042,7 @@ function show_middle_settings(setting) {
 }
 
 function show_bottom_settings(setting) {
-    middles = document.getElementsByClassName("middle-setting");
+    middles = document.getElementsByClassName("top-setting");
     for (i=0; i<middles.length; i++) {
         middles[i].style.display = "none"
     }
@@ -1050,6 +1050,8 @@ function show_bottom_settings(setting) {
     for (i=0; i<bottoms.length; i++) {
         bottoms[i].style.display = "block"
     }
+    back_button = document.getElementById("back_button");
+    back_button.style.display = "block"
 }
 
 function reset_settings() {

@@ -201,15 +201,25 @@
             <div id="back_button" onclick="show_top_settings()">
                 Voltar
             </div>
-            <div class="setting top-setting" onclick="show_middle_settings('personalizacao')">
-                <h3>Personalização</h3>
+            <div class="setting top-setting personalizacao" onclick="show_bottom_settings('tema')">
+                <h3>Modo claro/escuro</h3>
                 <div>
-                    <small>Defina a cor do tema, e alterne entre modo claro e modo escuro.</small>
+                    <small>Escolha entre modo claro e escuro.</small>
                 </div>
                 <div class="setting-arrow">
                     >
                 </div>
             </div>
+            <div class="setting top-setting personalizacao" onclick="show_bottom_settings('destaque')">
+                <h3>Cor do tema</h3>
+                <div>
+                    <small>Informações sobre a aplicação.</small>
+                </div>
+                <div class="setting-arrow">
+                    >
+                </div>
+            </div>
+            
             <div class="setting top-setting ">
                 <h3>Favoritos</h3>
                 <div>
@@ -220,7 +230,7 @@
                 </div>
             </div>
             <div class="setting top-setting" onclick="reset_settings()">
-                <h3>Repôr definições</h3>
+                <h3>Repor definições</h3>
                 <div>
                     <small>Apagará todas as definições incluindo temas e locais favoritos.</small>
                 </div>
@@ -230,24 +240,6 @@
             </div>
             <div class="setting top-setting" onclick="show_middle_settings('sobre')">
                 <h3>Sobre</h3>
-                <div>
-                    <small>Informações sobre a aplicação.</small>
-                </div>
-                <div class="setting-arrow">
-                    >
-                </div>
-            </div>
-            <div class="setting middle-setting personalizacao" onclick="show_bottom_settings('tema')">
-                <h3>Modo claro/escuro</h3>
-                <div>
-                    <small>Escolha entre modo claro e escuro.</small>
-                </div>
-                <div class="setting-arrow">
-                    >
-                </div>
-            </div>
-            <div class="setting middle-setting personalizacao" onclick="show_bottom_settings('destaque')">
-                <h3>Cor do tema</h3>
                 <div>
                     <small>Informações sobre a aplicação.</small>
                 </div>
@@ -279,7 +271,7 @@
                 <div style="width: 90%; margin-left: auto; margin-right: auto;margin-top: 15px;">
                     <h4>Cor de destaque</h4>
                 </div>
-                <div class="inner" id="cores" style="height: 50px; margin-top:10px;">
+                <div class="inner" id="cores" style="margin-top:10px; width: 100%;">
                     <div class="color_button" onclick="switch_colors('114, 197, 197')" style="background-color: rgb(114, 197, 197);">
                         <div style="width: 100%; height: 100%;"></div>
                     </div>
@@ -376,7 +368,7 @@
                     document.getElementById("bottom-options").style.bottom = "-80px";
                 }
 
-                if (currentScrollPos > 140) {
+                if (currentScrollPos > 120) {
                     document.getElementById("dynamic_background").style.opacity = 0.5;
                     //document.getElementById("dynamic_background").style.minHeight = "80%";
                 }
