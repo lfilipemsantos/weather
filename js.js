@@ -740,6 +740,7 @@ function switch_colors(color) {
     change_color(fav_rows,"backgroundColor",color, 0.2);
 
     localStorage['color_theme'] = color
+    show_action_notification("Cor de destaque alterada " + color)
 }
 
 
@@ -1059,5 +1060,18 @@ function reset_settings() {
     for (i=0; i<local_items.length; i++) {
         localStorage.removeItem(local_items[i]);
     }
+    show_action_notification("Definições repostas")
     init();
+}
+
+function show_action_notification(text_content) {
+    
+    document.getElementById("fav-notification").children[0].textContent = text_content;
+    document.getElementById("fav-notification").style.top="20px"
+    setTimeout(
+        function() {
+            document.getElementById("fav-notification").style.top="-90px"
+        },
+        2000
+    );
 }
