@@ -183,7 +183,7 @@ function init() {
     }
     document.getElementById("home-button").classList.add("selected");
     if(localStorage["color_theme"]) {
-        switch_colors(localStorage["color_theme"]);
+        switch_colors(localStorage["color_theme"], false);
         //document.getElementById("home-button").style.backgroundColor = "rgba(" + localStorage["color_theme"] + ", " + 0.5 + ")";
     }
 
@@ -506,7 +506,7 @@ function build_rows(days) {
     }
     
     if(localStorage["color_theme"]) {
-        switch_colors(localStorage["color_theme"]);
+        switch_colors(localStorage["color_theme"], false);
         //document.getElementById("today").style.backgroundColor = "rgba(" + localStorage["color_theme"] + ", " + 0.5 + ")";
     }
 }
@@ -727,20 +727,22 @@ function switch_theme(id) {
 }
 
 
-function switch_colors(color) {
+function switch_colors(color, notification) {
     tables = document.getElementsByClassName("content_table");
     //rows = document.getElementsByClassName("day_row");
     //change_color(rows,"backgroundColor",color, 0.2);
     //rows = document.getElementsByClassName("location-li");
     //change_color(rows,"backgroundColor",color, 0.5);
     //document.getElementById("location").style.backgroundColor = "rgba(" + color + ", 0.5)";
-    document.getElementById("apply-color-button").style.backgroundColor = "rgba(" + color + ", 0.1)";
+    //document.getElementById("apply-color-button").style.backgroundColor = "rgba(" + color + ", 0.1)";
     
     fav_rows = document.getElementsByClassName("fav_row");
     change_color(fav_rows,"backgroundColor",color, 0.2);
 
     localStorage['color_theme'] = color
-    show_action_notification("Cor de destaque alterada " + color)
+    if (notification){
+        show_action_notification("Cor de destaque alterada")
+    }
 }
 
 
@@ -777,7 +779,7 @@ function set_rgb() {
         }
     }
     console.log(red);
-    switch_colors(red + "," + green + "," + blue)
+    switch_colors(red + "," + green + "," + blue, true)
 }
 
 
@@ -947,7 +949,7 @@ function build_favorites() {
         document.getElementById("favorites-tab").appendChild(no_fav_div);
         
     }
-    switch_colors(localStorage['color_theme'])
+    switch_colors(localStorage['color_theme'], false)
 }
 
 function get_location_name(id) {
@@ -1065,7 +1067,6 @@ function reset_settings() {
 }
 
 function show_action_notification(text_content) {
-    
     document.getElementById("fav-notification").children[0].textContent = text_content;
     document.getElementById("fav-notification").style.top="20px"
     setTimeout(
