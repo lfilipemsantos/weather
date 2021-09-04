@@ -98,7 +98,7 @@ body {
 
 .rows {
     margin-top: 20px;
-    height: 180px;
+    height: 160px;
     width: 100%;
     max-width: 10000px;
     margin-left: auto;
@@ -258,7 +258,6 @@ body {
 
 #tomorrow_row {
     display: block;
-    height: 200px;
 }
 
 #table_tomorrow {
@@ -826,3 +825,39 @@ body {
         height: 90%;
     }
 }
+
+@media (pointer: fine) {
+    .rows::-webkit-scrollbar:horizontal {
+        display: block;
+        height: 10px;
+        margin-top: -30px
+    }
+
+    rows::-webkit-scrollbar-button:horizontal {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    /*.rows::-webkit-scrollbar-button:single-button:horizontal:decrement {
+        border-color: transparent rgb(202, 202, 202) transparent transparent;
+    }
+    
+    .rows::-webkit-scrollbar-button:single-button:horizontal:decrement:hover {
+        border-color: transparent gray transparent transparent;
+    }
+    
+    .rows::-webkit-scrollbar-button:single-button:horizontal:increment {
+        border-color: transparent transparent transparent rgb(202, 202, 202);;
+    }
+    
+    .rows::-webkit-scrollbar-button:single-button:horizontal:increment:hover {
+        border-color: transparent transparent transparent gray;
+    }*/
+    .rows::-webkit-scrollbar-thumb {
+        background-color: rgb(202, 202, 202, 0.5);
+        height: 10px;
+        border-radius: 20px;
+    }
+    .rows::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(136, 136, 136, 0.5);
+    }
+  }
