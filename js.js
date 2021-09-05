@@ -73,6 +73,7 @@ function display_notification() {
 }
 
 function isIOSDevice(){
+    console.log(navigator.userAgent)
     return navigator.userAgent.toLowerCase().indexOf('safari/') > -1;
 }
 
@@ -152,10 +153,10 @@ function init() {
     //Check if device is iOS (notifications do not work on iOS)
     if (isIOSDevice()) {
         console.log('This is a IOS device');
-    } else {
-        request_notification();
+        //request_notification();
         getLocation();
         //display_notification();
+    } else {
     }
 
     build_locations(locations);
@@ -223,7 +224,7 @@ function switch_tab(id) {
         if(tabs[i]!=id){
             document.getElementById(tabs[i]).classList.add("out");
             setTimeout(() => { document.getElementById(tabs[i]).style.display = "none"; document.getElementById(tabs[i]).classList.remove("out");
-            if(id=="location-tab"){show_search();}else{hide_search()} }, 150);
+            }, 150);
         }
     }
     if(id=="home-tab") {
@@ -270,15 +271,6 @@ function switch_tab(id) {
 
 
     return;
-}
-
-
-function show_search() {
-    document.getElementById("hero_div").style.display = "block";
-}
-
-function hide_search() {
-    document.getElementById("hero_div").style.display = "none";
 }
 
 
