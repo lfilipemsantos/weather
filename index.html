@@ -23,15 +23,15 @@
             <div id="fav-notification-inner"></div>
         </div>
 
-        <div id="hero_div" style="display: none;">
+        <div class="rows" id="location-tab">
+            <div onclick="get_data(localStorage['nearest_location'])" style="width:max-content; margin-left: auto; margin-right: auto; text-align: center; margin-top: 30px; background-color: rgba(169, 169, 169, 0.5); height: 40px; border-radius: 11px;">
+                <p style="line-height: 40px; width: max-content; margin-left: auto; margin-right: auto; padding-left: 15px; padding-right: 15px;">Usar a minha localização atual</p>
+            </div>
+            <div style="text-align: center; margin-top: 30px;">
+                <p>OU</p>
+            </div>
             <div id="search_container">
                 <input autocomplete="off" id="location" type="text" onkeyup="search_location()" placeholder="Pesquisar...">
-            </div>
-        </div>
-
-        <div class="rows" id="location-tab">
-            <div onclick="get_data(localStorage['nearest_location'])" style="width:100%; text-align: center; text-decoration: underline;">
-                <small>Usar a minha localização atual</small>
             </div>
             <div id="time_options">
                 <div id="inner_time_options">
