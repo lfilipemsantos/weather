@@ -7,13 +7,18 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Biotif';
+    src: url('fonts/Biotif-SemiBold.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
 * {
     margin: 0;
     padding: 0;
     border: 0;
     outline: 0;
     vertical-align: middle;
-    font-family: "Open Sans" !important;
+    font-family: 'Biotif', sans-serif;
     -webkit-tap-highlight-color: transparent;
 }
 
