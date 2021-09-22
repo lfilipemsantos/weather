@@ -11,6 +11,14 @@
     font-family: 'Biotif';
     src: url('fonts/Biotif-SemiBold.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
+@font-face {
+    font-family: 'Biotif Light';
+    src: url('fonts/Biotif-Light.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+@font-face {
+    font-family: 'Biotif Regular';
+    src: url('fonts/Biotif-Regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
 
 * {
     margin: 0;
@@ -223,6 +231,10 @@ body {
     text-align: right;
 }
 
+.temp_container > .min {
+    opacity: 0.5;
+}
+
 .icon_container {
     width: 30%;
     margin:0;
@@ -261,6 +273,9 @@ body {
 
 #table_today {
     display: block;
+    margin-top: 90px;
+    height:350px;
+    text-align: center;
 }
 
 #tomorrow_row {
@@ -537,6 +552,23 @@ body {
         -ms-user-select: none; /* Internet Explorer/Edge */
         user-select: none;
     }
+}
+
+#location-date-container {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+#location-text {
+    line-height: 1;
+    font-family: 'Biotif Regular', sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+#date-text {
+    font-family: 'Biotif Light', sans-serif;
+    font-size: 0.9em;
 }
 
 .fav_row {
@@ -819,8 +851,8 @@ body {
     z-index: -1;
     background: linear-gradient(0deg, rgba(233,228,215,0) 20%, rgba(102,100,100,0.7618756120612308) 100%);
     background: linear-gradient(0deg, rgba(233,228,215,0) 20%, rgba(62,170,186,0.7826039033777574) 100%);
-    /*animation: dynamic-back 2s infinite alternate;
     transition: opacity 0.75s ease-in-out;
+    /*animation: dynamic-back 2s infinite alternate;
     opacity: 0.8;*/
 }
 

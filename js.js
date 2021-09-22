@@ -411,7 +411,7 @@ function build_table(current_day, current_hour) {
     console.log(current_hour)
     if(current_hour) {
         console.log(weather_types[0][1])
-        document.getElementById("table_temp").textContent = parseInt(current_hour["tMed"]) + "º";
+        document.getElementById("table_temp").textContent = parseInt(current_hour["tMed"]) + "";
         document.getElementById("weather-info-text").textContent = weather_types[0][current_hour["idTipoTempo"]]["PT"];
         text = document.getElementsByClassName("table-text")
         document.getElementById("text-iUv").textContent = Math.round(current_day["iUv"]);
@@ -474,6 +474,19 @@ function build_rows(days) {
             var weather_icon = document.createElement('img');
             weather_icon.setAttribute("class", "weather_icon");
             weather_icon.setAttribute("alt", "weather_icon");
+
+
+            if(i==0 && inner_id == "innerToday") {
+                if (parseInt(hour.split(":"))<6 || parseInt(hour.split(":"))>21) {
+                    console.log("is_night")
+                    document.getElementById("current-weather").src = "icons/n" + parseInt(days[j][i]["idTipoTempo"]) + ".svg";
+                }
+                else {
+                    console.log("is_day")
+                    document.getElementById("current-weather").src = "icons/d" + parseInt(days[j][i]["idTipoTempo"]) + ".svg";
+                }
+            }
+
             if (parseInt(hour.split(":"))<6 || parseInt(hour.split(":"))>21) {
                 weather_icon.src = "icons/n" + parseInt(days[j][i]["idTipoTempo"]) + ".svg";
             }
@@ -585,6 +598,10 @@ function build_next_days(data) {
 
         var date_day = new Date(data[i]["dataPrev"].split("T",1)[0]);
         week_day.textContent = dict[date_day.getDay()];
+        if(i==0) {
+            console.log(dict[date_day.getDay()]);
+            document.getElementById("date-text").textContent = dict[date_day.getDay()]
+        }
         
         weather_icon.setAttribute("class", "nd_weather_icon");
         weather_icon.setAttribute("alt", "weather_icon");
@@ -594,9 +611,9 @@ function build_next_days(data) {
         row.classList.add('day_row');
         date.textContent = data[i]["dataPrev"].split("T",1)[0].split("-",3)[2] + "/" + data[i]["dataPrev"].split("T",1)[0].split("-",3)[1];
         date.classList.add("date_prev")
-        max.textContent = Math.round(data[i]["tMax"]) + "ºC";
+        max.textContent = Math.round(data[i]["tMax"]) + "º";
         max.classList.add("max")
-        min.textContent = Math.round(data[i]["tMin"]) + "ºC";
+        min.textContent = Math.round(data[i]["tMin"]) + "º";
         min.classList.add("min")
 
         date_container.appendChild(date);
@@ -669,8 +686,8 @@ function switch_theme(id) {
         var fav = document.getElementById("fav_icon");
         fav.src = fav.src.replace("b.svg", "w.svg");
 
-        var refresh = document.getElementById("refresh_icon");
-        refresh.src = refresh.src.replace("b.svg", "w.svg");
+        //var refresh = document.getElementById("refresh_icon");
+        //refresh.src = refresh.src.replace("b.svg", "w.svg");
 
         for(i=0; i<buttons.length; i++) {
             var button = document.getElementById(buttons[i] + "_icon")
@@ -707,8 +724,8 @@ function switch_theme(id) {
         var fav = document.getElementById("fav_icon");
         fav.src = fav.src.replace("w.svg", "b.svg");
         
-        var refresh = document.getElementById("refresh_icon");
-        refresh.src = refresh.src.replace("w.svg", "b.svg");
+        //var refresh = document.getElementById("refresh_icon");
+        //refresh.src = refresh.src.replace("w.svg", "b.svg");
 
         for(i=0; i<buttons.length; i++) {
             var button = document.getElementById(buttons[i] + "_icon")
