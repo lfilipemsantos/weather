@@ -243,7 +243,7 @@ body {
 .nd_weather_icon{
     height: 30px;
     width: 100%;
-    filter: contrast(90%) saturate(190%);
+    filter: saturate(190%);
 }
 
 .temp_container > p {
@@ -255,7 +255,7 @@ body {
 }
 
 .inner {
-    width:max-content;
+    width: max-content;
     padding-left: 10px;
     padding-right: 10px;
     margin-left: auto;
@@ -394,7 +394,7 @@ body {
     width: 100%;
     margin-top: 6px;
     margin-bottom: 15px;
-    filter: contrast(90%) saturate(190%);
+    filter: saturate(190%);
 }
 
 
