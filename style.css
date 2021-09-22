@@ -113,7 +113,7 @@ body {
 
 .rows {
     margin-top: 20px;
-    height: 160px;
+    height: 140px;
     width: 100%;
     max-width: 10000px;
     margin-left: auto;
@@ -124,7 +124,7 @@ body {
 .row {
     width: 65px;
     /*background-color:rgba(114, 197, 197, 0.2);*/
-    height: 133px;
+    height: 120px;
     margin-left: 5px;
     margin-right: 5px;
     border-radius: 5px;
@@ -273,8 +273,8 @@ body {
 
 #table_today {
     display: block;
-    margin-top: 150px;
-    height:350px;
+    margin-top: 110px;
+    height: 400px;
     text-align: center;
 }
 
@@ -316,6 +316,7 @@ body {
     text-align: center;
     line-height: 18px;
     margin-bottom: 10px;
+    font-family: 'Biotif Regular', sans-serif;
 }
 
 #time_options {
@@ -391,8 +392,8 @@ body {
 .weather_icon {
     height: 30px;
     width: 100%;
-    margin-top:20px;
-    margin-bottom:20px;
+    margin-top: 6px;
+    margin-bottom: 15px;
     filter: contrast(90%) saturate(190%);
 }
 
