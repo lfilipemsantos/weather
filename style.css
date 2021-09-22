@@ -559,6 +559,7 @@ body {
     position: absolute;
     top: 30px;
     left: 20px;
+    max-width: 90%;
 }
 #location-text {
     line-height: 1;
@@ -569,7 +570,7 @@ body {
 }
 #date-text {
     font-family: 'Biotif Light', sans-serif;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 .fav_row {
