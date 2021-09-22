@@ -273,7 +273,7 @@ body {
 
 #table_today {
     display: block;
-    margin-top: 90px;
+    margin-top: 150px;
     height:350px;
     text-align: center;
 }
@@ -849,8 +849,8 @@ body {
     position: fixed;
     top:0;
     z-index: -1;
-    background: linear-gradient(0deg, rgba(233,228,215,0) 20%, rgba(102,100,100,0.7618756120612308) 100%);
-    background: linear-gradient(0deg, rgba(233,228,215,0) 20%, rgba(62,170,186,0.7826039033777574) 100%);
+    /*background: linear-gradient(0deg, rgba(233,228,215,0) 20%, rgba(102,100,100,0.7618756120612308) 100%);
+    background: linear-gradient(0deg, rgba(5, 5, 5, 1) 20%, rgba(62,170,186,1) 100%);*/
     transition: opacity 0.75s ease-in-out;
     /*animation: dynamic-back 2s infinite alternate;
     opacity: 0.8;*/
