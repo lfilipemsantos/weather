@@ -471,9 +471,10 @@ function build_rows(days) {
             var row = document.createElement('div');
             var temp = document.createElement('p');
             var hour_text = document.createElement('p');
-            var weather_icon = document.createElement('img');
+            var weather_icon = document.createElement('object');
             weather_icon.setAttribute("class", "weather_icon");
             weather_icon.setAttribute("alt", "weather_icon");
+            weather_icon.setAttribute("type", "image/svg+xml");
 
 
             if(i==0 && inner_id == "innerToday") {
@@ -488,10 +489,10 @@ function build_rows(days) {
             }
 
             if (parseInt(hour.split(":"))<6 || parseInt(hour.split(":"))>21) {
-                weather_icon.src = "icons/n" + parseInt(days[j][i]["idTipoTempo"]) + ".svg";
+                weather_icon.data = "icons/n" + parseInt(days[j][i]["idTipoTempo"]) + ".svg";
             }
             else {
-                weather_icon.src = "icons/d" + parseInt(days[j][i]["idTipoTempo"]) + ".svg";
+                weather_icon.data = "icons/d" + parseInt(days[j][i]["idTipoTempo"]) + ".svg";
             }
             temp.setAttribute('id', i);
             temp.classList.add("hour_temp");
