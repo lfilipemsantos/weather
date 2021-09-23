@@ -479,11 +479,11 @@ function build_rows(days) {
             if(i==0 && inner_id == "innerToday") {
                 if (parseInt(hour.split(":"))<6 || parseInt(hour.split(":"))>21) {
                     console.log("is_night")
-                    document.getElementById("current-weather").src = "icons/n" + parseInt(days[j][i]["idTipoTempo"]) + ".svg";
+                    document.getElementById("current-weather").data = "icons/n" + parseInt(days[j][i]["idTipoTempo"]) + ".svg";
                 }
                 else {
                     console.log("is_day")
-                    document.getElementById("current-weather").src = "icons/d" + parseInt(days[j][i]["idTipoTempo"]) + ".svg";
+                    document.getElementById("current-weather").data = "icons/d" + parseInt(days[j][i]["idTipoTempo"]) + ".svg";
                 }
             }
 
