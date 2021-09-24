@@ -389,9 +389,15 @@ body {
     padding-right: 0px;
 }
 
+.weather_icon_container {
+    width: min-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 .weather_icon {
     height: 40px;
-    width: 100%;
     margin-top: 6px;
     margin-bottom: 15px;
     filter: saturate(190%);

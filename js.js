@@ -235,6 +235,7 @@ function switch_tab(id) {
         var fav_icon = document.getElementById("favorites_icon").src.replace("is_","not_");
         document.getElementById("favorites_icon").src = fav_icon;
         document.getElementById("dynamic_background").style.display = "block";
+        document.getElementById("home-button").setAttribute("onclick", "window.location.reload()")
     }
     else if(id=="settings-tab") {
         show_top_settings();
@@ -245,6 +246,7 @@ function switch_tab(id) {
         var fav_icon = document.getElementById("favorites_icon").src.replace("is_","not_");
         document.getElementById("favorites_icon").src = fav_icon;
         document.getElementById("dynamic_background").style.display = "none";
+        document.getElementById("home-button").setAttribute("onclick", "switch_tab('home-tab')")
     }
     else if(id=="favorites-tab") {
         clear_rows()
@@ -256,11 +258,13 @@ function switch_tab(id) {
         var fav_icon = document.getElementById("favorites_icon").src.replace("not_","is_");
         document.getElementById("favorites_icon").src = fav_icon;
         document.getElementById("dynamic_background").style.display = "none";
+        document.getElementById("home-button").setAttribute("onClick", "switch_tab('home-tab')")
     }
     else if(id=="location-tab") {
         document.getElementById("location").focus();
         hide_bottom();
         document.getElementById("dynamic_background").style.display = "none";
+        document.getElementById("home-button").setAttribute("onClick", "switch_tab('home-tab')")
     }
     
     setTimeout(() => {  document.getElementById(id).style.display = "block"; }, 400);
@@ -472,9 +476,11 @@ function build_rows(days) {
             var temp = document.createElement('p');
             var hour_text = document.createElement('p');
             var weather_icon = document.createElement('object');
+            var weather_icon_container = document.createElement('div');
             weather_icon.setAttribute("class", "weather_icon");
             weather_icon.setAttribute("alt", "weather_icon");
             weather_icon.setAttribute("type", "image/svg+xml");
+            weather_icon_container.setAttribute("class", "weather_icon_container");
 
 
             if(i==0 && inner_id == "innerToday") {
@@ -501,7 +507,8 @@ function build_rows(days) {
             hour_text.textContent = hour;
             hour_text.classList.add("hour_time");
             row.appendChild(temp);
-            row.appendChild(weather_icon);
+            weather_icon_container.appendChild(weather_icon);
+            row.appendChild(weather_icon_container);
             row.appendChild(hour_text);
             document.getElementById(inner_id).appendChild(row);
 
