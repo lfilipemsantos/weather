@@ -3,18 +3,17 @@ var urlsToCache = [
   '/',
   '/style.css',
   '/js.js',
-  '/icons',
-  '/fonts'
+  '/fonts/Biotif-Regular.ttf',
+  '/fonts/Biotif-Regular.ttf*'
 ];
 
 self.addEventListener('install', function(event) {
   // Perform install steps
   event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then(function(cache) {
-        console.log('Opened cache');
-        return cache.addAll(urlsToCache);
-      })
+    caches.open(CACHE_NAME).then(function(cache) {
+      console.log('Opened cache');
+      return cache.addAll(urlsToCache);
+    })
   );
 });
 
