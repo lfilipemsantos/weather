@@ -4,7 +4,7 @@ var urlsToCache = [
   '/style.css',
   '/js.js',
   '/fonts/Biotif-Regular.ttf',
-  '/fonts/Biotif-Regular.ttf*'
+  '/fonts/Biotif-Regular.ttf'
 ];
 
 self.addEventListener('install', function(event) {
