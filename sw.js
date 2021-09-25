@@ -2,9 +2,9 @@ var CACHE_NAME = 'weather_cache';
 var urlsToCache = [
   '/',
   '/style.css',
-  '/js.js',
-  '/fonts/Biotif-Regular.ttf',
-  '/fonts/Biotif-Regular.ttf'
+  '/js.js'//,
+  //'/fonts/Biotif-Regular.ttf',
+  //'/fonts/Biotif-Regular.ttf'
 ];
 
 self.addEventListener('install', function(event) {
