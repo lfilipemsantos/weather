@@ -475,11 +475,11 @@ function build_rows(days) {
             var row = document.createElement('div');
             var temp = document.createElement('p');
             var hour_text = document.createElement('p');
-            var weather_icon = document.createElement('object');
+            var weather_icon = document.createElement('img');
             var weather_icon_container = document.createElement('div');
             weather_icon.setAttribute("class", "weather_icon");
             weather_icon.setAttribute("alt", "weather_icon");
-            weather_icon.setAttribute("type", "image/svg+xml");
+            //weather_icon.setAttribute("type", "image/svg+xml");
             weather_icon_container.setAttribute("class", "weather_icon_container");
 
 
@@ -495,10 +495,10 @@ function build_rows(days) {
             }
 
             if (parseInt(hour.split(":"))<6 || parseInt(hour.split(":"))>21) {
-                weather_icon.data = "icons/n" + parseInt(days[j][i]["idTipoTempo"]) + ".svg";
+                weather_icon.src = "icons_png/n" + parseInt(days[j][i]["idTipoTempo"]) + ".png";
             }
             else {
-                weather_icon.data = "icons/d" + parseInt(days[j][i]["idTipoTempo"]) + ".svg";
+                weather_icon.src = "icons_png/d" + parseInt(days[j][i]["idTipoTempo"]) + ".png";
             }
             temp.setAttribute('id', i);
             temp.classList.add("hour_temp");
@@ -613,7 +613,7 @@ function build_next_days(data) {
         
         weather_icon.setAttribute("class", "nd_weather_icon");
         weather_icon.setAttribute("alt", "weather_icon");
-        weather_icon.src = "icons/d" + parseInt(data[i]["idTipoTempo"]) + ".svg";
+        weather_icon.src = "icons_png/d" + parseInt(data[i]["idTipoTempo"]) + ".png";
 
 
         row.classList.add('day_row');
