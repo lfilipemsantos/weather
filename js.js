@@ -1026,10 +1026,10 @@ function set_current_temp(id) {
 
 function get_weather_icon(hour, num) {
     if(hour>21 || hour<6) {
-        return "icons/n" + num + ".svg"
+        return "icons_png/n" + num + ".png"
     }
     else {
-        return "icons/d" + num + ".svg"
+        return "icons_png/d" + num + ".png"
     }
 }
 
