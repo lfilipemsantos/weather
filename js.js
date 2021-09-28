@@ -484,7 +484,7 @@ function build_rows(days) {
 
 
             if(i==0 && inner_id == "innerToday") {
-                if (parseInt(hour.split(":"))<6 || parseInt(hour.split(":"))>21) {
+                if (parseInt(hour.split(":"))<6 || parseInt(hour.split(":"))>20) {
                     console.log("is_night")
                     document.getElementById("current-weather").data = "icons/n" + parseInt(days[j][i]["idTipoTempo"]) + ".svg";
                 }
@@ -494,7 +494,7 @@ function build_rows(days) {
                 }
             }
 
-            if (parseInt(hour.split(":"))<6 || parseInt(hour.split(":"))>21) {
+            if (parseInt(hour.split(":"))<6 || parseInt(hour.split(":"))>20) {
                 weather_icon.src = "icons_png/n" + parseInt(days[j][i]["idTipoTempo"]) + ".png";
             }
             else {
@@ -598,7 +598,7 @@ function build_next_days(data) {
         icon_container.classList.add("icon_container");
         var max = document.createElement('p');
         var min = document.createElement('p');
-        var date = document.createElement('p');
+        var date = document.createElement('small');
         var week_day = document.createElement('small');
         var weather_icon = document.createElement('img');
         temp_container.classList.add("temp_container");
@@ -1025,7 +1025,7 @@ function set_current_temp(id) {
 }
 
 function get_weather_icon(hour, num) {
-    if(hour>21 || hour<6) {
+    if(hour>20 || hour<6) {
         return "icons_png/n" + num + ".png"
     }
     else {
