@@ -413,7 +413,7 @@ body {
 
 #search_container {
     background-color: #191919;
-    height: 40px;
+    height: 50px;
     margin-left:auto;
     margin-right:auto;
     width: 90%;
@@ -429,21 +429,21 @@ body {
     width: 60px;
     text-align: center;
     cursor: pointer;
-    height: 40px;
+    height: 50px;
     border-radius: 4px;
 }
 
 #location {
     background-color: transparent;
     color: white;
-    height: 40px;
+    height: 50px;
     width: 80%;
     margin-left: 10px;
     text-align: left;
 }
 
 #location-list-container {
-    margin-top: 20px;
+    margin-top: 15px;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
