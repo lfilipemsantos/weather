@@ -397,17 +397,17 @@ function clear_rows() {
 
 function build_table(current_day, current_hour) {
     var uv_scale = {
-        0: "-7px",
-        1: "7px",
-        2: "21px",
-        3: "35px",
-        4: "49px",
-        5: "63px",
-        6: "77px",
-        7: "91px",
-        8: "105px",
-        9: "119px",
-        10: "133px"
+        0: "0%",
+        1: "10%",
+        2: "20%",
+        3: "30%",
+        4: "40%",
+        5: "50%",
+        6: "60%",
+        7: "70%",
+        8: "80%",
+        9: "90%",
+        10: "100%"
     }
 
 
@@ -422,8 +422,8 @@ function build_table(current_day, current_hour) {
         document.getElementById("uv-indicator").style.marginLeft = uv_scale[Math.round(current_day["iUv"])]
         document.getElementById("text-probabilidadePrecipita").textContent = Math.round(current_day["probabilidadePrecipita"]) + "%";
         document.getElementById("text-vento-dd").textContent = current_hour["ddVento"];
-        document.getElementById("text-vento-vv").textContent = current_hour["ffVento"];
-        document.getElementById("idFfxVento").textContent = wind_types[0][current_day["idFfxVento"]]["PT"];
+        document.getElementById("text-vento-vv").textContent = Math.round(current_hour["ffVento"]) + "km/h";
+        //document.getElementById("idFfxVento").textContent = wind_types[0][current_day["idFfxVento"]]["PT"];
     }
     else {
         text = document.getElementsByClassName("table-text-T")
@@ -433,7 +433,7 @@ function build_table(current_day, current_hour) {
         document.getElementById("text-tMax-T").textContent = Math.round(current_day["tMax"]) + "º";
         document.getElementById("text-tMin-T").textContent = Math.round(current_day["tMin"]) + "º";
         document.getElementById("text-vento-dd-T").textContent = current_day["ddVento"];
-        document.getElementById("text-vento-vv-T").textContent = current_day["ffVento"];
+        //document.getElementById("text-vento-vv-T").textContent = current_day["ffVento"];
         document.getElementById("idFfxVento-T").textContent = wind_types[0][current_day["idFfxVento"]]["PT"];
     }
     try {
@@ -466,9 +466,9 @@ function build_rows(days) {
             var inner_id = "innerTomorrow";
         }
         for(i=0;i<days[j].length;i++) {
-            var hr = document.createElement('hr');
+            /*var hr = document.createElement('hr');
             hr.classList.add("row-divider");
-            document.getElementById(inner_id).appendChild(hr);
+            document.getElementById(inner_id).appendChild(hr);*/
             var hour_split = days[j][i]["dataPrev"].split("T",2)[1].split(":");
             var hour = hour_split[0] + ":" + hour_split[1];
             
