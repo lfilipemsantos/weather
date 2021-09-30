@@ -25,15 +25,6 @@
         </div>
 
         <div class="rows" id="location-tab">
-            <div onclick="get_data(localStorage['nearest_location'])" style="width:max-content; margin-left: auto; margin-right: auto; text-align: center; cursor: pointer; margin-top: 30px; background-color: rgba(169, 169, 169, 0.5); height: 40px; border-radius: 8px;">
-                <p style="line-height: 40px; width: max-content; margin-left: auto; margin-right: auto; padding-left: 15px; padding-right: 15px;">Usar a minha localização atual</p>
-            </div>
-            <div style="text-align: center; margin-top: 30px;">
-                <p>OU</p>
-            </div>
-            <div id="search_container">
-                <input autocomplete="off" id="location" type="text" onkeyup="search_location()" placeholder="Pesquisar...">
-            </div>
             <div id="time_options">
                 <div id="inner_time_options">
                     <div class="button" id="close" onclick="get_data(localStorage['local_id'])" style="width:38px;border-radius: 50%;">
@@ -42,7 +33,16 @@
                 </div>
             </div>
             
-            <ul id="location-list"></ul>
+            <div id="search_container">
+                <div id="current-location-button" onclick="get_data(localStorage['nearest_location'])">
+                    <img id="" src="location_w.svg" alt="location icon" style="height: 20px; margin-left: 9px; margin-top: 9px;">
+                </div>
+                <input autocomplete="off" id="location" type="text" onkeyup="search_location()" placeholder="Pesquisar...">
+            </div>
+            
+            <div id="location-list-container">
+                <ul id="location-list"></ul>
+            </div>
         </div> 
 
         <div class="rows" id="favorites-tab" style="display: none;"></div> 

@@ -675,7 +675,6 @@ function switch_theme(id) {
         document.body.style.color = LIGHT;
         document.getElementById("location").style.color = LIGHT;
         document.getElementById("location").style.opacity="90%";
-        document.getElementById("location").style.borderBottom="1px solid rgb(100, 100, 100)";
         document.getElementById("close_icon").src = "close_w.svg";
         document.getElementById("search_icon").src = "search_w.svg";
         document.getElementById("bottom-options").style.backgroundColor = "rgb(15, 15, 15)";
@@ -686,10 +685,10 @@ function switch_theme(id) {
             hr[i].style.backgroundColor = LIGHT;
         }
 
-        li = document.getElementsByClassName("location-li");
+        /*li = document.getElementsByClassName("location-li");
         for(i = 0; i<li.length; i++) {
             li[i].style.backgroundColor = "rgba(150, 150, 150, 0.2)";
-        }
+        }*/
         
         
         var fav = document.getElementById("fav_icon");
@@ -710,7 +709,6 @@ function switch_theme(id) {
         document.body.style.color=DARK;
         document.getElementById("location").style.color=DARK;
         document.getElementById("location").style.opacity="90%";
-        document.getElementById("location").style.borderBottom="1px solid black";
         document.getElementById("close_icon").src = "close_b.svg";
         document.getElementById("search_icon").src = "search_b.svg";
         document.getElementById("bottom-options").style.backgroundColor = "rgb(236, 236, 236)";
@@ -721,10 +719,10 @@ function switch_theme(id) {
             hr[i].style.backgroundColor = DARK;
         }
 
-        li = document.getElementsByClassName("location-li");
+        /*li = document.getElementsByClassName("location-li");
         for(i = 0; i<li.length; i++) {
             li[i].style.backgroundColor = "rgba(206, 206, 206, 0.6)";
-        }
+        }*/
 
         widgets = document.getElementsByClassName("widget");
         for(i = 0; i<widgets.length; i++) {
