@@ -698,7 +698,7 @@ function switch_theme(id) {
         
         widgets = document.getElementsByClassName("widget");
         for(i = 0; i<widgets.length; i++) {
-            li[i].style.backgroundColor = "#191919";
+            widgets[i].style.backgroundColor = "#191919";
         }
         
         var fav = document.getElementById("fav_icon");
