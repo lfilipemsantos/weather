@@ -234,7 +234,6 @@ function switch_tab(id) {
         document.getElementById("settings_icon").src = settings_icon;
         var fav_icon = document.getElementById("favorites_icon").src.replace("is_","not_");
         document.getElementById("favorites_icon").src = fav_icon;
-        document.getElementById("dynamic_background").style.display = "block";
         document.getElementById("home-button").setAttribute("onclick", "window.location.reload()")
     }
     else if(id=="settings-tab") {
@@ -249,7 +248,7 @@ function switch_tab(id) {
         document.getElementById("home-button").setAttribute("onclick", "switch_tab('home-tab')")
     }
     else if(id=="favorites-tab") {
-        clear_rows()
+        clear_rows("favorites")
         build_favorites();
         var home_icon = document.getElementById("home_icon").src.replace("is_","not_");
         document.getElementById("home_icon").src = home_icon;
@@ -312,7 +311,7 @@ function get_data(local_id) {
         if (request.readyState == XMLHttpRequest.DONE) {
             data = request.response;
 
-            clear_rows();
+            clear_rows("home");
             
             var days = build_arrays(data, today_str, tomorrow_str)
             console.log(data);
@@ -384,8 +383,13 @@ function set_location_name(local_id) {
 }
 
 
-function clear_rows() {
-    var rows = ["innerToday", "innerTomorrow", "inner_next_days", "favorites-tab"];
+function clear_rows(tab) {
+    if (tab == "favorites") {
+        var rows = ["favorites-tab"];
+    }
+    else if (tab == "home") {
+        var rows = ["innerToday", "innerTomorrow", "inner_next_days"];
+    }
     for (i=0; i<rows.length; i++) {
         var row = document.getElementById(rows[i]);
         while (row.firstChild) {
@@ -410,11 +414,7 @@ function build_table(current_day, current_hour) {
         10: "100%"
     }
 
-
-    console.log(current_day)
-    console.log(current_hour)
     if(current_hour) {
-        console.log(weather_types[0][1])
         document.getElementById("table_temp").textContent = parseInt(current_hour["tMed"]) + "";
         document.getElementById("weather-info-text").textContent = weather_types[0][current_hour["idTipoTempo"]]["PT"];
         text = document.getElementsByClassName("table-text")
@@ -444,7 +444,6 @@ function build_table(current_day, current_hour) {
     }
     
     for (let i = 0; i < text.length; i++) {
-        console.log(text[i].id)
         if(text[i].id == "text-tMax") {
             text[i].textContent = "" + parseInt(current_day[text[i].id.replace("text-", "")]) + "º";
         }
@@ -485,11 +484,9 @@ function build_rows(days) {
 
             if(i==0 && inner_id == "innerToday") {
                 if (parseInt(hour.split(":"))<6 || parseInt(hour.split(":"))>20) {
-                    console.log("is_night")
                     document.getElementById("current-weather").data = "icons/n" + parseInt(days[j][i]["idTipoTempo"]) + ".svg";
                 }
                 else {
-                    console.log("is_day")
                     document.getElementById("current-weather").data = "icons/d" + parseInt(days[j][i]["idTipoTempo"]) + ".svg";
                 }
             }
@@ -800,7 +797,6 @@ function set_rgb() {
 
     for (let i = 0; i < color_values.length; i++) {
         if (!(is_in_range(parseInt(color_values[i])))) {
-            console.log(is_in_range(parseInt(color_values[i])))
             document.getElementById("color-warning").style.display = "block";
             setTimeout(
                 function() {
@@ -811,7 +807,6 @@ function set_rgb() {
             return;
         }
     }
-    console.log(red);
     switch_colors(red + "," + green + "," + blue, true)
 }
 
