@@ -227,6 +227,9 @@ function switch_tab(id) {
             }, 150);
         }
     }
+
+    indicator = document.getElementById("tab-indicator")
+
     if(id=="home-tab") {
         var home_icon = document.getElementById("home_icon").src.replace("not_","is_");
         document.getElementById("home_icon").src = home_icon;
@@ -235,6 +238,7 @@ function switch_tab(id) {
         var fav_icon = document.getElementById("favorites_icon").src.replace("is_","not_");
         document.getElementById("favorites_icon").src = fav_icon;
         document.getElementById("home-button").setAttribute("onclick", "window.location.reload()")
+        indicator.style.marginLeft = "0%"
     }
     else if(id=="settings-tab") {
         show_top_settings();
@@ -246,6 +250,7 @@ function switch_tab(id) {
         document.getElementById("favorites_icon").src = fav_icon;
         document.getElementById("dynamic_background").style.display = "none";
         document.getElementById("home-button").setAttribute("onclick", "switch_tab('home-tab')")
+        indicator.style.marginLeft = "75%"
     }
     else if(id=="favorites-tab") {
         clear_rows("favorites")
@@ -258,12 +263,14 @@ function switch_tab(id) {
         document.getElementById("favorites_icon").src = fav_icon;
         document.getElementById("dynamic_background").style.display = "none";
         document.getElementById("home-button").setAttribute("onClick", "switch_tab('home-tab')")
+        indicator.style.marginLeft = "50%"
     }
     else if(id=="location-tab") {
         document.getElementById("location").focus();
         //hide_bottom();
         document.getElementById("dynamic_background").style.display = "none";
         document.getElementById("home-button").setAttribute("onClick", "switch_tab('home-tab')")
+        indicator.style.marginLeft = "25%"
     }
     
     setTimeout(() => {  document.getElementById(id).style.display = "block"; }, 400);
