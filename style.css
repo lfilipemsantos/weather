@@ -510,8 +510,8 @@ body {
     content: "";
     display: block;
     height: 3px;
-    width: 25%;
-    margin-left: 50%;
+    width: 24%;
+    margin-left: 0%;
     background-color: rgb(42, 136, 165);
     position: absolute;
     top: 0;
@@ -716,7 +716,7 @@ body {
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 10px;
+    border-radius: 5px;
     max-width: 400px;
     position: relative;
 }
