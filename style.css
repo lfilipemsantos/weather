@@ -678,6 +678,10 @@ body {
     width: 13%;
 }
 
+.fav_info_container > small {
+    font-family: 'Biotif Light', sans-serif;
+}
+
 .fav_icon_container > img {
     height: 40px;
     margin-top: -0px;
@@ -731,6 +735,10 @@ body {
     width: 80%;
     margin:0;
     padding:0;
+}
+
+.setting > div > small{
+    font-family: 'Biotif Light', sans-serif;
 }
 
 .top-setting {
