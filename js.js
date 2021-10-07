@@ -428,6 +428,7 @@ function build_table(current_day, current_hour) {
         document.getElementById("text-iUv").textContent = Math.round(current_day["iUv"]);
         document.getElementById("uv-indicator").style.marginLeft = uv_scale[Math.round(current_day["iUv"])]
         document.getElementById("text-probabilidadePrecipita").textContent = Math.round(current_day["probabilidadePrecipita"]) + "%";
+        document.getElementById("text-temp").textContent = Math.round(current_day["tMin"]) + "º / " + Math.round(current_day["tMax"]) + "º";
         document.getElementById("text-vento-dd").textContent = current_hour["ddVento"];
         document.getElementById("text-vento-vv").textContent = Math.round(current_hour["ffVento"]) + "km/h";
         //document.getElementById("idFfxVento").textContent = wind_types[0][current_day["idFfxVento"]]["PT"];
@@ -437,8 +438,8 @@ function build_table(current_day, current_hour) {
         document.getElementById("text-iUv-T").textContent = Math.round(current_day["iUv"]);
         document.getElementById("uv-indicator-T").style.marginLeft = uv_scale[Math.round(current_day["iUv"])]
         document.getElementById("text-probabilidadePrecipita-T").textContent = Math.round(current_day["probabilidadePrecipita"]) + "%";
-        document.getElementById("text-tMax-T").textContent = Math.round(current_day["tMax"]) + "º";
-        document.getElementById("text-tMin-T").textContent = Math.round(current_day["tMin"]) + "º";
+        document.getElementById("text-temp-T").textContent = Math.round(current_day["tMin"]) + "º / " + Math.round(current_day["tMax"]) + "º";
+        //document.getElementById("text-tMin-T").textContent = Math.round(current_day["tMin"]) + "º";
         document.getElementById("text-vento-dd-T").textContent = current_day["ddVento"];
         //document.getElementById("text-vento-vv-T").textContent = current_day["ffVento"];
         document.getElementById("idFfxVento-T").textContent = wind_types[0][current_day["idFfxVento"]]["PT"];
@@ -452,10 +453,10 @@ function build_table(current_day, current_hour) {
     
     for (let i = 0; i < text.length; i++) {
         if(text[i].id == "text-tMax") {
-            text[i].textContent = "" + parseInt(current_day[text[i].id.replace("text-", "")]) + "º";
+            text[i].textContent = "" + parseInt(Math.round(current_day[text[i].id.replace("text-", "")])) + "º";
         }
         else if (text[i].id == "text-tMin"){
-            text[i].textContent = "" + parseInt(current_day[text[i].id.replace("text-", "")]) + "º";
+            text[i].textContent = "" + parseInt(Math.round(current_day[text[i].id.replace("text-", "")])) + "º";
         }
     }
     

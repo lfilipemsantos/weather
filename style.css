@@ -822,26 +822,20 @@ body {
 }
 
 @media screen and (min-width: 500px) {
-    .widgets-tomorrow {
+    .widgets {
         grid-template-columns: repeat(3, 140px);
     }
 }
 
-@media screen and (min-width: 1000px) {
-    .widgets-tomorrow {
-        grid-template-columns: repeat(6, 140px);
-    }
-}
-
-@media screen and (min-width: 650px) {
-    .widgets-today {
-        grid-template-columns: repeat(4, 140px);
+@media screen and (min-width: 850px) {
+    .widgets {
+        grid-template-columns: repeat(5, 140px);
     }
 }
 
 .widget {
-    width:120px;
-    height: 120px;
+    width: 120px;
+    height: 100px;
     display: inline-block;
     padding: 10px;
     border-radius: 8px;
@@ -851,7 +845,7 @@ body {
 
 .widget-title {
     font-family: 'Biotif Light', sans-serif;
-    margin-top: 15px;
+    margin-top: 5px;
     margin-bottom: 20px;
     width: 100%;
     text-align: center;
