@@ -1115,3 +1115,14 @@ function show_action_notification(text_content) {
         2000
     );
 }
+
+function switch_indicator(id) {
+    var indicators = ["s1", "s2"]
+    console.log(id)
+    for (i=0; i<indicators.length; i++) {
+        var ind = document.getElementById("s1")
+        ind.classList.remove("selected");
+    }
+    indicator = document.getElementById(id)
+    indicator.classList.add('selected');
+}

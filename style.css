@@ -815,22 +815,26 @@ nav {
      * we will need it later to set the position
      * of the nav::before pseudoelement
      */
-    --gap: .8rem;
+    --gap: 1rem;
     gap: var(--gap, .5rem);
  }
 
 nav a {
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     background: #9bc;
     text-indent: 100%;
     overflow: hidden;
     white-space: nowrap;
     opacity: .33;
+    transition: all 250ms ease-in-out;
  }
  
- 
+ nav a.selected {
+     width: 22px;
+     border-radius: 12px;
+ }
 
 
 /*WIDGETS*/
