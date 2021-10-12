@@ -47,7 +47,7 @@
 
         <div class="rows" id="favorites-tab" style="display: none;"></div> 
 
-        <div id="home-tab" style="margin-bottom: 85px; margin-top:30px">
+        <div id="home-tab" style="margin-bottom: 85px;">
             <div id="location-date-container">
                 <p id="location-text"></p>
                 <p id="date-text"></p>
@@ -58,8 +58,8 @@
             <!--<div id="refresh_icon_container" onclick="window.location.reload()" style="width: auto; height: auto; cursor: pointer; position: absolute; top:0; left: 0; margin-top: 30px; margin-left: 30px;">
                 <img id="refresh_icon" src="refresh_w.svg" alt="refresh icon" style="height: 20px;">
             </div>-->
-            <div class="swipe_sections">
-                <section class="swipe_section">
+            <div class="swipe_sections" style="margin-bottom: 10px;">
+                <section class="swipe_section" id="s1">
                     <div id="table_today" class="table">
                         <div id="table_container" style="height: 100%; max-width: 200px; margin-left: auto; margin-right: auto; text-align: center;">
                             <table class="content_table" style=" width: 100%;height: 100%; margin-left: auto; margin-right: auto;text-align: center; padding-bottom: 10px;border-radius: 10px;vertical-align: middle;">
@@ -91,7 +91,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="swipe_section">
+                <section class="swipe_section" id="s2">
                     <div class="rows" id="today-widget-rows" style="width: 100%;height:auto">
                         <div class="widgets widgets-today" style="margin-top: 90px;">
                             
@@ -141,7 +141,10 @@
                     </div>
                 </section>
             </div>
-
+            <nav style="margin-bottom: 60px;">
+                <a href="#s1" title="title slide 1"></a>
+                <a href="#s2" title="title slide 2"></a>
+             </nav> 
             <div class="rows" id="today_row">
                 <div class="inner" id="innerToday"></div>
             </div>

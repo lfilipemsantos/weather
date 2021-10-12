@@ -796,12 +796,41 @@ body {
   display: flex;
   flex: none;
   flex-flow: row nowrap;
+  scroll-behavior: smooth;
 }
+
 .swipe_section {
     width: 100%;
     scroll-snap-align: center;
     flex: none;
 }
+
+nav {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    inline-size: max-content;
+    
+    /* DRY: set here the gap between the dots,
+     * we will need it later to set the position
+     * of the nav::before pseudoelement
+     */
+    --gap: .8rem;
+    gap: var(--gap, .5rem);
+ }
+
+nav a {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #9bc;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    opacity: .33;
+ }
+ 
+ 
 
 
 /*WIDGETS*/
