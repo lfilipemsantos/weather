@@ -58,7 +58,7 @@
             <!--<div id="refresh_icon_container" onclick="window.location.reload()" style="width: auto; height: auto; cursor: pointer; position: absolute; top:0; left: 0; margin-top: 30px; margin-left: 30px;">
                 <img id="refresh_icon" src="refresh_w.svg" alt="refresh icon" style="height: 20px;">
             </div>-->
-            <div class="swipe_sections" style="margin-bottom: 10px;">
+            <div class="swipe_sections" id="swipe_sections" style="margin-bottom: 10px;">
                 <section class="swipe_section" id="s1">
                     <div id="table_today" class="table">
                         <div id="table_container" style="height: 100%; max-width: 200px; margin-left: auto; margin-right: auto; text-align: center;">
@@ -142,8 +142,8 @@
                 </section>
             </div>
             <nav style="margin-bottom: 60px;">
-                <a class="indicator selected" id="s1" href="#s1" onclick="switch_indicator('s1')" title="slide 1"></a>
-                <a class="indicator" id="s2" href="#s2" onclick="switch_indicator('s2')" title="slide 2"></a>
+                <a class="indicator selected" id="i_s1" href="#s1" onclick="switch_indicator('i_s1')" title="slide 1"></a>
+                <a class="indicator" id="i_s2" href="#s2" onclick="switch_indicator('i_s2')" title="slide 2"></a>
              </nav> 
             <div class="rows" id="today_row">
                 <div class="inner" id="innerToday"></div>
@@ -400,6 +400,18 @@
                 }
                 prevScrollpos = currentScrollPos;
                 }
+        </script>
+        <script>
+            document.getElementById('swipe_sections').addEventListener('scroll', function() {
+                var el = document.getElementById('swipe_sections');
+                if (el.scrollLeft < window.innerWidth / 4) {
+                    switch_indicator('i_s1')
+                }
+                else if (el.scrollLeft > window.innerWidth / 1.5) {
+                    switch_indicator('i_s2')
+                }
+            })
+
         </script>
     </body>
 </html>

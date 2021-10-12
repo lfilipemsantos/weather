@@ -1117,10 +1117,11 @@ function show_action_notification(text_content) {
 }
 
 function switch_indicator(id) {
-    var indicators = ["s1", "s2"]
-    console.log(id)
+    console.log("hello")
+    var indicators = ["i_s1", "i_s2"]
     for (i=0; i<indicators.length; i++) {
-        var ind = document.getElementById("s1")
+        var ind = document.getElementById(indicators[i])
+        console.log(ind.classList)
         ind.classList.remove("selected");
     }
     indicator = document.getElementById(id)
