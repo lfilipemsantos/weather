@@ -249,7 +249,7 @@ body {
 
 #table_today {
     display: block;
-    margin-top: 110px;
+    margin-top: 90px;
     height: 450px;
     text-align: center;
 }
@@ -786,6 +786,22 @@ body {
     margin-top: 30px;
 }
 
+.swipe_sections {
+  width: 100%;
+  overflow: auto;
+  scroll-snap-coordinate: 0 0;
+  scroll-snap-points-x: repeat(50%);
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  flex: none;
+  flex-flow: row nowrap;
+}
+.swipe_section {
+    width: 100%;
+    scroll-snap-align: center;
+    flex: none;
+}
 
 
 /*WIDGETS*/
