@@ -827,7 +827,7 @@ nav a {
     text-indent: 100%;
     overflow: hidden;
     white-space: nowrap;
-    opacity: .33;
+    opacity: 1;
     transition: all 250ms ease-in-out;
  }
  

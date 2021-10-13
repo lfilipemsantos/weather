@@ -774,8 +774,15 @@ function switch_colors(color, notification) {
     //document.getElementById("location").style.backgroundColor = "rgba(" + color + ", 0.5)";
     //document.getElementById("apply-color-button").style.backgroundColor = "rgba(" + color + ", 0.1)";
     
-    fav_rows = document.getElementsByClassName("fav_row");
-    change_color(fav_rows,"backgroundColor",color, 0.2);
+    document.getElementById("tab-indicator").style.backgroundColor = "rgb(" + color + ")";
+    indicators = document.getElementsByClassName("indicator");
+    change_color(indicators, "backgroundColor", color, 1);
+    
+    arrows = document.getElementsByClassName("setting-arrow");
+    change_color(arrows, "color", color, 1);
+
+    //fav_rows = document.getElementsByClassName("fav_row");
+    //change_color(fav_rows,"backgroundColor",color, 0.2);
 
     localStorage['color_theme'] = color
     if (notification){
@@ -791,6 +798,9 @@ function change_color(obj, element, color, transparency) {
         }
         else if (element == "border") {
             obj[i].style.border = "rgba(" + color + ", " + transparency +") 1px solid";
+        }
+        else if (element == "color") {
+            obj[i].style.color = "rgba(" + color + ", " + transparency +")";
         }
     }
 }
