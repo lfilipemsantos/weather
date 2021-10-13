@@ -868,6 +868,10 @@ nav a {
     .widgets {
         grid-template-columns: repeat(2, 140px);
     }
+    .widget-temp {
+        grid-column: 1 / span 2;
+        width: 275px !important; 
+    }
 }
 
 @media screen and (min-width: 500px) {
