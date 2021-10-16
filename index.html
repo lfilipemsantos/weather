@@ -140,10 +140,55 @@
                         
                     </div>
                 </section>
+                <section class="swipe_section" id="s3">
+                    <div class="rows" id="tomorrow-widget-rows" style="width: 100%;height: auto;">
+                        <div class="widgets widgets-tomorrow" style="margin-top: 90px;">
+                            <div class="widget widget-temp" style="/*background: linear-gradient(45deg, rgba(236,129,129,1) 0%, rgba(232,89,41,1) 64%);*/">
+                                <p class="widget-title">Temperatura</p>
+                                <div class="widget-value-container"> 
+                                    <p class="widget-value" id="text-temp-T"></p>
+                                </div>
+                            </div>
+                            <div class="widget">
+                                <p class="widget-title">Índice UV</p>
+                                <div class="widget-value-container"> 
+                                    <p class="widget-value" id="text-iUv-T"></p>
+                                </div>
+                                <div style="width: 90%; height: 10px; margin-top: 0px; margin-left: auto; margin-right: auto; position: relative">
+                                    <div class="uv-indicator" id="uv-indicator-T"></div>
+                                    <div style="width: 20%; background-color: rgb(12, 180, 180); display: inline-block; height: 10px;"></div><!--
+                                    --><div style="width: 20%; background-color: rgb(1, 165, 1); display: inline-block; height: 10px;"></div><!--
+                                    --><div style="width: 20%; background-color: yellow; display: inline-block; height: 10px;"></div><!--
+                                    --><div style="width: 20%; background-color: orange; display: inline-block; height: 10px;"></div><!--
+                                    --><div style="width: 20%; background-color: red; display: inline-block; height: 10px;"></div>
+                                </div>
+                            </div>
+                            <div class="widget">
+                                <p class="widget-title">Precipitação</p>
+                                <div class="widget-value-container"> 
+                                    <p class="widget-value" id="text-probabilidadePrecipita-T"></p>
+                                </div>
+                            </div>
+                            <div class="widget">
+                                <p class="widget-title">Vel. Vento</p>
+                                <div class="widget-value-container"> 
+                                    <p class="widget-value" id="idFfxVento-T"></p>
+                                </div>
+                            </div>
+                            <div class="widget">
+                                <p class="widget-title">Dir. Vento</p>
+                                <div class="widget-value-container"> 
+                                    <p class="widget-value" id="text-vento-dd-T"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </section>
             </div>
             <nav style="margin-bottom: 60px;">
                 <a class="indicator selected" id="i_s1" href="#s1" onclick="switch_indicator('i_s1')" title="slide 1"></a>
                 <a class="indicator" id="i_s2" href="#s2" onclick="switch_indicator('i_s2')" title="slide 2"></a>
+                <a class="indicator" id="i_s3" href="#s3" onclick="switch_indicator('i_s3')" title="slide 3"></a>
              </nav> 
             <div class="rows" id="today_row">
                 <div class="inner" id="innerToday"></div>
@@ -158,50 +203,7 @@
             <h2 style="margin-left: 30px; margin-top:30px;">Amanhã</h2>
             <div class="rows" id="tomorrow_row">
                 <div class="inner" id="innerTomorrow"></div>
-            </div>
-            <div class="rows" id="tomorrow-widget-rows" style="width: 100%;height: auto;">
-                <div class="widgets widgets-tomorrow">
-                    <div class="widget widget-temp" style="/*background: linear-gradient(45deg, rgba(236,129,129,1) 0%, rgba(232,89,41,1) 64%);*/">
-                        <p class="widget-title">Temperatura</p>
-                        <div class="widget-value-container"> 
-                            <p class="widget-value" id="text-temp-T"></p>
-                        </div>
-                    </div>
-                    <div class="widget">
-                        <p class="widget-title">Índice UV</p>
-                        <div class="widget-value-container"> 
-                            <p class="widget-value" id="text-iUv-T"></p>
-                        </div>
-                        <div style="width: 90%; height: 10px; margin-top: 0px; margin-left: auto; margin-right: auto; position: relative">
-                            <div class="uv-indicator" id="uv-indicator-T"></div>
-                            <div style="width: 20%; background-color: rgb(12, 180, 180); display: inline-block; height: 10px;"></div><!--
-                            --><div style="width: 20%; background-color: rgb(1, 165, 1); display: inline-block; height: 10px;"></div><!--
-                            --><div style="width: 20%; background-color: yellow; display: inline-block; height: 10px;"></div><!--
-                            --><div style="width: 20%; background-color: orange; display: inline-block; height: 10px;"></div><!--
-                            --><div style="width: 20%; background-color: red; display: inline-block; height: 10px;"></div>
-                        </div>
-                    </div>
-                    <div class="widget">
-                        <p class="widget-title">Precipitação</p>
-                        <div class="widget-value-container"> 
-                            <p class="widget-value" id="text-probabilidadePrecipita-T"></p>
-                        </div>
-                    </div>
-                    <div class="widget">
-                        <p class="widget-title">Vel. Vento</p>
-                        <div class="widget-value-container"> 
-                            <p class="widget-value" id="idFfxVento-T"></p>
-                        </div>
-                    </div>
-                    <div class="widget">
-                        <p class="widget-title">Dir. Vento</p>
-                        <div class="widget-value-container"> 
-                            <p class="widget-value" id="text-vento-dd-T"></p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>  
+            </div> 
             <br>
             <div class="rows" id="next_days_row">
                 <h2 style="margin-left: 30px;">Próximos 10 dias</h2>
@@ -404,10 +406,17 @@
         <script>
             document.getElementById('swipe_sections').addEventListener('scroll', function() {
                 var el = document.getElementById('swipe_sections');
-                if (el.scrollLeft < window.innerWidth / 4) {
+                console.log("current: " + el.scrollLeft)
+                console.log(window.innerWidth)
+                console.log(window.innerWidth * 1.5)
+                console.log(window.innerWidth * 2.5)
+                if (el.scrollLeft < window.innerWidth / 2) {
                     switch_indicator('i_s1')
                 }
-                else if (el.scrollLeft > window.innerWidth / 1.5) {
+                else if (el.scrollLeft > window.innerWidth * 1.1) {
+                    switch_indicator('i_s3')
+                }
+                else if (el.scrollLeft > window.innerWidth) {
                     switch_indicator('i_s2')
                 }
             })

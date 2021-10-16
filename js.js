@@ -1128,7 +1128,7 @@ function show_action_notification(text_content) {
 
 function switch_indicator(id) {
     console.log("hello")
-    var indicators = ["i_s1", "i_s2"]
+    var indicators = ["i_s1", "i_s2", "i_s3"]
     for (i=0; i<indicators.length; i++) {
         var ind = document.getElementById(indicators[i])
         console.log(ind.classList)
