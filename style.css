@@ -790,8 +790,9 @@ body {
   width: 100%;
   overflow: auto;
   scroll-snap-coordinate: 0 0;
-  scroll-snap-points-x: repeat(50%);
+  scroll-snap-points-x: repeat(100%);
   scroll-snap-type: x mandatory;
+  scroll-snap-stop: always;
   -webkit-overflow-scrolling: touch;
   display: flex;
   flex: none;
