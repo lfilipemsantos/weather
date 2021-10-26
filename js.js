@@ -396,6 +396,7 @@ function clear_rows(tab) {
     }
     else if (tab == "home") {
         var rows = ["innerToday", "innerTomorrow", "inner_next_days"];
+        var rows = ["innerToday", "inner_next_days"];
     }
     for (i=0; i<rows.length; i++) {
         var row = document.getElementById(rows[i]);
@@ -466,12 +467,13 @@ function build_table(current_day, current_hour) {
 function build_rows(days) {
     
     for(j=0;j<days.length;j++) {
-        if(j==0){
+        var inner_id = "innerToday";
+        /*if(j==0){
             var inner_id = "innerToday";
         }
         else if(j==1) {
             var inner_id = "innerTomorrow";
-        }
+        }*/
         for(i=0;i<days[j].length;i++) {
             /*var hr = document.createElement('hr');
             hr.classList.add("row-divider");
