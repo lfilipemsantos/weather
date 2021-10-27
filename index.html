@@ -64,7 +64,9 @@
                         <div id="table_container" style="height: 100%; max-width: 200px; margin-left: auto; margin-right: auto; text-align: center;">
                             <table class="content_table" style=" width: 100%;height: 100%; margin-left: auto; margin-right: auto;text-align: center; padding-bottom: 10px;border-radius: 10px;vertical-align: middle;">
                                 <tr>
-                                    <td colspan="2" style="font-size: 19px; padding-top:10px; font-weight:100; max-width: 100px;"><object type="image/svg+xml" id="current-weather" style="width: 80%; margin-bottom: 30px;"></object></td>
+                                    <td colspan="2" style="font-size: 19px; padding-top:10px; font-weight:100; max-width: 100px;">
+                                        <object type="image/svg+xml" id="current-weather" style="width: 60%; margin-bottom: 30px;"></object>
+                                    </td>
                                 </tr>
                                 <tr style="text-align: center; width: 100%;">
                                     <th id="table_temp" colspan="2" style="position:relative; text-align:center;line-height:80px;font-size:80px;padding-bottom: 10px;padding-top: 20px;"></th>
@@ -73,13 +75,13 @@
                                     <td id="weather-info-text" colspan="2" style="font-size: 12px; padding-bottom:20px;padding-top:10px; font-weight:lighter;"></td>
                                 </tr>
                                 <tr>
-                                    <td id="tMin" style="text-align: right;padding: 5px;">
+                                    <td id="tMin" style="width:50%; text-align: right;padding: 5px;">
                                         
                                         <div style="display: inline-block;">
                                             <!--<p style="display: inline-block; font-size: 16px; vertical-align: middle;line-height: 16px; padding-right: 4px;">&darr;</p>--><p class="table-text" id="text-tMin" style="line-height: 16px;font-size:16px;display: inline-block; vertical-align: bottom; opacity: 0.5;"></p>
                                         </div>
                                     </td>
-                                    <td id="tMax" style="text-align: left;padding: 5px;">
+                                    <td id="tMax" style="width:50%; text-align: left; padding: 5px;">
                                         
                                         <div style="display: inline-block;">
                                             <!--<p style="display: inline-block; font-size: 16px; vertical-align: middle;line-height: 16px; padding-right: 4px;">&uarr;</p>--><p class="table-text" id="text-tMax" style="line-height: 16px;font-size:16px;display: inline-block; vertical-align: bottom;"></p>
@@ -187,7 +189,7 @@
                     </div> 
                 </section>
             </div>
-            <nav style="margin-bottom: 60px;">
+            <nav style="margin-bottom: 30px; margin-top: 30px;">
                 <a class="indicator selected" id="i_s1" href="#s1" onclick="switch_indicator('i_s1')" title="slide 1"></a>
                 <a class="indicator" id="i_s2" href="#s2" onclick="switch_indicator('i_s2')" title="slide 2"></a>
                 <a class="indicator" id="i_s3" href="#s3" onclick="switch_indicator('i_s3')" title="slide 3"></a>
@@ -411,15 +413,15 @@
                 var el = document.getElementById('swipe_sections');
                 console.log("current: " + el.scrollLeft)
                 console.log(window.innerWidth)
-                console.log(window.innerWidth * 1.5)
-                console.log(window.innerWidth * 2.5)
+                console.log(window.innerWidth * 2)
+                console.log(window.innerWidth * 3)
                 if (el.scrollLeft < window.innerWidth / 2) {
                     switch_indicator('i_s1')
                 }
-                else if (el.scrollLeft > window.innerWidth * 1.9) {
+                else if (el.scrollLeft > window.innerWidth * 2 - window.innerWidth/2) {
                     switch_indicator('i_s3')
                 }
-                else if (el.scrollLeft > window.innerWidth) {
+                else if (el.scrollLeft > window.innerWidth - window.innerWidth/2) {
                     switch_indicator('i_s2')
                 }
             })

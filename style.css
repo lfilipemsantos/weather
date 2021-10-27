@@ -249,7 +249,7 @@ body {
 
 #table_today {
     display: block;
-    margin-top: 90px;
+    margin-top: 110px;
     height: 450px;
     text-align: center;
 }
@@ -264,7 +264,7 @@ body {
 
 #next_days_row {
     display: block;
-    height: 800px;
+    height: 720px;
     width: 100%;
 }
 
@@ -756,10 +756,10 @@ body {
 #back_button {
     background-color: rgb(61, 61, 61);
     border-radius: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 8px;
-    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 7px;
     width: max-content;
     margin: 20px auto;
     display: none;
@@ -790,7 +790,6 @@ body {
   width: 100%;
   overflow: auto;
   scroll-snap-coordinate: 0 0;
-  scroll-snap-points-x: repeat(100%);
   scroll-snap-type: x mandatory;
   scroll-snap-stop: always;
   -webkit-overflow-scrolling: touch;
@@ -863,6 +862,9 @@ nav a {
     margin-left: auto;
     margin-right: auto;
     height: auto;
+    padding: 15px;
+    border-radius: 11px;
+    background-color: rgb(46, 46, 46);
 }
 
 @media screen and (min-width: 350px) {
@@ -894,7 +896,7 @@ nav a {
     padding: 10px;
     border-radius: 8px;
     /*background-color: #191919;*/
-    background-color: rgba(150, 150, 150, 0.2);
+    background-color: rgba(95, 95, 95, 0.2);
 }
 
 .widget-title {

@@ -703,10 +703,14 @@ function switch_theme(id) {
         var location_icon = document.getElementById("current-location-icon")
         location_icon.src = location_icon.src.replace("b.svg", "w.svg");
         
-        /*widgets = document.getElementsByClassName("widget");
+        widgets = document.getElementsByClassName("widget");
         for(i = 0; i<widgets.length; i++) {
-            widgets[i].style.backgroundColor = "#191919";
-        }*/
+            widgets[i].style.backgroundColor = "rgba(95, 95, 95, 1);";
+        }
+        widgets_containers = document.getElementsByClassName("widgets");
+        for(i = 0; i<widgets_containers.length; i++) {
+            widgets_containers[i].style.backgroundColor = "rgb(46, 46, 46)";
+        }
         
         var fav = document.getElementById("fav_icon");
         fav.src = fav.src.replace("b.svg", "w.svg");
@@ -747,10 +751,14 @@ function switch_theme(id) {
         var location_icon = document.getElementById("current-location-icon")
         location_icon.src = location_icon.src.replace("w.svg", "b.svg");
 
-        /*widgets = document.getElementsByClassName("widget");
+        widgets = document.getElementsByClassName("widget");
         for(i = 0; i<widgets.length; i++) {
             widgets[i].style.backgroundColor = "rgb(220, 220, 220)";
-        }*/
+        }
+        widgets_containers = document.getElementsByClassName("widgets");
+        for(i = 0; i<widgets_containers.length; i++) {
+            widgets_containers[i].style.backgroundColor = "rgb(200, 200, 200)";
+        }
 
         var fav = document.getElementById("fav_icon");
         fav.src = fav.src.replace("w.svg", "b.svg");
