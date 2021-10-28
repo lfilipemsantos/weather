@@ -705,11 +705,11 @@ function switch_theme(id) {
         
         widgets = document.getElementsByClassName("widget");
         for(i = 0; i<widgets.length; i++) {
-            widgets[i].style.backgroundColor = "rgba(95, 95, 95, 1);";
+            widgets[i].style.backgroundColor = "rgb(95, 95, 95);";
         }
         widgets_containers = document.getElementsByClassName("widgets");
         for(i = 0; i<widgets_containers.length; i++) {
-            widgets_containers[i].style.backgroundColor = "rgb(46, 46, 46)";
+            widgets_containers[i].style.backgroundColor = "rgb(20, 20, 20)";
         }
         
         var fav = document.getElementById("fav_icon");
