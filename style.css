@@ -421,6 +421,8 @@ body {
     border-radius: 4px;
     max-width: 500px;
     position: relative;
+    padding-left: 10px;
+    border-bottom: 2px solid white;
 }
 
 #current-location-button {
@@ -441,8 +443,8 @@ body {
     background-color: transparent;
     color: white;
     height: 50px;
-    width: 80%;
-    margin-left: 10px;
+    width: 100%;
+    padding-left: 00px;
     text-align: left;
 }
 
