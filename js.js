@@ -785,6 +785,8 @@ function switch_colors(color, notification) {
     //document.getElementById("apply-color-button").style.backgroundColor = "rgba(" + color + ", 0.1)";
     
     document.getElementById("tab-indicator").style.backgroundColor = "rgb(" + color + ")";
+    document.getElementById("search_container").style.borderBottom = "2px solid rgb(" + color + ")";
+
     indicators = document.getElementsByClassName("indicator");
     change_color(indicators, "backgroundColor", color, 1);
     
@@ -808,6 +810,9 @@ function change_color(obj, element, color, transparency) {
         }
         else if (element == "border") {
             obj[i].style.border = "rgba(" + color + ", " + transparency +") 1px solid";
+        }
+        else if (element == "border-bottom") {
+            obj[i].style.borderBottom = "rgba(" + color + ", " + transparency +") 2px solid";
         }
         else if (element == "color") {
             obj[i].style.color = "rgba(" + color + ", " + transparency +")";
