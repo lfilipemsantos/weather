@@ -789,12 +789,10 @@ body {
 }
 
 .swipe_sections {
-  width: 100%;
+  width: 100vw;
   overflow: auto;
-  scroll-snap-coordinate: 0 0;
   scroll-snap-type: x mandatory;
   scroll-snap-stop: always;
-  -webkit-overflow-scrolling: touch;
   display: flex;
   flex: none;
   flex-flow: row nowrap;
@@ -817,13 +815,13 @@ nav {
      * we will need it later to set the position
      * of the nav::before pseudoelement
      */
-    --gap: 1rem;
+    --gap: 15px;
     gap: var(--gap, .5rem);
  }
 
 nav a {
     width: 12px;
-    height: 10px;
+    height: 8px;
     border-radius: 10px;
     background: #9bc;
     text-indent: 100%;
@@ -835,7 +833,6 @@ nav a {
  
  nav a.selected {
      width: 25px;
-     border-radius: 10px;
  }
 
 
