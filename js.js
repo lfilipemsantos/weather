@@ -437,7 +437,7 @@ function build_table(current_day, current_hour) {
     else {
         text = document.getElementsByClassName("table-text-T")
         document.getElementById("text-iUv-T").textContent = Math.round(current_day["iUv"]);
-        document.getElementById("uv-indicator-T").style.marginLeft = uv_scale[Math.round(current_day["iUv"])]
+        //document.getElementById("uv-indicator-T").style.marginLeft = uv_scale[Math.round(current_day["iUv"])]
         document.getElementById("text-probabilidadePrecipita-T").textContent = Math.round(current_day["probabilidadePrecipita"]) + "%";
         document.getElementById("text-temp-T").textContent = Math.round(current_day["tMin"]) + "º / " + Math.round(current_day["tMax"]) + "º";
         //document.getElementById("text-tMin-T").textContent = Math.round(current_day["tMin"]) + "º";

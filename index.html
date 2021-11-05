@@ -144,49 +144,33 @@
                     </div>
                 </section>
                 <section class="swipe_section" id="s3">
-                    <div class="rows" id="tomorrow-widget-rows" style="width: 100%;height: auto;">
-                        <div class="widgets widgets-tomorrow" style="margin-top: 90px;">
-                            <div>Amanhã</div>
-                            <div class="widget widget-temp" style="/*background: linear-gradient(45deg, rgba(236,129,129,1) 0%, rgba(232,89,41,1) 64%);*/">
-                                <p class="widget-title">Temperatura</p>
-                                <div class="widget-value-container"> 
-                                    <p class="widget-value" id="text-temp-T"></p>
-                                </div>
-                            </div>
-                            <div class="widget">
-                                <p class="widget-title">Índice UV</p>
-                                <div class="widget-value-container"> 
-                                    <p class="widget-value" id="text-iUv-T"></p>
-                                </div>
-                                <div style="width: 90%; height: 10px; margin-top: -10px; margin-left: auto; margin-right: auto; position: relative">
-                                    <div class="uv-indicator" id="uv-indicator-T"></div>
-                                    <div style="width: 20%; background-color: rgb(12, 180, 180); display: inline-block; height: 10px;"></div><!--
-                                    --><div style="width: 20%; background-color: rgb(1, 165, 1); display: inline-block; height: 10px;"></div><!--
-                                    --><div style="width: 20%; background-color: yellow; display: inline-block; height: 10px;"></div><!--
-                                    --><div style="width: 20%; background-color: orange; display: inline-block; height: 10px;"></div><!--
-                                    --><div style="width: 20%; background-color: red; display: inline-block; height: 10px;"></div>
-                                </div>
-                            </div>
-                            <div class="widget">
-                                <p class="widget-title">Precipitação</p>
-                                <div class="widget-value-container"> 
-                                    <p class="widget-value" id="text-probabilidadePrecipita-T"></p>
-                                </div>
-                            </div>
-                            <div class="widget">
-                                <p class="widget-title">Vel. Vento</p>
-                                <div class="widget-value-container"> 
-                                    <p class="widget-value" id="idFfxVento-T"></p>
-                                </div>
-                            </div>
-                            <div class="widget">
-                                <p class="widget-title">Dir. Vento</p>
-                                <div class="widget-value-container"> 
-                                    <p class="widget-value" id="text-vento-dd-T"></p>
-                                </div>
-                            </div>
+                    <div id="tomorrow_stats" style="width: 70%; margin-left: auto; margin-right: auto; margin-top: 120px;">        
+                        <div>Amanhã</div>
+                        <div class="stat" style="display: flex; flex-direction: row; width: 100%; margin: 10px 0px;">
+                            <div class="stat_name" style="width: 50%; text-align: left;">Temperatura</div>
+                            <div class="stat_value" id="text-temp-T" style="width: 50%; text-align: right;"></div>
                         </div>
-                    </div> 
+                        <hr style="border-bottom: 1px solid gray; width: 100%;">
+                        <div class="stat" style="display: flex; flex-direction: row; width: 100%; margin: 10px 0px;">
+                            <div class="stat_name" style="width: 50%; text-align: left;">Índice UV</div>
+                            <div class="stat_value" id="text-iUv-T" style="width: 50%; text-align: right;"></div>
+                        </div>
+                        <hr style="border-bottom: 1px solid gray; width: 100%;">
+                        <div class="stat" style="display: flex; flex-direction: row; width: 100%; margin: 10px 0px;">
+                            <div class="stat_name" style="width: 50%; text-align: left;">Precipitação</div>
+                            <div class="stat_value" id="text-probabilidadePrecipita-T" style="width: 50%; text-align: right;"></div>
+                        </div>
+                        <hr style="border-bottom: 1px solid gray; width: 100%;">
+                        <div class="stat" style="display: flex; flex-direction: row; width: 100%; margin: 10px 0px;">
+                            <div class="stat_name" style="width: 50%; text-align: left;">Vento</div>
+                            <div class="stat_value" id="idFfxVento-T" style="width: 50%; text-align: right;"></div>
+                        </div>
+                        <hr style="border-bottom: 1px solid gray; width: 100%;">
+                        <div class="stat" style="display: flex; flex-direction: row; width: 100%; margin: 10px 0px;">
+                            <div class="stat_name" style="width: 50%; text-align: left;">Direção Vento</div>
+                            <div class="stat_value" id="text-vento-dd-T" style="width: 50%; text-align: right;"></div>
+                        </div>
+                    </div>
                 </section>
             </div>
             <nav style="margin-bottom: 30px; margin-top: 30px;">
