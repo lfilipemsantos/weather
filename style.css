@@ -156,10 +156,10 @@ body {
     padding-right: 10px;
 }
 
-.day_row{
+.day_row {
     width: 90%;
-    max-width: 400px;
-    height: 60px;
+    max-width: 350px;
+    height: 50px;
     /*background-color: rgb(50, 50, 50);*/
     margin-right: auto;
     margin-left: auto;
@@ -170,6 +170,11 @@ body {
     animation-name: animate-in-next-row;   
     animation-duration: 0.3s;
     animation-timing-function:ease-in;
+}
+
+.date_prev {
+    width: 30px;
+    margin-right: 5px;
 }
 
 .nd_divider {
@@ -209,6 +214,7 @@ body {
 
 .temp_container > .min {
     opacity: 0.5;
+    margin-left: 5px;
 }
 
 .icon_container {
@@ -216,14 +222,18 @@ body {
     width: 30%;
     margin:0;
     display:inline-block;
+    height: 100%;
 }
 .nd_weather_icon{
-    height: 30px;
+    margin-top: 9px;
+    width: 30%;
     filter: saturate(190%);
 }
 
 .temp_container > p {
     line-height: 20px;
+    display: inline-block;
+    margin-top: 10px;
 }
 
 #inner_next_days{
