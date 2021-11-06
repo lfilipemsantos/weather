@@ -55,12 +55,8 @@ function display_notification() {
                     };
                     var d = new Date();
                     var n = d.getHours();
-                    console.log(n)
                     if (n>8 && n<22) {
                         reg.showNotification(notifTitle, options);
-                        console.log(n)
-                        console.log(typeof n)
-                        console.log("setting timeout...")
                         setTimeout(display_notification, 600000);
                     }
                     else {
@@ -94,7 +90,6 @@ function location_failed() {
 
 function find_nearest_location(position) {
     var cCoordinates = position.coords;
-    console.log(cCoordinates)
     var cLat = cCoordinates.latitude;
     var cLon = cCoordinates.longitude;
 
@@ -110,12 +105,10 @@ function find_nearest_location(position) {
             else if (dist < distance) {
                 distance = dist;
                 nearest_location = locations[i]["localidade_distrito"][j]["globalIdLocal"]
-                console.log(locations[i]["localidade_distrito"][j]["local"])
             }
         }
     }
     localStorage["nearest_location"] = nearest_location;
-    console.log(nearest_location)
 }
 
 function calc_distance(lat1, lon1, lat2, lon2) {
@@ -465,8 +458,7 @@ function build_table(current_day, current_hour) {
 
 
 function build_rows(days) {
-    
-    for(j=0;j<days.length;j++) {
+    for(j=0; j<days.length; j++) {
         var inner_id = "innerToday";
         /*if(j==0){
             var inner_id = "innerToday";
@@ -492,7 +484,7 @@ function build_rows(days) {
             weather_icon_container.setAttribute("class", "weather_icon_container");
 
 
-            if(i==0 && inner_id == "innerToday") {
+            if(i==0 && j == 0) {
                 if (parseInt(hour.split(":"))<6 || parseInt(hour.split(":"))>20) {
                     document.getElementById("current-weather").data = "icons/n" + parseInt(days[j][i]["idTipoTempo"]) + ".svg";
                 }
@@ -865,7 +857,6 @@ function search_location() {
     for (i = 0; i < li.length; i++) {
         div = li[i].getElementsByTagName("div")[0];
         txtValue = div.textContent || a.innerText;
-        console.log(txtValue)
         if (filter == "") {
             li[i].style.display = "none";
             document.getElementById("current-location-button").style.opacity = "1";
@@ -911,7 +902,7 @@ function add_favorite(id) {
     localStorage["favorites"] = JSON.stringify(fav_list);
     img_src = document.getElementById("fav_icon").src
     new_img_src = img_src.replace("not_", "is_");
-    document.getElementById("fav_icon").src = new_img_src
+    document.getElementById("fav_icon").src = new_img_src;
     setTimeout(
         function() {
             document.getElementById("fav-notification").style.top="-90px"
@@ -923,18 +914,16 @@ function add_favorite(id) {
 }
 
 function rem_favorite(id) {
-    document.getElementById("fav-notification").children[0].textContent = "Removido dos favoritos"
-    document.getElementById("fav_icon_container").setAttribute("onclick", "")
-    document.getElementById("fav-notification").style.top="20px"
-    console.log("removing from favorites...")
-    fav_list = JSON.parse(localStorage["favorites"])
+    document.getElementById("fav-notification").children[0].textContent = "Removido dos favoritos";
+    document.getElementById("fav_icon_container").setAttribute("onclick", "");
+    document.getElementById("fav-notification").style.top="20px";
+    fav_list = JSON.parse(localStorage["favorites"]);
     for(i=0; i<fav_list.length; i++) {
         if (fav_list[i]["id"] == id) {
-            fav_list.splice(i,1)
+            fav_list.splice(i,1);
         }
     }
     localStorage["favorites"] = JSON.stringify(fav_list);
-    console.log(fav_list)
     img_src = document.getElementById("fav_icon").src
     new_img_src = img_src.replace("is_", "not_");
     document.getElementById("fav_icon").src = new_img_src
@@ -954,7 +943,6 @@ function build_favorites() {
     fav_title.classList.add("tab-title");
     document.getElementById("favorites-tab").appendChild(fav_title);
     if(favorites.length>0) {
-        console.log(favorites)
         for(i=0; i<favorites.length; i++) {
             var fav_row = document.createElement('div');
 
@@ -1044,20 +1032,15 @@ function set_current_temp(id) {
             const time = (today.toLocaleTimeString("pt-PT")).split(':',1)[0];
         
             if(today.getHours()==0){
-                console.log(today)
                 today = today.setDate(today.getDate()+1);
                 today_2 = new Date(today);
-                console.log(today_2)
                 today_str = today_2.toISOString().slice(0,10);
-                console.log(today_str)
             }
 
             for(i=0;i<data.length;i++) {
                 if(data[i]["dataPrev"].split("T", 1) == today_str) {
                     var current_time = data[i]["dataPrev"].split("T",2)[1].split(":", 1)[0];
                     if (current_time == time) {
-                        console.log(current_time)
-                        console.log(data[i])
                         var icon = document.getElementById("icon_"+ id);
                         icon.src = get_weather_icon(current_time, data[i]["idTipoTempo"]);
                         document.getElementById("temp_"+ id).textContent = parseInt(data[i]["tMed"]) + "ºC";
@@ -1142,11 +1125,9 @@ function show_action_notification(text_content) {
 }
 
 function switch_indicator(id) {
-    console.log("hello")
     var indicators = ["i_s1", "i_s2", "i_s3"]
     for (i=0; i<indicators.length; i++) {
         var ind = document.getElementById(indicators[i])
-        console.log(ind.classList)
         ind.classList.remove("selected");
     }
     indicator = document.getElementById(id)
