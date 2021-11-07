@@ -159,12 +159,12 @@ body {
 .day_row {
     width: 90%;
     max-width: 350px;
-    height: 50px;
+    height: 40px;
     /*background-color: rgb(50, 50, 50);*/
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 5px;
-    margin-top: 5px;
+    margin-top: 0px;
     border-radius: 10px;
     padding-left: 5%;
     animation-name: animate-in-next-row;   
@@ -200,11 +200,11 @@ body {
 }
 .date_container > small{
     max-width: 100px;
-    margin-left:10px
+    margin-left: 10px;
 }
 
 .temp_container {
-    width: 15%;
+    width: 20%;
     height: 40px;
     display:inline-block;
     margin-top: 10px;
@@ -219,13 +219,13 @@ body {
 
 .icon_container {
     text-align: center;
-    width: 30%;
-    margin:0;
+    width: 25%;
+    margin: 0;
     display:inline-block;
     height: 100%;
 }
 .nd_weather_icon{
-    margin-top: 9px;
+    margin-top: 10px;
     width: 30%;
     filter: saturate(190%);
 }
