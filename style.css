@@ -274,7 +274,7 @@ body {
 
 #next_days_row {
     display: block;
-    height: 720px;
+    height: auto;
     width: 100%;
 }
 
