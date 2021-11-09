@@ -1004,3 +1004,17 @@ nav a {
         background-color: rgba(136, 136, 136, 0.5);
     }
   }
+
+.stat {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+
+.stat_name {
+    width: 50%;
+    text-align: left;
+    font-family: 'Biotif Light', sans-serif;
+}
