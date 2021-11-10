@@ -1018,3 +1018,8 @@ nav a {
     text-align: left;
     font-family: 'Biotif Light', sans-serif;
 }
+
+.stat_value {
+    width: 50%;
+    text-align: right;
+}
