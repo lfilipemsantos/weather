@@ -59,7 +59,7 @@
                 <img id="refresh_icon" src="refresh_w.svg" alt="refresh icon" style="height: 20px;">
             </div>-->
 
-            <section class="swipe_section" id="s1">
+            <section>
                 <div id="table_today" class="table">
                     <div id="table_container" style="height: 100%; max-width: 200px; margin-left: auto; margin-right: auto; text-align: center;">
                         <table class="content_table" style=" width: 100%;height: 100%; margin-left: auto; margin-right: auto;text-align: center; padding-bottom: 10px;border-radius: 10px;vertical-align: middle;">
@@ -111,9 +111,9 @@
             </div> 
             <br>
                                     -->
-            <div class="swipe_sections" id="swipe_sections" style="margin-bottom: 10px;">
+            <div class="swipe_sections" id="swipe_sections">
                 <section class="swipe_section" id="s1">    
-                    <div id="today_stats" style="width: 70%; margin-left: auto; margin-right: auto; margin-top: 30px;">        
+                    <div class="stats" id="today_stats">        
                         <div style="font-size: 1.5rem; width: 100%; text-align: center; margin-bottom: 50px;">Hoje</div>
                         <div class="stat">
                             <div class="stat_name">Temperatura</div>
@@ -142,7 +142,7 @@
                     </div>
                 </section>
                 <section class="swipe_section" id="s2">
-                    <div id="tomorrow_stats" style="width: 70%; margin-left: auto; margin-right: auto; margin-top: 30px;">        
+                    <div class="stats" id="tomorrow_stats">        
                         <div style="font-size: 1.5rem; width: 100%; text-align: center; margin-bottom: 50px;">Amanhã</div>
                         <div class="stat">
                             <div class="stat_name">Temperatura</div>
@@ -172,7 +172,7 @@
                 </section>
             </div>
 
-            <nav style="margin-bottom: 70px; margin-top: 30px;">
+            <nav id="indicators" style="margin-bottom: 70px; margin-top: 30px;">
                 <a class="indicator selected" id="i_s1" href="#s1" onclick="switch_indicator('i_s1')" title="slide 1"></a>
                 <a class="indicator" id="i_s2" href="#s2" onclick="switch_indicator('i_s2')" title="slide 2"></a>
             </nav>
