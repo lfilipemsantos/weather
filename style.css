@@ -1044,3 +1044,43 @@ nav a {
     width: 50%;
     text-align: right;
 }
+
+#main-info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+#main-image-container {
+    width: 170px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+#main-weather-info-container {
+    width: 200px;
+    height: 200px;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+    #main-info {
+        flex-direction: column;
+    }
+
+    #main-image-container {
+        margin-right: auto;
+        margin-bottom: 40px;
+    }
+
+    #main-weather-info-container {
+        margin-left: auto;
+    }
+
+}
