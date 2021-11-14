@@ -1069,6 +1069,27 @@ nav a {
     text-align: center;
 }
 
+#table_temp {
+    position: relative;
+    line-height:80px;
+    font-size:80px;
+    padding-bottom: 10px;
+    padding-top: 20px; 
+    margin: 0;
+}
+
+#weather-info-text {
+    font-size: 12px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    font-weight: lighter;
+}
+
+#max-min-container {
+    display: flex;
+    flex-direction: row;
+}
+
 @media screen and (max-width: 700px) {
     #main-info {
         flex-direction: column;
@@ -1081,6 +1102,31 @@ nav a {
 
     #main-weather-info-container {
         margin-left: auto;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+
+    #main-weather-info-container {
+        flex-direction: row;
+        margin-left: 20px;
+        width: fit-content;
+    }
+
+    #table_temp {
+        vertical-align: middle;
+        padding-top: 50px;
+    }
+
+    #weather-info-text {
+        padding-top: 70px;
+        margin-left: 20px;
+    }
+
+    #max-min-container {
+        padding-top: 70px;
+        margin-left: 20px;
     }
 
 }
