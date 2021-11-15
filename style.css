@@ -39,10 +39,6 @@ a:visited {
     100% {opacity: 1; margin-top:0px;}
 }
 
-@keyframes animate-in-next-row {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
 
 @keyframes animate-tab-out {
     0% {opacity: 1; }
@@ -156,22 +152,6 @@ body {
     padding-right: 10px;
 }
 
-.day_row {
-    width: 90%;
-    max-width: 350px;
-    height: 40px;
-    /*background-color: rgb(50, 50, 50);*/
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 5px;
-    margin-top: 0px;
-    border-radius: 10px;
-    padding-left: 5%;
-    animation-name: animate-in-next-row;   
-    animation-duration: 0.3s;
-    animation-timing-function:ease-in;
-}
-
 .date_prev {
     width: 30px;
     margin-right: 5px;
@@ -207,9 +187,10 @@ body {
     width: 20%;
     height: 40px;
     display:inline-block;
-    margin-top: 10px;
     margin-bottom: 10px;
     text-align: right;
+    display: flex;
+    flex-direction: row;
 }
 
 .temp_container > .min {
@@ -236,8 +217,62 @@ body {
     margin-top: 10px;
 }
 
-#inner_next_days{
+.day_row {
+    width: 90%;
+    max-width: 350px;
+    height: 40px;
+    margin-right: auto;
+    margin-bottom: 5px;
+    margin-top: 0px;
+    border-radius: 10px;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+#inner_next_days {
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media screen and (min-width: 600px) {
+    #inner_next_days {
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-left: 20px;
+        width: 100%;
+    }
+
+    .day_row {
+        flex-direction: column;
+        height: 300px;
+        width:300px;
+    }
+
+    .temp_container {
+        flex-direction: row;
+    }
+
+    .icon_container {
+        height: 25%;
+        width: 100%;
+    }
+    
+    .nd_weather_icon{
+        width: 90%;
+    }
+
+    .date_container {
+        width: 100%;
+    }
 }
 
 .inner {
