@@ -251,9 +251,9 @@ body {
         overflow-x: scroll;
         margin-left: 0 !important;
         margin-right: 0 !important;
-        padding-left: 20px;
-        padding-right: 40px;
-        width: 100vw !important;
+        padding-left: 0px;
+        padding-right: 00px;
+        width: 100% !important;
     }
 
     .day_row {
