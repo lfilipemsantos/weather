@@ -942,6 +942,9 @@ function build_favorites() {
     fav_title.textContent = "Favoritos";
     fav_title.classList.add("tab-title");
     document.getElementById("favorites-tab").appendChild(fav_title);
+    var fav_container = document.createElement("div");
+    fav_container.id = "fav_container"
+    document.getElementById("favorites-tab").appendChild(fav_container);
     if(favorites.length>0) {
         for(i=0; i<favorites.length; i++) {
             var fav_row = document.createElement('div');
@@ -987,7 +990,7 @@ function build_favorites() {
 
             set_current_temp(favorites[i]["id"]);
 
-            document.getElementById("favorites-tab").appendChild(fav_row);
+            document.getElementById("fav_container").appendChild(fav_row);
         }
     }
     else {

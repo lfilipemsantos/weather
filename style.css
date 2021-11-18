@@ -694,6 +694,13 @@ body {
     font-size: 1em;
 }
 
+.favs_container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(1, 140px);
+    grid-gap: 15px;
+}
+
 .fav_row {
     overflow-y:hidden;
     overflow-x: hidden;
