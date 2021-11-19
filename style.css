@@ -694,17 +694,33 @@ body {
     font-size: 1em;
 }
 
-.favs_container {
+#fav_container {
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: repeat(1, 140px);
-    grid-gap: 15px;
+    grid-template-columns: repeat(1, auto);
+    grid-gap: 5px;
+}
+
+
+
+@media screen and (min-width: 900px) {
+    #fav_container {
+        grid-template-columns: repeat(2, auto);
+    }
+
+}
+
+@media screen and (min-width: 1350px) {
+    #fav_container {
+        grid-template-columns: repeat(3, auto);
+    }
+
 }
 
 .fav_row {
     overflow-y:hidden;
     overflow-x: hidden;
-    width: 80%;
+    width: 100%;
     max-width: 400px;
     height: 120px;
     margin-left:auto;
