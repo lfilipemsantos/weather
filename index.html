@@ -25,14 +25,6 @@
         </div>
 
         <div class="rows" id="location-tab">
-            <!--<div id="time_options">
-                <div id="inner_time_options">
-                    <div class="button" id="close" onclick="get_data(localStorage['local_id'])" style="width:38px;border-radius: 50%;">
-                        <div style="width: 38px; height: 38px;"><img id="close_icon" src="close_b.svg" alt="update icon" style="height: 20px; margin-left: 9px; margin-top: 9px;"></div>
-                    </div>
-                </div>
-            </div>-->
-            
             <div id="search_container">
                 <input autocomplete="off" id="location" type="text" onkeyup="search_location()" placeholder="Pesquisar...">
                 <div id="current-location-button" onclick="get_data(localStorage['nearest_location'])">
@@ -56,9 +48,6 @@
             <div id="fav_icon_container" onclick="add_favorite('1999')" style="width: auto; height: auto; cursor: pointer; position: absolute; top:0; right: 0; margin-top: 30px; margin-right: 30px;">
                 <img id="fav_icon" src="not_fav_w.svg" alt="favorite icon" style="height: 20px;">
             </div>
-            <!--<div id="refresh_icon_container" onclick="window.location.reload()" style="width: auto; height: auto; cursor: pointer; position: absolute; top:0; left: 0; margin-top: 30px; margin-left: 30px;">
-                <img id="refresh_icon" src="refresh_w.svg" alt="refresh icon" style="height: 20px;">
-            </div>-->
 
             <section>
                 <div id="main-info">
@@ -84,18 +73,6 @@
                 <div class="inner" id="innerToday"></div>
             </div>
 
-            
-            
-            <!--<div style="width: 100%; height: auto; margin-top: 40px; text-align: center;">
-                <p id="data-update" style="font-size: 10px;"></p>
-            </div>
-            <br>
-            <h2 style="margin-left: 30px; margin-top:30px;">Amanhã</h2>
-            <div class="rows" id="tomorrow_row">
-                <div class="inner" id="innerTomorrow"></div>
-            </div> 
-            <br>
-                                    -->
             <div class="swipe_sections" id="swipe_sections">
                 <section class="swipe_section" id="s1">    
                     <div class="stats" id="today_stats">        
