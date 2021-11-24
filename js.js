@@ -512,9 +512,9 @@ function build_rows(days) {
             document.getElementById(inner_id).appendChild(row);
 
         }
-        var hr = document.createElement('hr');
-            hr.classList.add("row-divider");
-            document.getElementById(inner_id).appendChild(hr);
+        //var hr = document.createElement('hr');
+        //hr.classList.add("row-divider");
+        //document.getElementById(inner_id).appendChild(hr);
     }
     
     if(localStorage["color_theme"]) {
