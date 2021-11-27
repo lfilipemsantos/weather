@@ -45,8 +45,9 @@
                 <p id="location-text"></p>
                 <p id="date-text"></p>
             </div>
-            <div id="fav_icon_container" onclick="add_favorite('1999')" style="width: auto; height: auto; cursor: pointer; position: absolute; top:0; right: 0; margin-top: 30px; margin-right: 30px;">
-                <img id="fav_icon" src="not_fav_w.svg" alt="favorite icon" style="height: 20px;">
+            <div id="fav_icon_container" onclick="add_favorite('1999')" style="width: auto; height: auto; cursor: pointer; position: absolute; top:0; right: 0; margin-top: 30px; margin-right: 30px; display: flex; flex-direction: row;">
+                <img id="fav_icon" src="not_fav_w.svg" alt="favorite icon" style="height: 20px; margin-bottom: 2px;">
+                <span id="fav-description"></span>
             </div>
 
             <section>
@@ -328,7 +329,7 @@
                     document.getElementById("bottom-options").style.bottom = "0";
                 } 
                 else {
-                    document.getElementById("bottom-options").style.bottom = "-80px";
+                    document.getElementById("bottom-options").style.bottom = "-90px";
                 }
 
                 if (currentScrollPos > 120) {

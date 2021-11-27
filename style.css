@@ -623,12 +623,20 @@ body {
     display: none;
 }
 
+#fav-description {
+    display: none;
+}
+
 @media screen and (min-width: 600px) {
+    #bottom-options {
+        height: 90px;
+    }
+
     .button {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
-        text-align: left;
+        text-align: center;
     }
     .button_img_container {
         width: 40%;
@@ -637,7 +645,7 @@ body {
 
     .button_desc {
         width: 60%;
-        text-align: left;
+        text-align: center;
     }
 
     .button > img {
@@ -647,6 +655,10 @@ body {
     }
     
     .button_desc {
+        display: block;
+    }
+
+    #fav-description {
         display: block;
     }
 }

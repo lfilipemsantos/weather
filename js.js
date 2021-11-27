@@ -319,6 +319,7 @@ function get_data(local_id) {
             set_location_name(local_id); 
             switch_tab('home-tab');
             document.getElementById("location").value = "";
+            desc = document.getElementById("fav-description");
             console.log(local_id)
             if(in_favorites(local_id)){
                 document.getElementById("fav_icon_container").setAttribute("onclick", "rem_favorite('" + local_id + "')")
@@ -331,6 +332,7 @@ function get_data(local_id) {
                     var fav = document.getElementById("fav_icon");
                     fav.src = fav.src = "is_fav_b.svg";
                 }
+                desc.textContent = "Remover dos favoritos";
             }
             else {
                 document.getElementById("fav_icon_container").setAttribute("onclick", "add_favorite('" + local_id + "')")
@@ -342,6 +344,7 @@ function get_data(local_id) {
                     var fav = document.getElementById("fav_icon");
                     fav.src = fav.src = "not_fav_b.svg";
                 }
+                desc.textContent = "Adicionar aos favoritos";
             }
         }
     }
@@ -902,6 +905,8 @@ function add_favorite(id) {
     localStorage["favorites"] = JSON.stringify(fav_list);
     img_src = document.getElementById("fav_icon").src
     new_img_src = img_src.replace("not_", "is_");
+    desc = document.getElementById("fav-description")
+    desc.textContent = "Remover dos favoritos"
     document.getElementById("fav_icon").src = new_img_src;
     setTimeout(
         function() {
@@ -926,6 +931,8 @@ function rem_favorite(id) {
     localStorage["favorites"] = JSON.stringify(fav_list);
     img_src = document.getElementById("fav_icon").src
     new_img_src = img_src.replace("is_", "not_");
+    desc = document.getElementById("fav-description")
+    desc.textContent = "Adicionar aos favoritos"
     document.getElementById("fav_icon").src = new_img_src
     setTimeout(
         function() {
