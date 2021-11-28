@@ -817,6 +817,7 @@ body {
 .fav_icon_container {
     display: inline-block;
     width: 15%;
+    text-align: center;
 }
 
 .fav_info_container > small {
