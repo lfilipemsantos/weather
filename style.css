@@ -312,6 +312,10 @@ body {
         width: 50%;
         text-align: center;
     }
+
+    .date_prev {
+        margin: 0;
+    }
 }
 
 .inner {
