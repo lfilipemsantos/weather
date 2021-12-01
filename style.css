@@ -333,6 +333,7 @@ body {
 
 #today_row {
     display: block;
+    margin-bottom: 40px;
 }
 
 #table_today {
@@ -1155,7 +1156,7 @@ nav a {
     flex-direction: row;
     width: 100%;
     margin-top: 150px;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 }
 
 #main-image-container {
