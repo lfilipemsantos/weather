@@ -260,6 +260,12 @@ function switch_tab(id) {
     }
     else if(id=="location-tab") {
         document.getElementById("location").focus();
+        var home_icon = document.getElementById("home_icon").src.replace("is_","not_");
+        document.getElementById("home_icon").src = home_icon;
+        var settings_icon = document.getElementById("settings_icon").src.replace("is_","not_");
+        document.getElementById("settings_icon").src = settings_icon;
+        var fav_icon = document.getElementById("favorites_icon").src.replace("is_","not_");
+        document.getElementById("favorites_icon").src = fav_icon;
         //hide_bottom();
         document.getElementById("dynamic_background").style.display = "none";
         document.getElementById("home-button").setAttribute("onClick", "switch_tab('home-tab')")
