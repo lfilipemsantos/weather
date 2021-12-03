@@ -507,11 +507,11 @@ body {
     margin-right:auto;
     margin-top: 20px;
     width: 90%;
-    border-radius: 4px;
+    border-radius: calc(var(--border-radius) - 6px);
     max-width: 500px;
     position: relative;
     padding-left: 10px;
-    border-bottom: 2px solid white;
+    border-bottom: 3px solid white;
 }
 
 #current-location-button {
