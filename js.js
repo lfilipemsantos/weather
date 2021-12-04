@@ -790,6 +790,9 @@ function switch_colors(color, notification) {
 
     indicators = document.getElementsByClassName("indicator");
     change_color(indicators, "backgroundColor", color, 1);
+
+    theme_selected = document.getElementsByClassName("theme_selected");
+    change_color(theme_selected, "backgroundColor", color, 1);
     
     arrows = document.getElementsByClassName("setting-arrow");
     change_color(arrows, "color", color, 1);
