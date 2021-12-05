@@ -163,6 +163,32 @@ body {
     margin-right: 5px;
 }
 
+
+
+@media screen and (max-width: 420px) {
+
+    .date_prev + small{
+        display: none;
+    }
+
+    .date_container {
+        width: 33% !important;
+    }
+
+    .icon_container {
+        width: 33% !important;
+    }
+
+    .temp_container {
+        width: 33% !important;
+    }
+
+    .day_row {
+        width: 100% !important;
+    }
+
+}
+
 .nd_divider {
     background-color: rgb(67, 67, 67);
     height: 0px;
