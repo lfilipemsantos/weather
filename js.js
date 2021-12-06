@@ -657,7 +657,7 @@ function set_theme_preference() {
 
 
 function switch_theme(id) {
-    const DARK = "rgb(5, 5, 5)"
+    const DARK = "rgb(14, 14, 14)"
     const LIGHT = "rgb(245, 245, 245)"
 
     var buttons = ["home", "favorites", "settings"]
@@ -685,7 +685,7 @@ function switch_theme(id) {
         document.getElementById("location").style.opacity="90%";
         //document.getElementById("close_icon").src = "close_w.svg";
         document.getElementById("search_icon").src = "search_w.svg";
-        document.getElementById("bottom-options").style.backgroundColor = "rgb(15, 15, 15)";
+        document.getElementById("bottom-options").style.backgroundColor = "rgb(25, 25, 25)";
         document.getElementById("fav-notification-inner").style.backgroundColor = "rgb(40, 40, 40)";
         document.getElementById("back_button").style.backgroundColor = "rgb(61, 61, 61)";
         hr = document.getElementsByClassName("row-divider");
