@@ -535,7 +535,7 @@ body {
     margin-right:auto;
     margin-top: 20px;
     width: 90%;
-    border-radius: calc(var(--border-radius) - 6px);
+    border-radius: var(--border-radius);
     max-width: 500px;
     position: relative;
     padding-left: 10px;
@@ -551,7 +551,7 @@ body {
     text-align: center;
     cursor: pointer;
     height: 50px;
-    border-radius: 0px 4px 4px 0px;
+    border-radius: 0px var(--border-radius) var(--border-radius) 0px;
     opacity: 1;
     transition: opacity 200ms ease-in-out;
 }
@@ -572,7 +572,7 @@ body {
     margin-right: auto;
     margin-bottom: 100px;
     background-color: rgba(150, 150, 150, 0.2);
-    border-radius: 4px;
+    border-radius: var(--border-radius);
     max-width: 500px;
 }
 
@@ -583,8 +583,8 @@ body {
 
 .location-li {
     margin-bottom: 10px;
-    padding: 11px;
-    padding-left: 11px;
+    padding-top: 20px;
+    padding-left: 20px;
     border-radius: 11px;
     display: none;
 }
