@@ -1097,19 +1097,6 @@ function show_top_settings() {
     back_button.style.display = "none"
 }
 
-function show_middle_settings(setting) {
-    tops = document.getElementsByClassName("top-setting");
-    for (i=0; i<tops.length; i++) {
-        tops[i].style.display = "none"
-    }
-    middles = document.getElementsByClassName(setting);
-    for (i=0; i<middles.length; i++) {
-        middles[i].style.display = "block"
-    }
-    back_button = document.getElementById("back_button");
-    back_button.style.display = "block"
-}
-
 function show_bottom_settings(setting) {
     middles = document.getElementsByClassName("top-setting");
     for (i=0; i<middles.length; i++) {
