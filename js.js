@@ -1102,6 +1102,21 @@ function show_bottom_settings(setting) {
     for (i=0; i<middles.length; i++) {
         middles[i].style.display = "none"
     }
+
+    if (setting == "fav_settings") {
+        favorites = JSON.parse(localStorage["favorites"]);
+        if(favorites.length>0) {
+            for(i=0; i<favorites.length; i++) {
+                var fav_setting_row = document.createElement("div");
+                fav_setting_row.classList.add("fav_setting_row")
+                fav_setting_row.textContent = favorites[i]["name"];
+                fav_list = document.getElementById("fav-list");
+                console.log(typeof(fav_list))
+                fav_list.appendChild(fav_setting_row);
+            }
+        }
+    }
+
     bottoms = document.getElementsByClassName(setting);
     for (i=0; i<bottoms.length; i++) {
         bottoms[i].style.display = "block"
