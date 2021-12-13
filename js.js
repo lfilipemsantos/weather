@@ -226,6 +226,8 @@ function switch_tab(id) {
     if(id=="home-tab") {
         var home_icon = document.getElementById("home_icon").src.replace("not_","is_");
         document.getElementById("home_icon").src = home_icon;
+        var search_icon = document.getElementById("search_icon").src.replace("is_","not_");
+        document.getElementById("search_icon").src = search_icon;
         var settings_icon = document.getElementById("settings_icon").src.replace("is_","not_");
         document.getElementById("settings_icon").src = settings_icon;
         var fav_icon = document.getElementById("favorites_icon").src.replace("is_","not_");
@@ -237,6 +239,8 @@ function switch_tab(id) {
         show_top_settings();
         var home_icon = document.getElementById("home_icon").src.replace("is_","not_");
         document.getElementById("home_icon").src = home_icon;
+        var search_icon = document.getElementById("search_icon").src.replace("is_","not_");
+        document.getElementById("search_icon").src = search_icon;
         var settings_icon = document.getElementById("settings_icon").src.replace("not_","is_");
         document.getElementById("settings_icon").src = settings_icon;
         var fav_icon = document.getElementById("favorites_icon").src.replace("is_","not_");
@@ -250,6 +254,8 @@ function switch_tab(id) {
         build_favorites();
         var home_icon = document.getElementById("home_icon").src.replace("is_","not_");
         document.getElementById("home_icon").src = home_icon;
+        var search_icon = document.getElementById("search_icon").src.replace("is_","not_");
+        document.getElementById("search_icon").src = search_icon;
         var settings_icon = document.getElementById("settings_icon").src.replace("is_","not_");
         document.getElementById("settings_icon").src = settings_icon;
         var fav_icon = document.getElementById("favorites_icon").src.replace("not_","is_");
@@ -262,6 +268,8 @@ function switch_tab(id) {
         document.getElementById("location").focus();
         var home_icon = document.getElementById("home_icon").src.replace("is_","not_");
         document.getElementById("home_icon").src = home_icon;
+        var search_icon = document.getElementById("search_icon").src.replace("not_","is_");
+        document.getElementById("search_icon").src = search_icon;
         var settings_icon = document.getElementById("settings_icon").src.replace("is_","not_");
         document.getElementById("settings_icon").src = settings_icon;
         var fav_icon = document.getElementById("favorites_icon").src.replace("is_","not_");
@@ -332,11 +340,11 @@ function get_data(local_id) {
                 const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
                 if (localStorage["theme"]=="escuro") {
                     var fav = document.getElementById("fav_icon");
-                    fav.src = fav.src = "is_fav_w.svg";
+                    fav.src = fav.src = "is_favorite_w.svg";
                 }
                 else if (localStorage["theme"]=="claro") {
                     var fav = document.getElementById("fav_icon");
-                    fav.src = fav.src = "is_fav_b.svg";
+                    fav.src = fav.src = "is_favorite_b.svg";
                 }
                 desc.textContent = "Remover dos favoritos";
             }
@@ -344,11 +352,11 @@ function get_data(local_id) {
                 document.getElementById("fav_icon_container").setAttribute("onclick", "add_favorite('" + local_id + "')")
                 if (localStorage["theme"]=="escuro") {
                     var fav = document.getElementById("fav_icon");
-                    fav.src = fav.src = "not_fav_w.svg";
+                    fav.src = fav.src = "not_favorite_w.svg";
                 }
                 else if (localStorage["theme"]=="claro") {
                     var fav = document.getElementById("fav_icon");
-                    fav.src = fav.src = "not_fav_b.svg";
+                    fav.src = fav.src = "not_favorite_b.svg";
                 }
                 desc.textContent = "Adicionar aos favoritos";
             }
@@ -684,7 +692,7 @@ function switch_theme(id) {
         document.getElementById("location").style.color = LIGHT;
         document.getElementById("location").style.opacity="90%";
         //document.getElementById("close_icon").src = "close_w.svg";
-        document.getElementById("search_icon").src = "search_w.svg";
+        document.getElementById("search_icon").src = "not_search_w.svg";
         document.getElementById("bottom-options").style.backgroundColor = "rgb(25, 25, 25)";
         document.getElementById("fav-notification-inner").style.backgroundColor = "rgb(40, 40, 40)";
         document.getElementById("back_button").style.backgroundColor = "rgb(61, 61, 61)";
@@ -732,7 +740,7 @@ function switch_theme(id) {
         document.getElementById("location").style.color=DARK;
         document.getElementById("location").style.opacity="90%";
         //document.getElementById("close_icon").src = "close_b.svg";
-        document.getElementById("search_icon").src = "search_b.svg";
+        document.getElementById("search_icon").src = "not_search_b.svg";
         document.getElementById("bottom-options").style.backgroundColor = "rgb(236, 236, 236)";
         document.getElementById("fav-notification-inner").style.backgroundColor = "rgb(206, 206, 206)";
         document.getElementById("back_button").style.backgroundColor = "rgb(206, 206, 206)";
