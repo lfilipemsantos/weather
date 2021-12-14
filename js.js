@@ -794,7 +794,7 @@ function switch_colors(color, notification) {
     //document.getElementById("apply-color-button").style.backgroundColor = "rgba(" + color + ", 0.1)";
     
     document.getElementById("tab-indicator").style.backgroundColor = "rgb(" + color + ")";
-    document.getElementById("search_container").style.borderBottom = "3px solid rgb(" + color + ")";
+    //document.getElementById("search_container").style.borderBottom = "3px solid rgb(" + color + ")";
 
     indicators = document.getElementsByClassName("indicator");
     change_color(indicators, "backgroundColor", color, 1);

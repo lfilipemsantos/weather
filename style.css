@@ -354,6 +354,15 @@ body {
     margin-right: auto;
 }
 
+#cores {
+    margin-top:10px; 
+    width: auto; 
+    margin-left: auto; 
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+}
+
 .row > {
     display: inline;
     width: 100%;
@@ -539,7 +548,6 @@ body {
     max-width: 500px;
     position: relative;
     padding-left: 10px;
-    border-bottom: 3px solid white;
 }
 
 #current-location-button {
