@@ -548,6 +548,7 @@ body {
     max-width: 500px;
     position: relative;
     padding-left: 10px;
+    box-sizing: border-box;
 }
 
 #current-location-button {
@@ -590,10 +591,10 @@ body {
 }
 
 .location-li {
-    margin-bottom: 10px;
-    padding-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     padding-left: 20px;
-    border-radius: 11px;
+    border-radius: var(--border-radius);
     display: none;
 }
 
