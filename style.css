@@ -1190,6 +1190,12 @@ nav a {
     text-align: right;
 }
 
+.stat_divider {
+    border-bottom: 1px solid gray; 
+    width: 120%;
+    transform: translatex(-10%);
+}
+
 #main-info {
     display: flex;
     flex-direction: row;
