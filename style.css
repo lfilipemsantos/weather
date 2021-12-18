@@ -705,6 +705,15 @@ body {
     #fav-description {
         display: block;
     }
+
+    #fav_icon_container {
+        padding: 10px;
+    }
+
+    #fav_icon_container:hover {
+        background-color: rgb(25, 25, 25);
+        border-radius: var(--border-radius);
+    }
 }
 
 
