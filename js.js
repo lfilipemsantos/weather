@@ -706,7 +706,7 @@ function switch_theme(id) {
             li[i].style.backgroundColor = "rgba(150, 150, 150, 0.2)";
         }*/
     
-        document.getElementById("search_container").style.backgroundColor = "#191919";
+        document.getElementById("search_container").style.backgroundColor = "rgba(150, 150, 150, 0.2)";
         document.getElementById("location-list-container").style.backgroundColor = "#191919";
         
         var location_icon = document.getElementById("current-location-icon")
@@ -754,7 +754,7 @@ function switch_theme(id) {
             li[i].style.backgroundColor = "rgba(206, 206, 206, 0.6)";
         }*/
         
-        document.getElementById("search_container").style.backgroundColor = "rgb(206, 206, 206)";
+        document.getElementById("search_container").style.backgroundColor = "rgba(150, 150, 150, 0.2)";
         document.getElementById("location-list-container").style.backgroundColor = "rgb(206, 206, 206)";
 
         var location_icon = document.getElementById("current-location-icon")
