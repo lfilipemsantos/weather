@@ -133,7 +133,7 @@ body {
 }
 
 .theme_option:hover {
-    background-color:rgba(114, 197, 197, 0.5);
+    background-color:rgb(126, 126, 126);
 }
 
 .theme_selected {
@@ -394,6 +394,7 @@ body {
     display: block;
     height: 510px;
     width: 100%;
+    overflow-x: scroll;
 }
 
 #table_next_days {
@@ -1147,22 +1148,26 @@ nav a {
         margin-top: -30px
     }
 
-    rows::-webkit-scrollbar-button:horizontal {
+    .rows::-webkit-scrollbar-button:horizontal {
         background-color: rgba(0, 0, 0, 0);
     }
     .rows::-webkit-scrollbar-thumb {
         background-color: rgb(202, 202, 202, 0.5);
-        height: 10px;
+        height: 8px;
         border-radius: 20px;
     }
     .rows::-webkit-scrollbar-thumb:hover {
         background-color: rgba(136, 136, 136, 0.5);
     }
+
+    #today_row {
+        padding-bottom: 20px;
+    }
   }
 
 .stats {
     width: 70%;
-    max-width: 500px;
+    max-width: 350px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
@@ -1201,8 +1206,10 @@ nav a {
 
 .stat_divider {
     border-bottom: 1px solid gray; 
-    width: 120%;
-    transform: translatex(-10%);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.2;
 }
 
 #main-info {
