@@ -1117,9 +1117,14 @@ function show_bottom_settings(setting) {
             for(i=0; i<favorites.length; i++) {
                 var fav_setting_row = document.createElement("div");
                 fav_setting_row.classList.add("fav_setting_row")
-                fav_setting_row.textContent = favorites[i]["name"];
+                var fav_setting_remove = document.createElement("div");
+                var fav_setting_name = document.createElement("div");
+                fav_setting_name.textContent = favorites[i]["name"];
+                fav_setting_remove.textContent = "x";
                 fav_list = document.getElementById("fav-list");
                 console.log(typeof(fav_list))
+                fav_setting_row.appendChild(fav_setting_remove);
+                fav_setting_row.appendChild(fav_setting_name);
                 fav_list.appendChild(fav_setting_row);
             }
         }
