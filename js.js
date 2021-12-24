@@ -935,10 +935,7 @@ function add_favorite(id) {
 
 }
 
-function rem_favorite(id) {
-    document.getElementById("fav-notification").children[0].textContent = "Removido dos favoritos";
-    document.getElementById("fav_icon_container").setAttribute("onclick", "");
-    document.getElementById("fav-notification").style.top="20px";
+function remove_from_fav(id) {
     fav_list = JSON.parse(localStorage["favorites"]);
     for(i=0; i<fav_list.length; i++) {
         if (fav_list[i]["id"] == id) {
@@ -946,6 +943,13 @@ function rem_favorite(id) {
         }
     }
     localStorage["favorites"] = JSON.stringify(fav_list);
+}
+
+function rem_favorite(id) {
+    document.getElementById("fav-notification").children[0].textContent = "Removido dos favoritos";
+    document.getElementById("fav_icon_container").setAttribute("onclick", "");
+    document.getElementById("fav-notification").style.top="20px";
+    remove_from_fav(id);
     img_src = document.getElementById("fav_icon").src
     new_img_src = img_src.replace("is_", "not_");
     desc = document.getElementById("fav-description")
@@ -1118,6 +1122,7 @@ function show_bottom_settings(setting) {
                 var fav_setting_row = document.createElement("div");
                 fav_setting_row.classList.add("fav_setting_row")
                 var fav_setting_remove = document.createElement("div");
+                fav_setting_remove.setAttribute("onclick", "remove_from_fav('" + favorites[i]["id"] + "')")
                 var fav_setting_name = document.createElement("div");
                 fav_setting_name.textContent = favorites[i]["name"];
                 fav_setting_remove.textContent = "x";
