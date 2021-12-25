@@ -404,6 +404,10 @@ function clear_rows(tab) {
     if (tab == "favorites") {
         var rows = ["favorites-tab"];
     }
+    if (tab == "favorites-settings") {
+        console.log(document.getElementById("fav-list"))
+        var rows = ["fav-list"];
+    }
     else if (tab == "home") {
         var rows = ["innerToday", "innerTomorrow", "inner_next_days"];
         var rows = ["innerToday", "inner_next_days"];
@@ -943,6 +947,8 @@ function remove_from_fav(id) {
         }
     }
     localStorage["favorites"] = JSON.stringify(fav_list);
+    clear_rows("favorites-settings")
+    load_fav_settings();
 }
 
 function rem_favorite(id) {
@@ -1109,6 +1115,26 @@ function show_top_settings() {
     back_button.style.display = "none"
 }
 
+
+function load_fav_settings() {
+    favorites = JSON.parse(localStorage["favorites"]);
+    if(favorites.length>0) {
+        for(i=0; i<favorites.length; i++) {
+            var fav_setting_row = document.createElement("div");
+            fav_setting_row.classList.add("fav_setting_row")
+            var fav_setting_remove = document.createElement("div");
+            fav_setting_remove.setAttribute("onclick", "remove_from_fav('" + favorites[i]["id"] + "')")
+            var fav_setting_name = document.createElement("div");
+            fav_setting_name.textContent = favorites[i]["name"];
+            fav_setting_remove.textContent = "x";
+            fav_list = document.getElementById("fav-list");
+            fav_setting_row.appendChild(fav_setting_remove);
+            fav_setting_row.appendChild(fav_setting_name);
+            fav_list.appendChild(fav_setting_row);
+        }
+    }
+}
+
 function show_bottom_settings(setting) {
     middles = document.getElementsByClassName("top-setting");
     for (i=0; i<middles.length; i++) {
@@ -1116,23 +1142,8 @@ function show_bottom_settings(setting) {
     }
 
     if (setting == "fav_settings") {
-        favorites = JSON.parse(localStorage["favorites"]);
-        if(favorites.length>0) {
-            for(i=0; i<favorites.length; i++) {
-                var fav_setting_row = document.createElement("div");
-                fav_setting_row.classList.add("fav_setting_row")
-                var fav_setting_remove = document.createElement("div");
-                fav_setting_remove.setAttribute("onclick", "remove_from_fav('" + favorites[i]["id"] + "')")
-                var fav_setting_name = document.createElement("div");
-                fav_setting_name.textContent = favorites[i]["name"];
-                fav_setting_remove.textContent = "x";
-                fav_list = document.getElementById("fav-list");
-                console.log(typeof(fav_list))
-                fav_setting_row.appendChild(fav_setting_remove);
-                fav_setting_row.appendChild(fav_setting_name);
-                fav_list.appendChild(fav_setting_row);
-            }
-        }
+        clear_rows("favorites-settings");
+        load_fav_settings();
     }
 
     bottoms = document.getElementsByClassName(setting);
