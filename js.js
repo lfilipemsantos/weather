@@ -1109,7 +1109,7 @@ function show_top_settings() {
     }
     tops = document.getElementsByClassName("top-setting");
     for (i=0; i<tops.length; i++) {
-        tops[i].style.display = "block"
+        tops[i].style.display = "flex"
     }
     back_button = document.getElementById("back_button");
     back_button.style.display = "none"
