@@ -704,6 +704,14 @@ function switch_theme(id) {
         for(i = 0; i<hr.length; i++) {
             hr[i].style.backgroundColor = LIGHT;
         }
+        var setting_icons = document.getElementsByClassName("setting-icon");
+        for(i = 0; i<setting_icons.length; i++) {
+            setting_icons[i].src = setting_icons[i].src.replace("_b", "_w");
+        }
+        var tab_title = document.getElementsByClassName("tab-title");
+        for(i = 0; i<tab_title.length; i++) {
+            tab_title[i].style.backgroundColor = "rgb(32, 32, 32)";
+        }
 
         /*li = document.getElementsByClassName("location-li");
         for(i = 0; i<li.length; i++) {
@@ -753,6 +761,14 @@ function switch_theme(id) {
             hr[i].style.backgroundColor = DARK;
         }
 
+        var setting_icons = document.getElementsByClassName("setting-icon");
+        for(i = 0; i<setting_icons.length; i++) {
+            setting_icons[i].src = setting_icons[i].src.replace("_w", "_b");
+        }
+        var tab_title = document.getElementsByClassName("tab-title");
+        for(i = 0; i<tab_title.length; i++) {
+            tab_title[i].style.backgroundColor = "rgb(200, 200, 200)";
+        }
         /*li = document.getElementsByClassName("location-li");
         for(i = 0; i<li.length; i++) {
             li[i].style.backgroundColor = "rgba(206, 206, 206, 0.6)";
