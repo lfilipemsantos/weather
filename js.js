@@ -695,11 +695,9 @@ function switch_theme(id) {
         document.body.style.color = LIGHT;
         document.getElementById("location").style.color = LIGHT;
         document.getElementById("location").style.opacity="90%";
-        //document.getElementById("close_icon").src = "close_w.svg";
         document.getElementById("search_icon").src = "not_search_w.svg";
         document.getElementById("bottom-options").style.backgroundColor = "rgb(25, 25, 25)";
         document.getElementById("fav-notification-inner").style.backgroundColor = "rgb(40, 40, 40)";
-        document.getElementById("back_button").style.backgroundColor = "rgb(61, 61, 61)";
         hr = document.getElementsByClassName("row-divider");
         for(i = 0; i<hr.length; i++) {
             hr[i].style.backgroundColor = LIGHT;
@@ -708,15 +706,6 @@ function switch_theme(id) {
         for(i = 0; i<setting_icons.length; i++) {
             setting_icons[i].src = setting_icons[i].src.replace("_b", "_w");
         }
-        var tab_title = document.getElementsByClassName("tab-title");
-        for(i = 0; i<tab_title.length; i++) {
-            tab_title[i].style.backgroundColor = "rgb(32, 32, 32)";
-        }
-
-        /*li = document.getElementsByClassName("location-li");
-        for(i = 0; i<li.length; i++) {
-            li[i].style.backgroundColor = "rgba(150, 150, 150, 0.2)";
-        }*/
     
         document.getElementById("search_container").style.backgroundColor = "rgba(150, 150, 150, 0.2)";
         document.getElementById("location-list-container").style.backgroundColor = "#191919";
@@ -736,9 +725,6 @@ function switch_theme(id) {
         var fav = document.getElementById("fav_icon");
         fav.src = fav.src.replace("b.svg", "w.svg");
 
-        //var refresh = document.getElementById("refresh_icon");
-        //refresh.src = refresh.src.replace("b.svg", "w.svg");
-
         for(i=0; i<buttons.length; i++) {
             var button = document.getElementById(buttons[i] + "_icon")
             button.src = button.src.replace("b.svg", "w.svg");
@@ -751,11 +737,9 @@ function switch_theme(id) {
         document.body.style.color=DARK;
         document.getElementById("location").style.color=DARK;
         document.getElementById("location").style.opacity="90%";
-        //document.getElementById("close_icon").src = "close_b.svg";
         document.getElementById("search_icon").src = "not_search_b.svg";
         document.getElementById("bottom-options").style.backgroundColor = "rgb(236, 236, 236)";
         document.getElementById("fav-notification-inner").style.backgroundColor = "rgb(206, 206, 206)";
-        document.getElementById("back_button").style.backgroundColor = "rgb(206, 206, 206)";
         hr = document.getElementsByClassName("row-divider");
         for(i = 0; i<hr.length; i++) {
             hr[i].style.backgroundColor = DARK;
@@ -765,14 +749,6 @@ function switch_theme(id) {
         for(i = 0; i<setting_icons.length; i++) {
             setting_icons[i].src = setting_icons[i].src.replace("_w", "_b");
         }
-        var tab_title = document.getElementsByClassName("tab-title");
-        for(i = 0; i<tab_title.length; i++) {
-            tab_title[i].style.backgroundColor = "rgb(200, 200, 200)";
-        }
-        /*li = document.getElementsByClassName("location-li");
-        for(i = 0; i<li.length; i++) {
-            li[i].style.backgroundColor = "rgba(206, 206, 206, 0.6)";
-        }*/
         
         document.getElementById("search_container").style.backgroundColor = "rgba(150, 150, 150, 0.2)";
         document.getElementById("location-list-container").style.backgroundColor = "rgb(206, 206, 206)";

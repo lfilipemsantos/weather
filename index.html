@@ -150,9 +150,11 @@
         </div>
 
         <div class="rows" id="settings-tab" style="height: 100%;">
-            <h2 class="tab-title">Definições</h2>
-            <div id="back_button" onclick="show_top_settings()">
-                &lt; Voltar
+            <div class="tab-title-container" style="position: relative;">  
+                <div id="back_button" onclick="show_top_settings()" style="position: absolute; left: 0; font-size: xx-large;">
+                    &larr;
+                </div>
+                <h2 class="tab-title">Definições</h2>
             </div>
             <div class="setting top-setting personalizacao" onclick="show_bottom_settings('tema')" style="display: flex !important; flex-direction: row;">
                 <div style="flex-basis: 25%;">
