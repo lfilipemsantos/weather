@@ -914,14 +914,14 @@ body {
 }
 
 .setting {
-    width: 75%;
+    width: 85%;
     background-color: rgba(150, 150, 150, 0.2);
     padding: 20px;
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
     border-radius: var(--border-radius);
-    max-width: 400px;
+    max-width: 480px;
     position: relative;
 }
 
@@ -975,10 +975,9 @@ body {
     width: 20% !important;
     text-align: center;
     vertical-align: middle;
-    position: absolute;
     right:0px;
     top: 40%;
-    height: 50%;
+    height: 100%;
 }
 
 .setting-category {
@@ -1034,7 +1033,7 @@ nav a {
  
  nav a.selected {
      width: 25px;
- }
+}
 
 
 /*WIDGETS*/
