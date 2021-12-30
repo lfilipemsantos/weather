@@ -274,6 +274,12 @@ body {
     max-width: 450px;
 }
 
+@media screen and (min-width: 1080px) {
+    #inner_next_days {
+        justify-content: center;
+    }
+}
+
 
 @media screen and (min-width: 600px) {
     #inner_next_days {
