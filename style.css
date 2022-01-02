@@ -606,6 +606,10 @@ body {
     display: none;
 }
 
+.location-li:hover {
+    cursor: pointer;
+}
+
 #bottom-options {
     position: fixed;
     height: 60px;
