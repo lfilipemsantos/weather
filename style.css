@@ -866,6 +866,10 @@ body {
     height: fit-content;
 }
 
+#settings-tab {
+    margin-bottom: 100px;
+}
+
 #fav-notification {
     width: 100%;
     display: block;
