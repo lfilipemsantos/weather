@@ -669,7 +669,7 @@ function set_theme_preference() {
 
 
 function switch_theme(id) {
-    const DARK = "rgb(14, 14, 14)"
+    const DARK = "rgb(12, 12, 12)"
     const LIGHT = "rgb(245, 245, 245)"
 
     var buttons = ["home", "favorites", "settings"]

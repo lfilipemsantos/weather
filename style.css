@@ -21,7 +21,7 @@
 }
 
 :root {
-    --border-radius: 15px;
+    --border-radius: 24px;
 }
 
 * {
@@ -117,7 +117,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.4);    
     text-align: left;
     cursor: pointer;
@@ -552,7 +552,7 @@ body {
     margin-right:auto;
     margin-top: 20px;
     width: 90%;
-    border-radius: var(--border-radius);
+    border-radius: 22px;
     max-width: 500px;
     position: relative;
     padding-left: 10px;
@@ -578,7 +578,7 @@ body {
     color: white;
     height: 50px;
     width: 100%;
-    padding-left: 00px;
+    padding-left: 10px;
     text-align: left;
 }
 
@@ -963,6 +963,7 @@ body {
     border-radius: var(--border-radius);
     max-width: 480px;
     position: relative;
+    box-sizing: border-box;
 }
 
 .top-setting, .middle-setting {
