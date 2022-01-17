@@ -362,12 +362,13 @@ body {
 }
 
 #cores {
-    margin-top:10px; 
-    width: auto; 
+    margin-top: 10px; 
+    width: 100%; 
     margin-left: auto; 
     margin-right: auto;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .row > {
@@ -476,11 +477,11 @@ body {
 }
 
 .color_button {
-    height:40px;
+    height: 40px;
     width: 40px;
     padding: 0px;
-    margin-left: 2px;
-    margin-right: 2px;
+    margin-left: 4px;
+    margin-right: 4px;
     border-radius: 50%;
     vertical-align: middle;
     display: inline-block;
@@ -548,9 +549,9 @@ body {
 #search_container {
     background-color: rgba(181, 181, 181, 0.2);
     height: 50px;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
     width: 90%;
     border-radius: 22px;
     max-width: 500px;
@@ -947,9 +948,9 @@ body {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
-    padding-bottom: 20px;
-    padding-top: 25px;
+    margin-bottom: 0px;
+    padding-bottom: 25px;
+    padding-top: 35px;
     width: 100%;
 }
 
