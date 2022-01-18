@@ -548,11 +548,11 @@ body {
 
 #search_container {
     background-color: rgba(181, 181, 181, 0.2);
-    height: 50px;
+    height: 55px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0px;
-    width: 90%;
+    width: 85%;
     border-radius: 22px;
     max-width: 500px;
     position: relative;
@@ -568,7 +568,7 @@ body {
     width: 50px;
     text-align: center;
     cursor: pointer;
-    height: 50px;
+    height: 55px;
     border-radius: 0px var(--border-radius) var(--border-radius) 0px;
     opacity: 1;
     transition: opacity 200ms ease-in-out;
@@ -577,15 +577,18 @@ body {
 #location {
     background-color: transparent;
     color: white;
-    height: 50px;
+    height: 53px;
     width: 100%;
-    padding-left: 10px;
+    padding-left: 15px;
+    margin-top: 2px;
     text-align: left;
+    font-size: 1rem;
+    font-family: 'Biotif Regular', sans-serif;
 }
 
 #location-list-container {
     margin-top: 15px;
-    width: 90%;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 100px;
