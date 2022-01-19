@@ -164,7 +164,7 @@ body {
 
 
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 300px) {
 
     .date_prev + small{
         display: none;
@@ -206,6 +206,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-size: 1.1rem;
 }
 
 .date_container > * {
@@ -563,7 +564,7 @@ body {
 #current-location-button {
     background-color: rgba(150, 150, 150, 0.1);
     position: absolute;
-    top:0;
+    top: 0;
     right: 0;
     width: 50px;
     text-align: center;
@@ -819,8 +820,8 @@ body {
     grid-gap: 20px;
     margin-right: auto;
     margin-left: auto;
-    width: 80%;
-    max-width: 400px;
+    width: 85%;
+    max-width: 500px;
     margin-bottom: 100px;
 }
 
@@ -980,8 +981,8 @@ body {
     padding:0;
 }
 
-.setting > div > small{
-    font-family: 'Biotif Light', sans-serif;
+.setting > div small{
+    font-family: 'Biotif Regular', sans-serif;
 }
 
 .top-setting {
