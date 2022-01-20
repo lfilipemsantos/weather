@@ -136,14 +136,14 @@ body {
 }
 
 .theme_selected {
-    width: 6px;
+    width: 10px;
     height: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: rgba(124, 211, 218);
-    border-radius: 0px 4px 4px 0px;
+    border-radius: 50%;
     position: absolute;
-    left: 0;
+    left: 1px;
     display: none;
 }
 
