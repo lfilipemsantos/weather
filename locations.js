@@ -6,6 +6,16 @@ var locations = [
             {
                 "idRegiao": 1,
                 "idAreaAviso": "VIS",
+                "globalIdLocal": 1182300,
+                "idConcelho": 23,
+                "latitude": "40.6585",
+                "idDistrito": 18,
+                "local": "Viseu",
+                "longitude": "-7.9120"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "VIS",
                 "globalIdLocal": 1180100,
                 "idConcelho": 1,
                 "latitude": "41.1071",
@@ -226,16 +236,6 @@ var locations = [
             {
                 "idRegiao": 1,
                 "idAreaAviso": "VIS",
-                "globalIdLocal": 1182300,
-                "idConcelho": 23,
-                "latitude": "40.6585",
-                "idDistrito": 18,
-                "local": "Viseu",
-                "longitude": "-7.9120"
-            },
-            {
-                "idRegiao": 1,
-                "idAreaAviso": "VIS",
                 "globalIdLocal": 1182400,
                 "idConcelho": 24,
                 "latitude": "40.7249",
@@ -249,6 +249,16 @@ var locations = [
         "nome_distrito":"Aveiro",
         "id_distrito":200,
         "localidade_distrito": [
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "AVR",
+                "globalIdLocal": 1010500,
+                "idConcelho": 5,
+                "latitude": "40.6413",
+                "idDistrito": 1,
+                "local": "Aveiro",
+                "longitude": "-8.6535"
+            },
             {
                 "idRegiao": 1,
                 "idAreaAviso": "AVR",
@@ -288,16 +298,6 @@ var locations = [
                 "idDistrito": 1,
                 "local": "Arouca",
                 "longitude": "-8.2600"
-            },
-            {
-                "idRegiao": 1,
-                "idAreaAviso": "AVR",
-                "globalIdLocal": 1010500,
-                "idConcelho": 5,
-                "latitude": "40.6413",
-                "idDistrito": 1,
-                "local": "Aveiro",
-                "longitude": "-8.6535"
             },
             {
                 "idRegiao": 1,
@@ -548,6 +548,16 @@ var locations = [
             {
                 "idRegiao": 1,
                 "idAreaAviso": "BJA",
+                "globalIdLocal": 1020500,
+                "idConcelho": 5,
+                "latitude": "38.0200",
+                "idDistrito": 2,
+                "local": "Beja",
+                "longitude": "-7.8700"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "BJA",
                 "globalIdLocal": 1020100,
                 "idConcelho": 1,
                 "latitude": "37.8800",
@@ -584,16 +594,6 @@ var locations = [
                 "idDistrito": 2,
                 "local": "Barrancos",
                 "longitude": "-6.9800"
-            },
-            {
-                "idRegiao": 1,
-                "idAreaAviso": "BJA",
-                "globalIdLocal": 1020500,
-                "idConcelho": 5,
-                "latitude": "38.0200",
-                "idDistrito": 2,
-                "local": "Beja",
-                "longitude": "-7.8700"
             },
             {
                 "idRegiao": 1,
@@ -734,6 +734,16 @@ var locations = [
             {
                 "idRegiao": 1,
                 "idAreaAviso": "BRG",
+                "globalIdLocal": 1030300,
+                "idConcelho": 3,
+                "latitude": "41.5475",
+                "idDistrito": 3,
+                "local": "Braga",
+                "longitude": "-8.4227"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "BRG",
                 "globalIdLocal": 1030100,
                 "idConcelho": 1,
                 "latitude": "41.5400",
@@ -750,16 +760,6 @@ var locations = [
                 "idDistrito": 3,
                 "local": "Barcelos",
                 "longitude": "-8.3489"
-            },
-            {
-                "idRegiao": 1,
-                "idAreaAviso": "BRG",
-                "globalIdLocal": 1030300,
-                "idConcelho": 3,
-                "latitude": "41.5475",
-                "idDistrito": 3,
-                "local": "Braga",
-                "longitude": "-8.4227"
             },
             {
                 "idRegiao": 1,
@@ -910,22 +910,22 @@ var locations = [
             {
                 "idRegiao": 1,
                 "idAreaAviso": "BGC",
-                "globalIdLocal": 1040100,
-                "idConcelho": 1,
-                "latitude": "41.3424",
-                "idDistrito": 4,
-                "local": "Alfandega da Fé",
-                "longitude": "-6.9625"
-            },
-            {
-                "idRegiao": 1,
-                "idAreaAviso": "BGC",
                 "globalIdLocal": 1040200,
                 "idConcelho": 2,
                 "latitude": "41.8076",
                 "idDistrito": 4,
                 "local": "Bragança",
                 "longitude": "-6.7606"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "BGC",
+                "globalIdLocal": 1040100,
+                "idConcelho": 1,
+                "latitude": "41.3424",
+                "idDistrito": 4,
+                "local": "Alfandega da Fé",
+                "longitude": "-6.9625"
             },
             {
                 "idRegiao": 1,
@@ -1036,22 +1036,22 @@ var locations = [
             {
                 "idRegiao": 1,
                 "idAreaAviso": "CBO",
-                "globalIdLocal": 1050100,
-                "idConcelho": 1,
-                "latitude": "40.3597",
-                "idDistrito": 5,
-                "local": "Belmonte",
-                "longitude": "-7.3486"
-            },
-            {
-                "idRegiao": 1,
-                "idAreaAviso": "CBO",
                 "globalIdLocal": 1050200,
                 "idConcelho": 2,
                 "latitude": "39.8217",
                 "idDistrito": 5,
                 "local": "Castelo Branco",
                 "longitude": "-7.4957"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "CBO",
+                "globalIdLocal": 1050100,
+                "idConcelho": 1,
+                "latitude": "40.3597",
+                "idDistrito": 5,
+                "local": "Belmonte",
+                "longitude": "-7.3486"
             },
             {
                 "idRegiao": 1,
@@ -1162,6 +1162,16 @@ var locations = [
             {
                 "idRegiao": 1,
                 "idAreaAviso": "CBR",
+                "globalIdLocal": 1060300,
+                "idConcelho": 3,
+                "latitude": "40.2081",
+                "idDistrito": 6,
+                "local": "Coimbra",
+                "longitude": "-8.4194"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "CBR",
                 "globalIdLocal": 1060100,
                 "idConcelho": 1,
                 "latitude": "40.2200",
@@ -1188,16 +1198,6 @@ var locations = [
                 "idDistrito": 6,
                 "local": "Praia da Tocha",
                 "longitude": "-8.8400"
-            },
-            {
-                "idRegiao": 1,
-                "idAreaAviso": "CBR",
-                "globalIdLocal": 1060300,
-                "idConcelho": 3,
-                "latitude": "40.2081",
-                "idDistrito": 6,
-                "local": "Coimbra",
-                "longitude": "-8.4194"
             },
             {
                 "idRegiao": 1,
@@ -1368,6 +1368,16 @@ var locations = [
             {
                 "idRegiao": 1,
                 "idAreaAviso": "EVR",
+                "globalIdLocal": 1070500,
+                "idConcelho": 5,
+                "latitude": "38.5701",
+                "idDistrito": 7,
+                "local": "Évora",
+                "longitude": "-7.9104"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "EVR",
                 "globalIdLocal": 1070100,
                 "idConcelho": 1,
                 "latitude": "38.7000",
@@ -1404,16 +1414,6 @@ var locations = [
                 "idDistrito": 7,
                 "local": "Estremoz",
                 "longitude": "-7.5869"
-            },
-            {
-                "idRegiao": 1,
-                "idAreaAviso": "EVR",
-                "globalIdLocal": 1070500,
-                "idConcelho": 5,
-                "latitude": "38.5701",
-                "idDistrito": 7,
-                "local": "Évora",
-                "longitude": "-7.9104"
             },
             {
                 "idRegiao": 1,
@@ -1511,6 +1511,16 @@ var locations = [
         "nome_distrito":"Faro",
         "id_distrito":900,
         "localidade_distrito": [
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "FAR",
+                "globalIdLocal": 1080500,
+                "idConcelho": 5,
+                "latitude": "37.0146",
+                "idDistrito": 8,
+                "local": "Faro",
+                "longitude": "-7.9331"
+            },
             {
                 "idRegiao": 1,
                 "idAreaAviso": "FAR",
@@ -1640,16 +1650,6 @@ var locations = [
                 "idDistrito": 8,
                 "local": "Praia de Altura",
                 "longitude": "-7.4974"
-            },
-            {
-                "idRegiao": 1,
-                "idAreaAviso": "FAR",
-                "globalIdLocal": 1080500,
-                "idConcelho": 5,
-                "latitude": "37.0146",
-                "idDistrito": 8,
-                "local": "Faro",
-                "longitude": "-7.9331"
             },
             {
                 "idRegiao": 1,
@@ -2040,6 +2040,16 @@ var locations = [
             {
                 "idRegiao": 1,
                 "idAreaAviso": "GDA",
+                "globalIdLocal": 1090700,
+                "idConcelho": 7,
+                "latitude": "40.5379",
+                "idDistrito": 9,
+                "local": "Guarda",
+                "longitude": "-7.2647"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "GDA",
                 "globalIdLocal": 1090100,
                 "idConcelho": 1,
                 "latitude": "40.8200",
@@ -2096,16 +2106,6 @@ var locations = [
                 "idDistrito": 9,
                 "local": "Gouveia",
                 "longitude": "-7.5937"
-            },
-            {
-                "idRegiao": 1,
-                "idAreaAviso": "GDA",
-                "globalIdLocal": 1090700,
-                "idConcelho": 7,
-                "latitude": "40.5379",
-                "idDistrito": 9,
-                "local": "Guarda",
-                "longitude": "-7.2647"
             },
             {
                 "idRegiao": 1,
@@ -2206,6 +2206,16 @@ var locations = [
             {
                 "idRegiao": 1,
                 "idAreaAviso": "LRA",
+                "globalIdLocal": 1100900,
+                "idConcelho": 9,
+                "latitude": "39.7473",
+                "idDistrito": 10,
+                "local": "Leiria",
+                "longitude": "-8.8069"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "LRA",
                 "globalIdLocal": 1100100,
                 "idConcelho": 1,
                 "latitude": "39.5500",
@@ -2302,16 +2312,6 @@ var locations = [
                 "idDistrito": 10,
                 "local": "Figueiró dos Vinhos",
                 "longitude": "-8.2700"
-            },
-            {
-                "idRegiao": 1,
-                "idAreaAviso": "LRA",
-                "globalIdLocal": 1100900,
-                "idConcelho": 9,
-                "latitude": "39.7473",
-                "idDistrito": 10,
-                "local": "Leiria",
-                "longitude": "-8.8069"
             },
             {
                 "idRegiao": 1,
