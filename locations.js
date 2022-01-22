@@ -2482,6 +2482,16 @@ var locations = [
             {
                 "idRegiao": 1,
                 "idAreaAviso": "LSB",
+                "globalIdLocal": 1110600,
+                "idConcelho": 6,
+                "latitude": "38.7660",
+                "idDistrito": 11,
+                "local": "Lisboa",
+                "longitude": "-9.1286"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "LSB",
                 "globalIdLocal": 1110100,
                 "idConcelho": 1,
                 "latitude": "39.0537",
@@ -2558,16 +2568,6 @@ var locations = [
                 "idDistrito": 11,
                 "local": "Praia de Cascais",
                 "longitude": "-9.4198"
-            },
-            {
-                "idRegiao": 1,
-                "idAreaAviso": "LSB",
-                "globalIdLocal": 1110600,
-                "idConcelho": 6,
-                "latitude": "38.7660",
-                "idDistrito": 11,
-                "local": "Lisboa",
-                "longitude": "-9.1286"
             },
             {
                 "idRegiao": 1,
@@ -2808,6 +2808,16 @@ var locations = [
             {
                 "idRegiao": 1,
                 "idAreaAviso": "PTG",
+                "globalIdLocal": 1121400,
+                "idConcelho": 14,
+                "latitude": "39.2900",
+                "idDistrito": 12,
+                "local": "Portalegre",
+                "longitude": "-7.4200"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "PTG",
                 "globalIdLocal": 1120100,
                 "idConcelho": 1,
                 "latitude": "39.2000",
@@ -2934,16 +2944,6 @@ var locations = [
                 "idDistrito": 12,
                 "local": "Ponte de Sor",
                 "longitude": "-8.0100"
-            },
-            {
-                "idRegiao": 1,
-                "idAreaAviso": "PTG",
-                "globalIdLocal": 1121400,
-                "idConcelho": 14,
-                "latitude": "39.2900",
-                "idDistrito": 12,
-                "local": "Portalegre",
-                "longitude": "-7.4200"
             },
             {
                 "idRegiao": 1,
