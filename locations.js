@@ -2964,6 +2964,16 @@ var locations = [
             {
                 "idRegiao": 1,
                 "idAreaAviso": "PTO",
+                "globalIdLocal": 1131200,
+                "idConcelho": 12,
+                "latitude": "41.1580",
+                "idDistrito": 13,
+                "local": "Porto",
+                "longitude": "-8.6294"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "PTO",
                 "globalIdLocal": 1130100,
                 "idConcelho": 1,
                 "latitude": "41.2697",
@@ -3090,16 +3100,6 @@ var locations = [
                 "idDistrito": 13,
                 "local": "Penafiel",
                 "longitude": "-8.2798"
-            },
-            {
-                "idRegiao": 1,
-                "idAreaAviso": "PTO",
-                "globalIdLocal": 1131200,
-                "idConcelho": 12,
-                "latitude": "41.1580",
-                "idDistrito": 13,
-                "local": "Porto",
-                "longitude": "-8.6294"
             },
             {
                 "idRegiao": 1,
@@ -3260,6 +3260,16 @@ var locations = [
             {
                 "idRegiao": 1,
                 "idAreaAviso": "STM",
+                "globalIdLocal": 1141600,
+                "idConcelho": 16,
+                "latitude": "39.2000",
+                "idDistrito": 14,
+                "local": "Santarém",
+                "longitude": "-8.7400"
+            },
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STM",
                 "globalIdLocal": 1140100,
                 "idConcelho": 1,
                 "latitude": "39.4616",
@@ -3410,16 +3420,6 @@ var locations = [
             {
                 "idRegiao": 1,
                 "idAreaAviso": "STM",
-                "globalIdLocal": 1141600,
-                "idConcelho": 16,
-                "latitude": "39.2000",
-                "idDistrito": 14,
-                "local": "Santarém",
-                "longitude": "-8.7400"
-            },
-            {
-                "idRegiao": 1,
-                "idAreaAviso": "STM",
                 "globalIdLocal": 1141700,
                 "idConcelho": 17,
                 "latitude": "39.5400",
@@ -3473,6 +3473,16 @@ var locations = [
         "nome_distrito":"Setúbal",
         "id_distrito":1500,
         "localidade_distrito": [
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "STB",
+                "globalIdLocal": 1151200,
+                "idConcelho": 12,
+                "latitude": "38.5246",
+                "idDistrito": 15,
+                "local": "Setúbal",
+                "longitude": "-8.8856"
+            },
             {
                 "idRegiao": 1,
                 "idAreaAviso": "STB",
@@ -3706,16 +3716,6 @@ var locations = [
             {
                 "idRegiao": 1,
                 "idAreaAviso": "STB",
-                "globalIdLocal": 1151200,
-                "idConcelho": 12,
-                "latitude": "38.5246",
-                "idDistrito": 15,
-                "local": "Setúbal",
-                "longitude": "-8.8856"
-            },
-            {
-                "idRegiao": 1,
-                "idAreaAviso": "STB",
                 "globalIdLocal": 1151300,
                 "idConcelho": 13,
                 "latitude": "37.9560",
@@ -3769,6 +3769,16 @@ var locations = [
         "nome_distrito":"Viana do Castelo",
         "id_distrito":1600,
         "localidade_distrito": [
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "VCT",
+                "globalIdLocal": 1160900,
+                "idConcelho": 9,
+                "latitude": "41.6952",
+                "idDistrito": 16,
+                "local": "Viana do Castelo",
+                "longitude": "-8.8365"
+            },
             {
                 "idRegiao": 1,
                 "idAreaAviso": "VCT",
@@ -3882,16 +3892,6 @@ var locations = [
             {
                 "idRegiao": 1,
                 "idAreaAviso": "VCT",
-                "globalIdLocal": 1160900,
-                "idConcelho": 9,
-                "latitude": "41.6952",
-                "idDistrito": 16,
-                "local": "Viana do Castelo",
-                "longitude": "-8.8365"
-            },
-            {
-                "idRegiao": 1,
-                "idAreaAviso": "VCT",
                 "globalIdLocal": 1160921,
                 "idConcelho": 9,
                 "latitude": "41.6712",
@@ -3925,6 +3925,16 @@ var locations = [
         "nome_distrito":"Vila Real",
         "id_distrito":1700,
         "localidade_distrito": [
+            {
+                "idRegiao": 1,
+                "idAreaAviso": "VRL",
+                "globalIdLocal": 1171400,
+                "idConcelho": 14,
+                "latitude": "41.3053",
+                "idDistrito": 17,
+                "local": "Vila Real",
+                "longitude": "-7.7440"
+            },
             {
                 "idRegiao": 1,
                 "idAreaAviso": "VRL",
@@ -4054,16 +4064,6 @@ var locations = [
                 "idDistrito": 17,
                 "local": "Vila Pouca de Aguiar",
                 "longitude": "-7.6441"
-            },
-            {
-                "idRegiao": 1,
-                "idAreaAviso": "VRL",
-                "globalIdLocal": 1171400,
-                "idConcelho": 14,
-                "latitude": "41.3053",
-                "idDistrito": 17,
-                "local": "Vila Real",
-                "longitude": "-7.7440"
             }
         ]
     },
