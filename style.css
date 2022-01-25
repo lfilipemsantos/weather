@@ -682,30 +682,6 @@ body {
     display: none;
 }
 
-#fav_icon_container {
-    width: auto;
-    height: auto;
-    cursor: pointer;
-    position: absolute;
-    top:0;
-    right: 0;
-    margin-top: 32px;
-    margin-right: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-#fav-description {
-    display: none;
-}
-
-#fav_icon {
-    height: 26px;
-    margin-bottom: 4px;
-    margin-right: 5px;
-}
-
 @media screen and (min-width: 600px) {
     #bottom-options {
         height: 90px;
@@ -738,12 +714,15 @@ body {
     }
 
     #fav-description {
-        display: block;
+        display: block !important;
+        justify-content: center;
+        padding-left: 2px;
     }
 
     #fav_icon_container {
-        margin-top: 15px;
+        margin-top: 0px;
         padding: 15px 20px;
+        min-width: 230px !important;
     }
 
     #fav_icon {
@@ -796,11 +775,34 @@ body {
 }
 
 #location-date-container {
-    position: absolute;
-    top: 30px;
-    left: 20px;
-    max-width: 90%;
+    width: 85%;
 }
+
+#fav_icon_container {
+    width: 15%;
+    height: min-content;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    min-width: 40px;
+    box-sizing: border-box;
+    padding-top: 0;
+    padding-right: 0;
+}
+
+#fav-description {
+    display: none;
+}
+
+#fav_icon {
+    height: 26px;
+    margin-bottom: 4px;
+    margin-right: 5px;
+}
+
 #location-text {
     line-height: 1;
     font-family: 'Biotif Regular', sans-serif;
@@ -910,12 +912,6 @@ body {
     font-weight: bold;
     margin-top: 5px;
     margin-bottom: 5px;
-}
-
-.fav_icon_container {
-    display: inline-block;
-    width: 15%;
-    text-align: center;
 }
 
 .fav_info_container > small {
