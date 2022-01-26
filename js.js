@@ -982,7 +982,7 @@ function build_favorites() {
             fav_temp_container.classList.add("fav_temp_container");
             
             var fav_icon_container = document.createElement('div')
-            fav_icon_container.classList.add("fav_icon_container");
+            fav_icon_container.classList.add("fav_row_icon_container");
 
             var weather_info_container = document.createElement('div')
             weather_info_container.classList.add("fav_info_container");

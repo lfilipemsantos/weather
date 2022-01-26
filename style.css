@@ -869,6 +869,12 @@ body {
     box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.4);
 }
 
+.fav_row_icon_container {
+    display: inline-block;
+    width: 15%;
+    text-align: center;
+}
+
 #favorites-tab {
     height: fit-content;
 }
@@ -918,7 +924,7 @@ body {
     font-family: 'Biotif Regular', sans-serif;
 }
 
-.fav_icon_container > img {
+.fav_row_icon_container > img {
     height: 40px;
     margin-top: -0px;
 }
@@ -1263,7 +1269,7 @@ nav a {
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin-top: 150px;
+    margin-top: 20px;
     margin-bottom: 60px;
 }
 
