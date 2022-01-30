@@ -418,16 +418,18 @@ body {
 .hour_temp {
     height: 25px;
     text-align: center;
-    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
 }
 
 .hour_time {
     height: 18px;
-    margin-top: auto;
     text-align: center;
     line-height: 18px;
-    margin-bottom: 10px;
+    margin-top: 10px;
     font-family: 'Biotif Regular', sans-serif;
+    font-size: 0.9em;
+    opacity: 0.7;
 }
 
 #time_options {

@@ -526,10 +526,10 @@ function build_rows(days) {
             temp.textContent = Math.round(days[j][i]["tMed"]) + "ºC";
             hour_text.textContent = hour;
             hour_text.classList.add("hour_time");
-            row.appendChild(temp);
+            row.appendChild(hour_text);
             weather_icon_container.appendChild(weather_icon);
             row.appendChild(weather_icon_container);
-            row.appendChild(hour_text);
+            row.appendChild(temp);
             document.getElementById(inner_id).appendChild(row);
 
         }
