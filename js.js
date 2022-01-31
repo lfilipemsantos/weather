@@ -437,7 +437,7 @@ function build_table(current_day, current_hour) {
     }
 
     if(current_hour) {
-        document.getElementById("table_temp").textContent = parseInt(current_hour["tMed"]) + "";
+        document.getElementById("table_temp").textContent = parseInt(current_hour["tMed"]) + "º";
         document.getElementById("weather-info-text").textContent = weather_types[0][current_hour["idTipoTempo"]]["PT"];
         text = document.getElementsByClassName("table-text")
         document.getElementById("text-iUv").textContent = Math.round(current_day["iUv"]);

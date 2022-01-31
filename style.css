@@ -1269,47 +1269,55 @@ nav a {
 
 #main-info {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     margin-top: 20px;
     margin-bottom: 60px;
 }
 
 #main-image-container {
-    width: 170px;
-    height: 200px;
+    width: 50%;
+    height: 120px;
     margin-left: auto;
-    margin-right: 20px;
+    margin-right: auto;
+    text-align: center;
 }
 
 #main-weather-info-container {
-    width: 200px;
-    height: 200px;
+    width: 50%;
+    height: 100%;
     margin-right: auto;
+    margin-left: auto;
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
 }
 
 #table_temp {
     position: relative;
-    line-height:80px;
-    font-size:80px;
-    padding-bottom: 10px;
-    padding-top: 20px; 
-    margin: 0;
+    line-height: 80px;
+    font-size: 80px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'Biotif Regular', sans-serif;
+    align-self: center;
 }
 
 #weather-info-text {
-    font-size: 12px;
-    padding-bottom: 20px;
+    font-size: 1.5em;
+    padding-bottom: 10px;
     padding-top: 10px;
     font-weight: lighter;
+    text-align: center;
+    font-family: 'Biotif', sans-serif;
+    letter-spacing: 1px;
 }
 
 #max-min-container {
     display: flex;
     flex-direction: row;
+    margin-bottom: 40px;
 }
 
 .fav_setting_row {
@@ -1325,43 +1333,13 @@ nav a {
     font-size: 1.2em;
 }
 
-@media screen and (max-width: 700px) {
+
+@media screen and (min-width: 800px) {
     #main-info {
-        flex-direction: column;
-    }
-
-    #main-image-container {
-        margin-right: auto;
-        margin-bottom: 40px;
-    }
-
-    #main-weather-info-container {
+        max-width: 800px;
         margin-left: auto;
+        margin-right: auto;
     }
 
-}
-
-@media screen and (min-width: 1000px) {
-
-    #main-weather-info-container {
-        flex-direction: row;
-        margin-left: 20px;
-        width: fit-content;
-    }
-
-    #table_temp {
-        vertical-align: middle;
-        padding-top: 50px;
-    }
-
-    #weather-info-text {
-        padding-top: 70px;
-        margin-left: 20px;
-    }
-
-    #max-min-container {
-        padding-top: 70px;
-        margin-left: 20px;
-    }
 
 }

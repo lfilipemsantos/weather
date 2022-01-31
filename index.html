@@ -55,16 +55,18 @@
 
             <section>
                 <div id="main-info">
-                    <div id="main-image-container">
-                        <object type="image/svg+xml" id="current-weather" style="width: 100%; margin-left: auto; margin-right: auto;"></object>
+                    <h4 id="weather-info-text" colspan="2"></h4>
+                    <div id="max-min-container">
+                        <p class="table-text" id="text-tMax" style="line-height: 16px;font-size:16px;display: inline-block; vertical-align: bottom; margin-left: auto; margin-right: 3px;"></p>
+                        <p class="table-text" id="text-tMin" style="line-height: 16px;font-size:16px;display: inline-block; vertical-align: bottom; opacity: 0.5; margin-right: auto; margin-left: 3px;"></p>
                     </div>
-                    
-                    <div id="main-weather-info-container">
-                        <h4 id="table_temp" colspan="2"></h4>
-                        <h4 id="weather-info-text" colspan="2"></h4>
-                        <div id="max-min-container">
-                            <p class="table-text" id="text-tMax" style="line-height: 16px;font-size:16px;display: inline-block; vertical-align: bottom; margin-left: auto; margin-right: 3px;"></p>
-                            <p class="table-text" id="text-tMin" style="line-height: 16px;font-size:16px;display: inline-block; vertical-align: bottom; opacity: 0.5; margin-right: auto; margin-left: 3px;"></p>
+                    <div style="display: flex; flex-direction: row; align-items: center; width: 85%; margin: auto; height: 150px;">
+                        <div id="main-image-container">
+                            <object type="image/svg+xml" id="current-weather" style="height: 100%; margin-left: auto; margin-right: auto;"></object>
+                        </div>
+                        
+                        <div id="main-weather-info-container">
+                            <h4 id="table_temp" colspan="2"></h4>
                         </div>
                     </div>
 
