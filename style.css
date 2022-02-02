@@ -97,7 +97,7 @@ body {
 }
 
 .row {
-    width: 65px;
+    width: 70px;
     /*background-color:rgba(114, 197, 197, 0.2);*/
     height: 130px;
     margin-left: 5px;
@@ -503,7 +503,7 @@ body {
 }
 
 .weather_icon_container {
-    width: 40px;
+    width: 100%;
     height: 70px;
     margin-left: auto;
     margin-right: auto;
@@ -512,13 +512,15 @@ body {
 
 
 .weather_icon {
+    box-sizing: border-box;
     position: absolute;
     top: 0;
     bottom: 0;
+    width: 100%;
     margin: auto;
-    width: 40px;
-    max-height: 40px;
+    padding: 10px;
     filter: saturate(190%);
+    align-items: center;
 }
 
 
