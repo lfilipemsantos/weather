@@ -507,10 +507,10 @@ function build_rows(days) {
 
             if(i==0 && j == 0) {
                 if (parseInt(hour.split(":"))<6 || parseInt(hour.split(":"))>20) {
-                    document.getElementById("current-weather").data = "icons/n" + parseInt(days[j][i]["idTipoTempo"]) + ".svg";
+                    document.getElementById("current-weather").src = "icons_png/n" + parseInt(days[j][i]["idTipoTempo"]) + ".png";
                 }
                 else {
-                    document.getElementById("current-weather").data = "icons/d" + parseInt(days[j][i]["idTipoTempo"]) + ".svg";
+                    document.getElementById("current-weather").src = "icons_png/d" + parseInt(days[j][i]["idTipoTempo"]) + ".png";
                 }
             }
 
@@ -669,8 +669,8 @@ function set_theme_preference() {
 
 
 function switch_theme(id) {
-    const DARK = "rgb(12, 12, 12)"
-    const LIGHT = "rgb(245, 245, 245)"
+    const DARK = "#121212"
+    const LIGHT = "#ffffff"
 
     var buttons = ["home", "favorites", "settings"]
 
