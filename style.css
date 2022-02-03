@@ -205,7 +205,9 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    flex-grow: 2;
 }
 
 .date_container > * {
@@ -213,14 +215,15 @@ body {
 }
 
 .date_container > small{
-    max-width: 100px;
+    max-width: 200px;
     margin-left: 10px;
 }
 
 .temp_container {
     width: 15%;
     height: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    margin-top: 6px;
     text-align: right;
     display: flex;
     flex-direction: row;
@@ -243,7 +246,7 @@ body {
 }
 .nd_weather_icon {
     margin-top: 5px;
-    width: 30%;
+    width: 50%;
     filter: saturate(190%);
 }
 
@@ -255,7 +258,7 @@ body {
 .day_row {
     width: 100%;
     max-width: 350px;
-    height: 40px;
+    height: 50px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 5px;
@@ -309,6 +312,8 @@ body {
     .date_container {
         flex-direction: column;
         text-align: center;
+        max-height: 50px;
+        font-size: 1rem;
     }
 
     .date_container > small{
@@ -398,7 +403,7 @@ body {
 
 #next_days_row {
     display: block;
-    height: 510px;
+    height: 610px;
     width: 100%;
     overflow-x: scroll;
 }
@@ -463,8 +468,9 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
 #inner_next_days {
-    width:90%;
+    width: 85%;
     height: 450px;
     margin-left: auto;
     margin-right: auto;
