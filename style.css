@@ -1231,7 +1231,7 @@ nav a {
   }
 
 .stats {
-    width: 70%;
+    width: var(--main-element-width);
     max-width: 350px;
     margin-left: auto;
     margin-right: auto;
