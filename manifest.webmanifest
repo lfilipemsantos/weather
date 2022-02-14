@@ -8,673 +8,673 @@
   "scope": "/weather/",
   "icons": [
     {
-      "src": "new_logos/newlogos/71x71-icon.png",
+      "src": "logos/71x71-icon.png",
       "type": "image/png",
       "sizes": "71x71",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/89x89-icon.png",
+      "src": "logos/89x89-icon.png",
       "type": "image/png",
       "sizes": "89x89",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/107x107-icon.png",
+      "src": "logos/107x107-icon.png",
       "type": "image/png",
       "sizes": "107x107",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/142x142-icon.png",
+      "src": "logos/142x142-icon.png",
       "type": "image/png",
       "sizes": "142x142",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/284x284-icon.png",
+      "src": "logos/284x284-icon.png",
       "type": "image/png",
       "sizes": "284x284",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/150x150-icon.png",
+      "src": "logos/150x150-icon.png",
       "type": "image/png",
       "sizes": "150x150",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/188x188-icon.png",
+      "src": "logos/188x188-icon.png",
       "type": "image/png",
       "sizes": "188x188",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/225x225-icon.png",
+      "src": "logos/225x225-icon.png",
       "type": "image/png",
       "sizes": "225x225",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/300x300-icon.png",
+      "src": "logos/300x300-icon.png",
       "type": "image/png",
       "sizes": "300x300",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/600x600-icon.png",
+      "src": "logos/600x600-icon.png",
       "type": "image/png",
       "sizes": "600x600",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/310x150-icon.png",
+      "src": "logos/310x150-icon.png",
       "type": "image/png",
       "sizes": "310x150",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/388x188-icon.png",
+      "src": "logos/388x188-icon.png",
       "type": "image/png",
       "sizes": "388x188",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/465x225-icon.png",
+      "src": "logos/465x225-icon.png",
       "type": "image/png",
       "sizes": "465x225",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/620x300-icon.png",
+      "src": "logos/620x300-icon.png",
       "type": "image/png",
       "sizes": "620x300",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/1240x600-icon.png",
+      "src": "logos/1240x600-icon.png",
       "type": "image/png",
       "sizes": "1240x600",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/310x310-icon.png",
+      "src": "logos/310x310-icon.png",
       "type": "image/png",
       "sizes": "310x310",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/388x388-icon.png",
+      "src": "logos/388x388-icon.png",
       "type": "image/png",
       "sizes": "388x388",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/465x465-icon.png",
+      "src": "logos/465x465-icon.png",
       "type": "image/png",
       "sizes": "465x465",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/620x620-icon.png",
+      "src": "logos/620x620-icon.png",
       "type": "image/png",
       "sizes": "620x620",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/1240x1240-icon.png",
+      "src": "logos/1240x1240-icon.png",
       "type": "image/png",
       "sizes": "1240x1240",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/44x44-icon.png",
+      "src": "logos/44x44-icon.png",
       "type": "image/png",
       "sizes": "44x44",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/55x55-icon.png",
+      "src": "logos/55x55-icon.png",
       "type": "image/png",
       "sizes": "55x55",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/66x66-icon.png",
+      "src": "logos/66x66-icon.png",
       "type": "image/png",
       "sizes": "66x66",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/88x88-icon.png",
+      "src": "logos/88x88-icon.png",
       "type": "image/png",
       "sizes": "88x88",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/176x176-icon.png",
+      "src": "logos/176x176-icon.png",
       "type": "image/png",
       "sizes": "176x176",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/50x50-icon.png",
+      "src": "logos/50x50-icon.png",
       "type": "image/png",
       "sizes": "50x50",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/63x63-icon.png",
+      "src": "logos/63x63-icon.png",
       "type": "image/png",
       "sizes": "63x63",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/75x75-icon.png",
+      "src": "logos/75x75-icon.png",
       "type": "image/png",
       "sizes": "75x75",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/100x100-icon.png",
+      "src": "logos/100x100-icon.png",
       "type": "image/png",
       "sizes": "100x100",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/200x200-icon.png",
+      "src": "logos/200x200-icon.png",
       "type": "image/png",
       "sizes": "200x200",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/620x300-icon.png",
+      "src": "logos/620x300-icon.png",
       "type": "image/png",
       "sizes": "620x300",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/775x375-icon.png",
+      "src": "logos/775x375-icon.png",
       "type": "image/png",
       "sizes": "775x375",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/930x450-icon.png",
+      "src": "logos/930x450-icon.png",
       "type": "image/png",
       "sizes": "930x450",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/1240x600-icon.png",
+      "src": "logos/1240x600-icon.png",
       "type": "image/png",
       "sizes": "1240x600",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/2480x1200-icon.png",
+      "src": "logos/2480x1200-icon.png",
       "type": "image/png",
       "sizes": "2480x1200",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/16x16-icon.png",
+      "src": "logos/16x16-icon.png",
       "type": "image/png",
       "sizes": "16x16",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/20x20-icon.png",
+      "src": "logos/20x20-icon.png",
       "type": "image/png",
       "sizes": "20x20",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/24x24-icon.png",
+      "src": "logos/24x24-icon.png",
       "type": "image/png",
       "sizes": "24x24",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/30x30-icon.png",
+      "src": "logos/30x30-icon.png",
       "type": "image/png",
       "sizes": "30x30",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/32x32-icon.png",
+      "src": "logos/32x32-icon.png",
       "type": "image/png",
       "sizes": "32x32",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/36x36-icon.png",
+      "src": "logos/36x36-icon.png",
       "type": "image/png",
       "sizes": "36x36",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/40x40-icon.png",
+      "src": "logos/40x40-icon.png",
       "type": "image/png",
       "sizes": "40x40",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/44x44-icon.png",
+      "src": "logos/44x44-icon.png",
       "type": "image/png",
       "sizes": "44x44",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/48x48-icon.png",
+      "src": "logos/48x48-icon.png",
       "type": "image/png",
       "sizes": "48x48",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/60x60-icon.png",
+      "src": "logos/60x60-icon.png",
       "type": "image/png",
       "sizes": "60x60",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/64x64-icon.png",
+      "src": "logos/64x64-icon.png",
       "type": "image/png",
       "sizes": "64x64",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/72x72-icon.png",
+      "src": "logos/72x72-icon.png",
       "type": "image/png",
       "sizes": "72x72",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/80x80-icon.png",
+      "src": "logos/80x80-icon.png",
       "type": "image/png",
       "sizes": "80x80",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/96x96-icon.png",
+      "src": "logos/96x96-icon.png",
       "type": "image/png",
       "sizes": "96x96",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/256x256-icon.png",
+      "src": "logos/256x256-icon.png",
       "type": "image/png",
       "sizes": "256x256",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/16x16-icon.png",
+      "src": "logos/16x16-icon.png",
       "type": "image/png",
       "sizes": "16x16",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/20x20-icon.png",
+      "src": "logos/20x20-icon.png",
       "type": "image/png",
       "sizes": "20x20",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/24x24-icon.png",
+      "src": "logos/24x24-icon.png",
       "type": "image/png",
       "sizes": "24x24",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/30x30-icon.png",
+      "src": "logos/30x30-icon.png",
       "type": "image/png",
       "sizes": "30x30",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/32x32-icon.png",
+      "src": "logos/32x32-icon.png",
       "type": "image/png",
       "sizes": "32x32",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/36x36-icon.png",
+      "src": "logos/36x36-icon.png",
       "type": "image/png",
       "sizes": "36x36",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/40x40-icon.png",
+      "src": "logos/40x40-icon.png",
       "type": "image/png",
       "sizes": "40x40",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/44x44-icon.png",
+      "src": "logos/44x44-icon.png",
       "type": "image/png",
       "sizes": "44x44",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/48x48-icon.png",
+      "src": "logos/48x48-icon.png",
       "type": "image/png",
       "sizes": "48x48",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/60x60-icon.png",
+      "src": "logos/60x60-icon.png",
       "type": "image/png",
       "sizes": "60x60",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/64x64-icon.png",
+      "src": "logos/64x64-icon.png",
       "type": "image/png",
       "sizes": "64x64",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/72x72-icon.png",
+      "src": "logos/72x72-icon.png",
       "type": "image/png",
       "sizes": "72x72",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/80x80-icon.png",
+      "src": "logos/80x80-icon.png",
       "type": "image/png",
       "sizes": "80x80",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/96x96-icon.png",
+      "src": "logos/96x96-icon.png",
       "type": "image/png",
       "sizes": "96x96",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/256x256-icon.png",
+      "src": "logos/256x256-icon.png",
       "type": "image/png",
       "sizes": "256x256",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/16x16-icon.png",
+      "src": "logos/16x16-icon.png",
       "type": "image/png",
       "sizes": "16x16",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/20x20-icon.png",
+      "src": "logos/20x20-icon.png",
       "type": "image/png",
       "sizes": "20x20",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/24x24-icon.png",
+      "src": "logos/24x24-icon.png",
       "type": "image/png",
       "sizes": "24x24",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/30x30-icon.png",
+      "src": "logos/30x30-icon.png",
       "type": "image/png",
       "sizes": "30x30",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/32x32-icon.png",
+      "src": "logos/32x32-icon.png",
       "type": "image/png",
       "sizes": "32x32",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/36x36-icon.png",
+      "src": "logos/36x36-icon.png",
       "type": "image/png",
       "sizes": "36x36",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/40x40-icon.png",
+      "src": "logos/40x40-icon.png",
       "type": "image/png",
       "sizes": "40x40",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/44x44-icon.png",
+      "src": "logos/44x44-icon.png",
       "type": "image/png",
       "sizes": "44x44",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/48x48-icon.png",
+      "src": "logos/48x48-icon.png",
       "type": "image/png",
       "sizes": "48x48",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/60x60-icon.png",
+      "src": "logos/60x60-icon.png",
       "type": "image/png",
       "sizes": "60x60",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/64x64-icon.png",
+      "src": "logos/64x64-icon.png",
       "type": "image/png",
       "sizes": "64x64",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/72x72-icon.png",
+      "src": "logos/72x72-icon.png",
       "type": "image/png",
       "sizes": "72x72",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/80x80-icon.png",
+      "src": "logos/80x80-icon.png",
       "type": "image/png",
       "sizes": "80x80",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/96x96-icon.png",
+      "src": "logos/96x96-icon.png",
       "type": "image/png",
       "sizes": "96x96",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/256x256-icon.png",
+      "src": "logos/256x256-icon.png",
       "type": "image/png",
       "sizes": "256x256",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/512x512-icon.png",
+      "src": "logos/512x512-icon.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/192x192-icon.png",
+      "src": "logos/192x192-icon.png",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/144x144-icon.png",
+      "src": "logos/144x144-icon.png",
       "type": "image/png",
       "sizes": "144x144",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/96x96-icon.png",
+      "src": "logos/96x96-icon.png",
       "type": "image/png",
       "sizes": "96x96",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/72x72-icon.png",
+      "src": "logos/72x72-icon.png",
       "type": "image/png",
       "sizes": "72x72",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/48x48-icon.png",
+      "src": "logos/48x48-icon.png",
       "type": "image/png",
       "sizes": "48x48",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/16x16-icon.png",
+      "src": "logos/16x16-icon.png",
       "type": "image/png",
       "sizes": "16x16",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/20x20-icon.png",
+      "src": "logos/20x20-icon.png",
       "type": "image/png",
       "sizes": "20x20",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/29x29-icon.png",
+      "src": "logos/29x29-icon.png",
       "type": "image/png",
       "sizes": "29x29",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/32x32-icon.png",
+      "src": "logos/32x32-icon.png",
       "type": "image/png",
       "sizes": "32x32",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/40x40-icon.png",
+      "src": "logos/40x40-icon.png",
       "type": "image/png",
       "sizes": "40x40",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/50x50-icon.png",
+      "src": "logos/50x50-icon.png",
       "type": "image/png",
       "sizes": "50x50",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/57x57-icon.png",
+      "src": "logos/57x57-icon.png",
       "type": "image/png",
       "sizes": "57x57",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/58x58-icon.png",
+      "src": "logos/58x58-icon.png",
       "type": "image/png",
       "sizes": "58x58",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/60x60-icon.png",
+      "src": "logos/60x60-icon.png",
       "type": "image/png",
       "sizes": "60x60",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/64x64-icon.png",
+      "src": "logos/64x64-icon.png",
       "type": "image/png",
       "sizes": "64x64",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/72x72-icon.png",
+      "src": "logos/72x72-icon.png",
       "type": "image/png",
       "sizes": "72x72",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/76x76-icon.png",
+      "src": "logos/76x76-icon.png",
       "type": "image/png",
       "sizes": "76x76",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/80x80-icon.png",
+      "src": "logos/80x80-icon.png",
       "type": "image/png",
       "sizes": "80x80",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/87x87-icon.png",
+      "src": "logos/87x87-icon.png",
       "type": "image/png",
       "sizes": "87x87",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/100x100-icon.png",
+      "src": "logos/100x100-icon.png",
       "type": "image/png",
       "sizes": "100x100",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/114x114-icon.png",
+      "src": "logos/114x114-icon.png",
       "type": "image/png",
       "sizes": "114x114",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/120x120-icon.png",
+      "src": "logos/120x120-icon.png",
       "type": "image/png",
       "sizes": "120x120",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/128x128-icon.png",
+      "src": "logos/128x128-icon.png",
       "type": "image/png",
       "sizes": "128x128",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/144x144-icon.png",
+      "src": "logos/144x144-icon.png",
       "type": "image/png",
       "sizes": "144x144",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/152x152-icon.png",
+      "src": "logos/152x152-icon.png",
       "type": "image/png",
       "sizes": "152x152",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/167x167-icon.png",
+      "src": "logos/167x167-icon.png",
       "type": "image/png",
       "sizes": "167x167",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/180x180-icon.png",
+      "src": "logos/180x180-icon.png",
       "type": "image/png",
       "sizes": "180x180",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/192x192-icon.png",
+      "src": "logos/192x192-icon.png",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/256x256-icon.png",
+      "src": "logos/256x256-icon.png",
       "type": "image/png",
       "sizes": "256x256",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/512x512-icon.png",
+      "src": "logos/512x512-icon.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "any"
     },
     {
-      "src": "new_logos/newlogos/1024x1024-icon.png",
+      "src": "logos/1024x1024-icon.png",
       "type": "image/png",
       "sizes": "1024x1024",
       "purpose": "any"
