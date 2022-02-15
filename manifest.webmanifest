@@ -1,11 +1,12 @@
 {
   "name": "Meteorologia",
   "short_name": "Meteorologia",
-  "theme_color": "#050505",
-  "background_color": "#050505",
+  "theme_color": "#121212",
+  "background_color": "#121212",
   "display": "standalone",
   "start_url": "/weather/",
   "scope": "/weather/",
+  "orientation": "portrait-primary",
   "icons": [
     {
       "src": "logos/71x71-icon.png",
