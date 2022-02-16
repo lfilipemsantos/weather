@@ -973,7 +973,7 @@ body {
 
 .setting {
     width: 85%;
-    background-color: rgba(150, 150, 150, 0.2);
+    background-color: rgba(150, 150, 150, 0.1);
     padding: 20px;
     margin-bottom: 20px;
     margin-left: auto;
@@ -1077,7 +1077,12 @@ nav {
      */
     --gap: 15px;
     gap: var(--gap, .5rem);
- }
+}
+
+.sobre {
+    background-color: unset;
+    text-align: center;
+}
 
 nav a {
     width: 12px;
