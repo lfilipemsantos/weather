@@ -957,7 +957,9 @@ body {
 }
 
 #no_fav_text {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    width: 60%;
+    margin: auto;
     opacity: 0.3;
 }
 
