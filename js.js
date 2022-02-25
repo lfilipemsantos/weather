@@ -443,7 +443,7 @@ function build_table(current_day, current_hour) {
         document.getElementById("text-iUv").textContent = Math.round(current_day["iUv"]);
         //document.getElementById("uv-indicator").style.marginLeft = uv_scale[Math.round(current_day["iUv"])]
         document.getElementById("text-probabilidadePrecipita").textContent = Math.round(current_day["probabilidadePrecipita"]) + "%";
-        document.getElementById("text-temp").textContent = Math.round(current_day["tMin"]) + "º / " + Math.round(current_day["tMax"]) + "º";
+        document.getElementById("text-temp").textContent = Math.round(current_day["tMax"]) + "º / " + Math.round(current_day["tMin"]) + "º";
         document.getElementById("text-vento-dd").textContent = current_hour["ddVento"];
         document.getElementById("text-vento-vv").textContent = Math.round(current_hour["ffVento"]) + "km/h";
         //document.getElementById("idFfxVento").textContent = wind_types[0][current_day["idFfxVento"]]["PT"];

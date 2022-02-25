@@ -279,7 +279,7 @@ body {
     max-width: 500px;
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1200px) {
     #inner_next_days {
         justify-content: center;
     }
