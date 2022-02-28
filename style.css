@@ -770,11 +770,11 @@ body {
     margin-right: 5px solid black;
 }
 
-@supports (-webkit-touch-callout: none) {
+/*@supports (-webkit-touch-callout: none) {
     #bottom-options {
         height: 80px;
     }
-}
+}*/
 
 @supports not (-webkit-touch-callout: none) {
     * {
@@ -1017,13 +1017,14 @@ body {
 
 .bottom-setting {
     display: none;
+    background-color: unset;
 }
 
 #back_button {
     border-radius: 5px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 10px;
+    padding-top: 8px;
     padding-bottom: 7px;
     width: max-content;
     margin-top: 34px;
