@@ -696,7 +696,7 @@ function switch_theme(id) {
         document.getElementById("location").style.color = LIGHT;
         document.getElementById("location").style.opacity="90%";
         document.getElementById("search_icon").src = "not_search_w.svg";
-        document.getElementById("bottom-options").style.backgroundColor = "rgb(25, 25, 25)";
+        document.getElementById("bottom-options").style.backgroundColor = "rgb(35, 35, 35)";
         document.getElementById("fav-notification-inner").style.backgroundColor = "rgb(40, 40, 40)";
         hr = document.getElementsByClassName("row-divider");
         for(i = 0; i<hr.length; i++) {

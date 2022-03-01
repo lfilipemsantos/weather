@@ -635,9 +635,9 @@ body {
     margin-bottom: 20px;
     padding-top: 0px;
     padding-bottom: 0px;
-    background-color: rgb(25, 25, 25);
+    background-color: rgb(35, 35, 35);
     box-shadow: 0px 0px 7px 0.5px rgba(0, 0, 0, 0.3);
-    width: 90%;
+    width: 80%;
     border-radius: 20px;
     opacity: 100%;
     transition: bottom 0.3s;
