@@ -633,8 +633,6 @@ body {
     display: block;
     margin-top: 0px;
     margin-bottom: 20px;
-    margin-left: 5%;
-    margin-right: 5%;
     padding-top: 0px;
     padding-bottom: 0px;
     background-color: rgb(25, 25, 25);
@@ -644,6 +642,9 @@ body {
     opacity: 100%;
     transition: bottom 0.3s;
     min-width: 209px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 800px;
 }
 
 #bottom-options > .inner {
@@ -658,6 +659,8 @@ body {
     position: relative;
     display: flex;
     flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -813,7 +816,7 @@ body {
 #fav_icon {
     height: 26px;
     margin-bottom: 4px;
-    margin-right: 5px;
+    margin-right: 0px;
 }
 
 #location-text {
