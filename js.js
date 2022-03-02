@@ -676,7 +676,7 @@ function switch_theme(id) {
 
     localStorage["theme"] = id;
 
-    document.getElementById("selected_auto").style.display = "none";
+    //document.getElementById("selected_auto").style.display = "none";
     document.getElementById("selected_escuro").style.display = "none";
     document.getElementById("selected_claro").style.display = "none";
 
