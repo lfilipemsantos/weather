@@ -134,15 +134,16 @@ body {
 }
 
 .theme_selected {
-    width: 10px;
-    height: 30px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: rgba(124, 211, 218);
-    border-radius: 50%;
+    width: 134px;
+    height: 104px;
     position: absolute;
-    left: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -2px;
+    z-index: -1;
+    background-color: rgba(124, 211, 218);
     display: none;
+    border-radius: 22px;
 }
 
 #themes {
@@ -157,7 +158,7 @@ body {
 }
 
 .theme_example {
-    width: 80%;
+    width: 130px;
     height: 100px;
     margin: auto;
     border-radius: 20px;
@@ -1035,6 +1036,7 @@ body {
 .bottom-setting {
     display: none;
     background-color: unset;
+    padding: 0;
 }
 
 #back_button {
