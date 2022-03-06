@@ -221,7 +221,7 @@ function switch_tab(id) {
         }
     }
 
-    indicator = document.getElementById("tab-indicator")
+    indicator = document.getElementById("tab-indicator-container")
 
     if(id=="home-tab") {
         var home_icon = document.getElementById("home_icon").src.replace("not_","is_");

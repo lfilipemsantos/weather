@@ -691,17 +691,29 @@ body {
     text-align: center;
 }
 
-#tab-indicator {
+#tab-indicator-container {
     content: "";
     display: block;
-    height: 3px;
+    height: 5px;
     width: 25%;
     margin-left: 0%;
-    background-color: rgb(42, 136, 165);
     position: absolute;
-    top: 0;
+    top: 5px;
     opacity: 1;
     transition: margin-left 250ms ease-in-out;
+    text-align: center;
+}
+
+#tab-indicator {
+    height: 100%;
+    width: 10%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(42, 136, 165);
+    top: 0;
+    opacity: 1;
+    border-radius: 10px;
 }
 
 .button_img_container > img {
