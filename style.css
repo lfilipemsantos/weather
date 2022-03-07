@@ -694,11 +694,11 @@ body {
 #tab-indicator-container {
     content: "";
     display: block;
-    height: 5px;
+    height: 4px;
     width: 25%;
     margin-left: 0%;
     position: absolute;
-    top: 5px;
+    top: 7px;
     opacity: 1;
     transition: margin-left 250ms ease-in-out;
     text-align: center;
@@ -706,7 +706,7 @@ body {
 
 #tab-indicator {
     height: 100%;
-    width: 10%;
+    width: 8px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -729,6 +729,10 @@ body {
 @media screen and (min-width: 600px) {
     #bottom-options {
         height: 90px;
+    }
+
+    #bottom-options-inner {
+        padding-top: 15px !important;
     }
 
     .button {
