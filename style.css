@@ -578,9 +578,9 @@ body {
     background-color: rgba(181, 181, 181, 0.2);
     height: 55px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 10px;
     margin-top: 0px;
-    width: var(--main-element-width);
+    width: fit-content;
     border-radius: 22px;
     max-width: 500px;
     position: relative;
@@ -590,14 +590,13 @@ body {
 
 #current-location-button {
     background-color: rgba(150, 150, 150, 0.1);
-    position: absolute;
     top: 0;
     right: 0;
-    width: 50px;
+    width: 60px;
     text-align: center;
     cursor: pointer;
     height: 55px;
-    border-radius: 0px var(--border-radius) var(--border-radius) 0px;
+    border-radius: 20px;
     opacity: 1;
     transition: opacity 200ms ease-in-out;
 }
