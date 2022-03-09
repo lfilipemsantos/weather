@@ -876,12 +876,14 @@ function search_location() {
         txtValue = div.textContent || a.innerText;
         if (filter == "") {
             li[i].style.display = "none";
+            document.getElementById("search_elements_container").style.flexDirection="row";
             document.getElementById("current-location-button").style.opacity = "1";
             document.getElementById("current-location-button").style.display = "block";
             document.getElementById("search_container").style.width = "fit-content";
             document.getElementById("search_container").style.marginRight = "10px";
         }
         else {
+            document.getElementById("search_elements_container").style.flexDirection="column";
             document.getElementById("current-location-button").style.opacity = "0";
             document.getElementById("current-location-button").style.display = "none";
 
