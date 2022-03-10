@@ -877,9 +877,16 @@ function search_location() {
         if (filter == "") {
             li[i].style.display = "none";
             document.getElementById("current-location-button").style.opacity = "1";
+            document.getElementById("current-location-button").style.display = "block";
+            document.getElementById("search_container").style.width = "fit-content";
+            document.getElementById("search_container").style.marginRight = "10px";
         }
         else {
             document.getElementById("current-location-button").style.opacity = "0";
+            document.getElementById("current-location-button").style.display = "none";
+
+            document.getElementById("search_container").style.width = "85vw";
+            document.getElementById("search_container").style.marginRight = "auto";
             if (txtValue.toUpperCase().indexOf(filter) > -1) {
                 li[i].style.display = "block";
             } else {
