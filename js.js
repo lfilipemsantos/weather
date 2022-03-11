@@ -874,21 +874,16 @@ function search_location() {
     for (i = 0; i < li.length; i++) {
         div = li[i].getElementsByTagName("div")[0];
         txtValue = div.textContent || a.innerText;
-        if (filter == "") {
+        if (!filter) {
             li[i].style.display = "none";
-            document.getElementById("search_elements_container").style.flexDirection="row";
-            document.getElementById("current-location-button").style.opacity = "1";
-            document.getElementById("current-location-button").style.display = "block";
-            document.getElementById("search_container").style.width = "fit-content";
-            document.getElementById("search_container").style.marginRight = "10px";
+            document.getElementById("search_container").style.width = "70%";
+            document.getElementById("current-location-button").style.display = "inline-block";
         }
         else {
-            document.getElementById("search_elements_container").style.flexDirection="column";
-            document.getElementById("current-location-button").style.opacity = "0";
+            document.getElementById("search_container").style.width = "90%";
             document.getElementById("current-location-button").style.display = "none";
-
-            document.getElementById("search_container").style.width = "85vw";
-            document.getElementById("search_container").style.marginRight = "auto";
+            
+            
             if (txtValue.toUpperCase().indexOf(filter) > -1) {
                 li[i].style.display = "block";
             } else {
