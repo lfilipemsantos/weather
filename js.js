@@ -880,8 +880,8 @@ function search_location() {
             document.getElementById("current-location-button").style.display = "inline-block";
         }
         else {
-            document.getElementById("search_container").style.width = "90%";
             document.getElementById("current-location-button").style.display = "none";
+            document.getElementById("search_container").style.width = "90%";
             
             
             if (txtValue.toUpperCase().indexOf(filter) > -1) {
