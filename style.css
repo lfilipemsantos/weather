@@ -653,7 +653,7 @@ body {
 
 #bottom-options {
     position: fixed;
-    height: 60px;
+    height: 65px;
     bottom: 0px;
     display: block;
     margin-top: 0px;
@@ -676,8 +676,8 @@ body {
     margin-top: auto;
     margin-bottom: auto;
     height: 30px;
-    padding-top:10px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     width: 100%;
     padding-left: 0;
     padding-right: 0;
