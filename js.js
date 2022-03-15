@@ -805,6 +805,10 @@ function switch_colors(color, notification) {
     //fav_rows = document.getElementsByClassName("fav_row");
     //change_color(fav_rows,"backgroundColor",color, 0.2);
 
+    var r = document.querySelector(':root');
+    r.style.setProperty('--theme-color', "rgba(" + color + ", 1)");
+
+
     localStorage['color_theme'] = color
     if (notification){
         show_action_notification("Cor de destaque alterada")
