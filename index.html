@@ -416,5 +416,14 @@
             })
 
         </script>
+        <script>
+            var background = document.getElementById('dynamic_background');
+            window.addEventListener('scroll', function(e) {
+                // http://stackoverflow.com/a/28633515/962603
+                var scroll = window.pageYOffset || document.documentElement.scrollTop ||
+                                document.body.scrollTop || 0;
+                background.style.opacity = Math.max(0, Math.min(1, -scroll / 100 + 2));
+            });
+        </script>
     </body>
 </html>
