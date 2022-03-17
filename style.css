@@ -672,6 +672,7 @@ body {
     transform: translateX(-50%);
     max-width: 800px;
     backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
 }
 
 #bottom-options > .inner {
