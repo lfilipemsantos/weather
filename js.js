@@ -233,6 +233,7 @@ function switch_tab(id) {
         var fav_icon = document.getElementById("favorites_icon").src.replace("is_","not_");
         document.getElementById("favorites_icon").src = fav_icon;
         document.getElementById("home-button").setAttribute("onclick", "window.location.reload()")
+        document.getElementById("dynamic_background").style.display = "block";
         indicator.style.marginLeft = "0%"
     }
     else if(id=="settings-tab") {
@@ -690,13 +691,13 @@ function switch_theme(id) {
 
     if(id=="escuro"){
         document.querySelector('meta[name="theme-color"]').setAttribute('content', DARK);
-        document.querySelector('#dynamic_background').setAttribute('background', "linear-gradient(0deg, rgba(5, 5, 5, 1) 20%, rgba(62,170,186,1) 100%);");
+        //document.querySelector('#dynamic_background').setAttribute('background', "linear-gradient(0deg, rgba(5, 5, 5, 1) 20%, rgba(62,170,186,1) 100%);");
         document.body.style.backgroundColor = DARK;
         document.body.style.color = LIGHT;
         document.getElementById("location").style.color = LIGHT;
         document.getElementById("location").style.opacity="90%";
         document.getElementById("search_icon").src = "not_search_w.svg";
-        document.getElementById("bottom-options").style.backgroundColor = "rgb(35, 35, 35)";
+        document.getElementById("bottom-options").style.backgroundColor = "rgba(35, 35, 35, 0.8)";
         document.getElementById("fav-notification-inner").style.backgroundColor = "rgb(40, 40, 40)";
         hr = document.getElementsByClassName("row-divider");
         for(i = 0; i<hr.length; i++) {
@@ -732,13 +733,13 @@ function switch_theme(id) {
     }
     else if (id=="claro") {
         document.querySelector('meta[name="theme-color"]').setAttribute('content', LIGHT);
-        document.querySelector('#dynamic_background').setAttribute('background', "linear-gradient(0deg, rgba(245, 245, 245, 1) 20%, rgba(62,170,186,1) 100%);");
+        //document.querySelector('#dynamic_background').setAttribute('background', "linear-gradient(0deg, rgba(245, 245, 245, 1) 20%, rgba(62,170,186,1) 100%);");
         document.body.style.backgroundColor=LIGHT;
         document.body.style.color=DARK;
         document.getElementById("location").style.color=DARK;
         document.getElementById("location").style.opacity="90%";
         document.getElementById("search_icon").src = "not_search_b.svg";
-        document.getElementById("bottom-options").style.backgroundColor = "rgb(236, 236, 236)";
+        document.getElementById("bottom-options").style.backgroundColor = "rgba(236, 236, 236, 0.5)";
         document.getElementById("fav-notification-inner").style.backgroundColor = "rgb(206, 206, 206)";
         hr = document.getElementsByClassName("row-divider");
         for(i = 0; i<hr.length; i++) {
@@ -805,8 +806,8 @@ function switch_colors(color, notification) {
     //fav_rows = document.getElementsByClassName("fav_row");
     //change_color(fav_rows,"backgroundColor",color, 0.2);
 
-    var r = document.querySelector(':root');
-    r.style.setProperty('--theme-color', "rgba(" + color + ", 1)");
+    var r = document.querySelector('#dynamic_background');
+    r.style.background = "linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(" + color + ", 0.7) 100%)";
 
 
     localStorage['color_theme'] = color
