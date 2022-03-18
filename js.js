@@ -797,6 +797,9 @@ function switch_colors(color, notification) {
     indicators = document.getElementsByClassName("indicator");
     change_color(indicators, "backgroundColor", color, 1);
 
+    setting_icons = document.getElementsByClassName("setting-icon");
+    change_color(setting_icons, "backgroundColor", color, 0.6);
+
     theme_selected = document.getElementsByClassName("theme_selected");
     change_color(theme_selected, "backgroundColor", color, 1);
     
