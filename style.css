@@ -612,6 +612,12 @@ body {
     text-align: left;
 }
 
+@media screen and (max-width: 357px) {
+    #search_container .fa-search {
+        display: none;
+    }
+}
+
 #location {
     background-color: transparent;
     color: white;
