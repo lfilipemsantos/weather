@@ -654,9 +654,6 @@ function build_next_days(data) {
         temp_container.appendChild(min);
         row.append(temp_container);
         document.getElementById(inner_id).appendChild(row);
-        //hr = document.createElement('hr');
-        //hr.classList.add("nd_divider");
-        //document.getElementById(inner_id).appendChild(hr);
     }
 }
 
@@ -677,7 +674,6 @@ function switch_theme(id) {
 
     localStorage["theme"] = id;
 
-    //document.getElementById("selected_auto").style.display = "none";
     document.getElementById("selected_escuro").style.display = "none";
     document.getElementById("selected_claro").style.display = "none";
 
@@ -768,9 +764,7 @@ function switch_theme(id) {
 
         var fav = document.getElementById("fav_icon");
         fav.src = fav.src.replace("w.svg", "b.svg");
-        
-        //var refresh = document.getElementById("refresh_icon");
-        //refresh.src = refresh.src.replace("w.svg", "b.svg");
+
 
         for(i=0; i<buttons.length; i++) {
             var button = document.getElementById(buttons[i] + "_icon")
@@ -782,17 +776,9 @@ function switch_theme(id) {
 
 
 function switch_colors(color, notification) {
-    tables = document.getElementsByClassName("content_table");
-    //rows = document.getElementsByClassName("day_row");
-    //change_color(rows,"backgroundColor",color, 0.2);
-    //rows = document.getElementsByClassName("location-li");
-    //change_color(rows,"backgroundColor",color, 0.5);
-    //document.getElementById("location").style.backgroundColor = "rgba(" + color + ", 0.5)";
-    //document.getElementById("apply-color-button").style.backgroundColor = "rgba(" + color + ", 0.1)";
-    
+
     document.getElementById("tab-indicator").style.backgroundColor = "rgb(" + color + ")";
     document.getElementById("current-location-button").style.backgroundColor = "rgb(" + color + ", 0.3)";
-    //document.getElementById("search_container").style.borderBottom = "3px solid rgb(" + color + ")";
 
     indicators = document.getElementsByClassName("indicator");
     change_color(indicators, "backgroundColor", color, 1);
