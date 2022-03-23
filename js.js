@@ -157,6 +157,10 @@ function init() {
     if(!(localStorage["auto_theme"])){
         localStorage["auto_theme"] = "off"
     }
+
+    if(!(localStorage["home_color"])){
+        localStorage["home_color"] = "off"
+    }
     
     if(localStorage["theme"]) {
         if (localStorage["auto_theme"] == "on"){
@@ -1146,7 +1150,7 @@ function show_bottom_settings(setting) {
 }
 
 function reset_settings() {
-    var local_items = ["color_theme", "theme", "auto_theme", "nearest_location", "favorites", "local_id"]
+    var local_items = ["color_theme", "theme", "auto_theme", "nearest_location", "favorites", "local_id", "home_color"]
     for (i=0; i<local_items.length; i++) {
         localStorage.removeItem(local_items[i]);
     }
@@ -1173,4 +1177,13 @@ function switch_indicator(id) {
     }
     indicator = document.getElementById(id)
     indicator.classList.add('selected');
+}
+
+function switch_home_color() {
+    if (localStorage["home_color"] == "on") {
+        localStorage["home_color"] = "off"
+    }
+    else {
+        localStorage["home_color"] == "on"
+    }
 }
