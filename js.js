@@ -162,6 +162,13 @@ function init() {
         localStorage["home_color"] = "off"
     }
     
+    if (localStorage["home_color"] == "on") {
+        document.getElementById("dynamic_background").style.opacity = "1";
+    }
+    else {
+        document.getElementById("dynamic_background").style.opacity = "0";
+    }
+    
     if(localStorage["theme"]) {
         if (localStorage["auto_theme"] == "on"){
             const userPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -1182,8 +1189,11 @@ function switch_indicator(id) {
 function switch_home_color() {
     if (localStorage["home_color"] == "on") {
         localStorage["home_color"] = "off"
+        document.getElementById("dynamic_background").style.opacity = 0;
     }
     else {
         localStorage["home_color"] == "on"
+        document.getElementById("dynamic_background").style.opacity = 1;
     }
+    console.log(localStorage["home_color"])
 }
