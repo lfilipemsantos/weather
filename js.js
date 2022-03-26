@@ -1192,7 +1192,7 @@ function switch_home_color() {
         document.getElementById("dynamic_background").style.opacity = 0;
     }
     else {
-        localStorage["home_color"] == "on"
+        localStorage["home_color"] = "on"
         document.getElementById("dynamic_background").style.opacity = 1;
     }
     console.log(localStorage["home_color"])
