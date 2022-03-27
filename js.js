@@ -807,7 +807,8 @@ function switch_colors(color, notification) {
     //change_color(fav_rows,"backgroundColor",color, 0.2);
 
     var r = document.querySelector('#dynamic_background');
-    r.style.background = "linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(" + color + ", 0.7) 100%)";
+    //r.style.background = "linear-gradient(0deg, rgba(" + color + "0.1) 0%, rgba(" + color + ", 0.7) 100%)";
+    r.style.background = "linear-gradient(0deg, rgba(" + color + ", 0.4) 0%, rgba(" + color + ", 0.7) 100%)";
 
 
     localStorage['color_theme'] = color
