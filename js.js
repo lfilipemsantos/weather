@@ -1149,6 +1149,15 @@ function show_bottom_settings(setting) {
         load_fav_settings();
     }
 
+    if (setting == "destaque") {
+        if (localStorage["home_color"] == "on") {
+            document.getElementById("switch_home_color_button").style.backgroundColor = "rgba(" + localStorage['color_theme'] + ", 0.5)";
+        }
+        else {
+            document.getElementById("switch_home_color_button").style.backgroundColor = "rgba(0,0,0,0)";
+        }
+    }
+
     bottoms = document.getElementsByClassName(setting);
     for (i=0; i<bottoms.length; i++) {
         bottoms[i].style.display = "block"
@@ -1196,5 +1205,10 @@ function switch_home_color() {
         localStorage["home_color"] = "on"
         document.getElementById("dynamic_background").style.opacity = 1;
     }
-    console.log(localStorage["home_color"])
+    if (localStorage["home_color"] == "on") {
+        document.getElementById("switch_home_color_button").style.backgroundColor = "rgba(" + localStorage['color_theme'] + ", 0.5)";
+    }
+    else {
+        document.getElementById("switch_home_color_button").style.backgroundColor = "rgba(0,0,0,0)";
+    }
 }
