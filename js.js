@@ -791,6 +791,10 @@ function switch_colors(color, notification) {
     document.getElementById("tab-indicator").style.backgroundColor = "rgb(" + color + ")";
     document.getElementById("current-location-button").style.backgroundColor = "rgb(" + color + ", 0.3)";
 
+    var color_shitft = function(c,n,i,d){for(i=3;i--;c[i]=d<0?0:d>255?255:d|0)d=c[i]+n;return c}
+    console.log(color.split(","))
+    document.getElementById("bottom-options").style.backgroundColor = "rgb(" + color_shitft(color.split(","), -10) + ", 0.8)";
+
     indicators = document.getElementsByClassName("indicator");
     change_color(indicators, "backgroundColor", color, 1);
 
@@ -802,6 +806,7 @@ function switch_colors(color, notification) {
     
     arrows = document.getElementsByClassName("setting-arrow");
     change_color(arrows, "color", color, 1);
+
 
     //fav_rows = document.getElementsByClassName("fav_row");
     //change_color(fav_rows,"backgroundColor",color, 0.2);
@@ -899,6 +904,7 @@ function search_location() {
     }
 }
 
+
 function hide_bottom()  {
     document.getElementById("bottom-options").style.bottom = "-80px";
     setTimeout(
@@ -908,6 +914,8 @@ function hide_bottom()  {
         300
     );
 }
+
+
 function show_bottom()  {
     document.getElementById("bottom-options").style.bottom = "0px";
     setTimeout(
@@ -917,6 +925,7 @@ function show_bottom()  {
         300
     );
 }
+
 
 function add_favorite(id) {
     document.getElementById("fav-notification").children[0].textContent = "Adicionado aos favoritos"
@@ -1200,15 +1209,11 @@ function switch_home_color() {
     if (localStorage["home_color"] == "on") {
         localStorage["home_color"] = "off"
         document.getElementById("dynamic_background").style.opacity = 0;
+        document.getElementById("switch_home_color_button").style.backgroundColor = "rgba(0,0,0,0)";
     }
     else {
         localStorage["home_color"] = "on"
         document.getElementById("dynamic_background").style.opacity = 1;
-    }
-    if (localStorage["home_color"] == "on") {
         document.getElementById("switch_home_color_button").style.backgroundColor = "rgba(" + localStorage['color_theme'] + ", 0.5)";
-    }
-    else {
-        document.getElementById("switch_home_color_button").style.backgroundColor = "rgba(0,0,0,0)";
     }
 }
