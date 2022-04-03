@@ -791,10 +791,6 @@ function switch_colors(color, notification) {
     document.getElementById("tab-indicator").style.backgroundColor = "rgb(" + color + ")";
     document.getElementById("current-location-button").style.backgroundColor = "rgb(" + color + ", 0.3)";
 
-    var color_shitft = function(c,n,i,d){for(i=3;i--;c[i]=d<0?0:d>255?255:d|0)d=c[i]+n;return c}
-    console.log(color.split(","))
-    document.getElementById("bottom-options").style.backgroundColor = "rgb(" + color_shitft(color.split(","), -10) + ", 0.8)";
-
     indicators = document.getElementsByClassName("indicator");
     change_color(indicators, "backgroundColor", color, 1);
 
