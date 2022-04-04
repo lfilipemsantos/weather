@@ -524,6 +524,10 @@ body {
     margin-right: 10px;
 }
 
+#switch_home_color_button:hover {
+    cursor: pointer;
+}
+
 #switch_home_color_button + p{
     margin-top: 3px;
 }
