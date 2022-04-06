@@ -1071,8 +1071,10 @@ body {
 }
 
 .top-setting {
+    box-sizing: border-box;
     display: block;
     padding-left: 0px;
+    border-radius: var(--border-radius);
 }
 
 .setting-img-container {
@@ -1316,7 +1318,11 @@ nav a {
     }
 
     .theme_option:hover {
-        background-color:rgb(199, 199, 199);
+        background-color: rgba(128, 128, 128, 0.1);
+    }
+    
+    .top-setting:hover {
+        background-color: rgba(128, 128, 128, 0.1);
     }
   }
 
