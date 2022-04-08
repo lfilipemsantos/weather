@@ -721,15 +721,6 @@ function switch_theme(id) {
         var location_icon = document.getElementById("current-location-icon")
         location_icon.src = location_icon.src.replace("b.svg", "w.svg");
         
-        widgets = document.getElementsByClassName("widget");
-        for(i = 0; i<widgets.length; i++) {
-            widgets[i].style.backgroundColor = "rgb(95, 95, 95);";
-        }
-        widgets_containers = document.getElementsByClassName("widgets");
-        for(i = 0; i<widgets_containers.length; i++) {
-            widgets_containers[i].style.backgroundColor = "rgb(20, 20, 20)";
-        }
-        
         var fav = document.getElementById("fav_icon");
         fav.src = fav.src.replace("b.svg", "w.svg");
 
@@ -763,15 +754,6 @@ function switch_theme(id) {
 
         var location_icon = document.getElementById("current-location-icon")
         location_icon.src = location_icon.src.replace("w.svg", "b.svg");
-
-        widgets = document.getElementsByClassName("widget");
-        for(i = 0; i<widgets.length; i++) {
-            widgets[i].style.backgroundColor = "rgb(220, 220, 220)";
-        }
-        widgets_containers = document.getElementsByClassName("widgets");
-        for(i = 0; i<widgets_containers.length; i++) {
-            widgets_containers[i].style.backgroundColor = "rgb(200, 200, 200)";
-        }
 
         var fav = document.getElementById("fav_icon");
         fav.src = fav.src.replace("w.svg", "b.svg");
