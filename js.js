@@ -668,15 +668,6 @@ function build_next_days(data) {
     }
 }
 
-
-function set_theme_preference() {
-    const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-    if(userPrefersDark){
-        
-    }
-}
-
-
 function switch_theme(id) {
     const DARK = "#121212"
     const LIGHT = "#ffffff"
