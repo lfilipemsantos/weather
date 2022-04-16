@@ -1075,6 +1075,15 @@ body {
     border-radius: var(--border-radius);
 }
 
+@media screen and (max-width: 420px) {
+    .top-setting {
+        width: 95% !important;
+    }
+    .setting-arrow {
+        display: none;
+    }
+}
+
 .setting-img-container {
     height: 45px;
     width: 45px;
