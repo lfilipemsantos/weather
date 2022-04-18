@@ -428,10 +428,12 @@
                 // http://stackoverflow.com/a/28633515/962603
                 var scroll = window.pageYOffset || document.documentElement.scrollTop ||
                                 document.body.scrollTop || 0;
-                
                 if (localStorage["home_color"] == "on"){
-                    background.style.opacity = Math.max(0, Math.min(1, -scroll / 100 + 2));
+                    background.style.opacity = Math.max(0, Math.min(1, -scroll / 100 + 1));
                 }
+                console.log("scroll: " + scroll)
+                console.log("opacity: " + background.style.opacity)
+                console.log("-----------")
             });
         </script>
     </body>
