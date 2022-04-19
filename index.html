@@ -406,10 +406,6 @@
         <script>
             document.getElementById('swipe_sections').addEventListener('scroll', function() {
                 var el = document.getElementById('swipe_sections');
-                console.log("current: " + el.scrollLeft)
-                console.log(window.innerWidth)
-                console.log(window.innerWidth * 2)
-                console.log(window.innerWidth * 3)
                 if (el.scrollLeft < window.innerWidth / 2) {
                     switch_indicator('i_s1')
                 }
@@ -431,9 +427,6 @@
                 if (localStorage["home_color"] == "on"){
                     background.style.opacity = Math.max(0, Math.min(1, -scroll / 100 + 1));
                 }
-                console.log("scroll: " + scroll)
-                console.log("opacity: " + background.style.opacity)
-                console.log("-----------")
             });
         </script>
     </body>
