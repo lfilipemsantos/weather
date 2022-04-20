@@ -402,7 +402,7 @@ body {
     display: block;
     padding-bottom: 40px;
     background-color: #121212;
-    padding-top: 40px;
+    padding-top: 50px;
     border-radius: 60% 60% 0 0 / 30px 30px 0 0;
     box-shadow: 0px -5px 15px 5px rgba(0, 0, 0, 0.4);
 }
