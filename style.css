@@ -400,7 +400,11 @@ body {
 
 #today_row {
     display: block;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
+    background-color: #121212;
+    padding-top: 40px;
+    border-radius: 60% 60% 0 0 / 30px 30px 0 0;
+    box-shadow: 0px -5px 15px 5px rgba(0, 0, 0, 0.4);
 }
 
 #table_today {
@@ -1154,6 +1158,7 @@ body {
   flex-flow: row nowrap;
   scroll-behavior: smooth;
   margin-bottom: 10px;
+  background-color: #121212;
 }
 
 .swipe_section {
