@@ -427,6 +427,7 @@ body {
     height: 650px;
     width: 100%;
     overflow-x: scroll;
+    background-color: #121212;
 }
 
 #table_next_days {
@@ -738,6 +739,14 @@ body {
     opacity: 1;
     transition: margin-left 250ms ease-in-out;
     text-align: center;
+}
+
+#indicators {
+    background-color: #121212;
+    padding-bottom: 70px; 
+    padding-top: 20px;
+    width: 100%;
+    justify-content: center;
 }
 
 #tab-indicator {
@@ -1157,7 +1166,7 @@ body {
   flex: none;
   flex-flow: row nowrap;
   scroll-behavior: smooth;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
   background-color: #121212;
 }
 
