@@ -427,6 +427,12 @@
                 if (localStorage["home_color"] == "on"){
                     background.style.opacity = Math.max(0, Math.min(1, -scroll / 100 + 1));
                 }
+                if(background.style.opacity == 0 || localStorage["home_color"] == "off") {
+                    document.getElementById("today_row").style.boxShadow = "unset"
+                }
+                else {
+                    document.getElementById("today_row").style.boxShadow = "0px -5px 10px 2px rgba(0, 0, 0, 0.4)"
+                }
             });
         </script>
     </body>

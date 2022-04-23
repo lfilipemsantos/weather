@@ -691,6 +691,10 @@ function switch_theme(id) {
         document.querySelector('meta[name="theme-color"]').setAttribute('content', DARK);
         //document.querySelector('#dynamic_background').setAttribute('background', "linear-gradient(0deg, rgba(5, 5, 5, 1) 20%, rgba(62,170,186,1) 100%);");
         document.body.style.backgroundColor = DARK;
+        document.getElementById("indicators").style.backgroundColor = DARK;
+        document.getElementById("next_days_row").style.backgroundColor = DARK;
+        document.getElementById("today_row").style.backgroundColor = DARK;
+        document.getElementById("swipe_sections").style.backgroundColor = DARK;
         document.body.style.color = LIGHT;
         document.getElementById("location").style.color = LIGHT;
         document.getElementById("location").style.opacity="90%";
@@ -724,6 +728,10 @@ function switch_theme(id) {
         document.querySelector('meta[name="theme-color"]').setAttribute('content', LIGHT);
         //document.querySelector('#dynamic_background').setAttribute('background', "linear-gradient(0deg, rgba(245, 245, 245, 1) 20%, rgba(62,170,186,1) 100%);");
         document.body.style.backgroundColor=LIGHT;
+        document.getElementById("indicators").style.backgroundColor = LIGHT;
+        document.getElementById("next_days_row").style.backgroundColor = LIGHT;
+        document.getElementById("today_row").style.backgroundColor = LIGHT;
+        document.getElementById("swipe_sections").style.backgroundColor = LIGHT;
         document.body.style.color=DARK;
         document.getElementById("location").style.color=DARK;
         document.getElementById("location").style.opacity="90%";
