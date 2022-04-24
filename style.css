@@ -1325,7 +1325,7 @@ nav a {
         width: 50%;
     }
     .swipe_sections {
-        margin-bottom: 108px;
+        padding-bottom: 108px;
     }
     #indicators {
         display: none;
