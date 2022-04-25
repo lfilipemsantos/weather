@@ -733,8 +733,8 @@ body {
     content: "";
     display: block;
     height: 4px;
-    width: 25%;
-    margin-left: 0%;
+    width: 20%;
+    margin-left: 40%;
     position: absolute;
     top: 7px;
     opacity: 1;
