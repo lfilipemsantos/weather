@@ -286,22 +286,23 @@ function switch_tab(id) {
         document.getElementById("settings_icon").src = settings_icon;
         var fav_icon = document.getElementById("favorites_icon").src.replace("is_","not_");
         document.getElementById("favorites_icon").src = fav_icon;
-        //hide_bottom();
+
         document.getElementById("dynamic_background").style.display = "none";
         document.getElementById("home-button").setAttribute("onClick", "switch_tab('home-tab')")
         indicator.style.marginLeft = "20%"
     }
     else if(id=="warnings-tab") {
-        document.getElementById("location").focus();
         var home_icon = document.getElementById("home_icon").src.replace("is_","not_");
         document.getElementById("home_icon").src = home_icon;
-        var search_icon = document.getElementById("search_icon").src.replace("not_","is_");
+        var search_icon = document.getElementById("search_icon").src.replace("is_","not_");
         document.getElementById("search_icon").src = search_icon;
         var settings_icon = document.getElementById("settings_icon").src.replace("is_","not_");
         document.getElementById("settings_icon").src = settings_icon;
         var fav_icon = document.getElementById("favorites_icon").src.replace("is_","not_");
         document.getElementById("favorites_icon").src = fav_icon;
-        //hide_bottom();
+        var fav_icon = document.getElementById("warning_icon").src.replace("not_","is_");
+        document.getElementById("warning_icon").src = fav_icon;
+
         document.getElementById("dynamic_background").style.display = "none";
         document.getElementById("home-button").setAttribute("onClick", "switch_tab('home-tab')")
         indicator.style.marginLeft = "0%"
