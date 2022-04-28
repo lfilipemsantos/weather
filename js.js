@@ -243,6 +243,9 @@ function switch_tab(id) {
         document.getElementById("settings_icon").src = settings_icon;
         var fav_icon = document.getElementById("favorites_icon").src.replace("is_","not_");
         document.getElementById("favorites_icon").src = fav_icon;
+        var fav_icon = document.getElementById("warning_icon").src.replace("is_","not_");
+        document.getElementById("warning_icon").src = fav_icon;
+        
         document.getElementById("home-button").setAttribute("onclick", "window.location.reload()")
         document.getElementById("dynamic_background").style.display = "block";
         indicator.style.marginLeft = "40%"
@@ -257,6 +260,9 @@ function switch_tab(id) {
         document.getElementById("settings_icon").src = settings_icon;
         var fav_icon = document.getElementById("favorites_icon").src.replace("is_","not_");
         document.getElementById("favorites_icon").src = fav_icon;
+        var fav_icon = document.getElementById("warning_icon").src.replace("is_","not_");
+        document.getElementById("warning_icon").src = fav_icon;
+
         document.getElementById("dynamic_background").style.display = "none";
         document.getElementById("home-button").setAttribute("onclick", "switch_tab('home-tab')")
         indicator.style.marginLeft = "80%"
@@ -272,6 +278,9 @@ function switch_tab(id) {
         document.getElementById("settings_icon").src = settings_icon;
         var fav_icon = document.getElementById("favorites_icon").src.replace("not_","is_");
         document.getElementById("favorites_icon").src = fav_icon;
+        var fav_icon = document.getElementById("warning_icon").src.replace("is_","not_");
+        document.getElementById("warning_icon").src = fav_icon;
+
         document.getElementById("dynamic_background").style.display = "none";
         document.getElementById("home-button").setAttribute("onClick", "switch_tab('home-tab')")
         indicator.style.marginLeft = "60%"
@@ -286,6 +295,8 @@ function switch_tab(id) {
         document.getElementById("settings_icon").src = settings_icon;
         var fav_icon = document.getElementById("favorites_icon").src.replace("is_","not_");
         document.getElementById("favorites_icon").src = fav_icon;
+        var fav_icon = document.getElementById("warning_icon").src.replace("is_","not_");
+        document.getElementById("warning_icon").src = fav_icon;
 
         document.getElementById("dynamic_background").style.display = "none";
         document.getElementById("home-button").setAttribute("onClick", "switch_tab('home-tab')")
