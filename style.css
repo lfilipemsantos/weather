@@ -9,11 +9,11 @@
 
 @font-face {
     font-family: 'PS Bold';
-    src: url('fonts/Product\ Sans\ Bold.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+    src: url('fonts/Product-Sans-Bold.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 @font-face {
     font-family: 'PS Regular';
-    src: url('fonts/Product\ Sans\ Regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+    src: url('fonts/Product-Sans-Regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 
 :root {
@@ -733,7 +733,7 @@ body {
 .button_desc {
     display: block;
     font-size: 0.8em;
-    font-family: "PS Regular", sans-serif;
+    font-family: "PS Bold", sans-serif;
 }
 
 #tab-indicator-container {
