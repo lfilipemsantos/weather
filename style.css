@@ -739,14 +739,15 @@ body {
 #tab-indicator-container {
     content: "";
     display: block;
-    height: 4px;
+    height: 32px;
     width: 20%;
     margin-left: 40%;
     position: absolute;
-    top: 7px;
-    opacity: 1;
+    top: 12px;
+    opacity: 0.6;
     transition: margin-left 250ms ease-in-out;
     text-align: center;
+    z-index: -1;
 }
 
 #indicators {
@@ -759,14 +760,14 @@ body {
 
 #tab-indicator {
     height: 100%;
-    width: 8px;
+    width: 64px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     background-color: rgb(42, 136, 165);
     top: 0;
     opacity: 1;
-    border-radius: 10px;
+    border-radius: 16px;
 }
 
 @media screen and (min-width: 760px) {
