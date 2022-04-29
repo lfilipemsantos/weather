@@ -63,7 +63,7 @@ html {
 
 body {
     min-height: 100%;
-    background-color: #121212;
+    background-color: var(--clr-background);
     color: rgb(245, 245, 245);  
     overscroll-behavior-y: contain;
 
@@ -397,7 +397,7 @@ body {
 #today_row {
     display: block;
     padding-bottom: 40px;
-    background-color: #121212;
+    background-color:  var(--clr-background);;
     padding-top: 50px;
     border-radius: 60% 60% 0 0 / 20px 20px 0 0;
     box-shadow: 0px -5px 10px 2px rgba(0, 0, 0, 0.4);
@@ -424,7 +424,7 @@ body {
     height: 650px;
     width: 100%;
     overflow-x: scroll;
-    background-color: #121212;
+    background-color: var(--clr-background);
 }
 
 #table_next_days {
@@ -600,7 +600,7 @@ body {
 }
 
 #current-location-button {
-    background-color: rgba(150, 150, 150, 0.1);
+    background-color: var(--clr-container-primary);
     top: 0;
     right: 0;
     width: 60px;
@@ -684,7 +684,8 @@ body {
     margin-bottom: 00px;
     padding-top: 0px;
     padding-bottom: 0px;
-    background-color: rgb(35, 35, 35, 0.9);
+    background-color: var(--clr-on-secondary);
+    color: var(--clr-secondary);
     box-shadow: 0px 0px 7px 0.5px rgba(0, 0, 0, 0.3);
     /*border-radius: 5% / 30%;*/
     opacity: 100%;
@@ -751,7 +752,7 @@ body {
 }
 
 #indicators {
-    background-color: #121212;
+    background-color:  var(--clr-background);;
     padding-bottom: 70px; 
     padding-top: 20px;
     width: 100%;
@@ -764,7 +765,7 @@ body {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgb(42, 136, 165);
+    background-color: var(--clr-secondary);
     top: 0;
     opacity: 1;
     border-radius: 16px;
@@ -772,35 +773,6 @@ body {
 
 @media screen and (min-width: 760px) {
 
-    #bottom-options-inner {
-        padding-top: 15px !important;
-    }
-
-    .button {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .button_img_container {
-        width: 40%;
-        text-align: center;
-    }
-
-    .button_desc {
-        width: 60%;
-        text-align: center;
-    }
-
-    .button > img {
-        width: auto;
-        margin-left: 25% !important;
-        margin-right: 10% !important;
-    }
-    
-    .button_desc {
-        display: block;
-    }
 
     #fav-description {
         display: block !important;
@@ -950,9 +922,9 @@ body {
     height: 130px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 12dp;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 12px;
     background-color: rgba(150, 150, 150, 0.2);
     cursor: pointer;
     box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.4);
@@ -1109,6 +1081,7 @@ body {
     padding: 10px;
     border-radius: 12px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+    background-color: var(--clr-container-on-primary);
 }
 
 .middle-setting {
@@ -1164,7 +1137,7 @@ body {
   flex-flow: row nowrap;
   scroll-behavior: smooth;
   padding-bottom: 10px;
-  background-color: #121212;
+  background-color:  var(--clr-background);;
 }
 
 .swipe_section {
@@ -1196,7 +1169,7 @@ nav a {
     width: 18px;
     height: 6px;
     border-radius: 10px;
-    background: #9bc;
+    background: var(--clr-container-primary);
     text-indent: 100%;
     overflow: hidden;
     white-space: nowrap;
@@ -1398,7 +1371,7 @@ nav a {
     padding-top: 10px;
     font-weight: lighter;
     text-align: center;
-    font-family: 'PS Regular', sans-serif;
+    font-family: 'PS Bold', sans-serif;
     letter-spacing: 1px;
     width: var(--main-element-width);
     margin: auto;

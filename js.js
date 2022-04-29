@@ -169,7 +169,7 @@ function init() {
         document.getElementById("dynamic_background").style.opacity = "0";
     }
     
-    if(localStorage["theme"]) {
+    /*if(localStorage["theme"]) {
         if (localStorage["auto_theme"] == "on"){
             const userPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
             if (userPrefersDark) {
@@ -194,7 +194,7 @@ function init() {
 
     if(!(localStorage["local_id"])){
         localStorage["local_id"] = 1182100
-    }
+    }*/
 
     if(!(localStorage["favorites"])) {
         var array = [];
@@ -796,14 +796,14 @@ function switch_theme(id) {
 
 function switch_colors(color, notification) {
 
-    document.getElementById("tab-indicator").style.backgroundColor = "rgb(" + color + ")";
-    document.getElementById("current-location-button").style.backgroundColor = "rgb(" + color + ", 0.3)";
+    //document.getElementById("tab-indicator").style.backgroundColor = "rgb(" + color + ")";
+    //document.getElementById("current-location-button").style.backgroundColor = "rgb(" + color + ", 0.3)";
 
-    indicators = document.getElementsByClassName("indicator");
+    //indicators = document.getElementsByClassName("indicator");
     change_color(indicators, "backgroundColor", color, 1);
 
-    setting_icons = document.getElementsByClassName("setting-icon");
-    change_color(setting_icons, "backgroundColor", color, 0.6);
+    //setting_icons = document.getElementsByClassName("setting-icon");
+    //change_color(setting_icons, "backgroundColor", color, 0.6);
 
     theme_selected = document.getElementsByClassName("theme_selected");
     change_color(theme_selected, "backgroundColor", color, 1);
