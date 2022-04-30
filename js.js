@@ -245,7 +245,7 @@ function switch_tab(id) {
         document.getElementById("favorites_icon").src = fav_icon;
         var fav_icon = document.getElementById("warning_icon").src.replace("is_","not_");
         document.getElementById("warning_icon").src = fav_icon;
-        
+
         document.getElementById("home-button").setAttribute("onclick", "window.location.reload()")
         document.getElementById("dynamic_background").style.display = "block";
         indicator.style.marginLeft = "40%"
@@ -726,7 +726,7 @@ function switch_theme(id) {
         document.getElementById("location").style.color = LIGHT;
         document.getElementById("location").style.opacity="90%";
         document.getElementById("search_icon").src = "not_search_w.svg";
-        document.getElementById("bottom-options").style.backgroundColor = "rgba(35, 35, 35, 0.8)";
+        document.getElementById("bottom-options").style.backgroundColor = "rgba(35, 35, 35, 0.9)";
         document.getElementById("fav-notification-inner").style.backgroundColor = "rgb(40, 40, 40)";
         hr = document.getElementsByClassName("row-divider");
         for(i = 0; i<hr.length; i++) {
