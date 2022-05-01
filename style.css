@@ -394,10 +394,15 @@ body {
     width: 100%;
 }
 
+.main {
+    background-color:  var(--clr-background);
+    border-radius: 40px 0 0 0;
+}
+
 #today_row {
     display: block;
     padding-bottom: 40px;
-    background-color:  var(--clr-background);;
+    background-color:  var(--clr-background);
     padding-top: 50px;
     border-radius: 60% 60% 0 0 / 20px 20px 0 0;
     box-shadow: 0px -5px 10px 2px rgba(0, 0, 0, 0.4);
@@ -687,7 +692,6 @@ body {
     background-color: var(--clr-on-secondary);
     color: var(--clr-secondary);
     box-shadow: 0px 0px 7px 0.5px rgba(0, 0, 0, 0.3);
-    /*border-radius: 5% / 30%;*/
     opacity: 100%;
     transition: bottom 0.3s;
     left: 50%;
@@ -717,6 +721,7 @@ body {
     width: 25%;
     text-align: center;
     height: 35px;
+    position: relative;
 }
 
 .button_img_container {
@@ -737,18 +742,80 @@ body {
     font-family: "PS Bold", sans-serif;
 }
 
+.tab {
+    margin-bottom: 85px;
+}
+
+@media screen and (min-width: 1100px) {
+    #bottom-options {
+        width: 100%;
+        margin-left: 0px;
+        left: 0px;
+        height: 100%;
+        position: fixed;
+        transform: unset;
+    }
+    #bottom-options > .inner {
+        margin: 0;
+        margin-top: 150px;
+        flex-direction: column;
+        height: 100%;
+        width: 150px;
+        align-items: center;
+        justify-content: center;
+        z-index: -3;
+    }
+
+    .button_desc {
+        display: none;
+    }
+
+    #bottom-options > .inner > .button {
+        width: 100%;
+        text-align: center;
+        height: 35px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .main {
+        position: relative;
+        margin-left: 100px !important;
+        margin-top: 100px !important;
+        z-index: 1000;
+    }
+
+    #dynamic_background {
+        display: none !important;
+    }
+    
+    #today_row {
+        box-shadow: unset;
+    }
+
+    .tab {
+        margin-bottom: 0;
+    }
+}
+
 #tab-indicator-container {
-    content: "";
     display: block;
     height: 32px;
-    width: 20%;
-    margin-left: 40%;
+    width: 100%;
     position: absolute;
-    top: 12px;
+    top: -3px;
     opacity: 0.6;
-    transition: margin-left 250ms ease-in-out;
     text-align: center;
     z-index: -1;
+}
+
+.tab-indicator {
+    transition: width 250ms ease-in-out;
+    width: 0;
+}
+
+.button.selected:first-child:first-child {
+    width: 100%;
 }
 
 #indicators {

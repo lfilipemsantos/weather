@@ -162,12 +162,12 @@ function init() {
         localStorage["home_color"] = "off"
     }
     
-    if (localStorage["home_color"] == "on") {
+    /*if (localStorage["home_color"] == "on") {
         document.getElementById("dynamic_background").style.opacity = "1";
     }
     else {
         document.getElementById("dynamic_background").style.opacity = "0";
-    }
+    }*/
     
     /*if(localStorage["theme"]) {
         if (localStorage["auto_theme"] == "on"){
@@ -221,7 +221,6 @@ function build_locations(locations) {
 
 
 function switch_tab(id) {
-    console.log("switching to " + id)
     var tabs = ["home-tab", "settings-tab", "location-tab", "favorites-tab"];
     show_bottom();
     for (let i = 0; i < tabs.length; i++) {
@@ -232,7 +231,17 @@ function switch_tab(id) {
         }
     }
 
-    indicator = document.getElementById("tab-indicator-container")
+    tab_buttons = document.getElementsByClassName("button");
+    console.log(tab_buttons)
+    
+    for (let i = 0; i < tab_buttons.length; i++) {
+        try {
+            tab_buttons[i].classList.remove("selected");
+        }
+        catch {
+            console.log("error")
+        }
+    }
 
     if(id=="home-tab") {
         var home_icon = document.getElementById("home_icon").src.replace("not_","is_");
@@ -247,8 +256,9 @@ function switch_tab(id) {
         document.getElementById("warning_icon").src = fav_icon;
 
         document.getElementById("home-button").setAttribute("onclick", "window.location.reload()")
-        document.getElementById("dynamic_background").style.display = "block";
-        indicator.style.marginLeft = "40%"
+        //document.getElementById("dynamic_background").style.display = "block";
+        document.getElementById("home-button").classList.add("selected");
+        //indicator.style.marginLeft = "40%"
     }
     else if(id=="settings-tab") {
         show_top_settings();
@@ -263,9 +273,10 @@ function switch_tab(id) {
         var fav_icon = document.getElementById("warning_icon").src.replace("is_","not_");
         document.getElementById("warning_icon").src = fav_icon;
 
-        document.getElementById("dynamic_background").style.display = "none";
+        //document.getElementById("dynamic_background").style.display = "none";
         document.getElementById("home-button").setAttribute("onclick", "switch_tab('home-tab')")
-        indicator.style.marginLeft = "80%"
+        document.getElementById("settings-button").classList.add("selected");
+        //indicator.style.marginLeft = "80%"
     }
     else if(id=="favorites-tab") {
         clear_rows("favorites")
@@ -281,9 +292,9 @@ function switch_tab(id) {
         var fav_icon = document.getElementById("warning_icon").src.replace("is_","not_");
         document.getElementById("warning_icon").src = fav_icon;
 
-        document.getElementById("dynamic_background").style.display = "none";
+        //document.getElementById("dynamic_background").style.display = "none";
         document.getElementById("home-button").setAttribute("onClick", "switch_tab('home-tab')")
-        indicator.style.marginLeft = "60%"
+        //indicator.style.marginLeft = "60%"
     }
     else if(id=="location-tab") {
         document.getElementById("location").focus();
@@ -298,9 +309,9 @@ function switch_tab(id) {
         var fav_icon = document.getElementById("warning_icon").src.replace("is_","not_");
         document.getElementById("warning_icon").src = fav_icon;
 
-        document.getElementById("dynamic_background").style.display = "none";
+        //document.getElementById("dynamic_background").style.display = "none";
         document.getElementById("home-button").setAttribute("onClick", "switch_tab('home-tab')")
-        indicator.style.marginLeft = "20%"
+        //indicator.style.marginLeft = "20%"
     }
     else if(id=="warnings-tab") {
         var home_icon = document.getElementById("home_icon").src.replace("is_","not_");
@@ -314,9 +325,9 @@ function switch_tab(id) {
         var fav_icon = document.getElementById("warning_icon").src.replace("not_","is_");
         document.getElementById("warning_icon").src = fav_icon;
 
-        document.getElementById("dynamic_background").style.display = "none";
+        //document.getElementById("dynamic_background").style.display = "none";
         document.getElementById("home-button").setAttribute("onClick", "switch_tab('home-tab')")
-        indicator.style.marginLeft = "0%"
+        //indicator.style.marginLeft = "0%"
     }
     
     setTimeout(() => {  document.getElementById(id).style.display = "block"; }, 400);
@@ -815,9 +826,9 @@ function switch_colors(color, notification) {
     //fav_rows = document.getElementsByClassName("fav_row");
     //change_color(fav_rows,"backgroundColor",color, 0.2);
 
-    var r = document.querySelector('#dynamic_background');
+    //var r = document.querySelector('#dynamic_background');
     //r.style.background = "linear-gradient(0deg, rgba(" + color + "0.1) 0%, rgba(" + color + ", 0.7) 100%)";
-    r.style.background = "linear-gradient(0deg, rgba(" + color + ", 0.4) 0%, rgba(" + color + ", 0.7) 100%)";
+    //r.style.background = "linear-gradient(0deg, rgba(" + color + ", 0.4) 0%, rgba(" + color + ", 0.7) 100%)";
 
 
     localStorage['color_theme'] = color
@@ -1209,10 +1220,10 @@ function switch_indicator(id) {
     indicator.classList.add('selected');
 }
 
-function switch_home_color() {
+/*function switch_home_color() {
     if (localStorage["home_color"] == "on") {
         localStorage["home_color"] = "off"
-        document.getElementById("dynamic_background").style.opacity = 0;
+        //document.getElementById("dynamic_background").style.opacity = 0;
         document.getElementById("switch_home_color_button").style.backgroundColor = "rgba(0,0,0,0)";
     }
     else {
@@ -1220,4 +1231,4 @@ function switch_home_color() {
         document.getElementById("dynamic_background").style.opacity = 1;
         document.getElementById("switch_home_color_button").style.backgroundColor = "rgba(" + localStorage['color_theme'] + ", 0.5)";
     }
-}
+}*/

@@ -20,345 +20,345 @@
     </head>
 
     <body onload="init()">
-
-        <div id=dynamic_background></div>
-        
-        <div id="fav-notification">
-            <div id="fav-notification-inner"></div>
-        </div>
-
-        <div class="rows" id="location-tab">
-            <h2 class="tab-title">Pesquisar</h2>
-            <div id="search_elements_container">
-                <div id="search_container">
-                    <i class="fa fa-search" style="margin-top: -5px; margin-left: 10px !important; color: gray;"></i>
-                    <input autocomplete="off" id="location" type="text" onkeyup="search_location()" placeholder="Pesquisar...">
-                </div>
-                <div id="current-location-button" onclick="get_data(localStorage['nearest_location'])">
-                    <img id="current-location-icon" src="location_w.svg" alt="location icon" style="height: 25px; margin-top: 13px; margin-right: 0px;">
-                </div>
-            </div>
+        <div class="main">
+            <!--<div id=dynamic_background></div>-->
             
-            <div id="location-list-container">
-                <ul id="location-list"></ul>
+            <div id="fav-notification">
+                <div id="fav-notification-inner"></div>
             </div>
-        </div> 
-
-        <div class="rows" id="favorites-tab" style="display: none;">
-        </div> 
-
-        <div id="home-tab" style="margin-bottom: 85px;">
-            <div style="display: flex; flex-direction: row; width: 100%; padding: 30px; box-sizing: border-box;">
-                <div id="location-date-container">
-                    <p id="location-text"></p>
-                    <p id="date-text"></p>
-                </div>
-                <div id="fav_icon_container" onclick="add_favorite('1999')">
-                    <img id="fav_icon" src="not_favorite_w.svg" alt="favorite icon">
-                    <span id="fav-description"></span>
-                </div>
-            </div>
-
-            <section>
-                <div id="main-info">
-                    <h4 id="weather-info-text" colspan="2"></h4>
-                    <div id="max-min-container">
-                        <p class="table-text" id="text-tMax" style="line-height: 16px;font-size:16px;display: inline-block; vertical-align: bottom; margin-left: auto; margin-right: 3px;"></p>
-                        <p class="table-text" id="text-tMin" style="line-height: 16px;font-size:16px;display: inline-block; vertical-align: bottom; opacity: 0.5; margin-right: auto; margin-left: 3px;"></p>
+    
+            <div class="rows tab" id="location-tab">
+                <h2 class="tab-title">Pesquisar</h2>
+                <div id="search_elements_container">
+                    <div id="search_container">
+                        <i class="fa fa-search" style="margin-top: -5px; margin-left: 10px !important; color: gray;"></i>
+                        <input autocomplete="off" id="location" type="text" onkeyup="search_location()" placeholder="Pesquisar...">
                     </div>
-                    <div style="display: flex; flex-direction: row; align-items: center; width: 85%; margin: auto; height: 150px;">
-                        <div id="main-image-container">
-                            <img id="current-weather" style="height: 100%; margin-left: auto; margin-right: auto;">
-                        </div>
-                        
-                        <div id="main-weather-info-container">
-                            <h4 id="table_temp" colspan="2"></h4>
-                        </div>
+                    <div id="current-location-button" onclick="get_data(localStorage['nearest_location'])">
+                        <img id="current-location-icon" src="location_w.svg" alt="location icon" style="height: 25px; margin-top: 13px; margin-right: 0px;">
                     </div>
-
                 </div>
                 
-            </section>
-
-           
-            <div class="rows" id="today_row">
-                <div class="inner" id="innerToday"></div>
-            </div>
-
-            <div class="swipe_sections" id="swipe_sections">
-                <section class="swipe_section" id="s1">    
-                    <div class="stats" id="today_stats">        
-                        <div style="font-size: 1.5rem; width: 100%; text-align: center; margin-bottom: 30px;">Hoje</div>
-                        <div class="stat">
-                            <div class="stat_name">Temperatura</div>
-                            <div class="stat_value" id="text-temp"></div>
-                        </div>
-                        <hr class="stat_divider">
-                        <div class="stat">
-                            <div class="stat_name">Índice UV</div>
-                            <div class="stat_value" id="text-iUv"></div>
-                        </div>
-                        <hr class="stat_divider">
-                        <div class="stat">
-                            <div class="stat_name">Precipitação</div>
-                            <div class="stat_value" id="text-probabilidadePrecipita"></div>
-                        </div>
-                        <hr class="stat_divider">
-                        <div class="stat">
-                            <div class="stat_name">Vento</div>
-                            <div class="stat_value" id="text-vento-vv"></div>
-                        </div>
-                        <hr class="stat_divider">
-                        <div class="stat">
-                            <div class="stat_name">Direção Vento</div>
-                            <div class="stat_value" id="text-vento-dd"></div>
-                        </div>
+                <div id="location-list-container">
+                    <ul id="location-list"></ul>
+                </div>
+            </div> 
+    
+            <div class="rows tab" id="favorites-tab" style="display: none;">
+            </div> 
+    
+            <div id="home-tab" class="tab">
+                <div style="display: flex; flex-direction: row; width: 100%; padding: 30px; box-sizing: border-box;">
+                    <div id="location-date-container">
+                        <p id="location-text"></p>
+                        <p id="date-text"></p>
                     </div>
+                    <div id="fav_icon_container" onclick="add_favorite('1999')">
+                        <img id="fav_icon" src="not_favorite_w.svg" alt="favorite icon">
+                        <span id="fav-description"></span>
+                    </div>
+                </div>
+    
+                <section>
+                    <div id="main-info">
+                        <h4 id="weather-info-text" colspan="2"></h4>
+                        <div id="max-min-container">
+                            <p class="table-text" id="text-tMax" style="line-height: 16px;font-size:16px;display: inline-block; vertical-align: bottom; margin-left: auto; margin-right: 3px;"></p>
+                            <p class="table-text" id="text-tMin" style="line-height: 16px;font-size:16px;display: inline-block; vertical-align: bottom; opacity: 0.5; margin-right: auto; margin-left: 3px;"></p>
+                        </div>
+                        <div style="display: flex; flex-direction: row; align-items: center; width: 85%; margin: auto; height: 150px;">
+                            <div id="main-image-container">
+                                <img id="current-weather" style="height: 100%; margin-left: auto; margin-right: auto;">
+                            </div>
+                            
+                            <div id="main-weather-info-container">
+                                <h4 id="table_temp" colspan="2"></h4>
+                            </div>
+                        </div>
+    
+                    </div>
+                    
                 </section>
-                <section class="swipe_section" id="s2">
-                    <div class="stats" id="tomorrow_stats">        
-                        <div style="font-size: 1.5rem; width: 100%; text-align: center; margin-bottom: 30px;">Amanhã</div>
-                        <div class="stat">
-                            <div class="stat_name">Temperatura</div>
-                            <div class="stat_value" id="text-temp-T"></div>
-                        </div>
-                        <hr class="stat_divider">
-                        <div class="stat">
-                            <div class="stat_name">Índice UV</div>
-                            <div class="stat_value" id="text-iUv-T"></div>
-                        </div>
-                        <hr class="stat_divider">
-                        <div class="stat">
-                            <div class="stat_name">Precipitação</div>
-                            <div class="stat_value" id="text-probabilidadePrecipita-T"></div>
-                        </div>
-                        <hr class="stat_divider">
-                        <div class="stat">
-                            <div class="stat_name">Vento</div>
-                            <div class="stat_value" id="idFfxVento-T"></div>
-                        </div>
-                        <hr class="stat_divider">
-                        <div class="stat">
-                            <div class="stat_name">Direção Vento</div>
-                            <div class="stat_value" id="text-vento-dd-T"></div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-
-            <nav id="indicators">
-                <a class="indicator selected" id="i_s1" href="#s1" onclick="switch_indicator('i_s1')" title="slide 1"></a>
-                <a class="indicator" id="i_s2" href="#s2" onclick="switch_indicator('i_s2')" title="slide 2"></a>
-            </nav>
-            
-
-            <div class="rows" id="next_days_row">
-                <h2 style="width: 100%; text-align: center; margin-bottom: 30px;">Próximos 10 dias</h2>
-                <div class="inner" id="inner_next_days"></div>
-            </div>
-        </div>
-
-        <div class="rows" id="settings-tab" style="height: 100%;">
-            <div class="tab-title-container" style="position: relative;">  
-                <div id="back_button" onclick="show_top_settings()" style="position: absolute; left: 0; font-size: x-large;">
-                    &larr;
+    
+               
+                <div class="rows" id="today_row">
+                    <div class="inner" id="innerToday"></div>
                 </div>
-                <h2 class="tab-title">Definições</h2>
-            </div>
-            <div class="setting top-setting personalizacao" onclick="show_bottom_settings('tema')" style="display: flex !important; flex-direction: row;">
-                <div class="setting-img-container" style="flex-basis: 25%;">
-                    <img src="moon_w.svg" class="setting-icon">
-                </div>
-                <div>
-                    <h3>Modo claro/escuro</h3>
-                    <div>
-                        <small>Escolha entre modo claro e escuro.</small>
-                    </div>
-                </div>
-                <div class="setting-arrow">
-                    >
-                </div>
-            </div>
-            <div class="setting top-setting personalizacao" onclick="show_bottom_settings('destaque')">
-                <div class="setting-img-container" style="flex-basis: 25%;">
-                    <img src="brush_w.svg" class="setting-icon">
-                </div>
-                <div>
-                    <h3>Cor do tema</h3>
-                    <div>
-                        <small>Informações sobre a aplicação.</small>
-                    </div>
-                </div>
-                <div class="setting-arrow">
-                    >
-                </div>
-            </div>
-            
-            <div class="setting top-setting" onclick="show_bottom_settings('fav_settings')">
-                <div class="setting-img-container" style="flex-basis: 25%;">
-                    <img src="not_favorite_w.svg" class="setting-icon">
-                </div>
-                <div>
-                    <h3>Favoritos</h3>
-                    <div>
-                        <small>Faça a gestão das localizações favoritas.</small>
-                    </div>
-                </div>
-                <div class="setting-arrow">
-                    >
-                </div>
-            </div>
-            <div class="setting top-setting" onclick="show_bottom_settings('repor')">
-                <div class="setting-img-container" style="flex-basis: 25%;">
-                    <img src="reset_w.svg" class="setting-icon">
-                </div>
-                <div>
-                    <h3>Repor definições</h3>
-                    <div>
-                        <small>Apagará todas as definições incluindo temas e locais favoritos.</small>
-                    </div>
-                </div>
-                <div class="setting-arrow">
-                    >
-                </div>
-            </div>
-            <div class="setting top-setting" onclick="show_bottom_settings('sobre')">
-                <div class="setting-img-container" style="flex-basis: 25%;">
-                    <img src="about_w.svg" class="setting-icon">
-                </div>
-                <div>
-                    <h3>Sobre</h3>
-                    <div>
-                        <small>Informações sobre a aplicação.</small>
-                    </div>
-                </div>
-                <div class="setting-arrow">
-                    >
-                </div>
-            </div>
-
-            <div class="setting bottom-setting tema">
-                <div style="width: 90%; margin-left: auto; margin-right: auto;margin-top: 15px;">
-                    <h4>Tema</h4>
-                </div>
-                <div id="themes" style="margin-top:10px;">
-                    <div class="theme_option" onclick="switch_auto_theme('off');switch_theme('claro')">
-                        <div class="theme_example theme_example_light">
-                            <div style="display: flex; flex-direction: column; background-color: white; width: 70%; height: 50px; border-radius: 10px; margin:auto; margin-top: 15px;">
-                                <!--<div style="width: 70%; height: 10px; color: red; z-index: 100; display: block;"></div>-->
+    
+                <div class="swipe_sections" id="swipe_sections">
+                    <section class="swipe_section" id="s1">    
+                        <div class="stats" id="today_stats">        
+                            <div style="font-size: 1.5rem; width: 100%; text-align: center; margin-bottom: 30px;">Hoje</div>
+                            <div class="stat">
+                                <div class="stat_name">Temperatura</div>
+                                <div class="stat_value" id="text-temp"></div>
                             </div>
-                            <div style="display: flex; flex-direction: column; background-color: white; width: 70%; height: 50px; border-radius: 10px; margin:auto; margin-top: 15px;">
-                                <div></div>
+                            <hr class="stat_divider">
+                            <div class="stat">
+                                <div class="stat_name">Índice UV</div>
+                                <div class="stat_value" id="text-iUv"></div>
                             </div>
-                            <div class="theme_selected" id="selected_claro"></div>
+                            <hr class="stat_divider">
+                            <div class="stat">
+                                <div class="stat_name">Precipitação</div>
+                                <div class="stat_value" id="text-probabilidadePrecipita"></div>
+                            </div>
+                            <hr class="stat_divider">
+                            <div class="stat">
+                                <div class="stat_name">Vento</div>
+                                <div class="stat_value" id="text-vento-vv"></div>
+                            </div>
+                            <hr class="stat_divider">
+                            <div class="stat">
+                                <div class="stat_name">Direção Vento</div>
+                                <div class="stat_value" id="text-vento-dd"></div>
+                            </div>
                         </div>
-                        <p>Claro</p>
-                    </div>
-                    <div class="theme_option" onclick="switch_auto_theme('off');switch_theme('escuro')">
-                        <div class="theme_example theme_example_dark">
-                            <div style="display: flex; flex-direction: column; background-color: rgb(35, 35, 35); width: 70%; height: 50px; border-radius: 10px; margin:auto; margin-top: 15px;">
-                                <!--<div style="width: 70%; height: 10px; color: red; z-index: 100; display: block;"></div>-->
+                    </section>
+                    <section class="swipe_section" id="s2">
+                        <div class="stats" id="tomorrow_stats">        
+                            <div style="font-size: 1.5rem; width: 100%; text-align: center; margin-bottom: 30px;">Amanhã</div>
+                            <div class="stat">
+                                <div class="stat_name">Temperatura</div>
+                                <div class="stat_value" id="text-temp-T"></div>
                             </div>
-                            <div style="display: flex; flex-direction: column; background-color: rgb(35, 35, 35); width: 70%; height: 50px; border-radius: 10px; margin:auto; margin-top: 15px;">
-                                <div></div>
+                            <hr class="stat_divider">
+                            <div class="stat">
+                                <div class="stat_name">Índice UV</div>
+                                <div class="stat_value" id="text-iUv-T"></div>
                             </div>
-                            <div class="theme_selected" id="selected_escuro"></div>
+                            <hr class="stat_divider">
+                            <div class="stat">
+                                <div class="stat_name">Precipitação</div>
+                                <div class="stat_value" id="text-probabilidadePrecipita-T"></div>
+                            </div>
+                            <hr class="stat_divider">
+                            <div class="stat">
+                                <div class="stat_name">Vento</div>
+                                <div class="stat_value" id="idFfxVento-T"></div>
+                            </div>
+                            <hr class="stat_divider">
+                            <div class="stat">
+                                <div class="stat_name">Direção Vento</div>
+                                <div class="stat_value" id="text-vento-dd-T"></div>
+                            </div>
                         </div>
-                        <p>Escuro</p>
+                    </section>
+                </div>
+    
+                <nav id="indicators">
+                    <a class="indicator selected" id="i_s1" href="#s1" onclick="switch_indicator('i_s1')" title="slide 1"></a>
+                    <a class="indicator" id="i_s2" href="#s2" onclick="switch_indicator('i_s2')" title="slide 2"></a>
+                </nav>
+                
+    
+                <div class="rows" id="next_days_row">
+                    <h2 style="width: 100%; text-align: center; margin-bottom: 30px;">Próximos 10 dias</h2>
+                    <div class="inner" id="inner_next_days"></div>
+                </div>
+            </div>
+    
+            <div class="rows tab" id="settings-tab" style="height: 100%;">
+                <div class="tab-title-container" style="position: relative;">  
+                    <div id="back_button" onclick="show_top_settings()" style="position: absolute; left: 0; font-size: x-large;">
+                        &larr;
                     </div>
-                    <!--<div class="theme_option" onclick="switch_auto_theme('on')">
-                        <div class="theme_selected" id="selected_auto"></div>
-                        <p>Usar preferência do sistema</p>
+                    <h2 class="tab-title">Definições</h2>
+                </div>
+                <div class="setting top-setting personalizacao" onclick="show_bottom_settings('tema')" style="display: flex !important; flex-direction: row;">
+                    <div class="setting-img-container" style="flex-basis: 25%;">
+                        <img src="moon_w.svg" class="setting-icon">
+                    </div>
+                    <div>
+                        <h3>Modo claro/escuro</h3>
+                        <div>
+                            <small>Escolha entre modo claro e escuro.</small>
+                        </div>
+                    </div>
+                    <div class="setting-arrow">
+                        >
+                    </div>
+                </div>
+                <div class="setting top-setting personalizacao" onclick="show_bottom_settings('destaque')">
+                    <div class="setting-img-container" style="flex-basis: 25%;">
+                        <img src="brush_w.svg" class="setting-icon">
+                    </div>
+                    <div>
+                        <h3>Cor do tema</h3>
+                        <div>
+                            <small>Informações sobre a aplicação.</small>
+                        </div>
+                    </div>
+                    <div class="setting-arrow">
+                        >
+                    </div>
+                </div>
+                
+                <div class="setting top-setting" onclick="show_bottom_settings('fav_settings')">
+                    <div class="setting-img-container" style="flex-basis: 25%;">
+                        <img src="not_favorite_w.svg" class="setting-icon">
+                    </div>
+                    <div>
+                        <h3>Favoritos</h3>
+                        <div>
+                            <small>Faça a gestão das localizações favoritas.</small>
+                        </div>
+                    </div>
+                    <div class="setting-arrow">
+                        >
+                    </div>
+                </div>
+                <div class="setting top-setting" onclick="show_bottom_settings('repor')">
+                    <div class="setting-img-container" style="flex-basis: 25%;">
+                        <img src="reset_w.svg" class="setting-icon">
+                    </div>
+                    <div>
+                        <h3>Repor definições</h3>
+                        <div>
+                            <small>Apagará todas as definições incluindo temas e locais favoritos.</small>
+                        </div>
+                    </div>
+                    <div class="setting-arrow">
+                        >
+                    </div>
+                </div>
+                <div class="setting top-setting" onclick="show_bottom_settings('sobre')">
+                    <div class="setting-img-container" style="flex-basis: 25%;">
+                        <img src="about_w.svg" class="setting-icon">
+                    </div>
+                    <div>
+                        <h3>Sobre</h3>
+                        <div>
+                            <small>Informações sobre a aplicação.</small>
+                        </div>
+                    </div>
+                    <div class="setting-arrow">
+                        >
+                    </div>
+                </div>
+    
+                <div class="setting bottom-setting tema">
+                    <div style="width: 90%; margin-left: auto; margin-right: auto;margin-top: 15px;">
+                        <h4>Tema</h4>
+                    </div>
+                    <div id="themes" style="margin-top:10px;">
+                        <div class="theme_option" onclick="switch_auto_theme('off');switch_theme('claro')">
+                            <div class="theme_example theme_example_light">
+                                <div style="display: flex; flex-direction: column; background-color: white; width: 70%; height: 50px; border-radius: 10px; margin:auto; margin-top: 15px;">
+                                    <!--<div style="width: 70%; height: 10px; color: red; z-index: 100; display: block;"></div>-->
+                                </div>
+                                <div style="display: flex; flex-direction: column; background-color: white; width: 70%; height: 50px; border-radius: 10px; margin:auto; margin-top: 15px;">
+                                    <div></div>
+                                </div>
+                                <div class="theme_selected" id="selected_claro"></div>
+                            </div>
+                            <p>Claro</p>
+                        </div>
+                        <div class="theme_option" onclick="switch_auto_theme('off');switch_theme('escuro')">
+                            <div class="theme_example theme_example_dark">
+                                <div style="display: flex; flex-direction: column; background-color: rgb(35, 35, 35); width: 70%; height: 50px; border-radius: 10px; margin:auto; margin-top: 15px;">
+                                    <!--<div style="width: 70%; height: 10px; color: red; z-index: 100; display: block;"></div>-->
+                                </div>
+                                <div style="display: flex; flex-direction: column; background-color: rgb(35, 35, 35); width: 70%; height: 50px; border-radius: 10px; margin:auto; margin-top: 15px;">
+                                    <div></div>
+                                </div>
+                                <div class="theme_selected" id="selected_escuro"></div>
+                            </div>
+                            <p>Escuro</p>
+                        </div>
+                        <!--<div class="theme_option" onclick="switch_auto_theme('on')">
+                            <div class="theme_selected" id="selected_auto"></div>
+                            <p>Usar preferência do sistema</p>
+                        </div>-->
+                    </div>
+                </div>
+                <div class="setting bottom-setting destaque">
+                    <div style="width: 90%; margin-left: auto; margin-right: auto;margin-top: 0px;">
+                        <h4>Cor de destaque</h4>
+                    </div>
+                    <div class="inner">
+                        <div id="cores">
+                            <div class="color_button" onclick="switch_colors('144, 204, 222', true)" style="background-color: rgb(144, 204, 222);">
+                                <div style="width: 100%; height: 100%;"></div>
+                            </div>
+                            <div class="color_button" onclick="switch_colors('253, 218, 223', true)" style="background-color: rgb(253, 218, 223);">
+                                <div style="width: 100%; height: 100%;"></div>
+                            </div>
+                            <div class="color_button" onclick="switch_colors('211, 241, 210', true)" style="background-color: rgb(211, 241, 210);">
+                                <div style="width: 100%; height: 100%;"></div>
+                            </div>
+                            <div class="color_button" onclick="switch_colors('160, 155, 204', true)" style="background-color: rgb(160, 155, 204);">
+                                <div style="width: 100%; height: 100%;"></div>
+                            </div>
+                            <div class="color_button" onclick="switch_colors('150, 150, 150', true)" style="background-color: rgb(150, 150, 150);">
+                                <div style="width: 100%; height: 100%;"></div>
+                            </div>
+                        </div>
+                        <div style="width: fit-content; margin-top: 30px; display: flex; flex-direction: row; align-items: center; left: 50%; text-align: center;">
+                            <div id="switch_home_color_button" onclick="switch_home_color();"></div>
+                            <p>Aplicar cor ao ecrã inicial</p>
+                        </div>
+                    </div>
+                    
+                    <!--<div style="width: 90%; margin-left: auto; margin-right: auto;margin-top: 15px;">
+                        <div style="margin-left: auto; margin-right: auto; text-align: center;">
+                            <input class="color-textb" id="red" type="number" placeholder="R"></input>
+                            <input class="color-textb" id="green" type="number" placeholder="G"></input>
+                            <input class="color-textb" id="blue" type="number" placeholder="B"></input>
+                            <div id="apply-color-button" style="display: inline-block;" onclick="set_rgb()">
+                                <p>Aplicar</p>
+                            </div>
+                            <div id="color-warning" style="width: 100%; display: none;">
+                                <small style="color:red;">Apenas valores entre 0 e 255</small>
+                            </div>
+                        </div>
                     </div>-->
                 </div>
-            </div>
-            <div class="setting bottom-setting destaque">
-                <div style="width: 90%; margin-left: auto; margin-right: auto;margin-top: 0px;">
-                    <h4>Cor de destaque</h4>
-                </div>
-                <div class="inner">
-                    <div id="cores">
-                        <div class="color_button" onclick="switch_colors('144, 204, 222', true)" style="background-color: rgb(144, 204, 222);">
-                            <div style="width: 100%; height: 100%;"></div>
-                        </div>
-                        <div class="color_button" onclick="switch_colors('253, 218, 223', true)" style="background-color: rgb(253, 218, 223);">
-                            <div style="width: 100%; height: 100%;"></div>
-                        </div>
-                        <div class="color_button" onclick="switch_colors('211, 241, 210', true)" style="background-color: rgb(211, 241, 210);">
-                            <div style="width: 100%; height: 100%;"></div>
-                        </div>
-                        <div class="color_button" onclick="switch_colors('160, 155, 204', true)" style="background-color: rgb(160, 155, 204);">
-                            <div style="width: 100%; height: 100%;"></div>
-                        </div>
-                        <div class="color_button" onclick="switch_colors('150, 150, 150', true)" style="background-color: rgb(150, 150, 150);">
-                            <div style="width: 100%; height: 100%;"></div>
-                        </div>
-                    </div>
-                    <div style="width: fit-content; margin-top: 30px; display: flex; flex-direction: row; align-items: center; left: 50%; text-align: center;">
-                        <div id="switch_home_color_button" onclick="switch_home_color();"></div>
-                        <p>Aplicar cor ao ecrã inicial</p>
+                <div class="setting bottom-setting repor">
+                    <div style="width: fit-content; margin-left: auto; margin-right: auto; color: rgb(255, 108, 108); background-color: rgba(250, 155, 155, 0.2); padding: 15px; border-radius: 22px;" onclick="reset_settings()">
+                        <h4 style="margin-top:auto; margin-bottom:auto;">Repor todas as definições</h4>
                     </div>
                 </div>
                 
-                <!--<div style="width: 90%; margin-left: auto; margin-right: auto;margin-top: 15px;">
-                    <div style="margin-left: auto; margin-right: auto; text-align: center;">
-                        <input class="color-textb" id="red" type="number" placeholder="R"></input>
-                        <input class="color-textb" id="green" type="number" placeholder="G"></input>
-                        <input class="color-textb" id="blue" type="number" placeholder="B"></input>
-                        <div id="apply-color-button" style="display: inline-block;" onclick="set_rgb()">
-                            <p>Aplicar</p>
-                        </div>
-                        <div id="color-warning" style="width: 100%; display: none;">
-                            <small style="color:red;">Apenas valores entre 0 e 255</small>
-                        </div>
+    
+                <div class="setting bottom-setting fav_settings">
+                    <div style="width: 90%; margin-left: auto; margin-right: auto;margin-top: 15px;">
+                        <h4>Gerir favoritos</h4>
                     </div>
-                </div>-->
-            </div>
-            <div class="setting bottom-setting repor">
-                <div style="width: fit-content; margin-left: auto; margin-right: auto; color: rgb(255, 108, 108); background-color: rgba(250, 155, 155, 0.2); padding: 15px; border-radius: 22px;" onclick="reset_settings()">
-                    <h4 style="margin-top:auto; margin-bottom:auto;">Repor todas as definições</h4>
+                    <div id="fav-list" style="margin-top:10px;">
+                    </div>
                 </div>
-            </div>
-            
-
-            <div class="setting bottom-setting fav_settings">
-                <div style="width: 90%; margin-left: auto; margin-right: auto;margin-top: 15px;">
-                    <h4>Gerir favoritos</h4>
-                </div>
-                <div id="fav-list" style="margin-top:10px;">
-                </div>
-            </div>
-
-            <div class="setting bottom-setting sobre">
-                <div style="width: 100%; text-align: center; margin-top: 20px; margin-bottom: 35px;">
-                    <img src="3d_logo.png" style="width: 60%;">
-                </div>
-                <div style="bottom: 0;text-align: center;line-height: 15px;margin-left: 10px; margin-right: 10px; margin-top: 10px;">
-                    Icons: hosein_bagheri 
-                    <a href="https://ui8.net/hosein_bagheri/products?status=6" title="Icons URL">
-                        <i class="fa fa-external-link" style="font-size:18px; margin-left: 10px; color: white;"></i>
-                    </a> 
-                </div>
-                <div style="bottom: 0;text-align: center;line-height: 15px;margin-left: 10px; margin-right: 10px; margin-top: 15px;">
-                    Dados: IPMA 
-                    <a href="https://www.ipma.pt/pt/index.html" title="IPMA">
-                        <i class="fa fa-external-link" style="font-size:18px; margin-left: 10px; color: white;"></i>
-                    </a>
-                </div>
-                <div style="bottom: 0px; text-align: center; line-height: 15px; margin-left: auto; margin-right: auto; margin-top: 60px; margin-bottom: 10px;">
-                    Mais projetos em: <a href="https://lfilipemsantos.github.io/home" title="IPMA">lfilipemsantos.github.io
-                    </a>
+    
+                <div class="setting bottom-setting sobre">
+                    <div style="width: 100%; text-align: center; margin-top: 20px; margin-bottom: 35px;">
+                        <img src="3d_logo.png" style="width: 60%;">
+                    </div>
+                    <div style="bottom: 0;text-align: center;line-height: 15px;margin-left: 10px; margin-right: 10px; margin-top: 10px;">
+                        Icons: hosein_bagheri 
+                        <a href="https://ui8.net/hosein_bagheri/products?status=6" title="Icons URL">
+                            <i class="fa fa-external-link" style="font-size:18px; margin-left: 10px; color: white;"></i>
+                        </a> 
+                    </div>
+                    <div style="bottom: 0;text-align: center;line-height: 15px;margin-left: 10px; margin-right: 10px; margin-top: 15px;">
+                        Dados: IPMA 
+                        <a href="https://www.ipma.pt/pt/index.html" title="IPMA">
+                            <i class="fa fa-external-link" style="font-size:18px; margin-left: 10px; color: white;"></i>
+                        </a>
+                    </div>
+                    <div style="bottom: 0px; text-align: center; line-height: 15px; margin-left: auto; margin-right: auto; margin-top: 60px; margin-bottom: 10px;">
+                        Mais projetos em: <a href="https://lfilipemsantos.github.io/home" title="IPMA">lfilipemsantos.github.io
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>     
         
         <div class="rows" id="bottom-options">
             <div id="bottom-options-inner" class="inner" style="height:auto;">
-                
-                <div id="tab-indicator-container">
-                    <div id="tab-indicator"></div>
-                </div>
                 <div class="button" id="warning-button" onclick="switch_tab('warnings-tab')">
+                    <div class="tab-indicator-container">
+                        <div class="tab-indicator-container" id="warning-indicator"></div>
+                    </div>
                     <div class="button_img_container">
                         <img id="warning_icon" src="not_warning_w.svg" alt="warnings icon">
                     </div>
@@ -366,6 +366,9 @@
                 </div>
 
                 <div class="button" id="search-button" onclick="switch_tab('location-tab')">
+                    <div class="tab-indicator-container">
+                        <div class="tab-indicator-container"></div>
+                    </div>
                     <div class="button_img_container">
                         <img id="search_icon" src="not_search_w.svg" alt="favorites icon">
                     </div>
@@ -373,6 +376,9 @@
                 </div>
 
                 <div class="button" id="home-button">
+                    <div class="tab-indicator-container">
+                        <div class="tab-indicator-container"></div>
+                    </div>
                     <div class="button_img_container">
                         <img id="home_icon" src="is_home_w.svg" alt="home icon">
                     </div>
@@ -380,6 +386,9 @@
                 </div>
 
                 <div class="button" id="favorites-button" onclick="switch_tab('favorites-tab')">
+                    <div class="tab-indicator-container">
+                        <div class="tab-indicator-container"></div>
+                    </div>
                     <div class="button_img_container">
                         <img id="favorites_icon" src="not_favorite_w.svg" alt="favorites icon">
                     </div>
@@ -387,6 +396,9 @@
                 </div>
 
                 <div class="button" id="settings-button" onclick="switch_tab('settings-tab')">
+                    <div class="tab-indicator-container">
+                        <div class="tab-indicator-container"></div>
+                    </div>
                     <div class="button_img_container">
                         <img id="settings_icon" src="not_settings_w.svg" alt="settings icon">
                     </div>
@@ -400,15 +412,17 @@
         <script>
             var prevScrollpos = window.pageYOffset;
             window.onscroll = function() {
-                var currentScrollPos = window.pageYOffset;
-                if (prevScrollpos > currentScrollPos || prevScrollpos < 120) {
-                    document.getElementById("bottom-options").style.bottom = "0";
-                } 
-                else {
-                    document.getElementById("bottom-options").style.bottom = "-120px";
-                }
+                if (screen.width < 1110) {
+                    var currentScrollPos = window.pageYOffset;
+                    if (prevScrollpos > currentScrollPos || prevScrollpos < 120) {
+                        document.getElementById("bottom-options").style.bottom = "0";
+                    } 
+                    else {
+                        document.getElementById("bottom-options").style.bottom = "-120px";
+                    }
 
-                prevScrollpos = currentScrollPos;
+                    prevScrollpos = currentScrollPos;
+                }
             }
         </script>
         <script>
@@ -426,7 +440,7 @@
             })
 
         </script>
-        <script>
+        <!--<script>
             var background = document.getElementById('dynamic_background');
             window.addEventListener('scroll', function(e) {
                 // http://stackoverflow.com/a/28633515/962603
@@ -442,6 +456,6 @@
                     document.getElementById("today_row").style.boxShadow = "0px -5px 10px 2px rgba(0, 0, 0, 0.4)"
                 }
             });
-        </script>
+        </script>-->
     </body>
 </html>
