@@ -168,6 +168,13 @@ function init() {
     else {
         document.getElementById("dynamic_background").style.opacity = "0";
     }*/
+
+    if (localStorage["theme"]) {
+        switch_theme(localStorage["theme"])
+    }
+    else {
+        switch_theme("escuro")
+    }
     
     /*if(localStorage["theme"]) {
         if (localStorage["auto_theme"] == "on"){
@@ -697,7 +704,7 @@ function switch_theme(id) {
     const DARK = "#121212"
     const LIGHT = "#ffffff"
 
-    var buttons = ["home", "favorites", "settings"]
+    var buttons = ["home", "favorites", "settings", "search", "warning"]
 
     localStorage["theme"] = id;
 
@@ -713,6 +720,7 @@ function switch_theme(id) {
     }
 
     if(id=="escuro"){
+        document.getElementById("theme").setAttribute('href', 'themes/dark-green.css')
         document.querySelector('meta[name="theme-color"]').setAttribute('content', DARK);
         //document.body.style.backgroundColor = DARK;
         //document.getElementById("indicators").style.backgroundColor = DARK;
@@ -749,6 +757,7 @@ function switch_theme(id) {
         }
     }
     else if (id=="claro") {
+        document.getElementById("theme").setAttribute('href', 'themes/light-green.css')
         document.querySelector('meta[name="theme-color"]').setAttribute('content', LIGHT);
         //document.body.style.backgroundColor=LIGHT;
         //document.getElementById("indicators").style.backgroundColor = LIGHT;
@@ -766,10 +775,10 @@ function switch_theme(id) {
         //    hr[i].style.backgroundColor = DARK;
         //}
 
-        var setting_icons = document.getElementsByClassName("setting-icon");
-        for(i = 0; i<setting_icons.length; i++) {
-            setting_icons[i].src = setting_icons[i].src.replace("_w", "_b");
-        }
+        //var setting_icons = document.getElementsByClassName("setting-icon");
+        //for(i = 0; i<setting_icons.length; i++) {
+        //    setting_icons[i].src = setting_icons[i].src.replace("_w", "_b");
+        //}
         
         document.getElementById("search_container").style.backgroundColor = "rgba(150, 150, 150, 0.2)";
         document.getElementById("location-list-container").style.backgroundColor = "rgb(206, 206, 206)";
