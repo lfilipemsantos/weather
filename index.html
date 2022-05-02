@@ -412,7 +412,7 @@
         <script>
             var prevScrollpos = window.pageYOffset;
             window.onscroll = function() {
-                if (screen.width < 1110) {
+                if (window.innerWidth < 1100) {
                     var currentScrollPos = window.pageYOffset;
                     if (prevScrollpos > currentScrollPos || prevScrollpos < 120) {
                         document.getElementById("bottom-options").style.bottom = "0";
