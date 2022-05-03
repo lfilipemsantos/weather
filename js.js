@@ -225,18 +225,21 @@ function switch_tab(id) {
     show_bottom();
     for (let i = 0; i < tabs.length; i++) {
         if(tabs[i]!=id){
+            console.log(tabs[i])
             document.getElementById(tabs[i]).classList.add("out");
             setTimeout(() => { document.getElementById(tabs[i]).style.display = "none"; document.getElementById(tabs[i]).classList.remove("out");
             }, 150);
         }
     }
 
-    tab_buttons = document.getElementsByClassName("button");
+    tab_buttons = document.getElementsByClassName("tab-indicator");
     console.log(tab_buttons)
+
     
     for (let i = 0; i < tab_buttons.length; i++) {
         try {
-            tab_buttons[i].classList.remove("selected");
+            tab_buttons[i].style.width = "0px";
+            tab_buttons[i].style.opacity = "0";
         }
         catch {
             console.log("error")
@@ -258,6 +261,8 @@ function switch_tab(id) {
         document.getElementById("home-button").setAttribute("onclick", "window.location.reload()")
         //document.getElementById("dynamic_background").style.display = "block";
         document.getElementById("home-button").classList.add("selected");
+        document.getElementById("tab-indicator-home").style.width = "64px";
+        document.getElementById("tab-indicator-home").style.opacity = "0.6";
         //indicator.style.marginLeft = "40%"
     }
     else if(id=="settings-tab") {
@@ -276,6 +281,8 @@ function switch_tab(id) {
         //document.getElementById("dynamic_background").style.display = "none";
         document.getElementById("home-button").setAttribute("onclick", "switch_tab('home-tab')")
         document.getElementById("settings-button").classList.add("selected");
+        document.getElementById("tab-indicator-settings").style.width = "64px";
+        document.getElementById("tab-indicator-settings").style.opacity = "0.6";
         //indicator.style.marginLeft = "80%"
     }
     else if(id=="favorites-tab") {
@@ -294,6 +301,8 @@ function switch_tab(id) {
 
         //document.getElementById("dynamic_background").style.display = "none";
         document.getElementById("home-button").setAttribute("onClick", "switch_tab('home-tab')")
+        document.getElementById("tab-indicator-favorites").style.width = "64px";
+        document.getElementById("tab-indicator-favorites").style.opacity = "0.6";
         //indicator.style.marginLeft = "60%"
     }
     else if(id=="location-tab") {
@@ -311,6 +320,8 @@ function switch_tab(id) {
 
         //document.getElementById("dynamic_background").style.display = "none";
         document.getElementById("home-button").setAttribute("onClick", "switch_tab('home-tab')")
+        document.getElementById("tab-indicator-search").style.width = "64px";
+        document.getElementById("tab-indicator-search").style.opacity = "0.6";
         //indicator.style.marginLeft = "20%"
     }
     else if(id=="warnings-tab") {
@@ -327,6 +338,8 @@ function switch_tab(id) {
 
         //document.getElementById("dynamic_background").style.display = "none";
         document.getElementById("home-button").setAttribute("onClick", "switch_tab('home-tab')")
+        document.getElementById("tab-indicator-warning").style.width = "64px";
+        document.getElementById("tab-indicator-warning").style.opacity = "0.6";
         //indicator.style.marginLeft = "0%"
     }
     
