@@ -725,7 +725,7 @@ body {
 }
 
 .button_img_container {
-    margin-top: 6px;
+    margin-top: 6.5px;
     height: 30px;
     width: 100%;
     text-align: center;
@@ -739,7 +739,7 @@ body {
 
 .button_desc {
     display: block;
-    font-size: 0.9em;
+    font-size: 0.85em;
     font-family: "PS Bold", sans-serif;
 }
 
