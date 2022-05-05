@@ -1001,6 +1001,12 @@ body {
     height: fit-content;
 }
 
+#add_favorites_button {
+    height: 56px;
+    width: 56px;
+    background-color: aqua;
+}
+
 #settings-tab {
     margin-bottom: 100px;
 }

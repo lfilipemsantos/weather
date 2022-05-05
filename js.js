@@ -237,13 +237,8 @@ function switch_tab(id) {
 
     
     for (let i = 0; i < tab_buttons.length; i++) {
-        try {
-            tab_buttons[i].style.width = "0px";
-            tab_buttons[i].style.opacity = "0";
-        }
-        catch {
-            console.log("error")
-        }
+        tab_buttons[i].style.width = "0px";
+        tab_buttons[i].style.opacity = "0";
     }
 
     if(id=="home-tab") {
@@ -259,11 +254,9 @@ function switch_tab(id) {
         document.getElementById("warning_icon").src = fav_icon;
 
         document.getElementById("home-button").setAttribute("onclick", "window.location.reload()")
-        //document.getElementById("dynamic_background").style.display = "block";
         document.getElementById("home-button").classList.add("selected");
         document.getElementById("tab-indicator-home").style.width = "64px";
         document.getElementById("tab-indicator-home").style.opacity = "0.6";
-        //indicator.style.marginLeft = "40%"
     }
     else if(id=="settings-tab") {
         show_top_settings();
@@ -278,12 +271,10 @@ function switch_tab(id) {
         var fav_icon = document.getElementById("warning_icon").src.replace("is_","not_");
         document.getElementById("warning_icon").src = fav_icon;
 
-        //document.getElementById("dynamic_background").style.display = "none";
         document.getElementById("home-button").setAttribute("onclick", "switch_tab('home-tab')")
         document.getElementById("settings-button").classList.add("selected");
         document.getElementById("tab-indicator-settings").style.width = "64px";
         document.getElementById("tab-indicator-settings").style.opacity = "0.6";
-        //indicator.style.marginLeft = "80%"
     }
     else if(id=="favorites-tab") {
         clear_rows("favorites")
@@ -299,11 +290,9 @@ function switch_tab(id) {
         var fav_icon = document.getElementById("warning_icon").src.replace("is_","not_");
         document.getElementById("warning_icon").src = fav_icon;
 
-        //document.getElementById("dynamic_background").style.display = "none";
         document.getElementById("home-button").setAttribute("onClick", "switch_tab('home-tab')")
         document.getElementById("tab-indicator-favorites").style.width = "64px";
         document.getElementById("tab-indicator-favorites").style.opacity = "0.6";
-        //indicator.style.marginLeft = "60%"
     }
     else if(id=="location-tab") {
         document.getElementById("location").focus();
@@ -318,11 +307,9 @@ function switch_tab(id) {
         var fav_icon = document.getElementById("warning_icon").src.replace("is_","not_");
         document.getElementById("warning_icon").src = fav_icon;
 
-        //document.getElementById("dynamic_background").style.display = "none";
         document.getElementById("home-button").setAttribute("onClick", "switch_tab('home-tab')")
         document.getElementById("tab-indicator-search").style.width = "64px";
         document.getElementById("tab-indicator-search").style.opacity = "0.6";
-        //indicator.style.marginLeft = "20%"
     }
     else if(id=="warnings-tab") {
         var home_icon = document.getElementById("home_icon").src.replace("is_","not_");
@@ -336,11 +323,9 @@ function switch_tab(id) {
         var fav_icon = document.getElementById("warning_icon").src.replace("not_","is_");
         document.getElementById("warning_icon").src = fav_icon;
 
-        //document.getElementById("dynamic_background").style.display = "none";
         document.getElementById("home-button").setAttribute("onClick", "switch_tab('home-tab')")
         document.getElementById("tab-indicator-warning").style.width = "64px";
         document.getElementById("tab-indicator-warning").style.opacity = "0.6";
-        //indicator.style.marginLeft = "0%"
     }
     
     setTimeout(() => {  document.getElementById(id).style.display = "block"; }, 400);
@@ -551,9 +536,6 @@ function build_rows(days) {
             var inner_id = "innerTomorrow";
         }*/
         for(i=0;i<days[j].length;i++) {
-            /*var hr = document.createElement('hr');
-            hr.classList.add("row-divider");
-            document.getElementById(inner_id).appendChild(hr);*/
             var hour_split = days[j][i]["dataPrev"].split("T",2)[1].split(":");
             var hour = hour_split[0] + ":" + hour_split[1];
             
@@ -564,7 +546,6 @@ function build_rows(days) {
             var weather_icon_container = document.createElement('div');
             weather_icon.setAttribute("class", "weather_icon");
             weather_icon.setAttribute("alt", "weather_icon");
-            //weather_icon.setAttribute("type", "image/svg+xml");
             weather_icon_container.setAttribute("class", "weather_icon_container");
 
 
@@ -596,14 +577,10 @@ function build_rows(days) {
             document.getElementById(inner_id).appendChild(row);
 
         }
-        //var hr = document.createElement('hr');
-        //hr.classList.add("row-divider");
-        //document.getElementById(inner_id).appendChild(hr);
     }
     
     if(localStorage["color_theme"]) {
         switch_colors(localStorage["color_theme"], false);
-        //document.getElementById("today").style.backgroundColor = "rgba(" + localStorage["color_theme"] + ", " + 0.5 + ")";
     }
 }
 
