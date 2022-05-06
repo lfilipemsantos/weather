@@ -717,7 +717,6 @@ function switch_theme(id) {
 
     if(id=="escuro"){
         document.querySelector('meta[name="theme-color"]').setAttribute('content', DARK);
-        //document.querySelector('#dynamic_background').setAttribute('background', "linear-gradient(0deg, rgba(5, 5, 5, 1) 20%, rgba(62,170,186,1) 100%);");
         document.body.style.backgroundColor = DARK;
         document.getElementById("indicators").style.backgroundColor = DARK;
         document.getElementById("next_days_row").style.backgroundColor = DARK;
@@ -754,7 +753,6 @@ function switch_theme(id) {
     }
     else if (id=="claro") {
         document.querySelector('meta[name="theme-color"]').setAttribute('content', LIGHT);
-        //document.querySelector('#dynamic_background').setAttribute('background', "linear-gradient(0deg, rgba(245, 245, 245, 1) 20%, rgba(62,170,186,1) 100%);");
         document.body.style.backgroundColor=LIGHT;
         document.getElementById("indicators").style.backgroundColor = LIGHT;
         document.getElementById("next_days_row").style.backgroundColor = LIGHT;
@@ -812,15 +810,6 @@ function switch_colors(color, notification) {
     arrows = document.getElementsByClassName("setting-arrow");
     change_color(arrows, "color", color, 1);
 
-
-    //fav_rows = document.getElementsByClassName("fav_row");
-    //change_color(fav_rows,"backgroundColor",color, 0.2);
-
-    //var r = document.querySelector('#dynamic_background');
-    //r.style.background = "linear-gradient(0deg, rgba(" + color + "0.1) 0%, rgba(" + color + ", 0.7) 100%)";
-    //r.style.background = "linear-gradient(0deg, rgba(" + color + ", 0.4) 0%, rgba(" + color + ", 0.7) 100%)";
-
-
     localStorage['color_theme'] = color
     if (notification){
         show_action_notification("Cor de destaque alterada")
@@ -842,39 +831,6 @@ function change_color(obj, element, color, transparency) {
         else if (element == "color") {
             obj[i].style.color = "rgba(" + color + ", " + transparency +")";
         }
-    }
-}
-
-
-function set_rgb() {
-    red = document.getElementById("red").value;
-    green = document.getElementById("green").value;
-    blue = document.getElementById("blue").value;
-
-    var color_values = [red, green, blue];
-
-    for (let i = 0; i < color_values.length; i++) {
-        if (!(is_in_range(parseInt(color_values[i])))) {
-            document.getElementById("color-warning").style.display = "block";
-            setTimeout(
-                function() {
-                    document.getElementById("color-warning").style.display = "none";
-                },
-                2000
-            );
-            return;
-        }
-    }
-    switch_colors(red + "," + green + "," + blue, true)
-}
-
-
-function is_in_range(value) {
-    if (value >= 0 && value <= 255) {
-        return true;
-    }
-    else {
-        return false;
     }
 }
 
