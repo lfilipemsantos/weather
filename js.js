@@ -233,8 +233,6 @@ function switch_tab(id) {
     }
 
     tab_buttons = document.getElementsByClassName("tab-indicator");
-    console.log(tab_buttons)
-
     
     for (let i = 0; i < tab_buttons.length; i++) {
         tab_buttons[i].style.width = "0px";
@@ -453,7 +451,6 @@ function clear_rows(tab) {
         var rows = ["favorites-tab"];
     }
     if (tab == "favorites-settings") {
-        console.log(document.getElementById("fav-list"))
         var rows = ["fav-list"];
     }
     else if (tab == "home") {
@@ -717,21 +714,21 @@ function switch_theme(id) {
 
     if(id=="escuro"){
         document.querySelector('meta[name="theme-color"]').setAttribute('content', DARK);
-        document.body.style.backgroundColor = DARK;
-        document.getElementById("indicators").style.backgroundColor = DARK;
-        document.getElementById("next_days_row").style.backgroundColor = DARK;
-        document.getElementById("today_row").style.backgroundColor = DARK;
-        document.getElementById("swipe_sections").style.backgroundColor = DARK;
-        document.body.style.color = LIGHT;
-        document.getElementById("location").style.color = LIGHT;
-        document.getElementById("location").style.opacity="90%";
-        document.getElementById("search_icon").src = "not_search_w.svg";
-        document.getElementById("bottom-options").style.backgroundColor = "rgba(35, 35, 35, 0.9)";
-        document.getElementById("fav-notification-inner").style.backgroundColor = "rgb(40, 40, 40)";
-        hr = document.getElementsByClassName("row-divider");
-        for(i = 0; i<hr.length; i++) {
-            hr[i].style.backgroundColor = LIGHT;
-        }
+        //document.body.style.backgroundColor = DARK;
+        //document.getElementById("indicators").style.backgroundColor = DARK;
+        //document.getElementById("next_days_row").style.backgroundColor = DARK;
+        //document.getElementById("today_row").style.backgroundColor = DARK;
+        //document.getElementById("swipe_sections").style.backgroundColor = DARK;
+        //document.body.style.color = LIGHT;
+        //document.getElementById("location").style.color = LIGHT;
+        //document.getElementById("location").style.opacity="90%";
+        //document.getElementById("search_icon").src = "not_search_w.svg";
+        //document.getElementById("bottom-options").style.backgroundColor = "rgba(35, 35, 35, 0.9)";
+        //document.getElementById("fav-notification-inner").style.backgroundColor = "rgb(40, 40, 40)";
+        //hr = document.getElementsByClassName("row-divider");
+        //for(i = 0; i<hr.length; i++) {
+        //    hr[i].style.backgroundColor = LIGHT;
+        //}
         var setting_icons = document.getElementsByClassName("setting-icon");
         for(i = 0; i<setting_icons.length; i++) {
             setting_icons[i].src = setting_icons[i].src.replace("_b", "_w");
@@ -753,21 +750,21 @@ function switch_theme(id) {
     }
     else if (id=="claro") {
         document.querySelector('meta[name="theme-color"]').setAttribute('content', LIGHT);
-        document.body.style.backgroundColor=LIGHT;
-        document.getElementById("indicators").style.backgroundColor = LIGHT;
-        document.getElementById("next_days_row").style.backgroundColor = LIGHT;
-        document.getElementById("today_row").style.backgroundColor = LIGHT;
-        document.getElementById("swipe_sections").style.backgroundColor = LIGHT;
-        document.body.style.color=DARK;
-        document.getElementById("location").style.color=DARK;
-        document.getElementById("location").style.opacity="90%";
-        document.getElementById("search_icon").src = "not_search_b.svg";
-        document.getElementById("bottom-options").style.backgroundColor = "rgba(236, 236, 236, 0.5)";
-        document.getElementById("fav-notification-inner").style.backgroundColor = "rgb(206, 206, 206)";
-        hr = document.getElementsByClassName("row-divider");
-        for(i = 0; i<hr.length; i++) {
-            hr[i].style.backgroundColor = DARK;
-        }
+        //document.body.style.backgroundColor=LIGHT;
+        //document.getElementById("indicators").style.backgroundColor = LIGHT;
+        //document.getElementById("next_days_row").style.backgroundColor = LIGHT;
+        //document.getElementById("today_row").style.backgroundColor = LIGHT;
+        //document.getElementById("swipe_sections").style.backgroundColor = LIGHT;
+        //document.body.style.color=DARK;
+        //document.getElementById("location").style.color=DARK;
+        //document.getElementById("location").style.opacity="90%";
+        //document.getElementById("search_icon").src = "not_search_b.svg";
+        //document.getElementById("bottom-options").style.backgroundColor = "rgba(236, 236, 236, 0.5)";
+        //document.getElementById("fav-notification-inner").style.backgroundColor = "rgb(206, 206, 206)";
+        //hr = document.getElementsByClassName("row-divider");
+        //for(i = 0; i<hr.length; i++) {
+        //    hr[i].style.backgroundColor = DARK;
+        //}
 
         var setting_icons = document.getElementsByClassName("setting-icon");
         for(i = 0; i<setting_icons.length; i++) {
@@ -1117,15 +1114,6 @@ function show_bottom_settings(setting) {
     if (setting == "fav_settings") {
         clear_rows("favorites-settings");
         load_fav_settings();
-    }
-
-    if (setting == "destaque") {
-        if (localStorage["home_color"] == "on") {
-            document.getElementById("switch_home_color_button").style.backgroundColor = "rgba(" + localStorage['color_theme'] + ", 0.5)";
-        }
-        else {
-            document.getElementById("switch_home_color_button").style.backgroundColor = "rgba(0,0,0,0)";
-        }
     }
 
     bottoms = document.getElementsByClassName(setting);
