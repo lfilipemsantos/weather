@@ -756,12 +756,13 @@ body {
         position: fixed;
         transform: unset;
     }
+    
     #bottom-options > .inner {
         margin: 0;
         margin-top: 150px;
         flex-direction: column;
         height: 100%;
-        width: 150px;
+        width: 9vh;
         align-items: center;
         justify-content: center;
         z-index: -3;
@@ -780,11 +781,12 @@ body {
 
     .main {
         position: relative;
-        margin-left: 100px !important;
-        margin-top: 100px !important;
+        margin-left: 9vh !important;
+        margin-top: 9vh;
         z-index: 1000;
         overflow: scroll;
-        height: calc(100% - 100px);
+        height: 91vh;
+        box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.153);
     }
 
     #dynamic_background {
