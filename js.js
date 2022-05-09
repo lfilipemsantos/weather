@@ -14,10 +14,10 @@ if ('serviceWorker' in navigator) {
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
     if (localStorage["auto_theme"] == "on"){
         if (event.matches) {
-            switch_theme("escuro")
+            switch_theme("dark")
         } 
         else {
-            switch_theme("claro")        
+            switch_theme("light")        
         }
     }
 })
@@ -129,18 +129,6 @@ function to_rad(Value){
     return Value * Math.PI / 180;
 }
 
-function switch_auto_theme(status) {
-    localStorage["auto_theme"] = status;
-    const userPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    if (userPrefersDark) {
-        switch_theme("escuro");
-    }
-    else {
-        switch_theme("claro");
-    }
-    
-}
-
 
 function init() {
     //Check if device is iOS (notifications do not work on iOS)
@@ -154,13 +142,13 @@ function init() {
 
     build_locations(locations);
     
-    if(!(localStorage["auto_theme"])){
+    /*if(!(localStorage["auto_theme"])){
         localStorage["auto_theme"] = "off"
     }
 
     if(!(localStorage["home_color"])){
         localStorage["home_color"] = "off"
-    }
+    }*/
     
     /*if (localStorage["home_color"] == "on") {
         document.getElementById("dynamic_background").style.opacity = "1";
@@ -173,7 +161,7 @@ function init() {
         switch_theme(localStorage["theme"])
     }
     else {
-        switch_theme("escuro")
+        switch_theme("dark")
     }
     
     /*if(localStorage["theme"]) {
@@ -242,8 +230,8 @@ function switch_tab(id) {
     tab_buttons = document.getElementsByClassName("tab-indicator");
     
     for (let i = 0; i < tab_buttons.length; i++) {
-        tab_buttons[i].style.width = "0px";
-        tab_buttons[i].style.opacity = "0";
+        tab_buttons[i].style.transform = "scaleX(0)";
+        tab_buttons[i].style.opacity = "0.6";
     }
 
     if(id=="home-tab") {
@@ -260,7 +248,7 @@ function switch_tab(id) {
 
         document.getElementById("home-button").setAttribute("onclick", "window.location.reload()")
         document.getElementById("home-button").classList.add("selected");
-        document.getElementById("tab-indicator-home").style.width = "64px";
+        document.getElementById("tab-indicator-home").style.transform = "scaleX(1)";
         document.getElementById("tab-indicator-home").style.opacity = "0.6";
     }
     else if(id=="settings-tab") {
@@ -278,7 +266,7 @@ function switch_tab(id) {
 
         document.getElementById("home-button").setAttribute("onclick", "switch_tab('home-tab')")
         document.getElementById("settings-button").classList.add("selected");
-        document.getElementById("tab-indicator-settings").style.width = "64px";
+        document.getElementById("tab-indicator-settings").style.transform = "scaleX(1)";
         document.getElementById("tab-indicator-settings").style.opacity = "0.6";
     }
     else if(id=="favorites-tab") {
@@ -296,7 +284,7 @@ function switch_tab(id) {
         document.getElementById("warning_icon").src = fav_icon;
 
         document.getElementById("home-button").setAttribute("onClick", "switch_tab('home-tab')")
-        document.getElementById("tab-indicator-favorites").style.width = "64px";
+        document.getElementById("tab-indicator-favorites").style.transform = "scaleX(1)";
         document.getElementById("tab-indicator-favorites").style.opacity = "0.6";
     }
     else if(id=="location-tab") {
@@ -313,7 +301,7 @@ function switch_tab(id) {
         document.getElementById("warning_icon").src = fav_icon;
 
         document.getElementById("home-button").setAttribute("onClick", "switch_tab('home-tab')")
-        document.getElementById("tab-indicator-search").style.width = "64px";
+        document.getElementById("tab-indicator-search").style.transform = "scaleX(1)";
         document.getElementById("tab-indicator-search").style.opacity = "0.6";
     }
     else if(id=="warnings-tab") {
@@ -329,7 +317,7 @@ function switch_tab(id) {
         document.getElementById("warning_icon").src = fav_icon;
 
         document.getElementById("home-button").setAttribute("onClick", "switch_tab('home-tab')")
-        document.getElementById("tab-indicator-warning").style.width = "64px";
+        document.getElementById("tab-indicator-warning").style.transform = "scaleX(1)";
         document.getElementById("tab-indicator-warning").style.opacity = "0.6";
     }
     
@@ -704,12 +692,20 @@ function switch_theme(id) {
     const DARK = "#121212"
     const LIGHT = "#ffffff"
 
+    
+    let theme_color = localStorage['color_theme']
+    document.getElementById("theme").setAttribute('href', `themes/${id}-${theme_color}.css`);
+
     var buttons = ["home", "favorites", "settings", "search", "warning"]
 
     localStorage["theme"] = id;
 
-    document.getElementById("selected_escuro").style.display = "none";
-    document.getElementById("selected_claro").style.display = "none";
+
+    document.getElementById("search_container").style.backgroundColor = "rgba(150, 150, 150, 0.2)";
+    document.getElementById("location-list-container").style.backgroundColor = "#191919";
+
+    document.getElementById("selected_dark").style.display = "none";
+    document.getElementById("selected_light").style.display = "none";
 
     if (localStorage["auto_theme"] == "on") {
         document.getElementById("selected_auto").style.display = "block";
@@ -719,31 +715,14 @@ function switch_theme(id) {
         document.getElementById("selected_" + id).style.display = "block";
     }
 
-    if(id=="escuro"){
-        document.getElementById("theme").setAttribute('href', 'themes/dark-green.css')
+    if(id=="dark"){
         document.querySelector('meta[name="theme-color"]').setAttribute('content', DARK);
-        //document.body.style.backgroundColor = DARK;
-        //document.getElementById("indicators").style.backgroundColor = DARK;
-        //document.getElementById("next_days_row").style.backgroundColor = DARK;
-        //document.getElementById("today_row").style.backgroundColor = DARK;
-        //document.getElementById("swipe_sections").style.backgroundColor = DARK;
-        //document.body.style.color = LIGHT;
-        //document.getElementById("location").style.color = LIGHT;
-        //document.getElementById("location").style.opacity="90%";
-        //document.getElementById("search_icon").src = "not_search_w.svg";
-        //document.getElementById("bottom-options").style.backgroundColor = "rgba(35, 35, 35, 0.9)";
-        //document.getElementById("fav-notification-inner").style.backgroundColor = "rgb(40, 40, 40)";
-        //hr = document.getElementsByClassName("row-divider");
-        //for(i = 0; i<hr.length; i++) {
-        //    hr[i].style.backgroundColor = LIGHT;
-        //}
-        var setting_icons = document.getElementsByClassName("setting-icon");
+
+        /*var setting_icons = document.getElementsByClassName("setting-icon");
         for(i = 0; i<setting_icons.length; i++) {
             setting_icons[i].src = setting_icons[i].src.replace("_b", "_w");
-        }
+        }*/
     
-        document.getElementById("search_container").style.backgroundColor = "rgba(150, 150, 150, 0.2)";
-        document.getElementById("location-list-container").style.backgroundColor = "#191919";
         
         var location_icon = document.getElementById("current-location-icon")
         location_icon.src = location_icon.src.replace("b.svg", "w.svg");
@@ -756,39 +735,15 @@ function switch_theme(id) {
             button.src = button.src.replace("b.svg", "w.svg");
         }
     }
-    else if (id=="claro") {
-        document.getElementById("theme").setAttribute('href', 'themes/light-green.css')
-        document.querySelector('meta[name="theme-color"]').setAttribute('content', LIGHT);
-        //document.body.style.backgroundColor=LIGHT;
-        //document.getElementById("indicators").style.backgroundColor = LIGHT;
-        //document.getElementById("next_days_row").style.backgroundColor = LIGHT;
-        //document.getElementById("today_row").style.backgroundColor = LIGHT;
-        //document.getElementById("swipe_sections").style.backgroundColor = LIGHT;
-        //document.body.style.color=DARK;
-        //document.getElementById("location").style.color=DARK;
-        //document.getElementById("location").style.opacity="90%";
-        //document.getElementById("search_icon").src = "not_search_b.svg";
-        //document.getElementById("bottom-options").style.backgroundColor = "rgba(236, 236, 236, 0.5)";
-        //document.getElementById("fav-notification-inner").style.backgroundColor = "rgb(206, 206, 206)";
-        //hr = document.getElementsByClassName("row-divider");
-        //for(i = 0; i<hr.length; i++) {
-        //    hr[i].style.backgroundColor = DARK;
-        //}
 
-        //var setting_icons = document.getElementsByClassName("setting-icon");
-        //for(i = 0; i<setting_icons.length; i++) {
-        //    setting_icons[i].src = setting_icons[i].src.replace("_w", "_b");
-        //}
-        
-        document.getElementById("search_container").style.backgroundColor = "rgba(150, 150, 150, 0.2)";
-        document.getElementById("location-list-container").style.backgroundColor = "rgb(206, 206, 206)";
+    else if (id=="light") {
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', LIGHT);
 
         var location_icon = document.getElementById("current-location-icon")
         location_icon.src = location_icon.src.replace("w.svg", "b.svg");
 
         var fav = document.getElementById("fav_icon");
         fav.src = fav.src.replace("w.svg", "b.svg");
-
 
         for(i=0; i<buttons.length; i++) {
             var button = document.getElementById(buttons[i] + "_icon")
@@ -800,23 +755,13 @@ function switch_theme(id) {
 
 
 function switch_colors(color, notification) {
-
-    //document.getElementById("tab-indicator").style.backgroundColor = "rgb(" + color + ")";
-    //document.getElementById("current-location-button").style.backgroundColor = "rgb(" + color + ", 0.3)";
-
-    //indicators = document.getElementsByClassName("indicator");
-    change_color(indicators, "backgroundColor", color, 1);
-
-    //setting_icons = document.getElementsByClassName("setting-icon");
-    //change_color(setting_icons, "backgroundColor", color, 0.6);
-
-    theme_selected = document.getElementsByClassName("theme_selected");
-    change_color(theme_selected, "backgroundColor", color, 1);
-    
-    arrows = document.getElementsByClassName("setting-arrow");
-    change_color(arrows, "color", color, 1);
-
     localStorage['color_theme'] = color
+
+    let theme = localStorage["theme"]
+    let theme_color = localStorage['color_theme']
+
+    document.getElementById("theme").setAttribute('href', `themes/${theme}-${theme_color}.css`);
+
     if (notification){
         show_action_notification("Cor de destaque alterada")
     }

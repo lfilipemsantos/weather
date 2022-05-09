@@ -802,16 +802,18 @@ body {
     }
 }
 
-#tab-indicator-container {
+.tab-indicator-container {
     display: block;
-    height: 32px;
-    width: 100%;
     position: absolute;
-    top: -10px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 32px;
+    width: 100% !important;
+    top: 2px;
     opacity: 0.6;
     text-align: center;
     z-index: -1;
-    margin-bottom: 10px !important;
+    margin-bottom: 10px;
 }
 
 #indicators {
@@ -824,16 +826,15 @@ body {
 
 .tab-indicator {
     height: 100%;
-    width: 0;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: all 250ms ease-in-out;
+    width: 64px;
+    margin: auto;
     background-color: var(--clr-secondary);
     top: 0;
     opacity: 0.6;
     border-radius: 16px;
     z-index: -1;
+    transform: scaleX(0);
+    transition: all 200ms ease-in-out;
 }
 
 @media screen and (min-width: 760px) {

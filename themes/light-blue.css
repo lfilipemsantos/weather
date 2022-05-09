@@ -1,0 +1,12 @@
+:root {
+    --clr-background: hsl(214, 64%, 98%);
+    --clr-text: hsl(192, 10%, 10%);
+    --clr-primary: hsl(202, 54%, 27%);
+    --clr-on-primary: hsl(0, 0%, 100%);
+    --clr-container-primary: hsl(189, 79%, 77%);
+    --clr-container-on-primary: hsl(188, 100%, 6%);
+    --clr-secondary: hsl(196, 13%, 34%);
+    --clr-on-secondary: hsl(0, 0%, 100%);
+    --clr-container-secondary: hsl(199, 37%, 85%);
+    --clr-container-on-secondary: hsl(200, 39%, 9%);
+}
