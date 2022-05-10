@@ -598,9 +598,6 @@ body {
 
 #search_elements_container {
     width: 100%;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
 }
 
@@ -614,13 +611,13 @@ body {
     height: 55px;
     border-radius: 24px;
     display: inline-block;
+    margin-left: 10px;
 }
 
 #search_container {
     background-color: rgba(181, 181, 181, 0.2);
     height: 55px;
     margin-left: auto;
-    margin-right: 10px;
     margin-top: 0px;
     border-radius: 22px;
     width: 70%;
@@ -653,13 +650,15 @@ body {
 
 #location-list-container {
     margin-top: 15px;
-    width: var(--main-element-width);
+    width: 90%;
+    max-width: 400px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 100px;
-    background-color: rgba(150, 150, 150, 0.2);
+    background-color: var(--clr-container-secondary);
+    color: var(--clr-container-on-secondary);
     border-radius: var(--border-radius);
-    max-width: 500px;
+    box-sizing: border-box;
 }
 
 #location-list {

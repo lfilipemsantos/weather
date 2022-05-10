@@ -700,10 +700,6 @@ function switch_theme(id) {
 
     localStorage["theme"] = id;
 
-
-    document.getElementById("search_container").style.backgroundColor = "rgba(150, 150, 150, 0.2)";
-    document.getElementById("location-list-container").style.backgroundColor = "#191919";
-
     document.getElementById("selected_dark").style.display = "none";
     document.getElementById("selected_light").style.display = "none";
 
