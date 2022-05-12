@@ -185,11 +185,11 @@ function init() {
     if(localStorage["color_theme"]) {
         switch_colors(localStorage["color_theme"], false);
         //document.getElementById("home-button").style.backgroundColor = "rgba(" + localStorage["color_theme"] + ", " + 0.5 + ")";
-    }
+    }*/
 
     if(!(localStorage["local_id"])){
         localStorage["local_id"] = 1182100
-    }*/
+    }
 
     if(!(localStorage["favorites"])) {
         var array = [];
@@ -241,10 +241,10 @@ function switch_tab(id) {
         document.getElementById("search_icon").src = search_icon;
         var settings_icon = document.getElementById("settings_icon").src.replace("is_","not_");
         document.getElementById("settings_icon").src = settings_icon;
-        var fav_icon = document.getElementById("favorites_icon").src.replace("is_","not_");
-        document.getElementById("favorites_icon").src = fav_icon;
-        var fav_icon = document.getElementById("warning_icon").src.replace("is_","not_");
-        document.getElementById("warning_icon").src = fav_icon;
+        var favorites_icon = document.getElementById("favorites_icon").src.replace("is_","not_");
+        document.getElementById("favorites_icon").src = favorites_icon;
+        var warning_icon = document.getElementById("warning_icon").src.replace("is_","not_");
+        document.getElementById("warning_icon").src = warning_icon;
 
         document.getElementById("home-button").setAttribute("onclick", "window.location.reload()")
         document.getElementById("home-button").classList.add("selected");
@@ -259,10 +259,10 @@ function switch_tab(id) {
         document.getElementById("search_icon").src = search_icon;
         var settings_icon = document.getElementById("settings_icon").src.replace("not_","is_");
         document.getElementById("settings_icon").src = settings_icon;
-        var fav_icon = document.getElementById("favorites_icon").src.replace("is_","not_");
-        document.getElementById("favorites_icon").src = fav_icon;
-        var fav_icon = document.getElementById("warning_icon").src.replace("is_","not_");
-        document.getElementById("warning_icon").src = fav_icon;
+        var favorites_icon = document.getElementById("favorites_icon").src.replace("is_","not_");
+        document.getElementById("favorites_icon").src = favorites_icon;
+        var warning_icon = document.getElementById("warning_icon").src.replace("is_","not_");
+        document.getElementById("warning_icon").src = warning_icon;
 
         document.getElementById("home-button").setAttribute("onclick", "switch_tab('home-tab')")
         document.getElementById("settings-button").classList.add("selected");
@@ -278,10 +278,10 @@ function switch_tab(id) {
         document.getElementById("search_icon").src = search_icon;
         var settings_icon = document.getElementById("settings_icon").src.replace("is_","not_");
         document.getElementById("settings_icon").src = settings_icon;
-        var fav_icon = document.getElementById("favorites_icon").src.replace("not_","is_");
-        document.getElementById("favorites_icon").src = fav_icon;
-        var fav_icon = document.getElementById("warning_icon").src.replace("is_","not_");
-        document.getElementById("warning_icon").src = fav_icon;
+        var favorites_icon = document.getElementById("favorites_icon").src.replace("not_","is_");
+        document.getElementById("favorites_icon").src = favorites_icon;
+        var warning_icon = document.getElementById("warning_icon").src.replace("is_","not_");
+        document.getElementById("warning_icon").src = warning_icon;
 
         document.getElementById("home-button").setAttribute("onClick", "switch_tab('home-tab')")
         document.getElementById("tab-indicator-favorites").style.transform = "scaleX(1)";
@@ -295,10 +295,10 @@ function switch_tab(id) {
         document.getElementById("search_icon").src = search_icon;
         var settings_icon = document.getElementById("settings_icon").src.replace("is_","not_");
         document.getElementById("settings_icon").src = settings_icon;
-        var fav_icon = document.getElementById("favorites_icon").src.replace("is_","not_");
-        document.getElementById("favorites_icon").src = fav_icon;
-        var fav_icon = document.getElementById("warning_icon").src.replace("is_","not_");
-        document.getElementById("warning_icon").src = fav_icon;
+        var favorites_icon = document.getElementById("favorites_icon").src.replace("is_","not_");
+        document.getElementById("favorites_icon").src = favorites_icon;
+        var warning_icon = document.getElementById("warning_icon").src.replace("is_","not_");
+        document.getElementById("warning_icon").src = warning_icon;
 
         document.getElementById("home-button").setAttribute("onClick", "switch_tab('home-tab')")
         document.getElementById("tab-indicator-search").style.transform = "scaleX(1)";
@@ -311,10 +311,10 @@ function switch_tab(id) {
         document.getElementById("search_icon").src = search_icon;
         var settings_icon = document.getElementById("settings_icon").src.replace("is_","not_");
         document.getElementById("settings_icon").src = settings_icon;
-        var fav_icon = document.getElementById("favorites_icon").src.replace("is_","not_");
-        document.getElementById("favorites_icon").src = fav_icon;
-        var fav_icon = document.getElementById("warning_icon").src.replace("not_","is_");
-        document.getElementById("warning_icon").src = fav_icon;
+        var favorites_icon = document.getElementById("favorites_icon").src.replace("is_","not_");
+        document.getElementById("favorites_icon").src = favorites_icon;
+        var warning_icon = document.getElementById("warning_icon").src.replace("not_","is_");
+        document.getElementById("warning_icon").src = warning_icon;
 
         document.getElementById("home-button").setAttribute("onClick", "switch_tab('home-tab')")
         document.getElementById("tab-indicator-warning").style.transform = "scaleX(1)";
@@ -378,12 +378,11 @@ function get_data(local_id) {
             console.log(local_id)
             if(in_favorites(local_id)){
                 document.getElementById("fav_icon_container").setAttribute("onclick", "rem_favorite('" + local_id + "')")
-                const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-                if (localStorage["theme"]=="escuro") {
+                if (localStorage["theme"]=="dark") {
                     var fav = document.getElementById("fav_icon");
                     fav.src = fav.src = "is_favorite_w.svg";
                 }
-                else if (localStorage["theme"]=="claro") {
+                else if (localStorage["theme"]=="light") {
                     var fav = document.getElementById("fav_icon");
                     fav.src = fav.src = "is_favorite_b.svg";
                 }
@@ -391,11 +390,11 @@ function get_data(local_id) {
             }
             else {
                 document.getElementById("fav_icon_container").setAttribute("onclick", "add_favorite('" + local_id + "')")
-                if (localStorage["theme"]=="escuro") {
+                if (localStorage["theme"]=="dark") {
                     var fav = document.getElementById("fav_icon");
                     fav.src = fav.src = "not_favorite_w.svg";
                 }
-                else if (localStorage["theme"]=="claro") {
+                else if (localStorage["theme"]=="light") {
                     var fav = document.getElementById("fav_icon");
                     fav.src = fav.src = "not_favorite_b.svg";
                 }
@@ -783,8 +782,7 @@ function change_color(obj, element, color, transparency) {
 
 
 function search_location() {
-    
-    switch_tab('location-tab');
+    //switch_tab('location-tab');
     var input, filter, ul, li, div, i, txtValue;
     input = document.getElementById("location");
     filter = input.value.toUpperCase();
@@ -795,13 +793,12 @@ function search_location() {
         txtValue = div.textContent || a.innerText;
         if (!filter) {
             li[i].style.display = "none";
-            document.getElementById("search_container").style.width = "70%";
-            document.getElementById("current-location-button").style.display = "inline-block";
+            //document.getElementById("search_container").style.width = "70%";
+            //document.getElementById("current-location-button").style.display = "inline-block";
         }
         else {
-            document.getElementById("current-location-button").style.display = "none";
-            document.getElementById("search_container").style.width = "90%";
-            
+            //document.getElementById("current-location-button").style.display = "none";
+            //document.getElementById("search_container").style.width = "90%";
             
             if (txtValue.toUpperCase().indexOf(filter) > -1) {
                 li[i].style.display = "block";
