@@ -231,7 +231,7 @@ function switch_tab(id) {
     
     for (let i = 0; i < tab_buttons.length; i++) {
         tab_buttons[i].style.transform = "scaleX(0)";
-        tab_buttons[i].style.opacity = "0.6";
+        tab_buttons[i].style.opacity = "0";
     }
 
     if(id=="home-tab") {
