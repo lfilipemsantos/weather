@@ -216,7 +216,7 @@ function build_locations(locations) {
 
 
 function switch_tab(id) {
-    var tabs = ["home-tab", "settings-tab", "location-tab", "favorites-tab"];
+    var tabs = ["home-tab", "settings-tab", "location-tab", "favorites-tab", "warnings-tab"];
     show_bottom();
     for (let i = 0; i < tabs.length; i++) {
         if(tabs[i]!=id){
