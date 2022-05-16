@@ -444,7 +444,7 @@ function clear_rows(tab) {
     if (tab == "favorites") {
         var rows = ["favorites-tab"];
     }
-    if (tab == "favorites-settings") {
+    else if (tab == "favorites-settings") {
         var rows = ["fav-list"];
     }
     else if (tab == "home") {
