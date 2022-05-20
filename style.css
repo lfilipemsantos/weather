@@ -837,14 +837,14 @@ body {
     }
 
     .button_desc {
-        display: none;
+        margin-top: 5px;
     }
 
     #bottom-options > .inner > .button {
         width: 150px;
         text-align: center;
         height: 35px;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
 
     .main {
