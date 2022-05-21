@@ -873,6 +873,7 @@ body {
 @media screen and (min-width: 1500px) {
     #bottom-options {
         width: 100%;
+        min-width: 230px;
         margin-left: 0px;
         left: 0px;
         height: 100%;
@@ -885,7 +886,7 @@ body {
         margin-top: 150px;
         flex-direction: column;
         height: 100%;
-        width: 20vh;
+        width: 230px;
         align-items: center;
         justify-content: center;
         z-index: -3;
@@ -900,7 +901,7 @@ body {
         width: 250px;
         text-align: center;
         height: 35px;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
         flex-direction: row;
     }
 
@@ -921,7 +922,7 @@ body {
 
     .main {
         position: relative;
-        margin-left: 20vh !important;
+        margin-left: 230px !important;
         margin-top: 9vh;
         z-index: 1000;
         overflow: scroll;
