@@ -752,6 +752,7 @@ body {
 }
 
 .button_desc {
+    margin-top: 7px;
     display: block;
     font-size: 0.85em;
     font-family: "PS Bold", sans-serif;
