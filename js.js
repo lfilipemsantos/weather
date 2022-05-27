@@ -10,18 +10,6 @@ if ('serviceWorker' in navigator) {
     });
 }
 
-
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-    if (localStorage["auto_theme"] == "on"){
-        if (event.matches) {
-            switch_theme("dark")
-        } 
-        else {
-            switch_theme("light")        
-        }
-    }
-})
-
 function data_request(id) {
     var requestURL = "https://api.ipma.pt/public-data/forecast/aggregate/" + id + ".json"
     var request = new XMLHttpRequest();
