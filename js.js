@@ -56,11 +56,6 @@ function display_notification() {
     }
 }
 
-function isIOSDevice(){
-    console.log(navigator.userAgent)
-    return navigator.userAgent.toLowerCase().indexOf('safari/') > -1;
-}
-
 function getLocation() {
     if (navigator.geolocation) {
         var options = {
@@ -97,6 +92,7 @@ function find_nearest_location(position) {
         }
     }
     localStorage["nearest_location"] = nearest_location;
+    get_data(localStorage['nearest_location'])
 }
 
 function calc_distance(lat1, lon1, lat2, lon2) {
@@ -119,15 +115,6 @@ function to_rad(Value){
 
 
 function init() {
-    //Check if device is iOS (notifications do not work on iOS)
-    if (isIOSDevice()) {
-        console.log('This is a IOS device');
-        //request_notification();
-        //getLocation();
-        //display_notification();
-    } else {
-    }
-
     build_locations(locations);
 
     if (localStorage["theme"]) {
@@ -448,12 +435,6 @@ function build_table(current_day, current_hour) {
         //document.getElementById("text-vento-vv-T").textContent = current_day["ffVento"];
         document.getElementById("idFfxVento-T").textContent = wind_types[0][current_day["idFfxVento"]]["PT"];
     }
-    try {
-        document.getElementById("data-update").textContent = ("Última atualização: " + current_day["dataUpdate"]).replace("T", " às ")
-    }
-    catch {
-        console.log('error')
-    }
     
     for (let i = 0; i < text.length; i++) {
         if(text[i].id == "text-tMax") {
@@ -608,7 +589,6 @@ function build_next_days(data) {
         var date_day = new Date(data[i]["dataPrev"].split("T",1)[0]);
         week_day.textContent = dict[date_day.getDay()];
         if(i==0) {
-            console.log(dict[date_day.getDay()]);
             document.getElementById("date-text").textContent = dict[date_day.getDay()]
         }
         
