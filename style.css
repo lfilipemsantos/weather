@@ -612,6 +612,7 @@ body {
 }
 
 #search_elements_container {
+    margin-top: 30px;
     width: 100%;
     text-align: center;
 }
@@ -634,7 +635,7 @@ body {
     height: 55px;
     margin-left: auto;
     margin-top: 0px;
-    border-radius: 22px;
+    border-radius: 26px;
     width: 70%;
     max-width: 400px;
     position: relative;
@@ -669,7 +670,6 @@ body {
     max-width: 400px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 100px;
     background-color: var(--clr-container-secondary);
     color: var(--clr-container-on-secondary);
     border-radius: var(--border-radius);

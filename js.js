@@ -649,8 +649,8 @@ function switch_theme(id) {
         }*/
     
         
-        var location_icon = document.getElementById("current-location-icon")
-        location_icon.src = location_icon.src.replace("b.svg", "w.svg");
+        //var location_icon = document.getElementById("current-location-icon")
+        //location_icon.src = location_icon.src.replace("b.svg", "w.svg");
         
         var fav = document.getElementById("fav_icon");
         fav.src = fav.src.replace("b.svg", "w.svg");
@@ -664,8 +664,8 @@ function switch_theme(id) {
     else if (id=="light") {
         document.querySelector('meta[name="theme-color"]').setAttribute('content', LIGHT);
 
-        var location_icon = document.getElementById("current-location-icon")
-        location_icon.src = location_icon.src.replace("w.svg", "b.svg");
+        //var location_icon = document.getElementById("current-location-icon")
+        //location_icon.src = location_icon.src.replace("w.svg", "b.svg");
 
         var fav = document.getElementById("fav_icon");
         fav.src = fav.src.replace("w.svg", "b.svg");

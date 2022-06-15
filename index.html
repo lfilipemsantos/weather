@@ -28,19 +28,6 @@
     
             <div class="rows tab" id="location-tab">
                 <h2 class="tab-title">Pesquisar</h2>
-                <div id="search_elements_container">
-                    <div id="search_container">
-                        <i class="fa fa-search" style="margin-top: -2px; margin-left: 10px !important; color: gray;"></i>
-                        <input autocomplete="off" id="location" type="text" onkeyup="search_location()" placeholder="Pesquisar...">
-                    </div>
-                    <div id="current-location-button" onclick="getLocation()">
-                        <img id="current-location-icon" src="location_w.svg" alt="location icon" style="height: 25px; margin-top: 13px; margin-right: 0px;">
-                    </div>
-                </div>
-                
-                <div id="location-list-container">
-                    <ul id="location-list"></ul>
-                </div>
             </div> 
     
             <div class="rows tab" id="warnings-tab" style="display: none; height: max-content;">
@@ -58,6 +45,19 @@
             </div> 
     
             <div id="home-tab" class="tab">
+                <div id="search_elements_container">
+                    <div id="search_container">
+                        <i class="fa fa-search" style="margin-top: -2px; margin-left: 10px !important; color: gray;"></i>
+                        <input autocomplete="off" id="location" type="text" onkeyup="search_location()" placeholder="Pesquisar...">
+                    </div>
+                    <!--<div id="current-location-button" onclick="getLocation()">
+                        <img id="current-location-icon" src="location_w.svg" alt="location icon" style="height: 25px; margin-top: 13px; margin-right: 0px;">
+                    </div>-->
+                </div>
+                
+                <div id="location-list-container">
+                    <ul id="location-list"></ul>
+                </div>
                 <div style="display: flex; flex-direction: row; width: 100%; padding: 30px; box-sizing: border-box;">
                     <div id="location-date-container">
                         <p id="location-text"></p>
