@@ -143,7 +143,7 @@ function build_locations(locations) {
             var li = document.createElement('li');
             var div = document.createElement('div');
             div.textContent = locations[i]["localidade_distrito"][j]["local"] + ", " + locations[i]["nome_distrito"] + " ";
-            li.setAttribute("onclick", "get_data(" + locations[i]['localidade_distrito'][j]['globalIdLocal'] + ")");
+            li.setAttribute("onclick", "clear_search_results();get_data(" + locations[i]['localidade_distrito'][j]['globalIdLocal'] + ")");
             li.classList.add("location-li");
             li.appendChild(div);
             document.getElementById("location-list").appendChild(li)
@@ -736,6 +736,15 @@ function search_location() {
                 li[i].style.display = "none";
             }
         }
+    }
+}
+
+
+function clear_search_results() {
+    ul = document.getElementById("location-list");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        li[i].style.display = "none";
     }
 }
 
