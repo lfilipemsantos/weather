@@ -632,12 +632,11 @@ body {
 
 #search_container {
     background-color: rgba(181, 181, 181, 0.2);
-    height: 55px;
-    margin-left: auto;
+    height: 50px;
     margin-top: 0px;
     border-radius: 26px;
-    width: 70%;
-    max-width: 400px;
+    width: 100vw;
+    max-width: 500px;
     position: relative;
     padding-left: 10px;
     box-sizing: border-box;
@@ -655,7 +654,7 @@ body {
 #location {
     background-color: transparent;
     color: white;
-    height: 53px;
+    height: 47px;
     width: fit-content;
     padding-left: 15px;
     margin-top: 2px;
