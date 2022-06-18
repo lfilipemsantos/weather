@@ -153,7 +153,7 @@ function build_locations(locations) {
 
 
 function switch_tab(id) {
-    var tabs = ["home-tab", "settings-tab", "location-tab", "favorites-tab", "warnings-tab"];
+    var tabs = ["home-tab", "settings-tab", "favorites-tab", "warnings-tab"];
     show_bottom();
     for (let i = 0; i < tabs.length; i++) {
         if(tabs[i]!=id){
@@ -174,8 +174,8 @@ function switch_tab(id) {
     if(id=="home-tab") {
         var home_icon = document.getElementById("home_icon").src.replace("not_","is_");
         document.getElementById("home_icon").src = home_icon;
-        var search_icon = document.getElementById("search_icon").src.replace("is_","not_");
-        document.getElementById("search_icon").src = search_icon;
+        //var search_icon = document.getElementById("search_icon").src.replace("is_","not_");
+        //document.getElementById("search_icon").src = search_icon;
         var settings_icon = document.getElementById("settings_icon").src.replace("is_","not_");
         document.getElementById("settings_icon").src = settings_icon;
         var favorites_icon = document.getElementById("favorites_icon").src.replace("is_","not_");
@@ -192,8 +192,8 @@ function switch_tab(id) {
         show_top_settings();
         var home_icon = document.getElementById("home_icon").src.replace("is_","not_");
         document.getElementById("home_icon").src = home_icon;
-        var search_icon = document.getElementById("search_icon").src.replace("is_","not_");
-        document.getElementById("search_icon").src = search_icon;
+        //var search_icon = document.getElementById("search_icon").src.replace("is_","not_");
+        //document.getElementById("search_icon").src = search_icon;
         var settings_icon = document.getElementById("settings_icon").src.replace("not_","is_");
         document.getElementById("settings_icon").src = settings_icon;
         var favorites_icon = document.getElementById("favorites_icon").src.replace("is_","not_");
@@ -211,8 +211,8 @@ function switch_tab(id) {
         build_favorites();
         var home_icon = document.getElementById("home_icon").src.replace("is_","not_");
         document.getElementById("home_icon").src = home_icon;
-        var search_icon = document.getElementById("search_icon").src.replace("is_","not_");
-        document.getElementById("search_icon").src = search_icon;
+        //var search_icon = document.getElementById("search_icon").src.replace("is_","not_");
+        //document.getElementById("search_icon").src = search_icon;
         var settings_icon = document.getElementById("settings_icon").src.replace("is_","not_");
         document.getElementById("settings_icon").src = settings_icon;
         var favorites_icon = document.getElementById("favorites_icon").src.replace("not_","is_");
@@ -228,8 +228,8 @@ function switch_tab(id) {
         document.getElementById("location").focus();
         var home_icon = document.getElementById("home_icon").src.replace("is_","not_");
         document.getElementById("home_icon").src = home_icon;
-        var search_icon = document.getElementById("search_icon").src.replace("not_","is_");
-        document.getElementById("search_icon").src = search_icon;
+        //var search_icon = document.getElementById("search_icon").src.replace("not_","is_");
+        //document.getElementById("search_icon").src = search_icon;
         var settings_icon = document.getElementById("settings_icon").src.replace("is_","not_");
         document.getElementById("settings_icon").src = settings_icon;
         var favorites_icon = document.getElementById("favorites_icon").src.replace("is_","not_");
@@ -244,8 +244,8 @@ function switch_tab(id) {
     else if(id=="warnings-tab") {
         var home_icon = document.getElementById("home_icon").src.replace("is_","not_");
         document.getElementById("home_icon").src = home_icon;
-        var search_icon = document.getElementById("search_icon").src.replace("is_","not_");
-        document.getElementById("search_icon").src = search_icon;
+        //var search_icon = document.getElementById("search_icon").src.replace("is_","not_");
+        //document.getElementById("search_icon").src = search_icon;
         var settings_icon = document.getElementById("settings_icon").src.replace("is_","not_");
         document.getElementById("settings_icon").src = settings_icon;
         var favorites_icon = document.getElementById("favorites_icon").src.replace("is_","not_");
@@ -625,7 +625,7 @@ function switch_theme(id) {
     let theme_color = localStorage['color_theme']
     document.getElementById("theme").setAttribute('href', `themes/${id}-${theme_color}.css`);
 
-    var buttons = ["home", "favorites", "settings", "search", "warning"]
+    var buttons = ["home", "favorites", "settings", "warning"]
 
     localStorage["theme"] = id;
 
