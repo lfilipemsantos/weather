@@ -1,6 +1,7 @@
 var locations = [
     {
         "nome_distrito": "Viseu",
+        "idAreaAviso": "VIS",
         "id_distrito": 100,
         "localidade_distrito": [
             {
@@ -247,6 +248,7 @@ var locations = [
     },
     {
         "nome_distrito":"Aveiro",
+        "idAreaAviso": "AVR",
         "id_distrito":200,
         "localidade_distrito": [
             {
@@ -543,6 +545,7 @@ var locations = [
     },
     {
         "nome_distrito":"Beja",
+        "idAreaAviso": "BJA",
         "id_distrito":300,
         "localidade_distrito": [
             {
@@ -729,6 +732,7 @@ var locations = [
     },
     {
         "nome_distrito":"Braga",
+        "idAreaAviso": "BRG",
         "id_distrito":400,
         "localidade_distrito": [
             {
@@ -905,6 +909,7 @@ var locations = [
     },
     {
         "nome_distrito":"Bragança",
+        "idAreaAviso": "BGC",
         "id_distrito":500,
         "localidade_distrito": [
             {
@@ -1031,6 +1036,7 @@ var locations = [
     },
     {
         "nome_distrito":"Castelo Branco",
+        "idAreaAviso": "CBO",
         "id_distrito":600,
         "localidade_distrito": [
             {
@@ -1157,6 +1163,7 @@ var locations = [
     },
     {
         "nome_distrito":"Coimbra",
+        "idAreaAviso": "CBR",
         "id_distrito":700,
         "localidade_distrito": [
             {
@@ -1363,6 +1370,7 @@ var locations = [
     },
     {
         "nome_distrito":"Évora",
+        "idAreaAviso": "EVR",
         "id_distrito":800,
         "localidade_distrito": [
             {
@@ -1509,6 +1517,7 @@ var locations = [
     },
     {
         "nome_distrito":"Faro",
+        "idAreaAviso": "FAR",
         "id_distrito":900,
         "localidade_distrito": [
             {
@@ -2035,6 +2044,7 @@ var locations = [
     },
     {
         "nome_distrito":"Guarda",
+        "idAreaAviso": "GDA",
         "id_distrito":1000,
         "localidade_distrito": [
             {
@@ -2201,6 +2211,7 @@ var locations = [
     },
     {
         "nome_distrito":"Leiria",
+        "idAreaAviso": "LRA",
         "id_distrito":1100,
         "localidade_distrito": [
             {
@@ -2477,6 +2488,7 @@ var locations = [
     },
     {
         "nome_distrito":"Lisboa",
+        "idAreaAviso": "LSB",
         "id_distrito":1200,
         "localidade_distrito": [
             {
@@ -2803,6 +2815,7 @@ var locations = [
     },
     {
         "nome_distrito":"Portalegre",
+        "idAreaAviso": "PTG",
         "id_distrito":1300,
         "localidade_distrito": [
             {
@@ -2959,6 +2972,7 @@ var locations = [
     },
     {
         "nome_distrito":"Porto",
+        "idAreaAviso": "PTO",
         "id_distrito":1400,
         "localidade_distrito": [
             {
@@ -3255,6 +3269,7 @@ var locations = [
     },
     {
         "nome_distrito":"Santarém",
+        "idAreaAviso": "STM",
         "id_distrito":1500,
         "localidade_distrito": [
             {
@@ -3471,6 +3486,7 @@ var locations = [
     },
     {
         "nome_distrito":"Setúbal",
+        "idAreaAviso": "STB",
         "id_distrito":1500,
         "localidade_distrito": [
             {
@@ -3767,6 +3783,7 @@ var locations = [
     },
     {
         "nome_distrito":"Viana do Castelo",
+        "idAreaAviso": "VCT",
         "id_distrito":1600,
         "localidade_distrito": [
             {
@@ -3923,6 +3940,7 @@ var locations = [
     },
     {
         "nome_distrito":"Vila Real",
+        "idAreaAviso": "VRL",
         "id_distrito":1700,
         "localidade_distrito": [
             {
@@ -4069,6 +4087,7 @@ var locations = [
     },
     {
         "nome_distrito":"Madeira",
+        "idAreaAviso": "MRM",
         "id_distrito":1800,
         "localidade_distrito": [
             {
@@ -4225,6 +4244,7 @@ var locations = [
     },
     {
         "nome_distrito":"Porto Santo",
+        "idAreaAviso": "MPS",
         "id_distrito":1900,
         "localidade_distrito": [
             {
@@ -4241,6 +4261,7 @@ var locations = [
     },
     {
         "nome_distrito":"Santa Maria",
+        "idAreaAviso": "AOR",
         "id_distrito":2000,
         "localidade_distrito": [
             {
@@ -4257,6 +4278,7 @@ var locations = [
     },
     {
         "nome_distrito":"São Miguel",
+        "idAreaAviso": "AOR",
         "id_distrito":2100,
         "localidade_distrito": [
             {
@@ -4283,6 +4305,7 @@ var locations = [
     },
     {
         "nome_distrito":"Terceira",
+        "idAreaAviso": "ACE",
         "id_distrito":2200,
         "localidade_distrito": [
             {
@@ -4309,6 +4332,7 @@ var locations = [
     },
     {
         "nome_distrito":"Graciosa",
+        "idAreaAviso": "ACE",
         "id_distrito":2300,
         "localidade_distrito": [
             {
@@ -4325,6 +4349,7 @@ var locations = [
     },
     {
         "nome_distrito":"São Jorge",
+        "idAreaAviso": "ACE",
         "id_distrito":2400,
         "localidade_distrito": [
             {
@@ -4341,6 +4366,7 @@ var locations = [
     },
     {
         "nome_distrito":"Pico",
+        "idAreaAviso": "ACE",
         "id_distrito":2500,
         "localidade_distrito": [
             {
@@ -4357,6 +4383,7 @@ var locations = [
     },
     {
         "nome_distrito":"Faial",
+        "idAreaAviso": "ACE",
         "id_distrito":2600,
         "localidade_distrito": [
             {
@@ -4373,6 +4400,7 @@ var locations = [
     },
     {
         "nome_distrito":"Flores",
+        "idAreaAviso": "AOC",
         "id_distrito":2700,
         "localidade_distrito": [
             {
@@ -4389,6 +4417,7 @@ var locations = [
     },
     {
         "nome_distrito":"Corvo",
+        "idAreaAviso": "AOC",
         "id_distrito":2800,
         "localidade_distrito": [
             {
