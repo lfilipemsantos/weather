@@ -242,6 +242,7 @@ function switch_tab(id) {
         document.getElementById("tab-indicator-search").style.opacity = "0.6";
     }
     else if(id=="warnings-tab") {
+        search_warnings()
         var home_icon = document.getElementById("home_icon").src.replace("is_","not_");
         document.getElementById("home_icon").src = home_icon;
         //var search_icon = document.getElementById("search_icon").src.replace("is_","not_");
@@ -337,6 +338,26 @@ function get_data(local_id) {
                 }
                 desc.textContent = "Adicionar aos favoritos";
             }
+        }
+    }
+}
+
+
+function search_warnings() {
+    
+    //make request to api
+    var requestURL = "https://api.ipma.pt/open-data/forecast/warnings/warnings_www.json"
+    var request = new XMLHttpRequest();
+    request.open('GET', requestURL);
+    request.responseType = 'json';
+    request.send();
+    
+    //clear_rows("warnings");
+
+    request.onreadystatechange = function() {
+        if (request.readyState == XMLHttpRequest.DONE) {
+            data = request.response;
+            console.log(data)
         }
     }
 }
