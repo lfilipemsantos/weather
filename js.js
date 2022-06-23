@@ -358,10 +358,39 @@ function search_warnings() {
         if (request.readyState == XMLHttpRequest.DONE) {
             data = request.response;
             console.log(data)
+            build_warnings_accordion()
         }
     }
 }
 
+
+function build_warnings_accordion() {
+    var accordion = document.getElementById("warnings_accordion")
+    for(var i = 0; i<locations.length; i++) {
+        var accordion_location = document.createElement('div');
+        accordion_location.classList.add('accordion_location')
+
+        var accordion_input = document.createElement('input');
+        accordion_input.setAttribute("type", "checkbox");
+        accordion_input.setAttribute("id", locations[i]["idAreaAviso"]);
+        accordion_input.classList.add("accordion_input")
+
+
+        var accordion_label = document.createElement('label');
+        accordion_label.setAttribute("for", locations[i]["idAreaAviso"]);
+        accordion_label.classList.add("accordion_label")
+        accordion_label.textContent = locations[i]["nome_distrito"]
+
+        var accordion_content = document.createElement('div');
+        accordion_content.classList.add("accordion_content")
+        accordion_content.textContent = "Sem avisos."
+        
+        accordion_location.appendChild(accordion_input)
+        accordion_location.appendChild(accordion_label)
+        accordion_location.appendChild(accordion_content)
+        accordion.appendChild(accordion_location)
+    }
+}
 
 function in_favorites(id) {
     favs = JSON.parse(localStorage["favorites"])
