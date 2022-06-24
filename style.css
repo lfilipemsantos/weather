@@ -665,14 +665,15 @@ body {
 
 #location-list-container {
     margin-top: 15px;
-    width: 90%;
-    max-width: 400px;
+    width: 90vw;
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
     background-color: var(--clr-container-secondary);
     color: var(--clr-container-on-secondary);
     border-radius: var(--border-radius);
     box-sizing: border-box;
+    overflow: scroll;
 }
 
 #location-list {
@@ -1604,9 +1605,9 @@ nav a {
     transition: background 0.1s;
 }
 
-.accordion_label:hover {
+/*.accordion_label:hover {
     background: rgba(0, 0, 0, 0.1);
-}
+}*/
 
 .accordion_label::after {
     content: '';
