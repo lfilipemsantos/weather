@@ -693,6 +693,12 @@ body {
     cursor: pointer;
 }
 
+#home-tab {
+    display: grid;
+}
+
+
+
 #bottom-options {
     position: fixed;
     height: 80px;
@@ -995,7 +1001,7 @@ body {
 }
 
 #location-date-container {
-    width: 85%;
+    width: 100%;
 }
 
 #fav_icon_container {
@@ -1025,9 +1031,8 @@ body {
 
 #location-text {
     line-height: 1;
-    font-family: 'PS Bold', sans-serif;
-    font-size: 1.5em;
-    font-weight: 600;
+    font-family: 'PS Regular', sans-serif;
+    font-size: 2.5rem;
     margin-bottom: 5px;
 }
 #date-text {
@@ -1602,7 +1607,7 @@ nav a {
     font-weight: 500;
     cursor: pointer;
     position: relative;
-    transition: background 0.1s;
+    background-color: var(--clr-container-secondary);
 }
 
 /*.accordion_label:hover {

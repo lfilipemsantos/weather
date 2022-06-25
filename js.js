@@ -259,7 +259,7 @@ function switch_tab(id) {
         document.getElementById("tab-indicator-warning").style.opacity = "0.6";
     }
     
-    setTimeout(() => {  document.getElementById(id).style.display = "block"; }, 400);
+    setTimeout(() => {  document.getElementById(id).style.display = "grid"; }, 400);
     
     if(id!="location-tab"){
         show_bottom();
@@ -638,9 +638,9 @@ function build_next_days(data) {
 
         var date_day = new Date(data[i]["dataPrev"].split("T",1)[0]);
         week_day.textContent = dict[date_day.getDay()];
-        if(i==0) {
+        /*if(i==0) {
             document.getElementById("date-text").textContent = dict[date_day.getDay()]
-        }
+        }*/
         
         weather_icon.setAttribute("class", "nd_weather_icon");
         weather_icon.setAttribute("alt", "weather_icon");
