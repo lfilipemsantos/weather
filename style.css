@@ -284,7 +284,7 @@ body {
 }
 
 #inner_next_days {
-    padding: 12px 0;
+    padding: 0px 0;
     display: flex;
     flex-direction: column;
     margin-left: auto;
@@ -420,7 +420,7 @@ body {
 #next_days_row {
     box-sizing: border-box;
     display: block;
-    height: 685px;
+    height: fit-content;
     width: 87%;
     overflow-x: scroll;
     border-radius: 20px;
