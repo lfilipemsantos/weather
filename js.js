@@ -358,39 +358,61 @@ function search_warnings() {
         if (request.readyState == XMLHttpRequest.DONE) {
             data = request.response;
             console.log(data)
-            build_warnings_accordion()
+            build_warnings_accordion(data)
         }
     }
 }
 
 
-function build_warnings_accordion() {
-    var accordion = document.getElementById("warnings_accordion")
-    for(var i = 0; i<locations.length; i++) {
-        var accordion_location = document.createElement('div');
-        accordion_location.classList.add('accordion_location')
+function build_warnings_accordion(data) {
+    var dict = {
+        "yellow": "Amarelo",
+        "orange": "Laranja",
+        "red": "Vermelho"
+    };
+    for(var j = 0; j < data.length; j++) {
+        if (data[j]["text"] != ''){
+            if (!document.getElementById(data[j]["idAreaAviso"])) {
+                create_accordion_location(data[j])
+            }
+            document.getElementById("accordion_content_" + data[j]["idAreaAviso"]).textContent += "\r\n" + dict[data[j]["awarenessLevelID"]] + " - " + data[j]["awarenessTypeName"]+ " - " +data[j]["text"]
+            console.log(data[j]["text"])
 
-        var accordion_input = document.createElement('input');
-        accordion_input.setAttribute("type", "checkbox");
-        accordion_input.setAttribute("id", locations[i]["idAreaAviso"]);
-        accordion_input.classList.add("accordion_input")
-
-
-        var accordion_label = document.createElement('label');
-        accordion_label.setAttribute("for", locations[i]["idAreaAviso"]);
-        accordion_label.classList.add("accordion_label")
-        accordion_label.textContent = locations[i]["nome_distrito"]
-
-        var accordion_content = document.createElement('div');
-        accordion_content.classList.add("accordion_content")
-        accordion_content.textContent = "Sem avisos."
-        
-        accordion_location.appendChild(accordion_input)
-        accordion_location.appendChild(accordion_label)
-        accordion_location.appendChild(accordion_content)
-        accordion.appendChild(accordion_location)
+        }
     }
+    
+
 }
+
+
+function create_accordion_location(data_element) {
+    var accordion = document.getElementById("warnings_accordion")
+    var accordion_location = document.createElement('div');
+    accordion_location.classList.add('accordion_location')
+
+    var accordion_input = document.createElement('input');
+    accordion_input.setAttribute("type", "checkbox");
+    accordion_input.setAttribute("id", data_element["idAreaAviso"]);
+    accordion_input.classList.add("accordion_input")
+
+
+    var accordion_label = document.createElement('label');
+    accordion_label.setAttribute("for", data_element["idAreaAviso"]);
+    accordion_label.classList.add("accordion_label")
+    accordion_label.textContent = data_element["idAreaAviso"]
+
+    var accordion_content = document.createElement('div');
+    accordion_content.classList.add("accordion_content")
+    accordion_content.setAttribute("id", "accordion_content_" + data_element["idAreaAviso"]);
+    accordion_content.textContent = "Sem avisos."
+    
+    accordion_location.appendChild(accordion_input)
+    accordion_location.appendChild(accordion_label)
+    accordion_location.appendChild(accordion_content)
+    accordion.appendChild(accordion_location)
+    
+}
+
 
 function in_favorites(id) {
     favs = JSON.parse(localStorage["favorites"])
