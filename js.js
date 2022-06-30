@@ -375,7 +375,7 @@ function build_warnings_accordion(data) {
             if (!document.getElementById(data[j]["idAreaAviso"])) {
                 create_accordion_location(data[j])
             }
-            document.getElementById("accordion_content_" + data[j]["idAreaAviso"]).textContent += "\r\n" + dict[data[j]["awarenessLevelID"]] + " - " + data[j]["awarenessTypeName"]+ " - " +data[j]["text"]
+            document.getElementById("accordion_content_" + data[j]["idAreaAviso"]).textContent += dict[data[j]["awarenessLevelID"]] + " - " + data[j]["awarenessTypeName"]+ " - " + data[j]["text"] + "\r\n"
             console.log(data[j]["text"])
 
         }
@@ -404,7 +404,7 @@ function create_accordion_location(data_element) {
     var accordion_content = document.createElement('div');
     accordion_content.classList.add("accordion_content")
     accordion_content.setAttribute("id", "accordion_content_" + data_element["idAreaAviso"]);
-    accordion_content.textContent = "Sem avisos."
+    //accordion_content.textContent = "Sem avisos."
     
     accordion_location.appendChild(accordion_input)
     accordion_location.appendChild(accordion_label)
