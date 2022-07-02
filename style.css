@@ -172,6 +172,7 @@ body {
 }
 
 .date_prev {
+    display: none !important;
     width: 40px;
     font-size: 0.9rem;
     margin-right: 20px;
