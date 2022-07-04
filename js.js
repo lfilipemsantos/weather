@@ -441,7 +441,7 @@ function set_location_name(local_id) {
     for(var i = 0; i<locations.length; i++) {
         for(var j = 0; j<locations[i]["localidade_distrito"].length; j++) {
             if(locations[i]["localidade_distrito"][j]["globalIdLocal"] == local_id) {
-                document.getElementById("location-text").textContent = locations[i]["localidade_distrito"][j]["local"] + ", " + locations[i]["nome_distrito"]
+                document.getElementById("location-text").textContent = locations[i]["localidade_distrito"][j]["local"];
                 return;
             }
         }
@@ -485,7 +485,7 @@ function build_table(current_day, current_hour) {
     }
 
     if(current_hour) {
-        document.getElementById("table_temp").textContent = parseInt(current_hour["tMed"]) + "º";
+        document.getElementById("table_temp").textContent = parseInt(current_hour["tMed"]);
         document.getElementById("weather-info-text").textContent = weather_types[0][current_hour["idTipoTempo"]]["PT"];
         text = document.getElementsByClassName("table-text")
         document.getElementById("text-iUv").textContent = Math.round(current_day["iUv"]);
