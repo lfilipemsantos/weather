@@ -1532,7 +1532,7 @@ nav a {
     flex-direction: column;
     width: 100%;
     margin-top: 0px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 
 #main-image-container {
@@ -1569,12 +1569,12 @@ nav a {
 }
 
 #weather-info-text {
-    font-size: 1.5em;
+    font-size: 1.1em;
     padding-bottom: 10px;
     padding-top: 10px;
     font-weight: lighter;
     text-align: center;
-    font-family: 'PS Bold', sans-serif;
+    font-family: 'PS Regular', sans-serif;
     letter-spacing: 1px;
     width: var(--main-element-width);
     margin: auto;
