@@ -261,7 +261,7 @@ body {
     align-items: center;
 }
 .nd_weather_icon {
-    margin-top: 5px;
+    margin-top: 11px;
     width: 50%;
     filter: saturate(190%);
 }
@@ -1045,10 +1045,15 @@ body {
 
 #location-text {
     line-height: 1;
-    font-family: 'PS Regular', sans-serif;
+    font-family: 'PS Bold', sans-serif;
     font-size: 2.5rem;
     margin-bottom: 5px;
 }
+
+#search_elements_container:has(input:focus) ~ div {
+    background-color: aqua;
+}
+
 #date-text {
     font-family: 'PS Regular', sans-serif;
     font-size: 1em;
