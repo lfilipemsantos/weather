@@ -69,7 +69,7 @@
                     </div>
                 </div>
     
-                <section>
+                <section id="cards">
                     <div id="main-info">
                         <div style="display: flex; flex-direction: row; align-items: center; width: 85%; margin: auto; height: 150px;">
                             <div id="main-image-container" style="display: none;">
@@ -87,86 +87,87 @@
                         </div>
     
                     </div>
-                    
-                </section>
     
                
-                <div class="rows" id="today_row">
-                    <h2 style="width: 100%; text-align: center; margin-bottom: 20px;">Previsão horária</h2>
-                    <div class="inner" id="innerToday"></div>
+                    <div class="rows" id="today_row">
+                        <h2 style="width: 100%; text-align: center; margin-bottom: 20px;">Previsão horária</h2>
+                        <div class="inner" id="innerToday"></div>
+                    </div>
+        
+                    <div class="swipe_sections" id="swipe_sections">
+                        <section class="swipe_section" id="s1">    
+                            <div class="stats" id="today_stats">
+                                <div class="stat_title">Hoje</div>
+                                <div class="stat">
+                                    <div class="stat_name">Temperatura</div>
+                                    <div class="stat_value" id="text-temp"></div>
+                                </div>
+                                <hr class="stat_divider">
+                                <div class="stat">
+                                    <div class="stat_name">Índice UV</div>
+                                    <div class="stat_value" id="text-iUv"></div>
+                                </div>
+                                <hr class="stat_divider">
+                                <div class="stat">
+                                    <div class="stat_name">Precipitação</div>
+                                    <div class="stat_value" id="text-probabilidadePrecipita"></div>
+                                </div>
+                                <hr class="stat_divider">
+                                <div class="stat">
+                                    <div class="stat_name">Vento</div>
+                                    <div class="stat_value" id="text-vento-vv"></div>
+                                </div>
+                                <hr class="stat_divider">
+                                <div class="stat">
+                                    <div class="stat_name">Direção Vento</div>
+                                    <div class="stat_value" id="text-vento-dd"></div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="swipe_section" id="s2">
+                            <div class="stats" id="tomorrow_stats">
+                                <div class="stat_title">Amanhã</div>
+                                <div class="stat">
+                                    <div class="stat_name">Temperatura</div>
+                                    <div class="stat_value" id="text-temp-T"></div>
+                                </div>
+                                <hr class="stat_divider">
+                                <div class="stat">
+                                    <div class="stat_name">Índice UV</div>
+                                    <div class="stat_value" id="text-iUv-T"></div>
+                                </div>
+                                <hr class="stat_divider">
+                                <div class="stat">
+                                    <div class="stat_name">Precipitação</div>
+                                    <div class="stat_value" id="text-probabilidadePrecipita-T"></div>
+                                </div>
+                                <hr class="stat_divider">
+                                <div class="stat">
+                                    <div class="stat_name">Vento</div>
+                                    <div class="stat_value" id="idFfxVento-T"></div>
+                                </div>
+                                <hr class="stat_divider">
+                                <div class="stat">
+                                    <div class="stat_name">Direção Vento</div>
+                                    <div class="stat_value" id="text-vento-dd-T"></div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <nav id="indicators">
+                        <a class="indicator selected" id="i_s1" href="#s1" onclick="switch_indicator('i_s1')" title="slide 1"></a>
+                        <a class="indicator" id="i_s2" href="#s2" onclick="switch_indicator('i_s2')" title="slide 2"></a>
+                    </nav>
+                    
+        
+                    <div class="rows" id="next_days_row">
+                        <h2 style="width: 100%; text-align: center; margin-bottom: 20px;">Próximos 10 dias</h2>
+                        <div class="inner" id="inner_next_days"></div>
+                    </div>
                 </div>
-    
-                <div class="swipe_sections" id="swipe_sections">
-                    <section class="swipe_section" id="s1">    
-                        <div class="stats" id="today_stats">
-                            <div class="stat_title">Hoje</div>
-                            <div class="stat">
-                                <div class="stat_name">Temperatura</div>
-                                <div class="stat_value" id="text-temp"></div>
-                            </div>
-                            <hr class="stat_divider">
-                            <div class="stat">
-                                <div class="stat_name">Índice UV</div>
-                                <div class="stat_value" id="text-iUv"></div>
-                            </div>
-                            <hr class="stat_divider">
-                            <div class="stat">
-                                <div class="stat_name">Precipitação</div>
-                                <div class="stat_value" id="text-probabilidadePrecipita"></div>
-                            </div>
-                            <hr class="stat_divider">
-                            <div class="stat">
-                                <div class="stat_name">Vento</div>
-                                <div class="stat_value" id="text-vento-vv"></div>
-                            </div>
-                            <hr class="stat_divider">
-                            <div class="stat">
-                                <div class="stat_name">Direção Vento</div>
-                                <div class="stat_value" id="text-vento-dd"></div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="swipe_section" id="s2">
-                        <div class="stats" id="tomorrow_stats">
-                            <div class="stat_title">Amanhã</div>
-                            <div class="stat">
-                                <div class="stat_name">Temperatura</div>
-                                <div class="stat_value" id="text-temp-T"></div>
-                            </div>
-                            <hr class="stat_divider">
-                            <div class="stat">
-                                <div class="stat_name">Índice UV</div>
-                                <div class="stat_value" id="text-iUv-T"></div>
-                            </div>
-                            <hr class="stat_divider">
-                            <div class="stat">
-                                <div class="stat_name">Precipitação</div>
-                                <div class="stat_value" id="text-probabilidadePrecipita-T"></div>
-                            </div>
-                            <hr class="stat_divider">
-                            <div class="stat">
-                                <div class="stat_name">Vento</div>
-                                <div class="stat_value" id="idFfxVento-T"></div>
-                            </div>
-                            <hr class="stat_divider">
-                            <div class="stat">
-                                <div class="stat_name">Direção Vento</div>
-                                <div class="stat_value" id="text-vento-dd-T"></div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <nav id="indicators">
-                    <a class="indicator selected" id="i_s1" href="#s1" onclick="switch_indicator('i_s1')" title="slide 1"></a>
-                    <a class="indicator" id="i_s2" href="#s2" onclick="switch_indicator('i_s2')" title="slide 2"></a>
-                </nav>
-                
-    
-                <div class="rows" id="next_days_row">
-                    <h2 style="width: 100%; text-align: center; margin-bottom: 20px;">Próximos 10 dias</h2>
-                    <div class="inner" id="inner_next_days"></div>
-                </div>
-            </div>
+            
+                    
+            </section>
     
             <div class="rows tab" id="settings-tab" style="height: 100%;">
                 <div class="tab-title-container" style="position: relative;">  

@@ -259,7 +259,7 @@ function switch_tab(id) {
         document.getElementById("tab-indicator-warning").style.opacity = "0.6";
     }
     
-    setTimeout(() => {  document.getElementById(id).style.display = "grid"; }, 400);
+    setTimeout(() => {  document.getElementById(id).style.display = "block"; }, 400);
     
     if(id!="location-tab"){
         show_bottom();
