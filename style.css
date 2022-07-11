@@ -1128,10 +1128,6 @@ nav {
     margin-bottom: 5px;
 }
 
-#search_elements_container:has(input:focus) ~ div {
-    background-color: aqua;
-}
-
 #date-text {
     font-family: 'PS Regular', sans-serif;
     font-size: 1em;
