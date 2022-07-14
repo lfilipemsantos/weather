@@ -911,6 +911,12 @@ nav {
 }
 
 @media screen and (min-width: 1100px) {
+    #search_elements_container {
+        position: fixed;
+        margin-top: -80px;
+        margin-left: -12vh;
+    }
+
     #bottom-options {
         width: 100%;
         margin-left: 0px;
@@ -925,7 +931,7 @@ nav {
         margin-top: 150px;
         flex-direction: column;
         height: 100%;
-        width: 9vh;
+        width: 12vh;
         align-items: center;
         justify-content: center;
         z-index: -3;
@@ -936,7 +942,7 @@ nav {
     }
 
     #bottom-options > .inner > .button {
-        width: 150px;
+        width: 12vh;
         text-align: center;
         height: 35px;
         margin-bottom: 40px;
@@ -944,7 +950,7 @@ nav {
 
     .main {
         position: relative;
-        margin-left: 9vh !important;
+        margin-left: 12vh !important;
         margin-top: 9vh;
         z-index: 1000;
         overflow: scroll;
