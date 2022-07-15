@@ -300,7 +300,7 @@ body {
 }
 
 
-@media screen and (min-width: 1600px) {
+/*@media screen and (min-width: 1600px) {
     #inner_next_days {
         padding: 0;
         display: flex;
@@ -370,7 +370,7 @@ body {
     .date_prev {
         margin: 0;
     }
-}
+}*/
 
 .inner {
     width: max-content;
@@ -1573,6 +1573,9 @@ nav a {
 
 #table_temp::after {
     content: 'º';
+    font-size: 40px;
+    margin-top: -10px;
+    position: absolute;
 }
 
 #weather-info-text {
