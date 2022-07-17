@@ -687,9 +687,7 @@ body {
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
-    background-color: var(--clr-container-secondary);
     color: var(--clr-container-on-secondary);
-    border-radius: var(--border-radius);
     box-sizing: border-box;
     overflow: scroll;
 }
@@ -697,6 +695,37 @@ body {
 #location-list {
     height: auto;
     list-style-type: none;
+    border-radius: var(--border-radius);
+    background-color: var(--clr-container-secondary);
+}
+
+#geo-location {
+    height: 80px;
+    background-color: var(--clr-container-secondary);
+    margin-bottom: 15px;
+    border-radius: 12px;
+    text-align: center;
+    position: relative;
+}
+
+#geo-location > div {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+#geo-location > div > p {
+    font-size: 1.4rem;
+    margin-left: 10px;
+}
+
+#geo-location > div > img {
+    height: 1.4rem;
+    margin-top: 2px;
 }
 
 .location-li {
@@ -1275,12 +1304,18 @@ nav {
     width: 100%;
 }
 
+#settings {
+    background-color: var(--clr-primary);
+    width: 87%;
+    margin: auto;
+    border-radius: 12px;
+    color: var(--clr-on-primary); 
+}
+
 .setting {
-    width: 85%;
+    width: 100%;
     padding: 20px;
     margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
     max-width: 480px;
     position: relative;
     box-sizing: border-box;
@@ -1304,7 +1339,6 @@ nav {
 .top-setting {
     box-sizing: border-box;
     display: block;
-    padding-left: 0px;
     border-radius: var(--border-radius);
 }
 
@@ -1318,6 +1352,7 @@ nav {
 }
 
 .setting-img-container {
+    display: none;
     height: 45px;
     width: 45px;
 }

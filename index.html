@@ -56,6 +56,12 @@
                 </div>
                 
                 <div id="location-list-container">
+                    <div id="geo-location">
+                        <div>
+                            <img id="" src="location_w.svg" alt="location icon">
+                            <p>Usar a minha localização</p>
+                        </div>
+                    </div>
                     <ul id="location-list"></ul>
                 </div>
                 <div style="display: flex; flex-direction: column; width: 100%; padding: 30px; padding-bottom: 0; box-sizing: border-box; text-align: center;">
@@ -176,77 +182,80 @@
                     </div>
                     <h2 class="tab-title">Definições</h2>
                 </div>
-                <div class="setting top-setting personalizacao" onclick="show_bottom_settings('tema')" style="display: flex !important; flex-direction: row;">
-                    <div class="setting-img-container" style="flex-basis: 25%;">
-                        <img src="moon_w.svg" class="setting-icon">
-                    </div>
-                    <div>
-                        <h3>Modo claro/escuro</h3>
+                <div id="settings">
+                    <div class="setting top-setting personalizacao" onclick="show_bottom_settings('tema')" style="display: flex !important; flex-direction: row;">
+                        <div class="setting-img-container" style="flex-basis: 25%;">
+                            <img src="moon_w.svg" class="setting-icon">
+                        </div>
                         <div>
-                            <small>Escolha entre modo claro e escuro.</small>
+                            <h3>Modo claro/escuro</h3>
+                            <div>
+                                <small>Escolha entre modo claro e escuro.</small>
+                            </div>
+                        </div>
+                        <div class="setting-arrow">
+                            >
                         </div>
                     </div>
-                    <div class="setting-arrow">
-                        >
-                    </div>
-                </div>
-                <div class="setting top-setting personalizacao" onclick="show_bottom_settings('destaque')">
-                    <div class="setting-img-container" style="flex-basis: 25%;">
-                        <img src="brush_w.svg" class="setting-icon">
-                    </div>
-                    <div>
-                        <h3>Cor do tema</h3>
+                    <div class="setting top-setting personalizacao" onclick="show_bottom_settings('destaque')">
+                        <div class="setting-img-container" style="flex-basis: 25%;">
+                            <img src="brush_w.svg" class="setting-icon">
+                        </div>
                         <div>
-                            <small>Informações sobre a aplicação.</small>
+                            <h3>Cor do tema</h3>
+                            <div>
+                                <small>Informações sobre a aplicação.</small>
+                            </div>
+                        </div>
+                        <div class="setting-arrow">
+                            >
                         </div>
                     </div>
-                    <div class="setting-arrow">
-                        >
+                    
+                    <div class="setting top-setting" onclick="show_bottom_settings('fav_settings')">
+                        <div class="setting-img-container" style="flex-basis: 25%;">
+                            <img src="not_favorite_w.svg" class="setting-icon">
+                        </div>
+                        <div>
+                            <h3>Favoritos</h3>
+                            <div>
+                                <small>Faça a gestão das localizações favoritas.</small>
+                            </div>
+                        </div>
+                        <div class="setting-arrow">
+                            >
+                        </div>
+                    </div>
+                    <div class="setting top-setting" onclick="show_bottom_settings('repor')">
+                        <div class="setting-img-container" style="flex-basis: 25%;">
+                            <img src="reset_w.svg" class="setting-icon">
+                        </div>
+                        <div>
+                            <h3>Repor definições</h3>
+                            <div>
+                                <small>Apagará todas as definições incluindo temas e locais favoritos.</small>
+                            </div>
+                        </div>
+                        <div class="setting-arrow">
+                            >
+                        </div>
+                    </div>
+                    <div class="setting top-setting" onclick="show_bottom_settings('sobre')">
+                        <div class="setting-img-container" style="flex-basis: 25%;">
+                            <img src="about_w.svg" class="setting-icon">
+                        </div>
+                        <div>
+                            <h3>Sobre</h3>
+                            <div>
+                                <small>Informações sobre a aplicação.</small>
+                            </div>
+                        </div>
+                        <div class="setting-arrow">
+                            >
+                        </div>
                     </div>
                 </div>
                 
-                <div class="setting top-setting" onclick="show_bottom_settings('fav_settings')">
-                    <div class="setting-img-container" style="flex-basis: 25%;">
-                        <img src="not_favorite_w.svg" class="setting-icon">
-                    </div>
-                    <div>
-                        <h3>Favoritos</h3>
-                        <div>
-                            <small>Faça a gestão das localizações favoritas.</small>
-                        </div>
-                    </div>
-                    <div class="setting-arrow">
-                        >
-                    </div>
-                </div>
-                <div class="setting top-setting" onclick="show_bottom_settings('repor')">
-                    <div class="setting-img-container" style="flex-basis: 25%;">
-                        <img src="reset_w.svg" class="setting-icon">
-                    </div>
-                    <div>
-                        <h3>Repor definições</h3>
-                        <div>
-                            <small>Apagará todas as definições incluindo temas e locais favoritos.</small>
-                        </div>
-                    </div>
-                    <div class="setting-arrow">
-                        >
-                    </div>
-                </div>
-                <div class="setting top-setting" onclick="show_bottom_settings('sobre')">
-                    <div class="setting-img-container" style="flex-basis: 25%;">
-                        <img src="about_w.svg" class="setting-icon">
-                    </div>
-                    <div>
-                        <h3>Sobre</h3>
-                        <div>
-                            <small>Informações sobre a aplicação.</small>
-                        </div>
-                    </div>
-                    <div class="setting-arrow">
-                        >
-                    </div>
-                </div>
     
                 <div class="setting bottom-setting tema">
                     <div style="width: 90%; margin-left: auto; margin-right: auto;margin-top: 15px;">
@@ -423,6 +432,15 @@
                 }
             })
 
+        </script>
+        <script>
+            console.log(document.activeElement)
+            if (document.getElementById("location")==document.activeElement) {
+                document.getElementById("geo-location").style.display = "block"
+            }
+            else {
+                document.getElementById("geo-location").style.display = "none"
+            }
         </script>
         <!--<script>
             var background = document.getElementById('dynamic_background');
