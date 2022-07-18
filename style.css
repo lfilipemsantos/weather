@@ -1305,21 +1305,21 @@ nav {
 }
 
 #settings {
-    background-color: var(--clr-primary);
+    background-color: var(--clr-container-secondary);
     width: 87%;
     margin: auto;
     border-radius: 12px;
-    color: var(--clr-on-primary); 
+    color: var(--clr-container-on-secondary); 
 }
 
 .setting {
-    width: 100%;
+    box-sizing: border-box;
+    width: 90%;
+    margin: auto;
     padding: 20px;
-    margin-bottom: 20px;
     max-width: 480px;
     position: relative;
-    box-sizing: border-box;
-    /*border-bottom: 1px solid rgba(128, 128, 128, 0.227);*/
+    border-bottom: 1px solid rgba(128, 128, 128, 0.227);
 }
 
 .top-setting, .middle-setting {
@@ -1330,25 +1330,13 @@ nav {
     width: 100%;
     margin:0;
     padding:0;
-}
-
-.setting > div small{
     font-family: 'PS Regular', sans-serif;
 }
+
 
 .top-setting {
     box-sizing: border-box;
     display: block;
-    border-radius: var(--border-radius);
-}
-
-@media screen and (max-width: 420px) {
-    .top-setting {
-        width: 95% !important;
-    }
-    .setting-arrow {
-        display: none;
-    }
 }
 
 .setting-img-container {
