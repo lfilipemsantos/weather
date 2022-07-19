@@ -1112,6 +1112,14 @@ function switch_indicator(id) {
     indicator.classList.add('selected');
 }
 
+function show_geo_location_button() {
+    document.getElementById("geo-location").style.display = "block";
+}
+
+function hide_geo_location_button() {
+    document.getElementById("geo-location").style.display = "none";
+}
+
 /*function switch_home_color() {
     if (localStorage["home_color"] == "on") {
         localStorage["home_color"] = "off"

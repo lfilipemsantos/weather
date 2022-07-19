@@ -706,6 +706,7 @@ body {
     border-radius: 12px;
     text-align: center;
     position: relative;
+    display: none;
 }
 
 #geo-location > div {
