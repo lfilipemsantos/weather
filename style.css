@@ -1306,6 +1306,8 @@ nav {
 }
 
 #settings {
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: var(--clr-container-secondary);
     width: 87%;
     margin: auto;
@@ -1321,6 +1323,10 @@ nav {
     max-width: 480px;
     position: relative;
     border-bottom: 1px solid rgba(128, 128, 128, 0.227);
+}
+
+.setting:last-child {
+    border-bottom: unset;
 }
 
 .top-setting, .middle-setting {
