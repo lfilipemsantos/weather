@@ -1027,6 +1027,7 @@ function get_weather_icon(hour, num) {
 }
 
 function show_top_settings() {
+    document.getElementById("settings").style.display = "block";
     bottoms = document.getElementsByClassName("bottom-setting");
     for (i=0; i<bottoms.length; i++) {
         bottoms[i].style.display = "none"
@@ -1064,6 +1065,7 @@ function load_fav_settings() {
 }
 
 function show_bottom_settings(setting) {
+    document.getElementById("settings").style.display = "none";
     middles = document.getElementsByClassName("top-setting");
     for (i=0; i<middles.length; i++) {
         middles[i].style.display = "none"
