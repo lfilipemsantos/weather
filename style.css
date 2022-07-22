@@ -1416,6 +1416,11 @@ nav {
     text-align: center;
 }
 
+.sobre > div > img {
+    border-radius: 50%;
+    width: 35%;
+}
+
 nav a {
     width: 18px;
     height: 6px;
