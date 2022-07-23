@@ -697,7 +697,7 @@ function switch_theme(id) {
     let theme_color = localStorage['color_theme']
     document.getElementById("theme").setAttribute('href', `themes/${id}-${theme_color}.css`);
 
-    var buttons = ["home", "favorites", "settings", "warning"]
+    var buttons = ["home", "favorites", "settings", "warning", "location", "back"]
 
     localStorage["theme"] = id;
 

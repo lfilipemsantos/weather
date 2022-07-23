@@ -672,7 +672,7 @@ body {
 
 #location {
     background-color: transparent;
-    color: white;
+    color: var(--clr-text);
     height: 47px;
     width: fit-content;
     padding-left: 15px;
