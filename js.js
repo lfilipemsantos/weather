@@ -1116,10 +1116,12 @@ function switch_indicator(id) {
 
 function show_geo_location_button() {
     document.getElementById("geo-location").style.display = "block";
+    document.getElementById("location-list-container").style.display = "block";
 }
 
 function hide_geo_location_button() {
     document.getElementById("geo-location").style.display = "none";
+    document.getElementById("location-list-container").style.display = "none";
 }
 
 /*function switch_home_color() {

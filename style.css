@@ -685,12 +685,18 @@ body {
 #location-list-container {
     margin-top: 15px;
     width: 90vw;
+    height: 100%;
     max-width: 500px;
-    margin-left: auto;
+    margin-left: 50%;
+    transform: translateX(-50%);
     margin-right: auto;
     color: var(--clr-container-on-secondary);
+    background-color: var(--clr-background);
     box-sizing: border-box;
     overflow: scroll;
+    position: fixed;
+    z-index: 1000;
+
 }
 
 #location-list {
@@ -701,7 +707,7 @@ body {
 }
 
 #geo-location {
-    height: 80px;
+    height: 50px;
     background-color: var(--clr-container-secondary);
     margin-bottom: 15px;
     border-radius: 12px;
@@ -718,11 +724,15 @@ body {
     width: fit-content;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center; 
 }
 
 #geo-location > div > p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-left: 10px;
+    margin-top: 2px;
 }
 
 #geo-location > div > img {
@@ -845,6 +855,7 @@ nav {
     transform: translateX(-50%);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
+    z-index: 1001;
 }
 
 #bottom-options > .inner {
