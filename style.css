@@ -683,6 +683,7 @@ body {
 }
 
 #location-list-container {
+    display: none;
     margin-top: 15px;
     width: 90vw;
     height: 100%;
