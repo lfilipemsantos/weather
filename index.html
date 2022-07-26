@@ -50,13 +50,10 @@
                         <i class="fa fa-search" style="margin-top: -2px; margin-left: 10px !important; color: gray;"></i>
                         <input autocomplete="off" id="location" type="text" onkeyup="search_location()" onfocus="show_geo_location_button()" onblur="hide_geo_location_button()" placeholder="Pesquisar...">
                     </div>
-                    <!--<div id="current-location-button" onclick="getLocation()">
-                        <img id="current-location-icon" src="location_w.svg" alt="location icon" style="height: 25px; margin-top: 13px; margin-right: 0px;">
-                    </div>-->
                 </div>
                 
                 <div id="location-list-container">
-                    <div id="geo-location" onclick="getLocation()">
+                    <div id="geo-location" onclick="clear_search_results();getLocation()">
                         <div>
                             <img id="location_icon" src="location_w.svg" alt="location icon">
                             <p>Usar a minha localização</p>

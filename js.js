@@ -143,7 +143,7 @@ function build_locations(locations) {
             var li = document.createElement('li');
             var div = document.createElement('div');
             div.textContent = locations[i]["localidade_distrito"][j]["local"] + ", " + locations[i]["nome_distrito"] + " ";
-            li.setAttribute("onclick", "clear_search_results();get_data(" + locations[i]['localidade_distrito'][j]['globalIdLocal'] + ")");
+            li.setAttribute("onmousedown", "clear_search_results();get_data(" + locations[i]['localidade_distrito'][j]['globalIdLocal'] + ")");
             li.classList.add("location-li");
             li.appendChild(div);
             document.getElementById("location-list").appendChild(li)
@@ -784,7 +784,6 @@ function change_color(obj, element, color, transparency) {
 
 
 function search_location() {
-    //switch_tab('location-tab');
     var input, filter, ul, li, div, i, txtValue;
     input = document.getElementById("location");
     filter = input.value.toUpperCase();
@@ -796,10 +795,8 @@ function search_location() {
         if (!filter) {
             li[i].style.display = "none";
             document.getElementById("search_container").style.borderRadius = "26px";
-            //document.getElementById("current-location-button").style.display = "inline-block";
         }
         else {
-            //document.getElementById("current-location-button").style.display = "none";
             if (txtValue.toUpperCase().indexOf(filter) > -1) {
                 li[i].style.display = "block";
                 document.getElementById("search_container").style.borderRadius = "12px";
@@ -818,6 +815,7 @@ function clear_search_results() {
         li[i].style.display = "none";
     }
     document.getElementById("search_container").style.borderRadius = "26px";
+    document.getElementById("location-list-container").style.display = "none";
 }
 
 
@@ -1121,7 +1119,6 @@ function show_geo_location_button() {
 
 function hide_geo_location_button() {
     document.getElementById("geo-location").style.display = "none";
-    document.getElementById("location-list-container").style.display = "none";
 }
 
 /*function switch_home_color() {
