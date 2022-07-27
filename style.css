@@ -397,7 +397,7 @@ body {
     background-color:  var(--clr-container-secondary);
     padding-top: 30px;
     padding-bottom: 30px;
-    width: 87%;
+    width: 94%;
     border-radius: 20px;
     height: fit-content;
     overflow-x: hidden;
@@ -432,7 +432,7 @@ body {
     box-sizing: border-box;
     display: block;
     height: fit-content;
-    width: 87%;
+    width: 94%;
     overflow-x: scroll;
     border-radius: 20px;
     background-color:  var(--clr-container-secondary);
@@ -755,7 +755,7 @@ body {
 
 
 .swipe_sections {
-    width: 87%;
+    width: 94%;
     margin-left: auto;
     margin-right: auto;
     overflow: auto;
@@ -917,7 +917,7 @@ nav {
     height: 32px;
     border-radius: 8px;
     margin-left: 20px;
-    border: 2px solid white;
+    border: 2px solid var(--clr-secondary);
     padding-left: 12px;
     padding-right: 12px;
     padding-top: 4px;
@@ -941,9 +941,9 @@ nav {
 }
 
 #indicators {
-    background-color:  var(--clr-background);;
+    background-color:  var(--clr-background);
     padding-bottom: 20px; 
-    padding-top: 20px;
+    padding-top: 0px;
     width: 100%;
     justify-content: center;
 }
@@ -1322,7 +1322,7 @@ nav {
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: var(--clr-container-secondary);
-    width: 87%;
+    width: 94%;
     margin: auto;
     border-radius: 12px;
     color: var(--clr-container-on-secondary); 
@@ -1675,9 +1675,8 @@ nav a {
 }
 
 #warnings_accordion {
-    width: 87%;
+    width: 94%;
     max-width: 400px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     overflow: hidden;
     background-color: var(--clr-container-primary);
@@ -1711,7 +1710,7 @@ nav a {
     right: 20px;
     width: 12px;
     height: 6px;
-    background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');
+    background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23var(--clr-secondary)99;" /></svg>');
     background-size: contain;
     transition: transform 0.4s;
 }
