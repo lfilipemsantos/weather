@@ -965,7 +965,7 @@ nav {
     #search_elements_container {
         position: fixed;
         margin-top: -80px;
-        margin-left: -12vh;
+        margin-left: -6vh;
     }
 
     #bottom-options {
@@ -975,6 +975,7 @@ nav {
         height: 100%;
         position: fixed;
         transform: unset;
+        z-index: 999;
     }
     
     #bottom-options > .inner {
