@@ -1324,6 +1324,7 @@ nav {
     padding-bottom: 10px;
     background-color: var(--clr-container-secondary);
     width: 94%;
+    max-width: 600px;
     margin: auto;
     border-radius: 12px;
     color: var(--clr-container-on-secondary); 
