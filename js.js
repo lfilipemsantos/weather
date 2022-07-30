@@ -399,7 +399,7 @@ function create_accordion_location(data_element) {
     var accordion_label = document.createElement('label');
     accordion_label.setAttribute("for", data_element["idAreaAviso"]);
     accordion_label.classList.add("accordion_label")
-    accordion_label.textContent = data_element["idAreaAviso"]
+    accordion_label.textContent = location_name_from_idarea(data_element["idAreaAviso"])
 
     var accordion_content = document.createElement('div');
     accordion_content.classList.add("accordion_content")
@@ -425,6 +425,14 @@ function in_favorites(id) {
     return false;
 }
 
+
+function location_name_from_idarea (idarea) {
+    for(var i = 0; i<locations.length; i++) {
+        if(locations[i]["idAreaAviso"] == idarea) {
+            return locations[i]["nome_distrito"];
+        }
+    }
+}
 
 function get_location_name(id) {
     for(var i = 0; i<locations.length; i++) {
