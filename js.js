@@ -133,6 +133,11 @@ function init() {
         localStorage["favorites"] = JSON.stringify(array);
     }
 
+    if(!(localStorage["weather_iconset"])) {
+        var array = [];
+        localStorage["weather_iconset"] = "3d";
+    }
+
     get_data(localStorage["local_id"]);
 }
 
@@ -553,10 +558,10 @@ function build_rows(days) {
 
             if(i==0 && j == 0) {
                 if (parseInt(hour.split(":"))<6 || parseInt(hour.split(":"))>20) {
-                    document.getElementById("current-weather").src = "icons_png/n" + parseInt(days[j][i]["idTipoTempo"]) + ".png";
+                    document.getElementById("current-weather").src = "icons_png/" + localStorage["weather_iconset"] + "n" + parseInt(days[j][i]["idTipoTempo"]) + ".png";
                 }
                 else {
-                    document.getElementById("current-weather").src = "icons_png/d" + parseInt(days[j][i]["idTipoTempo"]) + ".png";
+                    document.getElementById("current-weather").src = "icons_png/" + localStorage["weather_iconset"] + "d" + parseInt(days[j][i]["idTipoTempo"]) + ".png";
                 }
             }
 
@@ -1091,7 +1096,7 @@ function show_bottom_settings(setting) {
 }
 
 function reset_settings() {
-    var local_items = ["color_theme", "theme", "auto_theme", "nearest_location", "favorites", "local_id", "home_color"]
+    var local_items = ["color_theme", "theme", "auto_theme", "nearest_location", "favorites", "local_id", "home_color", "weather_iconset"]
     for (i=0; i<local_items.length; i++) {
         localStorage.removeItem(local_items[i]);
     }
