@@ -128,6 +128,10 @@ function init() {
         localStorage["local_id"] = 1182100
     }
 
+    if(!(localStorage["color_theme"])){
+        localStorage["color_theme"] = "mono"
+    }
+
     if(!(localStorage["favorites"])) {
         var array = [];
         localStorage["favorites"] = JSON.stringify(array);
