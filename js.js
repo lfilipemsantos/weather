@@ -413,7 +413,6 @@ function create_accordion_location(data_element) {
     var accordion_content = document.createElement('div');
     accordion_content.classList.add("accordion_content")
     accordion_content.setAttribute("id", "accordion_content_" + data_element["idAreaAviso"]);
-    //accordion_content.textContent = "Sem avisos."
     
     accordion_location.appendChild(accordion_input)
     accordion_location.appendChild(accordion_label)
@@ -540,12 +539,6 @@ function build_table(current_day, current_hour) {
 function build_rows(days) {
     for(j=0; j<days.length; j++) {
         var inner_id = "innerToday";
-        /*if(j==0){
-            var inner_id = "innerToday";
-        }
-        else if(j==1) {
-            var inner_id = "innerTomorrow";
-        }*/
         for(i=0;i<days[j].length;i++) {
             var hour_split = days[j][i]["dataPrev"].split("T",2)[1].split(":");
             var hour = hour_split[0] + ":" + hour_split[1];
@@ -1137,16 +1130,3 @@ function show_geo_location_button() {
 function hide_geo_location_button() {
     document.getElementById("geo-location").style.display = "none";
 }
-
-/*function switch_home_color() {
-    if (localStorage["home_color"] == "on") {
-        localStorage["home_color"] = "off"
-        //document.getElementById("dynamic_background").style.opacity = 0;
-        document.getElementById("switch_home_color_button").style.backgroundColor = "rgba(0,0,0,0)";
-    }
-    else {
-        localStorage["home_color"] = "on"
-        document.getElementById("dynamic_background").style.opacity = 1;
-        document.getElementById("switch_home_color_button").style.backgroundColor = "rgba(" + localStorage['color_theme'] + ", 0.5)";
-    }
-}*/
