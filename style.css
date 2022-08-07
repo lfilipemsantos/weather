@@ -651,10 +651,10 @@ body {
 
 #search_container {
     background-color: rgba(181, 181, 181, 0.2);
-    height: 50px;
+    height: 46px;
     margin-top: 0px;
-    border-radius: 26px;
-    width: 90vw;
+    border-radius: 8px;
+    width: 80vw;
     max-width: 500px;
     position: relative;
     padding-left: 10px;
