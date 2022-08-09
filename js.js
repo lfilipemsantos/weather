@@ -384,7 +384,7 @@ function build_warnings_accordion(data) {
             if (!document.getElementById(data[j]["idAreaAviso"])) {
                 create_accordion_location(data[j])
             }
-            document.getElementById("accordion_content_" + data[j]["idAreaAviso"]).textContent += dict[data[j]["awarenessLevelID"]] + " - " + data[j]["awarenessTypeName"]+ " - " + data[j]["text"] + "\r\n"
+            document.getElementById("accordion_content_" + data[j]["idAreaAviso"]).textContent += dict[data[j]["awarenessLevelID"]] + " - " + data[j]["awarenessTypeName"]+ "\r\n" + data[j]["text"] + "\r\n"
             console.log(data[j]["text"])
 
         }
