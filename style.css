@@ -685,7 +685,7 @@ body {
 #location-list-container {
     display: none;
     margin-top: 15px;
-    width: 90vw;
+    width: 100vw;
     height: 100%;
     max-width: 500px;
     margin-left: 50%;
@@ -701,6 +701,8 @@ body {
 }
 
 #location-list {
+    width: 90vw;
+    margin: auto;
     height: auto;
     list-style-type: none;
     border-radius: var(--border-radius);
@@ -708,7 +710,9 @@ body {
 }
 
 #geo-location {
+    width: 70vw;
     height: 50px;
+    margin: auto;
     background-color: var(--clr-container-secondary);
     margin-bottom: 15px;
     border-radius: 12px;
@@ -722,7 +726,7 @@ body {
     top: 50%;
     transform: translate(-50%,-50%);
     left: 50%;
-    width: fit-content;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
