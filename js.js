@@ -251,6 +251,7 @@ function switch_tab(id) {
         document.getElementById("tab-indicator-search").style.opacity = "0.6";
     }
     else if(id=="warnings-tab") {
+        clear_rows("warnings")
         search_warnings()
         var home_icon = document.getElementById("home_icon").src.replace("is_","not_");
         document.getElementById("home_icon").src = home_icon;
@@ -475,6 +476,9 @@ function clear_rows(tab) {
     else if (tab == "home") {
         var rows = ["innerToday", "innerTomorrow", "inner_next_days"];
         var rows = ["innerToday", "inner_next_days"];
+    }
+    else if (tab == "warnings") {
+        var rows = ["warnings_accordion"];
     }
     for (i=0; i<rows.length; i++) {
         var row = document.getElementById(rows[i]);
