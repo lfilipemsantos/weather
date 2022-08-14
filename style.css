@@ -687,9 +687,6 @@ body {
     margin-top: 15px;
     width: 100vw;
     height: 100%;
-    max-width: 500px;
-    margin-left: 50%;
-    transform: translateX(-50%);
     margin-right: auto;
     color: var(--clr-container-on-secondary);
     background-color: var(--clr-background);
