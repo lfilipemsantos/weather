@@ -1133,4 +1133,5 @@ function show_geo_location_button() {
 
 function hide_geo_location_button() {
     document.getElementById("geo-location").style.display = "none";
+    document.getElementById("location-list-container").style.display = "none";
 }
