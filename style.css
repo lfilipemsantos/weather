@@ -755,6 +755,28 @@ body {
     cursor: pointer;
 }
 
+#fav_icon_container {
+    width: 100%;
+    height: min-content;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 40px;
+    box-sizing: border-box;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 20px;
+}
+
+#fav-description {
+    display: block;
+    margin-top: -5px;
+    margin-left: 3px;
+    text-decoration: underline;
+}
 
 .swipe_sections {
     width: 94%;
@@ -836,6 +858,10 @@ nav {
         width: 100%;
         grid-row: 3 / span 2;
         flex-direction: column;
+    }
+
+    #fav_icon_container {
+        grid-column: 1 / span 2;
     }
 }
 
@@ -1141,29 +1167,6 @@ nav {
 
 #location-date-container {
     width: 100%;
-}
-
-#fav_icon_container {
-    width: 100%;
-    height: min-content;
-    cursor: pointer;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    min-width: 40px;
-    box-sizing: border-box;
-    padding-top: 0;
-    padding-right: 0;
-    padding-bottom: 20px;
-}
-
-#fav-description {
-    display: block;
-    margin-top: -5px;
-    margin-left: 3px;
-    text-decoration: underline;
 }
 
 #fav_icon {
