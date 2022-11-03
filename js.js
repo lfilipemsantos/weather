@@ -681,7 +681,7 @@ function build_next_days(data) {
         
         weather_icon.setAttribute("class", "nd_weather_icon");
         weather_icon.setAttribute("alt", "weather_icon");
-        weather_icon.src = "icons_png/d" + parseInt(data[i]["idTipoTempo"]) + ".png";
+        weather_icon.src = "icons/glass/d" + parseInt(data[i]["idTipoTempo"]) + ".png";
 
 
         row.classList.add('day_row');
