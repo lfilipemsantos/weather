@@ -1,12 +1,24 @@
-:root {
-    --clr-background: hsl(0, 0%, 7%);
-    --clr-text: hsl(0, 0%, 70%);
-    --clr-primary: hsl(0, 0%, 68%);
-    --clr-on-primary: hsl(0, 0%, 1%);
-    --clr-container-primary: hsl(0, 0%, 20%);
-    --clr-container-on-primary: hsl(0, 0%, 85%);
-    --clr-secondary: hsl(0, 0%, 80%);
-    --clr-on-secondary: hsl(60, 0%, 13%);
-    --clr-container-secondary: hsl(0, 0%, 10%);
-    --clr-container-on-secondary: hsl(0, 0%, 91%);
+:root {     
+    --clr-background:
+    hsl(0, 0%, 0%);
+    --clr-text:
+    hsl(0, 0%, 70%);
+    --clr-primary:
+    hsl(0, 0%, 68%);
+    --clr-on-primary:
+    hsl(0, 0%, 1%);
+    --clr-container-primary:
+    hsl(0, 0%, 20%);
+    --clr-container-on-primary:
+    hsl(0, 0%, 85%);
+    --clr-secondary:
+    hsl(0, 0%, 80%);
+    --clr-on-secondary:
+    hsl(60, 0%, 13%);
+    --clr-container-secondary:
+    rgb(27, 27, 29);
+    --clr-container-on-secondary:
+    hsl(0, 0%, 91%);
+    --clr-bottom-options:
+    rgba(27, 27, 29, 0.8);
 }
