@@ -862,6 +862,10 @@ nav {
     #fav_icon_container {
         grid-column: 1 / span 2;
     }
+
+    #grid_stats {
+        margin: 0 0 !important;
+    }
 }
 
 #bottom-options {
@@ -1572,9 +1576,10 @@ nav a {
   }
 
 #grid_stats{
-    margin: 0 20px;
+    margin: 0px 20px;
     display: grid;
-    grid-gap: 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
     grid-template-columns: repeat(2, 1fr);
 }
 
