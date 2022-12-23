@@ -19,7 +19,10 @@
 :root {
     --border-radius: 24px;
     --main-element-width: 85%;
-    --theme-color: rgba(245, 245, 245, 1)
+    --theme-color: rgba(245, 245, 245, 1);
+    --bkg-cloudy: linear-gradient(0deg,#e5dee2,#e5dee2 20%,#aba2b4 60%,#59516e 90%,#59516e);
+    --bkg-rainy: linear-gradient(0deg,#2a6377,#2a6377 20%,#214c61 60%,#244251 90%,#102b37);
+    --bkg-sunny: linear-gradient(0deg,#d8eeee,#d8eeee 25%,#64adc9 65%,#005986 90%,#005986);
 }
 
 * {
@@ -172,7 +175,6 @@ body {
 }
 
 .date_prev {
-    display: none !important;
     width: 40px;
     font-size: 0.9rem;
     margin-right: 20px;
@@ -204,15 +206,6 @@ body {
 
 }
 
-.nd_divider {
-    background-color: rgb(67, 67, 67);
-    height: 0px;
-    border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .day_row > p {
     width: 100%;
 }
@@ -222,7 +215,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
     flex-grow: 2;
 }
@@ -231,7 +224,7 @@ body {
     display: inline-block;
 }
 
-.date_container > small{
+.date_container > small {
     max-width: 200px;
 }
 
@@ -274,7 +267,7 @@ body {
 .day_row {
     width: 100%;
     max-width: 350px;
-    height: 50px;
+    height: 47px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 5px;
@@ -299,79 +292,6 @@ body {
     }
 }
 
-
-/*@media screen and (min-width: 1600px) {
-    #inner_next_days {
-        padding: 0;
-        display: flex;
-        flex-direction: row;
-        overflow-x: scroll;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        padding-left: 0px;
-        padding-right: 0px;
-        width: 100% !important;
-        max-width: unset;
-    }
-
-    .day_row {
-        flex-direction: column;
-        flex-shrink: 0;
-        height: 350px;
-        width: 90px;
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-
-    .date_container {
-        flex-direction: column;
-        text-align: center;
-        max-height: 50px;
-        font-size: 1rem;
-    }
-
-    .date_container > small{
-        margin-right: auto;
-        margin-left: auto;
-    }
-
-    .temp_container {
-        flex-direction: row;
-    }
-
-    .icon_container {
-        height: 60px;
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .nd_weather_icon{
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    .date_container {
-        width: 100%;
-    }
-
-    .temp_container {
-        width: 60%;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-
-    .temp_container > p {
-        width: 50%;
-        text-align: center;
-    }
-
-    .date_prev {
-        margin: 0;
-    }
-}*/
-
 .inner {
     width: max-content;
     padding-left: 10px;
@@ -391,12 +311,15 @@ body {
 }
 
 #today_row {
+    box-sizing: border-box;
+    grid-column: 1 / span 2;
+    grid-row: 2;
     display: block;
     padding-bottom: 40px;
     background-color:  var(--clr-container-secondary);
     padding-top: 15px;
     padding-bottom: 30px;
-    width: 94%;
+    width: 100%;
     border-radius: 20px;
     height: fit-content;
     overflow-x: hidden;
@@ -428,10 +351,12 @@ body {
 }
 
 #next_days_row {
+    grid-column: 1 / span 2;
+    grid-row: 3;
     box-sizing: border-box;
     display: block;
     height: fit-content;
-    width: 94%;
+    width: 100%;
     overflow-x: scroll;
     border-radius: 20px;
     background-color:  var(--clr-container-secondary);
@@ -708,7 +633,7 @@ body {
 }
 
 #geo-location {
-    width: 40ch;
+    width: 250px;
     height: 50px;
     margin-left: 50%;
     transform: translateX(-50%);
@@ -717,6 +642,11 @@ body {
     border-radius: 18px;
     text-align: center;
     display: none;
+}
+
+#geo-location:hover {
+    cursor: pointer;
+    filter:brightness(120%) ;
 }
 
 #geo-location > div {
@@ -733,14 +663,14 @@ body {
 }
 
 #geo-location > div > p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-left: 10px;
-    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 #geo-location > div > img {
-    height: 1.4rem;
-    margin-top: 2px;
+    height: 1.2rem;
+    margin-bottom: 2px;
 }
 
 .location-li {
@@ -818,6 +748,10 @@ nav {
 #cards {
     display: grid;
     grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    width: 345px;
+    margin: auto;
+    justify-items: center;
 }
 
 .card_title {
@@ -830,55 +764,6 @@ nav {
     color: var(--clr-text);
     opacity: 0.7;
     font-weight: normal;
-}
-
-@media screen and (min-width: 700px) {
-
-    #main-info, #today_row, #swipe_section {
-        margin: 0;
-    }
-
-    #indicators {
-        display: none;
-    }
-
-    #cards {
-        grid-template-columns: repeat(2, 1fr);
-        margin: 20px;
-        padding-bottom: 50px;
-    }
-
-    #main-info {
-        grid-column: 1 / span 2;
-        grid-row: 1;
-    }
-
-    #today_row {
-        width: 100%;
-        grid-column: 1 / span 2;
-        grid-row: 2;
-    }
-
-    #swipe_sections {
-        width: 100%;
-        height: 100%;
-        grid-row: 3 / span 2;
-        flex-direction: column;
-    }
-
-    #next_days_row {
-        width: 100%;
-        grid-row: 3 / span 2;
-        flex-direction: column;
-    }
-
-    #fav_icon_container {
-        grid-column: 1 / span 2;
-    }
-
-    #grid_stats {
-        margin: 0 0 !important;
-    }
 }
 
 #bottom-options {
@@ -1506,45 +1391,6 @@ nav a {
     transform: translateX(-50%);
 }
 
-.widgets {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(1, 140px);
-    grid-gap: 15px;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-    padding: 30px;
-    border-radius: 11px;
-    background-color: rgb(24, 24, 24);
-}
-
-@media screen and (min-width: 350px) {
-    .widgets {
-        grid-template-columns: repeat(2, 140px);
-    }
-    .widget-temp {
-        grid-column: 1 / span 2;
-        width: 275px !important; 
-    }
-}
-
-@media screen and (min-width: 500px) {
-    .widgets {
-        grid-template-columns: repeat(3, 140px);
-    }
-}
-
-@media screen and (min-width: 850px) {
-    .widgets {
-        grid-template-columns: repeat(5, 140px);
-    }
-    .widget-temp {
-        grid-column: 1;
-        width: 120px !important; 
-    }
-}
 
 #dynamic_background {
     width: 100%;
@@ -1609,11 +1455,14 @@ nav a {
 }
 
 .stat {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin-top: 12px;
-    margin-bottom: 10px;
+    width: 162.5px;
+    height: 162.5px;
+    padding-top: 10px;
+    background-color:  var(--clr-container-secondary);
+    border-radius: 20px;
 }
 
 .stat_value {
@@ -1631,6 +1480,8 @@ nav a {
 }
 
 #main-info {
+    grid-column: 1 / span 2;
+    grid-row: 1;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -1705,15 +1556,6 @@ nav a {
     font-size: 1.2em;
 }
 
-
-@media screen and (min-width: 800px) {
-    #main-info {
-        max-width: 800px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
 #warnings_accordion {
     width: 94%;
     max-width: 400px;
@@ -1776,4 +1618,84 @@ nav a {
 
 .accordion_input:checked ~ .accordion_label::after {
   transform: translateY(-50%) rotate(0.5turn);
+}
+
+
+@media screen and (min-width: 660px) {
+    #main-info, #today_row, #swipe_section {
+        margin: 0;
+    }
+
+    #cards {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-rows: auto repeat(6, 180px);
+        width: 580px;
+        padding-bottom: 50px;
+    }
+
+    #main-info {
+        width: 100%;
+        height: 100%;
+        grid-column: 1 / span 3;
+        grid-row: 1;
+    }
+
+    #today_row {
+        height: 100%;
+        grid-column: 1 / span 3;
+        grid-row: 2;
+    }
+
+    #next_days_row {
+        grid-column: 1 / span 2;
+        grid-row: 3 / span 3;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    #fav_icon_container {
+        grid-column: 1 / span 2;
+    }
+
+    .stat {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+    #cards {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-template-rows: auto auto repeat(6, 180px);
+        width: 780px;
+        padding-bottom: 50px;
+    }
+
+    #main-info {
+        grid-column: 1 / span 4;
+        grid-row: 1;
+    }
+
+    #today_row {
+        height: 100%;
+        grid-column: 1 / span 4;
+        grid-row: 2;
+    }
+
+    #next_days_row {
+        grid-column: 1 / span 2;
+        grid-row: 3 / span 3;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    #fav_icon_container {
+        grid-column: 1 / span 2;
+    }
+
+    .stat {
+        width: 180px;
+        height: 180px;
+    }
 }

@@ -809,12 +809,10 @@ function search_location() {
         txtValue = div.textContent || a.innerText;
         if (!filter) {
             li[i].style.display = "none";
-            document.getElementById("search_container").style.borderRadius = "26px";
         }
         else {
             if (txtValue.toUpperCase().indexOf(filter) > -1) {
                 li[i].style.display = "block";
-                document.getElementById("search_container").style.borderRadius = "12px";
             } else {
                 li[i].style.display = "none";
             }
@@ -829,7 +827,6 @@ function clear_search_results() {
     for (i = 0; i < li.length; i++) {
         li[i].style.display = "none";
     }
-    document.getElementById("search_container").style.borderRadius = "26px";
     document.getElementById("location-list-container").style.display = "none";
 }
 

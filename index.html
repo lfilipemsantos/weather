@@ -10,7 +10,7 @@
         <link rel="apple-touch-icon" href="3d_logo.png">
         <link rel="icon" href="3d_logo.png">
         <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" id="theme" type="text/css" href="themes/dark-blue.css">
+        <link rel="stylesheet" id="theme" type="text/css" href="themes/dark-mono.css">
         <script type='text/javascript' src='js.js'></script>
         <script type='text/javascript' src='locations.js'></script>
         <script type='text/javascript' src='weather_types.js'></script>
@@ -84,7 +84,6 @@
                             <p class="table-text" id="text-tMax" style="line-height: 16px;font-size:16px;display: inline-block; vertical-align: bottom; margin-left: auto; margin-right: 3px;"></p>
                             <p class="table-text" id="text-tMin" style="line-height: 16px;font-size:16px;display: inline-block; vertical-align: bottom; opacity: 0.5; margin-right: auto; margin-left: 3px;"></p>
                         </div>
-    
                     </div>
     
                
@@ -93,50 +92,41 @@
                         <div class="inner" id="innerToday"></div>
                     </div>
 
-                    <div id="grid_stats">
-                        <div>
-                            <div class="stat">
-                                <div class="card_title">Temperatura</div>
-                                <div class="stat_value" id="text-temp"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="stat">
-                                <div class="card_title">Índice UV</div>
-                                <div class="stat_value" id="text-iUv"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="stat">
-                                <div class="card_title">Precipitação</div>
-                                <div class="stat_value" id="text-probabilidadePrecipita"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="stat">
-                                <div class="card_title">Vento</div>
-                                <div class="stat_value" id="text-vento-vv"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="stat">
-                                <div class="card_title">Direção Vento</div>
-                                <div class="stat_value" id="text-vento-dd"></div>
-                            </div>
-                        </div>
-                    </div>
-                    
+
                     <div class="rows" id="next_days_row">
                         <h2 class="card_title">Próximos 10 dias</h2>
                         <div class="inner" id="inner_next_days"></div>
                     </div>
+
+
+                    <div class="stat" id="temp-stat">
+                        <div class="card_title">Temperatura</div>
+                        <div class="stat_value" id="text-temp"></div>
+                    </div>
+                    <div class="stat" id="uv-stat">
+                        <div class="card_title">Índice UV</div>
+                        <div class="stat_value" id="text-iUv"></div>
+                    </div>
+                    <div class="stat" id="rain-stat">
+                        <div class="card_title">Precipitação</div>
+                        <div class="stat_value" id="text-probabilidadePrecipita"></div>
+                    </div>
+                    <div class="stat" id="wind-stat">
+                        <div class="card_title">Vento</div>
+                        <div class="stat_value" id="text-vento-vv"></div>
+                    </div>
+                    <div class="stat" id="wind-dir-stat">
+                        <div class="card_title">Direção Vento</div>
+                        <div class="stat_value" id="text-vento-dd"></div>
+                    </div>
+                    
 
                     <div id="fav_icon_container" onclick="add_favorite('1999')">
                         <img id="fav_icon" src="not_favorite_w.svg" alt="favorite icon">
                         <span id="fav-description"></span>
                     </div>
                 </div>
-            
+
                     
             </section>
     
@@ -272,6 +262,9 @@
                             <div class="color_button" id="mono_color" onclick="switch_colors('mono', true)" style="background-color: rgb(79, 79, 79);">
                                 <div>MONO</div>
                             </div>
+                            <div class="color_button" id="ios_color" onclick="switch_colors('ios', true)" style="background-color: rgb(79, 79, 79);">
+                                <div>iOS</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -385,21 +378,6 @@
                     prevScrollpos = currentScrollPos;
                 }
             }
-        </script>
-        <script>
-            document.getElementById('swipe_sections').addEventListener('scroll', function() {
-                var el = document.getElementById('swipe_sections');
-                if (el.scrollLeft < window.innerWidth / 2) {
-                    switch_indicator('i_s1')
-                }
-                else if (el.scrollLeft > window.innerWidth * 2 - window.innerWidth/2) {
-                    switch_indicator('i_s3')
-                }
-                else if (el.scrollLeft > window.innerWidth - window.innerWidth/2) {
-                    switch_indicator('i_s2')
-                }
-            })
-
         </script>
         <!--<script>
             var background = document.getElementById('dynamic_background');
