@@ -507,6 +507,7 @@ function build_table(current_day, current_hour) {
 
     if(current_hour) {
         document.getElementById("table_temp").textContent = parseInt(current_hour["tMed"]);
+        document.getElementById("sticky-info").textContent = parseInt(current_hour["tMed"]) + " | " + weather_types[0][current_hour["idTipoTempo"]]["PT"];
         document.getElementById("weather-info-text").textContent = weather_types[0][current_hour["idTipoTempo"]]["PT"];
         text = document.getElementsByClassName("table-text")
         document.getElementById("text-iUv").textContent = Math.round(current_day["iUv"]);
@@ -556,16 +557,6 @@ function build_rows(days) {
             weather_icon.setAttribute("class", "weather_icon");
             weather_icon.setAttribute("alt", "weather_icon");
             weather_icon_container.setAttribute("class", "weather_icon_container");
-
-
-            if(i==0 && j == 0) {
-                if (parseInt(hour.split(":"))<6 || parseInt(hour.split(":"))>20) {
-                    document.getElementById("current-weather").src = "icons/" + localStorage["weather_iconset"] + "n" + parseInt(days[j][i]["idTipoTempo"]) + ".svg";
-                }
-                else {
-                    document.getElementById("current-weather").src = "icons/" + localStorage["weather_iconset"] + "d" + parseInt(days[j][i]["idTipoTempo"]) + ".svg";
-                }
-            }
 
             if (parseInt(hour.split(":"))<6 || parseInt(hour.split(":"))>20) {
                 weather_icon.src = "icons/glass/n" + parseInt(days[j][i]["idTipoTempo"]) + ".png";

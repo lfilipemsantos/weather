@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt">
     <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         <title>Weather</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <meta name="description" content="Weather web application with data from IPMA.">
@@ -60,20 +61,16 @@
                         </div>
                     </div>
                     <ul id="location-list"></ul>
-                </div>
-                <div style="opacity: 1; z-index: 9999;position:sticky; top:-60px; background-color: black; display: flex; flex-direction: column; width: 100%; padding-top: 70px; padding-bottom: 0; box-sizing: border-box; text-align: center;">
-                    <div id="location-date-container">
-                        <p id="location-text"></p>
-                        <p id="date-text"></p>
-                    </div>
-                </div>
-    
+                </div>    
+                <div id="location-text-container">
+                    <p id="location-text"></p>
+                    <p id="sticky-info"></p></div>
                 <section id="cards">
                     <div id="main-info">
-                        <div style="display: flex; flex-direction: row; align-items: center; width: 85%; margin: auto; height: 150px;">
-                            <div id="main-image-container" style="display: none;">
-                                <img id="current-weather" style="height: 100%; margin-left: auto; margin-right: auto;">
-                            </div>
+                        <div id="location-date-container">
+                            <p id="date-text"></p>
+                        </div>
+                        <div style="display: flex; flex-direction: row; align-items: center; width: 85%; margin: auto; height: 90px;">
                             
                             <div id="main-weather-info-container">
                                 <h4 id="table_temp" colspan="2"></h4>
@@ -403,5 +400,15 @@
                 }
             });
         </script>-->
+        <script>
+            $(document).ready(function(){
+                $(window).scroll(function(){
+                    $("#max-min-container").css("opacity", 1 - $(window).scrollTop() / $('#main-info').height());
+                    $("#table_temp").css("opacity", 1 - $(window).scrollTop() / $('#main-info').height());
+                    $("#weather-info-text").css("opacity", 1 - $(window).scrollTop() / $('#main-info').height());
+                    $("#sticky-info").css("opacity", 0 + $(window).scrollTop() / $('#main-info').height());
+                });
+            });
+        </script>
     </body>
 </html>
