@@ -1096,7 +1096,7 @@ nav {
 
 .fav_row {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: auto;
     overflow-y: hidden;
     overflow-x: hidden;
     box-sizing: border-box;
@@ -1190,7 +1190,7 @@ nav {
 }
 
 .fav_info_container {
-    padding-top: 20px;
+    padding-top: 15px;
     text-align: left;
 }
 
@@ -1216,6 +1216,7 @@ nav {
 .fav_temp_container > p{
     line-height: 24px;
     margin-top: 15px;
+    font-family: 'PS Bold', sans-serif;
 }
 
 #no_fav_div {

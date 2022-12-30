@@ -407,8 +407,8 @@
                     $("#table_temp").css("opacity", 1 - $(window).scrollTop() / $('#main-info').height());
                     $("#weather-info-text").css("opacity", 1 - $(window).scrollTop() / $('#main-info').height());
                     $("#sticky-info").css("opacity", 0 + ($(window).scrollTop() -100) / $('#main-info').height());
-                    $("#today_row").css("opacity", 1 - ($(window).scrollTop() - 270) / $('#main-info').height());
-                    $("#next_days_row").css("opacity", 1 - ($(window).scrollTop() - 480) / $('#main-info').height());
+                    $("#today_row").css("opacity", 1 - ($(window).scrollTop() - 270) / $('#today_row').height());
+                    $("#next_days_row").css("opacity", 1 - ($(window).scrollTop() - 480) / $('#next_days_row').height());
                     $("#temp-stat").css("opacity", 1 - ($(window).scrollTop() - 1020) / $('#main-info').height());
                     $("#uv-stat").css("opacity", 1 - ($(window).scrollTop() - 1020) / $('#main-info').height());
                     $("#rain-stat").css("opacity", 1 - ($(window).scrollTop() - 1180) / $('#main-info').height());
