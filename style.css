@@ -273,7 +273,7 @@ body {
 .day_row {
     width: 100%;
     max-width: 350px;
-    height: 47px;
+    height: 40px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 5px;
@@ -367,6 +367,7 @@ body {
     background-color:  var(--clr-container-secondary);
     padding: 30px;
     padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 #table_next_days {
