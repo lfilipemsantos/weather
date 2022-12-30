@@ -702,9 +702,12 @@ body {
     text-align: center;
     min-width: 40px;
     box-sizing: border-box;
-    padding-top: 0;
+    padding-top: 10px;
     padding-right: 0;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    grid-row: 7;
+    grid-column: 1 / span 2;
+    z-index: 9999;
 }
 
 #fav-description {
