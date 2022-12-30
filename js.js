@@ -933,9 +933,9 @@ function build_favorites() {
             fav_location.textContent = favorites[i]["name"]
             fav_location_container.appendChild(fav_location);
 
-            var icon = document.createElement("img");
-            icon.setAttribute("id", "icon_" + favorites[i]["id"])
-            fav_icon_container.appendChild(icon);
+            //var icon = document.createElement("img");
+            //icon.setAttribute("id", "icon_" + favorites[i]["id"])
+            //fav_icon_container.appendChild(icon);
 
             var weather_info = document.createElement('small');
             weather_info.setAttribute("id", "info_" + favorites[i]["id"])
