@@ -96,6 +96,11 @@ body {
     overflow-y: scroll !important;
 }
 
+.card {
+    position: sticky;
+    top: 120px
+}
+
 .row {
     box-sizing: border-box;
     width: 70px;
@@ -834,7 +839,8 @@ nav {
 }
 
 .tab {
-    margin-bottom: 85px;
+    padding-bottom: 250px;
+    min-height: 100vh;
 }
 
 .filters_container {
@@ -1053,7 +1059,7 @@ nav {
     top: 0px;
     z-index: 9999;
     background-color: black;
-    box-shadow: 0px 10px 20px var(--clr-background);
+    box-shadow: 0px 5px 10px 0px var(--clr-background);
 }
 
 #location-text {
@@ -1088,24 +1094,25 @@ nav {
 }
 
 .fav_row {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     overflow-y: hidden;
     overflow-x: hidden;
     box-sizing: border-box;
     width: 100%;
-    height: 190px;
+    max-width: 300px;
+    height: 100px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 16px;
     padding-right: 16px;
-    border-radius: 12px;
+    border-radius: 20px;
     background-color: var(--clr-container-secondary);
     cursor: pointer;
     box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.4);
 }
 
-@media screen and (min-width: 350px) {
+@media screen and (min-width: 700px) {
     #fav_container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1168,9 +1175,9 @@ nav {
     display: block;
     height: 30px;
     width: 100%;
-    padding-top: 10px;
+    padding-top: 5px;
     font-size: 1.1rem;
-    text-align: center;
+    text-align: left;
     font-family: 'PS Bold', sans-serif;
 }
 
@@ -1182,7 +1189,8 @@ nav {
 }
 
 .fav_info_container {
-    text-align: center;
+    padding-top: 20px;
+    text-align: left;
 }
 
 .fav_info_container > small {
@@ -1196,9 +1204,12 @@ nav {
 
 .fav_temp_container {
     display: inline-block;
-    height: 50px;
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    font-size: 30px;
+    height: 60px;
     width: 100%;
-    text-align: center;
+    text-align: right;
 }
 
 .fav_temp_container > p{

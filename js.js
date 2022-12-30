@@ -918,8 +918,8 @@ function build_favorites() {
             var fav_temp_container = document.createElement('div')
             fav_temp_container.classList.add("fav_temp_container");
             
-            var fav_icon_container = document.createElement('div')
-            fav_icon_container.classList.add("fav_row_icon_container");
+            /*var fav_icon_container = document.createElement('div')
+            fav_icon_container.classList.add("fav_row_icon_container");*/
 
             var weather_info_container = document.createElement('div')
             weather_info_container.classList.add("fav_info_container");
@@ -947,9 +947,9 @@ function build_favorites() {
 
 
             fav_row.appendChild(fav_location_container);
-            fav_row.appendChild(weather_info_container);
             fav_row.appendChild(fav_temp_container);
-            fav_row.appendChild(fav_icon_container);
+            fav_row.appendChild(weather_info_container);
+            //fav_row.appendChild(fav_icon_container);
 
             set_current_temp(favorites[i]["id"]);
 

@@ -84,23 +84,23 @@
                     </div>
     
                
-                    <div class="rows" id="today_row">
+                    <div class="rows card" id="today_row">
                         <h2 class="card_title">Previsão horária</h2>
                         <div class="inner" id="innerToday"></div>
                     </div>
 
 
-                    <div class="rows" id="next_days_row">
+                    <div class="rows card" id="next_days_row">
                         <h2 class="card_title">Próximos 10 dias</h2>
                         <div class="inner" id="inner_next_days"></div>
                     </div>
 
-                    <div class="stat" id="temp-stat">
+                    <div class="stat card" id="temp-stat">
                         <div class="card_title">Temperatura</div>
                         <div class="stat_value" id="text-temp"></div>
                     </div>
 
-                    <div class="stat" id="uv-stat">
+                    <div class="stat card" id="uv-stat">
                         <div class="card_title">Índice UV</div>
                         <div class="stat_value" id="text-iUv"></div>
                         <div id="description-iUv">Baixo</div>
@@ -109,17 +109,17 @@
                         </div>
                     </div>
 
-                    <div class="stat" id="rain-stat">
+                    <div class="stat card" id="rain-stat">
                         <div class="card_title">Precipitação</div>
                         <div class="stat_value" id="text-probabilidadePrecipita"></div>
                     </div>
 
-                    <div class="stat" id="wind-stat">
+                    <div class="stat card" id="wind-stat">
                         <div class="card_title">Vento</div>
                         <div class="stat_value" id="text-vento-vv"></div>
                     </div>
 
-                    <div class="stat" id="wind-dir-stat">
+                    <div class="stat card" id="wind-dir-stat">
                         <div class="card_title">Direção Vento</div>
                         <div class="stat_value" id="text-vento-dd"></div>
                     </div>
@@ -407,6 +407,8 @@
                     $("#table_temp").css("opacity", 1 - $(window).scrollTop() / $('#main-info').height());
                     $("#weather-info-text").css("opacity", 1 - $(window).scrollTop() / $('#main-info').height());
                     $("#sticky-info").css("opacity", 0 + $(window).scrollTop() / $('#main-info').height());
+                    $("#today_row").css("opacity", 1 - ($(window).scrollTop() - 150) / $('#main-info').height());
+                    $("#next_days_row").css("opacity", 1 - ($(window).scrollTop() - 450) / $('#main-info').height());
                 });
             });
         </script>
