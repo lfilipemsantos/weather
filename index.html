@@ -406,11 +406,13 @@
                     $("#max-min-container").css("opacity", 1 - $(window).scrollTop() / $('#main-info').height());
                     $("#table_temp").css("opacity", 1 - $(window).scrollTop() / $('#main-info').height());
                     $("#weather-info-text").css("opacity", 1 - $(window).scrollTop() / $('#main-info').height());
-                    $("#sticky-info").css("opacity", 0 + $(window).scrollTop() / $('#main-info').height());
-                    $("#today_row").css("opacity", 1 - ($(window).scrollTop() - 150) / $('#main-info').height());
-                    $("#next_days_row").css("opacity", 1 - ($(window).scrollTop() - 450) / $('#main-info').height());
-                    $("#temp-stat").css("opacity", 1 - ($(window).scrollTop() - 950) / $('#main-info').height());
-                    $("#uv-stat").css("opacity", 1 - ($(window).scrollTop() - 950) / $('#main-info').height());
+                    $("#sticky-info").css("opacity", 0 + ($(window).scrollTop() -100) / $('#main-info').height());
+                    $("#today_row").css("opacity", 1 - ($(window).scrollTop() - 270) / $('#main-info').height());
+                    $("#next_days_row").css("opacity", 1 - ($(window).scrollTop() - 480) / $('#main-info').height());
+                    $("#temp-stat").css("opacity", 1 - ($(window).scrollTop() - 1020) / $('#main-info').height());
+                    $("#uv-stat").css("opacity", 1 - ($(window).scrollTop() - 1020) / $('#main-info').height());
+                    $("#rain-stat").css("opacity", 1 - ($(window).scrollTop() - 1180) / $('#main-info').height());
+                    $("#wind-stat").css("opacity", 1 - ($(window).scrollTop() - 1180) / $('#main-info').height());
                 });
             });
         </script>
