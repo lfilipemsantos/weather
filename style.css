@@ -368,6 +368,7 @@ body {
     padding: 30px;
     padding-top: 15px;
     padding-bottom: 15px;
+    filter: blur(-1.5px);
 }
 
 #table_next_days {
