@@ -1009,7 +1009,7 @@ function set_current_temp(id) {
                     var current_time = data[i]["dataPrev"].split("T",2)[1].split(":", 1)[0];
                     if (current_time == time) {
                         var icon = document.getElementById("icon_"+ id);
-                        icon.src = get_weather_icon(current_time, data[i]["idTipoTempo"]);
+                        //icon.src = get_weather_icon(current_time, data[i]["idTipoTempo"]);
                         document.getElementById("temp_"+ id).textContent = parseInt(data[i]["tMed"]) + "ºC";
                         document.getElementById("info_"+ id).textContent = weather_types[0][data[i]["idTipoTempo"]]["PT"];
                     }
