@@ -164,6 +164,7 @@ function build_locations(locations) {
 
 function switch_tab(id) {
     var tabs = ["home-tab", "settings-tab", "favorites-tab", "warnings-tab"];
+    var buttons = ["home-button", "warning-button", "settings-button", "favorites-button"]
     show_bottom();
     for (let i = 0; i < tabs.length; i++) {
         if(tabs[i]!=id){
@@ -172,6 +173,9 @@ function switch_tab(id) {
             setTimeout(() => { document.getElementById(tabs[i]).style.display = "none"; document.getElementById(tabs[i]).classList.remove("out");
             }, 150);
         }
+    }
+    for (let i = 0; i < buttons.length; i++) {
+        document.getElementById(buttons[i]).classList.remove("btn-selected");
     }
 
     tab_buttons = document.getElementsByClassName("tab-indicator");
@@ -182,34 +186,36 @@ function switch_tab(id) {
     }
 
     if(id=="home-tab") {
-        var home_icon = document.getElementById("home_icon").src.replace("not_","is_");
-        document.getElementById("home_icon").src = home_icon;
+        document.getElementById("home-button").classList.add("btn-selected");
+        //var home_icon = document.getElementById("home_icon").src.replace("not_","is_");
+        //document.getElementById("home_icon").src = home_icon;
         //var search_icon = document.getElementById("search_icon").src.replace("is_","not_");
         //document.getElementById("search_icon").src = search_icon;
-        var settings_icon = document.getElementById("settings_icon").src.replace("is_","not_");
+        /*var settings_icon = document.getElementById("settings_icon").src.replace("is_","not_");
         document.getElementById("settings_icon").src = settings_icon;
         var favorites_icon = document.getElementById("favorites_icon").src.replace("is_","not_");
         document.getElementById("favorites_icon").src = favorites_icon;
         var warning_icon = document.getElementById("warning_icon").src.replace("is_","not_");
         document.getElementById("warning_icon").src = warning_icon;
 
-        document.getElementById("home-button").setAttribute("onclick", "window.location.reload()")
-        document.getElementById("home-button").classList.add("selected");
+        //document.getElementById("home-button").setAttribute("onclick", "window.location.reload()")
+        //document.getElementById("home-button").classList.add("selected");*/
         document.getElementById("tab-indicator-home").style.transform = "scaleX(1)";
         document.getElementById("tab-indicator-home").style.opacity = "0.6";
     }
     else if(id=="settings-tab") {
         show_top_settings();
-        var home_icon = document.getElementById("home_icon").src.replace("is_","not_");
-        document.getElementById("home_icon").src = home_icon;
+        document.getElementById("settings-button").classList.add("btn-selected");
+        //var home_icon = document.getElementById("home_icon").src.replace("is_","not_");
+        //document.getElementById("home_icon").src = home_icon;
         //var search_icon = document.getElementById("search_icon").src.replace("is_","not_");
         //document.getElementById("search_icon").src = search_icon;
-        var settings_icon = document.getElementById("settings_icon").src.replace("not_","is_");
+        /*var settings_icon = document.getElementById("settings_icon").src.replace("not_","is_");
         document.getElementById("settings_icon").src = settings_icon;
         var favorites_icon = document.getElementById("favorites_icon").src.replace("is_","not_");
         document.getElementById("favorites_icon").src = favorites_icon;
         var warning_icon = document.getElementById("warning_icon").src.replace("is_","not_");
-        document.getElementById("warning_icon").src = warning_icon;
+        document.getElementById("warning_icon").src = warning_icon;*/
 
         document.getElementById("home-button").setAttribute("onclick", "switch_tab('home-tab')")
         document.getElementById("settings-button").classList.add("selected");
@@ -219,16 +225,17 @@ function switch_tab(id) {
     else if(id=="favorites-tab") {
         clear_rows("favorites")
         build_favorites();
-        var home_icon = document.getElementById("home_icon").src.replace("is_","not_");
-        document.getElementById("home_icon").src = home_icon;
+        document.getElementById("favorites-button").classList.add("btn-selected");
+        //var home_icon = document.getElementById("home_icon").src.replace("is_","not_");
+        //document.getElementById("home_icon").src = home_icon;
         //var search_icon = document.getElementById("search_icon").src.replace("is_","not_");
         //document.getElementById("search_icon").src = search_icon;
-        var settings_icon = document.getElementById("settings_icon").src.replace("is_","not_");
+        /*var settings_icon = document.getElementById("settings_icon").src.replace("is_","not_");
         document.getElementById("settings_icon").src = settings_icon;
         var favorites_icon = document.getElementById("favorites_icon").src.replace("not_","is_");
         document.getElementById("favorites_icon").src = favorites_icon;
         var warning_icon = document.getElementById("warning_icon").src.replace("is_","not_");
-        document.getElementById("warning_icon").src = warning_icon;
+        document.getElementById("warning_icon").src = warning_icon;*/
 
         document.getElementById("home-button").setAttribute("onClick", "switch_tab('home-tab')")
         document.getElementById("tab-indicator-favorites").style.transform = "scaleX(1)";
@@ -236,16 +243,16 @@ function switch_tab(id) {
     }
     else if(id=="location-tab") {
         document.getElementById("location").focus();
-        var home_icon = document.getElementById("home_icon").src.replace("is_","not_");
-        document.getElementById("home_icon").src = home_icon;
+        //var home_icon = document.getElementById("home_icon").src.replace("is_","not_");
+        //document.getElementById("home_icon").src = home_icon;
         //var search_icon = document.getElementById("search_icon").src.replace("not_","is_");
         //document.getElementById("search_icon").src = search_icon;
-        var settings_icon = document.getElementById("settings_icon").src.replace("is_","not_");
+        /*var settings_icon = document.getElementById("settings_icon").src.replace("is_","not_");
         document.getElementById("settings_icon").src = settings_icon;
         var favorites_icon = document.getElementById("favorites_icon").src.replace("is_","not_");
         document.getElementById("favorites_icon").src = favorites_icon;
         var warning_icon = document.getElementById("warning_icon").src.replace("is_","not_");
-        document.getElementById("warning_icon").src = warning_icon;
+        document.getElementById("warning_icon").src = warning_icon;*/
 
         document.getElementById("home-button").setAttribute("onClick", "switch_tab('home-tab')")
         document.getElementById("tab-indicator-search").style.transform = "scaleX(1)";
@@ -254,16 +261,17 @@ function switch_tab(id) {
     else if(id=="warnings-tab") {
         clear_rows("warnings")
         search_warnings()
-        var home_icon = document.getElementById("home_icon").src.replace("is_","not_");
-        document.getElementById("home_icon").src = home_icon;
+        document.getElementById("warning-button").classList.add("btn-selected");
+        //var home_icon = document.getElementById("home_icon").src.replace("is_","not_");
+        //document.getElementById("home_icon").src = home_icon;
         //var search_icon = document.getElementById("search_icon").src.replace("is_","not_");
         //document.getElementById("search_icon").src = search_icon;
-        var settings_icon = document.getElementById("settings_icon").src.replace("is_","not_");
+        /*var settings_icon = document.getElementById("settings_icon").src.replace("is_","not_");
         document.getElementById("settings_icon").src = settings_icon;
         var favorites_icon = document.getElementById("favorites_icon").src.replace("is_","not_");
         document.getElementById("favorites_icon").src = favorites_icon;
         var warning_icon = document.getElementById("warning_icon").src.replace("not_","is_");
-        document.getElementById("warning_icon").src = warning_icon;
+        document.getElementById("warning_icon").src = warning_icon;*/
 
         document.getElementById("home-button").setAttribute("onClick", "switch_tab('home-tab')")
         document.getElementById("tab-indicator-warning").style.transform = "scaleX(1)";
@@ -368,7 +376,7 @@ function search_warnings() {
     request.onreadystatechange = function() {
         if (request.readyState == XMLHttpRequest.DONE) {
             data = request.response;
-            console.log(data)
+            //console.log(data)
             build_warnings_accordion(data)
         }
     }
@@ -387,7 +395,7 @@ function build_warnings_accordion(data) {
                 create_accordion_location(data[j])
             }
             document.getElementById("accordion_content_" + data[j]["idAreaAviso"]).textContent += dict[data[j]["awarenessLevelID"]] + " - " + data[j]["awarenessTypeName"]+ "\r\n" + data[j]["text"] + "\r\n"
-            console.log(data[j]["text"])
+            //console.log(data[j]["text"])
 
         }
     }
@@ -736,7 +744,7 @@ function switch_theme(id) {
 
         for(i=0; i<buttons.length; i++) {
             var button = document.getElementById(buttons[i] + "_icon")
-            button.src = button.src.replace("b.svg", "w.svg");
+            //button.src = button.src.replace("b.svg", "w.svg");
         }
     }
 
