@@ -515,13 +515,13 @@ function build_table(current_day, current_hour) {
 
     if(current_hour) {
         document.getElementById("table_temp").textContent = parseInt(current_hour["tMed"]);
-        document.getElementById("sticky-info").textContent = parseInt(current_hour["tMed"]) + " | " + weather_types[0][current_hour["idTipoTempo"]]["PT"];
+        document.getElementById("sticky-info").textContent = parseInt(current_hour["tMed"]) + "º | " + weather_types[0][current_hour["idTipoTempo"]]["PT"];
         document.getElementById("weather-info-text").textContent = weather_types[0][current_hour["idTipoTempo"]]["PT"];
         text = document.getElementsByClassName("table-text")
         document.getElementById("text-iUv").textContent = Math.round(current_day["iUv"]);
-        //document.getElementById("uv-indicator").style.marginLeft = uv_scale[Math.round(current_day["iUv"])]
         document.getElementById("text-probabilidadePrecipita").textContent = Math.round(current_day["probabilidadePrecipita"]) + "%";
-        document.getElementById("rain-scale").style.backgroundSize = Math.round(current_day["probabilidadePrecipita"]) + "% 100%"
+        document.getElementById("rain-indicator").style.left = Math.round(current_day["probabilidadePrecipita"]) + "%"
+        document.getElementById("uv-indicator").style.left = Math.round(current_day["iUv"])*10 + "%"
         document.getElementById("text-temp").textContent = Math.round(current_day["tMax"]) + "º / " + Math.round(current_day["tMin"]) + "º";
         document.getElementById("text-vento-dd").textContent = current_hour["ddVento"];
         document.getElementById("text-vento-vv").textContent = Math.round(current_hour["ffVento"]) + "km/h";

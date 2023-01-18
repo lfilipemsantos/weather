@@ -1403,15 +1403,18 @@ nav a {
     position: relative;
 }
 
-#uv-scale {
-    background-image: linear-gradient(to right, green , rgb(255, 204, 21) , orange , red , purple);
+#uv-scale, #rain-scale {
     width: 120px;
     height: 8px;
-    border-radius: 8px;
+    border-radius: 3px;
     margin-left: 50%;
     transform: translateX(-50%);
     bottom: 40px;
     position: absolute;
+}
+
+#uv-scale {
+    background-image: linear-gradient(to right, green , rgb(64, 128, 0) , rgb(255, 204, 21) , orange , red , purple);
 }
 
 #rain-scale-container {
@@ -1427,41 +1430,23 @@ nav a {
 
 #rain-scale {
     background-image: linear-gradient(to right, rgb(222, 255, 254), rgb(194, 255, 253) , rgb(130, 255, 251) , rgb(17, 194, 211));
-    background-size: 50% 100%;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 8px;
-    border-radius: 5px;
-    position: absolute;
-    box-shadow: 0 0 0 0.5px rgba(128, 128, 128, 0.168);
-    bottom: 40px;
 }
 
 #text-probabilidadePrecipita {
     height: max-content;
 }
 
-/*.uv-indicator {
-    width: 0;
-    height: 0; 
-    border-left: 8px solid transparent; 
-    border-right: 8px solid transparent; 
-    border-top: 10px solid gray; 
-    margin-bottom: 0px; 
-    margin-left: 0px;
-    transition: margin-left 1s ease; 
-    position: absolute;
-    transform: translateX(-50%);
-}*/
-
-.uv-indicator {
+#uv-indicator, #rain-indicator{
     display: block;
     position: absolute;
-    top: 0;
-    height: 80px;
-    width: 80px;
+    top: -3px;
+    left: 0%;
+    transform: translateX(-50%);
+    height: 8px;
+    width: 8px;
     border-radius: 8px;
-    color: white;
+    border: 3px solid var(--clr-container-secondary);
+    background-color: white;
     z-index: 999;
 }
 
