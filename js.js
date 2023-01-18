@@ -196,10 +196,10 @@ function switch_tab(id) {
         var favorites_icon = document.getElementById("favorites_icon").src.replace("is_","not_");
         document.getElementById("favorites_icon").src = favorites_icon;
         var warning_icon = document.getElementById("warning_icon").src.replace("is_","not_");
-        document.getElementById("warning_icon").src = warning_icon;
+        document.getElementById("warning_icon").src = warning_icon;*/
 
-        //document.getElementById("home-button").setAttribute("onclick", "window.location.reload()")
-        //document.getElementById("home-button").classList.add("selected");*/
+        document.getElementById("home-button").setAttribute("onclick", "window.location.reload()")
+        document.getElementById("home-button").classList.add("selected");
         document.getElementById("tab-indicator-home").style.transform = "scaleX(1)";
         document.getElementById("tab-indicator-home").style.opacity = "0.6";
     }
