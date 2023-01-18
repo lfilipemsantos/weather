@@ -757,17 +757,29 @@ function switch_theme(id) {
         var fav = document.getElementById("fav_icon");
         fav.src = fav.src.replace("w.svg", "b.svg");
 
-        for(i=0; i<buttons.length; i++) {
+        /*for(i=0; i<buttons.length; i++) {
             var button = document.getElementById(buttons[i] + "_icon")
             button.src = button.src.replace("w.svg", "b.svg");
-        }
+        }*/
     }
     
 }
 
 
 function switch_colors(color, notification) {
-    localStorage['color_theme'] = color
+    localStorage['color_theme'] = color;
+
+    var tab_indicators = document.getElementsByClassName("tab-indicator");
+    if (color == "ios") {
+        for (i=0; i<tab_indicators.length; i++ ) {
+            tab_indicators[i].style.display = "none"
+        }
+    }
+    else {
+        for (i=0; i<tab_indicators.length; i++ ) {
+            tab_indicators[i].style.display = "block"
+        }
+    }
 
     let theme = localStorage["theme"]
     let theme_color = localStorage['color_theme']
