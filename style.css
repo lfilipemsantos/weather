@@ -97,7 +97,7 @@ body {
 }
 
 .card {
-    position: sticky;
+    /*position: sticky;*/
     top: 120px
 }
 
@@ -261,8 +261,10 @@ body {
 
 .nd_weather_icon {
     margin-top: 11px;
-    width: 45%;
+    max-width: 50%;
     filter: saturate(190%);
+    height: 23px;
+    object-fit: cover;
 }
 
 .temp_container > p {
@@ -798,8 +800,8 @@ nav {
     transition: bottom 0.3s;
     left: 50%;
     transform: translateX(-50%);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(200px);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     z-index: 1001;
 }
 

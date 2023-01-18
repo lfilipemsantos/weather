@@ -9,4 +9,5 @@
     --clr-on-secondary: hsl(219, 20%, 17%);
     --clr-container-secondary: hsl(205, 13%, 25%);
     --clr-container-on-secondary: hsl(204, 32%, 85%);
+    --clr-bottom-options:rgba(27, 27, 29, 0.6);
 }
