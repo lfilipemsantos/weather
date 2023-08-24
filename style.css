@@ -50,6 +50,23 @@ a:visited {
     100% {opacity: 0;}
 }
 
+@keyframes slide-fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(5vh);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .card {
+        view-timeline-name: --item-timeline;
+        animation: slide-fade-in both;
+        animation-timeline: --item-timeline;
+        animation-range: contain 0% contain 50%;
+
+    }
+}
+
 .out {
     animation-name: animate-tab-out;
     animation-duration: 0.2s;
@@ -722,29 +739,6 @@ body {
     margin-top: -5px;
     margin-left: 3px;
     text-decoration: underline;
-}
-
-.swipe_sections {
-    width: 94%;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: auto;
-    scroll-snap-type: x mandatory;
-    scroll-snap-stop: always;
-    display: flex;
-    flex: none;
-    flex-flow: row nowrap;
-    scroll-behavior: smooth;
-    background-color:  var(--clr-container-secondary);
-    border-radius: 20px;
-}
-  
-.swipe_section {
-      box-sizing: border-box;
-      width: 100%;
-      scroll-snap-align: center;
-      flex: none;
-      padding: 30px;
 }
   
 nav {
