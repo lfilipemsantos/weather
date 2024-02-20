@@ -389,11 +389,16 @@ function build_warnings_accordion(data) {
         "orange": "Laranja",
         "red": "Vermelho"
     };
+    var color_dict = {
+        "yellow": "#EEC759",
+        "orange": "#ECA869",
+        "red": "#E97777"
+    };
     for(var j = 0; j < data.length; j++) {
         if (data[j]["text"] != ''){
             if (!document.getElementById(data[j]["idAreaAviso"])) {
                 create_accordion_location(data[j])
-                document.getElementById("accordion_content_" + data[j]["idAreaAviso"]).style.backgroundColor = data[j]["awarenessLevelID"];
+                document.getElementById("accordion_content_" + data[j]["idAreaAviso"]).style.backgroundColor = color_dict[data[j]["awarenessLevelID"]];
             }
             document.getElementById("accordion_content_" + data[j]["idAreaAviso"]).textContent += dict[data[j]["awarenessLevelID"]] + " - " + data[j]["awarenessTypeName"]+ "\r\n" + data[j]["text"] + "\r\n"
 
