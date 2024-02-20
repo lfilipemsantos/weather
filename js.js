@@ -393,8 +393,10 @@ function build_warnings_accordion(data) {
         if (data[j]["text"] != ''){
             if (!document.getElementById(data[j]["idAreaAviso"])) {
                 create_accordion_location(data[j])
+                document.getElementById("accordion_content_" + data[j]["idAreaAviso"]).style.backgroundColor = data[j]["awarenessLevelID"];
             }
             document.getElementById("accordion_content_" + data[j]["idAreaAviso"]).textContent += dict[data[j]["awarenessLevelID"]] + " - " + data[j]["awarenessTypeName"]+ "\r\n" + data[j]["text"] + "\r\n"
+
             //console.log(data[j]["text"])
 
         }
