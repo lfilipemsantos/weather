@@ -706,7 +706,7 @@ function build_next_days(data) {
 }
 
 function switch_theme(id) {
-    const DARK = "#121212"
+    const DARK = "#000"
     const LIGHT = "#ffffff"
 
     
