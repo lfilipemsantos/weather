@@ -514,7 +514,7 @@ function build_table(current_day, current_hour) {
     }
 
     if(current_hour) {
-        document.getElementById("table_temp").textContent = parseInt(current_hour["tMed"]);
+        document.getElementById("table_temp").textContent = Math.round(current_hour["tMed"]);
         document.getElementById("sticky-info").textContent = parseInt(current_hour["tMed"]) + "º | " + weather_types[0][current_hour["idTipoTempo"]]["PT"];
         document.getElementById("weather-info-text").textContent = weather_types[0][current_hour["idTipoTempo"]]["PT"];
         text = document.getElementsByClassName("table-text")
@@ -629,6 +629,7 @@ function build_arrays(data, today_str, tomorrow_str) {
                     today.push(data[i]);
                     if (parseInt(hour.split(":"))==parseInt(time)) {
                         current_hour = data[i];
+                        console.log(current_hour)
                     }
                 }
             }
