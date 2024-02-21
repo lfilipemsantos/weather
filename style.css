@@ -67,11 +67,17 @@ a:visited {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .card {
+    .card , #fav_icon_container, .accordion_location {
         view-timeline-name: --item-timeline;
         animation: slide-fade-in both;
         animation-timeline: --item-timeline;
-        animation-range: contain 0% contain 50%;
+        animation-range: entry 80% contain 50%;
+    }
+
+    #next_days_row {
+        animation-range: entry 0% contain 50%;
+    }
+    .accordion_location {
     }
 }
 
@@ -354,9 +360,6 @@ body {
     border-radius: 20px;
     height: fit-content;
     overflow-x: hidden;
-    /*border-radius: 60% 60% 0 0 / 20px 20px 0 0;
-    background-color:  var(--clr-container-secondary);
-    box-shadow: 0px -5px 10px 2px rgba(0, 0, 0, 0.4);*/
     transition: box-shadow 500ms ease-in-out;
 }
 
@@ -1194,6 +1197,8 @@ body {
     padding-bottom: 25px;
     padding-top: 35px;
     width: 100%;
+    position: sticky;
+    top: 0;
 }
 
 #settings {
@@ -1507,7 +1512,7 @@ nav a {
     flex-direction: column;
     width: 100%;
     margin-top: 0px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     top: 0px;
     /*background-color: var(--clr-background);*/
 }
@@ -1592,7 +1597,6 @@ nav a {
     border-radius: 10px;
     margin-bottom: 10px;
     border: 1px solid var(--clr-text);
-    transition: all 500ms ease-in-out;
 }
 
 .accordion_label, .accordion_content {
@@ -1606,10 +1610,6 @@ nav a {
     cursor: pointer;
     position: relative;
 }
-
-/*.accordion_label:hover {
-    background: rgba(0, 0, 0, 0.1);
-}*/
 
 .accordion_label::after {
     content: '';
@@ -1634,7 +1634,7 @@ nav a {
   max-height: 0;
   padding: 5px;
   transition: max-height 200ms ease-in-out;
-  border-radius: 0px 0px 10px 10px;
+  border-radius: 0px 0px 8.8px 8.8px;
   box-sizing:unset;
 }
 

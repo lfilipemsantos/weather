@@ -389,10 +389,10 @@
         <script>
             $(document).ready(function(){
                 $(window).scroll(function(){
-                    $("#max-min-container").css("opacity", 1 - $(window).scrollTop() / $('#main-info').height());
-                    $("#table_temp").css("opacity", 1 - $(window).scrollTop() / $('#main-info').height());
-                    $("#weather-info-text").css("opacity", 1 - $(window).scrollTop() / $('#main-info').height());
-                    $("#sticky-info").css("opacity", 0 + ($(window).scrollTop() -100) / $('#main-info').height());
+                    $("#max-min-container").css("opacity", 1 - $(window).scrollTop() / ($('#main-info').height()+100));
+                    $("#table_temp").css("opacity", 1 - $(window).scrollTop() / ($('#main-info').height()+100));
+                    $("#weather-info-text").css("opacity", 1 - $(window).scrollTop() / ($('#main-info').height()+100));
+                    $("#sticky-info").css("opacity", 0 + ($(window).scrollTop() - 100) / $('#main-info').height());
                 });
             });
         </script>
