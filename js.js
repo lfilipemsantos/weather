@@ -520,6 +520,17 @@ function build_table(current_day, current_hour) {
         10: "100%"
     }
 
+    var wind_rotation = {
+        "NW": "225deg",
+        "NE": "315deg",
+        "N": "270deg",
+        "S": "90deg",
+        "SE": "45deg",
+        "E": "0deg",
+        "SW": "135deg",
+        "W": "180deg"
+    }
+
     if(current_hour) {
         document.getElementById("table_temp").textContent = Math.round(current_hour["tMed"]);
         document.getElementById("sticky-info").textContent = parseInt(current_hour["tMed"]) + "º | " + weather_types[0][current_hour["idTipoTempo"]]["PT"];
@@ -531,6 +542,7 @@ function build_table(current_day, current_hour) {
         document.getElementById("uv-indicator").style.left = Math.round(current_day["iUv"])*10 + "%"
         document.getElementById("text-temp").textContent = Math.round(current_day["tMax"]) + "º / " + Math.round(current_day["tMin"]) + "º";
         document.getElementById("text-vento-dd").textContent = current_hour["ddVento"];
+        document.documentElement.style.setProperty('--wind-direction', wind_rotation[current_hour["ddVento"]]);
         document.getElementById("text-vento-vv").textContent = Math.round(current_hour["ffVento"]) + "km/h";
         //document.getElementById("idFfxVento").textContent = wind_types[0][current_day["idFfxVento"]]["PT"];
     }
