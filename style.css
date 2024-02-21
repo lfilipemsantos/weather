@@ -571,7 +571,7 @@ body {
 #search_container {
     height: 46px;
     margin-top: 0px;
-    border-radius: 8px;
+    border-radius: 46px;
     width: 80vw;
     max-width: 500px;
     position: relative;
@@ -694,7 +694,6 @@ body {
     padding-bottom: 10px;
     grid-row: 7;
     grid-column: 1 / span 2;
-    z-index: 9999;
 }
 
 #fav-description {
