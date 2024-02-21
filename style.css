@@ -137,7 +137,7 @@ body {
     /*box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.4);*/
     animation-name: animate-in-row;   
     animation-duration: 0.5s;
-    animation-timing-function:ease-in;
+    animation-timing-function: ease-out;
 }
 
 .theme_option {
@@ -200,7 +200,7 @@ body {
 }
 
 .theme_example_dark {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(25, 25, 25);
 }
 
 .date_prev {
@@ -339,7 +339,6 @@ body {
 
 .main {
     background-color:  var(--clr-background);
-    background-color: rgba(255, 255, 255, 0.3);
 }
 
 #today_row {
@@ -385,7 +384,7 @@ body {
 
 #next_days_row {
     grid-column: 1 / span 2;
-    grid-row: 3;
+    grid-row: 6;
     box-sizing: border-box;
     display: block;
     height: fit-content;
@@ -519,33 +518,6 @@ body {
     left: 10px;
 }
 
-#switch_home_color_button {
-    height: 20px;
-    width:20px;
-    border: 1px solid gray;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-
-#switch_home_color_button:hover {
-    cursor: pointer;
-}
-
-#switch_home_color_button + p{
-    margin-top: 3px;
-}
-
-/*.selected {
-    background-color: rgba(114, 197, 197, 0.5);
-    font-weight: bolder;
-}*/
-
-.table_icons {
-    height: 25px;
-    padding-left: 10px;
-    padding-right: 0px;
-}
-
 .weather_icon_container {
     width: 80%;
     height: 70px;
@@ -567,29 +539,6 @@ body {
     filter: saturate(190%);
     align-items: center;
 }
-
-
-.color-textb {
-    display: inline-block;
-    width: 12%;
-    height: 30px;
-    border-radius: 5px;
-    padding-left: 5px;
-}
-
-#apply-color-button {
-    height: 30px;
-    width: 25%;
-    border:rgba(100, 100, 100, 0.5) 1px solid;
-    background-color:rgba(114, 197, 197, 0.1);
-    margin-left: 2%;
-    margin-right: 2%;
-    border-radius: 10px;
-    display: inline-block;
-    box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.4);
-    cursor: pointer;
-}
-
 #location-tab {
     display: none;
     height: auto; 
@@ -617,8 +566,6 @@ body {
 }
 
 #search_container {
-    /*background-color: rgba(181, 181, 181, 0.2);
-    background-color: rgba(255, 255, 255, 0.3);*/
     height: 46px;
     margin-top: 0px;
     border-radius: 8px;
@@ -753,20 +700,7 @@ body {
     margin-left: 3px;
     text-decoration: underline;
 }
-  
-nav {
-    position: relative;
-    display: flex;
-    margin: 0 auto;
-    inline-size: max-content;
-    
-    /* DRY: set here the gap between the dots,
-    * we will need it later to set the position
-    * of the nav::before pseudoelement
-    */
-    --gap: 15px;
-    gap: var(--gap, .5rem);
-}
+
 
 #cards {
     display: grid;
@@ -1265,26 +1199,21 @@ nav {
 #settings {
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: var(--clr-container-secondary);
     width: 94%;
     max-width: 600px;
     margin: auto;
     border-radius: 12px;
-    color: var(--clr-container-on-secondary); 
+    color: var(--clr-text); 
 }
 
 .setting {
     box-sizing: border-box;
     width: 90%;
     margin: auto;
+    margin-bottom: 20px;
     padding: 20px;
     max-width: 480px;
     position: relative;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.227);
-}
-
-.setting:last-child {
-    border-bottom: unset;
 }
 
 .top-setting, .middle-setting {
@@ -1298,10 +1227,11 @@ nav {
     font-family: 'PS Regular', sans-serif;
 }
 
-
 .top-setting {
     box-sizing: border-box;
     display: block;
+    border-radius: 20px;
+    border: 1px solid var(--clr-text);
 }
 
 .setting-img-container {
