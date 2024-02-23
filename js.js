@@ -488,7 +488,7 @@ function set_location_name(local_id) {
 
 function clear_rows(tab) {
     if (tab == "favorites") {
-        var rows = ["favorites-tab"];
+        var rows = ["fav-container"];
     }
     else if (tab == "favorites-settings") {
         var rows = ["fav-list"];
@@ -946,25 +946,16 @@ function rem_favorite(id) {
 
 function build_favorites() {
     favorites = JSON.parse(localStorage["favorites"]);
-    var fav_title = document.createElement("h2");
-    fav_title.textContent = "Favoritos";
-    fav_title.classList.add("tab-title");
-    document.getElementById("favorites-tab").appendChild(fav_title);
-    var fav_container = document.createElement("div");
-    fav_container.id = "fav_container"
-    document.getElementById("favorites-tab").appendChild(fav_container);
     if(favorites.length>0) {
         for(i=0; i<favorites.length; i++) {
             var fav_row = document.createElement('div');
+            fav_row.classList.add("fav_row");
 
             var fav_location_container = document.createElement('div');
             fav_location_container.classList.add("fav_location_container");
 
             var fav_temp_container = document.createElement('div')
             fav_temp_container.classList.add("fav_temp_container");
-            
-            /*var fav_icon_container = document.createElement('div')
-            fav_icon_container.classList.add("fav_row_icon_container");*/
 
             var weather_info_container = document.createElement('div')
             weather_info_container.classList.add("fav_info_container");
@@ -978,17 +969,12 @@ function build_favorites() {
             fav_location.textContent = favorites[i]["name"]
             fav_location_container.appendChild(fav_location);
 
-            //var icon = document.createElement("img");
-            //icon.setAttribute("id", "icon_" + favorites[i]["id"])
-            //fav_icon_container.appendChild(icon);
-
             var weather_info = document.createElement('small');
             weather_info.setAttribute("id", "info_" + favorites[i]["id"])
             weather_info_container.appendChild(weather_info);
 
 
             fav_row.setAttribute("onclick", "get_data('" + favorites[i]["id"] + "')" )
-            fav_row.classList.add("fav_row");
 
 
             fav_row.appendChild(fav_location_container);
@@ -998,7 +984,7 @@ function build_favorites() {
 
             set_current_temp(favorites[i]["id"]);
 
-            document.getElementById("fav_container").appendChild(fav_row);
+            document.getElementById("fav-container").appendChild(fav_row);
         }
     }
     else {

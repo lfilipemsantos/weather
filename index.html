@@ -29,11 +29,15 @@
             </div>
     
             <div class="rows tab" id="location-tab">
-                <h2 class="tab-title">Pesquisar</h2>
+                <div class="tab-title-container" style="position: relative;">
+                    <h2 class="tab-title">Pesquisar</h2>
+                </div>
             </div> 
     
-            <div class="rows tab" id="warnings-tab" style="display: none; height: max-content;">
-                <h2 class="tab-title">Alertas</h2>
+            <div class="rows tab" id="warnings-tab" style="display: none;">
+                <div class="tab-title-container" style="position: relative;">
+                    <h2 class="tab-title">Alertas</h2>
+                </div>
                 <!--<div class="filters_container">
                     <div class="filter">Todos</div>
                     <div class="filter">Favoritos</div>
@@ -43,7 +47,11 @@
             </div> 
     
             <div class="rows tab" id="favorites-tab" style="display: none;">
-                <div id="add_favorites_button">+</div>
+                <div class="tab-title-container" style="position: relative;">
+                    <h2 class="tab-title">favoritos</h2>
+                </div>
+                <div id="fav-container">
+                </div>
             </div> 
     
             <div id="home-tab" class="tab">
@@ -65,14 +73,14 @@
                 </div>    
                 <div id="location-text-container">
                     <p id="location-text"></p>
-                    <p id="sticky-info"></p></div>
+                    <p id="sticky-info"></p>
+                </div>
                 <section id="cards">
                     <div id="main-info">
                         <div id="location-date-container">
                             <p id="date-text"></p>
                         </div>
                         <div style="display: flex; flex-direction: row; align-items: center; width: 85%; margin: auto; height: 90px;">
-                            
                             <div id="main-weather-info-container">
                                 <h4 id="table_temp" colspan="2"></h4>
                             </div>
@@ -126,12 +134,6 @@
 
                     </div>
 
-                    <!--<div class="stat card" id="wind-dir-stat">
-                        <div class="card_title">Direção Vento</div>
-                        <div class="stat_value" id="text-vento-dd"></div>
-                    </div>-->
-
-
                     <div class="rows card" id="next_days_row">
                         <div class="card_title">Próximos 10 dias</div>
                         <div class="inner" id="inner_next_days"></div>
@@ -142,10 +144,8 @@
                         <img id="fav_icon" src="not_favorite_w.svg" alt="favorite icon">
                         <span id="fav-description"></span>
                     </div>
-                </div>
-
-                    
-            </section>
+                </section>
+            </div>  
     
             <div class="rows tab" id="settings-tab" style="height: 100%;">
                 <div class="tab-title-container" style="position: relative;">  
