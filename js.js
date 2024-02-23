@@ -129,7 +129,7 @@ function init() {
     }
 
     if(!(localStorage["color_theme"])){
-        localStorage["color_theme"] = "mono"
+        localStorage["color_theme"] = "ios"
     }
 
     if(!(localStorage["favorites"])) {
@@ -765,6 +765,8 @@ function switch_theme(id) {
         
         var fav = document.getElementById("fav_icon");
         fav.src = fav.src.replace("b.svg", "w.svg");
+        var back = document.getElementById("back_icon");
+        back.src = back.src.replace("b.svg", "w.svg");
 
         for(i=0; i<buttons.length; i++) {
             var button = document.getElementById(buttons[i] + "_icon")
@@ -780,6 +782,8 @@ function switch_theme(id) {
 
         var fav = document.getElementById("fav_icon");
         fav.src = fav.src.replace("w.svg", "b.svg");
+        var back = document.getElementById("back_icon");
+        back.src = back.src.replace("w.svg", "b.svg");
 
         /*for(i=0; i<buttons.length; i++) {
             var button = document.getElementById(buttons[i] + "_icon")
@@ -995,7 +999,7 @@ function build_favorites() {
         no_fav_text.textContent = "Experimente adicionar um local aos favoritos"
 
         no_fav_div.appendChild(no_fav_text);
-        document.getElementById("favorites-tab").appendChild(no_fav_div);
+        document.getElementById("fav-container").appendChild(no_fav_div);
         
     }
     switch_colors(localStorage['color_theme'], false)
@@ -1063,10 +1067,6 @@ function show_top_settings() {
     bottoms = document.getElementsByClassName("bottom-setting");
     for (i=0; i<bottoms.length; i++) {
         bottoms[i].style.display = "none"
-    }
-    middles = document.getElementsByClassName("middle-setting");
-    for (i=0; i<middles.length; i++) {
-        middles[i].style.display = "none"
     }
     tops = document.getElementsByClassName("top-setting");
     for (i=0; i<tops.length; i++) {
