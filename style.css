@@ -363,7 +363,6 @@ body {
 
 .main {
     background-color:  var(--clr-background);
-    background-color: aquamarine;
     height: 100vh;
 }
 
@@ -1115,7 +1114,6 @@ body {
     padding: 16px;
     display: block;
     position: absolute;
-    background-color: aqua;
 }
 
 #settings-tab {
