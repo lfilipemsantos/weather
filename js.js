@@ -170,7 +170,11 @@ function switch_tab(id) {
         if(tabs[i]!=id){
             console.log(tabs[i])
             document.getElementById(tabs[i]).classList.add("out");
-            setTimeout(() => { document.getElementById(tabs[i]).style.display = "none"; document.getElementById(tabs[i]).classList.remove("out");
+            document.getElementById(tabs[i]).classList.remove("in");
+            setTimeout(() => {
+                document.getElementById(tabs[i]).style.display = "none";
+                document.getElementById(tabs[i]).classList.remove("out");
+                document.getElementById(tabs[i]).classList.add("in");
             }, 150);
         }
     }
