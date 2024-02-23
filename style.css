@@ -1061,9 +1061,9 @@ body {
     -webkit-backdrop-filter: blur(20px);
 }
 
-.tab-title-container.isPinned .tab-title {
+/*.tab-title-container.isPinned .tab-title {
     transform: translateX(-35%);
-}
+}*/
 
 #location-text {
     line-height: 1;
