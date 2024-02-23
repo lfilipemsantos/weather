@@ -1056,14 +1056,14 @@ body {
 
 #location-text-container.isPinned , .tab-title-container.isPinned {
     background-color: var(--clr-bottom-options);
-    transition: all 600ms;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
+    transition: all 600ms;
 }
 
-/*.tab-title-container.isPinned .tab-title {
+.tab-title-container.isPinned .tab-title {
     transform: translateX(-35%);
-}*/
+}
 
 #location-text {
     line-height: 1;
