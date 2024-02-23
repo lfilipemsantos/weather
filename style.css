@@ -1061,13 +1061,13 @@ body {
     transition: all 600ms;
 }
 
-.tab-title-container.isPinned .tab-title {
+/*.tab-title-container.isPinned .tab-title {
     transform: translateX(-35%);
-}
+}*/
 
 #location-text {
     line-height: 1;
-    font-family: 'Nohemi Light', sans-serif;
+    font-family: 'PS Bold', sans-serif;
     font-size: 2.5rem;
     margin-bottom: 5px;
     text-align: center;
