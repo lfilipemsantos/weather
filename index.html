@@ -29,13 +29,13 @@
             </div>
     
             <div class="rows tab" id="location-tab">
-                <div class="tab-title-container" style="position: relative;">
+                <div class="tab-title-container">
                     <h2 class="tab-title">Pesquisar</h2>
                 </div>
             </div> 
     
             <div class="rows tab" id="warnings-tab" style="display: none;">
-                <div class="tab-title-container" style="position: relative;">
+                <div class="tab-title-container" id="tab-title-container-alertas">
                     <h2 class="tab-title">Alertas</h2>
                 </div>
                 <!--<div class="filters_container">
@@ -47,7 +47,7 @@
             </div> 
     
             <div class="rows tab" id="favorites-tab" style="display: none;">
-                <div class="tab-title-container" style="position: relative;">
+                <div class="tab-title-container" id="tab-title-container-favoritos">
                     <h2 class="tab-title">Favoritos</h2>
                 </div>
                 <div id="fav-container">
@@ -395,6 +395,33 @@
                     $("#sticky-info").css("opacity", 0 + ($(window).scrollTop() - 100) / $('#main-info').height());
                 });
             });
+        </script>
+        <script>
+            const el = document.querySelector("#location-text-container");
+            window.addEventListener("scroll", () => {
+                const stickyTop = parseInt(window.getComputedStyle(el).top);
+                const currentTop = el.getBoundingClientRect().top;
+                el.classList.toggle("isPinned", currentTop === stickyTop);
+            });
+            observer.observe(el);
+        </script>
+        <script>
+            const el_alertas = document.querySelector("#tab-title-container-alertas");
+            window.addEventListener("scroll", () => {
+                const stickyTop = parseInt(window.getComputedStyle(el_alertas).top);
+                const currentTop = el_alertas.getBoundingClientRect().top;
+                el_alertas.classList.toggle("isPinned", currentTop === stickyTop);
+            });
+            observer.observe(el_alertas);
+        </script>
+        <script>
+            const el_favoritos = document.querySelector("#tab-title-container-favoritos");
+            window.addEventListener("scroll", () => {
+                const stickyTop = parseInt(window.getComputedStyle(el_favoritos).top);
+                const currentTop = el_favoritos.getBoundingClientRect().top;
+                el_favoritos.classList.toggle("isPinned", currentTop === stickyTop);
+            });
+            observer.observe(el_favoritos);
         </script>
     </body>
 </html>

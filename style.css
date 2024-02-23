@@ -726,7 +726,7 @@ body {
     grid-row: 6;
     grid-column: 1 / span 2;
     margin-top: -17px;
-    color: hsl(0deg 0% 100%);
+    color: var(--clr-text);
 }
 
 #fav-description {
@@ -821,14 +821,14 @@ body {
 }
 
 .button_desc {
-    margin-top: 6px;
+    margin-top: 8px;
     display: block;
     font-size: 0.85em;
     font-family: "PS Bold", sans-serif;
 }
 
 .tab {
-    padding-bottom: 50px;
+    padding-bottom: 150px;
     /*min-height: 100vh; */
     background-color: var(--clr-background);
 }
@@ -1045,15 +1045,24 @@ body {
     margin-bottom: 4px;
     margin-right: 0px;
 }
+
 #location-text-container {
     position: sticky;
-    top: 0px;
+    top: -1px;
     margin-bottom: 50px;
     z-index: 9999;
+    background-color: var(--clr-background);
+}
+
+#location-text-container.isPinned , .tab-title-container.isPinned {
     background-color: var(--clr-bottom-options);
-    /*box-shadow: 0px 5px 10px 0px var(--clr-background);*/
+    transition: all 600ms;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
+}
+
+.tab-title-container.isPinned .tab-title {
+    transform: translateX(-35%);
 }
 
 #location-text {
@@ -1231,8 +1240,14 @@ body {
     padding-bottom: 25px;
     padding-top: 35px;
     width: 100%;
+    transition: all 100ms ease-in-out;
+}
+
+.tab-title-container {
     position: sticky;
-    top: 0;
+    top: -1px;
+    z-index: 999;
+    background-color: var(--clr-background);
 }
 
 #settings {
