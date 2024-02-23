@@ -77,12 +77,27 @@ a:visited {
     }
 }
 
+@keyframes row-horizontal {
+    from {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+}
+
+
+
 @media (prefers-reduced-motion: no-preference) {
     .card , #fav_icon_container {
         view-timeline-name: --item-timeline;
         animation: slide-fade-in both;
         animation-timeline: --item-timeline;
         animation-range: entry 80% contain 50%;
+    }
+    #innerToday .row {
+        view-timeline-name: --item-timeline3;
+        animation: row-horizontal both;
+        animation-timeline: view(inline);
+        animation-range: entry 0% contain 50%;
     }
 
     #next_days_row {
@@ -100,7 +115,7 @@ a:visited {
         view-timeline-name: --item-timeline2;
         animation: slide-fade-in both;
         animation-timeline: --item-timeline2;
-        animation-range: contain 5% contain 50%;
+        animation-range: contain 5% contain 20%;
     }
 }
 
