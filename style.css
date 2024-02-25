@@ -73,11 +73,9 @@ a:visited {
 @keyframes animate-tab-out {
     0% {
         opacity: 1;
-        transform: translateY(0vh);
     }
     100% {
         opacity: 0;
-        transform: scale(0.9);
     }
 }
 
