@@ -591,10 +591,10 @@ function build_rows(days) {
             weather_icon_container.setAttribute("class", "weather_icon_container");
 
             if (parseInt(hour.split(":"))<6 || parseInt(hour.split(":"))>20) {
-                weather_icon.src = "icons/glass/n" + parseInt(days[j][i]["idTipoTempo"]) + ".png";
+                weather_icon.src = "icons_ipma_weather/w_ic_n_" + parseInt(days[j][i]["idTipoTempo"]) + "anim.svg";
             }
             else {
-                weather_icon.src = "icons/glass/d" + parseInt(days[j][i]["idTipoTempo"]) + ".png";
+                weather_icon.src = "icons_ipma_weather/w_ic_d_" + parseInt(days[j][i]["idTipoTempo"]) + "anim.svg";
             }
             temp.setAttribute('id', i);
             temp.classList.add("hour_temp");
@@ -705,7 +705,7 @@ function build_next_days(data) {
         
         weather_icon.setAttribute("class", "nd_weather_icon");
         weather_icon.setAttribute("alt", "weather_icon");
-        weather_icon.src = "icons/glass/d" + parseInt(data[i]["idTipoTempo"]) + ".png";
+        weather_icon.src = "icons_ipma_weather/w_ic_d_" + parseInt(data[i]["idTipoTempo"]) + "anim.svg";
 
 
         row.classList.add('day_row');

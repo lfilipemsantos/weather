@@ -131,12 +131,13 @@ a:visited {
 .out {
     animation-name: animate-tab-out;
     animation-duration: 0.2s;
-    animation-timing-function: ease;
+    animation-timing-function: ease-in-out;
 }
+
 .in {
     animation-name: animate-tab-in;
     animation-duration: 0.2s;
-    animation-timing-function: ease;
+    animation-timing-function: ease-in-out;
 }
 
 html {
