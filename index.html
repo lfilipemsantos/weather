@@ -155,19 +155,17 @@
                     <h2 class="tab-title">Definições</h2>
                 </div>
                 <div id="settings">
-                    <div class="setting top-setting personalizacao" onclick="show_bottom_settings('tema')" style="display: flex !important; flex-direction: row;">
-                        <div class="setting-img-container" style="flex-basis: 25%;">
-                            <img src="moon_w.svg" class="setting-icon">
-                        </div>
+                    <div class="setting top-setting personalizacao">
                         <div>
                             <h3>Modo claro/escuro</h3>
                             <div>
                                 <small>Escolha entre modo claro e escuro.</small>
                             </div>
                         </div>
-                        <div class="setting-arrow">
-                            >
-                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="darkModeCheckbox" onchange="darkModeToggle(this)">
+                            <span class="slider round"></span>
+                          </label>
                     </div>
                     <div class="setting top-setting personalizacao" onclick="show_bottom_settings('destaque')">
                         <div class="setting-img-container" style="flex-basis: 25%;">

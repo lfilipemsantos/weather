@@ -728,6 +728,14 @@ function build_next_days(data) {
     }
 }
 
+function darkModeToggle(toggle) {
+    if (toggle.checked) {
+        switch_theme ("dark");
+      } else {
+        switch_theme ("light");
+      }
+}
+
 function switch_theme(id) {
     const DARK = "#000"
     const LIGHT = "#ffffff"
@@ -752,6 +760,7 @@ function switch_theme(id) {
     }
 
     if(id=="dark"){
+        document.getElementById("darkModeCheckbox").checked = true;
         document.querySelector('meta[name="theme-color"]').setAttribute('content', DARK);
 
         /*var setting_icons = document.getElementsByClassName("setting-icon");
@@ -776,6 +785,7 @@ function switch_theme(id) {
 
     else if (id=="light") {
         document.querySelector('meta[name="theme-color"]').setAttribute('content', LIGHT);
+        document.getElementById("darkModeCheckbox").checked = false;
 
         //var location_icon = document.getElementById("current-location-icon")
         //location_icon.src = location_icon.src.replace("w.svg", "b.svg");
