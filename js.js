@@ -1095,6 +1095,7 @@ function load_fav_settings() {
             fav_setting_row.classList.add("fav_setting_row")
             var fav_setting_remove = document.createElement("div");
             fav_setting_remove.setAttribute("onclick", "remove_from_fav('" + favorites[i]["id"] + "')")
+            fav_setting_remove.classList.add("remove_from_fav")
             var fav_setting_name = document.createElement("div");
             fav_setting_name.textContent = favorites[i]["name"];
             fav_setting_remove.textContent = "x";
