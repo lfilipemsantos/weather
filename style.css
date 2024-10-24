@@ -352,16 +352,20 @@ body {
 }
 
 .day_row {
+    box-sizing: border-box;
     width: 100%;
-    max-width: 350px;
-    height: 40px;
+    max-width: 345px;
+    height: 80px;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     margin-top: 0px;
     border-radius: 0px;
+    padding: 10px 20px;
+    border-radius: 60px;
     display: flex;
     flex-direction: row;
+    background-color: #3c3734;
 }
 
 #inner_next_days {
@@ -444,7 +448,6 @@ body {
     border-radius: 20px;
     /*background-color:  var(--clr-container-secondary);
     background-color: rgba(255, 255, 255, 0.3);*/
-    padding: 10px;
     padding-top: 15px;
     padding-bottom: 15px;
     filter: blur(-1.5px);
@@ -754,11 +757,12 @@ body {
     display: grid;
     grid-gap: 15px;
     grid-template-columns: repeat(2, 1fr);
-    width: 345px;
+    max-width: 345px;
     margin: auto;
     justify-items: center;
     margin-bottom: 100px;
 }
+
 
 .card_title {
     width: 100%;
