@@ -631,7 +631,8 @@ body {
     transition: all 250ms;
     display: inline-block;
     text-align: left;
-    border: 1px solid var(--clr-text);
+    background-color: #3c3734;
+    box-shadow: 2px 4px 10px rgb(26, 26, 26);
 }
 
 @media screen and (max-width: 360px) {
